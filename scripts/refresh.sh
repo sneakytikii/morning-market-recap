@@ -74,6 +74,16 @@ if ! mkdir "$LOCK" 2>/dev/null; then
   exit 0
 fi
 echo "$$" > "$LOCK/pid"
+
+# Hold the Mac awake for as long as this script runs.
+#
+# The scheduled wake gets the machine up, but with the lid closed macOS may drop straight
+# back to sleep — and the research step takes 20+ minutes. Without this the job can start
+# and then be suspended mid-run, which looks identical to a failure.
+#
+# -i prevents idle sleep; -w ties the caffeinate process's life to this script's PID, so
+# it releases the moment the run finishes rather than pinning the Mac awake indefinitely.
+/usr/bin/caffeinate -i -w $$ &
 # rm -rf, not rmdir: the lock now holds a pid file, and rmdir would fail on a non-empty
 # directory and leave the lock behind — reintroducing exactly the bug this guards against.
 trap 'rm -rf "$LOCK" 2>/dev/null' EXIT INT TERM
