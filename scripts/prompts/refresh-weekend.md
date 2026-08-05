@@ -66,6 +66,52 @@ The reader is a non-technical 65-year-old.
   numbers and the same hedges. Natural Korean at the same reading level, not a literal
   translation. Ticker symbols and "Pancho" stay in Latin script.
 
+## The prose is yours too — this is the important part
+
+The page's words render from this file, not just its numbers. If you update the prices and
+leave the prose, the page describes last week over today's board — which happened once and
+is the failure this section exists to prevent. Update ALL of these every run:
+
+- **`lede`** — the "In plain English" story: a list of `{cls, en, ko}` paragraphs
+  (`cls` is `"first"` for the opening paragraph, `""` otherwise; inline `<b>` allowed).
+  Rewrite it to describe the session you are reporting. Three paragraphs is the norm:
+  what happened today, the bigger running story, and what to watch structurally.
+- **`positions.*.news_en` / `news_ko`** — the per-position "What happened" lists:
+  `{dt, tx}` items, newest first, four per position. Add today's item, drop the oldest.
+  `dt` is short ("Aug 5"); `tx` allows inline `<b>`. Keep the two lists in step —
+  same items, same order, Korean saying the same thing.
+- **`positions.*.verdict_en` / `verdict_ko`** — the "What I'd watch" line. Update it when
+  its date passes or its premise changes; leave it if still true.
+- **`events`** — the calendar: `{hot, when_en, when_ko, what_en, what_ko, note_en, note_ko}`.
+  Remove events whose date has passed, add newly scheduled ones. `hot: true` marks the
+  ones most likely to move the five positions.
+
+Same writing rules as everything else: plain English a non-technical 65-year-old follows,
+never predict, and the Korean twin says the same thing with the same hedges.
+
+### Panel prose and figures (run-2 additions — all agent-owned)
+
+- **`positions.*.plain_en/ko`** — the panel intro paragraph. Rewrite when it names a
+  session or a figure that moved.
+- **`positions.*.bull_en/ko` / `bear_en/ko`** — the "Reasons it could go up / down"
+  paragraphs. Keep the argument, refresh the figures. Prefer soft figures ("about 5.2%")
+  over precise ones that stale by the next session.
+- **`positions.*.facts`** — the facts rows. Items are `{en, ko}` labels plus ONE of:
+  `auto: "<metric>"` (ytd / dd / above_low / range / recover / cap / pe — the build
+  derives the value from `base` and the price, NEVER write these values yourself),
+  `field: "week_fact"` (pulls the week figure you already maintain), or manual
+  `v_en`/`v_ko` for dates and historical facts ("All of July — down 57%"). Update manual
+  ones when their month/date passes.
+- **`positions.*.base`** — the derivation constants: `year_start` (price on Jan 1),
+  `high_1y`, `low_1y`, `cap_usd_at` [cap, at_price], `eps_at` [at_price, pe]. Update
+  `high_1y`/`low_1y` ONLY when a new 52-week extreme is actually set (compare today's
+  range). Never touch the others mid-year.
+- **`next_session_en_html/ko_html`** — the dateline line saying when trading restarts.
+  Write it for the session AFTER the one you are reporting (Friday close → Monday).
+- The board's drawdown column, the recovery figure, market cap and P/E are DERIVED —
+  if your researched drawdown disagrees with high_1y-derived value by more than rounding,
+  the high has moved: update `base.high_1y`, not the display.
+
 ## The Trump tracker
 
 Follow `data/trump-corpus.md` exactly. For the weekend, sweep **the last 7 days** for

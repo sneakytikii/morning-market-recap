@@ -44,7 +44,7 @@ OUTPUT = ROOT / "dashboard.html"
 DATA = ROOT / "data"
 BACKUPS = ROOT / "backups"
 
-FIELD_RE = re.compile(r"<!--F:([a-zA-Z0-9_.\-]+)-->(.*?)<!--/F-->", re.S)
+FIELD_RE = re.compile(r"<!--F:([a-zA-Z0-9_.\-]+)(\|raw)?-->(.*?)<!--/F-->", re.S)
 REPEAT_RE = re.compile(r"<!--R:([a-zA-Z0-9_.\-]+)-->(.*?)<!--/R-->", re.S)
 PLACEHOLDER_RE = re.compile(r"\{\{([a-zA-Z0-9_.\-]+)(\|raw)?\}\}")
 
@@ -104,6 +104,101 @@ POS_LABEL = {"spx": "SPX", "qqq": "QQQ", "nvda": "NVDA", "soxl": "SOXL", "cost":
 BOARD_ORDER = ("spx", "qqq", "nvda", "soxl", "cost")
 
 
+def _num(s):
+    """'$1,097.05' -> 1097.05. Raises on garbage rather than guessing."""
+    m = re.search(r"-?[\d,]+(?:\.\d+)?", str(s))
+    if not m:
+        raise BuildError(f"not a number: {s!r}")
+    return float(m.group(0).replace(",", ""))
+
+
+def derive_metrics(pos: dict, key: str) -> None:
+    """Compute every figure that is a pure function of the price and a stored constant.
+
+    These used to be hand-written prose ("still up 173%", "$4.86 trillion", "needs to
+    rise 163%") and every one of them was wrong within a week of being typed, because
+    the price moved and the prose did not. Deriving them from `base` means they cannot
+    disagree with the board — the same price feeds both.
+
+    Stored per position under `base`: year_start (price on Jan 1), high_1y, low_1y,
+    cap_usd_at [cap, at_price], eps_at [at_price, pe]. All optional; a metric is only
+    derived when its constant exists.
+    """
+    base = pos.get("base") or {}
+    if not base:
+        return
+    price = _num(pos.get("price", ""))
+    m = {}
+
+    if base.get("year_start"):
+        ytd = price / float(base["year_start"]) - 1
+        if ytd > 1:
+            m["ytd_en"] = m["ytd_ko"] = "≈ +%d%%" % round(ytd * 100)
+        else:
+            m["ytd_en"] = m["ytd_ko"] = "≈ %+.1f%%" % (ytd * 100)
+
+    if base.get("high_1y"):
+        hi = float(base["high_1y"])
+        dd = 1 - price / hi
+        # dd_num is language-neutral (for the board cell); dd_en/ko are worded (facts).
+        m["dd_num"] = "≈ %.1f%%" % (max(dd, 0) * 100)
+        if dd <= 0.002:
+            m["dd_en"], m["dd_ko"] = "at its high", "최고가 수준"
+        else:
+            m["dd_en"] = m["dd_ko"] = m["dd_num"]
+        rec = hi / price - 1
+        m["recover_en"] = m["recover_ko"] = "≈ +%d%%" % round(rec * 100)
+
+    if base.get("low_1y"):
+        lo = float(base["low_1y"])
+        m["above_low_en"] = m["above_low_ko"] = "≈ +%.1f%%" % ((price / lo - 1) * 100)
+        m["range_en"] = m["range_ko"] = "$%s – $%s" % (
+            format(lo, ",.2f"), format(float(base.get("high_1y", lo)), ",.2f"))
+
+    if base.get("cap_usd_at"):
+        cap0, at = base["cap_usd_at"]
+        cap = float(cap0) * price / float(at)
+        m["cap_en"] = "≈ $%.1f trillion" % (cap / 1e12)
+        m["cap_ko"] = "≈ %.1f조 달러" % (cap / 1e12)
+
+    if base.get("eps_at"):
+        at, pe0 = base["eps_at"]
+        pe = float(pe0) * price / float(at)
+        m["pe_en"] = m["pe_ko"] = "≈ %.1f×" % pe
+
+    pos["metrics"] = m
+
+
+def derive_facts(pos: dict, key: str) -> None:
+    """Render the facts rows. An item is {en, ko} labels plus EITHER `auto: "<metric>"`
+    (build fills the value from derive_metrics, so it can never drift from the price)
+    OR manual `v_en`/`v_ko` for genuinely hand-set facts (a date, a historical month)."""
+    facts = pos.get("facts")
+    if not isinstance(facts, list):
+        return
+    metrics = pos.get("metrics", {})
+    rows = []
+    for i, f in enumerate(facts):
+        row = dict(f)
+        auto = f.get("auto")
+        field = f.get("field")
+        if field:
+            ve, vk = pos.get(field + "_en"), pos.get(field + "_ko")
+            if not ve or not vk:
+                raise BuildError(f"facts[{i}] of {key!r}: field {field!r} missing _en/_ko")
+            row["v_en"], row["v_ko"] = ve, vk
+        elif auto:
+            ve, vk = metrics.get(auto + "_en"), metrics.get(auto + "_ko")
+            if ve is None:
+                raise BuildError(f"facts[{i}] of {key!r}: auto metric {auto!r} not derivable "
+                                 f"(missing base constant?)")
+            row["v_en"], row["v_ko"] = ve, vk
+        elif not (f.get("v_en") and f.get("v_ko")):
+            raise BuildError(f"facts[{i}] of {key!r}: needs either auto or v_en+v_ko")
+        rows.append(row)
+    pos["facts_rows"] = rows
+
+
 def derive_market(data: dict) -> dict:
     """Flatten market.positions into the board's row list.
 
@@ -127,11 +222,35 @@ def derive_market(data: dict) -> dict:
     except ValueError:
         market["day_label_en"], market["day_label_ko"] = "Latest", "최근"
 
+    # The methodology note names the session date; derive it so it cannot go stale.
+    try:
+        dt = datetime.date.fromisoformat(str(market.get("as_of", ""))[:10])
+        MON_EN = ["January","February","March","April","May","June","July","August",
+                  "September","October","November","December"]
+        market["asof_phrase_en"] = "%s, %s %d, %d" % (
+            market["day_label_en"], MON_EN[dt.month-1], dt.day, dt.year)
+        market["asof_phrase_ko"] = "%d년 %d월 %d일 %s의" % (
+            dt.year, dt.month, dt.day, market["day_label_ko"])
+    except ValueError:
+        market["asof_phrase_en"], market["asof_phrase_ko"] = "the latest session", "최근 거래일의"
+
     rows = []
     for i, key in enumerate(BOARD_ORDER):
         pos = market.get("positions", {}).get(key)
         if not pos:
             raise BuildError(f"market.positions missing {key!r}")
+        derive_metrics(pos, key)
+        # The board's drawdown column and its panel-fact twin follow the derived value
+        # whenever the 1y-high constant exists — one source, not two.
+        mtr = pos.get("metrics", {})
+        if "dd_num" in mtr:
+            pos["drawdown"] = mtr["dd_num"]
+            pos["drawdown_fact_en"] = mtr["dd_en"]
+            pos["drawdown_fact_ko"] = mtr["dd_ko"]
+            if mtr["dd_en"] == "at its high":
+                pos["drawdown_arrow"] = ""
+                pos["drawdown_dir"] = "fl"
+        derive_facts(pos, key)
         row = dict(pos)
         row["key"] = key
         row["current"] = i == 0          # the board opens on the first row
@@ -320,9 +439,14 @@ def apply_fields(src: str, data: dict) -> tuple:
 
     def sub(m):
         nonlocal count
-        key = m.group(1)
+        key, raw = m.group(1), m.group(2)
         val = str(dotted(data, key))
         count += 1
+        if raw:
+            # Prose fields carry inline <b>. Safety is enforced at the validation gate,
+            # which rejects any tag other than <b> in agent-written prose — escaping
+            # here would print the tags as literal text, which run 2 briefly shipped.
+            return f"<!--F:{key}|raw-->{val}<!--/F-->"
         # Neutralise angle brackets so a stray value can never open a tag. `&` is left
         # alone on purpose: these fields legitimately carry entities like &nbsp; and
         # &middot; from the dateline, and escaping those would print them literally.

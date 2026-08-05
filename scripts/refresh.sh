@@ -211,10 +211,39 @@ for name in ("market.json", "trump.json"):
                     pass
 
     if name == "market.json":
+        # Raw-rendered prose fields may carry inline <b> and nothing else. This is the
+        # gate the |raw render path depends on for safety.
+        def check_tags(val, where):
+            for tag in re.findall(r"</?([a-zA-Z][a-zA-Z0-9]*)", str(val)):
+                if tag.lower() != "b":
+                    bad(f"{where}: tag <{tag}> not allowed in prose (only <b>)")
+        for k2, pos2 in (d.get("positions") or {}).items():
+            for f2 in ("plain_en","plain_ko","verdict_en","verdict_ko",
+                       "bull_en","bull_ko","bear_en","bear_ko"):
+                if pos2.get(f2): check_tags(pos2[f2], f"positions.{k2}.{f2}")
+            for lst in ("news_en","news_ko"):
+                for j, it in enumerate(pos2.get(lst) or []):
+                    check_tags(it.get("tx",""), f"positions.{k2}.{lst}[{j}]")
+        for j, para in enumerate(d.get("lede") or []):
+            check_tags(para.get("en",""), f"lede[{j}].en")
+            check_tags(para.get("ko",""), f"lede[{j}].ko")
+        for f2 in ("next_session_en_html","next_session_ko_html"):
+            if d.get(f2): check_tags(d[f2], f2)
+        if not isinstance(d.get("lede"), list) or not d["lede"]:
+            bad("market.json lede is missing or empty — the story must update with the numbers")
+        if not isinstance(d.get("events"), list) or not d["events"]:
+            bad("market.json events is missing or empty")
         for k in ("spx", "qqq", "nvda", "soxl", "cost"):
             pos = d.get("positions", {}).get(k, {})
             if not pos.get("price"):
                 bad(f"market.json positions.{k} has no price")
+            for f2 in ("news_en", "news_ko"):
+                if not pos.get(f2):
+                    bad(f"market.json positions.{k}.{f2} is missing or empty")
+            if len(pos.get("news_en", [])) != len(pos.get("news_ko", [])):
+                bad(f"market.json positions.{k}: news_en and news_ko have different lengths")
+            if not pos.get("verdict_en") or not pos.get("verdict_ko"):
+                bad(f"market.json positions.{k}: verdict missing in one language")
             if str(pos.get("drawdown", "")).strip() in ("-", "\u2014", "\u2013"):
                 bad(f"market.json positions.{k}: drawdown is a bare dash — write a number "
                     f"(use '\u2248 0%' if there is no meaningful gap)")
