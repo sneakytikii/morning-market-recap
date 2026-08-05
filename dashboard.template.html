@@ -503,7 +503,7 @@
         <tr>
           <th scope="col" class="l"><span data-l="en">Name</span><span data-l="ko">종목</span></th>
           <th scope="col"><span data-l="en">Price</span><span data-l="ko">종가</span></th>
-          <th scope="col"><span data-l="en">Friday</span><span data-l="ko">금요일</span></th>
+          <th scope="col"><span data-l="en"><!--F:market.day_label_en--><!--/F--></span><span data-l="ko"><!--F:market.day_label_ko--><!--/F--></span></th>
           <th scope="col"><span data-l="en">This week</span><span data-l="ko">이번 주</span></th>
           <th scope="col"><span data-l="en">Below 1-year high</span><span data-l="ko">1년 최고가 대비</span></th>
           <th scope="col" class="l"><span data-l="en">Our take</span><span data-l="ko">총평</span></th>
@@ -513,7 +513,7 @@
         <!--R:market.board--><tr data-t="{{key}}"{{#if current}} aria-current="true"{{/if}}>
           <td class="l"><div class="tkr">{{ticker}}</div><div class="co" data-l="en">{{name_en}}</div><div class="co" data-l="ko">{{name_ko}}</div></td>
           <td data-en="Price" data-ko="종가">{{price}}</td>
-          <td data-en="Friday" data-ko="금요일" class="{{day_dir}}">{{#if day_arrow}}<span class="arw">{{day_arrow}}</span> {{/if}}<span data-l="en">{{day_en}}</span><span data-l="ko">{{day_ko}}</span></td>
+          <td data-en="{{day_label_en}}" data-ko="{{day_label_ko}}" class="{{day_dir}}">{{#if day_arrow}}<span class="arw">{{day_arrow}}</span> {{/if}}<span data-l="en">{{day_en}}</span><span data-l="ko">{{day_ko}}</span></td>
           <td data-en="This week" data-ko="이번 주" class="{{week_dir}}">{{#if week_arrow}}<span class="arw">{{week_arrow}}</span> {{/if}}<span data-l="en">{{week_en}}</span><span data-l="ko">{{week_ko}}</span></td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="{{drawdown_dir}}">{{#if drawdown_arrow}}<span class="arw">{{drawdown_arrow}}</span> {{/if}}{{drawdown}}</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip {{take_tone}}" data-l="en">{{take_en}}</span><span class="chip {{take_tone}}" data-l="ko">{{take_ko}}</span></td>

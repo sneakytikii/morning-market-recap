@@ -114,6 +114,19 @@ def derive_market(data: dict) -> dict:
     market = data.get("market")
     if not isinstance(market, dict):
         return data
+
+    # The board's day column was hardcoded "Friday", which is simply wrong for any other
+    # session. Derive it from the date the numbers come from. This must happen BEFORE the
+    # rows are built, because each row carries a copy for its mobile label.
+    DAYS_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    DAYS_KO = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
+    try:
+        d = datetime.date.fromisoformat(str(market.get("as_of", ""))[:10])
+        market["day_label_en"] = DAYS_EN[d.weekday()]
+        market["day_label_ko"] = DAYS_KO[d.weekday()]
+    except ValueError:
+        market["day_label_en"], market["day_label_ko"] = "Latest", "최근"
+
     rows = []
     for i, key in enumerate(BOARD_ORDER):
         pos = market.get("positions", {}).get(key)
@@ -122,6 +135,8 @@ def derive_market(data: dict) -> dict:
         row = dict(pos)
         row["key"] = key
         row["current"] = i == 0          # the board opens on the first row
+        row["day_label_en"] = market.get("day_label_en", "Latest")
+        row["day_label_ko"] = market.get("day_label_ko", "최근")
         # Arrows are legitimately absent (a flat day has none). The drawdown VALUE is not
         # optional — defaulting it to "" rendered a dangling ▼ with no number after it,
         # which is worse than refusing to build.
