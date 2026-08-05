@@ -457,7 +457,7 @@
     <div class="dateline">
       <span data-l="en"><!--F:market.dateline_en-->Friday, July&nbsp;31, 2026 &middot; Closing Report<!--/F--></span>
       <span data-l="ko"><!--F:market.dateline_ko-->2026년 7월 31일 금요일 · 마감 보고<!--/F--></span>
-      <span class="status"><span data-l="en">Markets closed</span><span data-l="ko">장 마감</span></span>
+      <span class="status" id="mktStatus"><span data-l="en">Markets closed</span><span data-l="ko">장 마감</span></span>
       <span class="fresh"><span data-l="en"><!--F:market.fresh_en--><!--/F--></span><span data-l="ko"><!--F:market.fresh_ko--><!--/F--></span></span>
       <span class="norm" data-l="en"><!--F:market.next_session_en_html|raw--><!--/F--></span>
       <span class="norm" data-l="ko"><!--F:market.next_session_ko_html|raw--><!--/F--></span>
@@ -840,6 +840,36 @@
     var uri = FRAMES[frame];
     for (var i = 0; i < faces.length; i++) { if (faces[i]) faces[i].src = uri; }
   }
+
+  // The market-status chip is computed from the clock at read time. A build-time value
+  // goes wrong within hours (this page once said "Markets closed" mid-session), and the
+  // reader's moment is the only one that matters.
+  (function () {
+    var el = document.getElementById("mktStatus");
+    if (!el) return;
+    var HOLIDAYS = ["2026-01-01","2026-01-19","2026-02-16","2026-04-03","2026-05-25",
+                    "2026-06-19","2026-07-03","2026-09-07","2026-11-26","2026-12-25"];
+    function update() {
+      var now = new Date();
+      var p = {};
+      try {
+        new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short",
+          year: "numeric", month: "2-digit", day: "2-digit",
+          hour: "2-digit", minute: "2-digit", hour12: false
+        }).formatToParts(now).forEach(function (x) { p[x.type] = x.value; });
+      } catch (e) { return; }   // ancient browser: leave the static text alone
+      var mins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
+      var iso = p.year + "-" + p.month + "-" + p.day;
+      var weekday = ["Sat","Sun"].indexOf(p.weekday) === -1;
+      var open = weekday && HOLIDAYS.indexOf(iso) === -1 && mins >= 570 && mins < 960;
+      var en = el.querySelector('[data-l="en"]');
+      var ko = el.querySelector('[data-l="ko"]');
+      if (en) en.textContent = open ? "Market open now" : "Markets closed";
+      if (ko) ko.textContent = open ? "현재 장 열림" : "장 마감";
+    }
+    update();
+    setInterval(update, 60000);
+  })();
 
   var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
   var wagging = false, wagTimer = null, blinkTimer = null, speakTimer = null;
