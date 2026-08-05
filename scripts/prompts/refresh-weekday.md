@@ -107,6 +107,30 @@ never predict, and the Korean twin says the same thing with the same hedges.
   if your researched drawdown disagrees with high_1y-derived value by more than rounding,
   the high has moved: update `base.high_1y`, not the display.
 
+### `today_en` / `today_ko` — the Today block (top-level keys, write EVERY run)
+
+The page now opens "In plain English" with a **Today** block about the day the reader
+is in — the block's dated heading is derived at build time; you write only the prose.
+This run happens before the open, so write the **morning setup**, one paragraph,
+3-5 short sentences:
+
+1. Where things stand this morning — overnight/futures tone if you found it from a
+   source dated today, otherwise how yesterday's close left things poised.
+2. What is scheduled TODAY that could move the five (earnings, data releases, Fed
+   speakers) — pull from your events research; name the time of day plainly
+   ("after the close tonight", "before the open").
+3. One line on what to watch. Never predict direction.
+
+Inline `<b>` for the key numbers/names, nothing else. The word "yesterday" may appear
+only as contrast ("after yesterday's jump") — the block must read as insight about
+TODAY, because that is its entire job. An early-afternoon run rewrites it with how the
+session is actually going; a live price line fills in underneath automatically. Do not
+mention live prices in the prose — the page handles that.
+
+Alongside the prose, set the top-level `today_date` to today's ISO date. The build
+treats a `today_date` that is not the build day as stale and swaps in a generic
+fallback — so forgetting the stamp silently discards your paragraph.
+
 ### The masthead date is automatic — write like a morning paper
 
 The big date at the top is derived at build time (the morning the brief is written);

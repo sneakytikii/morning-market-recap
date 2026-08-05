@@ -250,7 +250,7 @@ for name in ("market.json", "trump.json"):
         for j, para in enumerate(d.get("lede") or []):
             check_tags(para.get("en",""), f"lede[{j}].en")
             check_tags(para.get("ko",""), f"lede[{j}].ko")
-        for f2 in ("next_session_en_html","next_session_ko_html"):
+        for f2 in ("next_session_en_html","next_session_ko_html","today_en","today_ko"):
             if d.get(f2): check_tags(d[f2], f2)
         if not isinstance(d.get("lede"), list) or not d["lede"]:
             bad("market.json lede is missing or empty — the story must update with the numbers")

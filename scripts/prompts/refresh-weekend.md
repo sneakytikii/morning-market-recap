@@ -41,6 +41,16 @@ So: **write the week, not the day.**
   QQQ, levered 3x in SOXL). These are the highest-value things on the page. Refresh the
   numbers behind them; never drop them.
 
+## The Today block
+
+The page opens with a **Today** block (top-level `today_en` / `today_ko` in
+`data/market.json`, dated heading derived at build time). On a weekend it should say,
+in one or two short sentences, that markets are closed until Monday and name the first
+thing next week worth watching, dated ("Markets are closed until Monday. The first big
+test next week is the inflation report on Tuesday."). Inline `<b>` only. Set the
+top-level `today_date` to today's ISO date, or the build discards your text for a
+generic fallback.
+
 ## Research rules
 
 - Use **Friday's close** as the week's endpoint. Cross-check every price against at least

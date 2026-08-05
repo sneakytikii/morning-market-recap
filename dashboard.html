@@ -152,19 +152,31 @@
     padding:8px 12px 0 0; font-weight:600; color:var(--ink);
   }
 
-  /* "Happening today" — a live one-liner above yesterday's story, filled from the
-     quote feed. Hidden entirely unless fresh live data exists, so the page never
-     pretends. */
-  .todaybar {
-    margin:0 0 18px; padding:12px 0; border-top:2px solid var(--rule-heavy);
-    border-bottom:1px solid var(--rule); font-size:18px; color:var(--ink-2);
+  /* The Today block — the day the reader is IN, leading the section. Prose is written
+     by the morning run and rewritten by the early-afternoon run; the live line inside
+     it fills from the quote feed and hides when there is no fresh data, so the page
+     never pretends. Yesterday's story follows below under its own context label. */
+  .today {
+    margin:0 0 24px; padding:14px 0 12px;
+    border-top:2px solid var(--rule-heavy); border-bottom:1px solid var(--rule);
   }
+  .today-label {
+    font-family:var(--f-sans); font-weight:800; font-size:15px; color:var(--ink);
+    margin:0 0 8px;
+  }
+  .today-text { margin:0; font-size:19px; color:var(--ink-2); }
+  .today-text b { color:var(--ink); font-weight:700; }
+  .todaybar { margin:10px 0 0; font-size:16.5px; color:var(--ink-2); }
   .todaybar .tlab {
     font-family:var(--f-sans); font-weight:800; color:var(--ink); margin-right:10px;
   }
   .todaybar .tq { white-space:nowrap; font-variant-numeric:tabular-nums; }
   .todaybar .tq.up { color:var(--up); } .todaybar .tq.dn { color:var(--down); }
-  .todaybar .tmeta { color:var(--ink-3); font-size:15.5px; }
+  .todaybar .tmeta { color:var(--ink-3); font-size:15px; }
+  .ctx-label {
+    font-family:var(--f-sans); font-weight:700; font-size:15px; color:var(--ink-3);
+    margin:0 0 12px;
+  }
 
   /* ---------- index strip ---------- */
   .strip { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule); }
@@ -516,7 +528,13 @@
 
   <section class="lede">
     <h2><span data-l="en">In plain English</span><span data-l="ko">쉽게 말하면</span></h2>
-    <p class="todaybar" id="todayNow" hidden></p>
+    <div class="today">
+      <p class="today-label"><span data-l="en"><!--F:market.today_label_en-->Today · Wednesday, August 5<!--/F--></span><span data-l="ko"><!--F:market.today_label_ko-->오늘 · 8월 5일 수요일<!--/F--></span></p>
+      <p class="today-text" data-l="en"><!--F:market.today_en|raw-->Today the market split: the Dow rose <b>0.49%</b> to a record close, while the S&P 500 slipped <b>0.17%</b> and the Nasdaq fell <b>0.83%</b>. The Nasdaq-100 fund QQQ fell <b>0.9%</b>, and the chip fund SOXL dropped <b>5.6%</b>, giving back part of yesterday's jump. Nvidia rose <b>3.4%</b> to <b>$219.22</b> after SpaceX said it will run its AI systems exclusively on Nvidia chips. Costco eased <b>0.62%</b>, then reported July sales up <b>10.7%</b> after the close. Next comes Friday's jobs report, expected to show about <b>90,000</b> new jobs — a key clue for the Fed's September meeting.<!--/F--></p>
+      <p class="today-text" data-l="ko"><!--F:market.today_ko|raw-->오늘 시장은 지수별로 엇갈려, 다우지수는 <b>0.49%</b> 올라 사상 최고치로 마감했지만 S&P 500은 <b>0.17%</b> 내렸고 나스닥은 <b>0.83%</b> 떨어졌습니다. 나스닥-100 펀드 QQQ는 <b>0.9%</b> 내렸고, 반도체 펀드 SOXL은 <b>5.6%</b> 떨어지며 어제의 급등분을 일부 반납했습니다. 엔비디아는 스페이스X가 자사 AI 시스템에 엔비디아 칩만 쓰겠다고 밝힌 뒤 <b>3.4%</b> 올라 <b>219.22달러</b>로 마감했습니다. 코스트코는 <b>0.62%</b> 내렸고, 장 마감 후 7월 매출이 <b>10.7%</b> 늘었다고 발표했습니다. 다음 주목할 일정은 금요일 고용보고서로, 약 <b>9만 명</b>의 신규 고용이 예상되며 연준 9월 회의를 앞둔 핵심 단서입니다.<!--/F--></p>
+      <p class="todaybar" id="todayNow" hidden></p>
+    </div>
+    <p class="ctx-label"><span data-l="en"><!--F:market.ctx_label_en-->Tuesday, in review<!--/F--></span><span data-l="ko"><!--F:market.ctx_label_ko-->화요일 장 돌아보기<!--/F--></span></p>
     <div class="lede-body">
       <!--R:market.lede--><p class="first" data-l="en">Yesterday was a <b>strong day, and a broad one</b>. The chip fund SOXL rose <b>19.9%</b>, the Nasdaq-100 fund QQQ rose <b>3.4%</b>, and Nvidia rose <b>2.6%</b>. Unlike the lopsided sessions of late July, the gains were not carried by one or two names.</p><p class="first" data-l="ko">어제는 <b>강했고, 고르게 오른 날</b>이었습니다. 반도체 펀드 SOXL이 <b>19.9%</b>, 나스닥100 펀드 QQQ가 <b>3.4%</b>, 엔비디아가 <b>2.6%</b> 올랐습니다. 한두 종목이 끌어올렸던 7월 말과 달리, 여러 종목이 함께 올랐습니다.</p><p class="" data-l="en">This is the mirror image of July. The chip fund lost <b>57%</b> over those four weeks while the overall market went nowhere — the same leverage that caused that fall produced yesterday's jump. It moves three times as much in both directions, every day.</p><p class="" data-l="ko">7월과 정확히 반대되는 모습입니다. 그 4주 동안 시장 전체는 제자리였는데 반도체 펀드만 <b>57%</b>를 잃었습니다. 그때 하락을 키운 바로 그 배율이 어제의 급등도 만들었습니다. 매일, 오르든 내리든 세 배씩 움직입니다.</p><p class="" data-l="en">Two things to carry into today. First, <b>expectations are set very high</b>: AMD reported record sales after the close — up 50% in a year, better than analysts expected — and its shares still fell about 8% in evening trading. Good news is no longer automatically enough. Second, <b>interest rates</b>: long-term government bonds still pay about 5.2%, and the next dated tests are the <b>jobs report on Friday</b> and the <b>inflation report on August 12</b>.</p><p class="" data-l="ko">오늘로 가져갈 두 가지가 있습니다. 첫째, <b>기대치가 매우 높아져 있습니다</b>. AMD는 장 마감 후 1년 사이 50% 늘어난 사상 최대 매출을 발표했는데도, 시간외 거래에서 주가가 약 8% 떨어졌습니다. 이제 좋은 소식만으로는 부족합니다. 둘째, <b>금리</b>입니다. 장기 국채는 여전히 약 5.2%를 주고, 다음 시험대는 <b>금요일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다.</p><!--/R-->
     </div>
@@ -1100,8 +1118,8 @@
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
       document.body.classList.add("live-on");
-      // The morning story is written pre-open; on a moving day it goes quiet-stale by
-      // 10am. This line IS the morning's story, live: what the five are doing right now.
+      // The Today prose is rewritten twice a day; this line inside the block is its
+      // live pulse between rewrites: what the five are doing right now.
       var tb = document.getElementById("todayNow");
       if (tb) {
         var NAMES = {
@@ -1124,9 +1142,9 @@
         var enB = bits("en"), koB = bits("ko");
         if (enB) {
           tb.innerHTML =
-            '<span data-l="en"><span class="tlab">Happening today:</span>' + enB +
+            '<span data-l="en"><span class="tlab">Right now:</span>' + enB +
             ' <span class="tmeta">— as of ' + stamp() + ", delayed up to 15 min</span></span>" +
-            '<span data-l="ko"><span class="tlab">오늘 시장:</span>' + koB +
+            '<span data-l="ko"><span class="tlab">지금 시장:</span>' + koB +
             ' <span class="tmeta">— ' + stamp() + " 기준, 최대 15분 지연</span></span>";
           tb.hidden = false;
         }

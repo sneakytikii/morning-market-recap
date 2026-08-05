@@ -152,19 +152,31 @@
     padding:8px 12px 0 0; font-weight:600; color:var(--ink);
   }
 
-  /* "Happening today" — a live one-liner above yesterday's story, filled from the
-     quote feed. Hidden entirely unless fresh live data exists, so the page never
-     pretends. */
-  .todaybar {
-    margin:0 0 18px; padding:12px 0; border-top:2px solid var(--rule-heavy);
-    border-bottom:1px solid var(--rule); font-size:18px; color:var(--ink-2);
+  /* The Today block — the day the reader is IN, leading the section. Prose is written
+     by the morning run and rewritten by the early-afternoon run; the live line inside
+     it fills from the quote feed and hides when there is no fresh data, so the page
+     never pretends. Yesterday's story follows below under its own context label. */
+  .today {
+    margin:0 0 24px; padding:14px 0 12px;
+    border-top:2px solid var(--rule-heavy); border-bottom:1px solid var(--rule);
   }
+  .today-label {
+    font-family:var(--f-sans); font-weight:800; font-size:15px; color:var(--ink);
+    margin:0 0 8px;
+  }
+  .today-text { margin:0; font-size:19px; color:var(--ink-2); }
+  .today-text b { color:var(--ink); font-weight:700; }
+  .todaybar { margin:10px 0 0; font-size:16.5px; color:var(--ink-2); }
   .todaybar .tlab {
     font-family:var(--f-sans); font-weight:800; color:var(--ink); margin-right:10px;
   }
   .todaybar .tq { white-space:nowrap; font-variant-numeric:tabular-nums; }
   .todaybar .tq.up { color:var(--up); } .todaybar .tq.dn { color:var(--down); }
-  .todaybar .tmeta { color:var(--ink-3); font-size:15.5px; }
+  .todaybar .tmeta { color:var(--ink-3); font-size:15px; }
+  .ctx-label {
+    font-family:var(--f-sans); font-weight:700; font-size:15px; color:var(--ink-3);
+    margin:0 0 12px;
+  }
 
   /* ---------- index strip ---------- */
   .strip { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule); }
@@ -516,7 +528,13 @@
 
   <section class="lede">
     <h2><span data-l="en">In plain English</span><span data-l="ko">쉽게 말하면</span></h2>
-    <p class="todaybar" id="todayNow" hidden></p>
+    <div class="today">
+      <p class="today-label"><span data-l="en"><!--F:market.today_label_en--><!--/F--></span><span data-l="ko"><!--F:market.today_label_ko--><!--/F--></span></p>
+      <p class="today-text" data-l="en"><!--F:market.today_en|raw--><!--/F--></p>
+      <p class="today-text" data-l="ko"><!--F:market.today_ko|raw--><!--/F--></p>
+      <p class="todaybar" id="todayNow" hidden></p>
+    </div>
+    <p class="ctx-label"><span data-l="en"><!--F:market.ctx_label_en--><!--/F--></span><span data-l="ko"><!--F:market.ctx_label_ko--><!--/F--></span></p>
     <div class="lede-body">
       <!--R:market.lede--><p class="{{cls}}" data-l="en">{{en|raw}}</p><p class="{{cls}}" data-l="ko">{{ko|raw}}</p><!--/R-->
     </div>
@@ -912,8 +930,8 @@
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
       document.body.classList.add("live-on");
-      // The morning story is written pre-open; on a moving day it goes quiet-stale by
-      // 10am. This line IS the morning's story, live: what the five are doing right now.
+      // The Today prose is rewritten twice a day; this line inside the block is its
+      // live pulse between rewrites: what the five are doing right now.
       var tb = document.getElementById("todayNow");
       if (tb) {
         var NAMES = {
@@ -936,9 +954,9 @@
         var enB = bits("en"), koB = bits("ko");
         if (enB) {
           tb.innerHTML =
-            '<span data-l="en"><span class="tlab">Happening today:</span>' + enB +
+            '<span data-l="en"><span class="tlab">Right now:</span>' + enB +
             ' <span class="tmeta">— as of ' + stamp() + ", delayed up to 15 min</span></span>" +
-            '<span data-l="ko"><span class="tlab">오늘 시장:</span>' + koB +
+            '<span data-l="ko"><span class="tlab">지금 시장:</span>' + koB +
             ' <span class="tmeta">— ' + stamp() + " 기준, 최대 15분 지연</span></span>";
           tb.hidden = false;
         }

@@ -6,9 +6,35 @@ All paths below are relative to it.
 
 ## Your job
 
-Update **only** `data/trump.json`. Do **not** touch `data/market.json`, `dashboard.html`,
-`dashboard.template.html`, anything in `site/`, or any other file. The morning job owns
-the market numbers; you own the record.
+Two things, and nothing else:
+
+1. Sweep the record and update `data/trump.json` (the rules below).
+2. Rewrite exactly three keys in `data/market.json` — the top-level `today_en`,
+   `today_ko` and `today_date` (today's ISO date) — with how TODAY's session is
+   actually going (see "The Today block"). Touch nothing else in that file: the
+   morning job owns the market numbers.
+
+Do **not** touch `dashboard.html`, `dashboard.template.html`, anything in `site/`, or
+any other file.
+
+## The Today block — the afternoon rewrite
+
+The page opens with a **Today** block whose prose the morning run wrote before the open
+(the setup, what's scheduled). You run mid-session, so replace it with the story so far,
+one paragraph, 3-5 short sentences, plain English a non-technical 65-year-old follows:
+
+1. The session's character so far, from sources published TODAY ("a quiet day", "tech
+   is giving back part of yesterday's jump").
+2. What the reader's five are doing — the chip fund SOXL, Nvidia, the Nasdaq-100 fund
+   QQQ, Costco — with rounded intraday figures from your research, worded as words
+   ("up about 3%"), never bare signs. If you cannot source an intraday figure, name
+   the direction only.
+3. One line on what is still ahead today or next ("the jobs report lands Friday").
+
+Inline `<b>` for key names/numbers, no other tags. Never predict. `today_ko` says the
+same thing in natural Korean, polite newspaper style, same `<b>` placements. A live
+price line under this prose updates itself — do not mention live prices or quote
+exact-to-the-cent prices; rounded moves are what age gracefully.
 
 ## Read these first
 

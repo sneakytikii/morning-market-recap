@@ -241,6 +241,39 @@ def derive_market(data: dict) -> dict:
     market["brief_date_ko"] = "%d년 %d월 %d일 %s · %s" % (
         today.year, today.month, today.day, DAYS_KO2[today.weekday()], kind_ko)
 
+    # The Today block leads "In plain English" with the day the reader is IN. The label
+    # comes from the build clock (same as the masthead); the prose (today_en/ko) is
+    # agent-written each run. If a run ever fails to write it, fall back to an honest
+    # generic line — never an empty box, never yesterday's story dressed as today.
+    market["today_label_en"] = "Today · %s, %s %d" % (
+        DAYS_EN2[today.weekday()], MON_EN2[today.month-1], today.day)
+    market["today_label_ko"] = "오늘 · %d월 %d일 %s" % (
+        today.month, today.day, DAYS_KO2[today.weekday()])
+    today_stale = str(market.get("today_date", ""))[:10] != today.isoformat()
+    if (today_stale
+            or not str(market.get("today_en", "")).strip()
+            or not str(market.get("today_ko", "")).strip()):
+        if today.weekday() >= 5:
+            market["today_en"] = ("Markets are closed for the weekend. "
+                                  "The week's full story is below.")
+            market["today_ko"] = "주말이라 시장은 휴장입니다. 지난 한 주의 이야기가 아래에 있습니다."
+        else:
+            market["today_en"] = ("Markets are open today. Prices on this page update "
+                                  "live through the session; the last session's full "
+                                  "story is below.")
+            market["today_ko"] = ("오늘 시장은 열려 있습니다. 이 페이지의 가격은 장중 내내 "
+                                  "자동으로 갱신되며, 직전 거래일의 자세한 이야기는 아래에 "
+                                  "있습니다.")
+
+    # The context label over yesterday's story names the session it retells, so a
+    # Wednesday page says "Tuesday, in review" and a weekend page says the week.
+    if market.get("mode") == "weekend":
+        market["ctx_label_en"] = "The week, in review"
+        market["ctx_label_ko"] = "지난 한 주 돌아보기"
+    else:
+        market["ctx_label_en"] = "%s, in review" % market.get("day_label_en", "The last session")
+        market["ctx_label_ko"] = "%s 장 돌아보기" % market.get("day_label_ko", "직전")
+
     # The methodology note names the session date; derive it so it cannot go stale.
     try:
         dt = datetime.date.fromisoformat(str(market.get("as_of", ""))[:10])
