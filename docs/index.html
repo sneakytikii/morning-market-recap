@@ -190,6 +190,10 @@
   .sec h2 { font-family:var(--f-serif); font-size:30px; font-weight:600; margin:0 0 4px; letter-spacing:var(--h-track); }
   .sec .hint { font-size:18px; color:var(--ink-2); margin:0 0 18px; }
 
+  /* Today's live move, shown under the price while quotes stream. */
+  .lchg { display:block; font-family:var(--f-sans); font-size:13.5px; font-weight:700; margin-top:2px; }
+  .lchg.up { color:var(--up); } .lchg.dn { color:var(--down); }
+
   /* ---------- board ---------- */
   table.board { width:100%; border-collapse:collapse; }
   .board thead th {
@@ -1080,12 +1084,28 @@
       for (var i = 0; i < STRIPK.length && i < strips.length; i++) {
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
+      var priceTh = document.querySelector(".board thead th:nth-child(2)");
+      if (priceTh) {
+        var the = priceTh.querySelector('[data-l="en"]'), thk = priceTh.querySelector('[data-l="ko"]');
+        if (the) the.textContent = "Price · live";
+        if (thk) thk.textContent = "시세 · 실시간";
+      }
       BOARD.forEach(function (k) {
         if (!q[k] || !q[k].v) return;
         var row = document.querySelector('tr[data-t="' + k + '"]');
         if (row) {
           var cell = row.querySelector('td[data-en="Price"]');
-          if (cell) cell.textContent = q[k].v;
+          if (cell) {
+            cell.textContent = q[k].v;
+            // Today's move, so "live" is visible rather than implied. The Tuesday
+            // column stays what it says it is.
+            if (typeof q[k].d === "number" && q[k].s) {
+              var chg = document.createElement("span");
+              chg.className = "lchg " + (q[k].d >= 0 ? "up" : "dn");
+              chg.textContent = (q[k].d >= 0 ? "▲ " : "▼ ") + q[k].s + " today";
+              cell.appendChild(chg);
+            }
+          }
         }
         var panel = document.getElementById("p-" + k);
         if (panel) {
