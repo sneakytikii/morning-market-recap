@@ -255,6 +255,16 @@ def derive_market(data: dict) -> dict:
         pos = market.get("positions", {}).get(key)
         if not pos:
             raise BuildError(f"market.positions missing {key!r}")
+        # Board cells carry ONLY the figure — "▲ +1.79%", not "▲ +1.79% on Tuesday".
+        # The column header already names the session; repeating it in all five rows is
+        # what made cells wrap to two ragged lines. Fuller phrasing stays in the panel
+        # headers, where there is room for a sentence.
+        m2 = re.search(r"[≈\s]*[+\-−]?[\d.]+%", str(pos.get("day_en", "")))
+        pos["day_cell"] = (("≈ " if "≈" in str(pos.get("day_en","")) else "") + m2.group(0).strip().lstrip("≈ ").strip()) if m2 else str(pos.get("day_en",""))
+        if str(pos.get("day_dir")) == "fl" and not m2:
+            pos["day_cell"] = "flat"
+        m3 = re.search(r"(≈\s*)?[+\-−]?[\d.]+%", str(pos.get("week_en", "")))
+        pos["week_cell"] = m3.group(0).strip() if m3 else str(pos.get("week_en",""))
         derive_metrics(pos, key)
         # The board's drawdown column and its panel-fact twin follow the derived value
         # whenever the 1y-high constant exists — one source, not two.

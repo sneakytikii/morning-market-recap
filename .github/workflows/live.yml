@@ -1,6 +1,6 @@
 name: Live quotes
 
-# Fetches delayed quotes every ~10 minutes during US market hours and force-pushes ONE
+# Fetches delayed quotes every ~5 minutes during US market hours and force-pushes ONE
 # small file to the `live` branch. The page reads it from raw.githubusercontent.com
 # (which sends CORS *), so this never triggers a Pages rebuild and never grows history.
 #
@@ -9,8 +9,8 @@ name: Live quotes
 
 on:
   schedule:
-    - cron: "31/10 13 * * 1-5"
-    - cron: "1/10 14-19 * * 1-5"
+    - cron: "31/5 13 * * 1-5"
+    - cron: "1/5 14-19 * * 1-5"
     - cron: "1 20 * * 1-5"      # one last fetch just after the close
   workflow_dispatch:
 

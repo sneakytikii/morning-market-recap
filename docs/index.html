@@ -199,7 +199,18 @@
   .board thead th {
     text-align:right; font-size:14px; color:var(--ink-3); font-weight:700;
     padding:0 16px 10px; border-bottom:2px solid var(--rule-heavy); vertical-align:bottom;
+    white-space:nowrap;
   }
+  /* Column plan: name breathes, figures sit tight and right, the take gets real room.
+     Numeric cells never wrap — the figure IS the cell. */
+  .board td:not(.l) { white-space:nowrap; }
+  .board thead th:last-child, .board td:last-child { text-align:left; }
+  .board col.c-name { width:24%; }
+  .board col.c-price { width:13%; }
+  .board col.c-day { width:12%; }
+  .board col.c-week { width:13%; }
+  .board col.c-dd { width:13%; }
+  .board col.c-take { width:25%; }
   :root[data-lang="en"] .board thead th { font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
   .board thead th.l { text-align:left; padding-left:0; }
   .board thead th:last-child { padding-right:0; }
@@ -543,13 +554,14 @@
     <p class="hint"><span data-l="en">Tap any row to read the full story for that one.</span><span data-l="ko">각 줄을 누르면 그 종목의 자세한 설명을 볼 수 있습니다.</span></p>
 
     <table class="board" aria-label="The five positions, side by side">
+      <colgroup><col class="c-name"><col class="c-price"><col class="c-day"><col class="c-week"><col class="c-dd"><col class="c-take"></colgroup>
       <thead>
         <tr>
           <th scope="col" class="l"><span data-l="en">Name</span><span data-l="ko">종목</span></th>
           <th scope="col"><span data-l="en">Price</span><span data-l="ko">종가</span></th>
           <th scope="col"><span data-l="en"><!--F:market.day_label_en-->Tuesday<!--/F--></span><span data-l="ko"><!--F:market.day_label_ko-->화요일<!--/F--></span></th>
           <th scope="col"><span data-l="en">This week</span><span data-l="ko">이번 주</span></th>
-          <th scope="col"><span data-l="en">Below 1-year high</span><span data-l="ko">1년 최고가 대비</span></th>
+          <th scope="col"><span data-l="en">Below 1-yr high</span><span data-l="ko">고점 대비</span></th>
           <th scope="col" class="l"><span data-l="en">Our take</span><span data-l="ko">총평</span></th>
         </tr>
       </thead>
@@ -557,36 +569,36 @@
         <!--R:market.board--><tr data-t="spx" aria-current="true">
           <td class="l"><div class="tkr">SPX</div><div class="co" data-l="en">The whole US market</div><div class="co" data-l="ko">미국 시장 전체</div></td>
           <td data-en="Price" data-ko="종가">7,736.52</td>
-          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> <span data-l="en">+1.79% on Tuesday</span><span data-l="ko">화요일 +1.79%</span></td>
-          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> <span data-l="en">≈ +3.30% so far</span><span data-l="ko">지금까지 ≈ +3.30%</span></td>
+          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> +1.79%</td>
+          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> ≈ +3.30%</td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="fl">≈ 0.0%</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip c-neu" data-l="en">Record close — steady</span><span class="chip c-neu" data-l="ko">사상 최고 종가 · 안정</span></td>
         </tr><tr data-t="qqq">
           <td class="l"><div class="tkr">QQQ</div><div class="co" data-l="en">The 100 biggest tech companies</div><div class="co" data-l="ko">가장 큰 기술 기업 100개</div></td>
           <td data-en="Price" data-ko="종가">$723.85</td>
-          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> <span data-l="en">+3.40% on Tuesday</span><span data-l="ko">화요일 +3.40%</span></td>
-          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> <span data-l="en">≈ +5.21% so far</span><span data-l="ko">지금까지 ≈ +5.21%</span></td>
+          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> +3.40%</td>
+          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> ≈ +5.21%</td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="dn"><span class="arw">▼</span> ≈ 3.3%</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip c-neu" data-l="en">Strong two-day rebound</span><span class="chip c-neu" data-l="ko">이틀 연속 강한 반등</span></td>
         </tr><tr data-t="nvda">
           <td class="l"><div class="tkr">NVDA</div><div class="co" data-l="en">Nvidia — makes AI chips</div><div class="co" data-l="ko">엔비디아 — AI 반도체 제조</div></td>
           <td data-en="Price" data-ko="종가">$211.94</td>
-          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> <span data-l="en">+2.56% on Tuesday</span><span data-l="ko">화요일 +2.56%</span></td>
-          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> <span data-l="en">≈ +5.57% so far</span><span data-l="ko">지금까지 ≈ +5.57%</span></td>
+          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> +2.56%</td>
+          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> ≈ +5.57%</td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="dn"><span class="arw">▼</span> ≈ 10.4%</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip c-cau" data-l="en">Up 4 days — results Aug 26</span><span class="chip c-cau" data-l="ko">나흘 연속 상승 · 실적 8월 26일</span></td>
         </tr><tr data-t="soxl">
           <td class="l"><div class="tkr">SOXL</div><div class="co" data-l="en">Triple-risk chip fund</div><div class="co" data-l="ko">3배 위험 반도체 펀드</div></td>
           <td data-en="Price" data-ko="종가">$139.90</td>
-          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> <span data-l="en">+19.87% on Tuesday</span><span data-l="ko">화요일 +19.87%</span></td>
-          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> <span data-l="en">≈ +21.95% so far</span><span data-l="ko">지금까지 ≈ +21.95%</span></td>
+          <td data-en="Tuesday" data-ko="화요일" class="up"><span class="arw">▲</span> +19.87%</td>
+          <td data-en="This week" data-ko="이번 주" class="up"><span class="arw">▲</span> ≈ +21.95%</td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="dn"><span class="arw">▼</span> ≈ 53.7%</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip c-risk" data-l="en">Danger — read this one</span><span class="chip c-risk" data-l="ko">위험 — 꼭 읽어보세요</span></td>
         </tr><tr data-t="cost">
           <td class="l"><div class="tkr">COST</div><div class="co" data-l="en">Costco</div><div class="co" data-l="ko">코스트코</div></td>
           <td data-en="Price" data-ko="종가">$947.85</td>
-          <td data-en="Tuesday" data-ko="화요일" class="dn"><span class="arw">▼</span> <span data-l="en">−0.65% on Tuesday</span><span data-l="ko">화요일 −0.65%</span></td>
-          <td data-en="This week" data-ko="이번 주" class="dn"><span class="arw">▼</span> <span data-l="en">≈ 0.42% so far</span><span data-l="ko">지금까지 ≈ 0.42%</span></td>
+          <td data-en="Tuesday" data-ko="화요일" class="dn"><span class="arw">▼</span> −0.65%</td>
+          <td data-en="This week" data-ko="이번 주" class="dn"><span class="arw">▼</span> ≈ 0.42%</td>
           <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="dn"><span class="arw">▼</span> ≈ 13.6%</td>
           <td data-en="Our take" data-ko="총평" class="l"><span class="chip c-neu" data-l="en">July sales due Wednesday</span><span class="chip c-neu" data-l="ko">7월 매출 수요일 발표</span></td>
         </tr><!--/R-->
