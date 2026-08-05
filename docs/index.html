@@ -204,7 +204,10 @@
   /* Column plan: name breathes, figures sit tight and right, the take gets real room.
      Numeric cells never wrap — the figure IS the cell. */
   .board td:not(.l) { white-space:nowrap; }
-  .board thead th:last-child, .board td:last-child { text-align:left; }
+  /* Every data column is right-aligned; leaving the take column left-aligned parked
+     it in the middle of its slot with dead space on the right. Right-align it like the
+     rest — the table gets a flush right edge and one consistent rhythm. */
+  .board thead th:last-child, .board td:last-child { text-align:right; }
   .board col.c-name { width:24%; }
   .board col.c-price { width:13%; }
   .board col.c-day { width:12%; }
@@ -222,6 +225,7 @@
     font-variant-numeric:tabular-nums; font-size:19px; font-weight:600;
   }
   .board td.l { text-align:left; padding-left:0; }
+  .board td.l:last-child { text-align:right; }  /* the take cell follows the data columns */
   .board td:last-child { padding-right:0; }
   .board .tkr { font-family:var(--f-serif); font-size:25px; font-weight:600; }
   .board .co { font-family:var(--f-sans); font-size:15px; font-weight:500; color:var(--ink-2); font-variant-numeric:normal; margin-top:2px; line-height:1.4; }
