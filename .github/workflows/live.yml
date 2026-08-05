@@ -1,0 +1,42 @@
+name: Live quotes
+
+# Fetches delayed quotes every ~10 minutes during US market hours and force-pushes ONE
+# small file to the `live` branch. The page reads it from raw.githubusercontent.com
+# (which sends CORS *), so this never triggers a Pages rebuild and never grows history.
+#
+# No secrets: the quote endpoint needs no key. Times are UTC; 13:30–20:00 UTC covers the
+# 9:30–16:00 New York session year-round with slack for DST.
+
+on:
+  schedule:
+    - cron: "31/10 13 * * 1-5"
+    - cron: "1/10 14-19 * * 1-5"
+    - cron: "1 20 * * 1-5"      # one last fetch just after the close
+  workflow_dispatch:
+
+concurrency:
+  group: live-quotes
+  cancel-in-progress: true
+
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch quotes
+        run: python3 scripts/fetch_live.py
+
+      - name: Push to the live branch
+        run: |
+          git config user.name  "live-quotes-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan live-tmp
+          git rm -rf --cached . -q
+          git add -f live.json
+          git commit -q -m "quotes $(date -u '+%H:%M UTC')"
+          git push -f origin live-tmp:live
+          echo "pushed"
