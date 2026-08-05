@@ -23,3 +23,8 @@ __pycache__/
 
 # Claude Code local state
 .claude/
+
+# GitHub Actions workflow — kept locally in case the cloud path is ever wanted,
+# but not pushed: doing so needs a token with the `workflow` scope, and the schedule
+# currently runs on the Mac instead.
+.github/
