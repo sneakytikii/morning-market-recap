@@ -210,6 +210,9 @@
   .c-neu { background:var(--accent-soft); color:var(--accent); }
   .c-cau { background:var(--brass-soft); color:var(--brass); }
   .c-risk { background:var(--down-soft); color:var(--down); }
+  /* On the highlighted row the row colour IS accent-soft, so a c-neu chip dissolves
+     into it and its text looks indented and ragged against the other rows' chips. */
+  tr[aria-current="true"] .chip.c-neu { background:var(--surface); }
 
   .key { display:flex; flex-wrap:wrap; gap:8px 26px; padding:14px 0 0; font-size:16px; color:var(--ink-2); }
   .key b { color:var(--ink); }
