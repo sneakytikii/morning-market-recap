@@ -417,6 +417,8 @@
        is repeated in the panel head two taps away, so drop that line here and save
        five rows of scroll without losing anything. */
     .board td[data-en="Price"] { display:none; }
+    /* ...except when live quotes are streaming — then the price row IS the news. */
+    .live-on .board td[data-en="Price"] { display:flex; }
     .lg-e { grid-template-columns:1fr; gap:6px; }
     .lg-d { padding-top:0; }
     .potus { width:52px; height:52px; }
@@ -1060,6 +1062,7 @@
       for (var i = 0; i < STRIPK.length && i < strips.length; i++) {
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
+      document.body.classList.add("live-on");
       var priceTh = document.querySelector(".board thead th:nth-child(2)");
       if (priceTh) {
         var the = priceTh.querySelector('[data-l="en"]'), thk = priceTh.querySelector('[data-l="ko"]');
