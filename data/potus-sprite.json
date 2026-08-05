@@ -1,0 +1,49 @@
+{
+  "_comment": "Section-marker character for the tracker, drawn in the same 28x28 chunky idiom as Pancho so the two sit together as peers. Deliberately plain and neutral — a small pixel portrait, not a caricature. It never speaks; per the corpus rules the character is a marker and guide only, and no words are ever attributed to the real person.",
+  "palette": {
+    ".": null,
+    "H": "#E3C173",
+    "h": "#C0A055",
+    "S": "#F2CBAB",
+    "s": "#D8A583",
+    "E": "#241812",
+    "M": "#A2645A",
+    "N": "#1E2C48",
+    "n": "#15203A",
+    "W": "#F4F6F8",
+    "R": "#B22A32",
+    "r": "#8A1D25"
+  },
+  "frames": {
+    "idle": [
+      "............................",
+      "........HHHHHHHHHHHH........",
+      "......HHHHHHHHHHHHHHHH......",
+      ".....HHHHHHHHHHHHHHHHHH.....",
+      "....HHHHHHHHHHHHHHHHHHHH....",
+      "....HHHhhhhhhhhhhhhhhHHH....",
+      "....HHSSSSSSSSSSSSSSSSHH....",
+      "....HSSSSSSSSSSSSSSSSSSH....",
+      "....SSSSSSSSSSSSSSSSSSSS....",
+      "....SSSEESSSSSSSSEESSSSS....",
+      "....SSSEESSSSSSSSEESSSSS....",
+      "....SSSSSSSSSSSSSSSSSSSS....",
+      "....SSSSSSSSSSSSSSSSSSSS....",
+      "....SSSSSSSSsssSSSSSSSSS....",
+      "....SSSSSSSSsssSSSSSSSSS....",
+      "....SSSSSSSSSSSSSSSSSSSS....",
+      ".....SSSSSMMMMMMSSSSSSS.....",
+      ".....SSSSSSSSSSSSSSSSS......",
+      "......SSSSSSSSSSSSSSS.......",
+      ".......WWWWWWWWWWWWWW.......",
+      ".....NNNWWWWWWWWWWWWNNN.....",
+      "....NNNNNNWWWRRWWWNNNNNN....",
+      "....NNNNNNNWWRRWWNNNNNNN....",
+      "....NNNNNNNNWRRWNNNNNNNN....",
+      "....NNNNNNNNWRRWNNNNNNNN....",
+      "....NNNNNNNNNRRNNNNNNNNN....",
+      "....nNNNNNNNNNNNNNNNNNNn....",
+      "............................"
+    ]
+  }
+}

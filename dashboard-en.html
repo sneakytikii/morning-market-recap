@@ -1,0 +1,827 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Recap — Friday July 31, 2026 Close</title>
+<style>
+  :root {
+    --bg:#F7F8F9; --surface:#FFFFFF; --sunken:#EDEFF2;
+    --ink:#10151B; --ink-2:#3C4653; --ink-3:#56616F;
+    --rule:#D5D9DE; --rule-2:#AEB6C0; --rule-heavy:#10151B;
+    --accent:#1F4E79; --accent-soft:#E3EBF3;
+    --brass:#75530F; --brass-soft:#F6EEDA;
+    --up:#06603E; --up-soft:#DCEDE5;
+    --down:#A32A20; --down-soft:#F9E1DE;
+    --sh:0 1px 2px rgba(16,21,27,.05);
+    --float-sh:0 8px 26px rgba(16,21,27,.20);
+    --sprite-sh:0 4px 8px rgba(16,21,27,.24);
+    --f-serif:"Iowan Old Style","Source Serif 4",Charter,Georgia,"Times New Roman",serif;
+    --f-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --f-mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+    --z-cue:80;
+  }
+  @media (prefers-color-scheme:dark) {
+    :root {
+      --bg:#0C1116; --surface:#141A21; --sunken:#10161C;
+      --ink:#F1F4F7; --ink-2:#BAC3CD; --ink-3:#8D98A5;
+      --rule:#262E37; --rule-2:#3D4854; --rule-heavy:#8D98A5;
+      --accent:#8FB8E8; --accent-soft:#17222E;
+      --brass:#D9AF61; --brass-soft:#241E12;
+      --up:#4ECB99; --up-soft:#0E241C;
+      --down:#F0897C; --down-soft:#2A1714;
+      --sh:0 1px 2px rgba(0,0,0,.3);
+      --float-sh:0 8px 26px rgba(0,0,0,.6);
+      --sprite-sh:0 4px 8px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#0C1116; --surface:#141A21; --sunken:#10161C;
+    --ink:#F1F4F7; --ink-2:#BAC3CD; --ink-3:#8D98A5;
+    --rule:#262E37; --rule-2:#3D4854; --rule-heavy:#8D98A5;
+    --accent:#8FB8E8; --accent-soft:#17222E;
+    --brass:#D9AF61; --brass-soft:#241E12;
+    --up:#4ECB99; --up-soft:#0E241C;
+    --down:#F0897C; --down-soft:#2A1714;
+    --sh:0 1px 2px rgba(0,0,0,.3);
+    --float-sh:0 8px 26px rgba(0,0,0,.6);
+    --sprite-sh:0 4px 8px rgba(0,0,0,.55);
+  }
+  :root[data-theme="light"] {
+    --bg:#F7F8F9; --surface:#FFFFFF; --sunken:#EDEFF2;
+    --ink:#10151B; --ink-2:#3C4653; --ink-3:#56616F;
+    --rule:#D5D9DE; --rule-2:#AEB6C0; --rule-heavy:#10151B;
+    --accent:#1F4E79; --accent-soft:#E3EBF3;
+    --brass:#75530F; --brass-soft:#F6EEDA;
+    --up:#06603E; --up-soft:#DCEDE5;
+    --down:#A32A20; --down-soft:#F9E1DE;
+    --sh:0 1px 2px rgba(16,21,27,.05);
+    --float-sh:0 8px 26px rgba(16,21,27,.20);
+    --sprite-sh:0 4px 8px rgba(16,21,27,.24);
+  }
+
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--f-sans); font-size:18px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:1220px; margin:0 auto; padding:0 26px; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  :focus-visible { outline:3px solid var(--accent); outline-offset:2px; border-radius:3px; }
+  .up { color:var(--up); } .dn { color:var(--down); } .fl { color:var(--ink-2); }
+  h1,h2,h3 { text-wrap:balance; }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom:4px solid var(--rule-heavy); margin-bottom:0; }
+  .masthead .inner { max-width:1220px; margin:0 auto; padding:30px 26px 14px; }
+  .mast-row { display:flex; align-items:flex-end; justify-content:space-between; gap:26px; margin-bottom:12px; }
+  .masthead h1 {
+    font-family:var(--f-serif); font-size:44px; font-weight:600;
+    letter-spacing:-.025em; margin:0; line-height:1.02;
+  }
+  .dog-mast {
+    width:80px; height:80px; flex:0 0 auto; display:block; margin-bottom:-4px;
+    image-rendering:crisp-edges; image-rendering:pixelated;
+    filter:drop-shadow(var(--sprite-sh));
+    animation:bob 3.6s ease-in-out infinite; transform-origin:50% 100%;
+  }
+  .dateline {
+    display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px;
+    padding-top:12px; border-top:1px solid var(--rule);
+    font-size:13.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-3);
+  }
+  .dateline .status { display:inline-flex; align-items:center; gap:8px; color:var(--ink-2); }
+  .dateline .status::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--ink-3); }
+  .dateline .norm { text-transform:none; letter-spacing:0; font-weight:500; font-size:15px; color:var(--ink-2); }
+  .dateline .norm b { color:var(--ink); font-weight:700; }
+
+  /* ---------- lede ---------- */
+  .lede { padding:30px 0 26px; border-bottom:1px solid var(--rule); }
+  .lede h2 { font-family:var(--f-serif); font-size:30px; font-weight:600; margin:0 0 16px; letter-spacing:-.015em; }
+  .lede-body { columns:2; column-gap:44px; column-rule:1px solid var(--rule); }
+  .lede p { margin:0 0 15px; font-size:18.5px; color:var(--ink-2); text-wrap:pretty; break-inside:avoid; }
+  .lede p:last-child { margin-bottom:0; }
+  .lede b { color:var(--ink); font-weight:700; }
+  .lede p.first::first-letter {
+    font-family:var(--f-serif); float:left; font-size:60px; line-height:.82;
+    padding:6px 10px 0 0; font-weight:600; color:var(--ink);
+  }
+
+  /* ---------- index strip ---------- */
+  .strip { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule); }
+  .strip > div { padding:16px 18px; border-left:1px solid var(--rule); }
+  .strip > div:first-child { border-left:0; padding-left:0; }
+  .strip .k { font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:700; }
+  .strip .v { font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:23px; font-weight:600; margin-top:5px; letter-spacing:-.03em; }
+  .strip .c { font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:15px; font-weight:600; }
+
+  /* ---------- section heads ---------- */
+  .sec { margin:38px 0 0; }
+  .sec h2 { font-family:var(--f-serif); font-size:29px; font-weight:600; margin:0 0 4px; letter-spacing:-.015em; }
+  .sec .hint { font-size:16.5px; color:var(--ink-2); margin:0 0 18px; }
+
+  /* ---------- board ---------- */
+  table.board { width:100%; border-collapse:collapse; }
+  .board thead th {
+    text-align:right; font-size:12.5px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-3); font-weight:700; padding:0 16px 10px;
+    border-bottom:2px solid var(--rule-heavy); vertical-align:bottom;
+  }
+  .board thead th.l { text-align:left; padding-left:0; }
+  .board thead th:last-child { padding-right:0; }
+  .board tbody tr { border-bottom:1px solid var(--rule); cursor:pointer; transition:background .15s ease; }
+  .board tbody tr:hover { background:var(--sunken); }
+  .board tbody tr[aria-current="true"] { background:var(--accent-soft); }
+  .board td {
+    padding:17px 16px; text-align:right; font-family:var(--f-mono);
+    font-variant-numeric:tabular-nums; font-size:19px; font-weight:600;
+  }
+  .board td.l { text-align:left; padding-left:0; }
+  .board td:last-child { padding-right:0; }
+  .board .tkr { font-family:var(--f-serif); font-size:25px; font-weight:600; letter-spacing:-.01em; }
+  .board .co { font-family:var(--f-sans); font-size:15px; font-weight:500; color:var(--ink-2); font-variant-numeric:normal; margin-top:1px; }
+  .arw { font-family:var(--f-sans); }
+
+  .chip {
+    display:inline-block; padding:5px 13px; border-radius:3px; font-family:var(--f-sans);
+    font-size:14px; font-weight:700; letter-spacing:.02em;
+  }
+  .c-neu { background:var(--accent-soft); color:var(--accent); }
+  .c-cau { background:var(--brass-soft); color:var(--brass); }
+  .c-risk { background:var(--down-soft); color:var(--down); }
+
+  .key { display:flex; flex-wrap:wrap; gap:8px 26px; padding:14px 0 0; font-size:16px; color:var(--ink-2); }
+  .key b { color:var(--ink); }
+
+  /* ---------- columns ---------- */
+  .cols { display:grid; grid-template-columns:1fr 336px; gap:34px; margin:34px 0 0; align-items:start; }
+
+  /* ---------- detail ---------- */
+  .detail { border:1px solid var(--rule); border-radius:4px; background:var(--surface); overflow:hidden; box-shadow:var(--sh); }
+  .tabs { display:flex; background:var(--sunken); border-bottom:1px solid var(--rule); }
+  .tabs button {
+    flex:1 1 0; appearance:none; background:none; border:0; cursor:pointer;
+    padding:16px 8px; min-height:58px; font-family:var(--f-mono); font-size:18px;
+    font-weight:700; letter-spacing:.02em; color:var(--ink-2);
+    border-bottom:4px solid transparent; transition:color .15s ease, background .15s ease;
+  }
+  .tabs button:hover { color:var(--ink); background:var(--surface); }
+  .tabs button[aria-selected="true"] { color:var(--accent); border-bottom-color:var(--accent); background:var(--surface); }
+  .tabs button:focus-visible { outline-offset:-4px; }
+
+  .panel { padding:26px 28px 28px; }
+  .panel[hidden] { display:none; }
+  .p-head { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; padding-bottom:14px; border-bottom:2px solid var(--rule-heavy); }
+  .p-head h2 { font-family:var(--f-serif); font-size:28px; font-weight:600; margin:0; letter-spacing:-.015em; }
+  .p-head .px { font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:25px; font-weight:600; margin-left:auto; letter-spacing:-.02em; }
+
+  .plain { font-size:19px; color:var(--ink-2); margin:18px 0 20px; max-width:70ch; text-wrap:pretty; }
+  .plain b { color:var(--ink); font-weight:700; }
+
+  .facts { display:flex; flex-wrap:wrap; gap:0; margin-bottom:24px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .fact { font-size:16px; padding:11px 20px 11px 0; margin-right:20px; border-right:1px solid var(--rule); font-weight:600; }
+  .fact:last-child { border-right:0; margin-right:0; }
+  .fact span { display:block; color:var(--ink-3); font-weight:600; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; }
+
+  .lab { font-family:var(--f-serif); font-size:20px; font-weight:600; color:var(--ink); margin:0 0 10px; letter-spacing:-.01em; }
+  ul.nw { list-style:none; margin:0 0 26px; padding:0; }
+  ul.nw li { display:flex; gap:18px; padding:12px 0; border-bottom:1px solid var(--rule); font-size:17.5px; }
+  ul.nw li:last-child { border-bottom:0; }
+  ul.nw .dt { flex:0 0 82px; font-family:var(--f-mono); font-size:14px; font-weight:700; color:var(--ink-3); padding-top:4px; letter-spacing:.02em; }
+  ul.nw .tx { color:var(--ink-2); text-wrap:pretty; }
+  ul.nw .tx b { color:var(--ink); font-weight:700; }
+
+  .bb { display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:22px; border-top:1px solid var(--rule); }
+  .bx { padding:16px 22px 16px 0; }
+  .bx + .bx { padding-left:26px; border-left:1px solid var(--rule); padding-right:0; }
+  .bx h3 { font-family:var(--f-serif); margin:0 0 6px; font-size:18px; font-weight:600; }
+  .bull h3 { color:var(--up); } .bear h3 { color:var(--down); }
+  .bx p { margin:0; color:var(--ink-2); font-size:17px; }
+
+  .verdict { font-size:18px; color:var(--ink-2); border-top:2px solid var(--rule-heavy); padding-top:16px; text-wrap:pretty; }
+  .verdict b { color:var(--ink); font-weight:700; }
+
+  /* ---------- Pancho, in flow ---------- */
+  .dog-strip { display:flex; align-items:flex-end; gap:16px; padding:18px 28px; background:var(--sunken); border-top:1px solid var(--rule); }
+  .dog-btn { appearance:none; background:none; border:0; padding:0; cursor:pointer; line-height:0; border-radius:8px; flex:0 0 auto; }
+  .dog-cv { width:64px; height:64px; display:block; image-rendering:crisp-edges; image-rendering:pixelated;
+            filter:drop-shadow(var(--sprite-sh)); animation:bob 3.6s ease-in-out infinite; transform-origin:50% 100%; }
+  .dog-btn:hover .dog-cv { animation:hop .5s ease-in-out; }
+  .bub {
+    position:relative; flex:0 1 auto; max-width:58ch; background:var(--surface);
+    border:1px solid var(--rule-2); border-radius:10px; padding:13px 17px;
+    font-size:17px; color:var(--ink); box-shadow:var(--sh);
+    transition:opacity .18s ease, transform .18s ease;
+  }
+  .bub.hide { opacity:0; transform:translateY(5px); pointer-events:none; }
+  .bub .who { display:block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-bottom:4px; }
+  .bub .tl { position:absolute; left:-7px; bottom:20px; width:12px; height:12px; background:var(--surface);
+             border-left:1px solid var(--rule-2); border-bottom:1px solid var(--rule-2); transform:rotate(45deg); }
+  @keyframes bob { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-3px);} }
+  @keyframes hop { 0%{transform:translateY(0);} 30%{transform:translateY(-9px) rotate(-4deg);} 100%{transform:translateY(0);} }
+
+  .dog-cue {
+    position:fixed; right:24px; bottom:24px; z-index:var(--z-cue);
+    display:flex; align-items:center; gap:10px;
+    background:var(--surface); border:1px solid var(--rule-2); border-radius:100px;
+    padding:8px 20px 8px 10px; min-height:56px; font-family:var(--f-sans);
+    font-size:16.5px; font-weight:700; color:var(--ink-2); cursor:pointer;
+    box-shadow:var(--float-sh); animation:cue-in .2s ease-out;
+  }
+  .dog-cue[hidden] { display:none; }
+  .dog-cue:hover { color:var(--ink); border-color:var(--ink-3); }
+  .cue-cv { width:38px; height:38px; display:block; image-rendering:crisp-edges; image-rendering:pixelated; }
+  @keyframes cue-in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+
+  /* ---------- rail ---------- */
+  .rail { display:flex; flex-direction:column; gap:30px; position:sticky; top:22px; }
+  .block h3 {
+    font-family:var(--f-serif); font-size:21px; font-weight:600; margin:0 0 12px;
+    padding-bottom:9px; border-bottom:2px solid var(--rule-heavy); letter-spacing:-.01em;
+  }
+  .block p { margin:0 0 13px; font-size:16.5px; color:var(--ink-2); text-wrap:pretty; }
+  .block p:last-child { margin-bottom:0; }
+  .block b { color:var(--ink); font-weight:700; }
+  .notice { border:1px solid var(--brass); border-radius:4px; background:var(--brass-soft); padding:20px 22px; }
+  .notice h3 { color:var(--brass); border-bottom-color:var(--brass); }
+  .ladder { margin:14px 0; border-top:1px solid var(--rule); }
+  .ladder div { display:flex; justify-content:space-between; gap:12px; align-items:baseline; padding:8px 0; border-bottom:1px solid var(--rule);
+                font-family:var(--f-mono); font-size:16px; font-weight:700; }
+  .ladder span { font-family:var(--f-sans); font-size:14.5px; font-weight:500; color:var(--ink-2); }
+  .ev { display:grid; grid-template-columns:108px 1fr; gap:14px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:16.5px; align-items:baseline; }
+  .ev:last-child { border-bottom:0; }
+  .ev .w { font-family:var(--f-mono); font-size:14.5px; font-weight:700; color:var(--ink-2); }
+  .ev .e b { font-weight:700; display:block; }
+  .ev .e span { color:var(--ink-2); font-size:15.5px; }
+  .ev.hot .w { color:var(--down); }
+
+  /* ---------- notes ---------- */
+  details.notes { border-top:2px solid var(--rule-heavy); margin:44px 0 40px; }
+  details.notes > summary {
+    cursor:pointer; padding:18px 0; font-size:17.5px; font-weight:700; color:var(--ink-2);
+    list-style:none; display:flex; align-items:center; gap:11px; min-height:56px;
+  }
+  details.notes > summary::-webkit-details-marker { display:none; }
+  details.notes > summary::before { content:"▸"; color:var(--ink-3); }
+  details.notes[open] > summary::before { content:"▾"; }
+  details.notes > summary:hover { color:var(--ink); }
+  .notes-in { padding-bottom:26px; font-size:16.5px; color:var(--ink-2); }
+  .notes-in h4 { font-family:var(--f-serif); font-size:18px; color:var(--ink); margin:0 0 7px; font-weight:600; }
+  .notes-in p { margin:0 0 18px; max-width:78ch; text-wrap:pretty; }
+  .notes-in ul { margin:0; padding-left:20px; columns:2; column-gap:36px; }
+  .notes-in li { margin-bottom:6px; break-inside:avoid; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1120px) {
+    .cols { grid-template-columns:1fr; gap:34px; }
+    .rail { position:static; }
+    .lede-body { columns:1; }
+  }
+  @media (max-width:880px) {
+    body { font-size:17px; }
+    .masthead h1 { font-size:34px; }
+    .dog-mast { width:62px; height:62px; }
+    .strip { grid-template-columns:repeat(3,1fr); }
+    .strip > div { border-left:1px solid var(--rule); padding-left:18px; }
+    .strip > div:nth-child(3n+1) { border-left:0; padding-left:0; }
+    .bb { grid-template-columns:1fr; }
+    .bx + .bx { padding-left:0; border-left:0; border-top:1px solid var(--rule); }
+    .notes-in ul { columns:1; }
+    .tabs button { font-size:16px; }
+    .board thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    .board, .board tbody, .board tr, .board td { display:block; width:100%; }
+    .board tbody tr { padding:8px 0 12px; }
+    .board td { display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding:8px 0; font-size:18px; }
+    .board td.l { display:block; padding-top:12px; }
+    .board td[data-label]::before {
+      content:attr(data-label); font-family:var(--f-sans); font-size:15.5px;
+      font-weight:600; color:var(--ink-2); font-variant-numeric:normal;
+    }
+    .facts { display:block; }
+    .fact { display:inline-block; border-right:0; padding:8px 22px 8px 0; }
+  }
+  @media (max-width:460px) {
+    .mast-row { gap:14px; }
+    .masthead h1 { font-size:29px; }
+    .dog-mast { width:52px; height:52px; }
+    .strip { grid-template-columns:repeat(2,1fr); }
+    .strip > div:nth-child(3n+1) { border-left:1px solid var(--rule); padding-left:18px; }
+    .strip > div:nth-child(odd) { border-left:0; padding-left:0; }
+    .panel { padding:20px 18px 22px; }
+    .dog-strip { padding:14px 18px; gap:12px; }
+    .dog-cv { width:56px; height:56px; }
+    .bub { font-size:16px; }
+    .dog-cue { right:12px; bottom:12px; font-size:16px; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    *, .dog-cv, .dog-cue { transition:none !important; animation:none !important; }
+  }
+</style>
+
+<header class="masthead">
+  <div class="inner">
+    <div class="mast-row">
+      <h1>Morning Market Recap</h1>
+      <canvas class="dog-mast" id="dogMast" width="28" height="28" role="img" aria-label="Pancho, a pixel-art apricot goldendoodle in a teal harness"></canvas>
+    </div>
+    <div class="dateline">
+      <span>Friday, July&nbsp;31, 2026 &middot; Closing Report</span>
+      <span class="status">Markets closed</span>
+      <span class="norm">Trading restarts <b>Monday, 9:30&nbsp;AM New York time</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="lede">
+    <h2>In plain English</h2>
+    <div class="lede-body">
+      <p class="first">Friday was a <b>good day overall, but a lopsided one</b>. Amazon jumped <b>15%</b> after a very strong quarter, while Apple fell <b>7%</b> after a weak one. The market went up because the winners were bigger than the losers — not because everything went up.</p>
+      <p>The bigger story of July was <b>computer-chip stocks falling hard</b>. The overall market ended the month roughly flat, but your chip fund SOXL lost <b>57%</b> of its value in those four weeks.</p>
+      <p>What matters now is <b>interest rates</b>, not company profits. The Federal Reserve left rates unchanged on July 29 and signalled it is in no hurry to cut them. When rates on government bonds go up — and the 30-year bond just hit its highest level in 19 years — investors get a safe alternative to shares, which pulls share prices down.</p>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Overall market numbers">
+    <div><div class="k">S&amp;P 500</div><div class="v">7,489.72</div><div class="c up">▲ +0.70%</div></div>
+    <div><div class="k">Nasdaq</div><div class="v">25,373.85</div><div class="c up">▲ +1.00%</div></div>
+    <div><div class="k">Dow Jones</div><div class="v">52,485.03</div><div class="c up">▲ +0.53%</div></div>
+    <div><div class="k">Fear gauge</div><div class="v">15.99</div><div class="c fl">Calm</div></div>
+    <div><div class="k">10-Year bond</div><div class="v">4.73%</div><div class="c dn">1-year high</div></div>
+    <div><div class="k">30-Year bond</div><div class="v">5.21%</div><div class="c dn">19-year high</div></div>
+  </section>
+
+  <section class="sec">
+    <h2>Your five positions</h2>
+    <p class="hint">Tap any row to read the full story for that one.</p>
+
+    <table class="board">
+      <thead>
+        <tr>
+          <th scope="col" class="l">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Friday</th>
+          <th scope="col">This week</th>
+          <th scope="col">Below 1-year high</th>
+          <th scope="col" class="l">Our take</th>
+        </tr>
+      </thead>
+      <tbody id="boardBody">
+        <tr data-t="spx" aria-current="true">
+          <td class="l"><div class="tkr">SPX</div><div class="co">The whole US market</div></td>
+          <td data-label="Price">7,489.72</td>
+          <td data-label="Friday" class="up"><span class="arw">▲</span> +0.70%</td>
+          <td data-label="This week" class="up"><span class="arw">▲</span> about +1%</td>
+          <td data-label="Below 1-year high" class="fl">—</td>
+          <td data-label="Our take" class="l"><span class="chip c-neu">Steady, watch rates</span></td>
+        </tr>
+        <tr data-t="qqq">
+          <td class="l"><div class="tkr">QQQ</div><div class="co">The 100 biggest tech companies</div></td>
+          <td data-label="Price">$687.99</td>
+          <td data-label="Friday" class="up"><span class="arw">▲</span> +0.65%</td>
+          <td data-label="This week" class="up"><span class="arw">▲</span> +0.55%</td>
+          <td data-label="Below 1-year high" class="dn"><span class="arw">▼</span> 8.1%</td>
+          <td data-label="Our take" class="l"><span class="chip c-neu">Steady, watch rates</span></td>
+        </tr>
+        <tr data-t="nvda">
+          <td class="l"><div class="tkr">NVDA</div><div class="co">Nvidia — makes AI chips</div></td>
+          <td data-label="Price">$200.75</td>
+          <td data-label="Friday" class="up"><span class="arw">▲</span> +2.93%</td>
+          <td data-label="This week" class="dn"><span class="arw">▼</span> 2.94%</td>
+          <td data-label="Below 1-year high" class="dn"><span class="arw">▼</span> 15.1%</td>
+          <td data-label="Our take" class="l"><span class="chip c-cau">Big news coming Aug 26</span></td>
+        </tr>
+        <tr data-t="soxl">
+          <td class="l"><div class="tkr">SOXL</div><div class="co">Triple-risk chip fund</div></td>
+          <td data-label="Price">$114.72</td>
+          <td data-label="Friday" class="fl">flat</td>
+          <td data-label="This week" class="dn"><span class="arw">▼</span> 16.2%</td>
+          <td data-label="Below 1-year high" class="dn"><span class="arw">▼</span> 62.0%</td>
+          <td data-label="Our take" class="l"><span class="chip c-risk">Danger — read this one</span></td>
+        </tr>
+        <tr data-t="cost">
+          <td class="l"><div class="tkr">COST</div><div class="co">Costco</div></td>
+          <td data-label="Price">$951.89</td>
+          <td data-label="Friday" class="dn"><span class="arw">▼</span> 0.24%</td>
+          <td data-label="This week" class="up"><span class="arw">▲</span> +1.80%</td>
+          <td data-label="Below 1-year high" class="dn"><span class="arw">▼</span> 13.2%</td>
+          <td data-label="Our take" class="l"><span class="chip c-cau">Fine, but pricey</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="key">
+      <span><b>▲ green</b> = went up</span>
+      <span><b>▼ red</b> = went down</span>
+      <span><b>Below 1-year high</b> = how far under its best price of the past year</span>
+    </p>
+  </section>
+
+  <div class="cols">
+    <section class="detail">
+      <div class="tabs" role="tablist" aria-label="Choose a position">
+        <button role="tab" id="tab-spx"  aria-controls="p-spx"  aria-selected="true">SPX</button>
+        <button role="tab" id="tab-qqq"  aria-controls="p-qqq"  aria-selected="false" tabindex="-1">QQQ</button>
+        <button role="tab" id="tab-nvda" aria-controls="p-nvda" aria-selected="false" tabindex="-1">NVDA</button>
+        <button role="tab" id="tab-soxl" aria-controls="p-soxl" aria-selected="false" tabindex="-1">SOXL</button>
+        <button role="tab" id="tab-cost" aria-controls="p-cost" aria-selected="false" tabindex="-1">COST</button>
+      </div>
+
+      <div class="panel" id="p-spx" role="tabpanel" aria-labelledby="tab-spx" tabindex="0">
+        <div class="p-head"><h2>S&amp;P 500 — the whole US market</h2><span class="px">7,489.72 <span class="up">▲ +0.70%</span></span></div>
+        <p class="plain">This one number tracks the 500 largest American companies. It is the simplest answer to "how did the market do today?" On Friday it went <b>up 0.70%</b>. For the year so far it is <b>up about 9.4%</b>.</p>
+        <div class="facts">
+          <span class="fact"><span>This week</span> about +1%</span>
+          <span class="fact"><span>All of July</span> roughly flat</span>
+          <span class="fact"><span>2026 so far</span> about +9.4%</span>
+          <span class="fact"><span>Fear gauge</span> 15.99, calm</span>
+        </div>
+        <p class="lab">What happened</p>
+        <ul class="nw">
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Up, but only a few companies did the work.</b> Amazon's jump outweighed a 7% fall in Apple.</span></li>
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Government bond rates jumped.</b> The 10-year reached 4.73%, the highest in over a year. The 30-year hit 5.21% — the highest since 2007.</span></li>
+          <li><span class="dt">Jul 29</span><span class="tx"><b>The Federal Reserve left interest rates unchanged</b>, and three of its officials disagreed with that decision — an unusually large split.</span></li>
+          <li><span class="dt">Jun 17</span><span class="tx"><b>The Fed's own forecast was raised back in June:</b> officials now expect rates to end 2026 between 3.6% and 4.1%, up from 3.25%–3.75%. In short, fewer rate cuts than people had hoped.</span></li>
+        </ul>
+        <div class="bb">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p>Company profits are coming in strong, and the big technology firms just committed to enormous spending. The fear gauge is low, meaning investors are relaxed.</p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p>Government bonds now pay 5.21% with far less risk. When safe returns get that good, shares look less attractive by comparison.</p></div>
+        </div>
+        <p class="verdict"><b>What I'd watch:</b> two dates. The <b>jobs report on August 7</b> and the <b>inflation report on August 12</b>. If inflation comes in hot while bond rates are already this high, that is the combination most likely to knock the market down.</p>
+      </div>
+
+      <div class="panel" id="p-qqq" role="tabpanel" aria-labelledby="tab-qqq" tabindex="0" hidden>
+        <div class="p-head"><h2>QQQ — the 100 biggest tech companies</h2><span class="px">$687.99 <span class="up">▲ +0.65%</span></span></div>
+        <p class="plain">A single fund holding the 100 largest non-bank companies on the Nasdaq — mostly technology. Buying one share gives you a slice of all of them. It barely moved this week, but that calm surface hides <b>very large moves underneath</b>.</p>
+        <div class="facts">
+          <span class="fact"><span>This week</span> +0.55%</span>
+          <span class="fact"><span>Below 1-year high</span> 8.1%</span>
+          <span class="fact"><span>Above 1-year low</span> 24.7%</span>
+          <span class="fact"><span>Year's range</span> $551.68 – $748.65</span>
+        </div>
+        <p class="lab">What happened</p>
+        <ul class="nw">
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Opened high, then drifted down all day.</b> It started at $692.11 and finished at $687.99 — lower than where it opened, even though it still counts as an up day.</span></li>
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Amazon rose 15%.</b> Its cloud-computing division grew 36.7% in a year, its fastest in four and a half years.</span></li>
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Apple fell 7%</b> because sales of services and sales in China were weaker than expected. This was the single biggest drag.</span></li>
+          <li><span class="dt">Jul 30</span><span class="tx"><b>Microsoft rose about 15%</b> on strong cloud results, which pushed the whole fund up 3.3% that day.</span></li>
+        </ul>
+        <div class="bb">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p>The two biggest cloud businesses both beat expectations and promised heavy investment. The riskiest moment — earnings season — is now past.</p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p>One company down 7% and another up 15% in the same week means investors are being very picky. That is usually a sign of an unsettled market.</p></div>
+        </div>
+        <p class="verdict"><b>What I'd watch:</b> whether it keeps opening high and closing low. That pattern — buyers losing their nerve during the day — is the thing to watch for. One day means nothing; three days in a row would matter.</p>
+      </div>
+
+      <div class="panel" id="p-nvda" role="tabpanel" aria-labelledby="tab-nvda" tabindex="0" hidden>
+        <div class="p-head"><h2>Nvidia — the AI chip maker</h2><span class="px">$200.75 <span class="up">▲ +2.93%</span></span></div>
+        <p class="plain">Nvidia makes the chips that power artificial intelligence. It is one of the most valuable companies on earth at <b>$4.86 trillion</b>. It rose nearly 3% on Friday — but it is still <b>down for the week</b>, and 15% below its best price of the past year.</p>
+        <div class="facts">
+          <span class="fact"><span>This week</span> down 2.94%</span>
+          <span class="fact"><span>Below 1-year high</span> 15.1%</span>
+          <span class="fact"><span>Company value</span> $4.86 trillion</span>
+          <span class="fact"><span>Price vs profits</span> 30.7×</span>
+          <span class="fact"><span>Next earnings</span> August 26</span>
+        </div>
+        <p class="lab">What happened</p>
+        <ul class="nw">
+          <li><span class="dt">Jul 31</span><span class="tx"><b>Climbed back above $200</b> after big tech firms promised heavy spending on AI equipment — Nvidia's customers, in other words.</span></li>
+          <li><span class="dt">Jul 27</span><span class="tx"><b>Dropped about 5%</b> on worries about "circular financing" — the concern that Nvidia's customers are partly funded by Nvidia itself, which would make its sales look better than they really are. <b>Apple overtook it</b> as the world's most valuable company that day.</span></li>
+          <li><span class="dt">July</span><span class="tx"><b>The US restarted export licences for its H20 chip to China</b>, reopening a market that had been closed. Genuinely good news that got little attention.</span></li>
+          <li><span class="dt">July</span><span class="tx">A multi-billion-dollar partnership with Korea's SK Group was announced, but <b>it does not start until 2027</b> — no effect on this year's sales.</span></li>
+        </ul>
+        <div class="bb">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p>At 30.7 times profits it is not wildly expensive for a company growing this fast. China is reopening, and its customers have now publicly committed to spending the money.</p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p>The "circular financing" worry questions whether the sales are genuine. That is the one criticism that would justify a much lower share price.</p></div>
+        </div>
+        <p class="verdict"><b>What I'd watch:</b> <b>August 26</b>, when Nvidia reports its results. Everything else is noise until then. Going in, the setup looks better than the share price suggests, because its customers have already confirmed they are spending.</p>
+      </div>
+
+      <div class="panel" id="p-soxl" role="tabpanel" aria-labelledby="tab-soxl" tabindex="0" hidden>
+        <div class="p-head"><h2>SOXL — the triple-risk chip fund</h2><span class="px">$114.72 <span class="fl">flat</span></span></div>
+        <p class="plain"><b>Read this one carefully — it is by far the riskiest thing you own.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, every single day. If chip stocks rise 2%, it rises about 6%. If they fall 2%, it falls about 6%. In July it lost <b>57%</b> of its value while the overall market was flat.</p>
+        <div class="facts">
+          <span class="fact"><span>This week</span> down 16.2%</span>
+          <span class="fact"><span>All of July</span> down 57%</span>
+          <span class="fact"><span>2026 so far</span> still up 173%</span>
+          <span class="fact"><span>Below 1-year high</span> 62%</span>
+          <span class="fact"><span>Rise needed to recover</span> +163%</span>
+        </div>
+        <p class="lab">What happened</p>
+        <ul class="nw">
+          <li><span class="dt">Jul 31</span><span class="tx"><b>A full round trip.</b> It opened at $129.90, climbed to $133.88, fell to $112.42, and finished at $114.72 — almost exactly where it started, after a swing of roughly 16%.</span></li>
+          <li><span class="dt">Jul 30</span><span class="tx"><b>Rose 24.71% in a single day</b> on Microsoft's results. That one day is the only reason the week was not far worse.</span></li>
+          <li><span class="dt">Jul 29</span><span class="tx"><b>Fell 16.02% in a single day</b>, while ordinary chip stocks fell only 5.38%. This is the triple effect working against you.</span></li>
+          <li><span class="dt">July</span><span class="tx">Chip shares fell across the board: Intel down 21% over seven days, Micron down 13% in one day. The triggers were <b>SK Hynix missing its forecasts</b>, <b>Samsung delaying its new memory chip</b>, and unease about the <b>$489 billion of debt</b> raised for AI projects this year.</span></li>
+        </ul>
+        <div class="bb">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p>It is still up 173% for the year. If the fall was about prices being too high rather than the businesses being broken, this recovers faster than anything else you own.</p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p>Because it resets every day, <b>choppy markets cost you money even if prices end up where they started</b>. Six recent days went −13%, −6%, −15%, −16%, +25%, flat — and the fund still lost badly.</p></div>
+        </div>
+        <p class="verdict"><b>What I'd watch — and the one thing I would genuinely flag:</b> this is a tool for short trades, <b>not something to hold onto</b>. Because of the daily reset, a bumpy market drains it whichever direction things end up going: July cost 57% while the wider market went nowhere. If you want to bet on chips recovering before August 26, owning Nvidia itself does that with far less damage from the ups and downs. To get back to its old high it needs to rise 163%.</p>
+      </div>
+
+      <div class="panel" id="p-cost" role="tabpanel" aria-labelledby="tab-cost" tabindex="0" hidden>
+        <div class="p-head"><h2>Costco</h2><span class="px">$951.89 <span class="dn">▼ 0.24%</span></span></div>
+        <p class="plain">The warehouse retailer. The <b>business is doing well</b> — sales grew 10.6% last month. The share price is 13% below its peak not because Costco is struggling, but because the shares had become expensive. For the year it is actually <b>up about 10.8%</b>, roughly in line with the market.</p>
+        <div class="facts">
+          <span class="fact"><span>This week</span> +1.80%</span>
+          <span class="fact"><span>2026 so far</span> about +10.8%</span>
+          <span class="fact"><span>Below 1-year high</span> 13.2%</span>
+          <span class="fact"><span>Price vs profits</span> 47.9×</span>
+          <span class="fact"><span>Dividend</span> 0.62% a year</span>
+        </div>
+        <p class="lab">What happened</p>
+        <ul class="nw">
+          <li><span class="dt">Aug 5</span><span class="tx"><b>July sales figures are due this Wednesday</b> at 1:15 PM Pacific. This is the nearest event of anything on this page.</span></li>
+          <li><span class="dt">Jul 8</span><span class="tx"><b>June sales rose 10.6%</b> to $29.24 billion. Sales at existing stores rose 8.8%, and online sales rose 20.9%.</span></li>
+          <li><span class="dt">Jul 9</span><span class="tx"><b>The shares fell about 4% anyway</b>, because growth was slower than the month before. That tells you expectations are set very high.</span></li>
+          <li><span class="dt">Jul 31</span><span class="tx">Drifted down slightly to finish the month. The gap from its peak is about <b>the price people will pay</b>, not the health of the business.</span></li>
+        </ul>
+        <div class="bb">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p>Double-digit sales growth, fast-growing online business, and loyal paying members. It is the one holding here that does not depend on artificial intelligence.</p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p>At 47.9 times profits it is expensive, and it pays only 0.62% in dividends while a government bond pays 5.21% with no risk.</p></div>
+        </div>
+        <p class="verdict"><b>What I'd watch:</b> on <b>August 5</b>, look at the growth rate at existing stores, not the headline sales number. June showed that the market will sell the shares even on a good month if growth is slowing down.</p>
+      </div>
+
+      <div class="dog-strip" id="dogStrip">
+        <button class="dog-btn" id="dogBtn" aria-label="Ask Pancho for another thought on this position">
+          <canvas class="dog-cv" id="dogCv" width="28" height="28" role="img" aria-label="Pancho, a pixel-art apricot goldendoodle in a teal harness"></canvas>
+        </button>
+        <div class="bub" id="bub" role="status" aria-live="polite">
+          <span class="who" id="dogName">Pancho Bot</span>
+          <span id="dogSays">Pancho reporting. Tap a name above and I'll explain it.</span>
+          <span class="tl" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="rail">
+      <div class="block notice">
+        <h3>You own the same bet four times</h3>
+        <p><b>Four of your five holdings rise and fall together.</b> Nvidia sits inside SPX, inside QQQ, and you own it directly — then SOXL multiplies its whole industry by three.</p>
+        <div class="ladder">
+          <div>COST <span>genuinely different</span></div>
+          <div>SPX <span>the whole market</span></div>
+          <div>QQQ <span>more tech-heavy</span></div>
+          <div>NVDA <span>one company</span></div>
+          <div>SOXL <span>triple the chip sector</span></div>
+        </div>
+        <p>July showed what that means: the overall market ended flat while SOXL fell 57%. One question — will companies keep spending on AI? — moved all of them.</p>
+        <p><b>If Nvidia disappoints on August 26, four of your five fall at once.</b> Costco is the only real counterweight you have.</p>
+      </div>
+
+      <div class="block">
+        <h3>What's coming up</h3>
+        <div class="ev"><span class="w">Wed Aug 5</span><span class="e"><b>Costco sales</b><span>Watch the growth rate</span></span></div>
+        <div class="ev hot"><span class="w">Fri Aug 7</span><span class="e"><b>Jobs report</b><span>Affects all five</span></span></div>
+        <div class="ev hot"><span class="w">Wed Aug 12</span><span class="e"><b>Inflation report</b><span>Biggest risk this month</span></span></div>
+        <div class="ev hot"><span class="w">Wed Aug 26</span><span class="e"><b>Nvidia results</b><span>The big one — Nvidia and SOXL</span></span></div>
+        <div class="ev"><span class="w">Sep 15–16</span><span class="e"><b>Federal Reserve</b><span>New interest-rate forecasts</span></span></div>
+        <div class="ev"><span class="w">Thu Sep 24</span><span class="e"><b>Costco full results</b><span>After the market closes</span></span></div>
+      </div>
+    </aside>
+  </div>
+
+  <details class="notes">
+    <summary>Where these numbers come from, and what to be careful about</summary>
+    <div class="notes-in">
+      <h4>The prices</h4>
+      <p>All prices are the official closing prices from Friday, July 31, 2026, checked against three separate sources: StockAnalysis, Yahoo Finance and Google Finance. Where a figure says "about" or "roughly", it was calculated from those closing prices rather than taken from a source directly.</p>
+      <h4>One number I could not fully confirm</h4>
+      <p>SOXL's Friday change is the single figure I could not get three sources to agree on. All three report $114.72 as the closing price — exactly the same as Thursday — while the trading record for the day shows a range of $112.42 to $133.88. A sharp rise followed by a full retreat would explain it, but please treat that particular daily percentage as unconfirmed. Everything else on this page matched across at least two sources.</p>
+      <h4>These are not predictions</h4>
+      <p>Nothing here tells you what will happen next. Nobody can do that, and you should be suspicious of anyone who claims otherwise. What each section gives you instead is the case for going up, the case for going down, and the specific dated event that will settle the argument. This is information only, not financial advice, and it takes no account of how much you own, what you paid, when you need the money, or your tax position.</p>
+      <h4>Sources</h4>
+      <ul>
+        <li><a href="https://stockanalysis.com/stocks/nvda/history/">StockAnalysis — daily price history</a></li>
+        <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html">Yahoo Finance — the July 31 session</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/article/amazon-stock-soars-15-as-e-commerce-giants-aws-cloud-business-booms-in-home-run-quarter-122456315.html">Yahoo Finance — Amazon up 15%</a></li>
+        <li><a href="https://www.cnn.com/2026/07/29/business/live-news/federal-reserve-interest-rate-07-29-26">CNN — the Fed holds rates, three dissent</a></li>
+        <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm">Federal Reserve — June 17 rate projections</a></li>
+        <li><a href="https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-June-Sales-Results-and-Announces-Quarterly-Cash-Dividend/default.aspx">Costco — June sales results</a></li>
+        <li><a href="https://investor.costco.com/events-and-presentations/events/event-details/2026/July-Sales-Results-2026-XADtqZn33k/default.aspx">Costco — July sales, due August 5</a></li>
+        <li><a href="https://www.quiverquant.com/news/NVIDIA+to+Hold+Second+Quarter+Fiscal+2027+Financial+Results+Conference+Call+on+August+26">Nvidia — results due August 26</a></li>
+        <li><a href="https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/">Forbes — inside the July chip sell-off</a></li>
+        <li><a href="https://www.fool.com/investing/2026/07/09/costcos-june-sales-rose-106-but-the-stock-fell-4-h/">Motley Fool — why Costco fell on good sales</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<button class="dog-cue" id="dogCue" hidden>
+  <canvas class="cue-cv" id="cueCv" width="28" height="28" aria-hidden="true"></canvas>
+  <span>Pancho has a note <span aria-hidden="true">↓</span></span>
+</button>
+
+<script>
+(function () {
+  "use strict";
+
+  var PAL = {
+    ".": null,
+    "D": "#A9612F", "M": "#D08A4C", "L": "#EDB176",
+    "C": "#FBEEDA", "W": "#FFFFFF",
+    "E": "#20130E", "G": "#FFFFFF",
+    "N": "#5A3A30", "b": "#F0A08F",
+    "T": "#2F7E90", "t": "#1E5A69", "g": "#D9E0DC",
+    "p": "#E2818A"
+  };
+
+  var IDLE = [
+    "............................",
+    "..........LMMMMMML..........",
+    "........LMMMMMMMMMML........",
+    ".......LMMMMMMMMMMMML.......",
+    "......LMMMMMMMMMMMMMML......",
+    "......MMMMMMMMMMMMMMMM......",
+    "....DDMMMLLLLLLLLLLMMMDD....",
+    "....DDMMLLLLLLLLLLLLMMDD....",
+    "....DDMMLLEGLLLLGELLMMDD....",
+    ".....DMMLLEELLLLEELLMMD.....",
+    "......MMLLLLLLLLLLLLMM......",
+    "......MMLLCCCCCCCCLLMM......",
+    "......MMLLCCNNNNCCLLMM......",
+    "......MMLLCCCppCCCLLMM......",
+    "......MMTCCCCCCCCCCTMM......",
+    ".......MTCCCCCCCCCCTM.......",
+    ".....DMMTTTTTTTTTTTTMMD.....",
+    "....DMMTTTTTggggTTTTTMMD....",
+    "....DMMTTTTTTTTTTTTTTMMD....",
+    "....DMMttttttttttttttMMD....",
+    "....DMMMMMMMMMMMMMMMMMMD....",
+    "....DMMMMMMCCCCCCMMMMMMD....",
+    "....DMMMMMCCCCCCCCMMMMMDMMD.",
+    ".....DMMMCCCCCCCCCCMMMDLMD..",
+    ".....DMMCCCCCCCCCCCCMMD.....",
+    "......CWWWWC....CWWWWC......",
+    "......DCCCCD....DCCCCD......",
+    "............................"
+  ];
+  var BLINK = IDLE.slice();
+  BLINK[8] = "....DDMMLLLLLLLLLLLLMMDD....";
+  BLINK[9] = ".....DMMLLEELLLLEELLMMD.....";
+  var WAG = IDLE.slice();
+  WAG[20] = "....DMMMMMMMMMMMMMMMMMMDMMD.";
+  WAG[21] = "....DMMMMMMCCCCCCMMMMMMDLMD.";
+  WAG[22] = "....DMMMMMCCCCCCCCMMMMMD....";
+  WAG[23] = ".....DMMMCCCCCCCCCCMMMD.....";
+
+  var cv = document.getElementById("dogCv");
+  var ctx = cv.getContext("2d");
+  function renderFrame(c, frame) {
+    c.clearRect(0, 0, 28, 28);
+    for (var y = 0; y < frame.length; y++) {
+      var row = frame[y];
+      for (var x = 0; x < row.length; x++) {
+        var col = PAL[row.charAt(x)];
+        if (col) { c.fillStyle = col; c.fillRect(x, y, 1, 1); }
+      }
+    }
+  }
+  // the strip dog and the masthead dog are the same dog — keep them in step
+  var mastCtx = document.getElementById("dogMast").getContext("2d");
+  function draw(frame) { renderFrame(ctx, frame); renderFrame(mastCtx, frame); }
+  draw(IDLE);
+  renderFrame(document.getElementById("cueCv").getContext("2d"), IDLE);
+
+  var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var wagging = false, wagTimer = null, blinkTimer = null, speakTimer = null;
+
+  setInterval(function () {
+    if (mq.matches || wagging) return;
+    draw(BLINK);
+    clearTimeout(blinkTimer);
+    blinkTimer = setTimeout(function () { if (!wagging) draw(IDLE); }, 150);
+  }, 4600);
+
+  function wag(times) {
+    if (mq.matches) return;
+    clearTimeout(wagTimer);
+    wagging = true;
+    var n = 0;
+    (function step() {
+      if (n >= times * 2) { wagging = false; draw(IDLE); return; }
+      draw(n % 2 === 0 ? WAG : IDLE);
+      n++;
+      wagTimer = setTimeout(step, 130);
+    })();
+  }
+
+  setInterval(function () {
+    if (mq.matches || wagging) return;
+    wag(2);
+  }, 6500);
+
+  var LINES = {
+    spx:  ["This is the whole market in one number. Friday was a good day.",
+           "Up about 9.4% this year. Steady as she goes.",
+           "The worry is bond rates now, not company profits."],
+    qqq:  ["The 100 biggest tech names. It opened high and drifted down.",
+           "Apple fell 7%, Amazon rose 15%. Same week. Odd one.",
+           "Earnings are done. Now it follows rates and chips."],
+    nvda: ["It all comes down to August 26. That's the day that matters.",
+           "Up Friday, down for the week. Net effect: nowhere.",
+           "30.7 times profits isn't the scary part. The sales question is."],
+    soxl: ["Careful with this one. Triple risk, resets every single day.",
+           "Down 57% in July while the market went nowhere. That's the danger.",
+           "It needs to rise 163% just to get back to where it was."],
+    cost: ["August 5 is the date. Watch the growth rate, not the big number.",
+           "Sales grew 10.6% and the shares still fell 4%. High expectations.",
+           "Good business. Expensive price. That's the whole debate."]
+  };
+  var VALID = { spx:1, qqq:1, nvda:1, soxl:1, cost:1 };
+
+  var bub = document.getElementById("bub");
+  var says = document.getElementById("dogSays");
+  var strip = document.getElementById("dogStrip");
+  var cue = document.getElementById("dogCue");
+  var current = "spx", idx = 0, stripVisible = true;
+
+  function maybeCue() {
+    if (stripVisible) { cue.hidden = true; return; }
+    cue.hidden = true;
+    void cue.offsetWidth;
+    cue.hidden = false;
+  }
+
+  function speak(text) {
+    clearTimeout(speakTimer);
+    bub.classList.add("hide");
+    speakTimer = setTimeout(function () {
+      says.textContent = text;
+      bub.classList.remove("hide");
+    }, mq.matches ? 0 : 180);
+    maybeCue();
+  }
+
+  var order = ["spx", "qqq", "nvda", "soxl", "cost"];
+  var tabs = order.map(function (t) { return document.getElementById("tab-" + t); });
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#boardBody tr"));
+
+  function select(key, focusTab) {
+    if (!VALID[key]) return;
+    current = key; idx = 0;
+    order.forEach(function (t, i) {
+      var on = t === key;
+      tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+      tabs[i].tabIndex = on ? 0 : -1;
+      document.getElementById("p-" + t).hidden = !on;
+    });
+    rows.forEach(function (r) {
+      if (r.getAttribute("data-t") === key) r.setAttribute("aria-current", "true");
+      else r.removeAttribute("aria-current");
+    });
+    if (focusTab) tabs[order.indexOf(key)].focus();
+    speak(LINES[key][0]);
+    wag(2);
+  }
+
+  tabs.forEach(function (btn, i) {
+    btn.addEventListener("click", function () { select(order[i]); });
+    btn.addEventListener("keydown", function (e) {
+      var n = null;
+      if (e.key === "ArrowRight") n = (i + 1) % order.length;
+      else if (e.key === "ArrowLeft") n = (i - 1 + order.length) % order.length;
+      else if (e.key === "Home") n = 0;
+      else if (e.key === "End") n = order.length - 1;
+      if (n === null) return;
+      e.preventDefault();
+      select(order[n], true);
+    });
+  });
+
+  rows.forEach(function (r) {
+    r.addEventListener("click", function () { select(r.getAttribute("data-t")); });
+  });
+
+  document.getElementById("dogBtn").addEventListener("click", function () {
+    var pool = LINES[current];
+    idx = (idx + 1) % pool.length;
+    speak(pool[idx]);
+    wag(3);
+  });
+
+  if ("IntersectionObserver" in window) {
+    var firstCheck = true;
+    new IntersectionObserver(function (entries) {
+      stripVisible = entries[0].isIntersecting;
+      if (stripVisible) cue.hidden = true;
+      else if (firstCheck) maybeCue();
+      firstCheck = false;
+    }, { threshold: 0.5 }).observe(strip);
+  }
+
+  cue.addEventListener("click", function () {
+    cue.hidden = true;
+    strip.scrollIntoView({ behavior: mq.matches ? "auto" : "smooth", block: "center" });
+    document.getElementById("dogBtn").focus({ preventScroll: true });
+    wag(2);
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !cue.hidden) cue.hidden = true;
+  });
+})();
+</script>

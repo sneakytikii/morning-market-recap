@@ -1,0 +1,103 @@
+name: Refresh the dashboard
+
+# Runs on GitHub's servers, not on anyone's laptop. The Mac can be shut in a drawer.
+#
+# Times are UTC — GitHub Actions has no notion of local time. Denver is UTC-6 in summer
+# (MDT) and UTC-7 in winter (MST), so these fire an hour later in winter. That is fine
+# for a pre-open job with 80 minutes of slack; it is called out here so the drift is not
+# a mystery later.
+on:
+  schedule:
+    - cron: "12 12 * * 1-5"   # 06:12 MDT weekdays — before the 07:30 open
+    - cron: "7 19 * * 1-5"    # 13:07 MDT weekdays — mid-session sweep of the record
+    - cron: "12 14 * * 6"     # 08:12 MDT Saturday — the week, not the day
+  workflow_dispatch:           # ...and a "Run workflow" button, for when you want it now
+    inputs:
+      mode:
+        description: "Which refresh to run"
+        type: choice
+        options: [weekday, tracker, weekend]
+        default: weekday
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false    # never let two runs edit the same JSON
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45        # the research step is capped at 30; this is the outer bound
+    permissions:
+      contents: write          # to commit the rebuilt page back
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Work out which refresh this is
+        id: mode
+        run: |
+          if [ -n "${{ inputs.mode }}" ]; then
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "7 19 * * 1-5" ]; then
+            echo "mode=tracker" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "12 14 * * 6" ]; then
+            echo "mode=weekend" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=weekday" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Research and rebuild
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODE: ${{ steps.mode.outputs.mode }}
+        run: |
+          set -uo pipefail
+          echo "::group::Researching ($MODE)"
+          # Same division of labour as the local script: Claude only writes data/*.json,
+          # Python renders it, and the build refuses if any invariant breaks.
+          claude -p "$(cat "scripts/prompts/refresh-$MODE.md")" \
+                 --allowedTools WebSearch WebFetch Read "Edit(data/**)" \
+                 --output-format text || { echo "research failed"; exit 1; }
+          echo "::endgroup::"
+
+          echo "::group::Checking it stayed inside data/"
+          if ! git diff --name-only | grep -qv '^data/'; then
+            echo "clean — only data/ changed"
+          else
+            echo "the research step modified files outside data/:"
+            git diff --name-only | grep -v '^data/'
+            exit 1
+          fi
+          echo "::endgroup::"
+
+          echo "::group::Building"
+          python3 scripts/build.py     || exit 1
+          python3 scripts/sprite.py    || exit 1
+          python3 scripts/wrap_site.py || exit 1
+          echo "::endgroup::"
+
+      - name: Publish
+        run: |
+          git config user.name  "market-recap-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed — not committing."
+          else
+            git commit -m "Refresh (${{ steps.mode.outputs.mode }}) $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Published."
+          fi
+
+      # If anything above failed, the page stays exactly as it was — a stale correct page
+      # beats a fresh broken one. GitHub emails you on a failed run, which is the alert
+      # the local version never had.

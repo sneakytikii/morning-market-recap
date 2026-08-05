@@ -1,0 +1,85 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pancho Bot — all models</title>
+<style>
+  :root{--paper:#F4F6F8;--surface:#FFF;--ink:#121821;--ink-2:#4A5566;--ink-3:#57647A;
+        --line:#DBDFE7;--accent:#2E5E96;--accent-soft:#E3EAF5;--good:#0A7350;--bad:#B63A2E;}
+  @media (prefers-color-scheme:dark){:root{--paper:#0D1219;--surface:#151C25;--ink:#E7EBF1;
+        --ink-2:#A4AFBE;--ink-3:#8B97A9;--line:#252F3C;--accent:#7BA7DF;--accent-soft:#1A2634;
+        --good:#3DBB89;--bad:#E5776C;}}
+  :root[data-theme="dark"]{--paper:#0D1219;--surface:#151C25;--ink:#E7EBF1;--ink-2:#A4AFBE;
+        --ink-3:#8B97A9;--line:#252F3C;--accent:#7BA7DF;--accent-soft:#1A2634;--good:#3DBB89;--bad:#E5776C;}
+  :root[data-theme="light"]{--paper:#F4F6F8;--surface:#FFF;--ink:#121821;--ink-2:#4A5566;
+        --ink-3:#57647A;--line:#DBDFE7;--accent:#2E5E96;--accent-soft:#E3EAF5;--good:#0A7350;--bad:#B63A2E;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 70px}
+  h1{font-family:ui-serif,"Iowan Old Style","Source Serif 4",Georgia,serif;
+     font-size:34px;font-weight:600;margin:0 0 10px;letter-spacing:-.02em}
+  .sub{color:var(--ink-2);margin:0 0 34px;max-width:62ch;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .m{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+  .m.pick{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  canvas{width:168px;height:168px;image-rendering:crisp-edges;image-rendering:pixelated;
+         display:block;margin:0 auto 14px}
+  .n{font-weight:700;font-size:17px;margin-bottom:3px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+       padding:3px 10px;border-radius:99px;margin-bottom:9px}
+  .cur{background:var(--accent-soft);color:var(--accent)}
+  .no{background:rgba(182,58,46,.13);color:var(--bad)}
+  .old{background:rgba(0,0,0,.06);color:var(--ink-3)}
+  @media (prefers-color-scheme:dark){.old{background:rgba(255,255,255,.08)}}
+  .d{font-size:14.5px;color:var(--ink-2);line-height:1.5}
+  .anim{margin-top:36px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .anim h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:0 0 16px}
+  .frames{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+  .frames div{text-align:center}
+  .frames canvas{width:110px;height:110px;margin-bottom:8px}
+  .frames span{font-size:13.5px;color:var(--ink-2);font-weight:600}
+</style>
+<div class="wrap">
+<h1>Pancho Bot — every model</h1>
+<p class="sub">Four versions built so far, shown at 5&times; scale. Model D is the one currently
+living in the dashboard. Tell me which you want and I&rsquo;ll swap it in.</p>
+<div class="grid" id="grid"></div>
+<div class="anim">
+  <h2>Model D &mdash; animation frames</h2>
+  <div class="frames" id="frames"></div>
+</div>
+</div>
+<script>
+var PAL={".":null,"D":"#A9612F","k":"#8E4C21","M":"#D08A4C","L":"#EDB176","C":"#FBEEDA","W":"#FFFFFF",
+ "E":"#20130E","G":"#FFFFFF","N":"#5A3A30","b":"#F0A08F","T":"#2F7E90","t":"#1E5A69","g":"#D9E0DC","p":"#E2818A"};
+var DATA={"v1": ["............................", "..........LMMMMMML..........", "........LMMMMMMMMMML........", ".......LMMMMMMMMMMMML.......", "......DMMMMMMMMMMMMMMD......", ".....DMMMMMMMMMMMMMMMMD.....", ".....DMMMLLLLLLLLLLMMMD.....", ".....DMMLLLLLLLLLLLLMMD.....", ".....DMMLLEGLLLLGELLMMD.....", ".....DMMLLEELLLLEELLMMD.....", ".....DMMLLLLLLLLLLLLMMD.....", ".....DMMLLCCCCCCCCLLMMD.....", ".....DMMLLCCNNNNCCLLMMD.....", ".....DMMLLCCCppCCCLLMMD.....", "......DMMCCCCCCCCCCMMD......", ".......DMCCCCCCCCCCMD.......", ".....DMMTTTTCCCCTTTTMMD.....", "....DMMTTTTTggggTTTTTMMD....", "....DMMTTTTTTTTTTTTTTMMD....", "....DMMttttttttttttttMMD....", "....DMMMMMMMMMMMMMMMMMMD....", "....DMMMMMMCCCCCCMMMMMMD....", "....DMMMMMCCCCCCCCMMMMMD....", ".....DMMMCCCCCCCCCCMMMD.....", ".....DMMCCCCCCCCCCCCMMD.....", "......CWWWWC....CWWWWC......", "......DCCCCD....DCCCCD......", "............................"], "v2": ["................................", "................................", "...........LMMMMMMMML...........", ".........LMMMMMMMMMMMML.........", ".......LMMMMMMMMMMMMMMMML.......", "......DMMMMMMMMMMMMMMMMMMD......", ".....DMMMMMMMMMMMMMMMMMMMMD.....", "...DDDMMMMMMMMMMMMMMMMMMMMDDD...", "..DDDDMMMLLLLLLLLLLLLLLMMMDDDD..", "..DDDDMMLLLLLLLLLLLLLLLLMMDDDD..", "..DDDDMMLLEGGELLLLEGGELLMMDDDD..", "..DDDDMMLLEEEELLLLEEEELLMMDDDD..", "..DDDDMMLLEEEELLLLEEEELLMMDDDD..", "..DDDDMMbbLLLLLLLLLLLLbbMMDDDD..", "..DDDDMMLLCCCCCCCCCCCCLLMMDDDD..", "..DDDDMMLLCCCCNNNNCCCCLLMMDDDD..", "..DDDDMMLLCCCCCNNCCCCCLLMMDDDD..", "..DDDDMMLLCCCCCppCCCCCLLMMDDDD..", "..DDDDMMLLCCCCCCCCCCCCLLMMDDDD..", "..DDDDMMCCCCCCCCCCCCCCCCMMDDDD..", "......DMCCCCCCCCCCCCCCCCCCMD....", "........DMCCCCCCCCCCCCMD........", ".......DMMTTTTCCCCTTTTMMD.......", "......DMMTTTTTggggTTTTTMMD......", "......DMMTTTTTTTTTTTTTTMMD......", "......DMMttttttttttttttMMDMMD...", "......DMMMMMMCCCCCCMMMMMMDLMD...", ".......DMMMCCCCCCCCCCMMMD.......", "........CWWWC......CWWWC........", "........DCCCD......DCCCD........", "................................", "................................"], "v3": ["................................", "................................", "................................", "............MMMMMMMM............", "..........MMMMMMMMMMMM..........", ".........MMMMMMMMMMMMMM.........", "........MMMMMMMMMMMMMMMM........", ".....DDDkMMMMMMMMMMMMMMkDDD.....", "....DDDDkMMMMMMMMMMMMMMkDDDD....", "...DDDDDkLLLLLLLLLLLLLLkDDDDD...", "...DDDDDkLLLLLLLLLLLLLLkDDDDD...", "..DDDDDDkLLLLLLLLLLLLLLkDDDDDD..", "..DDDDDDkLEGGELLLLEGGELkDDDDDD..", "..DDDDDDkLEEEELLLLEEEELkDDDDDD..", "..DDDDDDkLEEEELLLLEEEELkDDDDDD..", "..DDDDDDkLLLLCNNNNCLLLLkDDDDDD..", "..DDDDDDkbbbCCCNNCCCbbbkDDDDDD..", "..DDDDDDkMLLCCCCCCCCLLMkDDDDDD..", "...DDDDDkMLLLCCppCCLLLMkDDDDD...", "...DDDDDDkMCCCCCCCCCCMkDDDDDD...", "....DDDDDkMMCCCCCCCCMMkDDDDD....", ".....DDDk...MMMMMMMM...kDDD.....", "......Dk..TTTTCCCCTTTT..kD......", ".........TTTTTggggTTTTT.........", ".........tttttttttttttt.........", ".........MMMCCCCCCCCMMMMMM......", "..........MMMCCCCCCMMMMMMMM.....", "...........MMMMMMMMMM...........", "...........CCCC..CCCC...........", "...........DCCD..DCCD...........", "................................", "................................"], "v4": ["................................", "................................", "...........LMMMMMMMML...........", ".........LMMMMMMMMMMMML.........", ".......LMMMMMMMMMMMMMMMML.......", "......DMMMMMMMMMMMMMMMMMMD......", ".....DMMMMMMMMMMMMMMMMMMMMD.....", "...DDDMMMMMMMMMMMMMMMMMMMMDDD...", "..DDDDMMMLLLLLLLLLLLLLLMMMDDDD..", "..DDDDMMLLLLLLLLLLLLLLLLMMDDDD..", "..DDDDMMLLEGGELLLLEGGELLMMDDDD..", "..DDDDMMLLEEEELLLLEEEELLMMDDDD..", "..DDDDMMLLEEEELLLLEEEELLMMDDDD..", "..DDDDMMbbLLLLLLLLLLLLbbMMDDDD..", "..DDDDMMLLCCCCCCCCCCCCLLMMDDDD..", "..DDDDMMLLCCCCNNNNCCCCLLMMDDDD..", "..DDDDMMLLCCCCCNNCCCCCLLMMDDDD..", "...DDDMMLLCCCCCppCCCCCLLMMDDD...", "...DDDMMLLCCCCCCCCCCCCLLMMDDD...", "....DDMMCCCCCCCCCCCCCCCCMMDD....", "......DMCCCCCCCCCCCCCCCCMD......", "........DMCCCCCCCCCCCCMD........", ".......DMMTTTTCCCCTTTTMMD.......", "......DMMTTTTTggggTTTTTMMD......", "......DMMTTTTTTTTTTTTTTMMD......", "......DMMttttttttttttttMMDMMD...", "......DMMMMMMCCCCCCMMMMMMDLMD...", ".......DMMMCCCCCCCCCCMMMD.......", "........CWWWC......CWWWC........", "........DCCCD......DCCCD........", "................................", "................................"]};
+function make(rows,cls){var n=rows.length,c=document.createElement("canvas");c.width=n;c.height=n;
+ var x=c.getContext("2d");for(var y=0;y<n;y++){var r=rows[y];for(var i=0;i<r.length;i++){
+ var col=PAL[r.charAt(i)];if(col){x.fillStyle=col;x.fillRect(i,y,1,1);}}}if(cls)c.className=cls;return c;}
+var MODELS=[
+ {k:"v1",n:"Model A",t:["old","First build"],d:"28\u00d728. The original. Smaller, simpler \u2014 no blush, flat eyes, plain paws."},
+ {k:"v2",n:"Model B",t:["old","Second build"],d:"32\u00d732. Bigger eyes with catchlights, blush added, tail. Off-centre by 1px at the chin."},
+ {k:"v3",n:"Model C",t:["no","You called this chopped"],d:"32\u00d732 chibi redraw \u2014 round head, huge floppy ears. Technically \u201ccorrect\u201d proportions, but you didn\u2019t like it."},
+ {k:"v4",n:"Model D",t:["cur","Live now"],d:"Model B with the chin centred and the ears tapered so they read as ears, not slabs."}
+];
+var grid=document.getElementById("grid");
+MODELS.forEach(function(m){
+  var d=document.createElement("div");d.className="m"+(m.k==="v4"?" pick":"");
+  d.appendChild(make(DATA[m.k]));
+  var t=document.createElement("div");t.className="tag "+m.t[0];t.textContent=m.t[1];d.appendChild(t);
+  var n=document.createElement("div");n.className="n";n.textContent=m.n;d.appendChild(n);
+  var p=document.createElement("div");p.className="d";p.textContent=m.d;d.appendChild(p);
+  grid.appendChild(d);
+});
+var idle=DATA.v4.slice(),blink=idle.slice(),wag=idle.slice();
+blink[10]="..DDDDMMLLLLLLLLLLLLLLLLMMDDDD..";
+blink[12]="..DDDDMMLLLLLLLLLLLLLLLLMMDDDD..";
+wag[23]="......DMMTTTTTggggTTTTTMMDMMD...";
+wag[24]="......DMMTTTTTTTTTTTTTTMMDLMD...";
+wag[25]="......DMMttttttttttttttMMD......";
+wag[26]="......DMMMMMMCCCCCCMMMMMMD......";
+var frames=document.getElementById("frames");
+[["Idle",idle],["Blink",blink],["Tail wag",wag]].forEach(function(f){
+  var d=document.createElement("div");d.appendChild(make(f[1]));
+  var s=document.createElement("span");s.textContent=f[0];d.appendChild(s);frames.appendChild(d);
+});
+</script>

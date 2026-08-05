@@ -1,0 +1,25 @@
+# This repo is PUBLIC — GitHub Pages serves docs/ from it. Everything below stays local.
+
+# Run logs, lock files, audit findings, workflow transcripts. Nothing secret in principle,
+# but no reason to publish operational noise, and the logs quote absolute local paths.
+.state/
+
+# 30 rolling copies of the page. Large and pointless in git, which already has history.
+backups/
+
+# Working notes from the overnight build — local context, not documentation.
+OVERNIGHT.md
+
+# The Pancho export pack is regenerated on demand by scripts/export_pancho.py.
+pancho-pack/
+
+# The artifact-only build. docs/index.html is what gets served; this one is for sending
+# by hand and for publishing to claude.ai, so it does not need to live here.
+Market Recap.html
+
+.DS_Store
+__pycache__/
+*.pyc
+
+# Claude Code local state
+.claude/
