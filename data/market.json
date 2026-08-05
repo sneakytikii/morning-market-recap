@@ -1,7 +1,7 @@
 {
-  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. WIRED AND LIVE: the dateline, all six index-strip cells, the five-row board, and the SOXL note and its heading all render from this file — change a value here and it changes on the page. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-04: this run happened at ~9pm MDT, after Tuesday's close, so the session reported is Tuesday Aug 4 — the most recent completed session. The board's day-column header is hard-coded 'Friday' in the template; day_en strings carry the day name ('on Tuesday') so the cells stay self-describing until the template is fixed.",
+  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. WIRED AND LIVE: the dateline, all six index-strip cells, the five-row board, and the SOXL note and its heading all render from this file — change a value here and it changes on the page. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-05: this run started at 08:18 MDT — 10:18 New York time, about 48 minutes AFTER Wednesday's open. Wednesday's session was still trading and therefore had no close, so the session reported is STILL Tuesday Aug 4 and as_of stays 2026-08-04 deliberately. Every price here is unchanged from the previous run and was independently re-verified this morning against StockAnalysis, CNBC, YCharts and Yahoo. What DID change: the record sweep, AMD's results (released after Tuesday's close), Wednesday morning's ADP employment figure, the 10-year yield (4.62% -> 4.63% on a two-of-three source rule), the SOXL re-check, and next_session_*, which said 'trading restarts Wednesday' and had become false. If a future run finds itself in the same position — scheduled pre-open but firing after 9:30 ET — do the same thing: report the last completed close and say so, never the live tape. The board's day-column header is hard-coded 'Friday' in the template; day_en strings carry the day name ('on Tuesday') so the cells stay self-describing until the template is fixed.",
   "as_of": "2026-08-04",
-  "generated": "2026-08-04T21:20:31-06:00",
+  "generated": "2026-08-05T08:18:06-06:00",
   "mode": "weekday",
   "dateline_en": "Tuesday, August&nbsp;4, 2026 &middot; After the Close",
   "dateline_ko": "2026년 8월 4일 화요일 · 장 마감 후",
@@ -39,17 +39,17 @@
       "name_ko": "공포 지수"
     },
     "us10y": {
-      "value": "4.62%",
-      "change_en": "▼ down from 4.73% — less pressure on shares",
-      "change_ko": "▼ 4.73%에서 하락 — 주식 부담 완화",
+      "value": "4.63%",
+      "change_en": "▼ down from 4.70% on Monday — less pressure on shares",
+      "change_ko": "▼ 월요일 4.70%에서 하락 — 주식 부담 완화",
       "dir": "fl",
       "name_en": "10-Year bond",
       "name_ko": "10년물 국채"
     },
     "us30y": {
       "value": "5.18%",
-      "change_en": "▼ eased from a 19-year high",
-      "change_ko": "▼ 19년 만의 최고치에서 소폭 하락",
+      "change_en": "▼ down from 5.23% on Monday — off a 19-year high",
+      "change_ko": "▼ 월요일 5.23%에서 하락 — 19년 만의 최고치에서 내려옴",
       "dir": "fl",
       "name_en": "30-Year bond",
       "name_ko": "30년물 국채"
@@ -90,6 +90,10 @@
       "drawdown_fact_ko": "≈ 0% — 사상 최고",
       "news_en": [
         {
+          "dt": "Aug 5",
+          "tx": "<b>A first read on hiring came in weak.</b> Private employers added <b>44,000</b> jobs in July, against about 65,000 expected and 95,000 the month before. This is the payroll firm ADP's own count, not the government's — the official one lands Friday."
+        },
+        {
           "dt": "Aug 4",
           "tx": "<b>Up 1.79%, and this time the whole market did the work.</b> That is the opposite of late July, when a few big companies carried thin sessions. Government bond rates were little changed — still high, still the standing worry."
         },
@@ -100,14 +104,14 @@
         {
           "dt": "Jul 31",
           "tx": "<b>Government bond rates jumped.</b> The 10-year reached 4.73%, the highest in over a year. The 30-year hit 5.21% — the highest since 2007."
-        },
-        {
-          "dt": "Jul 29",
-          "tx": "<b>The Federal Reserve left interest rates unchanged</b>, and three of its officials disagreed — an unusually large split."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> two dates. The <b>jobs report on August 7</b> and the <b>inflation report on August 12</b>. If inflation comes in hot while bond rates are already this high, that is the combination most likely to knock the market down.",
+      "verdict_en": "<b>What I'd watch:</b> two dates. The <b>jobs report on August 7</b> and the <b>inflation report on August 12</b>. Wednesday's early read on hiring was soft, which cuts both ways: weaker hiring can mean lower interest rates later, but it also means a slower economy. If inflation comes in hot while bond rates are already this high, that is the combination most likely to knock the market down.",
       "news_ko": [
+        {
+          "dt": "8월 5일",
+          "tx": "<b>고용에 대한 첫 신호가 약하게 나왔습니다.</b> 7월 민간 일자리가 <b>4만 4천 개</b> 늘었습니다. 예상은 약 6만 5천 개였고, 전달은 9만 5천 개였습니다. 이것은 급여 대행업체 ADP가 자체 집계한 수치이고, 정부의 공식 통계는 금요일에 나옵니다."
+        },
         {
           "dt": "8월 4일",
           "tx": "<b>1.79% 올랐는데, 이번에는 시장 전체가 함께 올랐습니다.</b> 몇몇 큰 회사가 지수를 끌어올리던 7월 말과는 정반대 모습입니다. 국채 금리는 거의 그대로였습니다. 여전히 높고, 여전히 걱정거리입니다."
@@ -119,13 +123,9 @@
         {
           "dt": "7월 31일",
           "tx": "<b>국채 금리가 크게 올랐습니다.</b> 10년물이 4.73%로 1년여 만에 가장 높았고, 30년물은 5.21%로 2007년 이후 가장 높았습니다."
-        },
-        {
-          "dt": "7월 29일",
-          "tx": "<b>연준이 금리를 그대로 두었습니다.</b> 다만 위원 세 명이 이 결정에 반대했는데, 이 정도로 의견이 갈리는 것은 드문 일입니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> 두 날짜입니다. <b>8월 7일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다. 국채 금리가 이미 이렇게 높은 상황에서 물가까지 높게 나온다면, 그 조합이 시장을 끌어내릴 가능성이 가장 큽니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> 두 날짜입니다. <b>8월 7일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다. 수요일에 나온 고용 선행 지표는 약했는데, 이는 양면입니다. 채용이 둔화되면 나중에 금리가 내려갈 수 있다는 뜻이기도 하지만, 동시에 경기가 느려지고 있다는 뜻이기도 합니다. 국채 금리가 이미 이렇게 높은 상황에서 물가까지 높게 나온다면, 그 조합이 시장을 끌어내릴 가능성이 가장 큽니다.",
       "base": {
         "year_start": 6846.18,
         "high_1y": 7736.52
@@ -196,6 +196,10 @@
       "news_en": [
         {
           "dt": "Aug 4",
+          "tx": "<b>After the close, AMD reported record sales</b> — $11.54bn, up 50% in a year, ahead of what analysts expected — and the shares still fell about 8% in evening trading. A reminder that beating forecasts is not enough when a share has already risen a lot."
+        },
+        {
+          "dt": "Aug 4",
           "tx": "<b>Rose 3.40%, its best day in months.</b> Technology stocks led Tuesday's broad rally. Nvidia, the fund's biggest holding, reports its results on Aug 26."
         },
         {
@@ -205,14 +209,14 @@
         {
           "dt": "Jul 31",
           "tx": "<b>Amazon rose 15%.</b> Its cloud-computing division — the business of renting computer power to other companies — grew 36.7% in a year, its fastest in four and a half years."
-        },
-        {
-          "dt": "Jul 31",
-          "tx": "<b>Apple fell 7%</b> because sales of services and sales in China were weaker than expected. This was the single biggest drag."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> whether Tuesday's strength holds through the <b>jobs report on August 7</b> and the <b>inflation report on August 12</b>. Those two numbers move bond rates, and bond rates move this fund. After that, <b>August 26</b> — Nvidia, the fund's largest holding, reports its results.",
+      "verdict_en": "<b>What I'd watch:</b> whether Tuesday's strength holds through the <b>jobs report on August 7</b> and the <b>inflation report on August 12</b>. Those two numbers move bond rates, and bond rates move this fund. After that, <b>August 26</b> — Nvidia, the fund's largest holding, reports its results. AMD's Tuesday-evening drop, on results that beat forecasts, is the warning worth carrying into that date.",
       "news_ko": [
+        {
+          "dt": "8월 4일",
+          "tx": "<b>장 마감 후 AMD가 사상 최대 매출을 발표했습니다.</b> 115억 4천만 달러로 1년 사이 50% 늘었고 시장 예상도 웃돌았는데, 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. 주가가 이미 많이 오른 뒤에는 예상을 넘는 것만으로는 부족하다는 것을 보여 준 사례입니다."
+        },
         {
           "dt": "8월 4일",
           "tx": "<b>3.40% 올라 몇 달 만에 가장 좋은 하루였습니다.</b> 화요일의 폭넓은 반등은 기술주가 이끌었습니다. 이 펀드에서 비중이 가장 큰 엔비디아는 8월 26일에 실적을 발표합니다."
@@ -224,13 +228,9 @@
         {
           "dt": "7월 31일",
           "tx": "<b>아마존이 15% 올랐습니다.</b> 클라우드(다른 회사에 컴퓨터 설비를 빌려주는 사업) 부문이 1년 사이 36.7% 성장했는데, 4년 반 만에 가장 빠른 속도입니다."
-        },
-        {
-          "dt": "7월 31일",
-          "tx": "<b>애플은 7% 떨어졌습니다.</b> 서비스 매출과 중국 매출이 예상보다 약했습니다. 가장 큰 부담이었습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> 화요일의 강한 흐름이 <b>8월 7일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>를 지나서도 이어지는지입니다. 이 두 숫자가 국채 금리를 움직이고, 국채 금리가 이 펀드를 움직입니다. 그다음은 <b>8월 26일</b>입니다. 이 펀드에서 비중이 가장 큰 엔비디아가 실적을 발표합니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> 화요일의 강한 흐름이 <b>8월 7일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>를 지나서도 이어지는지입니다. 이 두 숫자가 국채 금리를 움직이고, 국채 금리가 이 펀드를 움직입니다. 그다음은 <b>8월 26일</b>입니다. 이 펀드에서 비중이 가장 큰 엔비디아가 실적을 발표합니다. 예상을 넘는 실적에도 화요일 저녁 AMD 주가가 떨어진 것은, 그 날짜를 앞두고 새겨둘 만한 신호입니다.",
       "base": {
         "high_1y": 748.65,
         "low_1y": 551.68
@@ -261,8 +261,8 @@
       "plain_ko": "나스닥에 상장된 회사 가운데 금융회사를 뺀 가장 큰 100개(대부분 기술 기업)를 한 번에 담은 펀드입니다. 이 펀드 한 주를 사면 그 회사들을 조금씩 나눠 갖는 셈입니다. 화요일에 <b>3.40%</b> 올랐는데, 몇 달 만에 가장 크게 오른 날이었습니다. 이번 주 들어 이틀 동안 ≈ 5.21% 올랐습니다. 이 펀드에서 비중이 가장 큰 엔비디아는 8월 26일에 실적을 발표합니다.",
       "bull_en": "Most of the big companies in this fund have now reported their profits, and the largest cloud businesses beat expectations and promised heavy spending on AI equipment. That spending flows to the technology firms the fund holds. The one report still to come is Nvidia, the fund's largest holding, on August 26.",
       "bull_ko": "이 펀드에 담긴 큰 회사들 대부분이 실적 발표를 마쳤고, 가장 큰 클라우드 기업들은 기대를 넘는 실적과 함께 AI 장비에 대규모 투자를 예고했습니다. 그 돈은 이 펀드가 담고 있는 기술 기업들로 흘러갑니다. 남은 발표는 비중이 가장 큰 엔비디아로, 8월 26일입니다.",
-      "bear_en": "After two strong days the fund is only ≈ 3.3% below its 1-year high, so a lot of good news is already in the price. Bond rates are still high — the 10-year pays 4.62% — and the jobs report on August 7 and the inflation report on August 12 could push them back up. July showed how quickly these shares can fall when the mood turns.",
-      "bear_ko": "이틀 강하게 오른 뒤라 지금은 1년 최고가보다 불과 ≈ 3.3% 낮은 수준입니다. 좋은 소식이 이미 가격에 많이 반영돼 있다는 뜻입니다. 국채 금리는 여전히 높고(10년물 4.62%), 8월 7일 고용 보고서와 8월 12일 물가 보고서가 금리를 다시 밀어 올릴 수 있습니다. 분위기가 바뀌면 이런 주식이 얼마나 빨리 내리는지는 7월이 보여 줬습니다."
+      "bear_en": "After two strong days the fund is only ≈ 3.3% below its 1-year high, so a lot of good news is already in the price. AMD showed what that costs: it beat forecasts on Tuesday evening and the shares fell anyway. Bond rates are still high — the 10-year pays 4.63% — and the jobs report on August 7 and the inflation report on August 12 could push them back up. July showed how quickly these shares can fall when the mood turns.",
+      "bear_ko": "이틀 강하게 오른 뒤라 지금은 1년 최고가보다 불과 ≈ 3.3% 낮은 수준입니다. 좋은 소식이 이미 가격에 많이 반영돼 있다는 뜻입니다. 그 대가는 AMD가 보여 줬습니다. 화요일 저녁 예상을 넘는 실적을 내고도 주가는 떨어졌습니다. 국채 금리는 여전히 높고(10년물 4.63%), 8월 7일 고용 보고서와 8월 12일 물가 보고서가 금리를 다시 밀어 올릴 수 있습니다. 분위기가 바뀌면 이런 주식이 얼마나 빨리 내리는지는 7월이 보여 줬습니다."
     },
     "nvda": {
       "price": "$211.94",
@@ -287,8 +287,8 @@
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Rose 2.56% on Tuesday, its fourth gain in a row. It is about 10% below its record of $236.54, set May 14. Its closest rival AMD reported quarterly results after Tuesday's close, and the market's response arrives Wednesday. NVDA's own report comes August 26.",
-      "note_ko": "화요일 2.56% 올라 나흘 연속 상승했습니다. 5월 14일에 세운 최고가 236.54달러보다 약 10% 낮습니다. 가장 가까운 경쟁사인 AMD가 화요일 장 마감 후 분기 실적을 발표했고, 시장의 반응은 수요일에 나타납니다. NVDA 자체 실적 발표는 8월 26일입니다.",
+      "note_en": "Rose 2.56% on Tuesday, its fourth gain in a row. It is about 10% below its record of $236.54, set May 14. Its closest rival AMD reported after Tuesday's close: record sales of $11.54bn, up 50% in a year and ahead of what analysts expected — and AMD's own shares still fell about 8% in evening trading. NVDA's report comes August 26.",
+      "note_ko": "화요일 2.56% 올라 나흘 연속 상승했습니다. 5월 14일에 세운 최고가 236.54달러보다 약 10% 낮습니다. 가장 가까운 경쟁사인 AMD가 화요일 장 마감 후 실적을 발표했습니다. 매출 115억 4천만 달러로 사상 최대이자 1년 사이 50% 늘었고 시장 예상도 넘었는데, 그럼에도 AMD 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. NVDA 자체 실적 발표는 8월 26일입니다.",
       "ticker": "NVDA",
       "name_en": "Nvidia — makes AI chips",
       "name_ko": "엔비디아 — AI 반도체 제조",
@@ -297,6 +297,10 @@
       "drawdown_fact_en": "≈ 10.4%",
       "drawdown_fact_ko": "≈ 10.4% 아래",
       "news_en": [
+        {
+          "dt": "Aug 4",
+          "tx": "<b>Its closest rival AMD reported after the close, and beat.</b> Sales of $11.54bn, up 50% in a year; the AI-and-data-centre part grew 107%. Demand for this kind of chip is clearly still there — but AMD's own shares fell about 8% in evening trading, because a lot of good news was already in the price."
+        },
         {
           "dt": "Aug 4",
           "tx": "<b>Rose 2.56% to $211.94</b> as chip stocks rallied across the board — the mirror image of July's selloff. Nvidia joined the move rather than led it. It now goes into its August 26 report with the shares rising, not falling."
@@ -308,14 +312,14 @@
         {
           "dt": "Jul 27",
           "tx": "<b>Dropped about 5%</b> on worries about \"circular financing\" — the concern that Nvidia's customers are partly funded by Nvidia itself, which would make its sales look better than they really are. <b>Apple overtook it</b> as the world's most valuable company that day."
-        },
-        {
-          "dt": "July",
-          "tx": "<b>The US restarted export licences for its H20 chip to China</b>, reopening a market that had been closed. Genuinely good news that got little attention."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>August 26</b>, when Nvidia reports its results. Everything else is noise until then. Going in, the setup looks better than the share price suggests, because its customers have already confirmed they are spending.",
+      "verdict_en": "<b>What I'd watch:</b> <b>August 26</b>, when Nvidia reports its results. Everything else is noise until then. Going in, the setup looks better than the share price suggests, because its customers have already confirmed they are spending. What AMD's Tuesday evening showed is the other half of it: with the shares already well up, results that merely beat forecasts may not be enough to move them higher.",
       "news_ko": [
+        {
+          "dt": "8월 4일",
+          "tx": "<b>가장 가까운 경쟁사 AMD가 장 마감 후 예상을 넘는 실적을 냈습니다.</b> 매출 115억 4천만 달러로 1년 사이 50% 늘었고, AI·데이터센터 부문은 107% 성장했습니다. 이런 반도체에 대한 수요가 여전하다는 뜻입니다. 다만 AMD 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. 좋은 소식이 이미 가격에 많이 반영돼 있었기 때문입니다."
+        },
         {
           "dt": "8월 4일",
           "tx": "<b>2.56% 올라 $211.94가 됐습니다.</b> 반도체 주식이 일제히 오른 날로, 7월의 급락과는 정반대 모습이었습니다. 엔비디아는 앞장서기보다는 함께 오른 쪽이었습니다. 이제 주가가 떨어지는 게 아니라 오르는 흐름 속에서 8월 26일 실적 발표를 맞게 됐습니다."
@@ -327,13 +331,9 @@
         {
           "dt": "7월 27일",
           "tx": "<b>약 5% 떨어졌습니다.</b> \"순환 거래\" 우려 때문인데, 엔비디아가 자기 고객에게 돈을 대주고 그 돈으로 자사 제품을 사게 하는 구조라면 매출이 실제보다 좋아 보일 수 있다는 걱정입니다. 이날 <b>애플이 세계에서 가치가 가장 큰 회사 자리를 가져갔습니다</b>."
-        },
-        {
-          "dt": "7월",
-          "tx": "<b>미국이 H20 반도체의 중국 수출 허가를 다시 내주기 시작했습니다.</b> 막혀 있던 시장이 다시 열린 것으로, 주목받지 못했지만 분명히 좋은 소식입니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>8월 26일</b> 실적 발표입니다. 그전까지는 나머지가 다 소음입니다. 다만 발표를 앞둔 상황은 주가가 말해주는 것보다 좋아 보입니다. 고객들이 이미 돈을 쓰겠다고 직접 확인해 주었기 때문입니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>8월 26일</b> 실적 발표입니다. 그전까지는 나머지가 다 소음입니다. 다만 발표를 앞둔 상황은 주가가 말해주는 것보다 좋아 보입니다. 고객들이 이미 돈을 쓰겠다고 직접 확인해 주었기 때문입니다. 화요일 저녁 AMD가 보여 준 것은 그 반대편입니다. 주가가 이미 많이 오른 상태에서는, 예상을 넘는 실적만으로는 주가가 더 오르지 않을 수도 있습니다.",
       "base": {
         "high_1y": 236.54,
         "cap_usd_at": [
@@ -403,15 +403,15 @@
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "A one-day rise of 19.87% deserved a second look, so it got one. Two separate data sources show the same close of $139.90, and the fund's own trading record shows a full, fresh session — it opened at $131.51 and traded between $129.66 and $142.42 on heavy volume. The chip index this fund follows rose about 6.6% on Tuesday, and three times that is almost exactly what SOXL did. The jump is real. Two cautions stand: this fund moves this violently in both directions, and even after two strong days it is still about 54% below its 1-year high of $302.00.",
-      "note_ko": "하루에 19.87% 오른 숫자는 한 번 더 확인할 가치가 있어서, 확인했습니다. 서로 다른 두 곳의 자료가 같은 종가 139.90달러를 보여 주고, 이 펀드 자체의 거래 기록도 온전한 하루치입니다. 131.51달러로 출발해 129.66~142.42달러 사이에서 많은 거래량과 함께 움직였습니다. 이 펀드가 따라가는 반도체 지수는 화요일 약 6.6% 올랐고, 그 세 배가 SOXL의 상승폭과 거의 정확히 일치합니다. 급등은 사실입니다. 다만 두 가지는 그대로입니다. 이 펀드는 반대 방향으로도 이만큼 격렬하게 움직일 수 있고, 이틀 강하게 오른 뒤에도 1년 최고가 302.00달러보다 여전히 약 54% 낮습니다.",
+      "note_en": "A one-day rise of 19.87% is unusual enough that it has now been checked twice — once on Tuesday evening and again on Wednesday morning. It holds. The fund's own trading record shows a full session: it opened at $131.51, traded between $129.66 and $142.42, and closed at $139.90 on 72 million shares. Monday's close was $116.71, and $116.71 to $139.90 is exactly 19.87%. The chip index this fund follows rose about 6.6% on Tuesday, and three times that is almost exactly what SOXL did. The jump is real. One thing the second check turned up is worth knowing, because it is the reason this page reports Tuesday and not Wednesday: while Wednesday's session was still trading, the same data feed was showing this fund a \"close\" that sat above its own high for the day — an impossible pair of numbers, and a normal artefact of a price being read before the day has finished. Live prices are not closing prices. Two cautions stand as well: this fund moves this violently in both directions, and even after two strong days it is still about 54% below its 1-year high of $302.00.",
+      "note_ko": "하루에 19.87% 오른 숫자는 흔치 않은 일이라 이제 두 번 확인했습니다. 화요일 저녁에 한 번, 수요일 아침에 다시 한 번입니다. 결과는 같았습니다. 이 펀드 자체의 거래 기록은 온전한 하루치를 보여 줍니다. 131.51달러로 출발해 129.66~142.42달러 사이에서 움직였고, 7,200만 주가 거래되며 139.90달러로 마감했습니다. 월요일 종가는 116.71달러였고, 116.71달러에서 139.90달러는 정확히 19.87%입니다. 이 펀드가 따라가는 반도체 지수는 화요일 약 6.6% 올랐고, 그 세 배가 SOXL의 상승폭과 거의 정확히 일치합니다. 급등은 사실입니다. 두 번째 확인에서 하나 알게 된 점이 있는데, 이 페이지가 수요일이 아니라 화요일을 싣는 이유이기도 해서 적어 둡니다. 수요일 장이 아직 열려 있는 동안, 같은 자료가 이 펀드의 '종가'를 그날 최고가보다 높게 보여 주고 있었습니다. 있을 수 없는 조합이고, 하루가 끝나기 전에 읽은 가격에서 흔히 나타나는 현상입니다. 장중 가격은 종가가 아닙니다. 두 가지 주의점도 그대로입니다. 이 펀드는 반대 방향으로도 이만큼 격렬하게 움직일 수 있고, 이틀 강하게 오른 뒤에도 1년 최고가 302.00달러보다 여전히 약 54% 낮습니다.",
       "ticker": "SOXL",
       "name_en": "Triple-risk chip fund",
       "name_ko": "3배 위험 반도체 펀드",
-      "note_head_en": "Tuesday's 19.87% jump — checked, and real",
-      "note_head_ko": "화요일 19.87% 급등 — 확인 결과 사실입니다",
-      "day_caveat_en": "A rise of nearly 20% in one day is unusual, so it was checked against two data sources and the fund's own trading record. It is real — see the note at the bottom of the page.",
-      "day_caveat_ko": "하루 20% 가까운 상승은 흔치 않아서 두 곳의 자료와 이 펀드 자체의 거래 기록으로 확인했습니다. 실제 값이 맞습니다 — 페이지 맨 아래 설명을 참고해 주시기 바랍니다.",
+      "note_head_en": "Tuesday's 19.87% jump — checked twice now, and real",
+      "note_head_ko": "화요일 19.87% 급등 — 두 번 확인했고, 사실입니다",
+      "day_caveat_en": "A rise of nearly 20% in one day is unusual, so it was checked against two data sources and the fund's own trading record, on two separate days. It is real — see the note at the bottom of the page.",
+      "day_caveat_ko": "하루 20% 가까운 상승은 흔치 않아서 두 곳의 자료와 이 펀드 자체의 거래 기록으로, 서로 다른 이틀에 걸쳐 확인했습니다. 실제 값이 맞습니다 — 페이지 맨 아래 설명을 참고해 주시기 바랍니다.",
       "week_fact_en": "up ≈ 21.95%",
       "week_fact_ko": "≈ 21.95% 상승",
       "drawdown_fact_en": "≈ 53.7%",
@@ -516,8 +516,8 @@
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Slipped 0.65% on Tuesday while almost everything else rose — on days when money rushes toward technology shares, the steadiest names get left behind. It is down about 0.4% for the week so far. July sales arrive Wednesday at 4:15pm New York time. Still the only one of the five with no chip exposure.",
-      "note_ko": "화요일에 거의 모든 것이 오르는 동안 0.65% 내렸습니다. 돈이 기술주로 몰리는 날에는 가장 안정적인 종목이 뒤처지곤 합니다. 이번 주 들어 약 0.4% 내렸습니다. 7월 매출은 수요일 뉴욕 시각 오후 4시 15분에 발표됩니다. 보유 5개 중 반도체와 무관한 유일한 종목이라는 점은 그대로입니다.",
+      "note_en": "Slipped 0.65% on Tuesday while almost everything else rose — on days when money rushes toward technology shares, the steadiest names get left behind. It is down about 0.4% for the week so far. July sales arrive Wednesday afternoon at 4:15pm New York time, which is after this page was written. Still the only one of the five with no chip exposure.",
+      "note_ko": "화요일에 거의 모든 것이 오르는 동안 0.65% 내렸습니다. 돈이 기술주로 몰리는 날에는 가장 안정적인 종목이 뒤처지곤 합니다. 이번 주 들어 약 0.4% 내렸습니다. 7월 매출은 수요일 오후 뉴욕 시각 4시 15분에 발표되는데, 이 페이지를 작성한 시점보다 뒤입니다. 보유 5개 중 반도체와 무관한 유일한 종목이라는 점은 그대로입니다.",
       "ticker": "COST",
       "name_en": "Costco",
       "name_ko": "코스트코",
@@ -527,42 +527,42 @@
       "drawdown_fact_ko": "≈ 13.6% 아래",
       "news_en": [
         {
-          "dt": "Aug 4",
-          "tx": "<b>The only one of the five that fell, down 0.65%.</b> It is not a chip stock, so it sat out Tuesday's rally. July sales arrive tomorrow."
-        },
-        {
           "dt": "Aug 5",
-          "tx": "<b>July sales figures are due this Wednesday</b> at 1:15 PM Pacific. This is the nearest event of anything on this page."
+          "tx": "<b>July sales are due this afternoon</b>, at 4:15 PM New York time — after the market shuts. This is the nearest dated event of anything on this page, and it had not been published when this page was written."
         },
         {
-          "dt": "Jul 9",
-          "tx": "<b>June sales grew 10.6%, and the shares still fell about 4%.</b> Growth was slower than the month before — that tells you expectations are set very high."
+          "dt": "Aug 4",
+          "tx": "<b>The only one of the five that fell, down 0.65%.</b> It is not a chip stock, so it sat out Tuesday's rally."
         },
         {
           "dt": "Jul 31",
           "tx": "Drifted down slightly to finish the month. The gap from its peak is about <b>the price people will pay</b>, not the health of the business."
+        },
+        {
+          "dt": "Jul 9",
+          "tx": "<b>June sales grew 10.6%, and the shares still fell about 4%.</b> Growth was slower than the month before — that tells you expectations are set very high."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> on <b>August 5</b>, look at the growth rate at existing stores, not the headline sales number. June showed that the market will sell the shares even on a good month if growth is slowing down.",
+      "verdict_en": "<b>What I'd watch:</b> <b>this afternoon</b>. When the July figures land at 4:15pm New York time, look at the growth rate at existing stores, not the headline sales number. June showed that the market will sell the shares even on a good month if growth is slowing down.",
       "news_ko": [
         {
-          "dt": "8월 4일",
-          "tx": "<b>보유 5개 중 유일하게 0.65% 내렸습니다.</b> 반도체 주식이 아니라서 화요일 랠리에서는 비켜서 있었습니다. 7월 매출은 내일 발표됩니다."
-        },
-        {
           "dt": "8월 5일",
-          "tx": "<b>7월 매출이 이번 수요일에 발표됩니다</b>(태평양 시각 오후 1시 15분). 이 페이지에 있는 일정 중 가장 가까운 것입니다."
+          "tx": "<b>7월 매출이 오늘 오후에 발표됩니다.</b> 뉴욕 시각 오후 4시 15분, 장이 닫힌 뒤입니다. 이 페이지에 있는 일정 중 가장 가까운 것이고, 이 페이지를 작성한 시점에는 아직 나오지 않았습니다."
         },
         {
-          "dt": "7월 9일",
-          "tx": "<b>6월 매출은 10.6% 늘었는데도 주가가 약 4% 떨어졌습니다.</b> 성장 속도가 전월보다 느려졌기 때문입니다. 기대가 그만큼 높다는 뜻입니다."
+          "dt": "8월 4일",
+          "tx": "<b>보유 5개 중 유일하게 0.65% 내렸습니다.</b> 반도체 주식이 아니라서 화요일 랠리에서는 비켜서 있었습니다."
         },
         {
           "dt": "7월 31일",
           "tx": "소폭 내리며 한 달을 마쳤습니다. 최고가와의 차이는 <b>사람들이 얼마를 내고 사려 하느냐</b>의 문제이지, 회사가 튼튼한지의 문제가 아닙니다."
+        },
+        {
+          "dt": "7월 9일",
+          "tx": "<b>6월 매출은 10.6% 늘었는데도 주가가 약 4% 떨어졌습니다.</b> 성장 속도가 전월보다 느려졌기 때문입니다. 기대가 그만큼 높다는 뜻입니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>8월 5일</b>에는 전체 매출 숫자가 아니라 기존 매장의 성장률을 보십시오. 6월 매출에서 확인했듯이, 성장 속도가 느려지면 좋은 달이어도 주가는 떨어집니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 오후</b>입니다. 뉴욕 시각 4시 15분에 7월 수치가 나오면, 전체 매출 숫자가 아니라 기존 매장의 성장률을 보십시오. 6월 매출에서 확인했듯이, 성장 속도가 느려지면 좋은 달이어도 주가는 떨어집니다.",
       "base": {
         "year_start": 859.11,
         "high_1y": 1097.05,
@@ -599,7 +599,7 @@
           "v_ko": "연 0.62%"
         }
       ],
-      "plain_en": "The warehouse retailer. The <b>business is doing well</b> — sales grew 10.6% in June, and July's figure arrives Wednesday. The share price is about 13.6% below its peak, not because Costco is struggling, but because the shares had become expensive. For the year it is up <b>about 10.3%</b>, a little behind the market.",
+      "plain_en": "The warehouse retailer. The <b>business is doing well</b> — sales grew 10.6% in June, and July's figure arrives on Wednesday afternoon. The share price is about 13.6% below its peak, not because Costco is struggling, but because the shares had become expensive. For the year it is up <b>about 10.3%</b>, a little behind the market.",
       "plain_ko": "창고형 대형 마트입니다. <b>사업은 잘되고 있습니다</b>. 6월 매출이 10.6% 늘었고, 7월 매출은 수요일에 발표됩니다. 주가가 최고가보다 약 13.6% 낮은 것은 회사가 어려워서가 아니라, 그 전까지 주식이 너무 비싸져 있었기 때문입니다. 올해 누적으로는 <b>약 10.3% 올라</b> 시장 전체보다는 조금 뒤처져 있습니다.",
       "bull_en": "Double-digit sales growth, fast-growing online business, and loyal paying members. It is the one holding here that does not depend on artificial intelligence.",
       "bull_ko": "두 자릿수 매출 성장, 빠르게 크는 온라인 사업, 그리고 회비를 내는 충성 고객이 있습니다. 다섯 중 인공지능에 기대지 않는 유일한 종목입니다.",
@@ -626,8 +626,8 @@
       {
         "headline_en": "Chip shares strung together their best run in years",
         "headline_ko": "반도체 주식이 몇 년 만에 가장 강한 상승 행진을 이어갔습니다",
-        "text_en": "The chip index rose about 6.6% on Tuesday, and one report called this the sector's best four-day stretch since 2020. Intel rose about 10% and AMD about 8% on Tuesday; NVDA rose for a fourth straight session. After a July that was the sector's worst month in over twenty years, some of the selling is being unwound. AMD reported its quarterly results after Tuesday's close — the market's reaction arrives Wednesday.",
-        "text_ko": "반도체 지수는 화요일 약 6.6% 올랐고, 한 보도는 이번 나흘이 2020년 이후 이 업종의 가장 강한 상승 구간이라고 전했습니다. 화요일에 인텔은 약 10%, AMD는 약 8% 올랐고, NVDA는 나흘 연속 상승했습니다. 20여 년 만에 최악의 달이었던 7월을 지나면서, 그때의 매도세가 일부 되돌려지고 있습니다. AMD는 화요일 장 마감 후 분기 실적을 발표했고, 시장의 반응은 수요일에 나타납니다.",
+        "text_en": "The chip index rose about 6.6% on Tuesday, and one report called this the sector's best four-day stretch since 2020. Intel rose about 10% and AMD about 7% on Tuesday; NVDA rose for a fourth straight session. After a July that was the sector's worst month in over twenty years, some of the selling is being unwound. Then AMD reported after Tuesday's close and gave the clearest sign yet of how high expectations have climbed: record sales of $11.54bn, up 50% in a year, its AI-and-data-centre business up 107%, all ahead of forecasts — and the shares fell about 8% in evening trading anyway. Good results were not enough. That is worth carrying into Nvidia's own report on August 26.",
+        "text_ko": "반도체 지수는 화요일 약 6.6% 올랐고, 한 보도는 이번 나흘이 2020년 이후 이 업종의 가장 강한 상승 구간이라고 전했습니다. 화요일에 인텔은 약 10%, AMD는 약 7% 올랐고, NVDA는 나흘 연속 상승했습니다. 20여 년 만에 최악의 달이었던 7월을 지나면서, 그때의 매도세가 일부 되돌려지고 있습니다. 그리고 AMD가 화요일 장 마감 후 실적을 발표하면서, 기대치가 얼마나 높아져 있는지가 가장 분명하게 드러났습니다. 매출은 사상 최대인 115억 4천만 달러로 1년 사이 50% 늘었고, AI·데이터센터 부문은 107% 성장해 모두 예상을 넘었습니다. 그런데도 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. 좋은 실적만으로는 부족했던 것입니다. 8월 26일 엔비디아 실적 발표를 앞두고 새겨둘 만한 대목입니다.",
         "touches": [
           "nvda",
           "soxl",
@@ -652,8 +652,8 @@
       {
         "date_en": "Wed Aug 5",
         "date_ko": "8월 5일 (수)",
-        "what_en": "ADP private payrolls and the ISM services survey in the morning. The market's first chance to react to AMD's Tuesday-evening results. Costco reports its July sales at 4:15pm New York time.",
-        "what_ko": "오전에 ADP 민간 고용과 ISM 서비스업 지수 발표. AMD의 화요일 저녁 실적에 시장이 처음 반응하는 날이기도 합니다. 코스트코는 뉴욕 시각 오후 4시 15분에 7월 매출을 발표합니다.",
+        "what_en": "Already partly done. The payroll firm ADP's count came out at 8:15am and was weak — 44,000 private jobs added in July against about 65,000 expected. The ISM services survey followed at 10:00am. This is also the first full session in which the market can answer AMD's Tuesday-evening results. Costco reports its July sales at 4:15pm New York time, after the close.",
+        "what_ko": "일부는 이미 지났습니다. 급여 대행업체 ADP의 집계가 오전 8시 15분에 나왔는데 약했습니다. 7월 민간 일자리가 4만 4천 개 늘어 예상치 약 6만 5천 개에 못 미쳤습니다. ISM 서비스업 지수는 오전 10시에 이어서 나왔습니다. AMD의 화요일 저녁 실적에 시장이 온전히 답하는 첫 거래일이기도 합니다. 코스트코는 뉴욕 시각 오후 4시 15분, 장 마감 후에 7월 매출을 발표합니다.",
         "touches": [
           "cost",
           "nvda",
@@ -715,14 +715,14 @@
         ]
       }
     ],
-    "sources_en": "Prices cross-checked against StockAnalysis and Google Finance; index levels against Yahoo Finance and CNBC reporting, which agree with each other and with Monday's closes. Bond yields differed slightly across sources (10-year 4.62% per CNBC reporting vs 4.63% elsewhere; 30-year 5.18% per YCharts vs 5.20% elsewhere) — the dated sources are shown. One aggregator showed the VIX at 15.61; Google Finance's dated close of 16.50 is used. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
-    "sources_ko": "가격은 StockAnalysis와 Google Finance에서, 지수는 Yahoo Finance와 CNBC 보도에서 교차 확인했으며 서로, 그리고 월요일 종가와도 일치합니다. 국채 금리는 자료마다 조금씩 달랐습니다(10년물은 CNBC 보도 기준 4.62%, 다른 곳은 4.63%. 30년물은 YCharts 기준 5.18%, 다른 곳은 5.20%). 날짜가 명시된 자료의 값을 실었습니다. 한 곳은 공포 지수를 15.61로 보여 줬지만, 날짜가 확인되는 Google Finance의 종가 16.50을 썼습니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
+    "sources_en": "<b>Why this page shows Tuesday.</b> It was written on Wednesday morning, about three quarters of an hour after Wednesday's trading had already started. A session that is still running has no closing price, so Wednesday's numbers were not usable and every figure here is Tuesday August 4's close. They were re-checked this morning rather than simply carried over: all five closes were confirmed against the funds' and companies' own daily trading records, and each day's percentage change was recalculated from the previous close to make sure it matched. The S&P 500, Dow and Nasdaq closes were confirmed independently by CNBC, and the VIX close of 16.50 and Costco's 4:15pm release time were each confirmed separately. Bond yields still differ slightly by source: Tuesday's 10-year reads 4.63% on YCharts and Forbes, 4.62% in CNBC reporting and 4.61% on one aggregator. Two sources agree on 4.63%, so that is what is shown, and both yields now come from a single dated series so that the two ends of each move are measured the same way. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
+    "sources_ko": "<b>이 페이지가 화요일을 싣는 이유.</b> 이 페이지는 수요일 오전, 수요일 장이 열리고 약 45분이 지난 시점에 작성됐습니다. 아직 진행 중인 장에는 종가가 없기 때문에 수요일 숫자는 쓸 수 없었고, 여기 있는 모든 수치는 8월 4일 화요일 종가입니다. 지난번 값을 그대로 옮긴 것이 아니라 오늘 아침에 다시 확인했습니다. 다섯 종목의 종가는 각 펀드와 회사의 일별 거래 기록으로 대조했고, 하루 변동률은 전날 종가에서 직접 다시 계산해 맞는지 확인했습니다. S&P 500·다우·나스닥 종가는 CNBC에서 따로 확인했고, 공포 지수 종가 16.50과 코스트코의 오후 4시 15분 발표 시각도 각각 따로 확인했습니다. 국채 금리는 여전히 자료마다 조금씩 다릅니다. 화요일 10년물은 YCharts와 포브스에서 4.63%, CNBC 보도에서 4.62%, 한 집계 사이트에서 4.61%였습니다. 두 곳이 4.63%로 일치해 그 값을 실었고, 두 금리 모두 날짜가 확인되는 같은 자료에서 가져와 변동의 앞뒤가 같은 기준으로 측정되도록 했습니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
   },
   "lede": [
     {
       "cls": "first",
-      "en": "Tuesday was a <b>strong day, and a broad one</b>. The chip fund SOXL rose <b>19.9%</b>, the Nasdaq-100 fund QQQ rose <b>3.4%</b>, and Nvidia rose <b>2.6%</b>. Unlike the lopsided sessions of late July, the gains were not carried by one or two names.",
-      "ko": "화요일은 <b>강하게, 그리고 고르게 오른 날</b>이었습니다. 반도체 펀드 SOXL이 <b>19.9%</b>, 나스닥100 펀드 QQQ가 <b>3.4%</b>, 엔비디아가 <b>2.6%</b> 올랐습니다. 한두 종목이 끌어올렸던 7월 말과 달리, 이번에는 여러 종목이 함께 올랐습니다."
+      "en": "These are <b>Tuesday's closing prices</b>. This page was written on Wednesday morning, after trading had already restarted, and a session that is still running has no closing price to report. Tuesday itself was a <b>strong day, and a broad one</b>. The chip fund SOXL rose <b>19.9%</b>, the Nasdaq-100 fund QQQ rose <b>3.4%</b>, and Nvidia rose <b>2.6%</b>. Unlike the lopsided sessions of late July, the gains were not carried by one or two names.",
+      "ko": "여기 있는 숫자는 <b>화요일 종가</b>입니다. 이 페이지는 수요일 아침, 이미 장이 다시 열린 뒤에 작성됐습니다. 아직 진행 중인 장에는 보고할 종가가 없습니다. 화요일 자체는 <b>강하게, 그리고 고르게 오른 날</b>이었습니다. 반도체 펀드 SOXL이 <b>19.9%</b>, 나스닥100 펀드 QQQ가 <b>3.4%</b>, 엔비디아가 <b>2.6%</b> 올랐습니다. 한두 종목이 끌어올렸던 7월 말과 달리, 이번에는 여러 종목이 함께 올랐습니다."
     },
     {
       "cls": "",
@@ -731,19 +731,19 @@
     },
     {
       "cls": "",
-      "en": "What matters now is <b>interest rates</b>, not company profits. The Federal Reserve left rates unchanged on July 29 and signalled it is in no hurry to cut them. When rates on government bonds go up, investors get a safe alternative to shares, which pulls share prices down.",
-      "ko": "지금 중요한 것은 회사 실적이 아니라 <b>금리</b>입니다. 미국 연방준비제도(연준)는 7월 29일 금리를 그대로 두었고, 서둘러 내릴 생각이 없다는 신호를 보냈습니다. 국채 금리가 오르면 투자자들에게 주식 대신 안전한 선택지가 생기고, 그만큼 주가는 눌립니다."
+      "en": "Two things are worth carrying forward. First, <b>expectations are now set very high</b>. AMD reported after Tuesday's close — record sales, up 50% in a year, better than analysts had expected — and its shares fell about 8% in evening trading anyway. Costco did the same thing in July after a good June. Good news is not automatically enough. Second, <b>interest rates</b>. Long-term government bonds still pay about 5.2%, close to their highest in 19 years, and that is the safe alternative shares get measured against. The next dated tests are the <b>jobs report on Friday</b> and the <b>inflation report on August 12</b>.",
+      "ko": "앞으로 가져갈 것은 두 가지입니다. 첫째, <b>기대치가 이미 매우 높게 잡혀 있습니다</b>. AMD는 화요일 장 마감 후 실적을 냈습니다. 매출은 사상 최대이자 1년 사이 50% 늘었고 시장 예상도 넘었는데, 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. 코스트코도 6월 실적이 좋았는데 7월에 같은 일을 겪었습니다. 좋은 소식이라고 해서 저절로 충분한 것은 아닙니다. 둘째, <b>금리</b>입니다. 장기 국채는 여전히 약 5.2%를 주는데 19년 만의 최고 수준에 가깝고, 주식은 늘 그 안전한 대안과 비교됩니다. 다음 시험대는 <b>금요일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다."
     }
   ],
   "events": [
     {
-      "hot": false,
+      "hot": true,
       "when_en": "Wed Aug 5",
       "when_ko": "8월 5일(수)",
       "what_en": "Costco sales",
       "what_ko": "코스트코 매출",
-      "note_en": "Watch the growth rate",
-      "note_ko": "성장률을 보세요"
+      "note_en": "Today, 4:15pm — watch the growth rate",
+      "note_ko": "오늘 오후 4시 15분 — 성장률을 보세요"
     },
     {
       "hot": true,
@@ -791,8 +791,8 @@
       "note_ko": "장 마감 후"
     }
   ],
-  "next_session_en": "Trading restarts <b>Wednesday, 9:30 AM New York time</b>",
-  "next_session_ko": "다음 거래는 <b>수요일 오전 9시 30분(뉴욕 시간)</b>에 시작합니다",
-  "next_session_en_html": "Trading restarts <b>Wednesday, 9:30&nbsp;AM New York time</b>",
-  "next_session_ko_html": "다음 거래는 <b>수요일 오전 9시 30분(뉴욕 시각)</b>에 시작합니다"
+  "next_session_en": "Wednesday's session is <b>already trading</b> — these are Tuesday's closing prices",
+  "next_session_ko": "수요일 장은 <b>이미 열려 있습니다</b> — 위 숫자는 화요일 종가입니다",
+  "next_session_en_html": "Wednesday&rsquo;s session is <b>already&nbsp;trading</b> &mdash; these are <b>Tuesday&rsquo;s closing prices</b>",
+  "next_session_ko_html": "수요일 장은 <b>이미 열려 있습니다</b> &mdash; 위 숫자는 <b>화요일 종가</b>입니다"
 }

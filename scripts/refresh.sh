@@ -26,6 +26,7 @@ cd "$ROOT"
 # weekend — the week, on Saturday
 # tracker — midday sweep of the record section only; leaves market numbers alone
 MODE="${1:-weekday}"
+TODAY_STAMP="$(date +%Y-%m-%d)"
 case "$MODE" in
   weekday|weekend|tracker) ;;
   *) echo "unknown mode: $MODE (expected weekday, weekend or tracker)"; exit 2 ;;
@@ -88,10 +89,19 @@ echo "$$" > "$LOCK/pid"
 # directory and leave the lock behind — reintroducing exactly the bug this guards against.
 trap 'rm -rf "$LOCK" 2>/dev/null' EXIT INT TERM
 
+# --- 0a. Already succeeded today? -----------------------------------------------
+# The schedule now has multiple slots per mode (a failed 6:12 gets another go at 6:57
+# and 7:42). A slot that fires after a success must cost nothing.
+STAMP="$ROOT/.state/last-success-$MODE"
+if [ -f "$STAMP" ] && [ "$(cat "$STAMP" 2>/dev/null)" = "$TODAY_STAMP" ]; then
+  echo "Already ran successfully today ($MODE). Nothing to do."
+  exit 0
+fi
+
 # --- 0. Don't research a market that hasn't moved ------------------------------
 # US market holidays land on weekdays; on those days there is no new close to report.
 HOLIDAYS_2026="2026-01-01 2026-01-19 2026-02-16 2026-04-03 2026-05-25 2026-06-19 2026-07-03 2026-09-07 2026-11-26 2026-12-25"
-TODAY="$(date +%Y-%m-%d)"
+TODAY="$TODAY_STAMP"
 if [[ "$MODE" != "weekend" && "$HOLIDAYS_2026" == *"$TODAY"* ]]; then
   echo "Market holiday ($TODAY) — nothing new to report. Skipping."
   exit 0
@@ -100,6 +110,17 @@ fi
 # --- 1. Research -------------------------------------------------------------
 PROMPT_FILE="$ROOT/scripts/prompts/refresh-$MODE.md"
 [ -f "$PROMPT_FILE" ] || fail "missing prompt file $PROMPT_FILE"
+
+echo
+echo "--- 0.5  Waiting for network ---"
+NET_OK=0
+for i in $(seq 1 30); do
+  if /usr/bin/curl -Is --max-time 8 https://api.anthropic.com >/dev/null 2>&1; then
+    NET_OK=1; echo "  network up (attempt $i)"; break
+  fi
+  sleep 10
+done
+[ "$NET_OK" = "1" ] || fail "no network after 5 minutes"
 
 echo
 echo "--- 1/4  Researching (the slow part; the first real run took over 20 minutes) ---"
@@ -115,20 +136,22 @@ find "$ROOT" -type f \( -name '*.html' -o -name '*.py' -o -name '*.sh' -o -name 
 
 RESEARCH_TIMEOUT=1800   # 30 minutes; a hung agent must not eat the whole day
 
-claude -p "$(cat "$PROMPT_FILE")" \
-      --allowedTools WebSearch WebFetch Read "Edit(data/**)" \
-      --add-dir "$ROOT/data" \
-      --output-format text &
-CPID=$!
-( sleep "$RESEARCH_TIMEOUT"; kill -TERM "$CPID" 2>/dev/null ) &
-WPID=$!
-wait "$CPID"; RC=$?
-kill "$WPID" 2>/dev/null; wait "$WPID" 2>/dev/null
-
-if [ "$RC" -ne 0 ]; then
+RC=1
+for ATTEMPT in 1 2 3; do
+  [ "$ATTEMPT" -gt 1 ] && { echo "  retry $ATTEMPT after 90s (last exit $RC)"; sleep 90; }
+  claude -p "$(cat "$PROMPT_FILE")" \
+        --allowedTools WebSearch WebFetch Read "Edit(data/**)" \
+        --add-dir "$ROOT/data" \
+        --output-format text &
+  CPID=$!
+  ( sleep "$RESEARCH_TIMEOUT"; kill -TERM "$CPID" 2>/dev/null ) &
+  WPID=$!
+  wait "$CPID"; RC=$?
+  kill "$WPID" 2>/dev/null; wait "$WPID" 2>/dev/null
+  [ "$RC" -eq 0 ] && break
   [ "$RC" -ge 143 ] && echo "  (exit $RC — killed by the ${RESEARCH_TIMEOUT}s watchdog)"
-  fail "research step (exit $RC)"
-fi
+done
+[ "$RC" -eq 0 ] || fail "research step failed after 3 attempts (last exit $RC)"
 
 # Did it stay inside data/?
 find "$ROOT" -type f \( -name '*.html' -o -name '*.py' -o -name '*.sh' -o -name '*.md' \) \
@@ -286,6 +309,7 @@ else
 fi
 
 rm -f "$ROOT/.state/last-failure.txt"
+echo "$TODAY_STAMP" > "$STAMP"
 
 echo
 echo "Done — $(date '+%H:%M:%S')"
