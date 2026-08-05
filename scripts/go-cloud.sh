@@ -18,6 +18,14 @@ cd "$ROOT"
 REPO="sneakytikii/morning-market-recap"
 
 echo "==> 1/3  Pushing the project"
+# Commit anything the last local refresh left behind, or the newest numbers stay on this
+# Mac while the site shows the older ones.
+if ! git diff --quiet || ! git diff --cached --quiet; then
+  echo "    committing pending local changes first"
+  git add -A
+  git -c user.name="${GIT_NAME:-Daniel Kim}" -c user.email="${GIT_EMAIL:-danielkimmy0704@gmail.com}" \
+      commit -q -m "Latest local refresh"
+fi
 git push --force -u origin main || { echo "push failed"; exit 1; }
 
 echo
