@@ -183,10 +183,8 @@
   /* Column plan: name breathes, figures sit tight and right, the take gets real room.
      Numeric cells never wrap — the figure IS the cell. */
   .board td:not(.l) { white-space:nowrap; }
-  /* Every data column is right-aligned; leaving the take column left-aligned parked
-     it in the middle of its slot with dead space on the right. Right-align it like the
-     rest — the table gets a flush right edge and one consistent rhythm. */
-  .board thead th:last-child, .board td:last-child { text-align:right; }
+  /* The take column is centered — header and chips together. */
+  .board thead th:last-child, .board td:last-child { text-align:center; }
   .board col.c-name { width:24%; }
   .board col.c-price { width:13%; }
   .board col.c-day { width:12%; }
@@ -195,7 +193,7 @@
   .board col.c-take { width:25%; }
   :root[data-lang="en"] .board thead th { font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
   .board thead th.l { text-align:left; padding-left:0; }
-  .board thead th:last-child { padding-right:0; }
+  .board thead th:last-child { padding-right:16px; }
   .board tbody tr { border-bottom:1px solid var(--rule); cursor:pointer; transition:background .15s ease; }
   .board tbody tr:hover { background:var(--sunken); }
   .board tbody tr[aria-current="true"] { background:var(--accent-soft); }
@@ -204,8 +202,8 @@
     font-variant-numeric:tabular-nums; font-size:19px; font-weight:600;
   }
   .board td.l { text-align:left; padding-left:0; }
-  .board td.l:last-child { text-align:right; }  /* the take cell follows the data columns */
-  .board td:last-child { padding-right:0; }
+  .board td.l:last-child { text-align:center; }
+  .board td:last-child { padding-right:16px; }
   .board .tkr { font-family:var(--f-serif); font-size:25px; font-weight:600; }
   .board .co { font-family:var(--f-sans); font-size:15px; font-weight:500; color:var(--ink-2); font-variant-numeric:normal; margin-top:2px; line-height:1.4; }
   .arw { font-family:var(--f-sans); }
