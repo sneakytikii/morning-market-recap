@@ -41,5 +41,5 @@ echo "Done. Your link (unchanged):"
 echo "   https://sneakytikii.github.io/morning-market-recap/"
 echo
 echo "The local Mac schedule is untouched and still running — the Mac"
-echo "wakes at 06:05 Mon-Sat and refreshes at 06:12."
+echo "wakes at 06:05 Mon-Fri and refreshes at 06:12."
 echo "-----------------------------------------------------------"
