@@ -721,18 +721,18 @@
   "lede": [
     {
       "cls": "first",
-      "en": "These are <b>Tuesday's closing prices</b>. This page was written on Wednesday morning, after trading had already restarted, and a session that is still running has no closing price to report. Tuesday itself was a <b>strong day, and a broad one</b>. The chip fund SOXL rose <b>19.9%</b>, the Nasdaq-100 fund QQQ rose <b>3.4%</b>, and Nvidia rose <b>2.6%</b>. Unlike the lopsided sessions of late July, the gains were not carried by one or two names.",
-      "ko": "여기 있는 숫자는 <b>화요일 종가</b>입니다. 이 페이지는 수요일 아침, 이미 장이 다시 열린 뒤에 작성됐습니다. 아직 진행 중인 장에는 보고할 종가가 없습니다. 화요일 자체는 <b>강하게, 그리고 고르게 오른 날</b>이었습니다. 반도체 펀드 SOXL이 <b>19.9%</b>, 나스닥100 펀드 QQQ가 <b>3.4%</b>, 엔비디아가 <b>2.6%</b> 올랐습니다. 한두 종목이 끌어올렸던 7월 말과 달리, 이번에는 여러 종목이 함께 올랐습니다."
+      "en": "Yesterday was a <b>strong day, and a broad one</b>. The chip fund SOXL rose <b>19.9%</b>, the Nasdaq-100 fund QQQ rose <b>3.4%</b>, and Nvidia rose <b>2.6%</b>. Unlike the lopsided sessions of late July, the gains were not carried by one or two names.",
+      "ko": "어제는 <b>강했고, 고르게 오른 날</b>이었습니다. 반도체 펀드 SOXL이 <b>19.9%</b>, 나스닥100 펀드 QQQ가 <b>3.4%</b>, 엔비디아가 <b>2.6%</b> 올랐습니다. 한두 종목이 끌어올렸던 7월 말과 달리, 여러 종목이 함께 올랐습니다."
     },
     {
       "cls": "",
-      "en": "This is the mirror image of July. The chip fund lost <b>57%</b> over those four weeks while the overall market went nowhere — the same leverage that caused that fall is what produced Tuesday's jump. It moves three times as much in both directions, every day.",
-      "ko": "7월과 정확히 반대되는 모습입니다. 그 4주 동안 시장 전체는 제자리였는데 반도체 펀드만 <b>57%</b>를 잃었습니다. 그때 하락을 키운 바로 그 배율이 화요일의 상승도 만들었습니다. 매일, 오르든 내리든 세 배씩 움직입니다."
+      "en": "This is the mirror image of July. The chip fund lost <b>57%</b> over those four weeks while the overall market went nowhere — the same leverage that caused that fall produced yesterday's jump. It moves three times as much in both directions, every day.",
+      "ko": "7월과 정확히 반대되는 모습입니다. 그 4주 동안 시장 전체는 제자리였는데 반도체 펀드만 <b>57%</b>를 잃었습니다. 그때 하락을 키운 바로 그 배율이 어제의 급등도 만들었습니다. 매일, 오르든 내리든 세 배씩 움직입니다."
     },
     {
       "cls": "",
-      "en": "Two things are worth carrying forward. First, <b>expectations are now set very high</b>. AMD reported after Tuesday's close — record sales, up 50% in a year, better than analysts had expected — and its shares fell about 8% in evening trading anyway. Costco did the same thing in July after a good June. Good news is not automatically enough. Second, <b>interest rates</b>. Long-term government bonds still pay about 5.2%, close to their highest in 19 years, and that is the safe alternative shares get measured against. The next dated tests are the <b>jobs report on Friday</b> and the <b>inflation report on August 12</b>.",
-      "ko": "앞으로 가져갈 것은 두 가지입니다. 첫째, <b>기대치가 이미 매우 높게 잡혀 있습니다</b>. AMD는 화요일 장 마감 후 실적을 냈습니다. 매출은 사상 최대이자 1년 사이 50% 늘었고 시장 예상도 넘었는데, 주가는 저녁 시간외 거래에서 약 8% 떨어졌습니다. 코스트코도 6월 실적이 좋았는데 7월에 같은 일을 겪었습니다. 좋은 소식이라고 해서 저절로 충분한 것은 아닙니다. 둘째, <b>금리</b>입니다. 장기 국채는 여전히 약 5.2%를 주는데 19년 만의 최고 수준에 가깝고, 주식은 늘 그 안전한 대안과 비교됩니다. 다음 시험대는 <b>금요일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다."
+      "en": "Two things to carry into today. First, <b>expectations are set very high</b>: AMD reported record sales after the close — up 50% in a year, better than analysts expected — and its shares still fell about 8% in evening trading. Good news is no longer automatically enough. Second, <b>interest rates</b>: long-term government bonds still pay about 5.2%, and the next dated tests are the <b>jobs report on Friday</b> and the <b>inflation report on August 12</b>.",
+      "ko": "오늘로 가져갈 두 가지가 있습니다. 첫째, <b>기대치가 매우 높아져 있습니다</b>. AMD는 장 마감 후 1년 사이 50% 늘어난 사상 최대 매출을 발표했는데도, 시간외 거래에서 주가가 약 8% 떨어졌습니다. 이제 좋은 소식만으로는 부족합니다. 둘째, <b>금리</b>입니다. 장기 국채는 여전히 약 5.2%를 주고, 다음 시험대는 <b>금요일 고용 보고서</b>와 <b>8월 12일 물가 보고서</b>입니다."
     }
   ],
   "events": [
