@@ -265,11 +265,24 @@ python3 scripts/wrap_site.py || fail "wrap"
 # --- 4. Publish --------------------------------------------------------------
 echo
 echo "--- 4/4  Publishing ---"
-if git -C "$ROOT/site" remote get-url origin >/dev/null 2>&1; then
-  bash scripts/deploy.sh || echo "  publish failed — local files are still updated"
+# The project root is the repo now (site/ became docs/ when the whole project moved
+# into it). The old check pointed at $ROOT/site, which no longer exists — so a run
+# would rebuild locally and silently skip the push.
+if git -C "$ROOT" remote get-url origin >/dev/null 2>&1; then
+  git -C "$ROOT" add -A
+  if git -C "$ROOT" diff --cached --quiet; then
+    echo "  Nothing changed — not publishing."
+  else
+    git -C "$ROOT" -c user.name="market-recap-refresh" -c user.email="noreply@localhost" \
+        commit -q -m "Refresh ($MODE) $(date '+%Y-%m-%d %H:%M')"
+    if git -C "$ROOT" push -q origin main; then
+      echo "  Published to GitHub Pages."
+    else
+      echo "  PUSH FAILED — the site still shows the previous page. Local files are current."
+    fi
+  fi
 else
-  echo "  Not linked to GitHub Pages yet. Local files updated."
-  echo "  Run ./scripts/deploy.sh once to create the public link."
+  echo "  No git remote configured. Local files updated only."
 fi
 
 rm -f "$ROOT/.state/last-failure.txt"
