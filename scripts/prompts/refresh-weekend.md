@@ -112,6 +112,15 @@ never predict, and the Korean twin says the same thing with the same hedges.
   if your researched drawdown disagrees with high_1y-derived value by more than rounding,
   the high has moved: update `base.high_1y`, not the display.
 
+### The masthead date is automatic — write like a morning paper
+
+The big date at the top is derived at build time (the morning the brief is written);
+you no longer write `dateline_en/ko`. So the lede should read like a morning paper:
+call the reported session **"yesterday"** ("Yesterday was a strong day..."), not by its
+weekday name, and do not open with disclaimers about which day the prices are from —
+`next_session_en_html/ko_html` carries that one line ("...these are Tuesday's closing
+prices"), keep it accurate instead.
+
 ## The Trump tracker
 
 Follow `data/trump-corpus.md` exactly. For the weekend, sweep **the last 7 days** for

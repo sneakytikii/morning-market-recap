@@ -222,6 +222,22 @@ def derive_market(data: dict) -> dict:
     except ValueError:
         market["day_label_en"], market["day_label_ko"] = "Latest", "최근"
 
+    # The masthead leads with the BRIEF's date — the morning it was written — not the
+    # session it covers. A Wednesday-morning page headlined "Tuesday, After the Close"
+    # reads as stale even when freshly built; a morning paper is dated the day you read
+    # it, and the sub-line explains which close it covers. Build time IS write time.
+    today = datetime.date.today()
+    DAYS_EN2 = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    DAYS_KO2 = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
+    MON_EN2 = ["January","February","March","April","May","June","July","August",
+               "September","October","November","December"]
+    kind_en = "Weekend Recap" if market.get("mode") == "weekend" else "Morning Brief"
+    kind_ko = "주말 정리" if market.get("mode") == "weekend" else "아침 브리핑"
+    market["brief_date_en"] = "%s, %s %d, %d &middot; %s" % (
+        DAYS_EN2[today.weekday()], MON_EN2[today.month-1], today.day, today.year, kind_en)
+    market["brief_date_ko"] = "%d년 %d월 %d일 %s · %s" % (
+        today.year, today.month, today.day, DAYS_KO2[today.weekday()], kind_ko)
+
     # The methodology note names the session date; derive it so it cannot go stale.
     try:
         dt = datetime.date.fromisoformat(str(market.get("as_of", ""))[:10])
