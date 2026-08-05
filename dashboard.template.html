@@ -152,6 +152,20 @@
     padding:8px 12px 0 0; font-weight:600; color:var(--ink);
   }
 
+  /* "Happening today" — a live one-liner above yesterday's story, filled from the
+     quote feed. Hidden entirely unless fresh live data exists, so the page never
+     pretends. */
+  .todaybar {
+    margin:0 0 18px; padding:12px 0; border-top:2px solid var(--rule-heavy);
+    border-bottom:1px solid var(--rule); font-size:18px; color:var(--ink-2);
+  }
+  .todaybar .tlab {
+    font-family:var(--f-sans); font-weight:800; color:var(--ink); margin-right:10px;
+  }
+  .todaybar .tq { white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .todaybar .tq.up { color:var(--up); } .todaybar .tq.dn { color:var(--down); }
+  .todaybar .tmeta { color:var(--ink-3); font-size:15.5px; }
+
   /* ---------- index strip ---------- */
   .strip { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule); }
   .strip > div { padding:16px 18px; border-left:1px solid var(--rule); }
@@ -502,6 +516,7 @@
 
   <section class="lede">
     <h2><span data-l="en">In plain English</span><span data-l="ko">쉽게 말하면</span></h2>
+    <p class="todaybar" id="todayNow" hidden></p>
     <div class="lede-body">
       <!--R:market.lede--><p class="{{cls}}" data-l="en">{{en|raw}}</p><p class="{{cls}}" data-l="ko">{{ko|raw}}</p><!--/R-->
     </div>
@@ -897,6 +912,37 @@
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
       document.body.classList.add("live-on");
+      // The morning story is written pre-open; on a moving day it goes quiet-stale by
+      // 10am. This line IS the morning's story, live: what the five are doing right now.
+      var tb = document.getElementById("todayNow");
+      if (tb) {
+        var NAMES = {
+          spx:  { en: "S&P 500", ko: "S&P 500" },
+          qqq:  { en: "QQQ", ko: "QQQ" },
+          nvda: { en: "Nvidia", ko: "엔비디아" },
+          soxl: { en: "SOXL", ko: "SOXL" },
+          cost: { en: "Costco", ko: "코스트코" }
+        };
+        function bits(lang) {
+          var out = [];
+          BOARD.forEach(function (k) {
+            if (!q[k] || typeof q[k].d !== "number" || !q[k].s) return;
+            var dir = q[k].d > 0 ? "up" : (q[k].d < 0 ? "dn" : "");
+            var arw = q[k].d > 0 ? "▲" : (q[k].d < 0 ? "▼" : "");
+            out.push('<span class="tq ' + dir + '">' + NAMES[k][lang] + " " + arw + " " + q[k].s + "</span>");
+          });
+          return out.join(" &nbsp;·&nbsp; ");
+        }
+        var enB = bits("en"), koB = bits("ko");
+        if (enB) {
+          tb.innerHTML =
+            '<span data-l="en"><span class="tlab">Happening today:</span>' + enB +
+            ' <span class="tmeta">— as of ' + stamp() + ", delayed up to 15 min</span></span>" +
+            '<span data-l="ko"><span class="tlab">오늘 시장:</span>' + koB +
+            ' <span class="tmeta">— ' + stamp() + " 기준, 최대 15분 지연</span></span>";
+          tb.hidden = false;
+        }
+      }
       var priceTh = document.querySelector(".board thead th:nth-child(2)");
       if (priceTh) {
         var the = priceTh.querySelector('[data-l="en"]'), thk = priceTh.querySelector('[data-l="ko"]');
