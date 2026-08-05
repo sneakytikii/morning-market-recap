@@ -193,6 +193,9 @@
   .board col.c-take { width:25%; }
   :root[data-lang="en"] .board thead th { font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
   .board thead th.l { text-align:left; padding-left:0; }
+  /* The take header carries class="l" (left) — this out-specifics it so the header
+     centers WITH its chips. This was the rule that kept beating the centering. */
+  .board thead th.l:last-child { text-align:center; padding-left:16px; }
   .board thead th:last-child { padding-right:16px; }
   .board tbody tr { border-bottom:1px solid var(--rule); cursor:pointer; transition:background .15s ease; }
   .board tbody tr:hover { background:var(--sunken); }
@@ -400,7 +403,7 @@
     .rail .notice { order:-1; }
     .lede-body { columns:1; }
   }
-  @media (max-width:880px) {
+  @media (max-width:1020px) {
     .masthead h1 { font-size:32px; }
     .dog-mast { width:62px; height:62px; }
     .strip { grid-template-columns:repeat(3,1fr); }
@@ -419,7 +422,7 @@
     /* flex-start, not space-between: the ▲/▼ span and its number are separate flex
        items, and space-between stranded the arrow alone in the middle of the row. */
     .board td { display:flex; justify-content:flex-start; align-items:baseline; gap:6px; padding:8px 0; font-size:18px; }
-    .board td.l { display:block; padding-top:12px; }
+    .board td.l:first-child { display:block; padding-top:12px; }
     :root[data-lang="en"] .board td[data-en]::before { content:attr(data-en); }
     :root[data-lang="ko"] .board td[data-ko]::before { content:attr(data-ko); }
     .board td[data-en]::before, .board td[data-ko]::before {
@@ -435,6 +438,8 @@
     .board td[data-en="Price"] { display:none; }
     /* ...except when live quotes are streaming — then the price row IS the news. */
     .live-on .board td[data-en="Price"] { display:flex; }
+    .live-on .board td[data-en="Price"]::before { content:"Price · live"; }
+    :root[data-lang="ko"] .live-on .board td[data-en="Price"]::before { content:"시세 · 실시간"; }
     .lg-e { grid-template-columns:1fr; gap:6px; }
     .lg-d { padding-top:0; }
     .potus { width:52px; height:52px; }
@@ -541,13 +546,13 @@
     <p class="key" data-l="en">
       <span><b>▲ green</b> = went up</span>
       <span><b>▼ red</b> = went down</span>
-      <span><b>Below 1-year high</b> = how far under its best price of the past year</span>
+      <span><b>Below 1-yr high</b> = how far under its best price of the past year</span>
       <span><b>Bond rates</b> in gold — when safe returns rise, share prices get pulled down</span>
     </p>
     <p class="key" data-l="ko">
       <span><b>▲ 초록</b> = 올랐음</span>
       <span><b>▼ 빨강</b> = 내렸음</span>
-      <span><b>1년 최고가 대비</b> = 지난 1년 중 가장 비쌌을 때보다 얼마나 아래인지</span>
+      <span><b>고점 대비</b> = 지난 1년 중 가장 비쌌을 때보다 얼마나 아래인지</span>
       <span><b>국채 금리</b>는 금색입니다 — 안전한 금리가 오르면 주가는 눌리기 때문입니다</span>
     </p>
   </section>
@@ -909,8 +914,11 @@
             // column stays what it says it is.
             if (typeof q[k].d === "number" && q[k].s) {
               var chg = document.createElement("span");
-              chg.className = "lchg " + (q[k].d >= 0 ? "up" : "dn");
-              chg.textContent = (q[k].d >= 0 ? "▲ " : "▼ ") + q[k].s + " today";
+              var dir = q[k].d > 0 ? "up" : (q[k].d < 0 ? "dn" : "fl");
+              var arw = q[k].d > 0 ? "▲ " : (q[k].d < 0 ? "▼ " : "");
+              chg.className = "lchg " + dir;
+              chg.innerHTML = '<span data-l="en">' + arw + q[k].s + " today</span>"
+                            + '<span data-l="ko">' + arw + "오늘 " + q[k].s + "</span>";
               cell.appendChild(chg);
             }
           }

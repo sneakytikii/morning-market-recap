@@ -141,10 +141,13 @@ def derive_metrics(pos: dict, key: str) -> None:
         hi = float(base["high_1y"])
         dd = 1 - price / hi
         # dd_num is language-neutral (for the board cell); dd_en/ko are worded (facts).
-        m["dd_num"] = "≈ %.1f%%" % (max(dd, 0) * 100)
         if dd <= 0.002:
+            # Exactly at the high: "0%" — precise, figure-shaped, language-neutral.
+            # "≈ 0.0%" hedged an exact fact and read oddly next to "Record close".
+            m["dd_num"] = "0%"
             m["dd_en"], m["dd_ko"] = "at its high", "최고가 수준"
         else:
+            m["dd_num"] = "≈ %.1f%%" % (dd * 100)
             m["dd_en"] = m["dd_ko"] = m["dd_num"]
         rec = hi / price - 1
         m["recover_en"] = m["recover_ko"] = "≈ +%d%%" % round(rec * 100)
@@ -262,7 +265,7 @@ def derive_market(data: dict) -> dict:
         m2 = re.search(r"[≈\s]*[+\-−]?[\d.]+%", str(pos.get("day_en", "")))
         pos["day_cell"] = (("≈ " if "≈" in str(pos.get("day_en","")) else "") + m2.group(0).strip().lstrip("≈ ").strip()) if m2 else str(pos.get("day_en",""))
         if str(pos.get("day_dir")) == "fl" and not m2:
-            pos["day_cell"] = "flat"
+            pos["day_cell"] = "0.0%"
         m3 = re.search(r"(≈\s*)?[+\-−]?[\d.]+%", str(pos.get("week_en", "")))
         pos["week_cell"] = m3.group(0).strip() if m3 else str(pos.get("week_en",""))
         derive_metrics(pos, key)
