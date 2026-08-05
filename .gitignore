@@ -24,7 +24,6 @@ __pycache__/
 # Claude Code local state
 .claude/
 
-# GitHub Actions workflow — kept locally in case the cloud path is ever wanted,
-# but not pushed: doing so needs a token with the `workflow` scope, and the schedule
-# currently runs on the Mac instead.
-.github/
+# The cloud-research workflow is kept locally but not pushed (the schedule runs on the
+# Mac). live.yml IS pushed — it fetches quotes only and needs no secrets.
+.github/workflows/refresh.yml

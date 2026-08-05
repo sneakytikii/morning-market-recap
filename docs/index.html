@@ -1053,6 +1053,80 @@
     for (var i = 0; i < faces.length; i++) { if (faces[i]) faces[i].src = uri; }
   }
 
+  // Live prices. A GitHub Action refreshes one small JSON on the `live` branch every
+  // ~10 minutes during market hours; this swaps PRICE TEXT only. The day/week columns
+  // stay close-based — they are labeled with the session they describe. If the fetch
+  // fails or the data is stale, nothing changes: the built page is the fallback.
+  (function () {
+    var URL = "https://raw.githubusercontent.com/sneakytikii/morning-market-recap/live/live.json";
+    var BOARD = ["spx", "qqq", "nvda", "soxl", "cost"];
+    var STRIPK = ["spx", "ndx", "dow", "vix", "us10y", "us30y"];
+    var fresh = document.querySelector(".fresh");
+    var builtFresh = fresh ? fresh.innerHTML : "";
+
+    function stamp() {
+      var d = new Date();
+      var h = d.getHours(), m = d.getMinutes();
+      return h + ":" + (m < 10 ? "0" : "") + m;
+    }
+
+    function apply(data) {
+      if (!data || !data.quotes) return;
+      // Older than 25 minutes counts as stale — leave the built page alone.
+      if (!data.t || (Date.now() / 1000 - data.t) > 1500) return;
+      var q = data.quotes;
+
+      var strips = document.querySelectorAll(".strip > div .v");
+      for (var i = 0; i < STRIPK.length && i < strips.length; i++) {
+        if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
+      }
+      BOARD.forEach(function (k) {
+        if (!q[k] || !q[k].v) return;
+        var row = document.querySelector('tr[data-t="' + k + '"]');
+        if (row) {
+          var cell = row.querySelector('td[data-en="Price"]');
+          if (cell) cell.textContent = q[k].v;
+        }
+        var panel = document.getElementById("p-" + k);
+        if (panel) {
+          var px = panel.querySelector(".px");
+          if (px) {
+            // The first child is the F-marker comment, not text — find the first
+            // non-empty text node and swap only that.
+            for (var c = px.firstChild; c; c = c.nextSibling) {
+              if (c.nodeType === 3 && c.textContent.trim()) {
+                c.textContent = q[k].v + " ";
+                break;
+              }
+            }
+          }
+        }
+      });
+      if (fresh) {
+        var en = fresh.querySelector('[data-l="en"]');
+        var ko = fresh.querySelector('[data-l="ko"]');
+        if (en) en.textContent = "Live prices · updated " + stamp() + " · delayed up to 15 min";
+        if (ko) ko.textContent = "실시간 시세 · " + stamp() + " 업데이트 · 최대 15분 지연";
+      }
+    }
+
+    function pull() {
+      // Only bother while the market is open-ish; after the close the last fetch of the
+      // day already holds the closing numbers.
+      fetch(URL + "?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(apply)
+        .catch(function () { /* offline or branch absent: built page stands */ });
+    }
+
+    if (window.fetch) {
+      pull();
+      setInterval(function () {
+        if (!document.hidden) pull();
+      }, 120000);
+    }
+  })();
+
   // The market-status chip is computed from the clock at read time. A build-time value
   // goes wrong within hours (this page once said "Markets closed" mid-session), and the
   // reader's moment is the only one that matters.
