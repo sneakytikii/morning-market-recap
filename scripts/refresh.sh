@@ -26,7 +26,9 @@ cd "$ROOT"
 # weekend — the week, on Saturday
 # tracker — midday sweep of the record section only; leaves market numbers alone
 MODE="${1:-weekday}"
-TODAY_STAMP="$(date +%Y-%m-%d)"
+# Pacific, not machine-local: the reader's day (dad, PST) is the day that counts, and
+# it must agree with build.py's pacific_today() or the staleness stamps drift.
+TODAY_STAMP="$(TZ=America/Los_Angeles date +%Y-%m-%d)"
 case "$MODE" in
   weekday|weekend|tracker) ;;
   *) echo "unknown mode: $MODE (expected weekday, weekend or tracker)"; exit 2 ;;

@@ -52,6 +52,11 @@ The reader is a non-technical 65-year-old. Every sentence must pass that test.
 
 - Plain English. No jargon. Not "multiple compression" — "the shares got cheaper relative
   to profits". Not "risk-off" — "investors sold riskier things".
+- **Clock times are Pacific.** The reader is on the US West Coast. When a clock time
+  matters, give it in Pacific and say so plainly — the 8:30am New York jobs report is
+  "5:30 in the morning Pacific time" (Korean: "서부 시각 오전 5시 30분"). Better still,
+  most times need no clock at all: "before the open", "after the close tonight".
+  Never write a bare New York time.
 - Say what happened, then what it means, then what to watch. In that order.
 - Never predict. "Reasons it could go up / down", never "it will".
 - Keep the existing sentence rhythm — short, declarative, calm. Read the current copy and

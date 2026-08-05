@@ -516,8 +516,8 @@
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Slipped 0.65% on Tuesday while almost everything else rose — on days when money rushes toward technology shares, the steadiest names get left behind. It is down about 0.4% for the week so far. July sales arrive Wednesday afternoon at 4:15pm New York time, which is after this page was written. Still the only one of the five with no chip exposure.",
-      "note_ko": "화요일에 거의 모든 것이 오르는 동안 0.65% 내렸습니다. 돈이 기술주로 몰리는 날에는 가장 안정적인 종목이 뒤처지곤 합니다. 이번 주 들어 약 0.4% 내렸습니다. 7월 매출은 수요일 오후 뉴욕 시각 4시 15분에 발표되는데, 이 페이지를 작성한 시점보다 뒤입니다. 보유 5개 중 반도체와 무관한 유일한 종목이라는 점은 그대로입니다.",
+      "note_en": "Slipped 0.65% on Tuesday while almost everything else rose — on days when money rushes toward technology shares, the steadiest names get left behind. It is down about 0.4% for the week so far. July sales arrive Wednesday afternoon at 1:15pm Pacific time, which is after this page was written. Still the only one of the five with no chip exposure.",
+      "note_ko": "화요일에 거의 모든 것이 오르는 동안 0.65% 내렸습니다. 돈이 기술주로 몰리는 날에는 가장 안정적인 종목이 뒤처지곤 합니다. 이번 주 들어 약 0.4% 내렸습니다. 7월 매출은 수요일 오후 서부 시각 1시 15분에 발표되는데, 이 페이지를 작성한 시점보다 뒤입니다. 보유 5개 중 반도체와 무관한 유일한 종목이라는 점은 그대로입니다.",
       "ticker": "COST",
       "name_en": "Costco",
       "name_ko": "코스트코",
@@ -528,7 +528,7 @@
       "news_en": [
         {
           "dt": "Aug 5",
-          "tx": "<b>July sales are due this afternoon</b>, at 4:15 PM New York time — after the market shuts. This is the nearest dated event of anything on this page, and it had not been published when this page was written."
+          "tx": "<b>July sales are due this afternoon</b>, at 1:15 PM Pacific time — after the market shuts. This is the nearest dated event of anything on this page, and it had not been published when this page was written."
         },
         {
           "dt": "Aug 4",
@@ -543,11 +543,11 @@
           "tx": "<b>June sales grew 10.6%, and the shares still fell about 4%.</b> Growth was slower than the month before — that tells you expectations are set very high."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>this afternoon</b>. When the July figures land at 4:15pm New York time, look at the growth rate at existing stores, not the headline sales number. June showed that the market will sell the shares even on a good month if growth is slowing down.",
+      "verdict_en": "<b>What I'd watch:</b> <b>this afternoon</b>. When the July figures land at 1:15pm Pacific time, look at the growth rate at existing stores, not the headline sales number. June showed that the market will sell the shares even on a good month if growth is slowing down.",
       "news_ko": [
         {
           "dt": "8월 5일",
-          "tx": "<b>7월 매출이 오늘 오후에 발표됩니다.</b> 뉴욕 시각 오후 4시 15분, 장이 닫힌 뒤입니다. 이 페이지에 있는 일정 중 가장 가까운 것이고, 이 페이지를 작성한 시점에는 아직 나오지 않았습니다."
+          "tx": "<b>7월 매출이 오늘 오후에 발표됩니다.</b> 서부 시각 오후 1시 15분, 장이 닫힌 뒤입니다. 이 페이지에 있는 일정 중 가장 가까운 것이고, 이 페이지를 작성한 시점에는 아직 나오지 않았습니다."
         },
         {
           "dt": "8월 4일",
@@ -562,7 +562,7 @@
           "tx": "<b>6월 매출은 10.6% 늘었는데도 주가가 약 4% 떨어졌습니다.</b> 성장 속도가 전월보다 느려졌기 때문입니다. 기대가 그만큼 높다는 뜻입니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 오후</b>입니다. 뉴욕 시각 4시 15분에 7월 수치가 나오면, 전체 매출 숫자가 아니라 기존 매장의 성장률을 보십시오. 6월 매출에서 확인했듯이, 성장 속도가 느려지면 좋은 달이어도 주가는 떨어집니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 오후</b>입니다. 서부 시각 오후 1시 15분에 7월 수치가 나오면, 전체 매출 숫자가 아니라 기존 매장의 성장률을 보십시오. 6월 매출에서 확인했듯이, 성장 속도가 느려지면 좋은 달이어도 주가는 떨어집니다.",
       "base": {
         "year_start": 859.11,
         "high_1y": 1097.05,
@@ -652,8 +652,8 @@
       {
         "date_en": "Wed Aug 5",
         "date_ko": "8월 5일 (수)",
-        "what_en": "Already partly done. The payroll firm ADP's count came out at 8:15am and was weak — 44,000 private jobs added in July against about 65,000 expected. The ISM services survey followed at 10:00am. This is also the first full session in which the market can answer AMD's Tuesday-evening results. Costco reports its July sales at 4:15pm New York time, after the close.",
-        "what_ko": "일부는 이미 지났습니다. 급여 대행업체 ADP의 집계가 오전 8시 15분에 나왔는데 약했습니다. 7월 민간 일자리가 4만 4천 개 늘어 예상치 약 6만 5천 개에 못 미쳤습니다. ISM 서비스업 지수는 오전 10시에 이어서 나왔습니다. AMD의 화요일 저녁 실적에 시장이 온전히 답하는 첫 거래일이기도 합니다. 코스트코는 뉴욕 시각 오후 4시 15분, 장 마감 후에 7월 매출을 발표합니다.",
+        "what_en": "Already partly done. The payroll firm ADP's count came out at 5:15am Pacific time and was weak — 44,000 private jobs added in July against about 65,000 expected. The ISM services survey followed at 7:00am Pacific time. This is also the first full session in which the market can answer AMD's Tuesday-evening results. Costco reports its July sales at 1:15pm Pacific time, after the close.",
+        "what_ko": "일부는 이미 지났습니다. 급여 대행업체 ADP의 집계가 서부 시각 오전 5시 15분에 나왔는데 약했습니다. 7월 민간 일자리가 4만 4천 개 늘어 예상치 약 6만 5천 개에 못 미쳤습니다. ISM 서비스업 지수는 서부 시각 오전 7시에 이어서 나왔습니다. AMD의 화요일 저녁 실적에 시장이 온전히 답하는 첫 거래일이기도 합니다. 코스트코는 서부 시각 오후 1시 15분, 장 마감 후에 7월 매출을 발표합니다.",
         "touches": [
           "cost",
           "nvda",
@@ -664,8 +664,8 @@
       {
         "date_en": "Fri Aug 7",
         "date_ko": "8월 7일 (금)",
-        "what_en": "The July jobs report, 8:30am New York time. The single biggest scheduled number of the week. Costco's quarterly dividend of $1.47 a share is also paid on this date.",
-        "what_ko": "7월 고용보고서, 뉴욕 시각 오전 8시 30분. 이번 주 예정된 지표 중 가장 큰 것입니다. 코스트코 분기 배당금 주당 1.47달러도 이날 지급됩니다.",
+        "what_en": "The July jobs report, 5:30am Pacific time. The single biggest scheduled number of the week. Costco's quarterly dividend of $1.47 a share is also paid on this date.",
+        "what_ko": "7월 고용보고서, 서부 시각 오전 5시 30분. 이번 주 예정된 지표 중 가장 큰 것입니다. 코스트코 분기 배당금 주당 1.47달러도 이날 지급됩니다.",
         "touches": [
           "cost"
         ]

@@ -914,9 +914,16 @@
     var builtFresh = fresh ? fresh.innerHTML : "";
 
     function stamp() {
-      var d = new Date();
-      var h = d.getHours(), m = d.getMinutes();
-      return h + ":" + (m < 10 ? "0" : "") + m;
+      // Pacific on every device — the page's home timezone is the reader's (PST),
+      // not whatever clock the viewing machine happens to carry.
+      try {
+        return new Intl.DateTimeFormat("en-US", {
+          timeZone: "America/Los_Angeles", hour: "numeric", minute: "2-digit", hour12: false
+        }).format(new Date());
+      } catch (e) {
+        var d = new Date(), m = d.getMinutes();
+        return d.getHours() + ":" + (m < 10 ? "0" : "") + m;
+      }
     }
 
     function apply(data) {

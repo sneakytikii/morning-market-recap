@@ -27,6 +27,16 @@ import html
 import shutil
 import pathlib
 import datetime
+import zoneinfo
+
+# The reader's clock is US Pacific (Daniel's dad reads from PST). Every "what day is
+# it" decision — masthead date, Today label, freshness age — uses this zone, never the
+# build machine's local clock, so the page stays right even if the Mac travels.
+PACIFIC = zoneinfo.ZoneInfo("America/Los_Angeles")
+
+
+def pacific_today() -> datetime.date:
+    return datetime.datetime.now(PACIFIC).date()
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -229,7 +239,7 @@ def derive_market(data: dict) -> dict:
     # session it covers. A Wednesday-morning page headlined "Tuesday, After the Close"
     # reads as stale even when freshly built; a morning paper is dated the day you read
     # it, and the sub-line explains which close it covers. Build time IS write time.
-    today = datetime.date.today()
+    today = pacific_today()
     DAYS_EN2 = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     DAYS_KO2 = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
     MON_EN2 = ["January","February","March","April","May","June","July","August",
@@ -362,7 +372,7 @@ def derive_freshness(data: dict) -> None:
     # The prices are the headline content, so the prices decide the headline age.
     stamp = str(market.get("as_of", ""))[:10]
     try:
-        age = (datetime.date.today() - datetime.date.fromisoformat(stamp)).days
+        age = (pacific_today() - datetime.date.fromisoformat(stamp)).days
     except ValueError:
         market["fresh_en"] = market["fresh_ko"] = ""
         market["fresh_cls"] = ""

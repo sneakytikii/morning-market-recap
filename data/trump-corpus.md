@@ -134,3 +134,11 @@ plain-English log of it.
    top that lights the affected positions. The reading line names the most recent
    entry that touches anything, so the relevance question is answered before the first
    entry is read.
+
+## Clock times are Pacific
+
+The reader is on the US West Coast. When an entry needs a clock time, give it in
+Pacific Time and label it plainly ("5:30 in the morning Pacific time" / "서부 시각
+오전 5시 30분"), or phrase around the clock entirely ("Saturday evening", "after the
+market closed") when the zone difference does not change the day or the meaning.
+Never write a bare New York time.

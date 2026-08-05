@@ -51,6 +51,10 @@ test next week is the inflation report on Tuesday."). Inline `<b>` only. Set the
 top-level `today_date` to today's ISO date, or the build discards your text for a
 generic fallback.
 
+Clock times anywhere in the page, if needed at all, are **Pacific Time**, plainly
+labeled ("5:30 in the morning Pacific time" / "서부 시각 오전 5시 30분") — the reader
+is on the US West Coast. Never a bare New York time.
+
 ## Research rules
 
 - Use **Friday's close** as the week's endpoint. Cross-check every price against at least

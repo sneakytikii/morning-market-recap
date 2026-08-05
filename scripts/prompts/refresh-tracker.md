@@ -31,8 +31,11 @@ one paragraph, 3-5 short sentences, plain English a non-technical 65-year-old fo
    the direction only.
 3. One line on what is still ahead today or next ("the jobs report lands Friday").
 
-Inline `<b>` for key names/numbers, no other tags. Never predict. `today_ko` says the
-same thing in natural Korean, polite newspaper style, same `<b>` placements. A live
+Inline `<b>` for key names/numbers, no other tags. Never predict. Clock times, if any,
+in **Pacific Time**, plainly labeled ("5:30 in the morning Pacific time" / "서부 시각
+오전 5시 30분") — the reader is on the US West Coast; never a bare New York time.
+`today_ko` says the same thing in natural Korean, polite newspaper style, same `<b>`
+placements. A live
 price line under this prose updates itself — do not mention live prices or quote
 exact-to-the-cent prices; rounded moves are what age gracefully.
 
