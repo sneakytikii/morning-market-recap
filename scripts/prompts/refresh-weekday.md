@@ -112,14 +112,27 @@ never predict, and the Korean twin says the same thing with the same hedges.
 The page now opens "In plain English" with a **Today** block about the day the reader
 is in — the block's dated heading is derived at build time; you write only the prose.
 This run happens before the open, so write the **morning setup**, one paragraph,
-3-5 short sentences:
+3-5 short sentences.
 
-1. Where things stand this morning — overnight/futures tone if you found it from a
-   source dated today, otherwise how yesterday's close left things poised.
-2. What is scheduled TODAY that could move the five (earnings, data releases, Fed
-   speakers) — pull from your events research; name the time of day plainly
-   ("after the close tonight", "before the open").
-3. One line on what to watch. Never predict direction.
+**The premarket sweep is a required research step, not an option.** You run about an
+hour before the opening bell, and the reader opens the page at the open wanting to know
+what is ALREADY going on. Before writing, search for, from sources dated this morning
+(or last evening for after-hours):
+
+- **Stock index futures right now** — S&P 500 and Nasdaq futures direction this morning
+  ("futures point modestly higher/lower this morning"). Direction and rough size;
+  futures move, so never quote them to the decimal.
+- **After-hours and premarket movers among the five** (or names that drag them:
+  AMD/chips for SOXL and QQQ, big earnings reactions) — anything that reported after
+  yesterday's close and how the stock reacted in extended trading.
+- **What is scheduled TODAY** that could move the five (earnings, data releases, Fed
+  speakers) — name the time of day plainly ("after the close tonight", "before the open").
+
+Then the paragraph: (1) how the morning is shaping up (futures + any big after-hours
+story); (2) what today's calendar holds; (3) one line on what to watch. Never predict
+direction. If you genuinely cannot source a futures read this morning, say how
+yesterday's close left things poised instead — but look first; it is the whole point
+of the block.
 
 Inline `<b>` for the key numbers/names, nothing else. The word "yesterday" may appear
 only as contrast ("after yesterday's jump") — the block must read as insight about
