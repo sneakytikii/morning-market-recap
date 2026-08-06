@@ -66,8 +66,18 @@ LOCK="$ROOT/.state/refresh.lock"
 # the watchdog ceiling plus slack is treated as debris and cleared.
 STALE_AFTER=45   # minutes; the watchdog kills research at 30
 if [ -d "$LOCK" ]; then
+  # Age alone is not evidence of death, and acting on it is worse than waiting: a run
+  # that is still researching (3 attempts x 30m) or still waiting for GitHub to serve
+  # the page can legitimately outlive this window, and clearing the lock under it would
+  # start a second run writing the same JSON. Ask the operating system whether the
+  # process is actually alive; only fall back to age when the pid is gone or unreadable.
+  LOCK_PID="$(cat "$LOCK/pid" 2>/dev/null)"
+  if [ -n "$LOCK_PID" ] && kill -0 "$LOCK_PID" 2>/dev/null; then
+    echo "Another refresh (pid $LOCK_PID) is still alive. Exiting without changes."
+    exit 0
+  fi
   if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +$STALE_AFTER 2>/dev/null)" ]; then
-    echo "Clearing a stale lock (older than ${STALE_AFTER}m — previous run died without cleaning up)."
+    echo "Clearing a stale lock (pid gone, older than ${STALE_AFTER}m — previous run died without cleaning up)."
     rm -rf "$LOCK"
   fi
 fi
@@ -370,6 +380,31 @@ echo "--- 4/4  Publishing ---"
 # into it). The old check pointed at $ROOT/site, which no longer exists — so a run
 # would rebuild locally and silently skip the push.
 PUBLISHED=1
+PUSHED=0
+
+# The published URL, derived from the remote so a rename cannot leave this pointing at
+# a site nobody updates any more.
+site_url() {
+  local u; u="$(git -C "$ROOT" remote get-url origin 2>/dev/null)" || return 1
+  u="${u%.git}"
+  local owner repo
+  owner="$(basename "$(dirname "$u")")"; repo="$(basename "$u")"
+  [ -n "$owner" ] && [ -n "$repo" ] || return 1
+  printf 'https://%s.github.io/%s/' "$owner" "$repo"
+}
+
+# Did the reader actually get the new page? Not "did git push succeed" — on 2026-08-06
+# the push succeeded at 04:35 and GitHub's own deploy queue stalled and timed out three
+# times, so the page served Wednesday's brief until someone noticed by hand. Compare a
+# hash of what we built against a hash of what the site is serving; a unique query
+# string defeats the ten-minute CDN cache.
+deployed() {
+  local url want got
+  url="$1"; want="$(shasum -a 256 < "$ROOT/docs/index.html" | cut -d' ' -f1)"
+  got="$(curl -fsS --max-time 25 "${url}?v=$(date +%s)-$$" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
+  [ "$want" = "$got" ]
+}
+
 if git -C "$ROOT" remote get-url origin >/dev/null 2>&1; then
   git -C "$ROOT" add -A
   if git -C "$ROOT" diff --cached --quiet; then
@@ -378,7 +413,8 @@ if git -C "$ROOT" remote get-url origin >/dev/null 2>&1; then
     git -C "$ROOT" -c user.name="market-recap-refresh" -c user.email="noreply@localhost" \
         commit -q -m "Refresh ($MODE) $(date '+%Y-%m-%d %H:%M')"
     if git -C "$ROOT" push -q origin main; then
-      echo "  Published to GitHub Pages."
+      echo "  Pushed. Waiting for GitHub to actually serve it..."
+      PUSHED=1
     else
       echo "  PUSH FAILED — the site still shows the previous page. Local files are current."
       PUBLISHED=0
@@ -388,17 +424,47 @@ else
   echo "  No git remote configured. Local files updated only."
 fi
 
+if [ "$PUSHED" = "1" ]; then
+  URL="$(site_url)" || URL=""
+  if [ -z "$URL" ]; then
+    echo "  Could not derive the site URL — skipping the serve check."
+  else
+    PUBLISHED=0
+    # Two windows with one nudge between them. A normal deploy lands inside the first.
+    for attempt in 1 2; do
+      for i in $(seq 1 18); do            # 18 x 20s = 6 minutes per window
+        if deployed "$URL"; then
+          echo "  Live and verified — the site is serving today's page."
+          PUBLISHED=1
+          break
+        fi
+        sleep 20
+      done
+      [ "$PUBLISHED" = "1" ] && break
+      if [ "$attempt" = "1" ]; then
+        # An empty commit is the one retrigger available without an API token, and it
+        # is what cleared the stall by hand on 2026-08-06.
+        echo "  Not serving yet after 6 minutes — nudging the deploy once."
+        git -C "$ROOT" -c user.name="market-recap-refresh" -c user.email="noreply@localhost" \
+            commit -q --allow-empty -m "Retrigger Pages deploy ($MODE)"
+        git -C "$ROOT" push -q origin main || echo "  (nudge push failed)"
+      fi
+    done
+    [ "$PUBLISHED" = "1" ] || echo "  STILL NOT SERVING after two attempts — GitHub Pages is not deploying."
+  fi
+fi
+
 # The success stamp exists to stop the 6:57 and 7:42 backup slots re-running after a
-# good morning. A run that built locally but could NOT push has not given the reader
-# anything, so it must not claim the day — otherwise a transient network failure at
-# 6:12 silently costs the whole day's page. The commit is already made, so a later
-# slot pushes it along with its own work.
+# good morning. It means one thing only: THE READER CAN SEE TODAY'S PAGE. A run that
+# built locally, or pushed to a repo GitHub then declined to deploy, has given him
+# nothing — so it must not claim the day, and a later slot gets its turn. The work is
+# already committed, so that slot republishes it along with whatever it finds.
 if [ "$PUBLISHED" = "1" ]; then
   rm -f "$ROOT/.state/last-failure.txt"
   echo "$TODAY_STAMP" > "$STAMP"
 else
-  printf '%s  push failed — page not updated for readers\n' "$(date '+%Y-%m-%d %H:%M')" \
-    > "$ROOT/.state/last-failure.txt"
+  printf '%s  built but not serving — readers still see the previous page\n' \
+    "$(date '+%Y-%m-%d %H:%M')" > "$ROOT/.state/last-failure.txt"
 fi
 
 echo
