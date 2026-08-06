@@ -1,12 +1,36 @@
 {
   "_comment": "The tracker's record. Rules in data/trump-corpus.md are binding: verbatim quotes only inside quote marks, every entry dated and sourced, market reaction measured never asserted as cause, strictly neutral voice. Written by scripts/refresh.sh; rendered by scripts/build.py.",
-  "checked": "2026-08-05",
-  "checked_en": "Checked August 5",
-  "checked_ko": "8월 5일 확인",
-  "latest_touching": "2026-08-01",
-  "reading_en": "12 entries on record. Newest: Aug 4 — five Wall Street firms have signed up to get his posts early, at up to $100,000 a month. Of these, 6 reach what you hold — SPX, QQQ, NVDA, SOXL. Most recent: Aug 1.",
-  "reading_ko": "기록 12건. 가장 최근은 8월 4일, 트럼프 미디어 관련입니다. 이 가운데 6건이 보유 종목(SPX, QQQ, NVDA, SOXL)과 관련이 있고, 가장 최근은 8월 1일입니다.",
+  "checked": "2026-08-06",
+  "checked_en": "Checked August 6",
+  "checked_ko": "8월 6일 확인",
+  "latest_touching": "2026-08-05",
+  "reading_en": "12 entries on record. Newest: Aug 5 — he said again that a deal to reopen the Strait of Hormuz was close, and oil fell for a third session running. Of these, 6 reach what you hold — SPX, QQQ, NVDA, SOXL. Most recent: Aug 5.",
+  "reading_ko": "기록 12건. 가장 최근은 8월 5일, 호르무즈 해협 재개방 합의가 가깝다는 발언이며 유가는 사흘 연속 내렸습니다. 이 가운데 6건이 보유 종목(SPX, QQQ, NVDA, SOXL)과 관련이 있고, 가장 최근은 8월 5일입니다.",
   "entries": [
+    {
+      "date": "2026-08-05",
+      "date_en": "Aug 5",
+      "date_ko": "8월 5일",
+      "verb": "said",
+      "headline": "Said again that a deal to reopen the Strait of Hormuz was close, as oil fell for a third session",
+      "company_en": "Oil and shipping",
+      "company_ko": "석유·해운",
+      "ticker": "",
+      "verbatim": false,
+      "quote": "",
+      "quote_ko": "",
+      "text_en": "Speaking to reporters, he said a deal with Iran to reopen the Strait of Hormuz could come as soon as Wednesday or Thursday. Treasury Secretary Bessent said an agreement might be reached within a day or two; Secretary of State Rubio said there had been progress but not finality. Iran and Oman were reported the same day to be in the final stages of drafting an agreement covering commercial shipping through the strait, and US Central Command said the southern route through Omani waters remained open. Iran's government has previously denied that talks resumed. Only a paraphrase of his words was available here, so none of it is set inside quote marks. This follows the August 1 entry below, in which he said he had called off a planned attack.",
+      "text_ko": "기자들에게 이란과의 호르무즈 해협 재개방 합의가 이르면 수요일이나 목요일에 나올 수 있다고 말했습니다. 베선트 재무장관은 하루 이틀 안에 합의가 이뤄질 수 있다고 했고, 루비오 국무장관은 진전은 있었지만 최종 단계는 아니라고 말했습니다. 같은 날 이란과 오만이 해협 상선 통항에 관한 합의문 작성을 마무리하는 단계라는 보도가 나왔고, 미 중부사령부는 오만 영해를 지나는 남쪽 항로가 계속 열려 있다고 밝혔습니다. 이란 정부는 앞서 협상이 재개된 적 없다고 부인한 바 있습니다. 그의 말은 요약된 형태로만 확인할 수 있어 따옴표 안에 넣지 않았습니다. 아래 8월 1일 항목에서 공격 계획을 취소했다고 밝힌 데 이어지는 발언입니다.",
+      "reaction_en": "US crude closed Wednesday at $75.22 a barrel, down 0.73% — a third straight decline that leaves it about 11% below Friday's close. The S&P 500 closed down 0.17% the same day and the Dow closed at a record",
+      "reaction_ko": "미국산 원유는 수요일에 0.73% 내린 배럴당 75.22달러로 마감했습니다. 사흘 연속 하락으로, 금요일 종가보다 약 11% 낮은 수준입니다. 같은 날 S&P 500은 0.17% 내렸고 다우지수는 사상 최고로 마감했습니다",
+      "reaction_dir": "down",
+      "touches": [
+        "spx"
+      ],
+      "source_url": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html",
+      "source_en": "CNBC · Aug 5",
+      "source_ko": "CNBC · 8월 5일"
+    },
     {
       "date": "2026-08-04",
       "date_en": "Aug 4",
@@ -259,31 +283,6 @@
       "source_url": "https://www.cnn.com/2026/01/14/tech/chip-tariff-trump",
       "source_en": "CNN Business · Jan 14",
       "source_ko": "CNN 비즈니스 · 1월 14일"
-    },
-    {
-      "date": "2026-01-13",
-      "date_en": "Jan 13",
-      "date_ko": "1월 13일",
-      "verb": "did",
-      "headline": "Chip export licences moved to case-by-case review",
-      "company_en": "Chip export rules",
-      "company_ko": "반도체 수출 규정",
-      "ticker": "",
-      "verbatim": false,
-      "text_en": "The Commerce Department's final rule moved H200-equivalent chips from \"presumption of denial\" to \"case-by-case review\" — in plain terms, applications went from normally refused to individually considered.",
-      "text_ko": "상무부 최종 규정에 따라 H200급 반도체가 “presumption of denial”(원칙적 거부)에서 “case-by-case review”(건별 심사)로 바뀌었습니다. 쉽게 말해, 원래는 거절되던 신청을 이제 하나씩 따져보게 된 것입니다.",
-      "reaction_en": "",
-      "reaction_ko": "",
-      "reaction_dir": "",
-      "touches": [
-        "nvda",
-        "soxl",
-        "qqq",
-        "spx"
-      ],
-      "source_url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified",
-      "source_en": "Mayer Brown · Jan 2026",
-      "source_ko": "메이어 브라운 · 2026년 1월"
     }
   ]
 }
