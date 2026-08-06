@@ -269,9 +269,20 @@ for name in ("market.json", "trump.json"):
                 continue
             if not blk.get("en") or not blk.get("ko"):
                 bad(f"market.json {slot}: needs both en and ko")
-            if str(blk.get("date", ""))[:10] != TODAY:
-                bad(f"market.json {slot}: date is {blk.get('date')!r}, not today ({TODAY}) "
-                    f"— an undated line would be dropped by the build")
+            # A date in the PAST is normal, not an error: the morning run does not
+            # rewrite the afternoon line, so yesterday's pancho_pm is still sitting here
+            # and the build correctly drops it. Only a missing, malformed or future date
+            # is a real problem. (Treating a stale date as fatal would have blocked
+            # every morning publish from the day after this shipped.)
+            stamp = str(blk.get("date", ""))[:10]
+            try:
+                when = datetime.date.fromisoformat(stamp)
+            except ValueError:
+                bad(f"market.json {slot}: date {blk.get('date')!r} is not an ISO date — "
+                    f"the build cannot tell whether this line is current")
+            else:
+                if when > datetime.date.fromisoformat(TODAY):
+                    bad(f"market.json {slot}: date {stamp} is in the future")
             if blk.get("pos") and blk["pos"] not in ("spx","qqq","nvda","soxl","cost"):
                 bad(f"market.json {slot}: pos {blk['pos']!r} is not one of the five")
             for lg, cap in (("en", 120), ("ko", 65)):
