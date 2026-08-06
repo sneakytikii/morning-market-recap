@@ -1412,9 +1412,49 @@
       else if (!up) next = "live-alldown";
       else next = "live-split";
     }
-    if (next === liveId) return;
+    var changed = next !== liveId;
     liveId = next;
-    if (!spoken) speakBest(current, false);
+    if (notable(q)) changed = true;
+    if (changed && !spoken) speakBest(current, false);
   };
+
+  /* ---------- the notable tier ----------
+     One line a day, maximum. Something genuinely worth interrupting for — a new
+     one-year high, or a move big enough to be unusual FOR THAT POSITION. It is latched
+     against the Pacific date in localStorage, so it announces itself once and then
+     takes its place in the tap order instead of shouting every two minutes. */
+  var PTRIG = <!--F:market.pancho_trig_json|js--><!--/F-->;
+
+  function notableKey(id) { return "mmr-notable-" + todayISO + "-" + id; }
+
+  function notable(q) {
+    if (!todayISO) return false;                 // no reliable date: never latch
+    if (PLINES.some(function (l) { return l.tier === "notable"; })) return false;
+    var order = ["nvda", "soxl", "qqq", "cost", "spx"], made = null;
+    for (var i = 0; i < order.length && !made; i++) {
+      var k = order[i], t = PTRIG[k], quote = q[k];
+      if (!t || !quote || typeof quote.d !== "number") continue;
+      var px = parseFloat(String(quote.v).replace(/[$,]/g, ""));
+      if (t.hi && px && px >= t.hi && quote.d > 0) {
+        made = { id: "notable-" + k + "-hi", tier: "notable", pos: "", expires: todayISO,
+          en: t.en + " is the highest it has been in a year, as of right now.",
+          ko: t.ko + " 지금 1년 중 가장 높은 가격입니다." };
+      } else if (Math.abs(quote.d) >= t.big) {
+        var dir = quote.d > 0 ? "up" : "down";
+        made = { id: "notable-" + k + "-big", tier: "notable", pos: "", expires: todayISO,
+          en: t.en + " is " + dir + " " + Math.abs(quote.d).toFixed(1)
+              + "% today. That is a big day for it.",
+          ko: t.ko + " 오늘 " + Math.abs(quote.d).toFixed(1) + "% "
+              + (quote.d > 0 ? "올랐습니다" : "내렸습니다") + ". 큰 폭입니다." };
+      }
+    }
+    if (!made) return false;
+    var seen = false;
+    try { seen = localStorage.getItem(notableKey(made.id)) === "1"; } catch (e) {}
+    PLINES.push(made);
+    if (seen) return false;   // already announced today: sayable, but do not interrupt
+    try { localStorage.setItem(notableKey(made.id), "1"); } catch (e) {}
+    return true;
+  }
 })();
 </script>

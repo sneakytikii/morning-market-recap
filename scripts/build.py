@@ -570,6 +570,36 @@ def derive_pancho(data: dict) -> None:
     if not any(l["tier"] == "evergreen" for l in lines):
         raise BuildError("pancho: no evergreen lines — the fallback floor is gone")
 
+    # Thresholds for the notable tier, which the page evaluates against the live feed.
+    # A "big move" has to mean something different per position: 4% is a dramatic day
+    # for Nvidia and an ordinary one for a 3x fund, and one shared number would either
+    # cry wolf about SOXL daily or never fire for Costco.
+    BIG = {"spx": 1.5, "qqq": 2.0, "nvda": 4.0, "soxl": 8.0, "cost": 3.0}
+    # Short names, because these get read inside a sentence. The board's name_en is a
+    # description ("Nvidia — makes AI chips"), which is right in a table cell and wrong
+    # in "... is the highest it has been in a year".
+    # The Korean name carries its own subject particle: 이 after a closing consonant,
+    # 가 after a vowel. Gluing one particle onto every name in the template produces
+    # "SOXL가", which is simply wrong Korean, and the page has one reader who would
+    # notice immediately.
+    SPOKEN = {"spx": ("The S&P 500", "S&P 500 지수가"),
+              "qqq": ("QQQ", "QQQ가"),
+              "nvda": ("Nvidia", "엔비디아가"),
+              "soxl": ("SOXL", "SOXL이"),
+              "cost": ("Costco", "코스트코가")}
+    trig = {}
+    for key in BOARD_ORDER:
+        pos = market.get("positions", {}).get(key) or {}
+        base = pos.get("base") or {}
+        nm = SPOKEN.get(key, (key.upper(), key.upper()))
+        t = {"big": BIG.get(key, 3.0), "en": nm[0], "ko": nm[1]}
+        if base.get("high_1y"):
+            t["hi"] = float(base["high_1y"])
+        if base.get("low_1y"):
+            t["lo"] = float(base["low_1y"])
+        trig[key] = t
+    market["pancho_trig_json"] = json.dumps(trig, ensure_ascii=False, separators=(",", ":"))
+
     market["pancho_json"] = json.dumps(lines, ensure_ascii=False, separators=(",", ":"))
     market["pancho_count"] = len(lines)
     market["market_cal_json"] = json.dumps(MARKET_CAL, separators=(",", ":"))
