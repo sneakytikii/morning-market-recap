@@ -1,0 +1,75 @@
+name: Publish the page
+
+# GitHub's built-in ("legacy") Pages publisher deploys on every push to main and gives
+# its deploy step a fixed 10-minute ceiling that we cannot raise. On 2026-08-06 their
+# deployment backend went slow for this repo: the build kept succeeding in 7 seconds,
+# the deploy sat in deployment_in_progress, hit the ceiling, and then CANCELLED the
+# deployment on its way out — four failures in a row, with the reader served the
+# previous day's brief for four hours. One deploy that did land took 199 seconds, so
+# the backend was working, just slower than the ceiling allowed.
+#
+# Owning the workflow buys the two things that fix it: a timeout long enough to outlast
+# a slow backend, and deploys that only fire when the published page actually changed.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never cancel a deployment that is already in flight — cancelling one mid-run is the
+# exact failure this workflow exists to stop. A newer run waits its turn instead.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - name: Package docs/
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v4
+        with:
+          # 25 minutes. The managed workflow allowed 10 and aborted a backend that was
+          # merely slow; waiting costs nothing, a cancelled deploy costs the day's page.
+          timeout: 1500000
+          error_count: 25
+
+      - name: Confirm the reader can actually see it
+        run: |
+          # The deployment reporting itself successful is not the same as the site
+          # serving the new bytes. Compare what we built against what the CDN returns,
+          # with a cache-busting query, and fail loudly if they differ.
+          want=$(sha256sum docs/index.html | cut -d' ' -f1)
+          url="${{ steps.deploy.outputs.page_url }}"
+          for i in $(seq 1 20); do
+            got=$(curl -fsS --max-time 25 "${url}?v=$(date +%s)-$i" | sha256sum | cut -d' ' -f1)
+            if [ "$want" = "$got" ]; then
+              echo "Verified: the site is serving this build."
+              exit 0
+            fi
+            echo "not serving yet (attempt $i)"
+            sleep 15
+          done
+          echo "::error::Deployment reported success but the site is still serving different bytes."
+          exit 1
