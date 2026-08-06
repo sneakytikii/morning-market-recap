@@ -24,7 +24,12 @@ try:
     d = json.load(sys.stdin)
 except Exception:
     sys.exit(0)                      # unparseable: fail open
-BAD = ("partial_outage", "major_outage")
+# "degraded_performance" belongs on this list, learned the hard way: while GitHub was
+# reporting merely degraded on 2026-08-06, runs were still dying at "Set up job" and
+# emailing a failure each time. Waiting one more 15- or 20-minute tick costs nothing —
+# the watchdog retries and the page already hides stale prices rather than lying — so
+# treat anything short of operational as "come back later".
+BAD = ("degraded_performance", "partial_outage", "major_outage")
 for c in d.get("components", []):
     if c.get("name") in ("Actions", "Pages") and c.get("status") in BAD:
         sys.exit(1)
