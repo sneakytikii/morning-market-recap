@@ -145,6 +145,33 @@ TODAY, because that is its entire job. An early-afternoon run rewrites it with h
 session is actually going; a live price line fills in underneath automatically. Do not
 mention live prices in the prose — the page handles that.
 
+### `pancho_am` — one line for the dog (write EVERY run)
+
+Pancho, the little dog on the page, now speaks from a ledger of lines that each carry an
+expiry, so he can never repeat a fact after it stops being true. Most of his lines are
+generated from the numbers. You write one: the morning's remark.
+
+Set the top-level `pancho_am` object:
+
+```json
+"pancho_am": {"date": "<today ISO>", "pos": "", "en": "...", "ko": "..."}
+```
+
+- `pos` is `""` for a remark about the whole market, or one of `spx`/`qqq`/`nvda`/`soxl`/
+  `cost` to attach it to that position (he then says it when that row is tapped).
+- **Plain spoken English, one or two short sentences. Under 120 characters.** Korean
+  under 65 characters — it is a speech bubble, not a paragraph.
+- **No HTML at all**, not even `<b>` — the bubble is written as plain text and a tag
+  would show up as literal angle brackets. No emojis. No markdown.
+- He is a friendly dog explaining something to an older man, not an analyst. Say the one
+  thing worth knowing this morning.
+- Do not restate figures the page already shows everywhere; add the judgement.
+
+Good: "Chip stocks had a rough night. SOXL will feel it three times over."
+Good: "Quiet morning. Nothing on the calendar until Friday's jobs report."
+Bad: "SPX -0.17%, QQQ -0.90%, NVDA +3.43%." (a data dump, and it will be stale by 10am)
+Bad: "Buy the dip!" (advice; never)
+
 Alongside the prose, set the top-level `today_date` to today's ISO date. The build
 treats a `today_date` that is not the build day as stale and swaps in a generic
 fallback — so forgetting the stamp silently discards your paragraph.

@@ -170,9 +170,12 @@ fi
 echo
 echo "--- 2/4  Validating data ---"
 if ! python3 - <<'PY'
-import json, re, sys, pathlib, datetime
+import json, re, sys, pathlib, datetime, zoneinfo
 root = pathlib.Path.cwd()
 ok = True
+# The reader's day (Pacific), matching build.py's pacific_today(). A date check against
+# the build machine's clock would reject a correct line written either side of midnight.
+TODAY = datetime.datetime.now(zoneinfo.ZoneInfo("America/Los_Angeles")).date().isoformat()
 
 def bad(msg):
     global ok
@@ -254,6 +257,31 @@ for name in ("market.json", "trump.json"):
             check_tags(para.get("ko",""), f"lede[{j}].ko")
         for f2 in ("next_session_en_html","next_session_ko_html","today_en","today_ko"):
             if d.get(f2): check_tags(d[f2], f2)
+        # Pancho's bubble is written with textContent, so ANY markup renders as literal
+        # angle brackets — the <b> that prose is allowed is forbidden here. His lines
+        # are also length-capped: the bubble has no scrollbar, it just overflows.
+        for slot in ("pancho_am", "pancho_pm"):
+            blk = d.get(slot)
+            if not blk:
+                continue
+            if not isinstance(blk, dict):
+                bad(f"market.json {slot}: must be an object with date/pos/en/ko")
+                continue
+            if not blk.get("en") or not blk.get("ko"):
+                bad(f"market.json {slot}: needs both en and ko")
+            if str(blk.get("date", ""))[:10] != TODAY:
+                bad(f"market.json {slot}: date is {blk.get('date')!r}, not today ({TODAY}) "
+                    f"— an undated line would be dropped by the build")
+            if blk.get("pos") and blk["pos"] not in ("spx","qqq","nvda","soxl","cost"):
+                bad(f"market.json {slot}: pos {blk['pos']!r} is not one of the five")
+            for lg, cap in (("en", 120), ("ko", 65)):
+                v = str(blk.get(lg, ""))
+                if re.search(r"[<>&]", v):
+                    bad(f"market.json {slot}.{lg}: no markup or entities — the speech "
+                        f"bubble is plain text and would show the characters literally")
+                if len(v) > cap:
+                    bad(f"market.json {slot}.{lg}: {len(v)} chars, over the {cap} cap "
+                        f"(it would overflow the bubble)")
         if not isinstance(d.get("lede"), list) or not d["lede"]:
             bad("market.json lede is missing or empty — the story must update with the numbers")
         if not isinstance(d.get("events"), list) or not d["events"]:

@@ -1125,6 +1125,9 @@
         if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
       }
       document.body.classList.add("live-on");
+      // Hand the fresh quotes to Pancho so he can say what kind of day it is. Guarded:
+      // the dog block is defined later in this file and may not exist on a partial load.
+      if (typeof window.panchoLive === "function") { try { window.panchoLive(q); } catch (e) {} }
       // The Today prose is rewritten twice a day; this line inside the block is its
       // live pulse between rewrites: what the five are doing right now.
       var tb = document.getElementById("todayNow");
@@ -1222,31 +1225,68 @@
     }
   })();
 
-  // The market-status chip is computed from the clock at read time. A build-time value
-  // goes wrong within hours (this page once said "Markets closed" mid-session), and the
-  // reader's moment is the only one that matters.
+  // One clock for the whole page. The status chip and Pancho both read this, so they
+  // can never contradict each other, and the calendar comes from the build (see
+  // MARKET_CAL) rather than a list frozen in the JS. Computed at read time: a
+  // build-time value goes wrong within hours, and the reader's moment is what matters.
+  var MKTCAL = {"2026":{"holidays":["2026-01-01","2026-01-19","2026-02-16","2026-04-03","2026-05-25","2026-06-19","2026-07-03","2026-09-07","2026-11-26","2026-12-25"],"half_days":["2026-11-27","2026-12-24"]},"2027":{"holidays":["2027-01-01","2027-01-18","2027-02-15","2027-03-26","2027-05-31","2027-06-18","2027-07-05","2027-09-06","2027-11-25","2027-12-24"],"half_days":["2027-11-26"]}};
+
+  function marketPhase() {
+    var p = {};
+    try {
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short",
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hour12: false
+      }).formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    } catch (e) { return { name: "unknown", open: false }; }
+    var mins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
+    var iso = p.year + "-" + p.month + "-" + p.day;
+    var cal = MKTCAL[p.year];
+    // A year we have no calendar for: say nothing rather than assume a normal session.
+    if (!cal) return { name: "unknown", open: false };
+    if (["Sat", "Sun"].indexOf(p.weekday) !== -1) return { name: "weekend", open: false };
+    if (cal.holidays.indexOf(iso) !== -1) return { name: "holiday", open: false };
+    // Early closes are 1pm Eastern, not 4pm — treating them as full days had the chip
+    // announcing an open market for three hours after the bell on those afternoons.
+    var close = cal.half_days.indexOf(iso) !== -1 ? 780 : 960;
+    if (mins < 570) return { name: "premarket", open: false };
+    if (mins >= close) return { name: "closed", open: false };
+    if (mins < 600) return { name: "open30", open: true };
+    if (mins >= close - 60) return { name: "lasthour", open: true };
+    return { name: "midday", open: true };
+  }
+
+  // 9:30 Eastern, written in whatever zone the reader's device is in. Hardcoding a
+  // local time here would be wrong for anyone who is not where the author was.
+  function openLocalTime() {
+    try {
+      var now = new Date();
+      var etHour = parseInt(new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/New_York", hour: "2-digit", hour12: false }).format(now), 10);
+      var localHour = now.getHours();
+      var shift = localHour - etHour;
+      if (shift > 12) shift -= 24;
+      if (shift < -12) shift += 24;
+      var mins = 9 * 60 + 30 + shift * 60;
+      mins = ((mins % 1440) + 1440) % 1440;
+      var h = Math.floor(mins / 60), m = mins % 60;
+      var ampm = h >= 12 ? "PM" : "AM";
+      var h12 = h % 12 === 0 ? 12 : h % 12;
+      return h12 + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
+    } catch (e) { return ""; }
+  }
+
   (function () {
     var el = document.getElementById("mktStatus");
     if (!el) return;
-    var HOLIDAYS = ["2026-01-01","2026-01-19","2026-02-16","2026-04-03","2026-05-25",
-                    "2026-06-19","2026-07-03","2026-09-07","2026-11-26","2026-12-25"];
     function update() {
-      var now = new Date();
-      var p = {};
-      try {
-        new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short",
-          year: "numeric", month: "2-digit", day: "2-digit",
-          hour: "2-digit", minute: "2-digit", hour12: false
-        }).formatToParts(now).forEach(function (x) { p[x.type] = x.value; });
-      } catch (e) { return; }   // ancient browser: leave the static text alone
-      var mins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
-      var iso = p.year + "-" + p.month + "-" + p.day;
-      var weekday = ["Sat","Sun"].indexOf(p.weekday) === -1;
-      var open = weekday && HOLIDAYS.indexOf(iso) === -1 && mins >= 570 && mins < 960;
+      var ph = marketPhase();
+      if (ph.name === "unknown") return;   // leave the built text alone
       var en = el.querySelector('[data-l="en"]');
       var ko = el.querySelector('[data-l="ko"]');
-      if (en) en.textContent = open ? "Market open now" : "Markets closed";
-      if (ko) ko.textContent = open ? "현재 장 열림" : "장 마감";
+      if (en) en.textContent = ph.open ? "Market open now" : "Markets closed";
+      if (ko) ko.textContent = ph.open ? "현재 장 열림" : "장 마감";
+      if (typeof window.panchoPhaseChanged === "function") window.panchoPhaseChanged(ph);
     }
     update();
     setInterval(update, 60000);
@@ -1287,23 +1327,6 @@
       boardLabel: "The five positions, side by side",
       dogLabel: "Pancho — hear another note about this position",
       fpLabel: "Which of the five this affects",
-      lines: {
-        spx:  ["This is the whole market in one number. When it's up, most things are up.",
-               "The year so far has been good. The worry is bond rates.",
-               "The worry is bond rates now, not company profits."],
-        qqq:  ["The 100 biggest tech names, all in one fund.",
-               "Nvidia is its biggest holding. August 26 matters here too.",
-               "Big earnings are in. Nvidia is the one left, on August 26."],
-        nvda: ["It all comes down to August 26. That's the day that matters.",
-               "Whatever the price does today, August 26 counts for more.",
-               "The price isn't the scary part. Whether the sales are real is."],
-        soxl: ["Careful with this one. Triple risk, resets every single day.",
-               "Down 57% in July while the market went nowhere. That's the danger.",
-               "It's still in a very deep hole. Climbing out takes far longer than falling in."],
-        cost: ["August 5 is the date. Watch the growth rate, not the big number.",
-               "Sales grew 10.6% and the shares still fell 4%. High expectations.",
-               "Good business. Expensive price. That's the whole debate."]
-      }
     },
     ko: {
       greet: "판초입니다. 위에서 종목을 하나 눌러주시면 설명해 드릴게요.",
@@ -1312,26 +1335,17 @@
       tabsLabel: "보유 종목",
       boardLabel: "다섯 종목 한눈에 보기",
       dogLabel: "판초 — 이 종목에 대한 다른 설명 듣기",
-      fpLabel: "다섯 종목 중 어디에 영향이 있는지",
-      lines: {
-        spx:  ["시장 전체를 숫자 하나로 본 겁니다. 이게 오르면 대부분 같이 오른 거예요.",
-               "올해는 지금까지 좋았어요. 걱정거리는 국채 금리입니다.",
-               "걱정거리는 회사 실적이 아니라 국채 금리입니다."],
-        qqq:  ["큰 기술주 100개를 한 번에 담은 펀드예요.",
-               "엔비디아 비중이 제일 커요. 8월 26일이 여기서도 중요합니다.",
-               "큰 실적 발표는 끝났고, 8월 26일 엔비디아만 남았습니다."],
-        nvda: ["결국 8월 26일입니다. 그날이 전부예요.",
-               "오늘 오르든 내리든, 8월 26일이 더 중요해요.",
-               "가격이 문제가 아니라, 매출이 진짜냐가 문제예요."],
-        soxl: ["이건 조심하셔야 해요. 세 배짜리라 매일 다시 맞춥니다.",
-               "시장은 제자리였는데 7월에만 57% 빠졌어요. 그게 위험입니다.",
-               "아직 아주 깊은 구덩이에 있어요. 떨어질 때보다 올라올 때가 훨씬 오래 걸립니다."],
-        cost: ["8월 5일이 중요해요. 큰 숫자 말고 성장률을 보세요.",
-               "매출이 10.6% 늘었는데도 주가는 4% 빠졌어요. 기대가 높습니다.",
-               "사업은 좋고 가격은 비쌉니다. 그게 전부예요."]
-      }
+      fpLabel: "다섯 종목 중 어디에 영향이 있는지"
     }
   };
+
+  /* ---------- Pancho's line ledger ----------
+     Every line he can say, generated at build time with an owner, a tier and an expiry.
+     This replaced a hardcoded table that lived inside the page script, invisible to
+     every guard the page has, which named dates long after they had passed. Tier order
+     below IS the priority order when more than one line is true at once. */
+  var PLINES = [{"id":"figure-spx-0","tier":"figure","pos":"spx","expires":"","en":"It's right at the highest price it has reached in a year.","ko":"지난 1년 중 가장 높은 가격에 와 있습니다."},{"id":"figure-spx-1","tier":"figure","pos":"spx","expires":"","en":"So far this year it's up about 13%.","ko":"올해 들어 약 13% 올랐습니다."},{"id":"evergreen-spx-2","tier":"evergreen","pos":"spx","expires":"","en":"This is the whole market in one number. When it's up, most things are up.","ko":"시장 전체를 숫자 하나로 본 겁니다. 이게 오르면 대부분 같이 오른 거예요."},{"id":"evergreen-spx-3","tier":"evergreen","pos":"spx","expires":"","en":"If you only look at one number all day, this is a fair one to pick.","ko":"하루에 숫자 하나만 보신다면, 이걸 보시면 됩니다."},{"id":"figure-qqq-4","tier":"figure","pos":"qqq","expires":"","en":"It's about 3% below its high from last year. Getting back there means rising about 3%.","ko":"작년 고점보다 약 3% 아래입니다. 거기까지 가려면 약 3% 올라야 해요."},{"id":"evergreen-qqq-5","tier":"evergreen","pos":"qqq","expires":"","en":"The 100 biggest technology names, all in one fund.","ko":"큰 기술주 100개를 한 번에 담은 펀드예요."},{"id":"evergreen-qqq-6","tier":"evergreen","pos":"qqq","expires":"","en":"Nvidia is its largest holding, so these two move together a lot.","ko":"엔비디아 비중이 제일 커서, 이 둘은 같이 움직일 때가 많습니다."},{"id":"figure-nvda-7","tier":"figure","pos":"nvda","expires":"","en":"It's about 10% below its high from last year. Getting back there means rising about 12%.","ko":"작년 고점보다 약 10% 아래입니다. 거기까지 가려면 약 12% 올라야 해요."},{"id":"figure-nvda-8","tier":"figure","pos":"nvda","expires":"","en":"Its price is about 32 times a year of profits. That's the expensive part.","ko":"주가가 한 해 이익의 약 32배입니다. 비싸다는 얘기가 여기서 나와요."},{"id":"evergreen-nvda-9","tier":"evergreen","pos":"nvda","expires":"","en":"The price isn't the scary part. Whether the sales are real is.","ko":"가격이 문제가 아니라, 매출이 진짜냐가 문제예요."},{"id":"evergreen-nvda-10","tier":"evergreen","pos":"nvda","expires":"","en":"Four of your five holdings move with this one company.","ko":"보유 다섯 중 넷이 이 회사 하나를 따라 움직입니다."},{"id":"figure-soxl-11","tier":"figure","pos":"soxl","expires":"","en":"It's about 54% below its high from last year. Getting back there means rising about 116%.","ko":"작년 고점보다 약 54% 아래입니다. 거기까지 가려면 약 116% 올라야 해요."},{"id":"figure-soxl-12","tier":"figure","pos":"soxl","expires":"","en":"So far this year it's up about 233%.","ko":"올해 들어 약 233% 올랐습니다."},{"id":"evergreen-soxl-13","tier":"evergreen","pos":"soxl","expires":"","en":"Careful with this one. Triple risk, and it resets every single day.","ko":"이건 조심하셔야 해요. 세 배짜리라 매일 다시 맞춥니다."},{"id":"evergreen-soxl-14","tier":"evergreen","pos":"soxl","expires":"","en":"It moves three times as much as chip stocks — in both directions.","ko":"반도체 주식보다 세 배씩 움직입니다. 오를 때도, 내릴 때도요."},{"id":"figure-cost-15","tier":"figure","pos":"cost","expires":"","en":"It's about 14% below its high from last year. Getting back there means rising about 16%.","ko":"작년 고점보다 약 14% 아래입니다. 거기까지 가려면 약 16% 올라야 해요."},{"id":"figure-cost-16","tier":"figure","pos":"cost","expires":"","en":"So far this year it's up about 10%.","ko":"올해 들어 약 10% 올랐습니다."},{"id":"figure-cost-17","tier":"figure","pos":"cost","expires":"","en":"Its price is about 48 times a year of profits. That's the expensive part.","ko":"주가가 한 해 이익의 약 48배입니다. 비싸다는 얘기가 여기서 나와요."},{"id":"evergreen-cost-18","tier":"evergreen","pos":"cost","expires":"","en":"Good business, expensive price. That's the whole debate.","ko":"사업은 좋고 가격은 비쌉니다. 그게 전부예요."},{"id":"evergreen-cost-19","tier":"evergreen","pos":"cost","expires":"","en":"People shop here whether times are good or bad. That's the appeal.","ko":"형편이 좋든 나쁘든 사람들은 여기서 장을 봅니다. 그게 강점이에요."},{"id":"pancho_pm","tier":"today","pos":"","expires":"2026-08-05","en":"Nvidia rose while the other chip names fell. That is an unusual split.","ko":"엔비디아만 오르고 다른 반도체는 내렸습니다. 흔치 않은 날이에요."},{"id":"clock-premarket","tier":"clock","pos":"","expires":"","en":"The market opens at {t} your time. Nothing here will move until then.","ko":"시장은 {t}에 열립니다. 그때까지는 아무것도 움직이지 않아요."},{"id":"clock-open30","tier":"clock","pos":"","expires":"","en":"It just opened. The first half hour is always the jumpiest — I wouldn't read much into it.","ko":"막 열렸어요. 처음 30분은 늘 출렁입니다. 크게 의미 두지 마세요."},{"id":"clock-midday","tier":"clock","pos":"","expires":"","en":"Trading is open. The prices here refresh every few minutes.","ko":"장이 열려 있습니다. 여기 가격은 몇 분마다 새로 들어와요."},{"id":"clock-lasthour","tier":"clock","pos":"","expires":"","en":"Last hour of trading. This is what sets the closing price you'll read tomorrow.","ko":"장 마지막 한 시간입니다. 내일 아침에 보실 종가가 지금 정해집니다."},{"id":"clock-closed","tier":"clock","pos":"","expires":"","en":"Trading is done for today. These are the final prices.","ko":"오늘 거래는 끝났습니다. 이게 최종 가격이에요."},{"id":"clock-weekend","tier":"clock","pos":"","expires":"","en":"The market is closed for the weekend. Nothing changes until Monday.","ko":"주말이라 시장은 쉽니다. 월요일까지 바뀌는 건 없어요."},{"id":"clock-holiday","tier":"clock","pos":"","expires":"","en":"The market is closed today for a holiday. Nothing has changed since it last traded.","ko":"오늘은 휴장일입니다. 마지막 거래일 이후로 바뀐 게 없어요."},{"id":"live-allup","tier":"live","pos":"","expires":"","en":"Everything you own is up today.","ko":"오늘은 보유 종목이 전부 올랐습니다."},{"id":"live-alldown","tier":"live","pos":"","expires":"","en":"Everything you own is down today.","ko":"오늘은 보유 종목이 전부 내렸습니다."},{"id":"live-split","tier":"live","pos":"","expires":"","en":"A split day — some of yours up, some down.","ko":"오늘은 엇갈립니다. 오른 것도 있고 내린 것도 있어요."},{"id":"live-quiet","tier":"live","pos":"","expires":"","en":"Nothing here has moved even half a percent today.","ko":"오늘은 여기 있는 것 중 0.5%도 움직인 게 없습니다."}];
+  var TIER_RANK = { notable: 0, live: 1, clock: 2, today: 3, figure: 4, evergreen: 5 };
 
   var VALID = { spx:1, qqq:1, nvda:1, soxl:1, cost:1 };
   var bub = document.getElementById("bub");
@@ -1349,16 +1363,80 @@
     cue.hidden = false;
   }
 
-  function speak(text) {
+  /* ---------- what Pancho can say right now ----------
+     He speaks on load, on tap, when the market crosses into a new part of the day, and
+     on the session's first notable event — never on a timer. A dog who interrupts every
+     thirty seconds gets ignored, and being ignored is the only way this fails. */
+  var todayISO = "";
+  try {
+    todayISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles" })
+      .format(new Date());
+  } catch (e) {}
+
+  var liveId = null;     // set by the quote feed when it has something to say
+  var phaseId = null;    // set by the clock
+  var spokenLine = null; // the line currently in the bubble, so language swaps track it
+
+  function sayable(pos) {
+    var out = [];
+    for (var i = 0; i < PLINES.length; i++) {
+      var l = PLINES[i];
+      // A line whose fact has expired is simply not sayable. This is the whole point of
+      // the ledger: the dog cannot outlive his own information.
+      if (l.expires && todayISO && l.expires < todayISO) continue;
+      if (l.tier === "clock" && l.id !== phaseId) continue;
+      if (l.tier === "live" && l.id !== liveId) continue;
+      if (l.pos && l.pos !== pos) continue;
+      out.push(l);
+    }
+    // The clock leads when the market is shut — "it opens at 6:30, nothing will move
+    // until then" is the whole answer at 6am. Once trading is under way, "trading is
+    // open" is the least interesting true thing he knows, so it drops below the written
+    // remark and the figures.
+    var quiet = phaseId === "clock-premarket" || phaseId === "clock-weekend"
+             || phaseId === "clock-holiday" || phaseId === "clock-closed";
+    function rank(l) {
+      if (l.tier === "clock" && !quiet) return 4.5;
+      return TIER_RANK[l.tier] === undefined ? 9 : TIER_RANK[l.tier];
+    }
+    out.sort(function (a, b) { return rank(a) - rank(b); });
+    return out;
+  }
+
+  function fill(text) {
+    return String(text).replace("{t}", openLocalTime() || "9:30 AM Eastern");
+  }
+
+  function speak(line, announce) {
+    if (!line) return;
+    spokenLine = line;
     spoken = true;
     clearTimeout(speakTimer);
     bub.classList.add("hide");
+    // Auto-driven swaps must not be read aloud — VoiceOver announcing the dog every
+    // time the clock ticks over is an interruption, not information. Taps stay polite.
+    bub.setAttribute("aria-live", announce ? "polite" : "off");
     speakTimer = setTimeout(function () {
-      says.textContent = text;
+      says.textContent = fill(line[lang] || line.en);
       bub.classList.remove("hide");
     }, mq.matches ? 0 : 180);
     maybeCue();
   }
+
+  function speakBest(pos, announce) {
+    var pool = sayable(pos);
+    if (pool.length) speak(pool[0], announce);
+  }
+
+  // Called by the shared clock whenever the market moves into a new part of the day.
+  // Exposed on window because that clock runs in its own scope, defined above this one.
+  window.panchoPhaseChanged = function (ph) {
+    var next = (!ph || ph.name === "unknown") ? null : "clock-" + ph.name;
+    if (next === phaseId) return;
+    var first = phaseId === null;
+    phaseId = next;
+    if (!first) speakBest(current, false);   // the load path speaks separately
+  };
 
   /* ---------- language ---------- */
   var btnEn = document.getElementById("langEn");
@@ -1390,7 +1468,9 @@
     setName(".lg-fp", STR[next].fpLabel);
     clearTimeout(speakTimer);   // a pending bubble write would land in the old language
     // keep Pancho speaking the same thought, in the new language
-    says.textContent = spoken ? STR[next].lines[current][idx] : STR[next].greet;
+    says.textContent = (spoken && spokenLine)
+      ? fill(spokenLine[next] || spokenLine.en)
+      : STR[next].greet;
     bub.classList.remove("hide");   // speak() may have just hidden it mid-fade
     if (announce) wag(2);
   }
@@ -1417,7 +1497,7 @@
       else r.removeAttribute("aria-current");
     });
     if (focusTab) tabs[order.indexOf(key)].focus();
-    speak(STR[lang].lines[key][0]);
+    speakBest(key, true);
     wag(2);
   }
 
@@ -1455,9 +1535,13 @@
   });
 
   document.getElementById("dogBtn").addEventListener("click", function () {
-    var pool = STR[lang].lines[current];
+    var pool = sayable(current);
+    if (!pool.length) return;
+    // Tapping walks down the priority order, so the most urgent thing he has is what he
+    // leads with and the rest are there for anyone who wants them.
     if (spoken) idx = (idx + 1) % pool.length;
-    speak(pool[idx]);
+    if (idx >= pool.length) idx = 0;
+    speak(pool[idx], true);
     wag(3);
   });
 
@@ -1489,5 +1573,36 @@
   });
 
   applyLang(lang, false);
+
+  // On arrival he leads with the most useful thing he has — which, before the market
+  // opens, is what time it opens. The clock has already run by now (it is set up above
+  // this block), so phaseId is populated; if anything went wrong, the greeting stands.
+  try { phaseId = "clock-" + marketPhase().name; } catch (e) { phaseId = null; }
+  if (phaseId === "clock-unknown") phaseId = null;
+  window.setTimeout(function () {
+    if (!spoken) speakBest(current, false);
+  }, 0);
+
+  // The quote feed decides which "live" line is true, once per pull. Everything here
+  // sits behind the same staleness guard as the prices: if the feed is quiet, Pancho
+  // has no live line and falls back to the tiers that cannot go stale.
+  window.panchoLive = function (q) {
+    var up = 0, down = 0, moved = 0;
+    ["spx", "qqq", "nvda", "soxl", "cost"].forEach(function (k) {
+      if (!q[k] || typeof q[k].d !== "number") return;
+      if (q[k].d > 0) up++; else if (q[k].d < 0) down++;
+      if (Math.abs(q[k].d) >= 0.5) moved++;
+    });
+    var next = null;
+    if (up + down >= 4) {
+      if (!moved) next = "live-quiet";
+      else if (!down) next = "live-allup";
+      else if (!up) next = "live-alldown";
+      else next = "live-split";
+    }
+    if (next === liveId) return;
+    liveId = next;
+    if (!spoken) speakBest(current, false);
+  };
 })();
 </script>

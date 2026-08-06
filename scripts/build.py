@@ -54,7 +54,7 @@ OUTPUT = ROOT / "dashboard.html"
 DATA = ROOT / "data"
 BACKUPS = ROOT / "backups"
 
-FIELD_RE = re.compile(r"<!--F:([a-zA-Z0-9_.\-]+)(\|raw)?-->(.*?)<!--/F-->", re.S)
+FIELD_RE = re.compile(r"<!--F:([a-zA-Z0-9_.\-]+)(\|raw|\|js)?-->(.*?)<!--/F-->", re.S)
 REPEAT_RE = re.compile(r"<!--R:([a-zA-Z0-9_.\-]+)-->(.*?)<!--/R-->", re.S)
 PLACEHOLDER_RE = re.compile(r"\{\{([a-zA-Z0-9_.\-]+)(\|raw)?\}\}")
 
@@ -392,11 +392,195 @@ def derive_freshness(data: dict) -> None:
         market["fresh_cls"] = "stale"
 
 
+EVERGREEN = {
+    "spx": [("This is the whole market in one number. When it's up, most things are up.",
+             "시장 전체를 숫자 하나로 본 겁니다. 이게 오르면 대부분 같이 오른 거예요."),
+            ("If you only look at one number all day, this is a fair one to pick.",
+             "하루에 숫자 하나만 보신다면, 이걸 보시면 됩니다.")],
+    "qqq": [("The 100 biggest technology names, all in one fund.",
+             "큰 기술주 100개를 한 번에 담은 펀드예요."),
+            ("Nvidia is its largest holding, so these two move together a lot.",
+             "엔비디아 비중이 제일 커서, 이 둘은 같이 움직일 때가 많습니다.")],
+    "nvda": [("The price isn't the scary part. Whether the sales are real is.",
+              "가격이 문제가 아니라, 매출이 진짜냐가 문제예요."),
+             ("Four of your five holdings move with this one company.",
+              "보유 다섯 중 넷이 이 회사 하나를 따라 움직입니다.")],
+    "soxl": [("Careful with this one. Triple risk, and it resets every single day.",
+              "이건 조심하셔야 해요. 세 배짜리라 매일 다시 맞춥니다."),
+             ("It moves three times as much as chip stocks — in both directions.",
+              "반도체 주식보다 세 배씩 움직입니다. 오를 때도, 내릴 때도요.")],
+    "cost": [("Good business, expensive price. That's the whole debate.",
+              "사업은 좋고 가격은 비쌉니다. 그게 전부예요."),
+             ("People shop here whether times are good or bad. That's the appeal.",
+              "형편이 좋든 나쁘든 사람들은 여기서 장을 봅니다. 그게 강점이에요.")],
+}
+
+# Clock and live lines carry a {t} slot the page fills with a real local time. They live
+# here rather than in the JS so the validation gate can see them like any other prose.
+CLOCK_LINES = [
+    ("premarket", "The market opens at {t} your time. Nothing here will move until then.",
+     "시장은 {t}에 열립니다. 그때까지는 아무것도 움직이지 않아요."),
+    ("open30", "It just opened. The first half hour is always the jumpiest — I wouldn't read much into it.",
+     "막 열렸어요. 처음 30분은 늘 출렁입니다. 크게 의미 두지 마세요."),
+    ("midday", "Trading is open. The prices here refresh every few minutes.",
+     "장이 열려 있습니다. 여기 가격은 몇 분마다 새로 들어와요."),
+    ("lasthour", "Last hour of trading. This is what sets the closing price you'll read tomorrow.",
+     "장 마지막 한 시간입니다. 내일 아침에 보실 종가가 지금 정해집니다."),
+    ("closed", "Trading is done for today. These are the final prices.",
+     "오늘 거래는 끝났습니다. 이게 최종 가격이에요."),
+    ("weekend", "The market is closed for the weekend. Nothing changes until Monday.",
+     "주말이라 시장은 쉽니다. 월요일까지 바뀌는 건 없어요."),
+    ("holiday", "The market is closed today for a holiday. Nothing has changed since it last traded.",
+     "오늘은 휴장일입니다. 마지막 거래일 이후로 바뀐 게 없어요."),
+]
+
+LIVE_LINES = [
+    ("allup", "Everything you own is up today.", "오늘은 보유 종목이 전부 올랐습니다."),
+    ("alldown", "Everything you own is down today.", "오늘은 보유 종목이 전부 내렸습니다."),
+    ("split", "A split day — some of yours up, some down.",
+     "오늘은 엇갈립니다. 오른 것도 있고 내린 것도 있어요."),
+    ("quiet", "Nothing here has moved even half a percent today.",
+     "오늘은 여기 있는 것 중 0.5%도 움직인 게 없습니다."),
+]
+
+
+def _pct_words(s: str) -> str:
+    """'≈ 54.0%' -> '54%' — Pancho speaks, so he rounds and drops the hedge glyph."""
+    m = re.search(r"([\d.]+)", str(s))
+    if not m:
+        return ""
+    return "%d%%" % round(float(m.group(1)))
+
+
+# The market calendar, in one place. The page used to carry a 2026-only holiday list
+# inside its JS, which would have had Pancho announcing an open market on New Year's Day
+# 2027, and it treated every day as a full session — so the status chip read "Market open
+# now" from 1pm to 4pm Eastern on the three early-close days. Years absent from CAL make
+# the page say nothing rather than guess.
+MARKET_CAL = {
+    2026: {"holidays": ["2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03",
+                        "2026-05-25", "2026-06-19", "2026-07-03", "2026-09-07",
+                        "2026-11-26", "2026-12-25"],
+           "half_days": ["2026-11-27", "2026-12-24"]},
+    2027: {"holidays": ["2027-01-01", "2027-01-18", "2027-02-15", "2027-03-26",
+                        "2027-05-31", "2027-06-18", "2027-07-05", "2027-09-06",
+                        "2027-11-25", "2027-12-24"],
+           "half_days": ["2027-11-26"]},
+}
+
+
+def derive_pancho(data: dict) -> None:
+    """Build Pancho's line ledger.
+
+    His lines used to be a hardcoded table inside <script>, which put them outside every
+    guard the page has (check_invariants strips <script> before it counts anything) and
+    let them name dates that had already passed. Now every line is a record with an
+    owner, a tier and an expiry, generated here where the figures come from, so a line
+    can never outlive the fact behind it.
+
+    Tiers, highest priority first: notable (a live event), live (computed in-page from
+    the quote feed), clock (time of day), today (written by the scheduled runs), figure
+    (derived from price + base), evergreen (permanent floor, no figures, never expires).
+    """
+    market = data.get("market")
+    if not isinstance(market, dict):
+        return
+    today = pacific_today().isoformat()
+    lines = []
+
+    def add(tier, pos, en, ko, expires="", lid=""):
+        if not en or not ko:
+            return
+        lines.append({"id": lid or ("%s-%s-%d" % (tier, pos or "all", len(lines))),
+                      "tier": tier, "pos": pos, "expires": expires,
+                      "en": en.strip(), "ko": ko.strip()})
+
+    for key in BOARD_ORDER:
+        pos = market.get("positions", {}).get(key) or {}
+        m = pos.get("metrics") or {}
+        name_en = pos.get("name_en", key.upper())
+        name_ko = pos.get("name_ko", name_en)
+
+        # Figure lines are regenerated from the current price every build, so they are
+        # true by construction and need no expiry.
+        dd, rec = m.get("dd_num", ""), m.get("recover_en", "")
+        if dd == "0%":
+            add("figure", key,
+                "It's right at the highest price it has reached in a year.",
+                "지난 1년 중 가장 높은 가격에 와 있습니다.")
+        elif dd and rec:
+            add("figure", key,
+                "It's about %s below its high from last year. Getting back there means rising about %s."
+                % (_pct_words(dd), _pct_words(rec)),
+                "작년 고점보다 약 %s 아래입니다. 거기까지 가려면 약 %s 올라야 해요."
+                % (_pct_words(dd), _pct_words(rec)))
+
+        ytd = m.get("ytd_en", "")
+        if ytd:
+            up = "-" not in ytd and "−" not in ytd
+            add("figure", key,
+                "So far this year it's %s about %s." % ("up" if up else "down", _pct_words(ytd)),
+                "올해 들어 약 %s %s." % (_pct_words(ytd), "올랐습니다" if up else "내렸습니다"))
+
+        pe = m.get("pe_en", "")
+        if pe:
+            add("figure", key,
+                "Its price is about %s a year of profits. That's the expensive part."
+                % _pct_words(pe).replace("%", " times"),
+                "주가가 한 해 이익의 약 %s배입니다. 비싸다는 얘기가 여기서 나와요."
+                % _pct_words(pe).replace("%", ""))
+
+        for en, ko in EVERGREEN.get(key, []):
+            add("evergreen", key, en, ko)
+
+    # Lines the scheduled runs write themselves: one for the morning, one for the
+    # afternoon. They expire with the day they were written for, so a failed run can
+    # never leave yesterday's remark in the dog's mouth.
+    for slot in ("pancho_am", "pancho_pm"):
+        blk = market.get(slot) or {}
+        if isinstance(blk, dict) and blk.get("en") and blk.get("ko"):
+            if str(blk.get("date", ""))[:10] == today:
+                add("today", blk.get("pos", ""), blk["en"], blk["ko"], expires=today, lid=slot)
+
+    for lid, en, ko in CLOCK_LINES:
+        add("clock", "", en, ko, lid="clock-" + lid)
+    for lid, en, ko in LIVE_LINES:
+        add("live", "", en, ko, lid="live-" + lid)
+
+    # Structural gate. A malformed ledger must stop the build here, not surface as a dog
+    # with an empty speech bubble that nobody notices for a week.
+    seen = set()
+    for ln in lines:
+        if ln["id"] in seen:
+            raise BuildError("pancho: duplicate line id %r" % ln["id"])
+        seen.add(ln["id"])
+        for lg in ("en", "ko"):
+            if "<" in ln[lg] or ">" in ln[lg] or "&" in ln[lg]:
+                raise BuildError("pancho line %r (%s): the bubble is written with "
+                                 "textContent, so markup and entities render literally"
+                                 % (ln["id"], lg))
+        # Korean runs shorter than English at the same meaning; one cap would either
+        # let Korean overflow the bubble or strangle the English.
+        if len(ln["en"]) > 125:
+            raise BuildError("pancho line %r: English is %d chars (max 125)"
+                             % (ln["id"], len(ln["en"])))
+        if len(ln["ko"]) > 70:
+            raise BuildError("pancho line %r: Korean is %d chars (max 70)"
+                             % (ln["id"], len(ln["ko"])))
+    if not any(l["tier"] == "evergreen" for l in lines):
+        raise BuildError("pancho: no evergreen lines — the fallback floor is gone")
+
+    market["pancho_json"] = json.dumps(lines, ensure_ascii=False, separators=(",", ":"))
+    market["pancho_count"] = len(lines)
+    market["market_cal_json"] = json.dumps(MARKET_CAL, separators=(",", ":"))
+
+
 def derive(data: dict) -> dict:
     """Turn stored data into the display fields the template needs. Kept here, in data
     space, so the research job only ever writes facts and never markup."""
     derive_market(data)
     derive_freshness(data)
+    derive_pancho(data)   # after derive_market: it reads the metrics that loop computes
     VERB = {
         "said":   ("Said",   "발언"),
         "did":    ("Did",    "조치"),
@@ -514,7 +698,15 @@ def apply_fields(src: str, data: dict) -> tuple:
         key, raw = m.group(1), m.group(2)
         val = str(dotted(data, key))
         count += 1
-        if raw:
+        if raw == "|js":
+            # Script payloads (the Pancho ledger, the market calendar) get NO wrapper
+            # comments. `<!--` inside a script is a legal single-line comment in every
+            # browser, so the usual marker would comment out the rest of the line and
+            # take the value with it — the page would load with an undefined ledger.
+            if "</" in val or "<!--" in val:
+                raise BuildError(f"{key}: script payload contains a tag-like sequence")
+            return val
+        if raw == "|raw":
             # Prose fields carry inline <b>. Safety is enforced at the validation gate,
             # which rejects any tag other than <b> in agent-written prose — escaping
             # here would print the tags as literal text, which run 2 briefly shipped.
@@ -579,13 +771,34 @@ def check_invariants(before: str, after: str):
         if bad.lower() in after.lower():
             problems.append(f"{bad} present — breaks the Artifact build")
 
-    # Sprite rows must stay square or the dog renders misshapen.
-    m = re.search(r"var IDLE\s*=\s*\[(.*?)\]\s*;", after, re.S)
-    if m:
-        rows = re.findall(r'"([^"]*)"', m.group(1))
-        widths = {len(r) for r in rows}
-        if len(widths) > 1:
-            problems.append(f"sprite rows are ragged: widths {sorted(widths)}")
+    # Pancho must render and must be able to speak. The old check here grepped for
+    # `var IDLE`, which stopped existing when the sprite moved to base64 FRAMES — so it
+    # matched nothing and passed every build on an empty set for months. Check the two
+    # things that are actually true of a working dog now.
+    frames = re.search(r"var FRAMES\s*=\s*\{(.*?)\}\s*;", after, re.S)
+    if not frames:
+        problems.append("sprite FRAMES block missing — Pancho will not render")
+    else:
+        srcs = re.findall(r'"(data:image/[^"]+)"', frames.group(1))
+        if not srcs:
+            problems.append("sprite FRAMES carries no embedded images")
+        elif any(len(s) < 200 for s in srcs):
+            problems.append("a sprite frame is suspiciously small — likely a truncated image")
+
+    lm = re.search(r"var PLINES\s*=\s*(\[.*?\]);", after, re.S)
+    if not lm:
+        problems.append("Pancho line ledger (PLINES) missing — the bubble would be empty")
+    else:
+        try:
+            pl = json.loads(lm.group(1))
+        except ValueError as e:
+            problems.append(f"Pancho line ledger is not valid JSON: {e}")
+        else:
+            if not [x for x in pl if x.get("tier") == "evergreen"]:
+                problems.append("Pancho ledger has no evergreen line — no fallback floor")
+            for x in pl:
+                if not x.get("en") or not x.get("ko"):
+                    problems.append(f"Pancho line {x.get('id')!r} is missing a twin")
 
     # A build that shrinks the page by a third has eaten something.
     if len(after) < len(before) * 0.66:

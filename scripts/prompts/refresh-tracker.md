@@ -9,10 +9,10 @@ All paths below are relative to it.
 Two things, and nothing else:
 
 1. Sweep the record and update `data/trump.json` (the rules below).
-2. Rewrite exactly three keys in `data/market.json` — the top-level `today_en`,
-   `today_ko` and `today_date` (today's ISO date) — with how TODAY's session is
-   actually going (see "The Today block"). Touch nothing else in that file: the
-   morning job owns the market numbers.
+2. Rewrite exactly four keys in `data/market.json` — the top-level `today_en`,
+   `today_ko`, `today_date` (today's ISO date), and `pancho_pm` — with how TODAY's
+   session is actually going (see "The Today block" and "Pancho's afternoon line").
+   Touch nothing else in that file: the morning job owns the market numbers.
 
 Do **not** touch `dashboard.html`, `dashboard.template.html`, anything in `site/`, or
 any other file.
@@ -30,6 +30,31 @@ one paragraph, 3-5 short sentences, plain English a non-technical 65-year-old fo
    ("up about 3%"), never bare signs. If you cannot source an intraday figure, name
    the direction only.
 3. One line on what is still ahead today or next ("the jobs report lands Friday").
+
+## Pancho's afternoon line
+
+Pancho, the little dog on the page, speaks from a ledger of lines that each carry an
+expiry, so he can never repeat a fact after it stops being true. The morning run wrote
+`pancho_am`; you write `pancho_pm`, his afternoon remark:
+
+```json
+"pancho_pm": {"date": "<today ISO>", "pos": "", "en": "...", "ko": "..."}
+```
+
+- `pos` is `""` for the whole market, or one of `spx`/`qqq`/`nvda`/`soxl`/`cost` to
+  attach the line to that position (he says it when that row is tapped).
+- **Plain spoken English, one or two short sentences, under 120 characters.** Korean
+  under 65 characters — it is a speech bubble, not a paragraph.
+- **No HTML at all**, not even `<b>`: the bubble is plain text and a tag would render as
+  literal angle brackets. No emojis, no markdown.
+- A friendly dog explaining one thing to an older man, never an analyst, never advice.
+- Say what the afternoon actually showed, not what the numbers already say on their own.
+
+Good: "The morning's drop mostly came back after lunch."
+Good: "Nvidia carried the whole thing today. Everything else drifted."
+Bad: "NVDA +3.43% on SpaceX news." (a data dump the board already shows)
+
+## The Today block wording
 
 Inline `<b>` for key names/numbers, no other tags. Never predict. Clock times, if any,
 in **Pacific Time**, plainly labeled ("5:30 in the morning Pacific time" / "서부 시각
