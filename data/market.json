@@ -738,15 +738,6 @@
   "events": [
     {
       "hot": true,
-      "when_en": "Wed Aug 5",
-      "when_ko": "8월 5일(수)",
-      "what_en": "Costco sales",
-      "what_ko": "코스트코 매출",
-      "note_en": "Today, 4:15pm — watch the growth rate",
-      "note_ko": "오늘 오후 4시 15분 — 성장률을 보세요"
-    },
-    {
-      "hot": true,
       "when_en": "Fri Aug 7",
       "when_ko": "8월 7일(금)",
       "what_en": "Jobs report",

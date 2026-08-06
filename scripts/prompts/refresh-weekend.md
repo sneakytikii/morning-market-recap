@@ -21,7 +21,9 @@ So: **write the week, not the day.**
 1. `data/market.json`, `data/trump.json` — current data and the shape to keep.
 2. `data/trump-corpus.md` — binding editorial rules for the tracker.
 3. `PRODUCT.md` — the reader and the reading level.
-4. The last few files in `backups/` — you can see what changed across the week.
+4. `git -C . log --oneline -12` and `git show <sha>:data/market.json` if you want to see
+   what the page said earlier in the week. (`backups/` holds rendered HTML pages, not
+   data — reading those wastes the run.)
 
 ## The five positions
 
@@ -155,7 +157,9 @@ as a badge; it is not the test for whether something is worth recording.
 - Market reaction is a measured number, never an asserted cause.
 - Strictly neutral. No praise, no mockery, no partisan framing.
 - Rank items touching the five positions first; chip-export policy hits four of them at once.
-- **Nothing new is a valid answer.** Set `"checked"` to today and add nothing. Do not pad.
+- **Nothing new is a valid answer.** Add nothing, and set all three of `checked` (ISO
+  date), `checked_en` and `checked_ko` — the page renders the last two, and `checked`
+  alone is discarded at build time. Do not pad.
 - Keep the newest 12 entries.
 
 ## The SOXL caveat — keep the page and the data in agreement

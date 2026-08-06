@@ -514,8 +514,8 @@
       <span class="fresh"><span data-l="en"><!--F:market.fresh_en--><!--/F--></span><span data-l="ko"><!--F:market.fresh_ko--><!--/F--></span></span>
       <span class="norm" data-l="en"><!--F:market.next_session_en_html|raw--><!--/F--></span>
       <span class="norm" data-l="ko"><!--F:market.next_session_ko_html|raw--><!--/F--></span>
-      <span class="norm" data-l="en">Next date that matters: <b>Costco sales, Wed Aug&nbsp;5</b></span>
-      <span class="norm" data-l="ko">다음으로 중요한 날: <b>코스트코 매출 발표, 8월 5일(수)</b></span>
+      <span class="norm" data-l="en"><!--F:market.next_date_en|raw--><!--/F--></span>
+      <span class="norm" data-l="ko"><!--F:market.next_date_ko|raw--><!--/F--></span>
       <span class="langsw" role="group" aria-label="Language / 언어">
         <button type="button" id="langEn" aria-pressed="false">English</button>
         <button type="button" id="langKo" aria-pressed="false">한국어</button>
@@ -1073,13 +1073,19 @@
   function openLocalTime() {
     try {
       var now = new Date();
-      var etHour = parseInt(new Intl.DateTimeFormat("en-US", {
-        timeZone: "America/New_York", hour: "2-digit", hour12: false }).format(now), 10);
-      var localHour = now.getHours();
-      var shift = localHour - etHour;
-      if (shift > 12) shift -= 24;
-      if (shift < -12) shift += 24;
-      var mins = 9 * 60 + 30 + shift * 60;
+      // Compare in MINUTES, not whole hours. India, Newfoundland and parts of Australia
+      // sit on half-hour offsets, and rounding to the hour told those readers the market
+      // opens thirty minutes before it does.
+      var p = {};
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York",
+        hour: "2-digit", minute: "2-digit", hour12: false })
+        .formatToParts(now).forEach(function (x) { p[x.type] = x.value; });
+      var etMins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
+      var localMins = now.getHours() * 60 + now.getMinutes();
+      var shift = localMins - etMins;
+      if (shift > 720) shift -= 1440;
+      if (shift < -720) shift += 1440;
+      var mins = 9 * 60 + 30 + shift;
       mins = ((mins % 1440) + 1440) % 1440;
       var h = Math.floor(mins / 60), m = mins % 60;
       var ampm = h >= 12 ? "PM" : "AM";
@@ -1429,7 +1435,11 @@
 
   function notable(q) {
     if (!todayISO) return false;                 // no reliable date: never latch
-    if (PLINES.some(function (l) { return l.tier === "notable"; })) return false;
+    // Drop any notable line from a previous pull before recomputing. Keeping it would
+    // freeze a figure from the moment it fired ("Nvidia is up 4.1% today") and, because
+    // notable outranks every other tier, leave that stale number as the first thing he
+    // says for the rest of the session while the real move kept moving.
+    PLINES = PLINES.filter(function (l) { return l.tier !== "notable"; });
     var order = ["nvda", "soxl", "qqq", "cost", "spx"], made = null;
     for (var i = 0; i < order.length && !made; i++) {
       var k = order[i], t = PTRIG[k], quote = q[k];

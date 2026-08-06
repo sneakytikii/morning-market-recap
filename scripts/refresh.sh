@@ -102,7 +102,10 @@ fi
 
 # --- 0. Don't research a market that hasn't moved ------------------------------
 # US market holidays land on weekdays; on those days there is no new close to report.
-HOLIDAYS_2026="2026-01-01 2026-01-19 2026-02-16 2026-04-03 2026-05-25 2026-06-19 2026-07-03 2026-09-07 2026-11-26 2026-12-25"
+# Keep this in step with MARKET_CAL in scripts/build.py, which the page reads. This
+# list was 2026-only, so from January 2027 the job would have burned a research run on
+# every market holiday and published a "brief" about a day that never traded.
+HOLIDAYS_2026="2026-01-01 2026-01-19 2026-02-16 2026-04-03 2026-05-25 2026-06-19 2026-07-03 2026-09-07 2026-11-26 2026-12-25 2027-01-01 2027-01-18 2027-02-15 2027-03-26 2027-05-31 2027-06-18 2027-07-05 2027-09-06 2027-11-25 2027-12-24"
 TODAY="$TODAY_STAMP"
 if [[ "$MODE" != "weekend" && "$HOLIDAYS_2026" == *"$TODAY"* ]]; then
   echo "Market holiday ($TODAY) — nothing new to report. Skipping."
@@ -167,6 +170,21 @@ if ! diff -q "$MANIFEST" "$ROOT/.state/manifest-after.txt" >/dev/null; then
 fi
 
 # --- 2. Validate the data before it can touch the page -----------------------
+# The run knows which kind of run it is; the agent should not have to remember. The
+# weekend prompt sets mode="weekend" and nothing ever cleared it, so the first weekday
+# masthead after a Saturday read "Morning Brief"... or rather "Weekend Recap", for as
+# long as it took someone to notice. Stamp it from $MODE and the question closes.
+python3 - "$MODE" <<'PY'
+import json, sys, pathlib
+mode = "weekend" if sys.argv[1] == "weekend" else "weekday"
+p = pathlib.Path("data/market.json")
+d = json.loads(p.read_text(encoding="utf-8"))
+if d.get("mode") != mode:
+    d["mode"] = mode
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"  mode corrected to {mode!r}")
+PY
+
 echo
 echo "--- 2/4  Validating data ---"
 if ! python3 - <<'PY'
@@ -257,6 +275,18 @@ for name in ("market.json", "trump.json"):
             check_tags(para.get("ko",""), f"lede[{j}].ko")
         for f2 in ("next_session_en_html","next_session_ko_html","today_en","today_ko"):
             if d.get(f2): check_tags(d[f2], f2)
+        # The Today paragraph is only rendered if today_date matches the build day —
+        # otherwise the build silently swaps in a generic fallback. Without this check a
+        # run could research the day properly, forget the stamp, and publish the canned
+        # line instead, with nothing anywhere reporting that it happened.
+        if d.get("today_en") or d.get("today_ko"):
+            if str(d.get("today_date", ""))[:10] != TODAY:
+                bad(f"market.json today_date is {d.get('today_date')!r}, not today "
+                    f"({TODAY}) — the Today paragraph would be discarded for the "
+                    f"generic fallback")
+            if not d.get("today_en") or not d.get("today_ko"):
+                bad("market.json: today_en and today_ko must both be written")
+
         # Pancho's bubble is written with textContent, so ANY markup renders as literal
         # angle brackets — the <b> that prose is allowed is forbidden here. His lines
         # are also length-capped: the bubble has no scrollbar, it just overflows.
@@ -267,29 +297,36 @@ for name in ("market.json", "trump.json"):
             if not isinstance(blk, dict):
                 bad(f"market.json {slot}: must be an object with date/pos/en/ko")
                 continue
-            if not blk.get("en") or not blk.get("ko"):
-                bad(f"market.json {slot}: needs both en and ko")
             # A date in the PAST is normal, not an error: the morning run does not
             # rewrite the afternoon line, so yesterday's pancho_pm is still sitting here
-            # and the build correctly drops it. Only a missing, malformed or future date
-            # is a real problem. (Treating a stale date as fatal would have blocked
-            # every morning publish from the day after this shipped.)
+            # and derive_pancho drops it on sight. Only a missing, malformed or future
+            # date is a real problem, and a line the build will DISCARD must never be
+            # allowed to fail the publish — otherwise one oversized remark freezes the
+            # page for everyone the following morning.
             stamp = str(blk.get("date", ""))[:10]
             try:
                 when = datetime.date.fromisoformat(stamp)
             except ValueError:
                 bad(f"market.json {slot}: date {blk.get('date')!r} is not an ISO date — "
                     f"the build cannot tell whether this line is current")
-            else:
-                if when > datetime.date.fromisoformat(TODAY):
-                    bad(f"market.json {slot}: date {stamp} is in the future")
+                continue
+            if when > datetime.date.fromisoformat(TODAY):
+                bad(f"market.json {slot}: date {stamp} is in the future")
+                continue
+            if stamp != TODAY:
+                continue     # yesterday's line: the build ignores it, so we do too
+            if not blk.get("en") or not blk.get("ko"):
+                bad(f"market.json {slot}: needs both en and ko")
             if blk.get("pos") and blk["pos"] not in ("spx","qqq","nvda","soxl","cost"):
                 bad(f"market.json {slot}: pos {blk['pos']!r} is not one of the five")
             for lg, cap in (("en", 120), ("ko", 65)):
                 v = str(blk.get(lg, ""))
-                if re.search(r"[<>&]", v):
-                    bad(f"market.json {slot}.{lg}: no markup or entities — the speech "
-                        f"bubble is plain text and would show the characters literally")
+                # Angle brackets only. "&" is fine — the bubble is textContent, so
+                # "S&P 500" renders as typed, and build.py's own spoken-name table
+                # already sends "The S&P 500" through it.
+                if re.search(r"[<>]", v):
+                    bad(f"market.json {slot}.{lg}: no markup — the speech bubble is "
+                        f"plain text and would show the tag literally")
                 if len(v) > cap:
                     bad(f"market.json {slot}.{lg}: {len(v)} chars, over the {cap} cap "
                         f"(it would overflow the bubble)")
@@ -332,6 +369,7 @@ echo "--- 4/4  Publishing ---"
 # The project root is the repo now (site/ became docs/ when the whole project moved
 # into it). The old check pointed at $ROOT/site, which no longer exists — so a run
 # would rebuild locally and silently skip the push.
+PUBLISHED=1
 if git -C "$ROOT" remote get-url origin >/dev/null 2>&1; then
   git -C "$ROOT" add -A
   if git -C "$ROOT" diff --cached --quiet; then
@@ -343,14 +381,25 @@ if git -C "$ROOT" remote get-url origin >/dev/null 2>&1; then
       echo "  Published to GitHub Pages."
     else
       echo "  PUSH FAILED — the site still shows the previous page. Local files are current."
+      PUBLISHED=0
     fi
   fi
 else
   echo "  No git remote configured. Local files updated only."
 fi
 
-rm -f "$ROOT/.state/last-failure.txt"
-echo "$TODAY_STAMP" > "$STAMP"
+# The success stamp exists to stop the 6:57 and 7:42 backup slots re-running after a
+# good morning. A run that built locally but could NOT push has not given the reader
+# anything, so it must not claim the day — otherwise a transient network failure at
+# 6:12 silently costs the whole day's page. The commit is already made, so a later
+# slot pushes it along with its own work.
+if [ "$PUBLISHED" = "1" ]; then
+  rm -f "$ROOT/.state/last-failure.txt"
+  echo "$TODAY_STAMP" > "$STAMP"
+else
+  printf '%s  push failed — page not updated for readers\n' "$(date '+%Y-%m-%d %H:%M')" \
+    > "$ROOT/.state/last-failure.txt"
+fi
 
 echo
 echo "Done — $(date '+%H:%M:%S')"

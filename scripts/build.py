@@ -275,6 +275,20 @@ def derive_market(data: dict) -> dict:
                                   "자동으로 갱신되며, 직전 거래일의 자세한 이야기는 아래에 "
                                   "있습니다.")
 
+    # "Next date that matters" was a hardcoded string in the template naming a date that
+    # had already passed — and no agent could ever fix it, because they may only edit
+    # data/**. Derive it from the first hot event on the calendar instead, so it moves
+    # by itself as dates fall off.
+    nd_en = nd_ko = ""
+    for ev in (market.get("events") or []):
+        if str(ev.get("hot", "")).lower() in ("true", "1", "yes") or ev.get("hot") is True:
+            if ev.get("what_en") and ev.get("when_en"):
+                nd_en = "Next date that matters: <b>%s, %s</b>" % (ev["what_en"], ev["when_en"])
+                nd_ko = "다음으로 중요한 날: <b>%s, %s</b>" % (ev.get("what_ko", ev["what_en"]),
+                                                            ev.get("when_ko", ev["when_en"]))
+            break
+    market["next_date_en"], market["next_date_ko"] = nd_en, nd_ko
+
     # The context label over yesterday's story names the session it retells, so a
     # Wednesday page says "Tuesday, in review" and a weekend page says the week.
     if market.get("mode") == "weekend":
@@ -508,7 +522,11 @@ def derive_pancho(data: dict) -> None:
             add("figure", key,
                 "It's right at the highest price it has reached in a year.",
                 "지난 1년 중 가장 높은 가격에 와 있습니다.")
-        elif dd and rec:
+        elif dd and rec and _pct_words(dd) not in ("", "0%"):
+            # Guarded on the ROUNDED figure, not the raw one: a 0.4% drawdown is a real
+            # number on the board but rounds to zero in speech, and "about 0% below its
+            # high, so it needs to rise about 0%" is a sentence that makes the dog look
+            # broken. Below half a percent he simply uses another line.
             add("figure", key,
                 "It's about %s below its high from last year. Getting back there means rising about %s."
                 % (_pct_words(dd), _pct_words(rec)),
@@ -555,10 +573,14 @@ def derive_pancho(data: dict) -> None:
             raise BuildError("pancho: duplicate line id %r" % ln["id"])
         seen.add(ln["id"])
         for lg in ("en", "ko"):
-            if "<" in ln[lg] or ">" in ln[lg] or "&" in ln[lg]:
+            # Angle brackets only. An ampersand is FINE here — the bubble is written with
+            # textContent, so "S&P 500" renders exactly as typed, and this file's own
+            # SPOKEN table sends "The S&P 500" through that same bubble. Banning it would
+            # have rejected the most likely sentence Pancho could say about the market.
+            if "<" in ln[lg] or ">" in ln[lg]:
                 raise BuildError("pancho line %r (%s): the bubble is written with "
-                                 "textContent, so markup and entities render literally"
-                                 % (ln["id"], lg))
+                                 "textContent, so a tag would render as literal "
+                                 "angle brackets" % (ln["id"], lg))
         # Korean runs shorter than English at the same meaning; one cap would either
         # let Korean overflow the bubble or strangle the English.
         if len(ln["en"]) > 125:

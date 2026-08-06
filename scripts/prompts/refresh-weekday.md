@@ -82,6 +82,11 @@ is the failure this section exists to prevent. Update ALL of these every run:
   same items, same order, Korean saying the same thing.
 - **`positions.*.verdict_en` / `verdict_ko`** — the "What I'd watch" line. Update it when
   its date passes or its premise changes; leave it if still true.
+- **`positions.*.take_en` / `take_ko` / `take_tone`** — the board's "Our take" chip, the
+  shortest thing on the page and the one most likely to be read alone. A few words only
+  ("Danger — read this one", "Steady"). `take_tone` is the chip's colour class — one of
+  `c-neg` / `c-neu` / `c-pos` — and must agree with the words. Revisit these every run:
+  a chip naming a date or a condition that has passed is worse than no chip.
 - **`events`** — the calendar: `{hot, when_en, when_ko, what_en, what_ko, note_en, note_ko}`.
   Remove events whose date has passed, add newly scheduled ones. `hot: true` marks the
   ones most likely to move the five positions.
@@ -119,10 +124,18 @@ is in — the block's dated heading is derived at build time; you write only the
 This run happens before the open, so write the **morning setup**, one paragraph,
 3-5 short sentences.
 
-**The premarket sweep is a required research step, not an option.** You run about an
-hour before the opening bell, and the reader opens the page at the open wanting to know
-what is ALREADY going on. Before writing, search for, from sources dated this morning
-(or last evening for after-hours):
+**The premarket sweep is a required research step, not an option.** You normally run
+about an hour before the opening bell, and the reader opens the page at the open wanting
+to know what is ALREADY going on.
+
+**Check the actual time before you write.** There are backup slots at 6:57 and 7:42
+Pacific, and the 7:42 one starts *after* the 6:30 open. If the market is already
+trading when you run, say so — write the Today block about the session in progress
+("The market opened lower...") rather than about a session that has not started. Never
+write "futures point lower this morning" once the opening bell has rung.
+
+Before writing, search for, from sources dated this morning (or last evening for
+after-hours):
 
 - **Stock index futures right now** — S&P 500 and Nasdaq futures direction this morning
   ("futures point modestly higher/lower this morning"). Direction and rough size;
@@ -211,8 +224,11 @@ Follow the editorial rules in `data/trump-corpus.md` exactly. In short:
 - **Strictly neutral.** No praise, no mockery, no partisan framing. Report and stop.
 - Rank items touching SPX/QQQ/NVDA/SOXL/COST first. Chip-export policy is the highest-
   relevance thread — it hits four of the five positions at once.
-- **If there is nothing new, add nothing.** An empty week is a real and useful answer. Set
-  `"checked"` to today's date so the page can say when it last looked. Do not pad.
+- **If there is nothing new, add nothing.** An empty week is a real and useful answer. Do
+  not pad. Set all three of `checked` (ISO date), `checked_en` and `checked_ko` — the
+  page renders the last two ("Last checked Thursday, August 6"), and `checked` alone is
+  discarded at build time, so updating only that one leaves the page claiming a date
+  that never moves.
 - Keep the newest 12 entries; drop older ones.
 
 ## The SOXL caveat — keep the page and the data in agreement
