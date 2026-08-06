@@ -442,11 +442,15 @@ if [ "$PUSHED" = "1" ]; then
       done
       [ "$PUBLISHED" = "1" ] && break
       if [ "$attempt" = "1" ]; then
-        # An empty commit is the one retrigger available without an API token, and it
-        # is what cleared the stall by hand on 2026-08-06.
+        # The nudge must actually re-trigger the publish workflow, and that workflow is
+        # scoped to `paths: docs/**` — so an empty commit would push cleanly and start
+        # nothing at all. Touch a stamp file inside docs/ instead: it is one line, it
+        # changes the tree under the watched path, and it needs no API token.
         echo "  Not serving yet after 6 minutes — nudging the deploy once."
+        date -u '+%Y-%m-%dT%H:%M:%SZ' > "$ROOT/docs/.deploy-nudge"
+        git -C "$ROOT" add docs/.deploy-nudge
         git -C "$ROOT" -c user.name="market-recap-refresh" -c user.email="noreply@localhost" \
-            commit -q --allow-empty -m "Retrigger Pages deploy ($MODE)"
+            commit -q -m "Retrigger Pages deploy ($MODE)"
         git -C "$ROOT" push -q origin main || echo "  (nudge push failed)"
       fi
     done
