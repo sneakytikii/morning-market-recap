@@ -255,6 +255,16 @@ def derive_market(data: dict) -> dict:
     # comes from the build clock (same as the masthead); the prose (today_en/ko) is
     # agent-written each run. If a run ever fails to write it, fall back to an honest
     # generic line — never an empty box, never yesterday's story dressed as today.
+    # The day this page was built, for the reader's browser to check against its own
+    # clock. When a morning run fails, nothing rebuilds the page — so the page cannot
+    # report its own failure, and the only witness left is the reader's device noticing
+    # that the brief in front of it is not the one that should exist by now.
+    market["build_date_iso"] = today.isoformat()
+    market["build_date_en"] = "%s, %s %d" % (
+        DAYS_EN2[today.weekday()], MON_EN2[today.month-1], today.day)
+    market["build_date_ko"] = "%d월 %d일 %s" % (
+        today.month, today.day, DAYS_KO2[today.weekday()])
+
     market["today_label_en"] = "Today · %s, %s %d" % (
         DAYS_EN2[today.weekday()], MON_EN2[today.month-1], today.day)
     market["today_label_ko"] = "오늘 · %d월 %d일 %s" % (

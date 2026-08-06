@@ -162,6 +162,17 @@
   .fresh { font-weight:700; color:var(--ink-3); }
   .fresh.stale { color:var(--down); }
 
+  /* Shown only when the reader's own clock says this page is older than the brief that
+     should exist by now. A failed morning run cannot rebuild the page to announce
+     itself, so the reader's device is the only witness left. Deliberately plain and
+     calm: it tells him what he is looking at, it does not alarm him about his money. */
+  .stalebar {
+    margin:0 0 14px; padding:12px 14px; border:2px solid var(--down); border-radius:4px;
+    font-family:var(--f-sans); font-size:17px; line-height:1.5; color:var(--ink);
+    background:var(--surface);
+  }
+  .stalebar b { color:var(--down); }
+
   /* ---------- lede ---------- */
   .lede { padding:30px 0 26px; border-bottom:1px solid var(--rule); }
   .lede h2 { font-family:var(--f-serif); font-size:31px; font-weight:600; margin:0 0 16px; letter-spacing:var(--h-track); }
@@ -531,6 +542,7 @@
       </div>
       <img class="dog-mast" id="dogMast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByElEQVR42u3cvU3DQBgGYE9AQ4/YINTMkAnSUbIAJRJtqqxBmU1oQRSIHhagCC05KbHs83Hnz88rva3/niKf47O7TkRERJrM1/7h8Lcv23XRpvsjABAgQIAAowABBggQIECAwIACBAgQIEBgQAECBAgQYIlEB+srQIAAAQKMC/h8tzqca+4Q0FqHnk/f9QEIECBAgMsFbB0sFxQgQIAAAQIcC3h9eXHUNLkAadL9AQQIECBAgGNBpwYceoFLb38o4Oz+3AYIECBAgMUe6Ea/kQ//RB4gQIAAARYD/Pl+q1qAAAECBAiwVcDN7U1WAQIECBAgwChDzOfT9mwNMQABAgQIsBXA1ePuqLVv3PuaHi9AgAABAgQ4FjQaYBc9AAECBAjwZIYu7E0vyNy6+JXZAAECBLhgwNpgrx/vWV08KECAAAECNLQABAgQIECAhQGvNvehCxAgQIAAASpAgAABAgQ4bUsvWgIIECBAgABbAay9kLc0YHVwgAABAgTYDGjrL7fkgvV9JKH6kAMQIECAAP8NsHWwXNDwbycBBAgQIMCTSU84N+n2oh8fQIAAAQKcb9If8dyhYeqhoPXjAwgQIECAIiIiMnF+ASC3nZN91mQpAAAAAElFTkSuQmCC" alt="Pancho" width="28" height="28">
     </div>
+    <p class="stalebar" id="staleLine" hidden></p>
     <div class="dateline">
       <span data-l="en"><!--F:market.brief_date_en|raw-->Thursday, August 6, 2026 &middot; Morning Brief<!--/F--></span>
       <span data-l="ko"><!--F:market.brief_date_ko|raw-->2026년 8월 6일 목요일 · 아침 브리핑<!--/F--></span>
@@ -1305,6 +1317,75 @@
       return h12 + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
     } catch (e) { return ""; }
   }
+
+  /* ---------- "did this page update?" ----------
+     The one failure the page could never report is its own: when a morning run dies,
+     nothing rebuilds the page, so it keeps serving yesterday looking perfectly healthy.
+     The reader's device can see what the page cannot — that the brief in front of it is
+     older than the one that should exist by now.
+
+     The bar must never cry wolf. On a Sunday, Saturday's recap IS the current brief; at
+     7am on a weekday the morning run may still be working; on a market holiday no brief
+     is written at all. So instead of "is the build date today?", work out the most
+     recent date on which a brief SHOULD exist, and complain only if the page predates
+     that. Any uncertainty — an unparseable date, a year we have no calendar for —
+     stays silent, because a false alarm about his money costs more than a missed one. */
+  (function () {
+    var bar = document.getElementById("staleLine");
+    var built = "<!--F:market.build_date_iso-->2026-08-06<!--/F-->";
+    if (!bar || !/^\d{4}-\d{2}-\d{2}$/.test(built)) return;
+
+    function ymd(d) {
+      return d.getFullYear() + "-" +
+        ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+    }
+    // The reader's "today" in the page's home timezone, as a date we can step back from.
+    var pac;
+    try {
+      var p = {};
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles",
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hour12: false })
+        .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+      pac = { d: new Date(+p.year, +p.month - 1, +p.day),
+              mins: parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10) };
+    } catch (e) { return; }
+
+    function isHoliday(d) {
+      var cal = MKTCAL[String(d.getFullYear())];
+      if (!cal) return null;                       // unknown year: refuse to guess
+      return cal.holidays.indexOf(ymd(d)) !== -1;
+    }
+
+    // Only WEEKDAY briefs create an expectation. The scheduled wake is weekdays only,
+    // so the Saturday recap runs whenever the Mac next comes up — genuinely best-effort,
+    // and demanding it would put a red bar in front of him most weekends for something
+    // that is working as designed. Weekday mornings are the ones he relies on.
+    //
+    // Slots run at 5:12, 5:57 and 6:42 Pacific, so a brief exists well before this
+    // cutoff; 8:30 leaves room for a slow run rather than calling it a failure.
+    var WEEKDAY_BY = 8 * 60 + 30;
+    var cur = new Date(pac.d.getTime()), expected = null;
+    for (var back = 0; back < 10 && expected === null; back++) {
+      var dow = cur.getDay(), hol = isHoliday(cur);
+      if (hol === null) return;                    // no calendar: say nothing
+      var isBriefDay = dow >= 1 && dow <= 5 && !hol;
+      if (isBriefDay && (back > 0 || pac.mins >= WEEKDAY_BY)) expected = ymd(cur);
+      else cur.setDate(cur.getDate() - 1);
+    }
+    if (expected === null || built >= expected) return;   // healthy: stay hidden
+
+    var en = "<!--F:market.build_date_en-->Thursday, August 6<!--/F-->";
+    var ko = "<!--F:market.build_date_ko-->8월 6일 목요일<!--/F-->";
+    bar.innerHTML =
+      '<span data-l="en"><b>This page did not update this morning.</b> ' +
+      'What you are reading is the brief from ' + en + ', and the prices below are from ' +
+      'that day. It should catch up on its own.</span>' +
+      '<span data-l="ko"><b>오늘 아침 이 페이지가 갱신되지 않았습니다.</b> ' +
+      '지금 보시는 것은 ' + ko + ' 브리핑이고, 아래 가격도 그날 기준입니다. ' +
+      '곧 자동으로 다시 맞춰집니다.</span>';
+    bar.hidden = false;
+  })();
 
   (function () {
     var el = document.getElementById("mktStatus");
