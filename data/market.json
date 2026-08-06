@@ -797,8 +797,8 @@
   "next_session_ko": "장은 <b>오늘 아침</b> 다시 열립니다 — 위 숫자는 수요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b>, and tomorrow&rsquo;s brief will carry today&rsquo;s",
   "next_session_ko_html": "장은 <b>오늘 아침</b> 다시 열립니다 &mdash; 표의 숫자는 <b>수요일 종가</b>이며, 오늘 종가는 내일 아침 브리핑에 실립니다",
-  "today_en": "Futures point <b>slightly higher</b> for the Dow and the S&P 500 this morning and <b>slightly lower</b> for the Nasdaq — the same split as yesterday, when the Dow set a record and technology fell. Chip shares are lower again before the open. Two things land today: weekly unemployment claims at <b>5:30 in the morning Pacific time</b>, and the first full session in which the market can respond to <b>Costco's July sales</b>, which came out after yesterday's close with growth that did not slow. SpaceX's share lock-up also expires today, letting a large block of its shares be sold for the first time — worth watching because it was SpaceX's Nvidia announcement that moved chips yesterday. The bigger number is tomorrow: the <b>July jobs report</b>, same time of morning.",
-  "today_ko": "오늘 아침 선물은 다우와 S&P 500이 <b>소폭 상승</b>, 나스닥이 <b>소폭 하락</b>을 가리키고 있습니다. 다우는 사상 최고를 찍고 기술주는 내렸던 어제와 같은 모양입니다. 반도체 주식은 개장 전에 다시 내리고 있습니다. 오늘 두 가지가 예정돼 있습니다. 하나는 <b>서부 시각 오전 5시 30분</b>에 나오는 주간 실업수당 신청 건수이고, 다른 하나는 어제 장 마감 후 발표된 <b>코스트코 7월 매출</b>에 시장이 온전히 반응하는 첫 거래일이라는 점입니다. 7월 매출은 성장세가 꺾이지 않았습니다. 오늘은 스페이스X의 보호예수도 풀려 대량의 주식이 처음으로 시장에 나올 수 있게 됩니다. 어제 반도체를 움직인 것이 바로 스페이스X의 엔비디아 발표였기 때문에 지켜볼 만합니다. 더 큰 숫자는 내일입니다. 같은 시각에 <b>7월 고용보고서</b>가 나옵니다.",
+  "today_en": "A quiet, mixed session so far: the <b>Dow</b> is down about half a percent, giving back a little of its record run, while the <b>S&P 500</b> is off slightly and the Nasdaq is close to flat. Oil turned back up, by about <b>4%</b>, after Iran said the Strait of Hormuz arrangement under discussion would not be a full reopening — and long-term bond rates rose with it. Chip shares are the exception: your <b>SOXL</b> is up about <b>4%</b>, though <b>Nvidia</b> itself is barely changed and <b>QQQ</b> is a shade lower. <b>Costco</b> is a little higher in its first session since Wednesday's July sales. Tomorrow morning brings the bigger number — the <b>July jobs report</b>, at <b>5:30 in the morning Pacific time</b>.",
+  "today_ko": "오늘 장은 지금까지 조용하고 엇갈린 흐름입니다. <b>다우지수</b>는 약 0.5% 내려 사상 최고 행진의 일부를 되돌리고 있고, <b>S&P 500</b>은 소폭 하락, 나스닥은 거의 제자리입니다. 유가는 다시 <b>약 4%</b> 올랐습니다. 이란이 논의 중인 호르무즈 해협 방안은 완전한 재개방이 아니라고 밝힌 뒤였고, 장기 국채 금리도 함께 올랐습니다. 반도체는 예외로 오르고 있습니다. 보유하신 <b>SOXL</b>은 <b>약 4%</b> 올랐지만, <b>엔비디아</b>는 거의 변동이 없고 <b>QQQ</b>는 조금 내려 있습니다. <b>코스트코</b>는 수요일에 나온 7월 매출 이후 첫 거래일에서 소폭 오름세입니다. 더 큰 숫자는 내일 아침입니다. <b>서부 시각 오전 5시 30분</b>에 <b>7월 고용보고서</b>가 나옵니다.",
   "today_date": "2026-08-06",
   "pancho_am": {
     "date": "2026-08-06",
@@ -807,9 +807,9 @@
     "ko": "다우는 계속 최고치인데 기술주는 밀립니다. 돈이 빠지는 게 아니라 옮겨가는 거예요."
   },
   "pancho_pm": {
-    "date": "2026-08-05",
+    "date": "2026-08-06",
     "pos": "",
-    "en": "Nvidia rose while the other chip names fell. That is an unusual split.",
-    "ko": "엔비디아만 오르고 다른 반도체는 내렸습니다. 흔치 않은 날이에요."
+    "en": "Today it went the other way. The Dow gave a little back, and the chip names did the climbing.",
+    "ko": "오늘은 반대였어요. 다우가 조금 밀리고 반도체가 올랐습니다."
   }
 }
