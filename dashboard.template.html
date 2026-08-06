@@ -1420,7 +1420,18 @@
     }
     var changed = next !== liveId;
     liveId = next;
-    if (notable(q)) changed = true;
+
+    // A genuinely new notable event is the one thing allowed to interrupt him. Without
+    // this it never spoke at all: by the time the first quotes land he has already said
+    // his greeting or clock line, `spoken` is true, and the guard below swallows
+    // everything — the announcements were dead code from the day they shipped.
+    // notable() latches once per day in localStorage, so this fires once, not every pull.
+    if (notable(q)) {
+      speakBest(current, false);
+      return;
+    }
+    // Everything else waits its turn: "some up, some down" is not worth taking the
+    // bubble away from whatever he is already showing.
     if (changed && !spoken) speakBest(current, false);
   };
 

@@ -8,4 +8,12 @@ H=$(TZ=America/New_York date +%H); M=$(TZ=America/New_York date +%M); DOW=$(TZ=A
 [ "$DOW" -ge 6 ] && exit 0
 NOW=$((10#$H * 60 + 10#$M))
 { [ "$NOW" -ge 570 ] && [ "$NOW" -le 965 ]; } || exit 0   # 9:30–16:05 ET
+
+# Don't dispatch into a service GitHub says is down: during the 2026-08-06 Actions
+# outage this fired every 15 minutes and produced a failed run and an email each time,
+# none of which meant anything. Quotes stop updating either way; the page already hides
+# stale prices rather than lying about them.
+. "$(dirname "$0")/gh_healthy.sh"
+gh_actions_healthy || exit 0
+
 gh workflow run "Live quotes" -R sneakytikii/morning-market-recap >/dev/null 2>&1

@@ -48,9 +48,20 @@ GOT="$(curl -fsS --max-time 25 "${URL}?v=$(date +%s)-$$" 2>/dev/null | shasum -a
 [ -z "$GOT" ] && exit 0                      # no network here: not GitHub's problem
 [ "$WANT" = "$GOT" ] && exit 0               # all well, say nothing
 
-say "site is NOT serving the current build — re-triggering the publish workflow"
+say "site is NOT serving the current build"
+
+# Wait out a known outage rather than adding to it. A dispatch during the 2026-08-06
+# Actions outage died at "Set up job" every time and sent an email for each attempt;
+# it published nothing and told nobody anything true. The check fails open, so an
+# unreachable status API still lets us try.
+. "$(dirname "$0")/gh_healthy.sh"
+if ! gh_actions_healthy; then
+  say "  GitHub reports an Actions/Pages outage — holding off, will retry next tick"
+  exit 0
+fi
+
 if gh workflow run "Publish the page" -R sneakytikii/morning-market-recap >/dev/null 2>&1; then
-  say "  dispatched"
+  say "  re-triggered the publish workflow"
 else
-  say "  dispatch failed (GitHub may still be down) — will try again next tick"
+  say "  dispatch failed — will try again next tick"
 fi
