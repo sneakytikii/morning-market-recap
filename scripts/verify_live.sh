@@ -1,0 +1,56 @@
+#!/bin/bash
+# Does the live site actually serve the page we built? If not, re-trigger the publish.
+#
+# Why this exists: on 2026-08-06 the morning run researched, built and pushed Thursday's
+# brief at 04:35, and GitHub's deploy backend then stalled and timed out repeatedly. The
+# push had succeeded, so nothing on our side thought anything was wrong, and the reader
+# was served Wednesday's page for four hours until a human happened to look.
+#
+# The morning run now verifies its own publish, but that only covers the minutes right
+# after it runs. This closes the rest of the day: a small, cheap check that keeps asking
+# the only question that matters — can he see today's page? — and quietly fixes it when
+# GitHub recovers from whatever was wrong.
+#
+# Deliberately does NOT build, research, or edit anything. It re-triggers a deploy of
+# what is already committed, or it does nothing.
+
+set -uo pipefail
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+ROOT="$HOME/MarketRecap"
+LOG="$ROOT/.state/logs/verify-live.log"
+mkdir -p "$(dirname "$LOG")"
+
+say() { printf '%s  %s\n' "$(date '+%Y-%m-%d %H:%M')" "$1" >> "$LOG"; }
+
+cd "$ROOT" 2>/dev/null || { say "cannot cd to $ROOT"; exit 0; }
+[ -f docs/index.html ] || { say "no docs/index.html — nothing to check"; exit 0; }
+
+# Never fight a run in progress: it is mid-publish and owns this question.
+if [ -d "$ROOT/.state/refresh.lock" ]; then
+  P="$(cat "$ROOT/.state/refresh.lock/pid" 2>/dev/null)"
+  if [ -n "$P" ] && kill -0 "$P" 2>/dev/null; then exit 0; fi
+fi
+
+# Only judge what has actually been pushed. A locally-edited or unpushed docs/index.html
+# SHOULD differ from the live site, and triggering a deploy for it would publish work in
+# progress — the opposite of helpful.
+git diff --quiet -- docs/ 2>/dev/null || exit 0
+git diff --cached --quiet -- docs/ 2>/dev/null || exit 0
+LOCAL="$(git rev-parse HEAD 2>/dev/null)"
+REMOTE="$(git ls-remote origin main 2>/dev/null | cut -f1)"
+[ -n "$LOCAL" ] && [ -n "$REMOTE" ] && [ "$LOCAL" = "$REMOTE" ] || exit 0
+
+URL="https://sneakytikii.github.io/morning-market-recap/"
+WANT="$(shasum -a 256 < docs/index.html | cut -d' ' -f1)"
+GOT="$(curl -fsS --max-time 25 "${URL}?v=$(date +%s)-$$" 2>/dev/null | shasum -a 256 | cut -d' ' -f1)"
+
+[ -z "$GOT" ] && exit 0                      # no network here: not GitHub's problem
+[ "$WANT" = "$GOT" ] && exit 0               # all well, say nothing
+
+say "site is NOT serving the current build — re-triggering the publish workflow"
+if gh workflow run "Publish the page" -R sneakytikii/morning-market-recap >/dev/null 2>&1; then
+  say "  dispatched"
+else
+  say "  dispatch failed (GitHub may still be down) — will try again next tick"
+fi
