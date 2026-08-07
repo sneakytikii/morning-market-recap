@@ -801,8 +801,8 @@
   "next_session_ko": "장은 <b>오늘 아침</b> 다시 열립니다 — 위 숫자는 목요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b>, and today&rsquo;s close will appear in the next brief",
   "next_session_ko_html": "장은 <b>오늘 아침</b> 다시 열립니다 &mdash; 표의 숫자는 <b>목요일 종가</b>이며, 오늘 종가는 다음 브리핑에 실립니다",
-  "today_en": "Futures point a little higher this morning — <b>Nasdaq-100 futures up about 0.5%</b>, S&amp;P 500 futures up about 0.2%, Dow futures close to flat — and chip shares are firmer before the bell after clawing back a bad start yesterday. Overnight Iran struck targets in the <b>Strait of Hormuz</b>, and oil moved again: it pushed above <b>$78</b> a barrel before easing back to about <b>$77</b>. Everything else waits on one number — the <b>July jobs report at 5:30 in the morning Pacific time</b>, an hour before trading opens, so it will already be out when the bell rings; forecasters look for roughly <b>80,000 to 100,000</b> new jobs and the unemployment rate holding at <b>4.2%</b>. Costco pays its quarterly dividend of <b>$1.47</b> a share today, and nothing else scheduled touches your five. The thing to watch is what long-term bond rates do when the number lands — rising rates are what took 464 points off the Dow yesterday.",
-  "today_ko": "오늘 아침 선물은 조금 올라 있습니다. <b>나스닥100 선물이 약 0.5%</b>, <b>S&amp;P 500 선물이 약 0.2%</b> 상승했고 다우 선물은 거의 제자리이며, 반도체 주식은 어제의 나쁜 출발을 되돌린 뒤 개장 전에도 견고합니다. 간밤에 이란이 <b>호르무즈 해협</b>의 목표물을 공격했고, 유가가 다시 움직였습니다. 배럴당 <b>78달러</b> 위까지 올랐다가 <b>77달러</b> 근처로 내려왔습니다. 그 밖의 모든 것은 숫자 하나를 기다립니다. <b>서부 시각 오전 5시 30분, 7월 고용 보고서</b>가 장이 열리기 한 시간 전에 나오므로, 장이 열릴 때는 이미 결과가 나와 있습니다. 예상은 신규 일자리 <b>8만~10만 개</b>, 실업률 <b>4.2%</b> 유지입니다. 코스트코는 오늘 분기 배당금 주당 <b>1.47달러</b>를 지급하고, 그 밖에 보유 다섯 종목과 관련된 일정은 없습니다. 지켜볼 것은 이 숫자가 나온 뒤 장기 국채 금리가 어떻게 움직이는지입니다. 어제 다우지수에서 464포인트를 가져간 것이 바로 오르는 금리였습니다.",
+  "today_en": "The <b>July jobs report</b> landed before the open and it was weak: instead of adding the 80,000 or so jobs forecasters expected, the economy <b>lost 23,000</b> last month, and May and June were revised down too — though the unemployment rate ticked down to <b>4.1%</b>. Shares rose anyway, because investors read soft hiring as making an interest-rate cut more likely, and the long-term bond rates that took 464 points off the Dow yesterday eased back toward <b>4.6%</b>. Of your five, the chip fund <b>SOXL is up about 5%</b>, <b>Nvidia</b> and <b>QQQ</b> are each up about <b>1%</b>, and <b>Costco</b> is close to flat. The <b>S&amp;P 500</b> is back up around the level where it set its record on Tuesday. Next on the calendar is the <b>inflation report on Wednesday, August 12</b>.",
+  "today_ko": "<b>7월 고용 보고서</b>가 개장 전에 나왔는데 내용이 약했습니다. 전문가들은 일자리가 8만 개쯤 늘 것으로 봤지만, 지난달 미국 경제는 오히려 <b>2만 3천 개를 잃었고</b> 5월과 6월 수치도 하향 조정됐습니다. 다만 실업률은 <b>4.1%</b>로 조금 내려갔습니다. 그런데도 주가는 올랐습니다. 고용이 약하면 금리 인하 가능성이 커진다고 투자자들이 받아들였고, 어제 다우지수에서 464포인트를 가져갔던 장기 국채 금리가 <b>4.6%</b> 근처로 다시 내려왔습니다. 보유하신 다섯 가운데 반도체 펀드 <b>SOXL이 약 5%</b>, <b>엔비디아</b>와 <b>QQQ</b>가 각각 약 <b>1%</b> 올라 있고, <b>코스트코</b>는 거의 제자리입니다. <b>S&amp;P 500</b>은 화요일에 사상 최고를 세웠던 수준까지 다시 올라왔습니다. 다음 일정은 <b>8월 12일 수요일 물가 보고서</b>입니다.",
   "today_date": "2026-08-07",
   "pancho_am": {
     "date": "2026-08-07",
@@ -811,9 +811,9 @@
     "ko": "간밤에 이란이 호르무즈에서 공격했어요. 어제 시장을 움직인 게 유가였는데, 오늘도 출렁입니다."
   },
   "pancho_pm": {
-    "date": "2026-08-06",
+    "date": "2026-08-07",
     "pos": "",
-    "en": "Today it went the other way. The Dow gave a little back, and the chip names did the climbing.",
-    "ko": "오늘은 반대였어요. 다우가 조금 밀리고 반도체가 올랐습니다."
+    "en": "Bad jobs news this morning, and the market went up anyway. That happens when people expect lower rates.",
+    "ko": "고용 지표는 나빴는데 시장은 올랐어요. 다들 금리가 내려갈 거라고 봐서요."
   }
 }
