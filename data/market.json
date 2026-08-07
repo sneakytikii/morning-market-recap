@@ -1,7 +1,7 @@
 {
-  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. WIRED AND LIVE: the dateline, all six index-strip cells, the five-row board, and the SOXL note and its heading all render from this file — change a value here and it changes on the page. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-07: this run started at 03:12 Pacific, about three and a quarter hours BEFORE Friday's 6:30 Pacific open, so the last completed session is Thursday August 6 and as_of is 2026-08-06. Every close here was read from at least two independent sources (StockAnalysis, Investing.com, FinancialContent) and each day's percentage recomputed from the previous close. Index closes were confirmed against a Yahoo Finance live blog and STL.News. SOXL had a violent session (open 125.23, low 120.75, high 140.00, close 132.33) and was checked against three sources plus the shape of SOXX's own day at three times — see the note. Bond yields come from the Investing.com daily series and agree with the Yahoo live blog to the second decimal for August 6 (10-year 4.67%, 30-year 5.21%); note that Wednesday's 10-year reads 4.62% in this series against the 4.63% YCharts figure used in yesterday's brief. VIX close confirmed twice (Investing.com and YCharts, both 15.15). The board's day-column header is derived from as_of; day_en strings still carry the day name ('on Thursday') so the cells stay self-describing.",
+  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. WIRED AND LIVE: the dateline, all six index-strip cells, the five-row board, and the SOXL note and its heading all render from this file — change a value here and it changes on the page. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-07 (second pass, 04:47 Pacific): this is a re-run about an hour and three quarters BEFORE Friday's 6:30 Pacific open. The July jobs report (5:30 Pacific) had NOT yet been released when this was written. The last completed session is still Thursday August 6, so as_of stays 2026-08-06 and no board number changed. All five closes were re-verified on this pass: NVDA 218.99 (-0.10%), QQQ 714.65 (-0.37%), COST 949.15 (+0.76%) from StockAnalysis; SPX 7,709.96 (-0.18%) cross-checked against TradingEconomics and against SPY's own -0.16% close of 768.56; SOXL 132.33 (+0.20%) confirmed a third time against StockAnalysis daily history, FinancialContent and a Yahoo-sourced close, with the same open 125.23 / low 120.75 / high 140.00. What DID change since the earlier run: Iran struck targets in the Strait of Hormuz overnight (explosions reported near Qeshm Island), oil pushed above $78 a barrel before easing back near $77, and futures firmed a little (Nasdaq-100 +0.5%, S&P 500 +0.2%, Dow ~flat). today_en/ko, pancho_am, the third lede paragraph and the sources note were rewritten for that. Per-position news_* lists were NOT rotated: no new session has completed, and adding a 'today' item would describe a session that has not happened. One open uncertainty: StockAnalysis now shows QQQ's 52-week low as 555.60 against base.low_1y 551.68, and COST's 52-week high as 1,096.50 against base.high_1y 1,097.05 — both are the rolling window moving, not new extremes, so base was left alone per the standing rule. The board's day-column header is derived from as_of; day_en strings still carry the day name ('on Thursday') so the cells stay self-describing.",
   "as_of": "2026-08-06",
-  "generated": "2026-08-07T03:42:09-07:00",
+  "generated": "2026-08-07T04:52:00-07:00",
   "mode": "weekday",
   "dateline_en": "Thursday, August&nbsp;6, 2026 &middot; After the Close",
   "dateline_ko": "2026년 8월 6일 목요일 · 장 마감 후",
@@ -106,7 +106,7 @@
           "tx": "<b>A first read on hiring came in weak.</b> Private employers added <b>44,000</b> jobs in July, against about 65,000 expected and 95,000 the month before. This is the payroll firm ADP's own count, not the government's — the official one lands this morning."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>this morning, at 5:30 Pacific time</b> — the July jobs report, an hour before trading opens. Forecasters expect somewhere between 80,000 and 100,000 new jobs and the unemployment rate holding at 4.2%. It matters more than usual because the readings this week disagreed: private employers reported only 44,000 new jobs and service companies said they were cutting more staff than they were adding, but weekly claims stayed low and announced job cuts were the fewest in two years. After that, the <b>inflation report on August 12</b>. Weak hiring alongside rising prices is the combination this market handles worst, and the same service survey said costs were rising again.",
+      "verdict_en": "<b>What I'd watch:</b> the <b>July jobs report</b>, out at 5:30 in the morning Pacific time — an hour before trading opens, so the number is already public by the time you see the first price of the day. Forecasters expect somewhere between 80,000 and 100,000 new jobs and the unemployment rate holding at 4.2%. It matters more than usual because the readings this week disagreed: private employers reported only 44,000 new jobs and service companies said they were cutting more staff than they were adding, but weekly claims stayed low and announced job cuts were the fewest in two years. After that, the <b>inflation report on August 12</b>. Weak hiring alongside rising prices is the combination this market handles worst, and the same service survey said costs were rising again.",
       "news_ko": [
         {
           "dt": "8월 6일",
@@ -125,7 +125,7 @@
           "tx": "<b>고용에 대한 첫 신호가 약하게 나왔습니다.</b> 7월 민간 일자리가 <b>4만 4천 개</b> 늘었습니다. 예상은 약 6만 5천 개였고, 전달은 9만 5천 개였습니다. 이것은 급여 대행업체 ADP가 자체 집계한 수치이고, 정부의 공식 통계는 오늘 아침에 나옵니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 아침 서부 시각 5시 30분</b>에 나오는 7월 고용 보고서입니다. 장이 열리기 한 시간 전입니다. 예상은 신규 일자리 8만~10만 개, 실업률은 4.2% 유지입니다. 이번 주 지표들이 서로 엇갈렸기 때문에 평소보다 더 중요합니다. 민간 일자리는 4만 4천 개에 그쳤고 서비스업 회사들은 사람을 늘리기보다 줄이고 있다고 답했지만, 주간 실업수당 신청은 낮게 유지됐고 감원 발표는 2년 만에 가장 적었습니다. 그다음은 <b>8월 12일 물가 보고서</b>입니다. 고용은 약한데 물가는 오르는 조합을 이 시장이 가장 힘들어하는데, 같은 서비스업 조사에서 비용은 다시 오르고 있다고 했습니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>7월 고용 보고서</b>입니다. 서부 시각 오전 5시 30분, 장이 열리기 한 시간 전에 나오므로 오늘 첫 시세를 보실 때는 이미 결과가 공개돼 있습니다. 예상은 신규 일자리 8만~10만 개, 실업률은 4.2% 유지입니다. 이번 주 지표들이 서로 엇갈렸기 때문에 평소보다 더 중요합니다. 민간 일자리는 4만 4천 개에 그쳤고 서비스업 회사들은 사람을 늘리기보다 줄이고 있다고 답했지만, 주간 실업수당 신청은 낮게 유지됐고 감원 발표는 2년 만에 가장 적었습니다. 그다음은 <b>8월 12일 물가 보고서</b>입니다. 고용은 약한데 물가는 오르는 조합을 이 시장이 가장 힘들어하는데, 같은 서비스업 조사에서 비용은 다시 오르고 있다고 했습니다.",
       "base": {
         "year_start": 6846.18,
         "high_1y": 7736.52
@@ -211,7 +211,7 @@
           "tx": "<b>Nvidia, the fund's largest holding, went the other way and rose 3.43%</b> after SpaceX said it will build its artificial-intelligence systems using Nvidia chips only. One name held up while the rest of the sector slipped."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> the <b>jobs report this morning at 5:30 Pacific time</b>, and then the <b>inflation report on August 12</b>. Both move long-term bond rates, and bond rates move this fund harder than they move anything else you hold. Thursday was a small demonstration: oil rose, the 10-year rate went from 4.62% to 4.67%, and this fund gave back ground even though chip shares finished the day higher. After that, <b>August 26</b>, when Nvidia — the largest holding here — reports.",
+      "verdict_en": "<b>What I'd watch:</b> the <b>jobs report</b>, out at 5:30 this morning Pacific time — an hour before trading opens — and then the <b>inflation report on August 12</b>. Both move long-term bond rates, and bond rates move this fund harder than they move anything else you hold. Thursday was a small demonstration: oil rose, the 10-year rate went from 4.62% to 4.67%, and this fund gave back ground even though chip shares finished the day higher. After that, <b>August 26</b>, when Nvidia — the largest holding here — reports.",
       "news_ko": [
         {
           "dt": "8월 6일",
@@ -230,7 +230,7 @@
           "tx": "<b>이 펀드에서 비중이 가장 큰 엔비디아는 반대로 3.43% 올랐습니다.</b> 스페이스X가 자사 인공지능 시스템을 엔비디아 반도체만으로 만들겠다고 밝힌 뒤였습니다. 업종 전체가 밀리는 가운데 이 종목 하나만 버틴 셈입니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 아침 서부 시각 5시 30분에 나오는 고용 보고서</b>, 그리고 <b>8월 12일 물가 보고서</b>입니다. 둘 다 장기 국채 금리를 움직이고, 국채 금리는 보유 종목 중에서도 이 펀드를 가장 세게 움직입니다. 목요일이 그 작은 예였습니다. 유가가 오르자 10년물 금리가 4.62%에서 4.67%로 올랐고, 반도체 주식이 상승 마감했는데도 이 펀드는 밀렸습니다. 그다음은 <b>8월 26일</b>, 여기서 비중이 가장 큰 엔비디아의 실적 발표입니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>고용 보고서</b>입니다. 서부 시각 오늘 아침 5시 30분, 장이 열리기 한 시간 전에 나옵니다. 그다음은 <b>8월 12일 물가 보고서</b>입니다. 둘 다 장기 국채 금리를 움직이고, 국채 금리는 보유 종목 중에서도 이 펀드를 가장 세게 움직입니다. 목요일이 그 작은 예였습니다. 유가가 오르자 10년물 금리가 4.62%에서 4.67%로 올랐고, 반도체 주식이 상승 마감했는데도 이 펀드는 밀렸습니다. 그다음은 <b>8월 26일</b>, 여기서 비중이 가장 큰 엔비디아의 실적 발표입니다.",
       "base": {
         "high_1y": 748.65,
         "low_1y": 551.68
@@ -730,8 +730,8 @@
         ]
       }
     ],
-    "sources_en": "<b>Where these numbers came from.</b> This page was written on Friday morning, more than three hours before Friday's opening bell, so the last completed session is Thursday August 6 and every figure on the board is that day's close. Each of the five closes was read from at least two independent sources — StockAnalysis and Investing.com, with FinancialContent as a third for SOXL — and each day's percentage was recalculated from the previous close to make sure it matched. The S&P 500, Dow and Nasdaq closes were confirmed a second time against a Yahoo Finance live blog and STL.News. SOXL was given the extra check it always gets, and needed it: three sources, the fund's own high and low, and a comparison against a chip fund holding the same kind of companies, all described in the note above. Bond rates come from the Investing.com daily series and match the Yahoo live blog to the second decimal for Thursday (10-year 4.67%, 30-year 5.21%). One source difference worth naming: Wednesday's 10-year reads 4.62% in that series against the 4.63% figure used in yesterday's brief — a rounding difference between data providers, not a change in the number. The VIX close of 15.15 was confirmed twice, by Investing.com and YCharts. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
-    "sources_ko": "<b>이 숫자들의 출처.</b> 이 페이지는 금요일 아침, 금요일 개장 세 시간도 더 전에 작성됐습니다. 그래서 마지막으로 끝난 거래일은 8월 6일 목요일이고, 표에 있는 모든 수치는 그날 종가입니다. 다섯 종목의 종가는 각각 서로 다른 두 곳 이상(StockAnalysis와 Investing.com, SOXL은 FinancialContent까지 세 곳)에서 읽었고, 하루 변동률은 전날 종가에서 직접 다시 계산해 맞는지 확인했습니다. S&P 500·다우·나스닥 종가는 야후 파이낸스 실시간 기사와 STL.News로 한 번 더 확인했습니다. SOXL은 늘 하던 추가 확인을 거쳤고, 이번에는 그 확인이 꼭 필요했습니다. 세 곳의 자료, 그날의 고가와 저가, 그리고 같은 종류의 회사들을 담은 반도체 펀드와의 비교이며 자세한 내용은 위 설명에 적었습니다. 국채 금리는 Investing.com의 일별 자료를 썼고, 목요일 기준으로 야후 실시간 기사와 소수점 둘째 자리까지 일치합니다(10년물 4.67%, 30년물 5.21%). 자료 간 차이를 하나 밝혀 둡니다. 수요일 10년물이 이 자료에서는 4.62%인데, 어제 브리핑에 쓴 값은 4.63%였습니다. 숫자가 바뀐 것이 아니라 자료 제공처 간 반올림 차이입니다. 공포 지수 종가 15.15는 Investing.com과 YCharts 두 곳에서 확인했습니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
+    "sources_en": "<b>Where these numbers came from.</b> This page was written on Friday morning, well over an hour and a half before Friday's opening bell and before the July jobs report was published, so the last completed session is Thursday August 6 and every figure on the board is that day's close. All five closes were then checked a second time later that morning, against the same sources, and all five matched to the cent. Each of the five closes was read from at least two independent sources — StockAnalysis and Investing.com, with FinancialContent as a third for SOXL — and each day's percentage was recalculated from the previous close to make sure it matched. The S&P 500, Dow and Nasdaq closes were confirmed a second time against a Yahoo Finance live blog and STL.News. SOXL was given the extra check it always gets, and needed it: three sources, the fund's own high and low, and a comparison against a chip fund holding the same kind of companies, all described in the note above. Bond rates come from the Investing.com daily series and match the Yahoo live blog to the second decimal for Thursday (10-year 4.67%, 30-year 5.21%). One source difference worth naming: Wednesday's 10-year reads 4.62% in that series against the 4.63% figure used in yesterday's brief — a rounding difference between data providers, not a change in the number. The VIX close of 15.15 was confirmed twice, by Investing.com and YCharts. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
+    "sources_ko": "<b>이 숫자들의 출처.</b> 이 페이지는 금요일 아침, 금요일 개장 한 시간 반도 더 전에, 그리고 7월 고용 보고서가 나오기 전에 작성됐습니다. 그래서 마지막으로 끝난 거래일은 8월 6일 목요일이고, 표에 있는 모든 수치는 그날 종가입니다. 다섯 종목의 종가는 같은 날 아침 늦게 같은 자료로 한 번 더 확인했고, 다섯 개 모두 센트 단위까지 일치했습니다. 다섯 종목의 종가는 각각 서로 다른 두 곳 이상(StockAnalysis와 Investing.com, SOXL은 FinancialContent까지 세 곳)에서 읽었고, 하루 변동률은 전날 종가에서 직접 다시 계산해 맞는지 확인했습니다. S&P 500·다우·나스닥 종가는 야후 파이낸스 실시간 기사와 STL.News로 한 번 더 확인했습니다. SOXL은 늘 하던 추가 확인을 거쳤고, 이번에는 그 확인이 꼭 필요했습니다. 세 곳의 자료, 그날의 고가와 저가, 그리고 같은 종류의 회사들을 담은 반도체 펀드와의 비교이며 자세한 내용은 위 설명에 적었습니다. 국채 금리는 Investing.com의 일별 자료를 썼고, 목요일 기준으로 야후 실시간 기사와 소수점 둘째 자리까지 일치합니다(10년물 4.67%, 30년물 5.21%). 자료 간 차이를 하나 밝혀 둡니다. 수요일 10년물이 이 자료에서는 4.62%인데, 어제 브리핑에 쓴 값은 4.63%였습니다. 숫자가 바뀐 것이 아니라 자료 제공처 간 반올림 차이입니다. 공포 지수 종가 15.15는 Investing.com과 YCharts 두 곳에서 확인했습니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
   },
   "lede": [
     {
@@ -746,8 +746,8 @@
     },
     {
       "cls": "",
-      "en": "One thing to carry into today. The <b>July jobs report arrives at 5:30 in the morning Pacific time</b>, an hour before trading opens, and it is the biggest scheduled number of the month so far. Forecasters expect somewhere between <b>80,000 and 100,000</b> new jobs and the unemployment rate holding at <b>4.2%</b>. This week's readings on hiring disagreed with each other, so this one settles the argument. Bond rates move on it — and it was bond rates that took 464 points off the Dow yesterday.",
-      "ko": "오늘로 가져갈 것이 하나 있습니다. <b>7월 고용 보고서가 서부 시각 오전 5시 30분</b>, 장이 열리기 한 시간 전에 나옵니다. 이번 달 예정된 지표 중 가장 큰 것입니다. 예상은 신규 일자리 <b>8만~10만 개</b>, 실업률은 <b>4.2%</b> 유지입니다. 이번 주 고용 지표들이 서로 엇갈렸기 때문에, 이 숫자가 그 논쟁을 정리하게 됩니다. 국채 금리가 이 숫자에 반응하는데, 어제 다우지수에서 464포인트를 가져간 것이 바로 국채 금리였습니다."
+      "en": "Two things to carry into today. The <b>July jobs report arrives at 5:30 in the morning Pacific time</b>, an hour before trading opens, and it is the biggest scheduled number of the month so far. Forecasters expect somewhere between <b>80,000 and 100,000</b> new jobs and the unemployment rate holding at <b>4.2%</b>. This week's readings on hiring disagreed with each other, so this one settles the argument. Bond rates move on it — and it was bond rates that took 464 points off the Dow yesterday. The second thing is that the <b>Strait of Hormuz</b> has not gone quiet: Iran struck targets there overnight, and oil pushed above <b>$78</b> a barrel before easing back to about $77.",
+      "ko": "오늘로 가져갈 것이 두 가지 있습니다. <b>7월 고용 보고서가 서부 시각 오전 5시 30분</b>, 장이 열리기 한 시간 전에 나옵니다. 이번 달 예정된 지표 중 가장 큰 것입니다. 예상은 신규 일자리 <b>8만~10만 개</b>, 실업률은 <b>4.2%</b> 유지입니다. 이번 주 고용 지표들이 서로 엇갈렸기 때문에, 이 숫자가 그 논쟁을 정리하게 됩니다. 국채 금리가 이 숫자에 반응하는데, 어제 다우지수에서 464포인트를 가져간 것이 바로 국채 금리였습니다. 두 번째는 <b>호르무즈 해협</b>이 아직 조용해지지 않았다는 것입니다. 간밤에 이란이 그곳의 목표물을 공격했고, 유가는 배럴당 <b>78달러</b> 위까지 올랐다가 77달러 근처로 내려왔습니다."
     }
   ],
   "events": [
@@ -757,8 +757,8 @@
       "when_ko": "오늘, 8월 7일",
       "what_en": "Jobs report",
       "what_ko": "고용 보고서",
-      "note_en": "5:30am Pacific — affects all five",
-      "note_ko": "서부 시각 오전 5시 30분 — 다섯 종목 모두"
+      "note_en": "5:30am Pacific, before the open — all five",
+      "note_ko": "서부 시각 오전 5시 30분, 개장 전 — 다섯 종목 모두"
     },
     {
       "hot": true,
@@ -801,14 +801,14 @@
   "next_session_ko": "장은 <b>오늘 아침</b> 다시 열립니다 — 위 숫자는 목요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b>, and today&rsquo;s close will appear in the next brief",
   "next_session_ko_html": "장은 <b>오늘 아침</b> 다시 열립니다 &mdash; 표의 숫자는 <b>목요일 종가</b>이며, 오늘 종가는 다음 브리핑에 실립니다",
-  "today_en": "Futures point modestly higher this morning — <b>Nasdaq futures up about 0.4%</b>, Dow futures close to flat — and chip shares are firmer before the bell after clawing back a bad start yesterday. Everything waits on one number: the <b>July jobs report at 5:30 in the morning Pacific time</b>, an hour before trading opens. Forecasters look for roughly <b>80,000 to 100,000</b> new jobs and the unemployment rate holding at <b>4.2%</b>. Costco pays its quarterly dividend of <b>$1.47</b> a share today; nothing else scheduled touches your five. The thing to watch is what long-term bond rates do when the number lands — rising rates are what pushed shares down in the last session.",
-  "today_ko": "오늘 아침 선물은 소폭 상승 흐름입니다. <b>나스닥 선물이 약 0.4%</b> 올라 있고 다우 선물은 거의 제자리이며, 반도체 주식은 어제의 나쁜 출발을 되돌린 뒤 개장 전에도 견고합니다. 모든 것이 숫자 하나를 기다립니다. <b>서부 시각 오전 5시 30분, 7월 고용 보고서</b>가 장이 열리기 한 시간 전에 나옵니다. 예상은 신규 일자리 <b>8만~10만 개</b>, 실업률 <b>4.2%</b> 유지입니다. 코스트코는 오늘 분기 배당금 주당 <b>1.47달러</b>를 지급하고, 그 밖에 보유 다섯 종목과 관련된 일정은 없습니다. 지켜볼 것은 이 숫자가 나온 뒤 장기 국채 금리가 어떻게 움직이는지입니다. 지난 거래일에 주가를 끌어내린 것이 바로 오르는 금리였습니다.",
+  "today_en": "Futures point a little higher this morning — <b>Nasdaq-100 futures up about 0.5%</b>, S&amp;P 500 futures up about 0.2%, Dow futures close to flat — and chip shares are firmer before the bell after clawing back a bad start yesterday. Overnight Iran struck targets in the <b>Strait of Hormuz</b>, and oil moved again: it pushed above <b>$78</b> a barrel before easing back to about <b>$77</b>. Everything else waits on one number — the <b>July jobs report at 5:30 in the morning Pacific time</b>, an hour before trading opens, so it will already be out when the bell rings; forecasters look for roughly <b>80,000 to 100,000</b> new jobs and the unemployment rate holding at <b>4.2%</b>. Costco pays its quarterly dividend of <b>$1.47</b> a share today, and nothing else scheduled touches your five. The thing to watch is what long-term bond rates do when the number lands — rising rates are what took 464 points off the Dow yesterday.",
+  "today_ko": "오늘 아침 선물은 조금 올라 있습니다. <b>나스닥100 선물이 약 0.5%</b>, <b>S&amp;P 500 선물이 약 0.2%</b> 상승했고 다우 선물은 거의 제자리이며, 반도체 주식은 어제의 나쁜 출발을 되돌린 뒤 개장 전에도 견고합니다. 간밤에 이란이 <b>호르무즈 해협</b>의 목표물을 공격했고, 유가가 다시 움직였습니다. 배럴당 <b>78달러</b> 위까지 올랐다가 <b>77달러</b> 근처로 내려왔습니다. 그 밖의 모든 것은 숫자 하나를 기다립니다. <b>서부 시각 오전 5시 30분, 7월 고용 보고서</b>가 장이 열리기 한 시간 전에 나오므로, 장이 열릴 때는 이미 결과가 나와 있습니다. 예상은 신규 일자리 <b>8만~10만 개</b>, 실업률 <b>4.2%</b> 유지입니다. 코스트코는 오늘 분기 배당금 주당 <b>1.47달러</b>를 지급하고, 그 밖에 보유 다섯 종목과 관련된 일정은 없습니다. 지켜볼 것은 이 숫자가 나온 뒤 장기 국채 금리가 어떻게 움직이는지입니다. 어제 다우지수에서 464포인트를 가져간 것이 바로 오르는 금리였습니다.",
   "today_date": "2026-08-07",
   "pancho_am": {
     "date": "2026-08-07",
     "pos": "",
-    "en": "The big jobs number comes out an hour before trading opens. Most of today will be a reaction to it.",
-    "ko": "고용 지표가 개장 한 시간 전에 나옵니다. 오늘 장은 대부분 그 반응일 거예요."
+    "en": "Iran hit targets in the Hormuz strait overnight. Oil is jumpy again, and oil is what moved things yesterday.",
+    "ko": "간밤에 이란이 호르무즈에서 공격했어요. 어제 시장을 움직인 게 유가였는데, 오늘도 출렁입니다."
   },
   "pancho_pm": {
     "date": "2026-08-06",
