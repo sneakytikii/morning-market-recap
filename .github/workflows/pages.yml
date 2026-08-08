@@ -33,6 +33,11 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # A hung job must not hold the "pages" concurrency group hostage — on 2026-08-06 a
+    # run wedged before its job even started held the queue for two days. This bounds
+    # the running-job case; the wedged-before-start case is cleared by verify_live.sh,
+    # which cancels any publish run older than 30 minutes.
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -50,9 +55,12 @@ jobs:
         id: deploy
         uses: actions/deploy-pages@v4
         with:
-          # 25 minutes. The managed workflow allowed 10 and aborted a backend that was
-          # merely slow; waiting costs nothing, a cancelled deploy costs the day's page.
-          timeout: 1500000
+          # 10 minutes — the platform maximum. This workflow originally asked for 25
+          # minutes (1500000), and the runner logs revealed GitHub silently clamps it:
+          # "timeout value is greater than the allowed maximum - timeout set to the
+          # maximum of 600000 milliseconds". So 10 minutes is the real ceiling; state
+          # it honestly and lean on error_count retries for a slow backend.
+          timeout: 600000
           error_count: 25
 
       - name: Confirm the reader can actually see it

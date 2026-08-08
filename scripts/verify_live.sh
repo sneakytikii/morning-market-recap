@@ -60,8 +60,35 @@ if ! gh_actions_healthy; then
   exit 0
 fi
 
-if gh workflow run "Publish the page" -R sneakytikii/morning-market-recap >/dev/null 2>&1; then
-  say "  re-triggered the publish workflow"
-else
-  say "  dispatch failed — will try again next tick"
+# One run at a time. Dispatching while a run is already queued or in flight does not
+# speed anything up: under the workflow's "pages" concurrency group the new dispatch
+# replaces the previously queued run, so a 20-minute cadence against anything that
+# waits longer than 20 minutes means no run ever survives to completion. That exact
+# loop ate 2026-08-06 through 08-08 — one run wedged in "waiting" held the group for
+# two days while every fresh dispatch cancelled the previous pending one. So: leave a
+# young run alone, cancel a genuinely stuck one, and only dispatch into a clear queue.
+STUCK_AFTER=1800   # seconds; a healthy publish completes in under a minute
+NOW="$(date +%s)"
+OPEN="$(gh api "repos/sneakytikii/morning-market-recap/actions/workflows/pages.yml/runs?per_page=20" \
+        --jq '.workflow_runs[] | select(.status != "completed") | "\(.id) \(.created_at)"' 2>/dev/null)"
+DISPATCH=yes
+while read -r RID CREATED _; do
+  [ -n "${RID:-}" ] || continue
+  T="$(date -j -u -f "%Y-%m-%dT%H:%M:%SZ" "${CREATED:-}" +%s 2>/dev/null || echo 0)"
+  AGE=$(( NOW - T ))
+  if [ "$T" -gt 0 ] && [ "$AGE" -lt "$STUCK_AFTER" ]; then
+    say "  a publish run ($RID) is already ${AGE}s in — leaving it to finish"
+    DISPATCH=no
+  else
+    say "  cancelling publish run $RID, stuck for ${AGE}s"
+    gh run cancel "$RID" -R sneakytikii/morning-market-recap >/dev/null 2>&1
+  fi
+done <<< "$OPEN"
+
+if [ "$DISPATCH" = yes ]; then
+  if gh workflow run "Publish the page" -R sneakytikii/morning-market-recap >/dev/null 2>&1; then
+    say "  re-triggered the publish workflow"
+  else
+    say "  dispatch failed — will try again next tick"
+  fi
 fi
