@@ -1,12 +1,34 @@
 {
   "_comment": "The tracker's record. Rules in data/trump-corpus.md are binding: verbatim quotes only inside quote marks, every entry dated and sourced, market reaction measured never asserted as cause, strictly neutral voice. Written by scripts/refresh.sh; rendered by scripts/build.py.",
-  "checked": "2026-08-07",
-  "checked_en": "Checked August 7",
-  "checked_ko": "8월 7일 확인",
+  "checked": "2026-08-08",
+  "checked_en": "Checked August 8 — the last 7 days swept",
+  "checked_ko": "8월 8일 확인 — 최근 7일 전수 확인",
   "latest_touching": "2026-08-06",
-  "reading_en": "12 entries on record. Newest: Aug 6 — he signed a 15% tariff on polysilicon, the purified silicon that both computer chips and solar panels are made from, to start December 4. Also new from Aug 6: a White House list of companies that cut prices, with Costco on it. Of these, 6 reach what you hold — SPX, QQQ, SOXL and COST. Most recent: Aug 6.",
-  "reading_ko": "기록 12건. 가장 최근은 8월 6일, 컴퓨터 반도체와 태양광 패널의 재료인 정제 실리콘(폴리실리콘)에 15% 관세를 서명했고 12월 4일부터 시행됩니다. 같은 8월 6일에 새로 추가된 것이 하나 더 있습니다. 가격을 내린 기업 명단을 백악관이 공개했는데 코스트코가 그 안에 있습니다. 이 가운데 6건이 보유 종목(SPX, QQQ, SOXL, COST)과 관련이 있고, 가장 최근은 8월 6일입니다.",
+  "reading_en": "12 entries on record, 1 added this weekend. Newest: Aug 7 — at a mining roundtable he announced more than $2 billion of government money going into named mining and materials companies. It reaches none of your five, which is normal and is the point of keeping this record. The most recent entry that does reach them is Aug 6, the 15% tariff on polysilicon — the purified silicon both computer chips and solar panels are made from — starting December 4. Of the 12 on record, 5 reach what you hold: SPX, QQQ, SOXL and COST.",
+  "reading_ko": "기록 12건이고 이번 주말에 1건을 추가했습니다. 가장 최근은 8월 7일입니다. 광업 간담회에서 이름이 명시된 광물·소재 기업들에 20억 달러가 넘는 정부 자금을 투입한다고 발표했습니다. 보유하신 다섯 종목에는 닿지 않는데, 그것이 보통이고 이 기록을 남기는 이유이기도 합니다. 보유 종목에 닿는 가장 최근 항목은 8월 6일, 컴퓨터 반도체와 태양광 패널의 재료인 정제 실리콘(폴리실리콘)에 매긴 15% 관세로 12월 4일부터 시행됩니다. 기록 12건 가운데 5건이 보유 종목(SPX, QQQ, SOXL, COST)과 관련이 있습니다.",
   "entries": [
+    {
+      "date": "2026-08-07",
+      "date_en": "Aug 7",
+      "date_ko": "8월 7일",
+      "verb": "did",
+      "headline": "Announced more than $2 billion of government money for named mining and materials companies",
+      "company_en": "Mining and critical minerals",
+      "company_ko": "광업·핵심 광물",
+      "ticker": "",
+      "verbatim": true,
+      "quote": "Critical minerals are the raw materials of American strength and power everything from advanced weaponry to automobiles, and we want these essential products to be mined, refined, and made right here in the USA.",
+      "quote_ko": "핵심 광물은 미국의 힘을 이루는 원자재이며, 첨단 무기부터 자동차까지 모든 것을 움직입니다. 우리는 이 필수 제품들이 바로 여기 미국에서 채굴되고 정제되고 만들어지기를 원합니다.",
+      "text_en": "Said at a roundtable with mining executives at the State Department on Friday afternoon, alongside the Secretaries of State, the Interior and Commerce and about 200 industry people. A White House fact sheet issued the same day lists the money: $1.4 billion from the Department of War to Sila Nanotechnologies for a battery-materials plant, $400 million to Sunrise Energy Metals for scandium, $150 million to Niron Magnetics of Minnesota for magnets made without rare earths, $85 million to Standard Bauxite, and Export-Import Bank commitments of $25 million each to Westwater Resources for an Alabama graphite deposit and to Global Advanced Materials for tantalum and niobium, $8 million to 5E Advanced Materials for boron, and $4.8 million to Harena Rare Earths. A further $180 million goes to mining schools. Executives from Rio Tinto, MP Materials, Century Aluminum, Resolution Copper and American Ocean Minerals attended. The magnets item connects to the July 16 entry below, where he told a defence audience \"I'll tell you how to make money: Do magnets.\"",
+      "text_ko": "금요일 오후 국무부에서 열린 광업계 간담회에서 한 말입니다. 국무·내무·상무 장관과 업계 관계자 약 200명이 함께했습니다. 같은 날 나온 백악관 설명자료에 금액이 정리돼 있습니다. 국방부가 배터리 소재 공장을 짓는 실라 나노테크놀로지스에 14억 달러, 스칸듐을 다루는 선라이즈 에너지 메탈스에 4억 달러, 희토류 없이 자석을 만드는 미네소타의 나이런 마그네틱스에 1억 5천만 달러, 스탠더드 보크사이트에 8,500만 달러를 투입합니다. 수출입은행은 앨라배마 흑연 광산을 개발하는 웨스트워터 리소시스와 탄탈럼·니오븀을 다루는 글로벌 어드밴스드 머티리얼스에 각각 2,500만 달러, 붕소를 다루는 5E 어드밴스드 머티리얼스에 800만 달러, 하레나 레어 어스에 480만 달러를 약정했습니다. 광업 관련 학교에는 별도로 1억 8천만 달러가 갑니다. 리오틴토, MP 머티리얼스, 센추리 알루미늄, 리졸루션 코퍼, 아메리칸 오션 미네랄스의 경영진이 참석했습니다. 자석 관련 내용은 아래 7월 16일 항목과 이어집니다. 그날 그는 국방 관련 청중에게 \"돈 버는 방법을 알려드리죠. 자석을 하세요\"라고 말했습니다.",
+      "reaction_en": "Of the named companies that are publicly traded, Westwater Resources closed Friday up 87.76% at $0.77 on about 100 million shares, against 481,000 shares the day before; 5E Advanced Materials closed down 13.79% at $1.50 the same day. Reporting on Westwater that day also points to progress at its Alabama graphite plant and to tariffs on Chinese graphite; no report seen here attributes either move solely to this announcement",
+      "reaction_ko": "명단에 오른 상장사 가운데 웨스트워터 리소시스는 금요일에 87.76% 오른 0.77달러로 마감했고 거래량은 약 1억 주였습니다. 전날은 48만 1천 주였습니다. 같은 날 5E 어드밴스드 머티리얼스는 13.79% 내린 1.50달러로 마감했습니다. 그날 웨스트워터 관련 보도는 앨라배마 흑연 공장의 진척과 중국산 흑연 관세도 함께 언급하고 있습니다. 확인한 보도 가운데 두 종목의 움직임을 이번 발표만으로 설명한 것은 없습니다",
+      "reaction_dir": "up",
+      "touches": [],
+      "source_url": "https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-billions-in-new-deals-and-investments-to-power-american-mining/",
+      "source_en": "White House · Aug 7",
+      "source_ko": "백악관 · 8월 7일"
+    },
     {
       "date": "2026-08-06",
       "date_en": "Aug 6",
@@ -260,31 +282,6 @@
       "source_url": "https://www.cnbc.com/2026/07/06/trump-opening-bell-ceo-nyse-nasdaq-stocks-accounts.html",
       "source_en": "CNBC · Jul 6",
       "source_ko": "CNBC · 7월 6일"
-    },
-    {
-      "date": "2026-07-02",
-      "date_en": "Jul 2",
-      "date_ko": "7월 2일",
-      "verb": "said",
-      "headline": "Posted that Micron's stock rose after its $250m pledge",
-      "company_en": "Micron",
-      "company_ko": "마이크론",
-      "ticker": "MU",
-      "verbatim": false,
-      "quote": "",
-      "quote_ko": "",
-      "text_en": "Posted that Micron had put $250 million into Trump Accounts and that its stock went up nine points. His disclosure showed he held between $1.67 million and $6.65 million of Micron at the time, having bought a further $215,000 to $550,000 of it in March. He later called Micron the hottest company in the world.",
-      "text_ko": "마이크론이 '트럼프 계좌'에 2억 5천만 달러를 넣었고 주가가 9포인트 올랐다고 글을 올렸습니다. 당시 공시에 따르면 그는 마이크론 주식을 167만~665만 달러어치 보유하고 있었고, 3월에 21만 5천~55만 달러어치를 추가로 사들인 상태였습니다. 이후 마이크론을 세계에서 가장 뜨거운 회사라고 표현했습니다.",
-      "reaction_en": "Micron is up about 209% so far this year, though it fell roughly 10% after the later remark",
-      "reaction_ko": "마이크론은 올해 들어 약 209% 올랐지만, 이후 발언 뒤에는 약 10% 떨어졌습니다",
-      "reaction_dir": "up",
-      "touches": [
-        "qqq",
-        "soxl"
-      ],
-      "source_url": "https://moneywise.com/investing/stocks/trump-micron-stock-endorsement-ethics-investors",
-      "source_en": "Moneywise",
-      "source_ko": "머니와이즈"
     }
   ]
 }
