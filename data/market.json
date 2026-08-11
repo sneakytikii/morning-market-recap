@@ -855,8 +855,8 @@
   "next_session_ko": "장은 <b>오늘 아침</b>에 다시 열립니다 — 위 숫자는 월요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b> until the opening bell",
   "next_session_ko_html": "장은 <b>오늘 아침</b>에 다시 열립니다 &mdash; 표의 숫자는 개장 전까지 <b>월요일 종가</b>입니다",
-  "today_en": "Stock futures are close to flat this morning &mdash; the technology ones a little higher, the Dow a shade lower &mdash; and the chip shares that were sold yesterday are being bought back a little before the bell. What has not turned is <b>oil</b>: up again this morning for a fourth day running, with US crude near <b>$83.50</b> a barrel, and the 10-year government bond rate has been pushed above <b>4.7%</b>, its highest since January. That has moved the betting: traders now put the odds of the Federal Reserve <b>raising</b> interest rates in September at about half, against about 44% straight after Friday&rsquo;s jobs report. Today&rsquo;s calendar is thin &mdash; nothing before the open that reaches your five, and <b>CoreWeave</b>, one of Nvidia&rsquo;s largest customers, reports after the close tonight. The real test is <b>tomorrow&rsquo;s inflation report</b>, out at 5:30 in the morning Pacific time.",
-  "today_ko": "오늘 아침 주가지수 선물은 거의 제자리입니다. 기술주 선물이 조금 높고 다우는 조금 낮으며, 어제 팔렸던 반도체 주식은 개장 전 거래에서 조금씩 다시 사들여지고 있습니다. 방향을 돌리지 않은 것은 <b>유가</b>입니다. 오늘 아침에도 올라 나흘째 상승이고, 미국산 원유는 배럴당 <b>83.50달러</b> 부근입니다. 10년물 국채 금리는 <b>4.7%</b> 위로 밀려 올라가 1월 이후 가장 높습니다. 그러자 판돈이 옮겨 갔습니다. 9월에 연방준비제도가 금리를 <b>올릴</b> 가능성을 시장은 이제 약 절반으로 보는데, 금요일 고용 지표 직후에는 약 44%였습니다. 오늘 일정은 얇습니다. 개장 전에는 보유 종목에 닿는 것이 없고, 엔비디아의 큰 고객 중 하나인 <b>코어위브</b>가 오늘 밤 장 마감 후 실적을 발표합니다. 진짜 시험대는 서부 시각 오전 5시 30분에 나오는 <b>내일 물가 보고서</b>입니다.",
+  "today_en": "Today opened well and has been fading ever since. Chip shares jumped at the bell and have handed most of it back: <b>SOXL</b> was up about <b>5%</b> in the first minutes and is now barely changed on the day, and <b>Nvidia</b> gave up a rise of about <b>2%</b> to sit roughly where it closed yesterday. The market as a whole has drifted down with them &mdash; the <b>S&amp;P 500</b> is a little lower and <b>QQQ</b> is down about <b>half a percent</b> by late morning Pacific time &mdash; as the standoff with Iran hardened again and oil held on to yesterday&rsquo;s rise. <b>Costco</b> is the softest of your five, down about <b>1%</b>. Tonight <b>CoreWeave</b>, one of Nvidia&rsquo;s biggest customers, reports after the close, and the <b>July inflation report</b> lands tomorrow at 5:30 in the morning Pacific time.",
+  "today_ko": "오늘 장은 좋게 출발했다가 계속 힘이 빠지고 있습니다. 반도체 주식은 개장과 함께 뛰어올랐다가 그 상승분을 대부분 되돌렸습니다. <b>SOXL</b>은 장 초반 약 <b>5%</b>까지 올랐다가 지금은 어제와 거의 같은 수준이고, <b>엔비디아</b>도 약 <b>2%</b> 오른 것을 반납해 어제 종가 부근에 있습니다. 서부 시각 오전 늦은 시간 기준으로 <b>S&amp;P 500</b>은 조금 낮고 <b>QQQ</b>는 약 <b>0.5%</b> 내렸으며, <b>코스트코</b>는 다섯 종목 가운데 가장 약해 약 <b>1%</b> 내렸습니다. 이란과의 대치가 다시 굳어지고 유가가 어제 오른 자리를 지킨 것이 배경입니다. 오늘 밤 장 마감 뒤에는 엔비디아의 큰 고객 중 하나인 <b>코어위브</b>가 실적을 발표하고, <b>7월 물가 보고서</b>는 내일 서부 시각 오전 5시 30분에 나옵니다.",
   "today_date": "2026-08-11",
   "pancho_am": {
     "date": "2026-08-11",
@@ -865,9 +865,9 @@
     "ko": "유가가 나흘째 오르고 있어요. 오늘은 반도체 반등보다 그쪽을 보세요."
   },
   "pancho_pm": {
-    "date": "2026-08-08",
-    "pos": "",
-    "en": "Chips did all the work this week. Costco didn't move — that's it doing its job.",
-    "ko": "이번 주는 반도체가 다 했어요. 코스트코는 안 움직였는데, 그게 제 역할입니다."
+    "date": "2026-08-11",
+    "pos": "soxl",
+    "en": "That chip bounce I mentioned this morning did not last. Most of it was gone by late morning.",
+    "ko": "아침에 말씀드린 반도체 반등은 오래가지 못했어요. 오전 늦게 거의 사라졌습니다."
   }
 }

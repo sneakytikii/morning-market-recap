@@ -1,8 +1,8 @@
 {
   "_comment": "The tracker's record. Rules in data/trump-corpus.md are binding: verbatim quotes only inside quote marks, every entry dated and sourced, market reaction measured never asserted as cause, strictly neutral voice. Written by scripts/refresh.sh; rendered by scripts/build.py.",
   "checked": "2026-08-11",
-  "checked_en": "Checked August 11 — the last 7 days swept",
-  "checked_ko": "8월 11일 확인 — 최근 7일 전수 확인",
+  "checked_en": "Checked again midday August 11 — the last 7 days swept",
+  "checked_ko": "8월 11일 낮에 다시 확인 — 최근 7일 전수 확인",
   "latest_touching": "2026-08-10",
   "reading_en": "12 entries on record, 2 added this morning. Newest: Aug 10 — demanded compensation from Iran as hopes of a deal to reopen the Strait of Hormuz faded, and oil closed about 5% higher. Of these, 7 reach what you hold — SPX, QQQ, SOXL, COST.",
   "reading_ko": "기록 12건이고 오늘 아침 2건을 추가했습니다. 가장 최근은 8월 10일, 호르무즈 해협을 다시 여는 합의 기대가 옅어지는 가운데 이란에 배상을 요구했고 유가는 약 5% 오른 채 마감했습니다. 이 가운데 7건이 보유 종목(SPX, QQQ, SOXL, COST)과 관련이 있습니다.",
@@ -52,6 +52,28 @@
       "source_url": "https://www.ksat.com/news/2026/08/11/as-trump-media-scraps-some-businesses-its-doubling-down-on-truth-social-and-the-president/",
       "source_en": "AP via KSAT · Aug 11",
       "source_ko": "AP(KSAT 게재) · 8월 11일"
+    },
+    {
+      "date": "2026-08-10",
+      "date_en": "Aug 10",
+      "date_ko": "8월 10일",
+      "verb": "did",
+      "headline": "Signed an executive order narrowing the list of vaccines recommended for every child",
+      "company_en": "Vaccine makers",
+      "company_ko": "백신 제조사",
+      "ticker": "MRK, PFE, MRNA",
+      "verbatim": false,
+      "quote": "",
+      "quote_ko": "",
+      "text_en": "Signed in the Oval Office on Monday, with Health Secretary Robert F. Kennedy Jr. present. The order, “Delivering Gold Standard Childhood Vaccine Recommendations for Americans”, sorts childhood vaccines into three groups: those it says every child should have, those for children at higher risk, and those left to a decision between parent and doctor. The first group lists eleven diseases — measles, mumps, rubella, diphtheria, tetanus, whooping cough, polio, Hib, pneumococcal disease, HPV and chickenpox — which reporting describes as a cut from about seventeen. It also says the combined measles, mumps and rubella shot should be given as three separate single-disease injections once those are made in the United States, and that childhood vaccines should be given at separate appointments where possible. It gives the Health and Human Services Department 90 days to produce a plan covering single-disease options, the schedule itself, alternatives to aluminum in vaccines and safety monitoring, and it directs the Attorney General to support legal challenges to state vaccination requirements. No company is named in the order. Where it reaches business is the childhood vaccine market, supplied mainly by Merck, Pfizer, Sanofi, GSK and Moderna — Merck makes the combined MMR shot the order asks to be split into three. At the signing he linked vaccines to rising rates of autism; the reporting covering the event notes that the scientific evidence does not support that link. Bloomberg reported on August 6 that an order of this kind was being prepared, so its arrival was not new information to the market.",
+      "text_ko": "월요일 백악관 집무실에서 서명했고, 로버트 F. 케네디 주니어 보건복지부 장관이 함께했습니다. 명령의 제목은 “미국인을 위한 최고 수준의 아동 백신 권고 이행”이며, 아동 백신을 세 갈래로 나눕니다. 모든 아이가 맞아야 한다고 보는 것, 위험이 큰 아이에게 권하는 것, 부모와 의사가 상의해 정하도록 남겨 둔 것입니다. 첫 번째 갈래에는 홍역, 볼거리, 풍진, 디프테리아, 파상풍, 백일해, 소아마비, Hib, 폐렴구균, HPV, 수두 등 열한 가지 질병이 들어 있는데, 보도는 이를 기존 열일곱 가지 안팎에서 줄인 것이라고 설명합니다. 또 홍역·볼거리·풍진(MMR) 혼합 백신은 미국에서 단일 백신이 생산되면 세 번에 나눠 접종해야 한다고 했고, 아동 백신은 가능하면 진료를 따로 잡아 맞히도록 했습니다. 보건복지부에는 90일 안에 단일 질병 백신, 접종 일정, 백신에 쓰이는 알루미늄의 대체물, 안전성 감시에 관한 계획을 내놓으라고 지시했고, 법무장관에게는 주 정부의 백신 접종 요건을 다투는 소송을 지원하라고 했습니다. 명령문에 기업 이름은 나오지 않습니다. 사업 쪽으로 닿는 지점은 아동 백신 시장입니다. 이 시장은 머크, 화이자, 사노피, GSK, 모더나가 주로 공급하고, 이번에 셋으로 나누라고 한 MMR 혼합 백신을 만드는 곳이 머크입니다. 서명 자리에서 그는 백신을 자폐증 증가와 연결지어 말했는데, 이를 전한 보도들은 과학적 근거가 그 연결을 뒷받침하지 않는다는 점을 함께 적고 있습니다. 8월 6일 블룸버그가 이런 내용의 명령이 준비되고 있다고 보도했기 때문에, 발표 자체가 시장에 새로운 정보는 아니었습니다.",
+      "reaction_en": "The largest listed vaccine makers closed higher on Monday, the day it was signed: Merck up 1.82% at $130.92, Pfizer up 1.08% at $27.05 and Moderna up 1.08% at $59.81, on a day the S&P 500 fell 0.06%. No report seen here connects those moves to the order, and Bloomberg had reported its preparation four days earlier. All three were lower in Tuesday's session, by between about 0.3% and 1.5%, read while that session was still open — there is no closing figure for it yet",
+      "reaction_ko": "상장된 주요 백신 제조사 주가는 서명이 이뤄진 월요일에 오른 채 마감했습니다. 머크는 1.82% 오른 130.92달러, 화이자는 1.08% 오른 27.05달러, 모더나는 1.08% 오른 59.81달러였고, 같은 날 S&P 500은 0.06% 내렸습니다. 확인한 보도 가운데 이 움직임을 이번 명령과 연결지은 것은 없으며, 블룸버그는 나흘 전에 이미 준비 사실을 보도했습니다. 세 종목 모두 화요일 장에서는 약 0.3%에서 1.5%가량 내리고 있었습니다. 장이 열려 있는 동안 읽은 수치이며 그날의 종가는 아직 없습니다",
+      "reaction_dir": "up",
+      "touches": [],
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/08/delivering-gold-standard-childhood-vaccine-recommendations-for-americans/",
+      "source_en": "White House · Aug 10",
+      "source_ko": "백악관 · 8월 10일"
     },
     {
       "date": "2026-08-09",
@@ -262,30 +284,6 @@
       "source_url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran",
       "source_en": "Al Jazeera · Aug 2",
       "source_ko": "알자지라 · 8월 2일"
-    },
-    {
-      "date": "2026-07-31",
-      "date_en": "Jul 31",
-      "date_ko": "7월 31일",
-      "verb": "did",
-      "headline": "Took government stakes in seven chip firms in exchange for CHIPS Act money",
-      "company_en": "GlobalFoundries and six smaller chipmakers",
-      "company_ko": "글로벌파운드리스와 소형 반도체 기업 6곳",
-      "ticker": "GFS",
-      "verbatim": true,
-      "quote": "Congratulations to the People of the United States for making such a good investment.",
-      "quote_ko": "이렇게 좋은 투자를 한 미국 국민 여러분께 축하를 보냅니다.",
-      "text_en": "The Commerce Department said it will put up to $874 million from the 2022 CHIPS Act into seven semiconductor companies in exchange for minority, non-controlling government stakes. The largest award, up to $300 million, goes to GlobalFoundries, which already has a proposed stake attached to a $375 million quantum-computing award from May; the six smaller firms include Kepler, Multibeam and Aeluma. The deals bring the government's stock holdings to about 30 companies. The quote is from his Truth Social post on the announcement.",
-      "text_ko": "상무부는 2022년 반도체지원법(CHIPS Act) 예산에서 최대 8억 7,400만 달러를 반도체 기업 7곳에 지원하는 대신, 정부가 경영권 없는 소수 지분을 받기로 했다고 밝혔습니다. 가장 큰 몫인 최대 3억 달러는 글로벌파운드리스에 돌아가는데, 이 회사는 5월에 발표된 3억 7,500만 달러 규모 양자컴퓨팅 지원에도 정부 지분 조건이 붙어 있습니다. 나머지 여섯 곳은 Kepler, Multibeam, Aeluma 같은 소형 기업입니다. 이번 계약으로 정부가 지분을 가진 회사는 약 30곳이 됩니다. 인용문은 발표에 맞춰 그가 트루스소셜에 올린 글입니다.",
-      "reaction_en": "",
-      "reaction_ko": "",
-      "reaction_dir": "",
-      "touches": [
-        "soxl"
-      ],
-      "source_url": "https://finance.yahoo.com/markets/article/trump-administration-adds-6-chipmakers-to-the-governments-stock-portfolio-which-now-spans-30-companies-140535555.html",
-      "source_en": "Yahoo Finance · Jul 31",
-      "source_ko": "야후 파이낸스 · 7월 31일"
     }
   ]
 }
