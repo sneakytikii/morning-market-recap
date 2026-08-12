@@ -1,8 +1,8 @@
 {
   "_comment": "The tracker's record. Rules in data/trump-corpus.md are binding: verbatim quotes only inside quote marks, every entry dated and sourced, market reaction measured never asserted as cause, strictly neutral voice. Written by scripts/refresh.sh; rendered by scripts/build.py.",
   "checked": "2026-08-12",
-  "checked_en": "Checked again Wednesday morning, August 12 — the last 7 days swept, nothing new to add",
-  "checked_ko": "8월 12일 수요일 아침에 다시 확인 — 최근 7일 전수 확인, 새로 추가할 항목 없음",
+  "checked_en": "Swept again Wednesday midday, August 12 — nothing new in the last 24 hours, and one action from August 10 that the earlier sweep had missed is now on the record",
+  "checked_ko": "8월 12일 수요일 한낮에 다시 확인 — 최근 24시간 안에 새로운 것은 없었고, 앞서의 확인에서 놓친 8월 10일 조치 한 건을 기록에 추가했습니다",
   "latest_touching": "2026-08-10",
   "reading_en": "12 entries on record and <b>none added this morning</b>. The last 7 days were swept and nothing new was found: the August 11 coverage of the Iran demands is the same Truth Social post already recorded below, and the White House posted no presidential action after August 10. An empty sweep is a real answer, so nothing was padded in. Two existing entries did have their market reactions corrected — they carried mid-session readings taken while Tuesday was still trading, and those are now Tuesday's actual closes. Newest entry: Aug 10 — demanded compensation from Iran as hopes of a deal to reopen the Strait of Hormuz faded, and oil closed about 5% higher. Of the 12, <b>6 reach what you hold</b> — SPX, QQQ, SOXL, COST.",
   "reading_ko": "기록은 12건이고 <b>오늘 아침에 추가한 항목은 없습니다</b>. 최근 7일을 전수 확인했지만 새로운 것이 없었습니다. 8월 11일자 이란 관련 보도는 아래에 이미 기록된 같은 트루스소셜 글이고, 백악관도 8월 10일 이후 새 대통령 조치를 올리지 않았습니다. 아무것도 없었다는 것도 하나의 답이므로 억지로 채우지 않았습니다. 다만 기존 두 항목의 시장 반응은 바로잡았습니다. 화요일 장중에 읽은 수치가 실려 있었는데, 이제 화요일의 실제 종가로 바꿨습니다. 가장 최근 항목은 8월 10일로, 호르무즈 해협을 다시 여는 합의 기대가 옅어지는 가운데 이란에 배상을 요구했고 유가는 약 5% 오른 채 마감했습니다. 12건 가운데 <b>6건이 보유 종목</b>(SPX, QQQ, SOXL, COST)과 관련이 있습니다.",
@@ -74,6 +74,28 @@
       "source_url": "https://www.whitehouse.gov/presidential-actions/2026/08/delivering-gold-standard-childhood-vaccine-recommendations-for-americans/",
       "source_en": "White House · Aug 10",
       "source_ko": "백악관 · 8월 10일"
+    },
+    {
+      "date": "2026-08-10",
+      "date_en": "Aug 10",
+      "date_ko": "8월 10일",
+      "verb": "did",
+      "headline": "Extended the waiver of the 1920 American-shipping law by 90 days, and narrowed it to fuel and farm goods",
+      "company_en": "US shipping, energy and fertilizer",
+      "company_ko": "미국 해운·에너지·비료",
+      "ticker": "",
+      "verbatim": false,
+      "quote": "",
+      "quote_ko": "",
+      "text_en": "Extended on Monday, reported by the Associated Press. The Jones Act is a 1920 law requiring that goods carried between two American ports travel on American-built, American-crewed ships. He first set it aside on March 17, after the war with Iran began, so foreign vessels could move fuel between US ports. This extension runs 90 days from August 17 and is narrower than the ones before it: it covers only energy and farm goods — crude oil, petrol, diesel, natural gas, petrochemicals, fertilizer and soybean oil — and for the first time the Pentagon will consult the Maritime Administration on which individual voyages qualify. By August 16 the suspension will have run 150 days, which reporting describes as the longest in the law's history. No company is named in it. Where it reaches business is on two sides at once: it lowers the cost of shipping fuel around the American coast, and it lets foreign ships compete for work that US shipping firms would otherwise have to themselves. White House spokeswoman Taylor Rogers said it was extended “to ensure our military and key industries maintain uninterrupted access to critical resources” and said earlier waivers had increased domestic deliveries of petrol, diesel and jet fuel. He is not quoted directly in the reporting on this extension. It belongs to the same Strait of Hormuz story as the oil entries above: the strait is still effectively closed, which is what the waiver is answering.",
+      "text_ko": "월요일에 연장했고, AP 통신이 보도했습니다. 존스법은 1920년에 만들어진 법으로, 미국 항구와 항구 사이를 오가는 화물은 미국에서 건조하고 미국인이 승선한 배로 실어야 한다고 정하고 있습니다. 그는 이란과의 전쟁이 시작된 뒤인 3월 17일에 이 법을 처음 유예해, 외국 배도 미국 항구 사이에서 연료를 나를 수 있게 했습니다. 이번 연장은 8월 17일부터 90일간이며, 이전보다 범위가 좁습니다. 원유, 휘발유, 경유, 천연가스, 석유화학 제품, 비료, 대두유 같은 에너지와 농산물에만 적용되고, 어떤 항해가 여기에 해당하는지는 국방부가 해사청과 협의해 정하도록 한 것이 처음입니다. 8월 16일이면 유예 기간이 150일에 이르는데, 보도는 이를 이 법 역사상 가장 긴 유예라고 설명합니다. 명령문에 기업 이름은 나오지 않습니다. 사업 쪽으로는 양쪽에 동시에 닿습니다. 미국 연안에서 연료를 실어 나르는 비용을 낮추는 한편, 원래는 미국 해운사들이 차지했을 일감을 외국 배도 놓고 겨루게 만듭니다. 백악관 대변인 테일러 로저스는 “우리 군과 핵심 산업이 중요한 자원을 끊김 없이 확보할 수 있도록” 연장했다고 밝혔고, 앞선 유예로 휘발유·경유·항공유의 국내 배송이 늘었다고 말했습니다. 이번 연장 보도에 그의 직접 발언은 실려 있지 않습니다. 이 조치는 위의 유가 항목들과 같은 호르무즈 해협 이야기에 속합니다. 해협은 사실상 여전히 닫혀 있고, 이 유예는 바로 그 상황에 대한 대응입니다.",
+      "reaction_en": "The two largest listed American shipping companies whose business the law protects both closed higher on Monday, the day it was extended: Matson up 0.92% at $208.68 and Kirby up 0.91% at $132.49, on a day the S&P 500 fell 0.06%. They split on Tuesday — Matson closed down 2.05% at $204.41 while Kirby closed up 0.12% at $132.65. No report seen here connects either day's move to the extension",
+      "reaction_ko": "이 법이 보호하는 미국 상장 해운사 가운데 규모가 가장 큰 두 곳은 연장이 이뤄진 월요일에 모두 오른 채 마감했습니다. 맷슨은 0.92% 오른 208.68달러, 커비는 0.91% 오른 132.49달러였고, 같은 날 S&P 500은 0.06% 내렸습니다. 화요일에는 방향이 갈렸습니다. 맷슨은 2.05% 내린 204.41달러로 마감했고, 커비는 0.12% 오른 132.65달러로 마쳤습니다. 확인한 보도 가운데 이틀 중 어느 날의 움직임도 이번 연장과 연결지은 것은 없습니다",
+      "reaction_dir": "",
+      "touches": [],
+      "source_url": "https://www.cp24.com/news/world/2026/08/10/trump-extends-jones-act-waiver-90-days-for-foreign-ships-moving-energy-fertilizers/",
+      "source_en": "AP via CP24 · Aug 10",
+      "source_ko": "AP(CP24 게재) · 8월 10일"
     },
     {
       "date": "2026-08-09",
@@ -205,8 +227,8 @@
       "verbatim": false,
       "quote": "",
       "quote_ko": "",
-      "text_en": "Speaking to reporters, he said a deal with Iran to reopen the Strait of Hormuz could come as soon as Wednesday or Thursday. Treasury Secretary Bessent said an agreement might be reached within a day or two; Secretary of State Rubio said there had been progress but not finality. Iran and Oman were reported the same day to be in the final stages of drafting an agreement covering commercial shipping through the strait, and US Central Command said the southern route through Omani waters remained open. Iran's government has previously denied that talks resumed. Only a paraphrase of his words was available here, so none of it is set inside quote marks. This follows the August 1 entry below, in which he said he had called off a planned attack. What happened next is recorded in the market reaction: on Thursday Iranian state media published a draft of the agreement whose conditions on ship traffic fell well short of a reopening, and the oil price turned around.",
-      "text_ko": "기자들에게 이란과의 호르무즈 해협 재개방 합의가 이르면 수요일이나 목요일에 나올 수 있다고 말했습니다. 베선트 재무장관은 하루 이틀 안에 합의가 이뤄질 수 있다고 했고, 루비오 국무장관은 진전은 있었지만 최종 단계는 아니라고 말했습니다. 같은 날 이란과 오만이 해협 상선 통항에 관한 합의문 작성을 마무리하는 단계라는 보도가 나왔고, 미 중부사령부는 오만 영해를 지나는 남쪽 항로가 계속 열려 있다고 밝혔습니다. 이란 정부는 앞서 협상이 재개된 적 없다고 부인한 바 있습니다. 그의 말은 요약된 형태로만 확인할 수 있어 따옴표 안에 넣지 않았습니다. 아래 8월 1일 항목에서 공격 계획을 취소했다고 밝힌 데 이어지는 발언입니다. 그 뒤의 일은 시장 반응에 적혀 있습니다. 목요일에 이란 국영 매체가 합의문 초안을 공개했는데 선박 통항 조건이 해협 재개방과는 거리가 멀었고, 유가는 방향을 돌렸습니다.",
+      "text_en": "Speaking to reporters, he said a deal with Iran to reopen the Strait of Hormuz could come as soon as Wednesday or Thursday. Treasury Secretary Bessent said an agreement might be reached within a day or two; Secretary of State Rubio said there had been progress but not finality. Iran and Oman were reported the same day to be in the final stages of drafting an agreement covering commercial shipping through the strait, and US Central Command said the southern route through Omani waters remained open. Iran's government has previously denied that talks resumed. Only a paraphrase of his words was available here, so none of it is set inside quote marks. It follows his announcement on August 1 that he had called off a planned attack on Iran after governments accepted the outline of a deal. What happened next is recorded in the market reaction: on Thursday Iranian state media published a draft of the agreement whose conditions on ship traffic fell well short of a reopening, and the oil price turned around.",
+      "text_ko": "기자들에게 이란과의 호르무즈 해협 재개방 합의가 이르면 수요일이나 목요일에 나올 수 있다고 말했습니다. 베선트 재무장관은 하루 이틀 안에 합의가 이뤄질 수 있다고 했고, 루비오 국무장관은 진전은 있었지만 최종 단계는 아니라고 말했습니다. 같은 날 이란과 오만이 해협 상선 통항에 관한 합의문 작성을 마무리하는 단계라는 보도가 나왔고, 미 중부사령부는 오만 영해를 지나는 남쪽 항로가 계속 열려 있다고 밝혔습니다. 이란 정부는 앞서 협상이 재개된 적 없다고 부인한 바 있습니다. 그의 말은 요약된 형태로만 확인할 수 있어 따옴표 안에 넣지 않았습니다. 8월 1일에 여러 나라 정부가 합의의 큰 틀을 받아들였다며 예정된 이란 공격을 취소했다고 밝힌 데 이어지는 발언입니다. 그 뒤의 일은 시장 반응에 적혀 있습니다. 목요일에 이란 국영 매체가 합의문 초안을 공개했는데 선박 통항 조건이 해협 재개방과는 거리가 멀었고, 유가는 방향을 돌렸습니다.",
       "reaction_en": "US crude closed Wednesday at $75.22 a barrel, down 0.73% — a third straight decline. It then rose 2.75% on Thursday to $77.29 after the draft was published, which still leaves it about 9% below Friday's close. The S&P 500 closed down 0.18% on Thursday and the Dow fell 464 points, ending five straight gains",
       "reaction_ko": "미국산 원유는 수요일에 0.73% 내린 배럴당 75.22달러로 마감했습니다. 사흘 연속 하락이었습니다. 이후 초안이 공개된 목요일에는 2.75% 올라 77.29달러가 됐는데, 그래도 금요일 종가보다는 약 9% 낮은 수준입니다. 같은 목요일 S&P 500은 0.18% 내렸고 다우지수는 464포인트 떨어져 5거래일 연속 상승이 끝났습니다",
       "reaction_dir": "down",
@@ -260,30 +282,6 @@
       "source_url": "https://www.cbsnews.com/news/trump-oil-companies-cut-gas-prices/",
       "source_en": "CBS News · Aug 3",
       "source_ko": "CBS 뉴스 · 8월 3일"
-    },
-    {
-      "date": "2026-08-01",
-      "date_en": "Aug 1",
-      "date_ko": "8월 1일",
-      "verb": "said",
-      "headline": "Called off a planned attack on Iran in a Saturday-night post, and oil fell about 5% on Monday",
-      "company_en": "Oil and shipping",
-      "company_ko": "석유·해운",
-      "ticker": "",
-      "verbatim": true,
-      "quote": "Immediate, Complete, and Total OPENING OF THE HORMUZ STRAIT, and an end to Iran's nuclear threat.",
-      "quote_ko": "호르무즈 해협의 즉각적이고 완전한 전면 개방, 그리고 이란의 핵 위협 종식.",
-      "text_en": "Posted on Truth Social on Saturday evening, saying he had agreed to cancel a planned attack after Iran and other governments accepted the outline of a deal. The quoted words are how he described what that deal would contain. Iran's government denied the following day that talks had resumed. The Strait of Hormuz is the sea lane a large share of the world's oil is shipped through, so news about whether it is open moves the oil price directly. This is also the first market-moving post since the paid early-access feed described in the August 4 entry above began operating that same day.",
-      "text_ko": "토요일 저녁 트루스소셜에 올린 글입니다. 이란과 다른 나라 정부들이 합의의 큰 틀을 받아들여, 예정돼 있던 공격을 취소하기로 했다고 밝혔습니다. 따옴표 안의 말은 그 합의에 무엇이 담길지를 그가 직접 설명한 표현입니다. 이란 정부는 다음 날 협상이 재개된 적 없다고 부인했습니다. 호르무즈 해협은 세계 원유의 상당 부분이 지나가는 바닷길이어서, 이곳이 열려 있는지에 대한 소식은 유가를 곧바로 움직입니다. 위 8월 4일 항목에 적힌 유료 선공개 서비스가 같은 날 시작된 뒤, 시장을 움직인 첫 글이기도 합니다.",
-      "reaction_en": "US crude closed Monday at $80.25 a barrel, down 5.2%, and Brent closed down 4.7%; reporting that day linked the fall to the announcement. The S&P 500 closed higher on Monday and again on Tuesday, when it set a record at 7,736.52",
-      "reaction_ko": "미국산 원유는 월요일 5.2% 내린 배럴당 80.25달러로, 브렌트유는 4.7% 내려 마감했습니다. 그날 보도는 이 하락을 해당 발표와 연결지었습니다. S&P 500은 월요일에 이어 화요일에도 올랐고, 화요일에는 7,736.52로 사상 최고를 기록했습니다",
-      "reaction_dir": "down",
-      "touches": [
-        "spx"
-      ],
-      "source_url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran",
-      "source_en": "Al Jazeera · Aug 2",
-      "source_ko": "알자지라 · 8월 2일"
     }
   ]
 }

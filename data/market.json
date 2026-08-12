@@ -836,8 +836,8 @@
   "next_session_ko": "장은 <b>지금 열려 있습니다</b> — 위 숫자는 화요일 종가입니다",
   "next_session_en_html": "Trading is <b>open now</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b> until this afternoon&rsquo;s close",
   "next_session_ko_html": "지금 장이 <b>열려 있습니다</b> &mdash; 표의 숫자는 오늘 장이 끝날 때까지 <b>화요일 종가</b>입니다",
-  "today_en": "The market opened higher this morning and has been handing some of it back. The <b>July inflation report</b> came out before the bell: prices rose <b>0.1%</b> over the month and <b>3.4%</b> over the year, a shade slower than June and about what was expected, with petrol down 2.9%. That was the biggest scheduled number of the month and it passed without trouble &mdash; traders have tilted toward the Federal Reserve leaving interest rates alone in September. Chip shares took it best, helped by <b>CoreWeave</b>, whose sales more than doubled in results published after last night's close: <b>SOXL</b> opened about <b>11%</b> higher and was holding roughly <b>8%</b> by mid-morning Pacific time, and <b>Nvidia</b> is up a couple of percent. The broader index has drifted back toward where it started the day. <b>Cisco</b> reports after the close tonight, and <b>Applied Materials</b> &mdash; the cleaner read on chips &mdash; tomorrow.",
-  "today_ko": "오늘 장은 높게 출발했다가 오른 폭을 조금씩 되돌리고 있습니다. <b>7월 물가 보고서</b>가 개장 전에 나왔습니다. 물가는 한 달 사이 <b>0.1%</b>, 1년 사이 <b>3.4%</b> 올라 6월보다 조금 느렸고 대체로 예상과 같았으며, 휘발유값은 2.9% 내렸습니다. 이번 달 예정된 지표 중 가장 큰 것이었는데 별 탈 없이 지나갔고, 시장의 무게는 '연방준비제도가 9월에는 금리를 그대로 둘 것'이라는 쪽으로 기울었습니다. 반도체 주식이 가장 잘 받아들였습니다. 어젯밤 장 마감 후 나온 실적에서 매출이 두 배 넘게 늘어난 <b>코어위브</b>가 힘을 보탰습니다. <b>SOXL</b>은 약 <b>11%</b> 높게 출발해 서부 시각 오전 늦은 시간 기준 <b>8%</b> 안팎을 지키고 있고, <b>엔비디아</b>도 2% 남짓 올라 있습니다. 지수 전체는 출발점 부근으로 되밀려 왔습니다. 오늘 밤 장 마감 후에는 <b>시스코</b>가, 내일은 반도체를 더 깨끗하게 보여 주는 <b>어플라이드 머티어리얼즈</b>가 실적을 발표합니다.",
+  "today_en": "The morning's wobble did not last. Stocks opened higher, handed some of it back, and have held a steady gain since &mdash; the broad US market is up about a third of a percent. Two things are behind it: this morning's inflation report was mild, and the companies that buy AI chips reported strong results &mdash; <b>CoreWeave</b>, one of Nvidia's largest customers, is up about <b>18%</b>. Chips are doing the lifting: <b>SOXL</b> is up about <b>10%</b>, <b>Nvidia</b> about <b>3%</b> and <b>QQQ</b> about <b>1%</b>, while <b>Costco</b> opened lower and has turned around to about half a percent higher. <b>Cisco</b> reports after tonight's close, and <b>Applied Materials</b>, the cleaner read on chip demand, tomorrow.",
+  "today_ko": "오늘 아침의 흔들림은 오래가지 않았습니다. 장은 높게 출발해 오른 폭을 조금 내주었다가, 그 뒤로는 오름세를 지키고 있습니다. 미국 시장 전체는 0.3% 남짓 올라 있습니다. 배경은 두 가지입니다. 아침에 나온 물가 보고서가 순했고, AI 반도체를 사들이는 회사들의 실적이 좋았습니다. 엔비디아의 가장 큰 고객 중 하나인 <b>코어위브</b>가 약 <b>18%</b> 올라 있습니다. 끌고 가는 것은 반도체입니다. <b>SOXL</b>이 약 <b>10%</b>, <b>엔비디아</b>가 약 <b>3%</b>, <b>QQQ</b>가 약 <b>1%</b> 올랐고, <b>코스트코</b>는 낮게 출발했다가 방향을 돌려 0.5%가량 상승으로 돌아섰습니다. 오늘 밤 장 마감 후에는 <b>시스코</b>가, 내일은 반도체 수요를 더 깨끗하게 보여 주는 <b>어플라이드 머티어리얼즈</b>가 실적을 발표합니다.",
   "today_date": "2026-08-12",
   "pancho_am": {
     "date": "2026-08-12",
@@ -846,9 +846,9 @@
     "ko": "가장 큰 물가 지표가 무난히 지나갔어요. 시장은 좋게 열렸다가 조금씩 되돌리고 있습니다."
   },
   "pancho_pm": {
-    "date": "2026-08-11",
+    "date": "2026-08-12",
     "pos": "soxl",
-    "en": "That chip bounce I mentioned this morning did not last. Most of it was gone by late morning.",
-    "ko": "아침에 말씀드린 반도체 반등은 오래가지 못했어요. 오전 늦게 거의 사라졌습니다."
+    "en": "Yesterday the chip jump shrank as the day went on. Today it has stayed put.",
+    "ko": "어제는 반도체 상승분이 하루가 갈수록 줄었어요. 오늘은 그대로 지켜지고 있습니다."
   }
 }
