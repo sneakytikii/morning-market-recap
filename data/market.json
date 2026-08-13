@@ -813,8 +813,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 장이 다시 열립니다 — 위 숫자는 수요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b> until then",
   "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>수요일 종가</b>입니다",
-  "today_en": "Futures point slightly higher this morning, with the S&amp;P 500 and Nasdaq contracts both up a touch. The overnight story is <b>Cisco</b>: it reported the best quarter in its history after last night's close, including <b>$9.3 billion</b> of AI equipment orders over the year, and the shares are still down about <b>6%</b> before the open — they had already risen roughly 60% over the year going in. Two smaller AI names fell harder, <b>Cerebras</b> about 17% and Coherent about 5%. Today brings the <b>wholesale price report</b> before the open, at 5:30 in the morning Pacific time, expected up about 0.2% on the month, alongside the weekly count of new claims for unemployment pay — and then <b>Applied Materials</b> after the close tonight. What to watch is whether Cisco's reception spreads to the chip names or stays its own story.",
-  "today_ko": "오늘 아침 선물은 조금 높습니다. S&amp;P 500과 나스닥 선물이 모두 소폭 올라 있습니다. 간밤의 이야기는 <b>시스코</b>입니다. 어젯밤 장 마감 후 회사 역사상 최고 분기를 발표했고 한 해 AI 장비 수주가 <b>93억 달러</b>였는데도, 개장 전 주가는 약 <b>6%</b> 내려 있습니다. 발표 전까지 주가가 1년 동안 60%가량 올라 있었기 때문입니다. 더 작은 AI 종목 두 곳은 더 크게 내렸습니다. <b>세레브라스</b>가 약 17%, 코히어런트가 약 5% 하락했습니다. 오늘은 개장 전 서부 시각 오전 5시 30분에 <b>도매물가</b>가 나오는데 한 달 사이 약 0.2% 상승이 예상되고, 같은 시각 주간 실업수당 신청 건수도 나옵니다. 그리고 오늘 밤 장 마감 후에는 <b>어플라이드 머티어리얼즈</b>가 발표합니다. 지켜볼 것은 시스코가 받은 반응이 반도체 종목들로 번지는지, 아니면 그 회사만의 이야기로 남는지입니다.",
+  "today_en": "The morning has gone well. Wholesale prices for July came in <b>flat</b> — no rise at all, where a small rise had been expected — and the <b>S&amp;P 500</b> has traded above <b>7,800</b> for the first time, up about <b>half a percent</b> so far. Chip shares are doing the lifting, and it is the memory makers leading rather than Nvidia: <b>SOXL</b> is up about <b>7%</b> and <b>QQQ</b> about <b>1%</b>, while <b>Nvidia</b> itself is up less than <b>1%</b> and <b>Costco</b> about <b>0.4%</b>. <b>Cisco</b> is down about <b>9%</b> after last night's record results — the same lesson as yesterday, that news this good had already been paid for. <b>Applied Materials</b> reports after tonight's close, and retail sales arrive tomorrow morning at 5:30 Pacific time.",
+  "today_ko": "오전 장은 좋게 흘러가고 있습니다. 7월 도매물가가 <b>보합</b>으로 나와 소폭 상승 예상과 달리 전혀 오르지 않았고, <b>S&amp;P 500</b>은 사상 처음으로 <b>7,800</b>을 넘어 지금까지 약 <b>0.5%</b> 오른 상태입니다. 끌어올리는 것은 반도체인데, 앞장선 쪽은 엔비디아가 아니라 메모리 회사들입니다. <b>SOXL</b>이 약 <b>7%</b>, <b>QQQ</b>가 약 <b>1%</b> 오른 반면 <b>엔비디아</b>는 <b>1%</b>가 채 되지 않고 <b>코스트코</b>는 약 <b>0.4%</b> 상승입니다. <b>시스코</b>는 어젯밤 사상 최고 실적을 내놓고도 약 <b>9%</b> 내렸는데, 어제와 같은 이야기입니다. 그만큼 좋은 소식의 값이 이미 치러져 있었던 것입니다. 오늘 밤 장 마감 후에는 <b>어플라이드 머티어리얼즈</b>가 실적을 발표하고, 소매판매는 내일 아침 서부 시각 5시 30분에 나옵니다.",
   "today_date": "2026-08-13",
   "pancho_am": {
     "date": "2026-08-13",
@@ -823,9 +823,9 @@
     "ko": "시스코는 최고 실적을 냈는데도 주가가 내렸어요. 좋은 소식도 부족할 때가 있습니다."
   },
   "pancho_pm": {
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "pos": "soxl",
-    "en": "Yesterday the chip jump shrank as the day went on. Today it has stayed put.",
-    "ko": "어제는 반도체 상승분이 하루가 갈수록 줄었어요. 오늘은 그대로 지켜지고 있습니다."
+    "en": "The chip fund is way up today, but not because of Nvidia. The memory makers did it.",
+    "ko": "오늘 반도체가 크게 올랐는데 엔비디아 덕분은 아니에요. 메모리 회사들이 했습니다."
   }
 }
