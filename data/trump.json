@@ -1,8 +1,8 @@
 {
   "_comment": "The tracker's record. Rules in data/trump-corpus.md are binding: verbatim quotes only inside quote marks, every entry dated and sourced, market reaction measured never asserted as cause, strictly neutral voice. Written by scripts/refresh.sh; rendered by scripts/build.py.",
   "checked": "2026-08-14",
-  "checked_en": "Swept again before the opening bell on Friday, August 14 — two new entries, both dated Thursday, August 13, and both signed on Thursday evening after the market had closed. One puts tariffs of up to 100% on imported drones; the other reorganises how the Navy buys its ships and allows some of them to be built abroad. Neither reaches your five. The two oldest items on the record dropped off the twelve-entry window to make room",
-  "checked_ko": "8월 14일 금요일 개장 전에 다시 확인했습니다 — 두 건을 새로 넣었고, 둘 다 8월 13일 목요일자이며 모두 장이 끝난 목요일 저녁에 서명됐습니다. 하나는 수입 드론에 최대 100% 관세를 매기는 조치이고, 다른 하나는 해군의 함정 구매 방식을 바꿔 일부를 해외에서 건조할 수 있게 하는 조치입니다. 두 건 모두 보유 5개 종목에는 닿지 않습니다. 자리를 만들기 위해 가장 오래된 두 항목이 12건 창에서 빠졌습니다",
+  "checked_en": "Swept again at midday on Friday, August 14, with the market still open — one new entry, dated Thursday, August 13. The White House published a report on tariff evasion through third countries and proposed an AI system at the border to catch it; it names more than 40 countries but no company, and it does not reach your five. Nothing else in the last 24 hours qualified: the drone tariff and the Navy shipbuilding memorandum were already added before this morning's bell, and his posts since then have been political endorsements and shared news headlines. The oldest item, the August 6 White House list of companies that cut prices, dropped off the twelve-entry window to make room — it was the only entry on the record that reached Costco",
+  "checked_ko": "8월 14일 금요일 낮, 장이 아직 열려 있는 동안 다시 확인했습니다 — 새 항목은 한 건이고 8월 13일 목요일자입니다. 백악관이 제3국을 거친 관세 회피에 관한 보고서를 내고, 이를 잡아내기 위한 인공지능 기반 국경 시스템을 제안했습니다. 40개국 넘는 나라 이름이 나오지만 기업 이름은 없고, 보유 5개 종목에는 닿지 않습니다. 지난 24시간 안에 그 밖에 기록에 넣을 만한 것은 없었습니다. 드론 관세와 해군 조선 각서는 오늘 개장 전에 이미 넣었고, 그 뒤에 올라온 글은 정치인 지지 선언과 기사 공유였습니다. 자리를 만들기 위해 가장 오래된 항목인 8월 6일 백악관 물가 인하 기업 명단이 12건 창에서 빠졌습니다. 기록에서 코스트코에 닿는 유일한 항목이었습니다",
   "latest_touching": "2026-08-10",
   "reading_en": "12 entries on record and <b>two added this morning</b>, both dated Thursday August 13. He signed two national-security actions on Thursday evening, after the market had closed. The first puts tariffs of <b>up to 100%</b> on imported drones and their parts, taking effect on September 3; no company is named in it, though a Florida drone-parts maker on whose advisory board his son sits was among the shares quoted sharply higher before this morning's bell. The second reorganises Navy shipbuilding and, for the first time, lets some American warships be built in foreign yards. Because both were announced after Thursday's closing bell, no completed trading session has priced either one — Friday's close will be the first. Neither reaches your five. Of the 12 entries, <b>4 reach what you hold</b> — SPX, QQQ, SOXL, COST.",
   "reading_ko": "기록은 12건이고 <b>오늘 아침에 두 건을 추가했습니다</b>. 둘 다 8월 13일 목요일자입니다. 그는 목요일 저녁, 장이 끝난 뒤에 국가안보 관련 조치 두 건에 서명했습니다. 첫째는 수입 드론과 그 부품에 <b>최대 100%</b> 관세를 매기는 것으로 9월 3일부터 시행됩니다. 조치문에 기업 이름은 나오지 않지만, 그의 아들이 자문위원으로 있는 플로리다의 드론 부품 회사가 오늘 개장 전 크게 오른 종목들 가운데 있었습니다. 둘째는 해군 함정 조달 체계를 바꿔, 미국 군함 일부를 처음으로 해외 조선소에서 건조할 수 있게 하는 것입니다. 두 건 모두 목요일 종가 이후에 발표됐기 때문에, 아직 이를 반영한 완결된 거래일은 없습니다. 금요일 종가가 그 첫 번째가 됩니다. 두 건 모두 보유 5개 종목에는 닿지 않습니다. 12건 가운데 <b>4건이 보유 종목</b>(SPX, QQQ, SOXL, COST)과 관련이 있습니다.",
@@ -48,6 +48,28 @@
       "reaction_dir": "",
       "touches": [],
       "source_url": "https://www.whitehouse.gov/presidential-actions/2026/08/rebuilding-the-united-states-navy-and-americas-shipbuilding-industrial-base/",
+      "source_en": "White House · Aug 13",
+      "source_ko": "백악관 · 8월 13일"
+    },
+    {
+      "date": "2026-08-13",
+      "date_en": "Aug 13",
+      "date_ko": "8월 13일",
+      "verb": "did",
+      "headline": "The White House published a report on tariff evasion through third countries and proposed an AI system at the border to catch it",
+      "company_en": "Importers and supply chains",
+      "company_ko": "수입업체·공급망",
+      "ticker": "",
+      "verbatim": false,
+      "quote": "",
+      "quote_ko": "",
+      "text_en": "Released on Thursday by the White House Office of Trade and Manufacturing Policy, the trade and manufacturing office headed by senior counselor Peter Navarro. The report, “The Great Transshipment Scam”, runs to 25 pages, and transshipment is what it is about: routing goods through a third country — sometimes with limited assembly, repackaging, relabelling or a change of paperwork along the way — so that they arrive in the United States appearing to come from somewhere other than where they were made, and so pay a lower tariff than they otherwise would. The report names more than <b>40 countries</b> it says carry an elevated risk of illegal transshipment, among them Mexico, Canada, the European Union, India, Japan and South Korea, and it places China at the centre of the practice. Its central estimate of the tariff revenue this costs is <b>$19 billion to $26 billion a year</b>; it also gives a much wider band, from roughly $10 billion in its narrowest reading to more than $100 billion in its broadest, depending on the assumptions used. A separate figure of about $75 billion of illegally transshipped goods between February 2025 and February 2026 is attributed in the reporting to Exiger, a supply-chain data firm. The report proposes an AI-assisted “detective border” for Customs and Border Protection — checking a declared country of origin against routing history, ownership, production capacity, packaging and X-ray images — and says importers found to have falsified origin would face tariffs applied retroactively, with anti-transshipment terms written into future trade agreements. Speaking to reporters on Thursday, Navarro said the scam “has led communist China to launder its exports to more than 40 countries, rob our treasury of tens of billions of dollars, and steal the paychecks of American workers.” No company is named as an offender, and the President is not quoted in the report; he posted a news headline about it on Truth Social shortly after midnight Pacific time on Friday. Where it reaches business is broad rather than deep. It does not change a tariff rate. It changes how hard the rates already in place are enforced, and that reaches every American company that imports.",
+      "text_ko": "목요일에 백악관 무역·제조업정책실이 냈습니다. 무역·제조업 담당 선임고문 피터 나바로가 이끄는 부서입니다. 보고서 제목은 “거대한 환적 사기(The Great Transshipment Scam)”이고 분량은 25쪽이며, 다루는 것은 환적입니다. 물건을 제3국을 거쳐 보내면서 그 과정에 간단한 조립이나 재포장, 상표 교체, 서류 변경을 붙여, 실제로 만든 곳이 아닌 다른 나라에서 온 것처럼 미국에 들어오게 하고 그만큼 관세를 덜 무는 방식입니다. 보고서는 불법 환적 위험이 높다고 본 나라를 <b>40개국</b> 넘게 꼽았고 그 안에 멕시코, 캐나다, 유럽연합, 인도, 일본, 한국이 들어 있으며, 이 관행의 중심에 중국이 있다고 적었습니다. 이 때문에 걷지 못하는 관세를 보고서는 <b>연간 190억~260억 달러</b>로 봤습니다. 가정에 따라 범위는 훨씬 넓어서, 가장 좁게 잡으면 약 100억 달러, 가장 넓게 잡으면 1,000억 달러가 넘는다고도 적었습니다. 2025년 2월부터 2026년 2월까지 불법 환적된 물량이 약 750억 달러라는 별도의 수치는, 보도에서 공급망 데이터 회사 엑시저(Exiger)의 추정으로 소개됐습니다. 보고서는 세관국경보호청을 위한 인공지능 기반의 “탐지형 국경(detective border)”을 제안합니다. 신고된 원산지를 운송 경로, 소유 관계, 생산 능력, 포장, 엑스레이 영상과 대조해 보는 방식입니다. 원산지를 허위로 신고한 것이 드러난 수입업체에는 관세를 소급 적용하고, 앞으로 맺을 무역 협정에는 환적 방지 조항을 넣겠다고 했습니다. 나바로는 목요일 기자들과의 통화에서 이 사기가 “공산 중국이 40개국 넘는 나라로 수출품을 세탁하게 하고, 우리 국고에서 수백억 달러를 빼앗고, 미국 노동자의 급여를 훔치게 만들어 왔다”고 말했습니다. 위반 기업의 이름은 나오지 않고, 보고서에 대통령의 발언도 실려 있지 않습니다. 그는 금요일 서부 시각 자정 직후 트루스소셜에 이 내용을 다룬 기사 제목을 올렸습니다. 사업 쪽으로는 깊게라기보다 넓게 닿습니다. 관세율 자체를 바꾸지는 않습니다. 이미 정해진 관세를 얼마나 강하게 집행하느냐를 바꾸는 것이고, 그것은 수입을 하는 모든 미국 기업에 닿습니다.",
+      "reaction_en": "No listed company is named in the report, and no report seen here connects any share-price move to it. It was published on Thursday while the market was open, so Thursday is the first completed session that could reflect it: the S&P 500 rose <b>0.65%</b> that day to a record close of 7,798.99, a move reporting attributes to the July wholesale-price figures and to oil falling for the first time in seven sessions, not to this. Friday's session was still open when this entry was written, so Friday's close is not yet available to read",
+      "reaction_ko": "보고서에 상장기업 이름은 없고, 확인한 보도 가운데 어떤 주가 움직임을 이 보고서와 연결지은 것도 없습니다. 장이 열려 있던 목요일에 나왔으므로 이를 반영할 수 있는 첫 완결 거래일은 목요일입니다. 그날 S&P 500은 <b>0.65%</b> 올라 사상 최고 종가인 7,798.99로 마쳤는데, 보도는 그 상승을 7월 도매물가 수치와 이레 만에 처음으로 내린 유가로 설명하며 이 보고서와 연결짓지는 않습니다. 이 항목을 쓰는 시점에 금요일 장은 아직 열려 있어서, 금요일 종가는 아직 읽을 수 없습니다",
+      "reaction_dir": "",
+      "touches": [],
+      "source_url": "https://www.whitehouse.gov/releases/2026/08/the-great-transshipment-scam/",
       "source_en": "White House · Aug 13",
       "source_ko": "백악관 · 8월 13일"
     },
@@ -256,30 +278,6 @@
       "source_url": "https://finance.yahoo.com/economy/policy/articles/trump-announces-tariffs-key-component-205530812.html",
       "source_en": "Yahoo Finance · Aug 6",
       "source_ko": "야후 파이낸스 · 8월 6일"
-    },
-    {
-      "date": "2026-08-06",
-      "date_en": "Aug 6",
-      "date_ko": "8월 6일",
-      "verb": "did",
-      "headline": "The White House published a list of companies that cut prices, with Costco on it",
-      "company_en": "Costco, Walmart, Target and others",
-      "company_ko": "코스트코·월마트·타깃 등",
-      "ticker": "COST",
-      "verbatim": false,
-      "quote": "",
-      "quote_ko": "",
-      "text_en": "The White House published a list on Thursday of companies it says have lowered prices in response to the President's call to cut costs for American families. Costco is on it, credited with dropping prices on many of its most popular Kirkland Signature products — reductions the company itself disclosed on its May 28 earnings call, rather than a new announcement. The list also names Walmart, Sam's Club, Target, Kroger, Albertsons, Meijer, H-E-B and Giant Eagle among grocers, along with PepsiCo, several drugmakers including Pfizer, Merck and Eli Lilly, five electricity suppliers, and the carmakers Ford, Stellantis and Chevrolet. It is the White House's own compilation and carries no direct quote from him. He has singled out individual chains before: in July he posted that the grocer Giant Eagle would lower prices across more than 300 products through Labor Day.",
-      "text_ko": "목요일에 백악관이 대통령의 물가 인하 요청에 응해 가격을 내린 기업들의 명단을 공개했습니다. 코스트코도 그 명단에 있는데, 인기 있는 커클랜드 시그니처 제품 여러 개의 가격을 내렸다는 내용입니다. 다만 이 인하는 회사가 5월 28일 실적 설명회에서 이미 밝힌 것이고, 이번에 새로 발표된 것은 아닙니다. 명단에는 식료품 쪽으로 월마트, 샘스클럽, 타깃, 크로거, 앨버슨스, 마이어, H-E-B, 자이언트이글이 함께 올랐고, 펩시코, 화이자·머크·일라이릴리를 비롯한 제약사 여러 곳, 전력회사 다섯 곳, 그리고 포드·스텔란티스·쉐보레가 들어 있습니다. 이 명단은 백악관이 자체적으로 정리한 것이며, 그의 직접 인용문은 실려 있지 않습니다. 그는 전에도 개별 업체를 따로 언급한 적이 있습니다. 7월에는 식료품 체인 자이언트이글이 노동절까지 300개가 넘는 제품의 가격을 내릴 것이라고 글을 올렸습니다.",
-      "reaction_en": "Costco closed up 0.76% at $949.15 on Thursday; reporting that day tied the move to the company's own July sales figures, published the evening before, rather than to this release. A week on, the shares closed at $961.85 on August 13",
-      "reaction_ko": "코스트코는 목요일에 0.76% 오른 949.15달러로 마감했습니다. 그날 보도는 이 움직임을 이번 발표가 아니라 전날 저녁에 나온 코스트코 7월 매출 수치와 연결지었습니다. 일주일 뒤인 8월 13일 종가는 961.85달러였습니다",
-      "reaction_dir": "up",
-      "touches": [
-        "cost"
-      ],
-      "source_url": "https://www.whitehouse.gov/releases/2026/08/private-sector-answers-president-trumps-call-to-lower-prices-for-american-families/",
-      "source_en": "White House · Aug 6",
-      "source_ko": "백악관 · 8월 6일"
     }
   ]
 }
