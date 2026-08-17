@@ -1,131 +1,131 @@
 {
-  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-14 (weekday run, Friday 03:45 Pacific). THIS RUN STARTED BEFORE THE OPENING BELL — about two and three-quarter hours before the 6:30am Pacific open — so today_en/ko are written as a morning setup (futures + overnight earnings), not about a session in progress. The last completed session is Thursday August 13, so as_of moves to 2026-08-13. ALL FIVE THURSDAY CLOSES VERIFIED AGAINST TWO INDEPENDENT SOURCES EACH (StockAnalysis quote pages plus Google Finance / Yahoo Finance, read 03:12-03:40 Pacific), and every percentage recalculated rather than copied: SPX 7,798.99 (+0.65%), QQQ 732.07 (+1.16%), NVDA 225.30 (+0.54%), SOXL 145.36 (+2.25%), COST 961.85 (+1.29%). The AP index table (SPX 7,798.99 +50.49, Dow 53,839.99 +69.72, Nasdaq 26,803.03 +214.54, Russell 2000 3,052.85 +7.36) reconciles EXACTLY against the Wednesday closes this file already carried: 7,748.50+50.49, 53,770.27+69.72, 26,588.49+214.54 and 3,045.48+7.36 all land on the published figures, so both days corroborate each other. ONE BASE CONSTANT CHANGED, AND IT HAD TO. spx.base.high_1y moves 7,757.64 -> 7,798.99 because Thursday WAS a new record close — the index cleared 7,800 intraday for the first time (session range 7,763.18-7,816.70, Yahoo) and closed at 7,798.99, above the August 7 record of 7,757.64. The board therefore still reads '0% / at its high' via build.py's 0.2% threshold, but now for the right reason: it IS the high, not merely near it. QQQ 748.65, NVDA 236.54, SOXL 302.00 and COST 1,097.05 all unchanged; no new extreme was set in any of them (QQQ high 733.96, NVDA high 227.23, COST high 962.58 all well inside). SOXL IS CONFIRMED TRUE FOR A SECOND RUN. Three sources agree on 145.36 and on the 142.16 previous close; 142.16 -> 145.36 recalculates to the +2.25% shown. The 3x cross-check is the cleanest of the week: SOXX +0.7556% (546.61 -> 550.74), three times is +2.2668%, SOXL delivered +2.2510% — a gap of 0.016pp against Wednesday's 0.08pp. Week capture from Friday's close: SOXX 543.27 -> 550.74 = +1.375%, three times is +4.125%, SOXL 140.25 -> 145.36 = +3.644%, i.e. about 88% of what 3x should have paid. THE DAY'S SHAPE IS THE STORY AGAIN: SOXL traded as high as 154.13 (+8.4% on the previous close) and as low as 141.84 before closing at 145.36 (+2.25%), giving back about three-quarters of its best gain — and SOXX did exactly the same thing in miniature (high 562.25 = +2.86%, close +0.76%, also about three-quarters given back), so the whipsaw came from the chip index and this fund tripled it faithfully in both directions rather than malfunctioning. That is a materially more useful finding than a tracking-error complaint and it is what the note now says. UNRESOLVED SOURCE DISAGREEMENTS, all disclosed in sources_en: (1) stl.news gives Thursday's SPX as 7,781.59 (+0.43%), Nasdaq 26,741.66 and Dow 53,674.13 (-0.18%) against 7,798.99 / 26,803.03 / 53,839.99 from Google Finance, Yahoo Finance, Zacks, TheStreet and the AP table — five against one, outlier discarded. (2) Brent: AP gives -2.1% to $87.07, stl.news -1.5% to $87.66; both agree it FELL and ended the six-session rally, board prose says 'about $87'. (3) Micron: StockAnalysis and Google Finance both give +4.23% to $949.83; a search summary claiming +6.7% and another claiming +3.09% were not corroborated and were discarded. (4) StockAnalysis gives SOXL's Thursday open as exactly 142.16 — identical to the previous close, which may be a placeholder — so the note describes the day by its verified range and close and never leans on the open. RATES AND VIX AGREED THIS RUN, no arbitration needed: Investing.com's daily series and Yahoo's ^TNX both give the 10-year at 4.641% Thursday against 4.682% Wednesday, and AP's rounded 4.65% is consistent; 30-year 5.213% from 5.247% (Investing.com); VIX 14.63 from both Yahoo's quote page and Investing.com's history, up from 14.55. PPI: July final demand UNCHANGED month on month against +0.2% expected, +4.7% over the year from 5.5% in June, with wholesale petrol down 5.7% — BLS release of Aug 13. September Fed HIKE odds fell to about a third from roughly half a week earlier. PREMARKET SWEEP for the Today block, read 03:20-03:45 Pacific: S&P 500 futures just above flat, Nasdaq 100 futures +0.11%, Dow futures -71 points (-0.13%). Applied Materials reported after Thursday's close — Q3 revenue $9.115bn (+25% y/y, its largest sequential growth ever), non-GAAP EPS $3.50 (+41%), Q4 guidance $10.25bn against $9.54bn expected — and the shares fell about 4.9% after hours and 5.71% premarket ($504.00), having roughly doubled this year. That is the SECOND consecutive night an AI supplier delivered record results and fell, after Cisco, which closed Thursday down 8.40% at $113.47. Reddit +12.9% premarket on S&P 500 inclusion Aug 18. Drone makers up premarket on the overnight tariff proclamation. TRACKER: the last 7 days were swept and TWO NEW ENTRIES were added, both dated Aug 13 and both signed Thursday evening after the close — the Section 232 drone tariff proclamation and the Navy shipbuilding memorandum. Neither touches the five. The Aug 5 Hormuz entry and the Aug 6 munitions entry dropped off the 12-entry window; the Aug 9 entry's cross-reference to the departing Aug 5 entry was rewritten so it no longer dangles, and the Aug 12 cyber and lawsuit entries had their market-reaction lines updated with Thursday's completed closes.",
-  "as_of": "2026-08-13",
-  "generated": "2026-08-14T03:45:00-07:00",
+  "_comment": "Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py. Keep the shape: every position needs price, day_*, week_*, drawdown (a number, never a bare dash), take_* and the *_ko twin of every *_en field. NOTE 2026-08-17 (weekday run, Monday ~03:15-04:00 Pacific). THIS RUN STARTED WELL BEFORE THE OPENING BELL — about three and a quarter hours before the 6:30am Pacific open — so today_en/ko are the Monday morning setup. The last completed session is FRIDAY August 14 (no weekend run happened; the previous refresh was Friday midday), so as_of moves to 2026-08-14 and the week figures now cover the COMPLETED week Aug 10-14. ALL FIVE FRIDAY CLOSES VERIFIED AGAINST TWO INDEPENDENT SOURCES EACH (StockAnalysis and Yahoo Finance quote pages, read 03:12-03:30 Pacific, agreeing to the cent), and every percentage recalculated from Thursday's closes rather than copied: SPX 7,785.76 (-0.17%), QQQ 731.07 (-0.14%), NVDA 225.16 (-0.06%), SOXL 144.95 (-0.28%), COST 961.10 (-0.08%). The AP index table (SPX -13.23 to 7,785.76, Dow -107.58 to 53,732.41, Nasdaq -73.86 to 26,729.16, Russell 2000 +15.57 to 3,068.42) chains EXACTLY off Thursday's closes in this file, and AP's weekly figure (+28.12 SPX points) equals 7,785.76 minus the 7,757.64 prior-Friday close already stored here — three-way corroboration. NO BASE CONSTANT CHANGED: no new 52-week extreme was set in any of the five (SPX high Friday 7,800.02 area not relevant — the session high stayed below Thursday's record close is not the test; the test is close vs stored high_1y, and 7,785.76 < 7,798.99; QQQ range 728.32-734.39 inside 748.65; NVDA 224.50-227.49 inside 236.54; SOXL 138.90-146.65 inside 302.00; COST 957.75-965.36 inside 1,097.05). StockAnalysis's rolling 52-week windows now show slightly different lows/highs for QQQ (555.60 low) and COST (1,096.50 high) than the stored constants because old extremes are aging OUT of the trailing year; per the rules those constants change only when a NEW extreme is SET, so they were left alone. SOXL CONFIRMED TRUE FOR A THIRD RUN, with the gap disclosed: two sources agree on 144.95 and the 145.36 previous close; SOXX fell 0.06% (550.74 -> 550.42), three times is -0.17%, SOXL delivered -0.28% — a gap of about 0.11pp, wider than Thursday's 0.02pp but tiny in absolute terms on a near-flat day. The intraday shape triple-checks: SOXX low 542.93 = -1.42% at its worst, three times is -4.26%, and SOXL's low 138.90 = -4.44% — the fund fell about 4.4% after the weak retail-sales report and recovered essentially all of it by the close. WEEK CAPTURE (completed week, from Aug 7 closes): SOXX 543.27 -> 550.42 = +1.316%, three times is +3.95%, SOXL 140.25 -> 144.95 = +3.35% — about 85% of what 3x should have paid. SOURCE DISAGREEMENTS ARBITRATED, all disclosed in sources_en: (1) VIX — Yahoo's Friday live blog quotes 14.98 (+5.12%) but two other sources say Friday's CLOSE was 14.25 (-0.38), the lowest close of 2026; the 14.98 print chains off 14.25 as its previous value and matches an afternoon spike, so 14.25 is used as the close and the blog figure treated as intraday. (2) 10-year yield — three sources give 4.67% (Yahoo blog), 4.68% (etfdb snapshot headline / Capital Street), 4.695% (Regal daily review, +5.6bp); the file says 4.68% and the spread is disclosed. 30-year 5.27% (Yahoo blog; only strong source found — flagged as thinner than usual). (3) Unusual Machines — a 247wallst headline says +22% and CNBC text +24.2%, but StockAnalysis's close of 34.06 against the 27.24 previous close recalculates to +25.04% exactly, so the close is used and headline figures treated as intraday reads. FRIDAY'S DRIVERS: July retail sales FELL 0.6% (largest drop since May 2025; ex-autos-and-gas -0.2%; $763.6bn), University of Michigan August prelim sentiment 51.0 vs 55.2 July and 55 expected, with 1-year inflation expectations UP to 4.3% from 4.2% (5-10yr flat 3.3%) — and yields ROSE on the weak-data day (10Y ~4.68% from 4.641%, 30Y 5.27% from 5.213%) with oil UP (Brent +1.67% to 88.52, chaining exactly off AP's Thursday 87.07; WTI +1.42% to 82.40). Fed September HIKE odds edged LOWER (CME ~32% hike / ~68% hold per Seeking Alpha Friday). AMAT closed -5.12% at 507.18 (record results Thursday night, third straight such casualty), Micron +2.30% to 971.66 (cap $1.10T), Reddit +10%+ on S&P 500 inclusion effective Tuesday Aug 18, Russell 2000 +0.51% at 3,068.42. Weekly: SPX +0.4% third straight weekly gain (longest streak since a nine-week run ended May), Dow -0.6%, Nasdaq +0.1%. PREMARKET SWEEP for the Today block, read ~03:12-03:30 Pacific (6:12-6:30am ET): S&P 500 futures +0.11%, Nasdaq 100 futures +0.34%, Dow futures -0.09% — and the loud corner is MEMORY chips again: Micron +3.65% premarket at $1,007 (first time over $1,000), SanDisk +5%, SMH +1.2%, SOXX +1.5% premarket, SOXL quoted +4.1-4.3% premarket (thin quotes, phrased softly in the prose). Driver per reporting: SanDisk's Aug 13 investor day plus TrendForce DRAM contract prices +93-98% q/q in Q1 and +53-58% in Q2 (shortage). THE WEEK AHEAD (two sources: Capital Street FX weekly + Washington Post/Yahoo week-ahead): Home Depot results Tue, Target and Lowe's Wed, Walmart Thu, FOMC July-meeting minutes Wed 11:00 Pacific, flash PMIs Fri, Reddit joins the S&P 500 Tue, Nvidia Wed Aug 26, Jackson Hole Aug 27-29 (Chair Warsh's first keynote — NOT this week). Events list rebuilt accordingly; the two Aug 14 events dropped off. TRACKER: swept Friday-through-Sunday; ONE new entry dated Aug 14 (took credit for prescription-drug prices falling 3.1% y/y, steepest in 60+ years; Spectrum News source; PFE -0.04%, LLY flat as measured non-reaction). The weekend was genuinely quiet — no new presidential actions Sat/Sun; an AP 'posts go on sale Saturday' story that surfaced in the sweep was date-checked to August 1 (the institutional Truth API launch already on the record) and correctly NOT re-added. Friday closes filled into the drone-tariff entry (UMAC +25.04% at 34.06, RCAT +8.80%, ONDS +3.70%, KTOS +2.85%, AVAV +1.78%), the Navy entry (HII +0.60% at 327.71, GD +0.72% at 395.78), the transshipment entry (SPX -0.17% Friday attributed to the data, not the report) and the DJT lawsuit entry (Friday 8.27, week -19%). Aug 6 polysilicon entry dropped off the 12-window (it touched soxl/qqq/spx; reading_en's touch-count updated to 2). SECOND PASS, same Monday 04:15-04:30 Pacific: the first pass wrote everything above but STOPPED before the tail of this file — lede, events, next_session_*, today_en/ko, today_date and pancho_am were still Friday's copy, and today_date=2026-08-14 would have silently discarded the Today block at build. (The sentence earlier in this comment claiming the events list was rebuilt was written ahead of that crash; it became true only in this pass.) This pass: (1) re-verified all five Friday closes against a THIRD independent source, Google Finance quote pages read 04:16-04:18 Pacific — SOXL 144.95/prev 145.36, NVDA 225.16/prev 225.30, COST 961.10/prev 961.85, QQQ 731.07/prev 732.07, all matching StockAnalysis and Yahoo to the cent; SOXL's Friday OHLC (open 143.79, high 146.65, low 138.90) re-read on StockAnalysis and consistent with the note's intraday story, so confirmed:true stands; SPX 7,785.76 corroborated by CNBC, Yahoo and TheStreet Friday wraps. (2) Re-read the premarket at 04:16 Pacific (07:16 ET): S&P futures near flat, Nasdaq-100 +0.4%, Dow about -0.1% (Bloomberg/Yahoo Monday live blogs) — same picture as the 03:12-03:30 sweep; SOXL premarket +4.2% at about $151.10 (both sources), NVDA +0.6%, COST -0.4%; SMH +1.2% with Micron and SanDisk leading, so the Today block's memory-rally framing holds. (3) Rewrote the stale tail: lede now describes Friday and the completed week, events rebuilt (Aug 14 items out; store-chain week, FOMC minutes, Jackson Hole in), next_session now says Friday's closing prices, Today block is the Monday morning setup, today_date stamped 2026-08-17, pancho_am new for Monday. Week-ahead calendar cross-checked against a third source (TradingKey) in this pass: HD Tue / TGT+LOW Wed / WMT Thu / minutes Wed 2pm ET all confirmed. Weekend Trump sweep independently re-run: schedule shows Bedminster with executive time and policy meetings Sat/Sun, no new presidential actions, no qualifying business remarks — trump.json's one-entry morning update stands, nothing added.",
+  "as_of": "2026-08-14",
+  "generated": "2026-08-17T04:30:00-07:00",
   "mode": "weekday",
-  "dateline_en": "Friday, August&nbsp;14, 2026 &middot; Morning Brief",
-  "dateline_ko": "2026년 8월 14일 금요일 · 아침 브리핑",
+  "dateline_en": "Monday, August&nbsp;17, 2026 &middot; Morning Brief",
+  "dateline_ko": "2026년 8월 17일 월요일 · 아침 브리핑",
   "strip": {
     "spx": {
-      "value": "7,798.99",
-      "change_en": "▲ +0.65% Thursday — a new record close",
-      "change_ko": "▲ 목요일 +0.65% — 사상 최고 종가",
-      "dir": "up",
+      "value": "7,785.76",
+      "change_en": "▼ −0.17% Friday — a step back from Thursday's record",
+      "change_ko": "▼ 금요일 −0.17% — 목요일 최고치에서 한 걸음 후퇴",
+      "dir": "dn",
       "name_en": "S&amp;P 500",
       "name_ko": "S&amp;P 500"
     },
     "ndx": {
-      "value": "26,803.03",
-      "change_en": "▲ +0.81% Thursday — memory chip makers led",
-      "change_ko": "▲ 목요일 +0.81% — 메모리 반도체가 앞장섰습니다",
-      "dir": "up",
+      "value": "26,729.16",
+      "change_en": "▼ −0.28% Friday — still up 0.1% for the week",
+      "change_ko": "▼ 금요일 −0.28% — 주간으로는 0.1% 상승",
+      "dir": "dn",
       "name_en": "Nasdaq",
       "name_ko": "나스닥"
     },
     "dow": {
-      "value": "53,839.99",
-      "change_en": "▲ +0.13% Thursday — 69.72 points higher",
-      "change_ko": "▲ 목요일 +0.13% — 69.72포인트 상승",
-      "dir": "up",
+      "value": "53,732.41",
+      "change_en": "▼ −0.20% Friday — 107.58 points lower",
+      "change_ko": "▼ 금요일 −0.20% — 107.58포인트 하락",
+      "dir": "dn",
       "name_en": "Dow Jones",
       "name_ko": "다우존스"
     },
     "vix": {
-      "value": "14.63",
-      "change_en": "Still calm — a shade up from 14.55 Wednesday",
-      "change_ko": "여전히 안정 — 수요일 14.55에서 소폭 상승",
-      "dir": "up",
+      "value": "14.25",
+      "change_en": "▼ Its lowest close of 2026 — calm, despite the weak data",
+      "change_ko": "▼ 2026년 최저 종가 — 약한 지표에도 안정",
+      "dir": "dn",
       "name_en": "Fear gauge",
       "name_ko": "공포 지수"
     },
     "us10y": {
-      "value": "4.64%",
-      "change_en": "▼ down from 4.68% — eased after the price report",
-      "change_ko": "▼ 4.68%에서 하락 — 물가 보고서 뒤 진정",
-      "dir": "dn",
+      "value": "4.70%",
+      "change_en": "▲ up from 4.64% — inflation worries outweighed weak data",
+      "change_ko": "▲ 4.64%에서 상승 — 약한 지표보다 물가 걱정이 컸습니다",
+      "dir": "up",
       "name_en": "10-Year bond",
       "name_ko": "10년물 국채"
     },
     "us30y": {
-      "value": "5.21%",
-      "change_en": "▼ down from 5.25% — first fall in three sessions",
-      "change_ko": "▼ 5.25%에서 하락 — 사흘 만의 하락",
-      "dir": "dn",
+      "value": "5.27%",
+      "change_en": "▲ up from 5.21% — rose with oil and inflation expectations",
+      "change_ko": "▲ 5.21%에서 상승 — 유가·물가 기대와 함께 올랐습니다",
+      "dir": "up",
       "name_en": "30-Year bond",
       "name_ko": "30년물 국채"
     }
   },
   "positions": {
     "spx": {
-      "price": "7,798.99",
-      "day_arrow": "▲",
-      "day_en": "+0.65% on Thursday",
-      "day_ko": "목요일 +0.65%",
-      "day_dir": "up",
+      "price": "7,785.76",
+      "day_arrow": "▼",
+      "day_en": "−0.17% on Friday",
+      "day_ko": "금요일 −0.17%",
+      "day_dir": "dn",
       "week_arrow": "▲",
-      "week_en": "≈ +0.53% so far this week",
-      "week_ko": "이번 주 ≈ +0.53%",
+      "week_en": "≈ +0.36% last week",
+      "week_ko": "지난주 ≈ +0.36%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +4.13% so far in August",
-      "month_ko": "8월 들어 ≈ +4.13%",
+      "month_en": "≈ +3.95% so far in August",
+      "month_ko": "8월 들어 ≈ +3.95%",
       "month_dir": "up",
       "drawdown_arrow": "",
       "drawdown": "≈ 0%",
       "drawdown_dir": "fl",
-      "drawdown_fact_en": "at its high",
-      "drawdown_fact_ko": "최고가 수준",
-      "take_en": "A record close",
-      "take_ko": "사상 최고 종가",
-      "take_tone": "c-pos",
+      "drawdown_fact_en": "just under its high",
+      "drawdown_fact_ko": "최고가 바로 아래",
+      "take_en": "Just under its record",
+      "take_ko": "최고치 바로 아래",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "The index rose <b>50.49 points</b> on Thursday, or 0.65%, to <b>7,798.99</b> — a record close, and the first time it has traded above <b>7,800</b> at any point in its history. What is worth understanding is where the push came from, because it was not the thing you would expect. It was <b>petrol</b>. The report on wholesale prices — what companies charge each other before anything reaches a shop shelf — showed <b>no rise at all</b> in July, where a small rise had been expected, and the reason was a <b>5.7%</b> fall in the wholesale petrol price. Then oil itself fell for the first time in <b>seven sessions</b>, with Brent back to about <b>$87</b> a barrel. Those two together took the pressure off borrowing rates: the 10-year government rate eased to <b>4.64%</b> and the 30-year to <b>5.21%</b>, its first fall in three days. Traders cut the odds of the Federal Reserve <b>raising</b> rates at its September meeting to about <b>one in three</b>, from roughly one in two a week ago. Chip shares did rise, but the leaders had changed: <b>Micron</b> rose about <b>4.2%</b> and SanDisk about 16%, while <b>Nvidia</b> managed only 0.54%. And after the close, for the second night running, a company delivered record results and its shares fell — this time <b>Applied Materials</b>.",
-      "note_ko": "지수는 목요일에 <b>50.49포인트</b>, 0.65% 올라 <b>7,798.99</b>가 됐습니다. 사상 최고 종가이고, 장중이나마 <b>7,800</b>을 넘어선 것도 역사상 처음입니다. 알아 두실 부분은 그 힘이 어디서 왔는가입니다. 예상하실 만한 곳이 아니었습니다. <b>기름값</b>이었습니다. 도매물가 보고서, 즉 물건이 매장에 놓이기 전에 회사들이 서로 주고받는 가격을 보여 주는 수치가 7월에 <b>전혀 오르지 않았습니다</b>. 소폭 상승이 예상되던 자리였는데, 이유는 도매 휘발유값이 <b>5.7%</b> 내렸기 때문이었습니다. 이어 유가 자체도 <b>이레</b> 만에 처음으로 내려 브렌트유가 배럴당 <b>87달러</b> 부근으로 돌아왔습니다. 이 둘이 겹치며 금리 부담이 덜어졌습니다. 10년물 국채 금리는 <b>4.64%</b>로, 30년물은 사흘 만에 처음으로 내려 <b>5.21%</b>가 됐습니다. 시장은 연방준비제도가 9월 회의에서 금리를 <b>올릴</b> 가능성을 일주일 전 절반 남짓에서 <b>3분의 1</b> 수준으로 낮춰 잡았습니다. 반도체 주식도 오르긴 했는데 앞장선 얼굴이 바뀌었습니다. <b>마이크론</b>이 약 <b>4.2%</b>, 샌디스크가 약 16% 오른 반면 <b>엔비디아</b>는 0.54%에 그쳤습니다. 그리고 장 마감 후, 이틀 연속으로 사상 최고 실적을 낸 회사의 주가가 내렸습니다. 이번에는 <b>어플라이드 머티어리얼즈</b>였습니다.",
+      "note_en": "The index slipped <b>13.23 points</b> on Friday, or 0.17%, to <b>7,785.76</b> — a small step back from Thursday's record, and still its <b>third weekly gain in a row</b>, the longest run since a nine-week streak that ended in May. What moved it was the American shopper. <b>July retail sales fell 0.6%</b>, the biggest monthly drop since May 2025, where a small rise had been expected. Then the <b>University of Michigan's survey of how households feel</b> fell to <b>51</b> from 55.2, well below forecasts — and inside it, the awkward detail: households now expect prices to rise <b>4.3%</b> over the next year, up from 4.2%. That mix — people spending less while still bracing for higher prices — is why borrowing rates <b>rose</b> on a day of weak news: the 10-year rate to about <b>4.7%</b> and the 30-year to <b>5.27%</b>. Oil rose too, with Brent back up to about <b>$88.50</b>. And yet the fear gauge closed at <b>14.25</b>, its lowest of 2026 — the market itself stayed remarkably calm about all of it. Traders still put the odds of a September rate <b>rise</b> at about one in three, and Friday's numbers nudged that down rather than up.",
+      "note_ko": "지수는 금요일에 <b>13.23포인트</b>, 0.17% 내려 <b>7,785.76</b>이 됐습니다. 목요일 사상 최고치에서 한 걸음 물러선 것이지만, 그래도 <b>3주 연속 주간 상승</b>입니다. 5월에 끝난 9주 연속 상승 이후 가장 긴 흐름입니다. 지수를 움직인 것은 미국의 소비자였습니다. <b>7월 소매판매가 0.6% 줄었습니다.</b> 2025년 5월 이후 가장 큰 월간 감소였고, 소폭 증가가 예상되던 자리였습니다. 이어 <b>미시간대의 가계 심리 조사</b>가 55.2에서 <b>51</b>로 내려 예상을 크게 밑돌았는데, 그 안에 불편한 대목이 있습니다. 가계는 앞으로 1년 물가가 <b>4.3%</b> 오를 것으로 봤습니다. 4.2%에서 오히려 높아진 것입니다. 덜 쓰면서도 물가는 더 오를 것으로 대비하는 이 조합 때문에, 나쁜 소식이 나온 날인데도 금리가 <b>올랐습니다</b>. 10년물은 약 <b>4.7%</b>, 30년물은 <b>5.27%</b>가 됐습니다. 유가도 올라 브렌트유가 <b>88.50달러</b> 부근으로 되돌아왔습니다. 그런데도 공포 지수는 <b>14.25</b>로 올해 가장 낮은 종가를 기록했습니다. 시장 자체는 이 모든 것에 놀랄 만큼 차분했습니다. 시장은 9월 금리 <b>인상</b> 가능성을 여전히 약 3분의 1로 보고 있고, 금요일 수치는 그 값을 올리기보다 오히려 낮췄습니다.",
       "ticker": "SPX",
       "name_en": "The whole US market",
       "name_ko": "미국 시장 전체",
-      "week_fact_en": "up ≈ 0.53%",
-      "week_fact_ko": "≈ 0.53% 상승",
+      "week_fact_en": "up ≈ 0.36%",
+      "week_fact_ko": "≈ 0.36% 상승",
       "news_en": [
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Slipped 0.17% to 7,785.76 after two weak readings on the American shopper.</b> July retail sales fell <b>0.6%</b>, the biggest drop since May 2025, and the Michigan survey of household confidence fell to <b>51</b>. Still finished a third straight weekly gain, up about 0.4%."
+        },
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Borrowing rates rose on a weak-data day.</b> Households' one-year inflation expectation ticked up to <b>4.3%</b> and oil climbed back to about <b>$88.50</b>, so the 10-year rate rose to about <b>4.70%</b> and the 30-year to 5.27%. The fear gauge still closed at <b>14.25</b>, its lowest of 2026."
+        },
         {
           "dt": "Aug 13",
           "tx": "<b>Rose 0.65% to a record close of 7,798.99, clearing 7,800 during the day for the first time.</b> Wholesale prices did not rise at all in July, against an expected small rise, and oil fell for the first time in seven sessions."
         },
         {
           "dt": "Aug 13",
-          "tx": "<b>Cheaper petrol, not chips, did it.</b> Borrowing rates eased — the 10-year to <b>4.64%</b>, the 30-year to 5.21% — and traders cut the odds of the Federal Reserve <b>raising</b> rates in September to about <b>one in three</b>, from roughly one in two a week ago."
-        },
-        {
-          "dt": "Aug 12",
-          "tx": "<b>Rose 0.26% to 7,748.50.</b> A mild inflation report before the open and large results from the companies that buy AI equipment did it. The chip group rose about <b>2.3%</b>, while the <b>Dow</b> fell 21.58 points — technology carrying a market that was otherwise still."
-        },
-        {
-          "dt": "Aug 11",
-          "tx": "<b>Fell 0.32% to 7,728.20 on a day chip shares went up.</b> The chip group rose about <b>0.9%</b>; what dragged the index down was the rest of big technology, led by Alphabet, and a harder standoff with Iran."
+          "tx": "<b>Cheaper petrol, not chips, did it.</b> Borrowing rates eased that day — the 10-year to <b>4.64%</b>, the 30-year to 5.21% — and traders cut the odds of the Federal Reserve <b>raising</b> rates in September to about <b>one in three</b>."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>this morning's two numbers</b>, and then nothing dated for a fortnight. <b>July retail sales — how much people actually spent — arrive at 5:30 in the morning Pacific time</b>, before the open, with forecasters expecting a small rise of about 0.3%. The <b>University of Michigan survey of how confident households feel</b> follows at 7:00 in the morning Pacific time, and is expected to slip a little. After that there is no Federal Reserve meeting until <b>September 15–16</b>, and nothing large on the calendar until <b>Nvidia's results on Wednesday, August 26</b>. The structural thing to carry into that gap is what has now happened two nights running. On Wednesday night <b>Cisco</b> reported the best quarter in its history and fell 8.4% the next day. On Thursday night <b>Applied Materials</b> reported record sales, its fastest growth ever, and guidance well above what analysts expected — and the shares fell about 6% before this morning's bell. Neither company did anything wrong. Both had already risen a long way on the expectation of exactly those results. This index sits at a record built partly on the same expectation, and the two most recent tests of it have both gone the same way.",
+      "verdict_en": "<b>What I'd watch:</b> <b>the shopper, all week.</b> Friday posed a question — people spent less in July, and told the Michigan survey they feel worse than they have in months — and this week brings the direct answer, because the big store chains report their results: <b>Home Depot on Tuesday, Target and Lowe's on Wednesday, Walmart on Thursday</b>, all before the market opens. If their numbers and their outlooks hold up, Friday's readings will look like a wobble; if they echo them, the one part of this record-high market that was never about AI — the ordinary American customer — starts to look tired. Alongside that, the Federal Reserve publishes the <b>minutes of its July meeting on Wednesday at 11 in the morning Pacific time</b>; three officials voted to raise rates at that meeting, and the minutes show how close the argument really was. Then <b>Nvidia on Wednesday, August 26</b>, and the Fed chair's yearly Jackson Hole speech at the end of next week. The uncomfortable pattern from last week rides along underneath: two companies delivered record results and their shares fell anyway. The index sits about 0.2% under a record priced for good news, in a week that will produce a great deal of news.",
       "news_ko": [
+        {
+          "dt": "8월 14일",
+          "tx": "<b>미국 소비자에 관한 약한 수치 두 개가 나온 뒤 0.17% 내려 7,785.76이 됐습니다.</b> 7월 소매판매가 <b>0.6%</b> 줄어 2025년 5월 이후 가장 큰 감소였고, 미시간대 가계 심리 조사는 <b>51</b>로 내렸습니다. 그래도 주간으로는 약 0.4% 올라 3주 연속 상승으로 마쳤습니다."
+        },
+        {
+          "dt": "8월 14일",
+          "tx": "<b>나쁜 지표가 나온 날인데 금리는 올랐습니다.</b> 가계의 1년 물가 기대가 <b>4.3%</b>로 높아지고 유가가 <b>88.50달러</b> 부근으로 되올랐기 때문입니다. 10년물은 약 <b>4.70%</b>, 30년물은 5.27%가 됐습니다. 그런데도 공포 지수는 <b>14.25</b>로 올해 가장 낮은 종가였습니다."
+        },
         {
           "dt": "8월 13일",
           "tx": "<b>0.65% 올라 사상 최고 종가인 7,798.99가 됐고, 장중에는 처음으로 7,800을 넘었습니다.</b> 7월 도매물가가 소폭 상승 예상과 달리 전혀 오르지 않았고, 유가는 이레 만에 처음으로 내렸습니다."
         },
         {
           "dt": "8월 13일",
-          "tx": "<b>반도체가 아니라 싸진 기름값이 만든 상승이었습니다.</b> 금리가 진정돼 10년물은 <b>4.64%</b>, 30년물은 5.21%가 됐고, 시장은 연방준비제도가 9월에 금리를 <b>올릴</b> 가능성을 일주일 전 절반 남짓에서 약 <b>3분의 1</b>로 낮춰 잡았습니다."
-        },
-        {
-          "dt": "8월 12일",
-          "tx": "<b>0.26% 올라 7,748.50이 됐습니다.</b> 개장 전 나온 순한 물가 보고서와, AI 장비를 사들이는 회사들의 큰 실적이 그렇게 만들었습니다. 반도체 업종은 약 <b>2.3%</b> 올랐고 <b>다우지수</b>는 21.58포인트 내렸습니다. 나머지가 제자리인 시장을 기술주가 끌고 간 하루였습니다."
-        },
-        {
-          "dt": "8월 11일",
-          "tx": "<b>반도체 주식이 오른 날 0.32% 내려 7,728.20이 됐습니다.</b> 반도체 업종은 약 <b>0.9%</b> 올랐고, 지수를 끌어내린 것은 알파벳을 앞세운 나머지 큰 기술 기업들과 다시 굳어진 이란과의 대치였습니다."
+          "tx": "<b>반도체가 아니라 싸진 기름값이 만든 상승이었습니다.</b> 그날 금리가 진정돼 10년물은 <b>4.64%</b>, 30년물은 5.21%가 됐고, 시장은 연방준비제도가 9월에 금리를 <b>올릴</b> 가능성을 약 <b>3분의 1</b>로 낮춰 잡았습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 아침의 수치 두 개</b>, 그리고 그 뒤로는 2주 동안 날짜가 정해진 일정이 없습니다. <b>7월 소매판매가 개장 전 서부 시각 오전 5시 30분에 나옵니다.</b> 사람들이 실제로 얼마나 썼는지를 보여 주는 수치이고, 전문가들은 약 0.3% 정도의 소폭 증가를 예상합니다. 이어 서부 시각 오전 7시에는 <b>미시간대의 가계 심리 조사</b>가 나오는데, 조금 내려갈 것으로 보고 있습니다. 그다음으로는 <b>9월 15~16일</b>까지 연방준비제도 회의가 없고, <b>8월 26일 수요일 엔비디아 실적</b> 전까지 큰 일정도 없습니다. 그 빈 구간에 안고 가실 이야기는 이틀 연속으로 벌어진 일입니다. 수요일 밤 <b>시스코</b>는 회사 역사상 최고 분기를 발표하고 다음 날 8.4% 내렸습니다. 목요일 밤 <b>어플라이드 머티어리얼즈</b>는 사상 최대 매출과 역사상 가장 빠른 성장, 그리고 예상을 크게 웃도는 전망을 내놓았는데 오늘 개장 전 주가는 약 6% 내려 있습니다. 두 회사 모두 잘못한 것이 없습니다. 다만 바로 그 실적을 기대하며 주가가 이미 크게 올라 있었습니다. 이 지수도 상당 부분 같은 기대 위에 서서 사상 최고치에 있고, 가장 최근의 두 번의 시험은 모두 같은 방향으로 끝났습니다.",
+      "verdict_ko": "<b>제가 지켜볼 것: 이번 주 내내, 소비자입니다.</b> 금요일이 질문을 던졌습니다. 사람들이 7월에 돈을 덜 썼고, 미시간대 조사에서는 몇 달 만에 가장 어두운 심리를 보였습니다. 이번 주에 그 직접적인 답이 나옵니다. 대형 유통업체들이 실적을 발표하기 때문입니다. <b>화요일 홈디포, 수요일 타깃과 로우스, 목요일 월마트</b>, 모두 개장 전입니다. 이들의 숫자와 전망이 괜찮으면 금요일의 지표는 일시적 흔들림으로 남고, 이들마저 같은 이야기를 하면 이 사상 최고치 시장에서 AI와 무관했던 유일한 축, 곧 평범한 미국 소비자가 지쳐 보이기 시작합니다. 함께 볼 것은 <b>수요일 서부 시각 오전 11시에 나오는 연방준비제도 7월 회의 의사록</b>입니다. 그 회의에서 세 명이 금리 인상에 표를 던졌는데, 논쟁이 실제로 얼마나 팽팽했는지가 여기서 드러납니다. 그다음은 <b>8월 26일 수요일 엔비디아</b>, 그리고 다음 주말의 연준 의장 잭슨홀 연설입니다. 지난주의 불편한 규칙은 그 아래 그대로 깔려 있습니다. 두 회사가 사상 최고 실적을 내고도 주가가 내렸다는 것입니다. 지수는 좋은 소식이 미리 반영된 사상 최고치의 약 0.2% 아래에 있고, 이번 주는 소식이 아주 많이 나오는 주입니다.",
       "base": {
         "year_start": 6846.18,
         "high_1y": 7798.99
@@ -150,87 +150,87 @@
         {
           "en": "Fear gauge",
           "ko": "공포 지수",
-          "v_en": "14.63, calm",
-          "v_ko": "14.63, 안정"
+          "v_en": "14.25, a 2026 low",
+          "v_ko": "14.25, 올해 최저"
         }
       ],
-      "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to \"how did the market do?\" On Thursday it rose <b>0.65%</b> to <b>7,798.99</b> — the highest it has ever closed, and the first time it has been above 7,800 at any point in a trading day. The push came from cheaper petrol rather than from technology: wholesale prices did not rise at all in July, oil fell for the first time in a week and a half, and borrowing rates eased. For the year so far it is <b>up about 13.9%</b>.",
-      "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. \"시장이 어땠나?\"에 대한 가장 간단한 답입니다. 목요일에는 <b>0.65%</b> 올라 <b>7,798.99</b>가 됐습니다. 역대 가장 높은 종가이고, 장중에 7,800을 넘어선 것도 처음입니다. 밀어 올린 힘은 기술주가 아니라 싸진 기름값이었습니다. 7월 도매물가가 전혀 오르지 않았고, 유가는 열흘 넘게 만에 처음으로 내렸으며, 금리도 진정됐습니다. 올해 들어서는 <b>약 13.9% 올랐습니다</b>.",
-      "bull_en": "The inflation picture keeps improving. Consumer prices came in mild on Wednesday and wholesale prices did not rise at all in July, so the case for the Federal Reserve raising rates in September has thinned — traders now put that at about one in three, down from roughly one in two a week ago. Oil, which had risen six sessions running and was the main argument against the calm, turned around on Thursday and Brent is back near $87. Borrowing rates fell with it. The fear gauge is 14.63, which means investors are relaxed rather than braced. The index closed at a record and is up about 4.1% for August.",
-      "bull_ko": "물가 그림이 계속 좋아지고 있습니다. 수요일에 소비자물가가 순하게 나왔고 7월 도매물가는 아예 오르지 않아, 연방준비제도가 9월에 금리를 올릴 것이라는 쪽의 근거가 얇아졌습니다. 시장은 그 가능성을 일주일 전 절반 남짓에서 지금은 약 3분의 1로 보고 있습니다. 엿새 연속 올라 지금의 안정에 대한 가장 큰 반론이었던 유가도 목요일에 방향을 돌려 브렌트유가 87달러 부근으로 내려왔고, 금리도 함께 내렸습니다. 공포 지수는 14.63으로, 투자자들이 긴장하기보다 편안한 상태임을 보여 줍니다. 지수는 사상 최고 종가로 마쳤고 8월 누적 약 4.1% 상승입니다.",
-      "bear_en": "A record close means a lot of good news is already in the price, and the last two nights have shown what that costs. Cisco reported the best quarter in its history and fell 8.4%. Applied Materials reported record sales and guidance well above forecasts and is down about 6% before this morning's bell. Neither result was bad; both share prices had simply already assumed it. Note also what actually lifted the index on Thursday — cheaper petrol, which is welcome but is not something anyone controls, and which can reverse as fast as it arrived. The Strait of Hormuz is still effectively shut. And long-term government bonds still pay about 5.21% with far less risk than shares.",
-      "bear_ko": "사상 최고 종가라는 것은 좋은 소식이 이미 가격에 많이 들어가 있다는 뜻이고, 지난 이틀 밤이 그 대가를 보여 줬습니다. 시스코는 회사 역사상 최고 분기를 발표하고 8.4% 내렸습니다. 어플라이드 머티어리얼즈는 사상 최대 매출과 예상을 크게 웃도는 전망을 내놓고도 오늘 개장 전 약 6% 내려 있습니다. 두 실적 모두 나쁘지 않았습니다. 다만 주가가 이미 그것을 가정하고 있었을 뿐입니다. 목요일에 지수를 실제로 밀어 올린 것이 무엇이었는지도 함께 보십시오. 싸진 기름값이었는데, 반가운 일이지만 누가 통제할 수 있는 것이 아니고 올 때만큼 빠르게 되돌아갈 수도 있습니다. 호르무즈 해협은 사실상 여전히 닫혀 있습니다. 그리고 장기 국채는 주식보다 훨씬 적은 위험으로 여전히 약 5.21%를 줍니다."
+      "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to \"how did the market do?\" On Friday it slipped <b>0.17%</b> to <b>7,785.76</b> — one day after the highest close in its history — because two readings on the American shopper came in weak: people spent less in July, and households told a survey they feel worse than they have in months. It still finished the week higher, its <b>third weekly gain in a row</b>, and for the year so far it is <b>up about 13.7%</b>.",
+      "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. \"시장이 어땠나?\"에 대한 가장 간단한 답입니다. 금요일에는 <b>0.17%</b> 내려 <b>7,785.76</b>이 됐습니다. 역대 최고 종가를 기록한 바로 다음 날이었는데, 미국 소비자에 관한 수치 두 개가 약하게 나왔기 때문입니다. 사람들이 7월에 돈을 덜 썼고, 가계는 조사에서 몇 달 만에 가장 어두운 심리를 보였습니다. 그래도 주간으로는 올라 <b>3주 연속 주간 상승</b>이고, 올해 들어서는 <b>약 13.7% 올랐습니다</b>.",
+      "bull_en": "The market itself is remarkably calm: on a day of bad news the fear gauge closed at 14.25, its lowest of 2026 — investors are relaxed rather than braced. Inflation at the wholesale level did not rise at all in July, and Friday's weak data nudged the odds of a September rate rise down, to about one in three. The index has now climbed three weeks in a row, its longest run since May, and sits within a fraction of its record. And the case against it rests, so far, on just two survey-heavy readings — the big store chains report their own results this week, and those are hard numbers that could tell a better story about the shopper.",
+      "bull_ko": "시장 자체는 놀랄 만큼 차분합니다. 나쁜 소식이 나온 날인데도 공포 지수는 14.25로 올해 가장 낮은 종가였습니다. 투자자들이 긴장하기보다 편안하다는 뜻입니다. 도매 단계의 물가는 7월에 전혀 오르지 않았고, 금요일의 약한 지표는 9월 금리 인상 가능성을 오히려 약 3분의 1로 낮췄습니다. 지수는 3주 연속 올라 5월 이후 가장 긴 흐름이고, 사상 최고치와의 거리도 아주 작습니다. 그리고 반대쪽 근거는 아직 조사 성격이 짙은 수치 두 개뿐입니다. 이번 주에 대형 유통업체들이 직접 실적을 내놓는데, 그것은 실제 장부의 숫자이고 소비자에 대해 더 나은 이야기를 들려줄 수도 있습니다.",
+      "bear_en": "A price this close to a record means the good news is already paid for, and last week showed the two ways that can hurt. First, the shopper: people spent less in July and told the Michigan survey they expect prices to rise 4.3% over the next year — spending less while bracing for higher prices is the mix that pushed borrowing rates up on a bad-news day, the 10-year to about 4.7% and the 30-year to 5.27%. Long-term government bonds now pay about 5.27% with far less risk than shares. Second, the pattern: two companies reported record results and their shares fell anyway — Cisco down 8.4% Thursday, Applied Materials down 5.1% Friday. Oil is climbing again too, back near $88.50, with the Strait of Hormuz still effectively shut.",
+      "bear_ko": "사상 최고치에 이렇게 가까운 가격은 좋은 소식의 값이 이미 치러져 있다는 뜻이고, 지난주는 그것이 아플 수 있는 두 가지 길을 보여 줬습니다. 첫째는 소비자입니다. 사람들이 7월에 돈을 덜 썼고, 미시간대 조사에서는 앞으로 1년 물가가 4.3% 오를 것으로 본다고 답했습니다. 덜 쓰면서 물가 상승에 대비하는 이 조합이, 나쁜 소식이 나온 날에 금리를 밀어 올렸습니다. 10년물은 약 4.7%, 30년물은 5.27%가 됐습니다. 장기 국채는 이제 주식보다 훨씬 적은 위험으로 약 5.27%를 줍니다. 둘째는 반복되는 규칙입니다. 두 회사가 사상 최고 실적을 내고도 주가가 내렸습니다. 시스코는 목요일에 8.4%, 어플라이드 머티어리얼즈는 금요일에 5.1% 하락했습니다. 유가도 다시 올라 88.50달러 부근이고, 호르무즈 해협은 사실상 여전히 닫혀 있습니다."
     },
     "qqq": {
-      "price": "$732.07",
-      "day_arrow": "▲",
-      "day_en": "+1.16% on Thursday",
-      "day_ko": "목요일 +1.16%",
-      "day_dir": "up",
+      "price": "$731.07",
+      "day_arrow": "▼",
+      "day_en": "−0.14% on Friday",
+      "day_ko": "금요일 −0.14%",
+      "day_dir": "dn",
       "week_arrow": "▲",
-      "week_en": "≈ +1.25% so far this week",
-      "week_ko": "이번 주 ≈ +1.25%",
+      "week_en": "≈ +1.11% last week",
+      "week_ko": "지난주 ≈ +1.11%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +6.41% so far in August",
-      "month_ko": "8월 들어 ≈ +6.41%",
+      "month_en": "≈ +6.26% so far in August",
+      "month_ko": "8월 들어 ≈ +6.26%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 2.2%",
+      "drawdown": "≈ 2.3%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 2.2%",
-      "drawdown_fact_ko": "≈ 2.2%",
-      "take_en": "Memory chips led it up",
-      "take_ko": "메모리 반도체가 끌어올렸습니다",
-      "take_tone": "c-pos",
+      "drawdown_fact_en": "≈ 2.3%",
+      "drawdown_fact_ko": "≈ 2.3%",
+      "take_en": "Steady just under its high",
+      "take_ko": "최고가 바로 아래에서 안정",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Up <b>1.16%</b> to $732.07 on Thursday, its best day of the week, and it is now only about <b>2.2%</b> below its best price of the past year. Two things helped. Borrowing rates eased after the wholesale-price report, and this fund is the one on your board that rates move hardest — the 10-year rate fell to <b>4.64%</b> and the 30-year to 5.21%. And the chip shares inside it rose, though the leadership has moved. It was the <b>memory</b> makers doing the work: <b>Micron</b> rose about <b>4.2%</b> and closed above $949, back above a trillion dollars in company value, and SanDisk rose about 16%, while Nvidia — the fund's largest holding — added only 0.54%. Two of the fund's own members went the other way and both are worth noticing. <b>Cisco</b> fell <b>8.40%</b> to $113.47, a bigger fall than the 6% it showed straight after Wednesday night's record results. And after Thursday's close <b>Applied Materials</b> reported record sales, the fastest growth in its history and guidance well above expectations — and the shares fell about <b>6%</b> in the hours after. That is two nights running.",
-      "note_ko": "목요일에 <b>1.16%</b> 올라 732.07달러가 됐습니다. 이번 주 가장 좋은 하루였고, 1년 최고가보다 약 <b>2.2%</b> 낮은 자리까지 왔습니다. 두 가지가 도왔습니다. 도매물가 보고서 뒤 금리가 진정됐는데, 표에 있는 보유 종목 가운데 금리가 가장 세게 움직이는 것이 이 펀드입니다. 10년물은 <b>4.64%</b>, 30년물은 5.21%로 내렸습니다. 그리고 안에 든 반도체 주식이 올랐는데, 앞장선 얼굴이 바뀌었습니다. 일을 한 것은 <b>메모리</b> 회사들이었습니다. <b>마이크론</b>이 약 <b>4.2%</b> 올라 949달러 위에서 마감하며 회사 가치가 다시 1조 달러를 넘었고, 샌디스크는 약 16% 올랐습니다. 반면 이 펀드에서 비중이 가장 큰 엔비디아는 0.54% 오르는 데 그쳤습니다. 반대로 간 회사도 둘 있었고 둘 다 눈여겨보실 만합니다. <b>시스코</b>는 <b>8.40%</b> 내린 113.47달러로 마감했는데, 수요일 밤 사상 최고 실적 직후에 보였던 6%보다 더 큰 낙폭이었습니다. 그리고 목요일 장 마감 후 <b>어플라이드 머티어리얼즈</b>가 사상 최대 매출과 회사 역사상 가장 빠른 성장, 예상을 크게 웃도는 전망을 내놓았는데도 주가는 그 뒤 몇 시간 사이 약 <b>6%</b> 내렸습니다. 이틀 연속입니다.",
+      "note_en": "Down just <b>0.14%</b> to $731.07 on Friday — the smallest of dips on a day the economic news was poor — and it finished the completed week <b>up about 1.11%</b>. Two forces pulled against each other inside it. The <b>memory</b> chip makers kept running: <b>Micron</b> rose <b>2.30%</b> to $971.66, taking its company value to about $1.1 trillion, and <b>SanDisk</b> rose <b>7.39%</b>, while Nvidia — the fund's largest holding — barely moved. Pulling the other way was <b>Applied Materials</b>, which also sits in this fund: it reported record sales on Thursday night and closed Friday down <b>5.12%</b> at $507.18, the second member in two days, after Cisco, to deliver record results and be marked down for them. And the thing this fund is most sensitive to went the wrong way. Borrowing rates <b>rose</b> on the weak-data day — the 10-year to about <b>4.70%</b> — because households told the Michigan survey they expect prices to rise faster, not slower. That the fund still only slipped 0.14% is the memory rally doing quiet work underneath.",
+      "note_ko": "금요일에 <b>0.14%</b> 내려 731.07달러가 됐습니다. 나쁜 경제 소식이 나온 날치고는 아주 작은 하락이었고, 끝난 한 주로는 <b>약 1.11% 상승</b>으로 마쳤습니다. 그 안에서 두 힘이 서로 반대로 당겼습니다. <b>메모리</b> 반도체 회사들은 계속 달렸습니다. <b>마이크론</b>이 <b>2.30%</b> 올라 971.66달러가 되며 회사 가치가 약 1조 1,000억 달러로 커졌고, <b>샌디스크</b>는 <b>7.39%</b> 올랐습니다. 반면 이 펀드에서 비중이 가장 큰 엔비디아는 거의 움직이지 않았습니다. 반대쪽에서 당긴 것은 역시 이 펀드에 든 <b>어플라이드 머티어리얼즈</b>였습니다. 목요일 밤 사상 최대 매출을 발표하고도 금요일에 <b>5.12%</b> 내린 507.18달러로 마감했습니다. 시스코에 이어 이틀 사이 두 번째로, 사상 최고 실적을 내고도 값이 깎인 이 펀드의 구성원입니다. 그리고 이 펀드가 가장 민감하게 반응하는 것이 나쁜 방향으로 움직였습니다. 약한 지표가 나온 날인데 금리가 <b>올라</b> 10년물이 약 <b>4.70%</b>가 됐습니다. 가계가 미시간대 조사에서 물가가 더 빨리 오를 것으로 본다고 답했기 때문입니다. 그런데도 펀드가 0.14% 하락에 그친 것은, 메모리 상승이 그 아래에서 조용히 일을 했다는 뜻입니다.",
       "ticker": "QQQ",
       "name_en": "The 100 biggest tech companies",
       "name_ko": "가장 큰 기술 기업 100개",
-      "week_fact_en": "up ≈ 1.25%",
-      "week_fact_ko": "≈ 1.25% 상승",
+      "week_fact_en": "up ≈ 1.11%",
+      "week_fact_ko": "≈ 1.11% 상승",
       "news_en": [
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Slipped just 0.14% to $731.07 on a day of weak shopper data, and finished the week up about 1.1%.</b> The <b>memory</b> makers cushioned it: <b>Micron</b> rose 2.30% to $971.66 — about $1.1 trillion in company value — and <b>SanDisk</b> rose 7.39%, while Nvidia barely moved."
+        },
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Applied Materials, a member of this fund, closed down 5.12% the day after record results.</b> The second in two days, after <b>Cisco</b>, to report a record quarter and be marked down for it. Borrowing rates also rose, the 10-year to about <b>4.70%</b> — the direction that hurts this fund most."
+        },
         {
           "dt": "Aug 13",
           "tx": "<b>Rose 1.16% to $732.07, its best day of the week.</b> Borrowing rates eased after the wholesale-price report, and the <b>memory</b> chip makers led: <b>Micron</b> up about <b>4.2%</b> and SanDisk about 16%, while Nvidia added only 0.54%."
         },
         {
           "dt": "Aug 13",
-          "tx": "<b>Applied Materials reported record results after the close — and fell about 6%.</b> Sales of <b>$9.1 billion</b>, up 25% in a year, the fastest growth in company history, and next-quarter guidance well above forecasts. It sits in this fund. That is the second night running."
-        },
-        {
-          "dt": "Aug 13",
           "tx": "<b>Cisco fell 8.40% to $113.47</b> — a bigger fall than the 6% it showed straight after Wednesday night's record results. It also sits in this fund."
-        },
-        {
-          "dt": "Aug 11",
-          "tx": "<b>Fell 0.34% to $718.45 even though chip shares rose about 0.9%.</b> <b>Alphabet</b> dropped about 3.8% after saying it will put up to <b>$205 billion</b> into AI equipment this year and had borrowed <b>$25 billion</b> to help pay for it. Apple and Amazon fell with it."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> the two nights just gone, and then <b>Nvidia on Wednesday, August 26</b>. Applied Materials was supposed to be the clean read on chip demand before Nvidia reports, and on the numbers it was an excellent one — record sales, the fastest growth in its history, and guidance for the current quarter roughly <b>$700 million</b> above what analysts had pencilled in. The shares fell about 6% anyway. Cisco did the same thing the night before. Several of this fund's largest members are standing in that same position: they have risen a long way on the expectation of exactly the results they are now delivering, and the market has started treating delivery as the minimum rather than the reward. The gentler news is on rates, which have finally moved the right way: the 10-year eased to <b>4.64%</b> and the 30-year to 5.21% after wholesale prices came in flat. Rates move this fund harder than they move anything else you hold, so that matters more here than on the rest of the board.",
+      "verdict_en": "<b>What I'd watch:</b> two dates, one near and one bigger. Near: the Federal Reserve publishes the <b>minutes of its July meeting on Wednesday at 11 in the morning Pacific time</b>. Rates move this fund harder than anything else you hold, they rose on Friday despite weak data, and three officials voted to raise rates at that July meeting — the minutes show how close the argument really was. Bigger: <b>Nvidia, this fund's largest holding, reports on Wednesday, August 26</b>. The test it walks into is now well documented inside this very fund: Cisco reported the best quarter in its history and fell 8.40%; Applied Materials guided roughly <b>$700 million</b> above expectations and fell 5.12%. Delivery is being treated as the minimum, not the reward. The gentler thread is <b>memory</b>: Micron and SanDisk are carrying the chip side of this fund day after day, which spreads the load — for the moment this is a bet on the whole shortage in memory chips as well as on one company's AI chips.",
       "news_ko": [
         {
-          "dt": "8월 13일",
-          "tx": "<b>1.16% 올라 732.07달러가 됐고, 이번 주 가장 좋은 하루였습니다.</b> 도매물가 보고서 뒤 금리가 진정됐고, <b>메모리</b> 반도체가 앞장섰습니다. <b>마이크론</b>이 약 <b>4.2%</b>, 샌디스크가 약 16% 오른 반면 엔비디아는 0.54% 상승에 그쳤습니다."
+          "dt": "8월 14일",
+          "tx": "<b>약한 소비 지표가 나온 날 0.14%만 내려 731.07달러가 됐고, 주간으로는 약 1.1% 상승으로 마쳤습니다.</b> <b>메모리</b> 회사들이 받쳐 줬습니다. <b>마이크론</b>이 2.30% 올라 971.66달러(회사 가치 약 1조 1,000억 달러)가 됐고 <b>샌디스크</b>는 7.39% 올랐습니다. 엔비디아는 거의 움직이지 않았습니다."
+        },
+        {
+          "dt": "8월 14일",
+          "tx": "<b>이 펀드에 든 어플라이드 머티어리얼즈가 사상 최고 실적 다음 날 5.12% 내려 마감했습니다.</b> <b>시스코</b>에 이어 이틀 사이 두 번째로, 최고 실적을 내고도 값이 깎인 경우입니다. 금리도 올라 10년물이 약 <b>4.70%</b>가 됐는데, 이 펀드에 가장 아픈 방향입니다."
         },
         {
           "dt": "8월 13일",
-          "tx": "<b>어플라이드 머티어리얼즈가 장 마감 후 사상 최고 실적을 내고도 약 6% 내렸습니다.</b> 매출 <b>91억 달러</b>로 1년 사이 25% 증가, 회사 역사상 가장 빠른 성장, 다음 분기 전망도 예상을 크게 웃돌았습니다. 이 펀드에 들어 있는 회사입니다. 이틀 연속입니다."
+          "tx": "<b>1.16% 올라 732.07달러가 됐고, 그 주 가장 좋은 하루였습니다.</b> 도매물가 보고서 뒤 금리가 진정됐고, <b>메모리</b> 반도체가 앞장섰습니다. <b>마이크론</b>이 약 <b>4.2%</b>, 샌디스크가 약 16% 오른 반면 엔비디아는 0.54% 상승에 그쳤습니다."
         },
         {
           "dt": "8월 13일",
           "tx": "<b>시스코는 8.40% 내린 113.47달러로 마감했습니다.</b> 수요일 밤 사상 최고 실적 직후에 보였던 6%보다 더 큰 낙폭입니다. 이 회사도 이 펀드에 들어 있습니다."
-        },
-        {
-          "dt": "8월 11일",
-          "tx": "<b>반도체 주식이 약 0.9% 올랐는데도 0.34% 내려 718.45달러가 됐습니다.</b> <b>알파벳</b>이 올해 AI 장비에 최대 <b>2,050억 달러</b>를 넣겠다고 밝히고 그 자금을 대려 <b>250억 달러</b>를 빌렸다고 하면서 약 3.8% 떨어졌습니다. 애플과 아마존도 함께 내렸습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> 방금 지나간 이틀 밤, 그리고 <b>8월 26일 수요일 엔비디아</b>입니다. 어플라이드 머티어리얼즈는 엔비디아 발표 전에 반도체 수요를 깨끗하게 볼 수 있는 자료가 될 예정이었고, 숫자만 보면 대단히 좋았습니다. 사상 최대 매출, 회사 역사상 가장 빠른 성장, 그리고 이번 분기 전망은 분석가들이 잡아 둔 것보다 약 <b>7억 달러</b> 높았습니다. 그런데도 주가는 약 6% 내렸습니다. 그 전날 밤 시스코도 같은 일을 겪었습니다. 이 펀드에서 비중이 큰 회사 여럿이 같은 자리에 서 있습니다. 지금 내놓고 있는 바로 그 실적을 기대하며 주가가 이미 크게 올라 있고, 시장은 그 실적을 보상이 아니라 최소한으로 여기기 시작했습니다. 더 부드러운 소식은 금리 쪽입니다. 마침내 좋은 방향으로 움직였습니다. 도매물가가 보합으로 나온 뒤 10년물은 <b>4.64%</b>, 30년물은 5.21%로 내렸습니다. 금리는 보유 종목 중 이 펀드를 가장 세게 움직이므로, 표의 나머지보다 이쪽에서 더 중요합니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> 날짜 두 개입니다. 하나는 가깝고 하나는 더 큽니다. 가까운 것은 <b>수요일 서부 시각 오전 11시에 나오는 연방준비제도 7월 회의 의사록</b>입니다. 금리는 보유 종목 중 이 펀드를 가장 세게 움직이는데, 금요일에는 약한 지표에도 금리가 올랐고, 그 7월 회의에서는 세 명이 금리 인상에 표를 던졌습니다. 논쟁이 실제로 얼마나 팽팽했는지가 의사록에서 드러납니다. 더 큰 것은 <b>8월 26일 수요일, 이 펀드에서 비중이 가장 큰 엔비디아의 실적 발표</b>입니다. 엔비디아가 마주할 시험은 바로 이 펀드 안에 이미 기록돼 있습니다. 시스코는 회사 역사상 최고 분기를 내고 8.40% 내렸고, 어플라이드 머티어리얼즈는 예상보다 약 <b>7억 달러</b> 높은 전망을 내놓고도 5.12% 내렸습니다. 시장은 실적 달성을 보상이 아니라 최소한으로 여기고 있습니다. 더 부드러운 줄기는 <b>메모리</b>입니다. 마이크론과 샌디스크가 날마다 이 펀드의 반도체 쪽을 끌고 가면서 짐이 나눠졌습니다. 지금 이 펀드는 한 회사의 AI 반도체만이 아니라 메모리 반도체 품귀 전체에 대한 베팅이기도 합니다.",
       "base": {
         "high_1y": 748.65,
         "low_1y": 551.68
@@ -257,26 +257,26 @@
           "auto": "range"
         }
       ],
-      "plain_en": "A single fund holding the 100 largest non-bank companies on the Nasdaq — mostly technology. Buying one share gives you a slice of all of them. It rose <b>1.16%</b> on Thursday to $732.07, its best day of the week, helped by easing borrowing rates and by the <b>memory</b> chip makers, who have taken over the lead from Nvidia. It is now about <b>2.2%</b> below its best price of the past year and up about 6.4% for August. Its largest holding, Nvidia, reports results on August 26.",
-      "plain_ko": "나스닥에 상장된 회사 가운데 금융회사를 뺀 가장 큰 100개(대부분 기술 기업)를 한 번에 담은 펀드입니다. 이 펀드 한 주를 사면 그 회사들을 조금씩 나눠 갖는 셈입니다. 목요일에는 <b>1.16%</b> 올라 732.07달러가 됐고 이번 주 가장 좋은 하루였습니다. 금리가 진정된 것과, 엔비디아 대신 앞장서기 시작한 <b>메모리</b> 반도체 회사들이 도왔습니다. 1년 최고가보다 약 <b>2.2%</b> 낮고, 8월 누적으로는 약 6.4% 상승입니다. 비중이 가장 큰 엔비디아는 8월 26일에 실적을 발표합니다.",
-      "bull_en": "Almost every big company in this fund has now reported, and the results keep beating expectations — Applied Materials on Thursday night guided the current quarter roughly $700 million above what analysts expected. The demand is visible in more than one place: the memory makers are running hot, with Micron back above a trillion dollars in company value, and the companies that buy and run AI equipment reported strongly on Wednesday. Rates have finally moved the right way too. Wholesale prices did not rise at all in July, the 10-year eased to about 4.64% and the 30-year to 5.21%, and this is the holding of yours that gains most when they fall. The one report still to come is Nvidia, on August 26.",
-      "bull_ko": "이 펀드에 담긴 큰 회사들 거의 전부가 실적 발표를 마쳤고, 결과는 계속 기대를 넘고 있습니다. 목요일 밤 어플라이드 머티어리얼즈는 이번 분기 전망을 분석가 예상보다 약 7억 달러 높게 제시했습니다. 수요가 한 곳이 아니라 여러 곳에서 보입니다. 메모리 회사들이 뜨겁게 달아올라 마이크론의 회사 가치가 다시 1조 달러를 넘었고, AI 장비를 사서 돌리는 회사들도 수요일에 좋은 실적을 냈습니다. 금리도 마침내 좋은 방향으로 움직였습니다. 7월 도매물가가 전혀 오르지 않으면서 10년물은 약 4.64%, 30년물은 5.21%로 내렸는데, 보유 종목 중 금리가 내릴 때 가장 크게 덕을 보는 것이 이 펀드입니다. 남은 발표는 8월 26일 엔비디아입니다.",
-      "bear_en": "The fund is only about 2.2% below its 1-year high, so a lot of good news is back in the price — and the last two nights showed what that costs. Cisco, one of its holdings, reported the best quarter in its history and fell 8.4% the next day. Applied Materials, another holding, reported record sales and the fastest growth in its history and is down about 6% before this morning's bell. Neither was a bad result. Both shares had already risen a long way on exactly those expectations, and several more members of this fund are standing in the same place. Notice too that the market's push on Thursday came from cheaper petrol rather than from anything technology did — and petrol is not something anyone controls. Alphabet's Tuesday fall is still the other half of it: the market has started pricing the AI bill as well as the promise.",
-      "bear_ko": "이 펀드는 1년 최고가보다 약 2.2% 낮을 뿐입니다. 좋은 소식이 다시 가격에 많이 들어가 있다는 뜻이고, 지난 이틀 밤이 그 대가를 보여 줬습니다. 이 펀드가 담고 있는 시스코는 회사 역사상 최고 분기를 발표하고 다음 날 8.4% 내렸습니다. 역시 담겨 있는 어플라이드 머티어리얼즈는 사상 최대 매출과 역사상 가장 빠른 성장을 내놓고도 오늘 개장 전 약 6% 내려 있습니다. 둘 다 나쁜 실적이 아니었습니다. 바로 그 기대로 주가가 이미 크게 올라 있었을 뿐이고, 이 펀드 안의 다른 회사 여럿이 같은 자리에 서 있습니다. 목요일에 시장을 밀어 올린 힘이 기술주가 한 일이 아니라 싸진 기름값이었다는 점도 함께 보십시오. 기름값은 누가 통제할 수 있는 것이 아닙니다. 화요일 알파벳의 하락은 그 나머지 절반입니다. 시장이 약속만이 아니라 AI 청구서에도 값을 매기기 시작했습니다."
+      "plain_en": "A single fund holding the 100 largest non-bank companies on the Nasdaq — mostly technology. Buying one share gives you a slice of all of them. On Friday it slipped just <b>0.14%</b> to $731.07 on a day of weak economic news, and it finished the week <b>up about 1.1%</b> — the <b>memory</b> chip makers, Micron and SanDisk, have taken over the lead from Nvidia and held it again. It sits about <b>2.3%</b> below its best price of the past year and is up about 6.3% for August. Its largest holding, Nvidia, reports results on August 26.",
+      "plain_ko": "나스닥에 상장된 회사 가운데 금융회사를 뺀 가장 큰 100개(대부분 기술 기업)를 한 번에 담은 펀드입니다. 이 펀드 한 주를 사면 그 회사들을 조금씩 나눠 갖는 셈입니다. 금요일에는 나쁜 경제 소식이 나온 날인데도 <b>0.14%</b>만 내려 731.07달러가 됐고, 주간으로는 <b>약 1.1% 상승</b>으로 마쳤습니다. 엔비디아 대신 앞장선 <b>메모리</b> 반도체 회사들, 곧 마이크론과 샌디스크가 이날도 그 자리를 지켰습니다. 1년 최고가보다 약 <b>2.3%</b> 낮고, 8월 누적으로는 약 6.3% 상승입니다. 비중이 가장 큰 엔비디아는 8월 26일에 실적을 발표합니다.",
+      "bull_en": "Almost every big company in this fund has now reported, and the numbers themselves keep beating expectations — Applied Materials guided the current quarter roughly $700 million above forecasts, and the companies that buy and run AI equipment beat the week before. The demand is visible in more than one place, and the newest place is memory: those chips are in short supply, their prices are rising steeply, and Micron — above a trillion dollars in company value — and SanDisk are lifting this fund day after day. It rose about 1.1% in a week when the economic news was poor, which is resilience rather than luck. And the one big report still to come belongs to its largest holding: Nvidia, on August 26.",
+      "bull_ko": "이 펀드에 담긴 큰 회사들 거의 전부가 실적 발표를 마쳤고, 숫자 자체는 계속 기대를 넘고 있습니다. 어플라이드 머티어리얼즈는 이번 분기 전망을 예상보다 약 7억 달러 높게 제시했고, AI 장비를 사서 돌리는 회사들도 그 전주에 기대를 넘었습니다. 수요가 여러 곳에서 보이는데, 가장 새로운 곳이 메모리입니다. 메모리 반도체는 공급이 달리고 값이 가파르게 오르고 있으며, 회사 가치 1조 달러가 넘는 마이크론과 샌디스크가 날마다 이 펀드를 끌어올리고 있습니다. 나쁜 경제 소식이 나온 한 주에 약 1.1% 올랐다는 것은 운이 아니라 버티는 힘입니다. 그리고 남아 있는 가장 큰 발표는 비중이 가장 큰 엔비디아의 것, 8월 26일입니다.",
+      "bear_en": "The fund is only about 2.3% below its 1-year high, so a lot of good news is in the price — and its own members keep demonstrating the cost. Cisco reported the best quarter in its history and fell 8.40% the next day; Applied Materials reported record sales and closed 5.12% lower the day after. Neither result was bad; both prices had already assumed it, and several more members stand in the same place — Nvidia above all, up about 12.2% this month heading into its August 26 report. Borrowing rates are the other weight. They rose on Friday, the 10-year to about 4.70%, on a day the economic data was weak, because households expect faster price rises — and this fund is hit hardest of your holdings when rates climb. If the store chains reporting this week echo the weak shopper data, the economy underneath the technology story looks softer too.",
+      "bear_ko": "이 펀드는 1년 최고가보다 약 2.3% 낮을 뿐입니다. 좋은 소식이 가격에 많이 들어가 있다는 뜻이고, 그 대가를 이 펀드의 구성원들이 계속 보여 주고 있습니다. 시스코는 회사 역사상 최고 분기를 발표하고 다음 날 8.40% 내렸고, 어플라이드 머티어리얼즈는 사상 최대 매출을 내고도 다음 날 5.12% 내려 마감했습니다. 둘 다 나쁜 실적이 아니었습니다. 주가가 이미 그것을 가정하고 있었을 뿐이고, 이 펀드 안의 다른 회사 여럿이 같은 자리에 서 있습니다. 그중에서도 엔비디아는 이번 달에만 약 12.2% 오른 채 8월 26일 발표를 향해 가고 있습니다. 다른 무게는 금리입니다. 금요일에 경제 지표가 약했는데도 가계가 물가 상승을 더 크게 예상한다는 이유로 금리가 올라 10년물이 약 4.70%가 됐습니다. 금리가 오를 때 보유 종목 중 가장 아픈 것이 이 펀드입니다. 이번 주에 실적을 내는 유통업체들마저 약한 소비 지표와 같은 이야기를 하면, 기술주 이야기 아래의 경제도 더 물러 보이게 됩니다."
     },
     "nvda": {
-      "price": "$225.30",
-      "day_arrow": "▲",
-      "day_en": "+0.54% on Thursday",
-      "day_ko": "목요일 +0.54%",
-      "day_dir": "up",
+      "price": "$225.16",
+      "day_arrow": "▼",
+      "day_en": "−0.06% on Friday",
+      "day_ko": "금요일 −0.06%",
+      "day_dir": "dn",
       "week_arrow": "▲",
-      "week_en": "≈ +0.60% so far this week",
-      "week_ko": "이번 주 ≈ +0.60%",
+      "week_en": "≈ +0.54% last week",
+      "week_ko": "지난주 ≈ +0.54%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +12.23% so far in August",
-      "month_ko": "8월 들어 ≈ +12.23%",
+      "month_en": "≈ +12.16% so far in August",
+      "month_ko": "8월 들어 ≈ +12.16%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
       "drawdown": "≈ 4.8%",
@@ -289,51 +289,51 @@
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Nvidia rose <b>$1.21</b> on Thursday to <b>$225.30</b>, a gain of 0.54%. It went up, but it was left behind by the industry it leads. <b>Micron</b>, which makes the memory that sits beside Nvidia's chips, rose about <b>4.2%</b> to close above $949 and is worth more than a trillion dollars again. <b>SanDisk</b>, another memory maker, rose about <b>16%</b>. Nvidia managed a quarter of Micron's move. That is not a warning on its own — a share that has risen about <b>12.2%</b> in eight sessions is entitled to a quiet day — but it is a change from the pattern of the last fortnight, when Nvidia was the name that moved first. What matters more arrived after the close. <b>Applied Materials</b>, which sells the machines every chip factory is built from and has no stake in Nvidia, reported record sales of <b>$9.1 billion</b>, up 25% in a year and the fastest growth in its history, and guided the current quarter roughly <b>$700 million</b> above what analysts expected. The shares fell about <b>6%</b>. The night before, Cisco did the same. Nvidia reports on <b>August 26</b>, twelve days away, having risen 12.2% this month into it. The shares are about <b>4.8%</b> below their record of $236.54, set May 14.",
-      "note_ko": "엔비디아는 목요일에 <b>1.21달러</b> 올라 <b>225.30달러</b>가 됐습니다. 0.54% 상승입니다. 오르기는 했지만, 자신이 이끄는 업종에 뒤처졌습니다. 엔비디아 반도체 옆에 들어가는 메모리를 만드는 <b>마이크론</b>은 약 <b>4.2%</b> 올라 949달러 위에서 마감했고 회사 가치가 다시 1조 달러를 넘었습니다. 또 다른 메모리 회사 <b>샌디스크</b>는 약 <b>16%</b> 올랐습니다. 엔비디아는 마이크론의 4분의 1 정도 움직였습니다. 그것만으로 경고는 아닙니다. 여덟 거래일 동안 약 <b>12.2%</b> 오른 주식에 조용한 하루쯤은 있을 수 있습니다. 다만 엔비디아가 늘 먼저 움직이던 지난 2주의 흐름과는 달라졌습니다. 더 중요한 것은 장 마감 후에 나왔습니다. 모든 반도체 공장을 짓는 장비를 팔고 엔비디아와 지분 관계가 없는 <b>어플라이드 머티어리얼즈</b>가 사상 최대인 <b>91억 달러</b> 매출을 발표했습니다. 1년 사이 25% 증가로 회사 역사상 가장 빠른 성장이었고, 이번 분기 전망도 분석가 예상보다 약 <b>7억 달러</b> 높았습니다. 그런데 주가는 약 <b>6%</b> 내렸습니다. 그 전날 밤에는 시스코가 같은 일을 겪었습니다. 엔비디아는 <b>8월 26일</b>, 열이틀 뒤에 실적을 발표하는데 이번 달에만 12.2% 오른 채 그 자리로 가고 있습니다. 주가는 5월 14일에 세운 최고가 236.54달러보다 약 <b>4.8%</b> 낮습니다.",
+      "note_en": "Nvidia slipped <b>14 cents</b> on Friday to <b>$225.16</b> — a fall of 0.06%, which is to say it did not really move — and for a second day it was left behind by the industry it leads. <b>Micron</b> rose <b>2.30%</b> to $971.66, its company value now about <b>$1.1 trillion</b>, and <b>SanDisk</b> rose <b>7.39%</b>. The money going into chips is going to <b>memory</b>, where a shortage has prices rising steeply. Meanwhile the test waiting for Nvidia on <b>August 26</b> produced its clearest result yet. <b>Applied Materials</b>, which sells the machines every chip factory is built from and holds no stake in Nvidia, had reported record sales on Thursday night with guidance roughly <b>$700 million</b> above expectations — and closed Friday down <b>5.12%</b> at $507.18. That is two companies now, after Cisco, that delivered record results and were marked down in the full session that followed. Nvidia finished the completed week up about <b>0.54%</b>, the smallest weekly gain on your board, and goes into its own report up about <b>12.2%</b> for August and about <b>4.8%</b> below its record of $236.54, set May 14.",
+      "note_ko": "엔비디아는 금요일에 <b>14센트</b> 내려 <b>225.16달러</b>가 됐습니다. 0.06% 하락이니 사실상 움직이지 않은 것입니다. 그리고 이틀째, 자신이 이끄는 업종에 뒤처졌습니다. <b>마이크론</b>은 <b>2.30%</b> 올라 971.66달러가 됐고 회사 가치는 약 <b>1조 1,000억 달러</b>입니다. <b>샌디스크</b>는 <b>7.39%</b> 올랐습니다. 반도체로 들어가는 돈이 <b>메모리</b>로 가고 있습니다. 메모리는 공급이 달려 값이 가파르게 오르는 중입니다. 한편 <b>8월 26일</b> 엔비디아를 기다리는 시험은 가장 또렷한 결과를 내놓았습니다. 모든 반도체 공장을 짓는 장비를 팔고 엔비디아와 지분 관계가 없는 <b>어플라이드 머티어리얼즈</b>가 목요일 밤 사상 최대 매출과 예상보다 약 <b>7억 달러</b> 높은 전망을 발표했는데, 금요일에 <b>5.12%</b> 내린 507.18달러로 마감했습니다. 시스코에 이어 두 회사째, 사상 최고 실적을 내고도 그다음 완결된 거래일에 값이 깎인 것입니다. 엔비디아는 끝난 한 주를 약 <b>0.54%</b> 상승으로 마쳐 표에서 가장 작은 주간 상승이었고, 8월 들어 약 <b>12.2%</b> 오른 채, 5월 14일에 세운 최고가 236.54달러보다 약 <b>4.8%</b> 낮은 자리에서 자기 실적 발표를 향해 갑니다.",
       "ticker": "NVDA",
       "name_en": "Nvidia — makes AI chips",
       "name_ko": "엔비디아 — AI 반도체 제조",
-      "week_fact_en": "up ≈ 0.60%",
-      "week_fact_ko": "≈ 0.60% 상승",
+      "week_fact_en": "up ≈ 0.54%",
+      "week_fact_ko": "≈ 0.54% 상승",
       "news_en": [
         {
-          "dt": "Aug 13",
-          "tx": "<b>Rose 0.54% to $225.30 — up, but left behind by its own industry.</b> <b>Micron</b> rose about <b>4.2%</b> and is worth more than a trillion dollars again; <b>SanDisk</b> rose about 16%. The memory makers, not Nvidia, led the chip rally."
+          "dt": "Aug 14",
+          "tx": "<b>Slipped 0.06% to $225.16 while the memory makers ran again.</b> <b>Micron</b> rose 2.30% to $971.66 — about <b>$1.1 trillion</b> in company value — and <b>SanDisk</b> rose 7.39%. For a second day the chip money went to <b>memory</b>, not Nvidia. Its week, up about 0.5%, was the smallest gain on your board."
+        },
+        {
+          "dt": "Aug 14",
+          "tx": "<b>The full-session verdict on Applied Materials came in: down 5.12% at $507.18.</b> Record sales, guidance roughly <b>$700 million</b> above forecasts — and the shares were marked down anyway, the second such result in two days after Cisco. The same test waits for Nvidia on <b>August 26</b>."
         },
         {
           "dt": "Aug 13",
-          "tx": "<b>Applied Materials reported after the close and fell about 6%.</b> Record sales of <b>$9.1 billion</b>, up 25%, the fastest growth in its history, and guidance roughly <b>$700 million</b> above forecasts. It sells to the whole chip industry and has no stake in Nvidia — which is what makes the reaction, not the numbers, the news."
+          "tx": "<b>Rose 0.54% to $225.30 — up, but left behind by its own industry.</b> <b>Micron</b> rose about <b>4.2%</b> and reclaimed a trillion dollars in company value; <b>SanDisk</b> rose about 16%. The memory makers, not Nvidia, led the chip rally."
         },
         {
           "dt": "Aug 12",
           "tx": "<b>Rose 3.03% to $224.09, its best day in a week.</b> Three big buyers of its chips reported and all three beat expectations: <b>Super Micro</b> guided next year's sales to <b>$65–72 billion</b> and rose about 19%, <b>CoreWeave</b> about 19%, <b>Nebius</b> about 34%."
-        },
-        {
-          "dt": "Aug 10",
-          "tx": "<b>Fell 2.86% to $217.55 on the day of its biggest financing announcement.</b> It signed agreements with <b>Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR</b> to raise more than <b>$500 billion</b> from outside investors to pay for the computers its customers buy from it."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>Wednesday, August 26</b>, when Nvidia reports after the close, with the call at 2:00 in the afternoon Pacific time. Twelve days out. The reading I would carry into it changed on Thursday night, and it is not about demand. On demand, <b>Applied Materials</b> gave about as clear an answer as anyone could ask for: it sells equipment to every chip maker, it has no stake in Nvidia, and it reported record sales growing at the fastest rate in its history with guidance roughly <b>$700 million</b> above expectations. The chips are being bought. And the shares fell about <b>6%</b>. Cisco fell 8.4% on Thursday for the same reason. So the question for the 26th is no longer whether Nvidia's numbers will be good — the evidence says they will be — but whether good is still enough. Nvidia has risen about <b>12.2%</b> this month heading into its own report, which is precisely the position both of those companies were in. One other thing worth noting from Thursday: the money going into chips went to the <b>memory</b> makers rather than to Nvidia. That is a rotation inside the same story, not a rejection of it, but it is new.",
+      "verdict_en": "<b>What I'd watch:</b> <b>Wednesday, August 26</b> — a week on Wednesday — when Nvidia reports after the close, with the call at 2:00 in the afternoon Pacific time. The question to carry into it has not changed, but the evidence has hardened. On demand, <b>Applied Materials</b> gave about as clear an answer as anyone could ask for: record sales, the fastest growth in its history, guidance roughly <b>$700 million</b> above expectations. The chips are being bought. And the shares closed down <b>5.12%</b> in the next full session, just as Cisco fell 8.40% the day after its own record quarter. So the question for the 26th is no longer whether Nvidia's numbers will be good — the evidence says they will be — but whether good is still enough, and Nvidia walks in up about <b>12.2%</b> for the month, precisely the position both of those companies were in. The other thing to keep watching is the <b>memory</b> rotation, now two sessions old and still running: Thursday and Friday the chip money went to Micron and SanDisk while Nvidia stood still. A rotation inside the same story, not a rejection of it — but no longer one day's curiosity.",
       "news_ko": [
+        {
+          "dt": "8월 14일",
+          "tx": "<b>메모리 회사들이 다시 달리는 동안 0.06% 내려 225.16달러가 됐습니다.</b> <b>마이크론</b>은 2.30% 올라 971.66달러(회사 가치 약 <b>1조 1,000억 달러</b>)가 됐고 <b>샌디스크</b>는 7.39% 올랐습니다. 이틀째 반도체로 가는 돈이 엔비디아가 아니라 <b>메모리</b>로 갔습니다. 주간 약 0.5% 상승은 표에서 가장 작았습니다."
+        },
+        {
+          "dt": "8월 14일",
+          "tx": "<b>어플라이드 머티어리얼즈에 대한 완결된 하루의 판정이 나왔습니다. 5.12% 내린 507.18달러입니다.</b> 사상 최대 매출과 예상보다 약 <b>7억 달러</b> 높은 전망을 내고도 값이 깎였습니다. 시스코에 이어 이틀 사이 두 번째입니다. 같은 시험이 <b>8월 26일</b> 엔비디아를 기다립니다."
+        },
         {
           "dt": "8월 13일",
           "tx": "<b>0.54% 올라 225.30달러가 됐습니다. 오르긴 했지만 같은 업종에 뒤처졌습니다.</b> <b>마이크론</b>은 약 <b>4.2%</b> 올라 회사 가치가 다시 1조 달러를 넘었고, <b>샌디스크</b>는 약 16% 올랐습니다. 반도체 상승을 이끈 것은 엔비디아가 아니라 메모리 회사들이었습니다."
         },
         {
-          "dt": "8월 13일",
-          "tx": "<b>어플라이드 머티어리얼즈가 장 마감 후 실적을 내고 약 6% 내렸습니다.</b> 사상 최대 매출 <b>91억 달러</b>로 25% 증가, 회사 역사상 가장 빠른 성장, 전망도 예상보다 약 <b>7억 달러</b> 높았습니다. 반도체 업계 전체에 장비를 팔고 엔비디아와 지분 관계가 없는 회사라, 뉴스가 된 것은 숫자가 아니라 그 반응입니다."
-        },
-        {
           "dt": "8월 12일",
           "tx": "<b>3.03% 올라 224.09달러가 됐고, 일주일 만에 가장 좋은 하루였습니다.</b> 이 회사 반도체를 사는 큰 고객 세 곳이 실적을 냈고 셋 다 기대를 넘었습니다. <b>슈퍼마이크로</b>는 내년 매출을 <b>650억~720억 달러</b>로 제시하며 약 19%, <b>코어위브</b>는 약 19%, <b>네비우스</b>는 약 34% 올랐습니다."
-        },
-        {
-          "dt": "8월 10일",
-          "tx": "<b>사상 최대 자금 조달 계획을 발표한 날 2.86% 내려 217.55달러가 됐습니다.</b> <b>아폴로, 블랙록, 블랙스톤, 브룩필드, 골드만삭스, KKR</b>과 계약을 맺고, 고객들이 사 가는 컴퓨터 대금을 대기 위해 외부 투자자에게서 <b>5,000억 달러</b> 넘는 자금을 모으기로 했습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>8월 26일 수요일</b> 장 마감 후 실적 발표이고, 설명회는 서부 시각 오후 2시입니다. 열이틀 남았습니다. 그때까지 안고 갈 관점이 목요일 밤에 바뀌었는데, 수요에 관한 이야기가 아닙니다. 수요에 대해서는 <b>어플라이드 머티어리얼즈</b>가 누구도 더 바랄 수 없을 만큼 분명한 답을 줬습니다. 모든 반도체 회사에 장비를 팔고 엔비디아와 지분 관계가 없는 회사가, 역사상 가장 빠른 속도로 늘어난 사상 최대 매출과 예상보다 약 <b>7억 달러</b> 높은 전망을 내놓았습니다. 반도체는 팔리고 있습니다. 그런데 주가는 약 <b>6%</b> 내렸습니다. 목요일에 시스코가 8.4% 내린 것도 같은 이유입니다. 그래서 26일의 질문은 이제 엔비디아의 숫자가 좋을지가 아닙니다. 근거는 좋을 것이라고 말합니다. 질문은 좋은 것만으로 충분한가입니다. 엔비디아는 이번 달에만 약 <b>12.2%</b> 오른 채 자기 실적 발표를 향해 가고 있는데, 그 두 회사가 서 있던 바로 그 자리입니다. 목요일에서 하나 더 짚어 둘 것이 있습니다. 반도체로 들어간 돈이 엔비디아가 아니라 <b>메모리</b> 회사로 갔다는 점입니다. 같은 이야기 안에서 자리가 옮겨간 것이지 이야기가 부정된 것은 아니지만, 새로운 일입니다.",
+      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>8월 26일 수요일</b>, 다음 주 수요일입니다. 장 마감 후 실적을 발표하고 설명회는 서부 시각 오후 2시입니다. 안고 갈 질문은 그대로인데, 근거가 더 단단해졌습니다. 수요에 대해서는 <b>어플라이드 머티어리얼즈</b>가 누구도 더 바랄 수 없을 만큼 분명한 답을 줬습니다. 사상 최대 매출, 회사 역사상 가장 빠른 성장, 예상보다 약 <b>7억 달러</b> 높은 전망입니다. 반도체는 팔리고 있습니다. 그런데 주가는 그다음 완결된 거래일에 <b>5.12%</b> 내려 마감했습니다. 시스코가 자기 최고 분기 다음 날 8.40% 내린 것과 같습니다. 그래서 26일의 질문은 이제 엔비디아의 숫자가 좋을지가 아닙니다. 근거는 좋을 것이라고 말합니다. 질문은 좋은 것만으로 충분한가이고, 엔비디아는 이번 달에만 약 <b>12.2%</b> 오른 채 그 자리로 갑니다. 그 두 회사가 서 있던 바로 그 자리입니다. 함께 지켜볼 것은 <b>메모리</b>로의 이동입니다. 이제 이틀째이고 아직 진행 중입니다. 목요일과 금요일, 반도체로 가는 돈은 엔비디아가 멈춰 선 동안 마이크론과 샌디스크로 갔습니다. 같은 이야기 안에서 자리가 옮겨간 것이지 이야기가 부정된 것은 아니지만, 이제 하루짜리 우연은 아닙니다.",
       "base": {
         "high_1y": 236.54,
         "cap_usd_at": [
@@ -373,87 +373,87 @@
           "v_ko": "8월 26일"
         }
       ],
-      "plain_en": "Nvidia makes the chips that power artificial intelligence. It is one of the most valuable companies on earth, worth <b>≈ $5.5 trillion</b>. On Thursday it rose <b>0.54%</b> to $225.30 — a gain, but a small one on a day the memory chip makers around it rose four to sixteen times as much. It is up about 12.2% in August and sits ≈ 4.8% below its best price of the past year. Its own results arrive August 26, and what to watch there has shifted: two companies in two nights have now reported record results and seen their shares fall.",
-      "plain_ko": "엔비디아는 인공지능을 돌리는 데 쓰이는 반도체를 만듭니다. 회사 가치가 <b>약 5조 5,000억 달러</b>로 세계에서 가치가 가장 큰 회사 중 하나입니다. 목요일에는 <b>0.54%</b> 올라 225.30달러가 됐습니다. 상승이긴 하지만, 주변의 메모리 반도체 회사들이 그 네 배에서 열여섯 배까지 오른 날치고는 작은 폭입니다. 8월 누적으로는 약 12.2% 상승이고, 1년 최고가보다는 약 4.8% 낮습니다. 자체 실적 발표는 8월 26일인데, 그때 봐야 할 것이 달라졌습니다. 이틀 사이 두 회사가 사상 최고 실적을 내고도 주가가 내렸기 때문입니다.",
-      "bull_en": "At about 34 times profits it is not wildly expensive for a company growing this fast, and the outside evidence keeps getting stronger. On Wednesday three customers — CoreWeave, Super Micro and Nebius — all beat expectations at once. On Thursday night Applied Materials, which sells to the whole chip industry and owes Nvidia nothing, reported record sales growing at the fastest rate in its history and guided the current quarter roughly $700 million above forecasts. Those are separate sets of books all saying the same thing about demand. China is reopening, SpaceX has chosen Nvidia as its only chip supplier, and the shares are up about 12.2% in August.",
-      "bull_ko": "이익의 약 34배는 이 정도로 빠르게 성장하는 회사치고 아주 비싼 편은 아니고, 바깥에서 나오는 근거는 계속 강해지고 있습니다. 수요일에는 고객 세 곳(코어위브, 슈퍼마이크로, 네비우스)이 한꺼번에 기대를 넘었습니다. 목요일 밤에는 반도체 업계 전체에 장비를 팔고 엔비디아와 아무 지분 관계가 없는 어플라이드 머티어리얼즈가, 역사상 가장 빠른 속도로 늘어난 사상 최대 매출을 발표하고 이번 분기 전망도 예상보다 약 7억 달러 높게 제시했습니다. 서로 다른 장부들이 수요에 대해 같은 말을 하고 있는 것입니다. 중국 시장이 다시 열리고 있고, 스페이스X가 유일한 공급사로 엔비디아를 골랐으며, 주가는 8월 누적 약 12.2% 상승입니다.",
-      "bear_en": "The risk is no longer about whether the demand is real. Thursday night answered that about as cleanly as it can be answered — and the company that answered it fell about 6%. That is the risk now: a share can deliver everything asked of it and still go down, because the price already assumed it. Cisco proved it on Wednesday night, Applied Materials on Thursday night, and Nvidia is up about 12.2% this month walking into the same test on August 26. Thursday showed a second, milder thing: the money going into chips went to the memory makers instead, so Nvidia rose 0.54% on a day Micron rose about 4.2%. The competition also keeps buying — AMD agreed on August 6 to purchase Taalas, a Toronto firm whose chips build an AI model straight into the silicon, for an undisclosed price and with no closing expected until late in the year.",
-      "bear_ko": "이제 위험은 수요가 진짜인지에 관한 것이 아닙니다. 목요일 밤이 그 질문에 거의 더할 나위 없이 깨끗하게 답했고, 그 답을 내놓은 회사의 주가가 약 6% 내렸습니다. 지금의 위험이 바로 그것입니다. 요구받은 것을 다 해내고도 주가는 내려갈 수 있다는 것, 이미 가격이 그것을 가정하고 있었기 때문이라는 것입니다. 수요일 밤에는 시스코가, 목요일 밤에는 어플라이드 머티어리얼즈가 그것을 보여 줬고, 엔비디아는 이번 달에만 약 12.2% 오른 채 8월 26일 같은 시험을 향해 걸어가고 있습니다. 목요일에는 조금 더 약한 신호도 하나 있었습니다. 반도체로 들어간 돈이 메모리 회사 쪽으로 갔다는 것입니다. 마이크론이 약 4.2% 오른 날 엔비디아는 0.54% 오르는 데 그쳤습니다. 경쟁사도 계속 사들이고 있습니다. AMD는 8월 6일 AI 모델을 반도체 안에 직접 새겨 넣는 토론토의 탈라스(Taalas)를 인수하기로 했는데, 금액은 공개되지 않았고 거래도 연말께에야 마무리될 예정입니다."
+      "plain_en": "Nvidia makes the chips that power artificial intelligence. It is one of the most valuable companies on earth, worth <b>≈ $5.5 trillion</b>. On Friday it barely moved — down <b>0.06%</b> at $225.16 — while the memory chip makers around it rose again. It is up about 12.2% in August and sits ≈ 4.8% below its best price of the past year. Its own results arrive August 26, and the question there has sharpened: two companies in two days reported record results and watched their shares fall in the full session that followed.",
+      "plain_ko": "엔비디아는 인공지능을 돌리는 데 쓰이는 반도체를 만듭니다. 회사 가치가 <b>약 5조 5,000억 달러</b>로 세계에서 가치가 가장 큰 회사 중 하나입니다. 금요일에는 <b>0.06%</b> 내린 225.16달러로, 사실상 움직이지 않았습니다. 그동안 주변의 메모리 반도체 회사들은 다시 올랐습니다. 8월 누적으로는 약 12.2% 상승이고, 1년 최고가보다는 약 4.8% 낮습니다. 자체 실적 발표는 8월 26일인데, 그곳의 질문은 더 날카로워졌습니다. 이틀 사이 두 회사가 사상 최고 실적을 내고도 그다음 완결된 거래일에 주가가 내리는 것을 지켜봤기 때문입니다.",
+      "bull_en": "At about 34 times profits it is not wildly expensive for a company growing this fast, and the outside evidence keeps getting stronger. Applied Materials, which sells to the whole chip industry and owes Nvidia nothing, reported record sales growing at the fastest rate in its history and guided the current quarter roughly $700 million above forecasts. Days earlier three customers — CoreWeave, Super Micro and Nebius — all beat expectations at once. Those are separate sets of books all saying the same thing about demand, and the memory boom is the newest witness: Micron and SanDisk are being bought because the whole AI buildout is straining chip supply. China is reopening, SpaceX has chosen Nvidia as its only chip supplier, and the shares are up about 12.2% in August.",
+      "bull_ko": "이익의 약 34배는 이 정도로 빠르게 성장하는 회사치고 아주 비싼 편은 아니고, 바깥에서 나오는 근거는 계속 강해지고 있습니다. 반도체 업계 전체에 장비를 팔고 엔비디아와 아무 지분 관계가 없는 어플라이드 머티어리얼즈가, 역사상 가장 빠른 속도로 늘어난 사상 최대 매출을 발표하고 이번 분기 전망도 예상보다 약 7억 달러 높게 제시했습니다. 며칠 전에는 고객 세 곳(코어위브, 슈퍼마이크로, 네비우스)이 한꺼번에 기대를 넘었습니다. 서로 다른 장부들이 수요에 대해 같은 말을 하고 있는 것이고, 메모리 열풍은 그 가장 새로운 증인입니다. 마이크론과 샌디스크가 사들여지는 이유는 AI 구축 전체가 반도체 공급을 조이고 있기 때문입니다. 중국 시장이 다시 열리고 있고, 스페이스X가 유일한 공급사로 엔비디아를 골랐으며, 주가는 8월 누적 약 12.2% 상승입니다.",
+      "bear_en": "The risk is no longer about whether the demand is real. It is that a share can deliver everything asked of it and still go down, because the price already assumed it. Cisco proved that in one full session, falling 8.40%; Applied Materials proved it in the next, closing down 5.12% the day after record results — and Nvidia is up about 12.2% this month walking into the same test on August 26. The second, milder thing has now run two days: the money going into chips is going to the memory makers, so Nvidia stood still on Friday while Micron rose 2.30% and SanDisk 7.39%. The competition also keeps buying — AMD agreed on August 6 to purchase Taalas, a Toronto firm whose chips build an AI model straight into the silicon, for an undisclosed price and with no closing expected until late in the year.",
+      "bear_ko": "이제 위험은 수요가 진짜인지에 관한 것이 아닙니다. 요구받은 것을 다 해내고도 주가는 내려갈 수 있다는 것, 이미 가격이 그것을 가정하고 있었기 때문이라는 것입니다. 시스코는 8.40% 하락으로 그것을 완결된 하루 동안 보여 줬고, 어플라이드 머티어리얼즈는 사상 최고 실적 다음 날 5.12% 하락으로 그다음 하루에 보여 줬습니다. 엔비디아는 이번 달에만 약 12.2% 오른 채 8월 26일 같은 시험을 향해 걸어가고 있습니다. 더 약한 두 번째 신호는 이제 이틀째입니다. 반도체로 들어가는 돈이 메모리 회사 쪽으로 가고 있습니다. 금요일에 마이크론이 2.30%, 샌디스크가 7.39% 오르는 동안 엔비디아는 멈춰 서 있었습니다. 경쟁사도 계속 사들이고 있습니다. AMD는 8월 6일 AI 모델을 반도체 안에 직접 새겨 넣는 토론토의 탈라스(Taalas)를 인수하기로 했는데, 금액은 공개되지 않았고 거래도 연말께에야 마무리될 예정입니다."
     },
     "soxl": {
-      "price": "$145.36",
-      "day_arrow": "▲",
-      "day_en": "+2.25% on Thursday",
-      "day_ko": "목요일 +2.25%",
-      "day_dir": "up",
+      "price": "$144.95",
+      "day_arrow": "▼",
+      "day_en": "−0.28% on Friday",
+      "day_ko": "금요일 −0.28%",
+      "day_dir": "dn",
       "week_arrow": "▲",
-      "week_en": "≈ +3.64% so far this week",
-      "week_ko": "이번 주 ≈ +3.64%",
+      "week_en": "≈ +3.35% last week",
+      "week_ko": "지난주 ≈ +3.35%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +26.71% so far in August",
-      "month_ko": "8월 들어 ≈ +26.71%",
+      "month_en": "≈ +26.35% so far in August",
+      "month_ko": "8월 들어 ≈ +26.35%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 51.9%",
+      "drawdown": "≈ 52.0%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 51.9%",
-      "drawdown_fact_ko": "≈ 51.9%",
+      "drawdown_fact_en": "≈ 52.0%",
+      "drawdown_fact_ko": "≈ 52.0%",
       "take_en": "Danger — read this one",
       "take_ko": "위험 — 꼭 읽어보세요",
       "take_tone": "c-risk",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "SOXL closed Thursday up <b>2.25%</b> at $145.36. This is the one holding on this page whose numbers have been wrong before, so it is checked every single time, and this morning's check was the cleanest yet. <b>Three independent sources give the same close of $145.36</b> and the same Wednesday close of $142.16, and $142.16 up to $145.36 recalculates to exactly the +2.25% on the board. The three-times machinery came back clean for a second day: the ordinary chip fund holding these same companies rose <b>0.76%</b>, three times is 2.27%, and SOXL delivered 2.25% — a gap of <b>two hundredths</b> of a point, closer than Wednesday's eight hundredths. <b>Now the part worth your attention, because it is the same lesson as yesterday only louder.</b> At its best moment on Thursday this fund was worth <b>$154.13</b> — up <b>8.4%</b> on the day. It closed at $145.36, up 2.25%. It gave back about <b>three-quarters</b> of its gain inside one session. And here is the thing that makes it fair rather than broken: the ordinary chip fund did exactly the same, in miniature. That fund was up 2.86% at its high and closed up 0.76% — also about three-quarters given back. So the whipsaw came from the chip market itself, and this fund tripled it faithfully, on the way up and on the way down. That is the product working. It is also why the figure underneath has barely moved: even after August's <b>26.7%</b> rise, this fund is still about <b>51.9%</b> below its 1-year high of $302.00, and would have to rise about <b>108%</b> to get back there.",
-      "note_ko": "SOXL은 목요일에 <b>2.25%</b> 올라 145.36달러로 마감했습니다. 이 페이지에서 숫자가 틀린 적이 있었던 유일한 항목이라 매번 확인하는데, 오늘 아침 확인은 지금까지 중 가장 깨끗했습니다. <b>서로 다른 세 곳이 종가 145.36달러</b>와 수요일 종가 142.16달러를 똑같이 보여 줍니다. 142.16달러에서 145.36달러는 표에 적힌 +2.25%와 정확히 맞습니다. 세 배 장치도 이틀 연속 깨끗했습니다. 같은 회사들을 담은 일반 반도체 펀드가 <b>0.76%</b> 올랐고 세 배면 2.27%인데 SOXL은 2.25%였습니다. <b>0.02%포인트</b> 차이로, 수요일의 0.08%포인트보다 더 가깝습니다. <b>이제 눈여겨보실 부분입니다. 어제와 같은 이야기인데 훨씬 크게 나타났습니다.</b> 목요일 장중 가장 좋았을 때 이 펀드는 <b>154.13달러</b>였습니다. 그날 <b>8.4%</b> 올라 있었던 것입니다. 그런데 마감은 145.36달러, 2.25% 상승이었습니다. 하루 안에 오른 폭의 약 <b>4분의 3</b>을 되돌려 준 것입니다. 그리고 이것이 고장이 아니라 정상인 이유가 있습니다. 일반 반도체 펀드도 축소판으로 똑같이 했습니다. 그 펀드는 고점에서 2.86% 올라 있었고 0.76% 상승으로 마쳤는데, 역시 약 4분의 3을 되돌려 준 것입니다. 즉 출렁임은 반도체 시장 자체에서 왔고, 이 펀드는 오를 때도 내릴 때도 그것을 충실히 세 배로 옮겼습니다. 상품이 제대로 작동한 것입니다. 그리고 그 아래 숫자가 거의 그대로인 이유이기도 합니다. 8월에 <b>26.7%</b> 오른 것을 감안해도 이 펀드는 1년 최고가 302.00달러보다 여전히 약 <b>51.9%</b> 낮고, 거기로 돌아가려면 약 <b>108%</b> 올라야 합니다.",
+      "note_en": "SOXL closed Friday down <b>0.28%</b> at $144.95. This is the one holding on this page whose numbers have been wrong before, so it is checked every single time. This morning <b>two independent sources agree on the $144.95 close</b> and the $145.36 previous close, and the fund's own price history was read directly alongside them. The three-times machinery: the ordinary chip fund holding these same companies fell <b>0.06%</b>, three times is −0.17%, and SOXL delivered <b>−0.28%</b> — a gap of about a tenth of a percentage point, wider than Thursday's two hundredths but tiny in absolute terms on a near-flat day. <b>The part worth your attention is what happened inside the session.</b> When the weak shopping report landed before the open, chip shares sank — the ordinary chip fund was down <b>1.4%</b> at its worst, and this fund was down about <b>4.4%</b>, at $138.90. Three times 1.4 is about 4.3, so the tripling was faithful at the bottom too. Then both climbed all the way back by the close. A holder who looked only at the closes saw a quiet day; a holder who looked at mid-morning saw 4.4% gone. Over the completed week the arithmetic reads: chip fund up <b>1.32%</b>, three times is 3.95%, SOXL up <b>3.35%</b> — about <b>85%</b> of what three times should have paid, the leak coming from Monday's fall and the turns. Even after August's <b>26.4%</b> rise, this fund is still about <b>52%</b> below its 1-year high of $302.00, and would have to rise about <b>108%</b> to get back there.",
+      "note_ko": "SOXL은 금요일에 <b>0.28%</b> 내려 144.95달러로 마감했습니다. 이 페이지에서 숫자가 틀린 적이 있었던 유일한 항목이라 매번 확인합니다. 오늘 아침에는 <b>서로 다른 두 곳이 종가 144.95달러</b>와 직전 종가 145.36달러에 일치했고, 이 펀드 자체의 가격 기록도 나란히 직접 읽었습니다. 세 배 장치는 이렇습니다. 같은 회사들을 담은 일반 반도체 펀드가 <b>0.06%</b> 내렸고 세 배면 −0.17%인데 SOXL은 <b>−0.28%</b>였습니다. 약 0.1%포인트 차이로, 목요일의 0.02%포인트보다는 벌어졌지만 거의 움직이지 않은 날치고는 아주 작은 차이입니다. <b>눈여겨보실 부분은 장중에 일어난 일입니다.</b> 개장 전에 약한 소매판매 보고서가 나오자 반도체 주식이 가라앉았습니다. 일반 반도체 펀드는 가장 나쁠 때 <b>1.4%</b> 내려 있었고, 이 펀드는 약 <b>4.4%</b> 내린 138.90달러까지 갔습니다. 1.4의 세 배는 약 4.3이니, 바닥에서도 세 배 장치는 충실했습니다. 그리고 둘 다 마감까지 그 전부를 되올라왔습니다. 종가만 본 사람에게는 조용한 하루였지만, 오전에 들여다본 사람에게는 4.4%가 사라져 있던 하루였습니다. 끝난 한 주의 셈은 이렇습니다. 반도체 펀드 <b>1.32%</b> 상승, 세 배면 3.95%인데 SOXL은 <b>3.35%</b> 올랐습니다. 세 배가 줬어야 할 것의 약 <b>85%</b>이고, 새어 나간 부분은 월요일의 하락과 방향 전환들에서 나왔습니다. 8월에 <b>26.4%</b> 오른 것을 감안해도 이 펀드는 1년 최고가 302.00달러보다 여전히 약 <b>52%</b> 낮고, 거기로 돌아가려면 약 <b>108%</b> 올라야 합니다.",
       "ticker": "SOXL",
       "name_en": "Triple-risk chip fund",
       "name_ko": "3배 위험 반도체 펀드",
-      "note_head_en": "Checked again this morning and confirmed — Thursday's +2.25% holds against three sources and the three-times test came in two hundredths of a point off, the closest yet",
-      "note_head_ko": "오늘 아침 다시 확인해 확정 — 목요일 +2.25%는 세 곳의 자료와 일치하고, 세 배 검증도 0.02%포인트 차이로 지금까지 중 가장 가까웠습니다",
-      "day_caveat_en": "Thursday's +2.25% was re-checked this morning against three independent data sources and against the fund's own trading record, and it holds: $142.16 to $145.36 is +2.25%, and the day's range of $141.84 to $154.13 sits around it. The three-times machinery was clean for a second day — the chip fund it follows rose 0.76%, three times is 2.27%, and this delivered 2.25%. What the note at the bottom of the page draws your attention to instead is the shape of the day. This fund was up 8.4% at its high and closed up 2.25%, giving back about three-quarters of the gain — and the ordinary chip fund did precisely the same in miniature, up 2.86% at its high and up 0.76% at the close. The whipsaw was the chip market's; this fund simply tripled it in both directions.",
-      "day_caveat_ko": "목요일의 +2.25%는 오늘 아침 서로 다른 세 자료와 이 펀드 자체 거래 기록으로 다시 확인했고, 맞습니다. 142.16달러에서 145.36달러는 +2.25%이고, 그날 141.84~154.13달러의 등락 범위도 그 값을 감싸고 있습니다. 세 배 장치는 이틀 연속 깨끗했습니다. 따라가는 반도체 펀드가 0.76% 올랐고 세 배면 2.27%인데 이 펀드는 2.25%였습니다. 대신 페이지 맨 아래 설명이 짚는 것은 그날의 모양입니다. 이 펀드는 고점에서 8.4% 올라 있다가 2.25% 상승으로 마쳐, 오른 폭의 약 4분의 3을 되돌려 줬습니다. 그런데 일반 반도체 펀드도 축소판으로 똑같이 했습니다. 고점에서 2.86%였다가 0.76%로 마쳤습니다. 출렁임은 반도체 시장의 것이었고, 이 펀드는 그것을 양방향으로 세 배 옮겼을 뿐입니다.",
-      "week_fact_en": "up ≈ 3.64%",
-      "week_fact_ko": "≈ 3.64% 상승",
+      "note_head_en": "Checked again this morning and confirmed — Friday's −0.28% holds against two sources and the fund's own record; the real story was a 4.4% morning drop it fully recovered by the close",
+      "note_head_ko": "오늘 아침 다시 확인해 확정 — 금요일 −0.28%는 두 곳의 자료 및 자체 기록과 일치하고, 진짜 이야기는 장중 4.4% 하락을 마감까지 전부 되찾은 것입니다",
+      "day_caveat_en": "Friday's −0.28% was re-checked this morning against two independent data sources and the fund's own trading record, and it holds: $145.36 to $144.95 is −0.28%, and the chip fund it follows fell 0.06% — three times that is −0.17%, so the gap was about a tenth of a percentage point on a near-flat day. The shape of the day is the part to understand. After the weak retail-sales report this fund fell about 4.4%, to $138.90, tracking three times the ordinary chip fund's 1.4% dip — and then recovered all of it by the close. The whipsaw was the chip market's; this fund tripled it in both directions, down and back up.",
+      "day_caveat_ko": "금요일의 −0.28%는 오늘 아침 서로 다른 두 자료와 이 펀드 자체 거래 기록으로 다시 확인했고, 맞습니다. 145.36달러에서 144.95달러는 −0.28%이고, 따라가는 반도체 펀드가 0.06% 내렸으니 세 배면 −0.17%로, 거의 움직이지 않은 날에 약 0.1%포인트 차이였습니다. 이해해 두실 부분은 그날의 모양입니다. 약한 소매판매 보고서가 나온 뒤 이 펀드는 약 4.4% 내린 138.90달러까지 갔습니다. 일반 반도체 펀드의 1.4% 하락을 세 배로 따라간 것입니다. 그리고 마감까지 그 전부를 되찾았습니다. 출렁임은 반도체 시장의 것이었고, 이 펀드는 내려갈 때도 되올라올 때도 그것을 세 배로 옮겼을 뿐입니다.",
+      "week_fact_en": "up ≈ 3.35%",
+      "week_fact_ko": "≈ 3.35% 상승",
       "news_en": [
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Slipped 0.28% to $144.95 — but it was down about 4.4% during the morning.</b> After the weak shopping report it fell to <b>$138.90</b>, tracking three times the chip market's dip, then recovered all of it by the close. Quiet on the closes; rough inside the day."
+        },
+        {
+          "dt": "Aug 14",
+          "tx": "<b>The completed week: up 3.35% against the chip fund's 1.32%.</b> Three times 1.32% would be 3.95%, so this collected about <b>85%</b> of what three-times should pay. The leak came from Monday's 7.31% fall and the turns that followed."
+        },
         {
           "dt": "Aug 13",
           "tx": "<b>Rose 2.25% to $145.36 — but it was up 8.4% at one point.</b> It reached <b>$154.13</b> during the day and closed at $145.36, giving back about three-quarters of its gain in a single session."
         },
         {
-          "dt": "Aug 13",
-          "tx": "<b>That was not a fault — the chip market did the same thing, smaller.</b> The fund it follows was up <b>2.86%</b> at its high and closed up <b>0.76%</b>, also about three-quarters given back. On the day's close, three times 0.76% is 2.27% and this delivered <b>2.25%</b>."
-        },
-        {
           "dt": "Aug 12",
           "tx": "<b>Rose 6.89% to $142.16 — the best of your five that day.</b> But the same shape: it opened up 10.8%, touched $147.70, then fell all day to close near its low of $141.89, on a day chips only went up."
-        },
-        {
-          "dt": "Aug 10",
-          "tx": "<b>Fell 7.31% in one day to $130.00</b>, giving back more than Friday's 5.99% gain. Chip shares fell about 3% and this fund is built to move three times as much — on Monday it did, in the direction that hurts. It closed at its low for the day."
         }
       ],
-      "verdict_en": "<b>What I'd watch — and the one thing I would genuinely flag:</b> this is a tool for short trades, <b>not something to hold onto</b>, and Thursday was the clearest demonstration of why that this page has been able to show you. Look only at the closing prices and it was a good day: the chip fund up 0.76%, this up 2.25%, the machinery exact. Look at the day itself and this fund handed back <b>three-quarters</b> of an 8.4% gain between lunchtime and the bell. Nothing went wrong. It is simply that three times as much movement is three times as much movement in both directions, minute by minute, and you cannot have the first without the second. Over the four sessions since Friday's close the arithmetic is honest: the ordinary chip fund rose <b>1.38%</b>, three times that is <b>4.13%</b>, and this rose <b>3.64%</b> — about <b>88%</b> of what three times should have paid, the leak coming from Monday's fall and the turn out of it. July is the extreme version of the same mechanism: the chip index fell about 21% and this fund fell about <b>57%</b>. That risk has not gone anywhere. It is still ≈ 51.9% below its 1-year high of $302.00 and needs to rise <b>≈ 108%</b> to get back. If you want to bet on chips before Nvidia's results on August 26, owning Nvidia itself does that with far less damage from the ups and downs.",
+      "verdict_en": "<b>What I'd watch — and the one thing I would genuinely flag:</b> this is a tool for short trades, <b>not something to hold onto</b>, and last week kept producing demonstrations. Friday looked, on the closes, like the quietest day of the week: chips down 0.06%, this down 0.28%. Inside the day it fell about <b>4.4%</b> on the weak shopping report and clawed all of it back by the bell. Thursday it was up 8.4% at lunchtime and closed up 2.25%. Nothing malfunctioned either day — three times as much movement is three times as much movement in both directions, minute by minute — but a holder lives through every one of those swings. The completed week puts a number on the cost: the chip fund rose <b>1.32%</b>, three times is <b>3.95%</b>, and this rose <b>3.35%</b> — about <b>85%</b>, the shortfall from Monday's fall and the turns. July is the extreme version: chips down about 21%, this down about <b>57%</b>. And the next thing that could set it off has a date: <b>Nvidia reports on August 26</b>, and this fund will move three times whatever the chip index does that day. It is still ≈ 52% below its 1-year high of $302.00 and needs <b>≈ 108%</b> to get back. If you want to bet on chips into that report, owning Nvidia itself does it with far less damage from the ups and downs.",
       "news_ko": [
+        {
+          "dt": "8월 14일",
+          "tx": "<b>0.28% 내린 144.95달러로 마감했지만, 오전에는 약 4.4% 내려 있었습니다.</b> 약한 소매판매 보고서 뒤 <b>138.90달러</b>까지 떨어지며 반도체 시장 하락의 세 배를 따라갔다가, 마감까지 전부 되찾았습니다. 종가로는 조용했고, 장중은 험했습니다."
+        },
+        {
+          "dt": "8월 14일",
+          "tx": "<b>끝난 한 주: 반도체 펀드가 1.32% 오르는 동안 3.35% 올랐습니다.</b> 1.32%의 세 배면 3.95%이니, 세 배가 줬어야 할 것의 약 <b>85%</b>를 받은 셈입니다. 새어 나간 부분은 월요일의 7.31% 하락과 그 뒤의 방향 전환들에서 나왔습니다."
+        },
         {
           "dt": "8월 13일",
           "tx": "<b>2.25% 올라 145.36달러가 됐습니다. 다만 장중 한때는 8.4% 올라 있었습니다.</b> 하루 중 <b>154.13달러</b>까지 갔다가 145.36달러로 마감해, 오른 폭의 약 4분의 3을 한 거래일 만에 되돌려 줬습니다."
         },
         {
-          "dt": "8월 13일",
-          "tx": "<b>고장이 아니었습니다. 반도체 시장도 더 작은 폭으로 똑같이 했습니다.</b> 따라가는 펀드는 고점에서 <b>2.86%</b> 올라 있다가 <b>0.76%</b> 상승으로 마쳐, 역시 약 4분의 3을 되돌려 줬습니다. 종가 기준으로 0.76%의 세 배는 2.27%이고 이 펀드는 <b>2.25%</b>였습니다."
-        },
-        {
           "dt": "8월 12일",
           "tx": "<b>6.89% 올라 142.16달러가 됐고, 그날 보유 5개 중 가장 좋았습니다.</b> 다만 모양은 같았습니다. 10.8% 오른 채 출발해 147.70달러까지 갔다가 하루 종일 밀려, 반도체가 오르기만 한 날에 저가 141.89달러 부근에서 마감했습니다."
-        },
-        {
-          "dt": "8월 10일",
-          "tx": "<b>하루에 7.31% 떨어져 130.00달러가 됐고</b>, 금요일에 올랐던 5.99%보다 더 많이 되돌려 줬습니다. 반도체 주식이 약 3% 내렸고 이 펀드는 그 세 배로 움직이도록 만들어졌는데, 월요일에는 아픈 쪽으로 그렇게 됐습니다. 그날 저가에서 마감했습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것, 그리고 꼭 말씀드리고 싶은 것:</b> 이것은 짧게 사고파는 도구이지 <b>오래 들고 있을 상품이 아닙니다</b>. 목요일은 그 이유를 이 페이지가 지금껏 보여 드린 것 중 가장 또렷하게 보여 준 날이었습니다. 종가만 보면 좋은 하루였습니다. 반도체 펀드 0.76% 상승, 이 펀드 2.25% 상승, 장치는 정확했습니다. 그런데 하루 안을 들여다보면, 이 펀드는 8.4% 올랐던 것의 <b>4분의 3</b>을 점심 무렵부터 마감까지 사이에 돌려줬습니다. 잘못된 것은 없습니다. 세 배로 움직인다는 것은 양방향 모두 세 배라는 뜻이고, 그것도 분 단위로 그렇다는 뜻일 뿐입니다. 앞의 것만 갖고 뒤의 것을 피할 수는 없습니다. 금요일 종가 이후 네 거래일의 셈은 정직합니다. 일반 반도체 펀드가 <b>1.38%</b> 올랐고 세 배면 <b>4.13%</b>인데 이 펀드는 <b>3.64%</b> 올랐습니다. 세 배가 줬어야 할 것의 약 <b>88%</b>이고, 새어 나간 부분은 월요일의 하락과 거기서 방향이 바뀐 데서 나왔습니다. 7월은 같은 구조의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 이 펀드는 약 <b>57%</b> 내렸습니다. 그 위험은 사라지지 않았습니다. 여전히 1년 최고가 302.00달러보다 ≈ 51.9% 낮고, 거기로 돌아가려면 <b>≈ 108%</b> 올라야 합니다. 8월 26일 엔비디아 실적 전에 반도체에 걸고 싶으시다면, 엔비디아를 직접 사는 쪽이 오르내림에 훨씬 덜 다칩니다.",
+      "verdict_ko": "<b>제가 지켜볼 것, 그리고 꼭 말씀드리고 싶은 것:</b> 이것은 짧게 사고파는 도구이지 <b>오래 들고 있을 상품이 아닙니다</b>. 지난주는 그 증명을 계속 내놓았습니다. 금요일은 종가만 보면 그 주에서 가장 조용한 날이었습니다. 반도체 0.06% 하락, 이 펀드 0.28% 하락입니다. 그런데 하루 안에서는 약한 소매판매 보고서에 약 <b>4.4%</b> 떨어졌다가 마감까지 전부 되찾았습니다. 목요일에는 점심 무렵 8.4% 올라 있다가 2.25% 상승으로 마쳤습니다. 어느 날도 고장은 아니었습니다. 세 배로 움직인다는 것은 양방향 모두, 분 단위로 세 배라는 뜻일 뿐입니다. 다만 들고 있는 사람은 그 출렁임을 전부 몸으로 겪습니다. 끝난 한 주는 그 비용에 숫자를 붙였습니다. 반도체 펀드가 <b>1.32%</b> 올랐고 세 배면 <b>3.95%</b>인데 이 펀드는 <b>3.35%</b> 올랐습니다. 약 <b>85%</b>이고, 모자란 부분은 월요일의 하락과 방향 전환들에서 나왔습니다. 7월은 같은 구조의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 이 펀드는 약 <b>57%</b> 내렸습니다. 그리고 이것을 다시 흔들 수 있는 다음 일에는 날짜가 붙어 있습니다. <b>8월 26일 엔비디아 실적</b>이고, 그날 이 펀드는 반도체 지수가 움직이는 폭의 세 배로 움직입니다. 여전히 1년 최고가 302.00달러보다 ≈ 52% 낮고, 거기로 돌아가려면 <b>≈ 108%</b> 올라야 합니다. 그 발표를 앞두고 반도체에 걸고 싶으시다면, 엔비디아를 직접 사는 쪽이 오르내림에 훨씬 덜 다칩니다.",
       "base": {
         "year_start": 42.02,
         "high_1y": 302.0
@@ -486,83 +486,83 @@
           "auto": "recover"
         }
       ],
-      "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, every single day. If chip stocks rise 2%, it rises about 6%. If they fall 2%, it falls about 6%. On Thursday chip shares rose 0.76% and this fund rose <b>2.25%</b> — the machinery working almost exactly as designed. What that machinery feels like is the other half of the story: at one point in the day it was up <b>8.4%</b>, and it closed up 2.25%, handing back three-quarters of the gain before the bell. In July it lost <b>57%</b> of its value while the overall market was flat.",
-      "plain_ko": "<b>이 항목은 특히 꼼꼼히 읽어보시기 바랍니다. 다섯 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>로 움직이도록 만들어졌고, 그것을 <b>매일</b> 새로 맞춥니다. 반도체가 2% 오르면 약 6% 오르고, 2% 내리면 약 6% 내립니다. 목요일에는 반도체 주식이 0.76% 오르면서 이 펀드가 <b>2.25%</b> 올랐습니다. 장치가 설계대로 거의 정확히 작동한 것입니다. 그 장치가 어떤 느낌인지가 이야기의 나머지 절반입니다. 그날 장중 한때는 <b>8.4%</b> 올라 있었는데 2.25% 상승으로 마쳤습니다. 마감 전에 오른 폭의 4분의 3을 돌려준 것입니다. 7월에는 시장 전체가 제자리였는데도 <b>57%</b>를 잃었습니다.",
-      "bull_en": "It is up <b>about 246%</b> for the year and about 26.7% in August alone. If July's fall was about prices being too high rather than the businesses being broken, this recovers faster than anything else here — and the businesses look fine: Applied Materials, which sells equipment to every chip maker in this basket, reported record sales on Thursday night growing at the fastest rate in its history. Over the four sessions since Friday's close this has captured about 88% of three times the chip index's gain, and on Thursday alone the machinery was within two hundredths of a point of exact.",
-      "bull_ko": "올해 누적으로는 <b>약 246%</b>, 8월만 봐도 약 26.7% 올라 있습니다. 7월의 하락이 회사들이 망가져서가 아니라 단지 가격이 비쌌기 때문이라면, 다섯 중 가장 빠르게 회복할 것입니다. 그리고 회사들은 괜찮아 보입니다. 이 묶음에 든 모든 반도체 회사에 장비를 파는 어플라이드 머티어리얼즈가 목요일 밤에 역사상 가장 빠른 속도로 늘어난 사상 최대 매출을 발표했습니다. 금요일 종가 이후 네 거래일 동안 이 펀드는 반도체 지수 상승의 세 배 중 약 88%를 받아냈고, 목요일 하루만 보면 장치는 0.02%포인트 차이까지 정확했습니다.",
-      "bear_en": "Because it resets every day, <b>choppy markets cost you money even if prices end up where they started</b>. Thursday held the clearest miniature of that yet inside a single session: up 8.4% at its best, up 2.25% at the close. Over the four sessions since Friday the chip fund gained 1.38%, three times should have paid 4.13%, and this paid 3.64% — about 88%, the shortfall coming from Monday's fall and the turn out of it. July is the extreme setting: the chip index fell about 21% and this fund fell about 57%, because six days in late July went −13%, −6%, −15%, −16%, +25%, flat, and every turn took another bite. And the thing that would set that off again is not hard to name — Nvidia reports on August 26, and this fund moves three times whatever the chip index does that day.",
-      "bear_ko": "매일 다시 맞추는 구조라서, <b>가격이 결국 제자리로 돌아와도 오르내림 자체가 돈을 갉아먹습니다.</b> 목요일은 그 축소판을 하루 안에 가장 또렷하게 담고 있었습니다. 장중 최고 8.4% 상승, 마감 2.25% 상승이었습니다. 금요일 이후 네 거래일 동안 반도체 펀드는 1.38% 올랐고 세 배면 4.13%여야 했는데 이 펀드는 3.64%를 줬습니다. 약 88%이고, 모자란 부분은 월요일의 하락과 거기서 방향이 바뀐 데서 나왔습니다. 7월은 그 눈금의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 이 펀드는 약 57% 내렸습니다. 7월 말 6거래일이 −13%, −6%, −15%, −16%, +25%, 보합으로 이어지며 방향이 바뀔 때마다 한 입씩 더 떼였기 때문입니다. 그리고 그것을 다시 불러올 수 있는 것이 무엇인지도 어렵지 않게 말할 수 있습니다. 8월 26일 엔비디아 실적이고, 이 펀드는 그날 반도체 지수가 움직이는 폭의 세 배로 움직입니다."
+      "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, every single day. If chip stocks rise 2%, it rises about 6%. If they fall 2%, it falls about 6%. Friday showed what that feels like even on a quiet day: chip shares finished down just 0.06% and this fund down <b>0.28%</b> — but during the morning, after a weak report on shoppers, it was down about <b>4.4%</b> before recovering by the close. In July it lost <b>57%</b> of its value while the overall market was flat.",
+      "plain_ko": "<b>이 항목은 특히 꼼꼼히 읽어보시기 바랍니다. 다섯 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>로 움직이도록 만들어졌고, 그것을 <b>매일</b> 새로 맞춥니다. 반도체가 2% 오르면 약 6% 오르고, 2% 내리면 약 6% 내립니다. 금요일은 조용한 날에도 그것이 어떤 느낌인지 보여 줬습니다. 반도체 주식은 0.06% 하락으로, 이 펀드는 <b>0.28%</b> 하락으로 마쳤지만, 오전에 약한 소비 보고서가 나온 뒤에는 약 <b>4.4%</b> 내려 있다가 마감까지 회복한 것입니다. 7월에는 시장 전체가 제자리였는데도 <b>57%</b>를 잃었습니다.",
+      "bull_en": "It is up <b>about 245%</b> for the year and about 26.4% in August alone. If July's fall was about prices being too high rather than the businesses being broken, this recovers faster than anything else here — and the businesses look fine: Applied Materials, which sells equipment to every chip maker in this basket, reported record sales last week, and the memory makers inside this same index, Micron and SanDisk, are running hot on a genuine shortage. The machinery is doing its job: over the completed week this collected about 85% of three times the chip index's gain even with a bad Monday in the middle, and on Friday's closes the tracking gap was about a tenth of a point.",
+      "bull_ko": "올해 누적으로는 <b>약 245%</b>, 8월만 봐도 약 26.4% 올라 있습니다. 7월의 하락이 회사들이 망가져서가 아니라 단지 가격이 비쌌기 때문이라면, 다섯 중 가장 빠르게 회복할 것입니다. 그리고 회사들은 괜찮아 보입니다. 이 묶음에 든 모든 반도체 회사에 장비를 파는 어플라이드 머티어리얼즈가 지난주 사상 최대 매출을 발표했고, 같은 지수에 든 메모리 회사들, 곧 마이크론과 샌디스크는 실제 품귀 속에 뜨겁게 달리고 있습니다. 장치도 제 몫을 하고 있습니다. 끝난 한 주 동안 나쁜 월요일이 끼어 있었는데도 반도체 지수 상승의 세 배 중 약 85%를 받아냈고, 금요일 종가 기준 추적 오차는 약 0.1%포인트였습니다.",
+      "bear_en": "Because it resets every day, <b>choppy markets cost you money even if prices end up where they started</b>. The completed week put a number on that: the chip fund rose 1.32%, three times should have paid 3.95%, and this paid 3.35% — the shortfall came from Monday's 7.31% fall and the turns that followed. Friday showed the ride itself: down about 4.4% by mid-morning, near flat by the close. July is the extreme setting: the chip index fell about 21% and this fund fell about 57%, because six days in late July went −13%, −6%, −15%, −16%, +25%, flat, and every turn took another bite. And the thing that could set that off again is not hard to name — Nvidia reports on August 26, and this fund moves three times whatever the chip index does that day.",
+      "bear_ko": "매일 다시 맞추는 구조라서, <b>가격이 결국 제자리로 돌아와도 오르내림 자체가 돈을 갉아먹습니다.</b> 끝난 한 주가 거기에 숫자를 붙였습니다. 반도체 펀드는 1.32% 올랐고 세 배면 3.95%여야 했는데 이 펀드는 3.35%를 줬습니다. 모자란 부분은 월요일의 7.31% 하락과 그 뒤의 방향 전환들에서 나왔습니다. 금요일은 그 탑승감 자체를 보여 줬습니다. 오전에 약 4.4% 내려 있다가 마감에는 거의 제자리였습니다. 7월은 그 눈금의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 이 펀드는 약 57% 내렸습니다. 7월 말 6거래일이 −13%, −6%, −15%, −16%, +25%, 보합으로 이어지며 방향이 바뀔 때마다 한 입씩 더 떼였기 때문입니다. 그리고 그것을 다시 불러올 수 있는 것이 무엇인지도 어렵지 않게 말할 수 있습니다. 8월 26일 엔비디아 실적이고, 이 펀드는 그날 반도체 지수가 움직이는 폭의 세 배로 움직입니다."
     },
     "cost": {
-      "price": "$961.85",
-      "day_arrow": "▲",
-      "day_en": "+1.29% on Thursday",
-      "day_ko": "목요일 +1.29%",
-      "day_dir": "up",
+      "price": "$961.10",
+      "day_arrow": "▼",
+      "day_en": "−0.08% on Friday",
+      "day_ko": "금요일 −0.08%",
+      "day_dir": "dn",
       "week_arrow": "▲",
-      "week_en": "≈ +1.48% so far this week",
-      "week_ko": "이번 주 ≈ +1.48%",
+      "week_en": "≈ +1.40% last week",
+      "week_ko": "지난주 ≈ +1.40%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +1.05% so far in August",
-      "month_ko": "8월 들어 ≈ +1.05%",
+      "month_en": "≈ +0.97% so far in August",
+      "month_ko": "8월 들어 ≈ +0.97%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 12.3%",
+      "drawdown": "≈ 12.4%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 12.3%",
-      "drawdown_fact_ko": "≈ 12.3%",
-      "take_en": "Now ahead for August too",
-      "take_ko": "8월 상승으로 돌아섰습니다",
-      "take_tone": "c-pos",
+      "drawdown_fact_en": "≈ 12.4%",
+      "drawdown_fact_ko": "≈ 12.4%",
+      "take_en": "Steady — retail week ahead",
+      "take_ko": "안정 — 이번 주는 유통 주간",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Up <b>1.29%</b> to $961.85 on Thursday, its best day in three weeks — and with it Costco has stopped being the odd one out. It is now <b>up about 1.05%</b> for August, so all five of your holdings are ahead for the month for the first time since it began. Nothing happened at the company; what moved was the thing this share is most sensitive to, which is borrowing rates. The wholesale-price report showed <b>no rise at all</b> in July, largely because the wholesale petrol price fell 5.7%, and oil itself fell for the first time in seven sessions. Long-term government borrowing rates eased with it — the 30-year to <b>5.21%</b>, its first fall in three days. For a share priced at about <b>48 times</b> its profits, that is the direction that helps, and it helps here more directly than anywhere else on your board: this is the one holding you own that is not part of the artificial-intelligence story, so what it has instead of that is a sensitivity to what money costs. The business is fine: July sales, published August 5, were up 10.7% in a year, with sales at stores open at least a year up <b>8.9%</b>.",
-      "note_ko": "목요일에 <b>1.29%</b> 올라 961.85달러가 됐습니다. 3주 만에 가장 좋은 하루였고, 이로써 코스트코는 혼자만 뒤처진 종목이 아니게 됐습니다. 이제 8월 누적 <b>약 1.05% 상승</b>이라, 이 달 들어 처음으로 보유 5개가 모두 월간 상승 상태입니다. 회사에서 일어난 일은 없습니다. 움직인 것은 이 주식이 가장 민감하게 반응하는 것, 곧 금리였습니다. 도매물가 보고서는 7월에 물가가 <b>전혀 오르지 않았다</b>고 알렸는데, 도매 휘발유값이 5.7% 내린 것이 큰 몫을 했습니다. 유가 자체도 이레 만에 처음으로 내렸습니다. 장기 국채 금리도 함께 진정돼 30년물이 사흘 만에 처음으로 내려 <b>5.21%</b>가 됐습니다. 이익의 약 <b>48배</b>에 값이 매겨진 주식에는 이것이 도움이 되는 방향이고, 표에 있는 어느 종목보다 이쪽에 더 직접적으로 닿습니다. 이 종목은 보유하신 것 중 인공지능 이야기에 속하지 않는 유일한 주식이고, 그 대신 갖고 있는 것이 돈값에 대한 민감함이기 때문입니다. 사업 자체는 괜찮습니다. 8월 5일에 나온 7월 매출은 1년 전보다 10.7% 늘었고, 문을 연 지 1년이 넘은 매장 매출은 <b>8.9%</b> 늘었습니다.",
+      "note_en": "Down just <b>0.08%</b> to $961.10 on Friday — and given the day's news, that quiet close is the story. Friday's two economic readings were squarely about Costco's world: <b>July retail sales fell 0.6%</b>, the biggest monthly drop since May 2025, and the University of Michigan's survey of how households feel fell to <b>51</b>. A weak report about shoppers, landing on a share that sells to shoppers — and the share barely moved. Borrowing rates, the thing this share is most sensitive to, also went the wrong way, the 30-year rising to <b>5.27%</b> — and it still barely moved. It finished the completed week <b>up about 1.40%</b>, second best of your five, and it is up about <b>0.97%</b> for August, so all five of your holdings remain ahead for the month. The business itself is fine: July sales, published August 5, were up 10.7% in a year, with sales at stores open at least a year up <b>8.9%</b>. The gap between those two facts — shoppers say they feel worse, Costco's tills say they are still spending there — is what this week's parade of store-chain results will start to settle.",
+      "note_ko": "금요일에 <b>0.08%</b>만 내려 961.10달러가 됐습니다. 그날 나온 소식을 생각하면, 이 조용한 마감이 곧 이야기의 핵심입니다. 금요일의 경제 수치 두 개는 정확히 코스트코의 세계에 관한 것이었습니다. <b>7월 소매판매가 0.6% 줄어</b> 2025년 5월 이후 가장 큰 월간 감소였고, 미시간대의 가계 심리 조사는 <b>51</b>로 내렸습니다. 소비자에 관한 나쁜 보고서가, 소비자에게 물건을 파는 주식 위에 떨어졌는데, 주가는 거의 움직이지 않았습니다. 이 주식이 가장 민감하게 반응하는 금리도 나쁜 방향으로 움직여 30년물이 <b>5.27%</b>로 올랐는데, 그래도 거의 움직이지 않았습니다. 끝난 한 주로는 <b>약 1.40% 올라</b> 보유 5개 중 두 번째로 좋았고, 8월 누적 <b>약 0.97%</b> 상승이라 다섯 종목 모두 월간 상승 상태를 지키고 있습니다. 사업 자체는 괜찮습니다. 8월 5일에 나온 7월 매출은 1년 전보다 10.7% 늘었고, 문을 연 지 1년이 넘은 매장 매출은 <b>8.9%</b> 늘었습니다. 이 두 사실 사이의 틈, 곧 소비자는 힘들다고 말하는데 코스트코의 계산대는 여전히 팔리고 있다고 말하는 것을, 이번 주 줄지어 나오는 유통업체 실적이 좁혀 가기 시작할 것입니다.",
       "ticker": "COST",
       "name_en": "Costco",
       "name_ko": "코스트코",
-      "week_fact_en": "up ≈ 1.48%",
-      "week_fact_ko": "≈ 1.48% 상승",
+      "week_fact_en": "up ≈ 1.40%",
+      "week_fact_ko": "≈ 1.40% 상승",
       "news_en": [
         {
-          "dt": "Aug 13",
-          "tx": "<b>Rose 1.29% to $961.85, its best day in three weeks, and is now up for August.</b> All five of your holdings are ahead for the month for the first time since it began. No company news — borrowing rates eased, and that is what this share responds to."
+          "dt": "Aug 14",
+          "tx": "<b>Slipped just 0.08% to $961.10 on the day the shopper news was bad.</b> July retail sales fell <b>0.6%</b> and household confidence dropped to 51 — a weak report about shoppers, landing on a share that sells to shoppers, and it barely moved. The completed week: <b>up about 1.4%</b>."
+        },
+        {
+          "dt": "Aug 14",
+          "tx": "<b>Borrowing rates rose — the 30-year to 5.27%</b> — because households told the Michigan survey they expect prices to rise faster. That is the direction that usually hurts a share priced at about <b>48 times</b> profits. It held anyway."
         },
         {
           "dt": "Aug 13",
-          "tx": "<b>The 30-year government borrowing rate fell to 5.21%</b>, its first fall in three days, after wholesale prices did not rise at all in July and oil fell for the first time in seven sessions. That is the direction that helps a share priced at about <b>48 times</b> profits."
-        },
-        {
-          "dt": "Aug 12",
-          "tx": "<b>Rose 0.56% to $949.58 on a day money poured into chip shares.</b> The seesaw of Monday and Tuesday did not run, because what moved the market was an inflation report rather than a chip story — and that reaches every share, this one included."
+          "tx": "<b>Rose 1.29% to $961.85, its best day in three weeks, turning positive for August.</b> No company news — borrowing rates eased that day, and that is what this share responds to."
         },
         {
           "dt": "Aug 5",
           "tx": "<b>July sales came out after the close: $23.12 billion, up 10.7% in a year.</b> Sales at stores open at least a year rose <b>8.9%</b>, a shade faster than June's 8.8%, and online sales rose 17.7%."
         }
       ],
-      "verdict_en": "<b>What I'd watch:</b> <b>July retail sales this morning at 5:30 in the morning Pacific time</b>, before the open — how much people actually spent — followed by the <b>University of Michigan survey of household confidence at 7:00 in the morning Pacific time</b>. Forecasters expect retail sales up about 0.3% and the confidence survey to slip a little. These are the week's one dated pair that reaches this holding, and they matter more than usual after a jobs report that showed the economy losing jobs. Nothing from the company itself until <b>early September</b>, when August sales arrive, and the full quarterly results on <b>Thursday, September 24</b>. The number to keep hold of in between is <b>8.9%</b>: how fast sales grew at stores open at least a year. That figure, not the headline total, is what moves these shares, and June proved the market will sell them even in a good month if it is slowing. In July it did not slow. And the thing that had been working against it has, for now, turned: petrol got cheaper, oil fell for the first time in seven sessions, and long-term borrowing rates came down with them.",
+      "verdict_en": "<b>What I'd watch:</b> <b>the other store chains, all week</b>. Home Depot reports on Tuesday, Target and Lowe's on Wednesday, Walmart on Thursday — all before the market opens. Those are not Costco's numbers, but the market will read every one of them onto every retailer, and after Friday's weak readings on the shopper they carry more weight than usual: if the chains' results and outlooks hold up, Friday looks like a wobble; if they echo it, the whole group can get marked down together, this share included. From the company itself, nothing until <b>early September</b>, when August sales arrive, and then the full quarterly results on <b>Thursday, September 24</b>. The number to keep hold of is still <b>8.9%</b> — how fast sales grew at stores open at least a year in July. That figure, not the headline total, is what moves these shares, and June proved the market will sell them even in a good month if it slows. Friday offered one reassurance ahead of all of it: on the worst shopper-news day in months, this share fell eight hundredths of a percent.",
       "news_ko": [
         {
-          "dt": "8월 13일",
-          "tx": "<b>1.29% 올라 961.85달러가 됐습니다. 3주 만에 가장 좋은 하루였고, 8월 상승으로 돌아섰습니다.</b> 이 달 들어 처음으로 보유 5개가 모두 월간 상승 상태입니다. 회사 관련 소식은 없었고, 금리가 진정된 것이 이 주식이 반응하는 대목입니다."
+          "dt": "8월 14일",
+          "tx": "<b>소비자 관련 소식이 나빴던 날 0.08%만 내려 961.10달러가 됐습니다.</b> 7월 소매판매가 <b>0.6%</b> 줄고 가계 심리도 51로 내렸습니다. 소비자에 관한 나쁜 보고서가 소비자에게 파는 주식 위에 떨어졌는데, 거의 움직이지 않았습니다. 끝난 한 주로는 <b>약 1.4% 상승</b>입니다."
+        },
+        {
+          "dt": "8월 14일",
+          "tx": "<b>금리가 올라 30년물이 5.27%가 됐습니다.</b> 가계가 미시간대 조사에서 물가가 더 빨리 오를 것으로 본다고 답했기 때문입니다. 이익의 약 <b>48배</b>에 값이 매겨진 주식에는 보통 아픈 방향인데, 그래도 버텼습니다."
         },
         {
           "dt": "8월 13일",
-          "tx": "<b>30년물 국채 금리가 사흘 만에 처음으로 내려 5.21%가 됐습니다.</b> 7월 도매물가가 전혀 오르지 않았고 유가도 이레 만에 처음으로 내린 뒤였습니다. 이익의 약 <b>48배</b>에 값이 매겨진 주식에는 도움이 되는 방향입니다."
-        },
-        {
-          "dt": "8월 12일",
-          "tx": "<b>반도체 주식으로 돈이 몰린 날 0.56% 올라 949.58달러가 됐습니다.</b> 월요일과 화요일의 시소는 작동하지 않았습니다. 그날 시장을 움직인 것이 반도체 이야기가 아니라 물가 보고서였기 때문입니다. 물가 보고서는 이 종목을 포함해 모든 주식에 닿습니다."
+          "tx": "<b>1.29% 올라 961.85달러가 됐습니다. 3주 만에 가장 좋은 하루였고, 8월 상승으로 돌아선 날이었습니다.</b> 회사 관련 소식은 없었고, 그날 금리가 진정된 것이 이 주식이 반응하는 대목입니다."
         },
         {
           "dt": "8월 5일",
           "tx": "<b>7월 매출이 장 마감 후 나왔습니다. 231억 2천만 달러로 1년 사이 10.7% 증가했습니다.</b> 문을 연 지 1년이 넘은 매장의 매출은 <b>8.9%</b> 늘어 6월의 8.8%보다 조금 빨랐고, 온라인 매출은 17.7% 늘었습니다."
         }
       ],
-      "verdict_ko": "<b>제가 지켜볼 것:</b> <b>오늘 아침 서부 시각 오전 5시 30분</b>, 개장 전에 나오는 7월 소매판매입니다. 사람들이 실제로 얼마나 썼는지를 보여 주는 수치이고, 이어 서부 시각 오전 7시에는 <b>미시간대의 가계 심리 조사</b>가 나옵니다. 전문가들은 소매판매가 약 0.3% 늘고 심리 조사는 조금 내려갈 것으로 봅니다. 이번 주에 이 종목에 닿는 유일한 일정이고, 일자리가 줄었다는 고용 보고서가 나온 뒤라 평소보다 중요합니다. 회사 자체에서는 <b>9월 초</b> 8월 매출 발표까지, 그리고 <b>9월 24일 목요일</b> 분기 전체 실적까지 아무 일정이 없습니다. 그때까지 기억해 두실 숫자는 <b>8.9%</b>입니다. 문을 연 지 1년이 넘은 매장의 매출 증가율입니다. 주가를 움직이는 것은 전체 매출 숫자가 아니라 이 수치이고, 6월에는 이 수치가 느려졌다는 이유로 좋은 달인데도 주가가 떨어졌습니다. 7월에는 느려지지 않았습니다. 그리고 그동안 불리하게 작용하던 것이 일단은 방향을 돌렸습니다. 기름값이 싸졌고, 유가는 이레 만에 처음으로 내렸으며, 장기 금리도 함께 내려왔습니다.",
+      "verdict_ko": "<b>제가 지켜볼 것: 이번 주 내내, 다른 유통업체들입니다.</b> 화요일에 홈디포, 수요일에 타깃과 로우스, 목요일에 월마트가 모두 개장 전에 실적을 발표합니다. 코스트코의 숫자는 아니지만, 시장은 그 하나하나를 모든 유통주에 대입해 읽을 것이고, 금요일에 약한 소비 지표가 나온 뒤라 평소보다 무게가 큽니다. 이들의 실적과 전망이 괜찮으면 금요일은 일시적 흔들림으로 남고, 같은 이야기를 반복하면 이 주식을 포함해 유통주 전체가 함께 깎일 수 있습니다. 회사 자체에서는 <b>9월 초</b> 8월 매출 발표까지, 그리고 <b>9월 24일 목요일</b> 분기 전체 실적까지 아무 일정이 없습니다. 기억해 두실 숫자는 여전히 <b>8.9%</b>입니다. 7월에 문을 연 지 1년이 넘은 매장의 매출이 늘어난 속도입니다. 주가를 움직이는 것은 전체 매출 숫자가 아니라 이 수치이고, 6월에는 이 수치가 느려졌다는 이유로 좋은 달인데도 주가가 떨어졌습니다. 그리고 금요일은 그 모든 것에 앞서 한 가지 안심거리를 줬습니다. 몇 달 만에 소비자 소식이 가장 나빴던 날, 이 주식은 0.08% 내렸을 뿐입니다.",
       "base": {
         "year_start": 859.11,
         "high_1y": 1097.05,
@@ -599,25 +599,25 @@
           "v_ko": "연 약 0.6%"
         }
       ],
-      "plain_en": "The warehouse retailer. On Thursday it <b>rose 1.29%</b> to $961.85, its best day in three weeks, and it is now <b>up for August</b> — it had been the only one of your five below where the month started. Nothing happened at the company; borrowing rates eased, and that is what this share responds to. The <b>business is doing well</b>, with July sales up 10.7% and sales at stores open at least a year up 8.9%. The price is about 12.3% below its peak, not because Costco is struggling, but because the shares had become expensive. For the year it is up <b>about 12.0%</b>, behind the market.",
-      "plain_ko": "창고형 대형 마트입니다. 목요일에 <b>1.29% 올라</b> 961.85달러가 됐습니다. 3주 만에 가장 좋은 하루였고, 이제 <b>8월 상승</b>으로 돌아섰습니다. 그전까지는 보유 5개 중 이 달 출발점보다 아래에 있는 유일한 종목이었습니다. 회사에서 일어난 일은 없습니다. 금리가 진정됐고, 이 주식이 반응하는 것이 바로 그것입니다. <b>사업은 잘되고 있습니다.</b> 7월 매출이 10.7% 늘었고, 문을 연 지 1년이 넘은 매장 매출도 8.9% 늘었습니다. 주가가 최고가보다 약 12.3% 낮은 것은 회사가 어려워서가 아니라, 그 전까지 주식이 너무 비싸져 있었기 때문입니다. 올해 누적으로는 <b>약 12.0% 올라</b> 시장 전체보다 뒤처져 있습니다.",
-      "bull_en": "Double-digit sales growth that did not slow in July, an online business growing 17.7% a year, and loyal paying members. It is the one holding here that does not depend on artificial intelligence, and this week showed the value of that from several angles: on Monday chips fell about 3%, four of your five fell with them, and this one rose; on Wednesday the market moved on an inflation report and this rose with everything else; on Thursday borrowing rates fell and this had its best day in three weeks. It has now erased its August loss entirely. July was the reminder of the extreme case — a 57% chip fall in one of your holdings that this stock did not notice.",
-      "bull_ko": "7월에도 느려지지 않은 두 자릿수 매출 성장, 연 17.7%로 크는 온라인 사업, 그리고 회비를 내는 충성 고객이 있습니다. 다섯 중 인공지능에 기대지 않는 유일한 종목입니다. 이번 주에 그 가치가 여러 각도로 드러났습니다. 월요일에는 반도체가 약 3% 내리며 보유 5개 중 넷이 함께 내릴 때 이 종목만 올랐고, 수요일에는 시장이 물가 보고서로 움직이자 나머지와 함께 올랐으며, 목요일에는 금리가 내리면서 3주 만에 가장 좋은 하루를 보냈습니다. 8월 손실은 이제 완전히 지워졌습니다. 7월은 극단적인 경우를 보여 준 달이었습니다. 보유 종목 하나에서 반도체 하락이 57%였는데 이 주식은 꿈쩍하지 않았습니다.",
-      "bear_en": "At about 48 times profits it is expensive, and it pays only about 0.6% a year in dividends while a long-term government bond pays about 5.21% with far less risk. A stock this expensive needs the growth to keep going and it needs borrowing rates to keep falling. Rates did fall on Thursday, which is why it had a good day — but they fell because petrol got cheaper, and petrol is not something anyone controls. The Strait of Hormuz is still effectively shut, and six sessions of rising oil this month showed how quickly that can run the other way. The plainer risk has not gone away either: while money is chasing artificial intelligence, it is not chasing a warehouse retailer, however well the warehouses are doing. For the year it is still well behind the market.",
-      "bear_ko": "이익의 약 48배는 비싼 편이고, 배당은 연 약 0.6%뿐인데 장기 국채는 훨씬 적은 위험으로 약 5.21%를 줍니다. 이 정도로 비싼 주식은 성장이 계속돼야 하고 금리도 계속 내려 줘야 합니다. 목요일에는 금리가 실제로 내렸고 그래서 좋은 하루였습니다. 다만 금리가 내린 이유는 기름값이 싸졌기 때문인데, 기름값은 누가 통제할 수 있는 것이 아닙니다. 호르무즈 해협은 사실상 여전히 닫혀 있고, 이 달에 유가가 엿새 연속 올랐던 것은 그것이 얼마나 빨리 반대로 갈 수 있는지 보여 줬습니다. 더 단순한 위험도 사라지지 않았습니다. 돈이 인공지능을 쫓고 있을 때는, 창고형 마트가 아무리 잘하고 있어도 그 돈이 이쪽으로 오지 않습니다. 올해 누적으로는 여전히 시장 전체보다 한참 뒤처져 있습니다."
+      "plain_en": "The warehouse retailer. On Friday it barely moved — down <b>0.08%</b> at $961.10 — on the day the news about shoppers was bad, and it finished the week <b>up about 1.4%</b>. The <b>business is doing well</b>, with July sales up 10.7% and sales at stores open at least a year up 8.9%. The price is about 12.4% below its peak, not because Costco is struggling, but because the shares had become expensive. For the year it is up <b>about 11.9%</b>, behind the market. This week the other big store chains report their results, and every retailer will be read against them.",
+      "plain_ko": "창고형 대형 마트입니다. 금요일에는 소비자 관련 소식이 나빴던 날인데도 <b>0.08%</b> 내린 961.10달러로 거의 움직이지 않았고, 주간으로는 <b>약 1.4% 상승</b>으로 마쳤습니다. <b>사업은 잘되고 있습니다.</b> 7월 매출이 10.7% 늘었고, 문을 연 지 1년이 넘은 매장 매출도 8.9% 늘었습니다. 주가가 최고가보다 약 12.4% 낮은 것은 회사가 어려워서가 아니라, 그 전까지 주식이 너무 비싸져 있었기 때문입니다. 올해 누적으로는 <b>약 11.9% 올라</b> 시장 전체보다 뒤처져 있습니다. 이번 주에는 다른 큰 유통업체들이 실적을 발표하고, 모든 유통주가 그 결과에 비추어 평가받게 됩니다.",
+      "bull_en": "Double-digit sales growth that did not slow in July, an online business growing 17.7% a year, and loyal paying members. It is the one holding here that does not depend on artificial intelligence, and it keeps proving the value of that: in July a 57% chip collapse in one of your holdings passed it by, and on Friday the worst shopper-news day in months moved it eight hundredths of a percent. There is also a case built into the bad news itself: when households feel squeezed, low prices in bulk are what they go looking for, and Costco's July figures — sales at year-old stores up 8.9% — suggest the squeeze has so far sent shoppers toward its warehouses rather than away from them.",
+      "bull_ko": "7월에도 느려지지 않은 두 자릿수 매출 성장, 연 17.7%로 크는 온라인 사업, 그리고 회비를 내는 충성 고객이 있습니다. 다섯 중 인공지능에 기대지 않는 유일한 종목이고, 그 가치를 계속 증명하고 있습니다. 7월에는 보유 종목 하나가 반도체 57% 폭락을 겪는 동안 이 주식은 비켜 서 있었고, 금요일에는 몇 달 만에 가장 나빴던 소비자 소식이 이 주식을 0.08% 움직였을 뿐입니다. 나쁜 소식 안에 들어 있는 근거도 있습니다. 가계가 쪼들린다고 느낄 때 찾게 되는 것이 대용량 싼 가격이고, 코스트코의 7월 수치, 곧 1년 넘은 매장 매출 8.9% 증가는 그 쪼들림이 지금까지는 소비자를 이 창고로 보냈지 밖으로 내보내지 않았음을 시사합니다.",
+      "bear_en": "At about 48 times profits it is expensive, and it pays only about 0.6% a year in dividends while a long-term government bond pays about 5.27% with far less risk. A stock this expensive needs the growth to keep going and it needs borrowing rates to fall — and on Friday rates rose instead, because households expect faster price rises, with oil back near $88.50 and the Strait of Hormuz still effectively shut. This week adds a risk that has nothing to do with Costco's own tills: Home Depot, Target, Lowe's and Walmart all report within three days, and if their numbers echo Friday's weak shopper readings, the market can mark down every retailer together. And the plainer risk has not gone away: while money is chasing artificial intelligence, it is not chasing a warehouse retailer, however well the warehouses are doing. For the year it is still well behind the market.",
+      "bear_ko": "이익의 약 48배는 비싼 편이고, 배당은 연 약 0.6%뿐인데 장기 국채는 훨씬 적은 위험으로 약 5.27%를 줍니다. 이 정도로 비싼 주식은 성장이 계속돼야 하고 금리도 내려 줘야 하는데, 금요일에는 오히려 금리가 올랐습니다. 가계가 물가 상승을 더 크게 예상했기 때문이고, 유가는 88.50달러 부근으로 되올랐으며 호르무즈 해협은 사실상 여전히 닫혀 있습니다. 이번 주에는 코스트코 자신의 계산대와 무관한 위험이 하나 더해집니다. 홈디포, 타깃, 로우스, 월마트가 사흘 안에 모두 실적을 내는데, 그 숫자들이 금요일의 약한 소비 지표와 같은 이야기를 하면 시장은 유통주 전체를 함께 깎아내릴 수 있습니다. 더 단순한 위험도 사라지지 않았습니다. 돈이 인공지능을 쫓고 있을 때는, 창고형 마트가 아무리 잘하고 있어도 그 돈이 이쪽으로 오지 않습니다. 올해 누적으로는 여전히 시장 전체보다 한참 뒤처져 있습니다."
     }
   },
   "week": {
-    "label_en": "Thursday August 13, 2026 — four sessions into the week",
-    "label_ko": "2026년 8월 13일(목) · 이번 주 네 번째 거래일",
-    "summary_en": "The week fell twice and then rose twice, and it now stands at a record. On Monday chip shares dropped about 3% and took four of your five down; on Tuesday chips <b>rose</b> and the market fell anyway; on Wednesday everything rose together on a mild inflation report; and on Thursday the S&P 500 closed at <b>7,798.99</b>, the highest it has ever finished, after clearing <b>7,800</b> during the day for the first time. Thursday's push came from an unexpected place: <b>petrol</b>. Wholesale prices did not rise at all in July, against an expected small rise, largely because the wholesale petrol price fell 5.7% — and oil itself fell for the first time in <b>seven sessions</b>, Brent back to about <b>$87</b>. Borrowing rates eased with it, the 10-year to <b>4.64%</b> and the 30-year to 5.21%, and traders cut the odds of the Federal Reserve <b>raising</b> rates in September to about one in three. All five of your holdings finished Thursday higher: <b>SOXL</b> +2.25%, <b>COST</b> +1.29%, <b>QQQ</b> +1.16%, the index +0.65% and <b>NVDA</b> +0.54%. Four sessions in, all five are also ahead for the week — the index up about 0.53%, QQQ 1.25%, NVDA 0.60%, SOXL 3.64% and Costco 1.48%. The one thing pushing the other way has no date on it: for a second night running, a company reported record results and its shares fell.",
-    "summary_ko": "이번 주는 두 번 내렸다가 두 번 오르며 사상 최고치에 올라섰습니다. 월요일에는 반도체 주식이 약 3% 내리며 보유 5개 중 넷을 끌어내렸고, 화요일에는 반도체가 <b>올랐는데도</b> 시장이 내렸으며, 수요일에는 순한 물가 보고서에 전부가 함께 올랐습니다. 그리고 목요일 S&P 500은 장중 처음으로 <b>7,800</b>을 넘은 뒤 역대 가장 높은 <b>7,798.99</b>로 마감했습니다. 목요일의 힘은 예상 밖의 곳에서 왔습니다. <b>기름값</b>이었습니다. 7월 도매물가가 소폭 상승 예상과 달리 전혀 오르지 않았는데, 도매 휘발유값이 5.7% 내린 것이 큰 몫을 했습니다. 유가 자체도 <b>이레</b> 만에 처음으로 내려 브렌트유가 <b>87달러</b> 부근으로 돌아왔습니다. 금리도 함께 진정돼 10년물은 <b>4.64%</b>, 30년물은 5.21%가 됐고, 시장은 연방준비제도가 9월에 금리를 <b>올릴</b> 가능성을 약 3분의 1로 낮춰 잡았습니다. 목요일에 보유 5개는 모두 상승 마감했습니다. <b>SOXL</b> +2.25%, <b>COST</b> +1.29%, <b>QQQ</b> +1.16%, 지수 +0.65%, <b>NVDA</b> +0.54%입니다. 네 거래일이 지난 지금 다섯 종목 모두 주간으로도 상승입니다. 지수는 약 0.53%, QQQ는 1.25%, NVDA는 0.60%, SOXL은 3.64%, 코스트코는 1.48% 올랐습니다. 반대로 미는 것 하나에는 날짜가 없습니다. 이틀 연속으로 사상 최고 실적을 낸 회사의 주가가 내렸다는 사실입니다.",
+    "label_en": "Friday August 14, 2026 — the completed week",
+    "label_ko": "2026년 8월 14일(금) · 한 주 마감",
+    "summary_en": "The week fell twice, rose twice, and gave a little back on Friday — and still ended as the <b>third weekly gain in a row</b>, the longest run since a nine-week streak that ended in May. Monday chip shares dropped about 3% and took four of your five down; Tuesday the market fell even though chips rose; Wednesday everything rose on a mild inflation report; Thursday the S&P 500 closed at a record <b>7,798.99</b> after clearing 7,800 during the day for the first time. Then Friday brought two weak readings on the American shopper. <b>July retail sales fell 0.6%</b>, the biggest monthly drop since May 2025, and the <b>Michigan survey of household confidence</b> fell to <b>51</b> — with households expecting prices to rise <b>4.3%</b> over the next year, up from 4.2%. The index slipped 0.17% to <b>7,785.76</b>, borrowing rates <b>rose</b> on the bad news — the 10-year to about 4.70%, the 30-year to 5.27% — and oil climbed back to about <b>$88.50</b>. Yet the fear gauge closed at <b>14.25</b>, its lowest of 2026. The completed week: <b>SOXL</b> +3.35%, <b>COST</b> +1.40%, <b>QQQ</b> +1.11%, <b>NVDA</b> +0.54% and the index +0.36% — all five up for the week, all five ahead for August. And the pattern with no date on it finished a second chapter: Cisco and Applied Materials both delivered record results and fell in the full session that followed.",
+    "summary_ko": "이번 주는 두 번 내리고 두 번 오른 뒤 금요일에 조금 되돌렸습니다. 그래도 <b>3주 연속 주간 상승</b>으로 마쳤고, 5월에 끝난 9주 연속 상승 이후 가장 긴 흐름입니다. 월요일에는 반도체 주식이 약 3% 내리며 보유 5개 중 넷을 끌어내렸고, 화요일에는 반도체가 올랐는데도 시장이 내렸으며, 수요일에는 순한 물가 보고서에 전부가 함께 올랐습니다. 목요일에는 S&P 500이 장중 처음으로 7,800을 넘은 뒤 사상 최고 종가 <b>7,798.99</b>로 마감했습니다. 그리고 금요일, 미국 소비자에 관한 약한 수치 두 개가 나왔습니다. <b>7월 소매판매가 0.6% 줄어</b> 2025년 5월 이후 가장 큰 월간 감소였고, <b>미시간대 가계 심리 조사</b>는 <b>51</b>로 내렸는데, 그 안에서 가계는 앞으로 1년 물가가 4.2%가 아니라 <b>4.3%</b> 오를 것으로 봤습니다. 지수는 0.17% 내린 <b>7,785.76</b>이 됐고, 나쁜 소식에도 금리는 <b>올라</b> 10년물이 약 4.70%, 30년물이 5.27%가 됐으며, 유가는 <b>88.50달러</b> 부근으로 되올랐습니다. 그런데도 공포 지수는 <b>14.25</b>로 올해 가장 낮은 종가였습니다. 끝난 한 주의 성적은 <b>SOXL</b> +3.35%, <b>COST</b> +1.40%, <b>QQQ</b> +1.11%, <b>NVDA</b> +0.54%, 지수 +0.36%로 다섯 모두 주간 상승이고, 8월 누적으로도 다섯 모두 상승입니다. 그리고 날짜가 없는 그 규칙은 두 번째 장을 마쳤습니다. 시스코와 어플라이드 머티어리얼즈가 모두 사상 최고 실적을 내고도 그다음 완결된 거래일에 내렸습니다.",
     "drivers": [
       {
-        "headline_en": "The record was built on cheaper petrol, not on chips",
-        "headline_ko": "사상 최고치를 만든 것은 반도체가 아니라 싸진 기름값이었습니다",
-        "text_en": "The report that moved Thursday was about <b>wholesale prices</b> — what companies charge each other before anything reaches a shop shelf. In July they did not rise at all, where a small rise had been expected, and over the year the figure came in at <b>4.7%</b>, down sharply from June's 5.5%. The reason was energy: wholesale energy prices fell 3.1% in the month and the wholesale petrol price fell <b>5.7%</b>. Then oil itself turned. Brent fell for the first time in <b>seven sessions</b>, back to about <b>$87</b> a barrel, after six days of climbing on the closure of the Strait of Hormuz. Borrowing rates followed: the 10-year government rate eased from 4.68% to <b>4.64%</b> and the 30-year from 5.25% to <b>5.21%</b>, its first fall in three days. And traders moved: the chance they put on the Federal Reserve <b>raising</b> its rate at the September meeting fell to about <b>one in three</b>, from roughly one in two a week ago. This is worth understanding because it reaches every holding on this page, but it reaches Costco most directly — that is the one you own that has nothing to do with artificial intelligence, so what money costs is most of what moves it. It is also worth understanding for a less comfortable reason. Nobody controls the oil price, the Strait of Hormuz is still effectively shut, and six sessions this month already showed how fast this can run the other way.",
-        "text_ko": "목요일 시장을 움직인 보고서는 <b>도매물가</b>에 관한 것이었습니다. 물건이 매장에 놓이기 전에 회사들이 서로 주고받는 가격입니다. 7월에 이 물가는 전혀 오르지 않았습니다. 소폭 상승이 예상되던 자리였습니다. 1년 기준으로는 <b>4.7%</b>로 나와 6월의 5.5%보다 크게 낮아졌습니다. 이유는 에너지였습니다. 도매 에너지 가격이 한 달 사이 3.1% 내렸고 도매 휘발유값은 <b>5.7%</b> 내렸습니다. 이어 유가 자체도 방향을 돌렸습니다. 호르무즈 해협 봉쇄로 엿새를 오르던 브렌트유가 <b>이레</b> 만에 처음으로 내려 배럴당 <b>87달러</b> 부근이 됐습니다. 금리도 따라왔습니다. 10년물 국채 금리는 4.68%에서 <b>4.64%</b>로, 30년물은 5.25%에서 <b>5.21%</b>로 사흘 만에 처음 내렸습니다. 시장의 셈도 움직였습니다. 연방준비제도가 9월 회의에서 금리를 <b>올릴</b> 가능성을 일주일 전 절반 남짓에서 약 <b>3분의 1</b>로 낮춰 잡았습니다. 이것을 알아 두실 만한 이유는 이 이야기가 페이지의 모든 보유 종목에 닿기 때문이고, 그중 코스트코에 가장 직접적으로 닿기 때문입니다. 인공지능과 아무 상관이 없는 유일한 보유 종목이라, 그것을 움직이는 것의 대부분이 돈값입니다. 덜 편한 이유로도 알아 두실 만합니다. 유가는 누구도 통제하지 못하고, 호르무즈 해협은 사실상 여전히 닫혀 있으며, 이 달에만 이미 엿새 동안 반대 방향으로 갈 수 있다는 것을 보여 줬습니다.",
+        "headline_en": "The American shopper wobbled — and this week brings the answer",
+        "headline_ko": "미국 소비자가 흔들렸습니다 — 답은 이번 주에 나옵니다",
+        "text_en": "Friday's two reports were about the person at the till. <b>July retail sales fell 0.6%</b> — the biggest monthly drop since May 2025, where a small rise had been expected; leaving out cars and petrol, the fall was 0.2%. Then the <b>University of Michigan's survey of how households feel</b> fell to <b>51</b> from 55.2, well below forecasts — and inside it, households said they expect prices to rise <b>4.3%</b> over the next year, up from 4.2%. That mix — spending less while bracing for higher prices — is why borrowing rates <b>rose</b> on a day of weak news: the 10-year to about <b>4.70%</b> and the 30-year to <b>5.27%</b>, with oil back up near <b>$88.50</b>. Traders trimmed the odds of a September rate <b>rise</b> to about one in three, and the fear gauge closed at <b>14.25</b>, its lowest of 2026 — the market read the day as softening, not sinking. What makes this week unusual is how quickly the direct answer arrives: <b>Home Depot reports Tuesday, Target and Lowe's Wednesday, Walmart Thursday</b>, all before the open. The surveys say the shopper feels worse; the tills will now say whether the shopper is acting worse. It reaches everything on this page, and Costco most directly.",
+        "text_ko": "금요일의 두 보고서는 계산대 앞에 선 사람에 관한 것이었습니다. <b>7월 소매판매가 0.6% 줄었습니다.</b> 2025년 5월 이후 가장 큰 월간 감소였고, 소폭 증가가 예상되던 자리였습니다. 자동차와 기름값을 빼면 감소 폭은 0.2%였습니다. 이어 <b>미시간대의 가계 심리 조사</b>가 55.2에서 <b>51</b>로 내려 예상을 크게 밑돌았는데, 그 안에서 가계는 앞으로 1년 물가가 4.2%가 아니라 <b>4.3%</b> 오를 것으로 본다고 답했습니다. 덜 쓰면서 물가 상승에 대비하는 이 조합 때문에, 나쁜 소식이 나온 날인데도 금리가 <b>올랐습니다</b>. 10년물은 약 <b>4.70%</b>, 30년물은 <b>5.27%</b>가 됐고 유가는 <b>88.50달러</b> 부근으로 되올랐습니다. 시장은 9월 금리 <b>인상</b> 가능성을 약 3분의 1로 낮춰 잡았고, 공포 지수는 <b>14.25</b>로 올해 가장 낮은 종가였습니다. 시장은 이날을 가라앉음이 아니라 누그러짐으로 읽은 것입니다. 이번 주가 특별한 것은 직접적인 답이 아주 빨리 온다는 점입니다. <b>화요일 홈디포, 수요일 타깃과 로우스, 목요일 월마트</b>가 모두 개장 전에 실적을 냅니다. 조사는 소비자의 기분이 나빠졌다고 말합니다. 이제 계산대가, 행동도 나빠졌는지를 말해 줄 차례입니다. 이 이야기는 페이지의 모든 보유 종목에 닿고, 코스트코에 가장 직접적으로 닿습니다.",
         "touches": [
           "spx",
           "cost",
@@ -627,8 +627,8 @@
       {
         "headline_en": "Two nights running, a company delivered record results and the shares fell",
         "headline_ko": "이틀 연속으로 사상 최고 실적을 낸 회사의 주가가 내렸습니다",
-        "text_en": "On Wednesday night <b>Cisco</b> reported the best quarter in its history and record orders for AI networking equipment. On Thursday its shares closed down <b>8.40%</b> at $113.47 — a worse fall than the 6% that showed in the first hours after the announcement. Then on Thursday night <b>Applied Materials</b> did it again. Applied Materials sells the machines every chip factory in the world is built from; it supplies the whole industry and holds no stake in Nvidia, which is why this page has been calling it the cleanest available read on chip demand. It reported sales of <b>$9.1 billion</b> for the quarter, up 25% in a year, its largest quarter-on-quarter growth ever, profits of <b>$3.50</b> a share — up 41% in a year and above what analysts expected, the fifth quarter running that it has beaten them — and guidance for the current quarter of about <b>$10.25 billion</b> — roughly $700 million above what analysts had pencilled in. The shares fell about <b>5%</b> in the hours after the announcement and were down about 6% before this morning's bell. Nothing was wrong with either set of numbers. Both companies had risen a very long way into their reports — Applied Materials has roughly doubled this year — so the good news had already been paid for. This matters to you beyond those two companies because <b>Nvidia reports on August 26</b> and is up about <b>12.2%</b> this month heading into it. The demand question looks answered. The price question does not.",
-        "text_ko": "수요일 밤 <b>시스코</b>가 회사 역사상 최고 분기와 사상 최대 AI 네트워크 장비 수주를 발표했습니다. 목요일 주가는 <b>8.40%</b> 내린 113.47달러로 마감했습니다. 발표 직후 몇 시간 동안 보였던 6%보다 더 큰 낙폭입니다. 그리고 목요일 밤 <b>어플라이드 머티어리얼즈</b>가 같은 일을 겪었습니다. 이 회사는 세계의 모든 반도체 공장을 짓는 장비를 만듭니다. 업계 전체에 공급하고 엔비디아와 지분 관계가 없어서, 이 페이지가 반도체 수요를 가장 깨끗하게 볼 수 있는 자료라고 말해 온 곳입니다. 이번 분기 매출은 <b>91억 달러</b>로 1년 사이 25% 늘었고, 직전 분기 대비 증가폭은 회사 역사상 최대였습니다. 주당 이익은 <b>3.50달러</b>로 1년 사이 41% 늘었고 분석가 예상도 웃돌았습니다. 다섯 분기 연속으로 예상을 넘은 것입니다. 이번 분기 전망은 약 <b>102억 5,000만 달러</b>로 분석가들이 잡아 둔 것보다 약 7억 달러 높았습니다. 그런데 주가는 발표 뒤 몇 시간 사이 약 <b>5%</b> 내렸고, 오늘 개장 전에는 약 6% 하락한 상태였습니다. 두 회사 모두 숫자에 잘못된 것이 없었습니다. 다만 실적 발표를 향해 주가가 이미 아주 많이 올라 있었습니다. 어플라이드 머티어리얼즈는 올해 들어 대략 두 배가 됐습니다. 좋은 소식의 값이 이미 치러져 있었던 것입니다. 이것이 두 회사를 넘어 보유 종목에 의미가 있는 이유는, <b>엔비디아가 8월 26일에 실적을 발표하고</b> 이번 달에만 약 <b>12.2%</b> 오른 채 그 자리로 가고 있기 때문입니다. 수요에 관한 질문은 답이 나온 것으로 보입니다. 가격에 관한 질문은 아닙니다.",
+        "text_en": "On Wednesday night <b>Cisco</b> reported the best quarter in its history and record orders for AI networking equipment. On Thursday its shares closed down <b>8.40%</b> at $113.47. On Thursday night <b>Applied Materials</b> did it again. Applied Materials sells the machines every chip factory in the world is built from; it supplies the whole industry and holds no stake in Nvidia, which is why this page has been calling it the cleanest available read on chip demand. It reported sales of <b>$9.1 billion</b> for the quarter, up 25% in a year, its largest quarter-on-quarter growth ever, profits of <b>$3.50</b> a share — up 41% and above expectations for a fifth straight quarter — and guidance for the current quarter of about <b>$10.25 billion</b>, roughly $700 million above what analysts had pencilled in. On Friday its shares closed down <b>5.12%</b> at $507.18. Nothing was wrong with either set of numbers. Both companies had risen a very long way into their reports — Applied Materials has roughly doubled this year — so the good news had already been paid for. This matters to you beyond those two companies because <b>Nvidia reports on August 26</b> and is up about <b>12.2%</b> this month heading into it. The demand question looks answered. The price question does not.",
+        "text_ko": "수요일 밤 <b>시스코</b>가 회사 역사상 최고 분기와 사상 최대 AI 네트워크 장비 수주를 발표했습니다. 목요일 주가는 <b>8.40%</b> 내린 113.47달러로 마감했습니다. 그리고 목요일 밤 <b>어플라이드 머티어리얼즈</b>가 같은 일을 겪었습니다. 이 회사는 세계의 모든 반도체 공장을 짓는 장비를 만듭니다. 업계 전체에 공급하고 엔비디아와 지분 관계가 없어서, 이 페이지가 반도체 수요를 가장 깨끗하게 볼 수 있는 자료라고 말해 온 곳입니다. 이번 분기 매출은 <b>91억 달러</b>로 1년 사이 25% 늘었고, 직전 분기 대비 증가폭은 회사 역사상 최대였습니다. 주당 이익은 <b>3.50달러</b>로 41% 늘어 다섯 분기 연속으로 예상을 넘었고, 이번 분기 전망은 약 <b>102억 5,000만 달러</b>로 분석가들이 잡아 둔 것보다 약 7억 달러 높았습니다. 그런데 금요일 주가는 <b>5.12%</b> 내린 507.18달러로 마감했습니다. 두 회사 모두 숫자에 잘못된 것이 없었습니다. 다만 실적 발표를 향해 주가가 이미 아주 많이 올라 있었습니다. 어플라이드 머티어리얼즈는 올해 들어 대략 두 배가 됐습니다. 좋은 소식의 값이 이미 치러져 있었던 것입니다. 이것이 두 회사를 넘어 보유 종목에 의미가 있는 이유는, <b>엔비디아가 8월 26일에 실적을 발표하고</b> 이번 달에만 약 <b>12.2%</b> 오른 채 그 자리로 가고 있기 때문입니다. 수요에 관한 질문은 답이 나온 것으로 보입니다. 가격에 관한 질문은 아닙니다.",
         "touches": [
           "nvda",
           "qqq",
@@ -639,8 +639,8 @@
       {
         "headline_en": "Inside the chip rally the leaders changed — memory, not Nvidia",
         "headline_ko": "반도체 상승 안에서 주도주가 바뀌었습니다 — 엔비디아가 아니라 메모리입니다",
-        "text_en": "Chip shares rose again on Thursday, but a different set of them did the work. <b>Micron</b>, which makes the memory that sits beside Nvidia's chips, rose about <b>4.2%</b> to close above $949 and is worth more than a trillion dollars again. <b>SanDisk</b>, another memory maker, rose about <b>16%</b>. <b>Nvidia</b> rose <b>0.54%</b>. For a fortnight Nvidia has been the name that moved first and hardest in both directions; on Thursday it was the one that barely moved at all. This is not, by itself, a warning. Memory chips are in short supply and their prices are rising, which is straightforwardly good for the companies that make them, and a share that has gained about 12.2% in eight sessions is entitled to a quiet day. But it is worth noticing for what it says about the shape of your holdings. The chip index behind SOXL holds about thirty companies, and QQQ holds Micron alongside Nvidia, so a day like Thursday still lifts both — SOXL rose 2.25% and QQQ 1.16% while Nvidia itself did almost nothing. That is the overlap working in your favour for once. It works the other way just as easily.",
-        "text_ko": "목요일에도 반도체 주식은 올랐지만, 일한 얼굴이 달랐습니다. 엔비디아 반도체 옆에 들어가는 메모리를 만드는 <b>마이크론</b>이 약 <b>4.2%</b> 올라 949달러 위에서 마감했고 회사 가치가 다시 1조 달러를 넘었습니다. 또 다른 메모리 회사 <b>샌디스크</b>는 약 <b>16%</b> 올랐습니다. <b>엔비디아</b>는 <b>0.54%</b> 올랐습니다. 2주 동안 엔비디아는 양방향 모두에서 가장 먼저, 가장 크게 움직이는 이름이었는데, 목요일에는 거의 움직이지 않은 쪽이 됐습니다. 이것만으로 경고는 아닙니다. 메모리 반도체는 공급이 달리고 값이 오르고 있어 만드는 회사에는 그대로 좋은 일이고, 여덟 거래일에 약 12.2% 오른 주식에 조용한 하루쯤은 있을 수 있습니다. 다만 보유 종목의 모양에 대해 알려 주는 바가 있어 짚어 둘 만합니다. SOXL이 따라가는 반도체 지수에는 회사 서른 곳쯤이 들어 있고, QQQ는 엔비디아와 함께 마이크론도 담고 있습니다. 그래서 목요일 같은 날에는 엔비디아가 거의 움직이지 않아도 둘 다 올라갑니다. SOXL은 2.25%, QQQ는 1.16% 올랐습니다. 이번에는 그 중복이 유리하게 작동한 셈입니다. 반대로 작동하기도 그만큼 쉽습니다.",
+        "text_en": "For two sessions running, the work in chips was done by a different set of companies. On Thursday <b>Micron</b>, which makes the memory that sits beside Nvidia's chips, rose about 4.2% and reclaimed a trillion dollars in company value, while <b>SanDisk</b> rose about 16%. On Friday they did it again — Micron up <b>2.30%</b> to $971.66, about <b>$1.1 trillion</b> now, and SanDisk up <b>7.39%</b> — on a day Nvidia slipped 0.06% and the broad chip fund eased 0.06%. The reason is straightforward: <b>memory chips are in short supply</b> and their prices are rising steeply, which is plainly good for the companies that make them. It matters to the shape of your holdings. The chip index behind SOXL holds about thirty companies, and QQQ holds Micron alongside Nvidia, so memory strength cushions both even when Nvidia stands still — part of why QQQ slipped just 0.14% on a weak-news Friday. This is a rotation inside the same AI story, not a rejection of it. But it is two sessions old now, and it is the thing that kept your chip-heavy holdings steady through a poor-news week.",
+        "text_ko": "이틀 연속으로, 반도체에서 일을 한 것은 다른 회사들이었습니다. 목요일에는 엔비디아 반도체 옆에 들어가는 메모리를 만드는 <b>마이크론</b>이 약 4.2% 올라 회사 가치 1조 달러를 되찾았고, <b>샌디스크</b>는 약 16% 올랐습니다. 금요일에도 되풀이됐습니다. 마이크론이 <b>2.30%</b> 올라 971.66달러(이제 약 <b>1조 1,000억 달러</b>)가 됐고 샌디스크는 <b>7.39%</b> 올랐는데, 그날 엔비디아는 0.06% 내렸고 일반 반도체 펀드도 0.06% 내렸습니다. 이유는 단순합니다. <b>메모리 반도체는 공급이 달리고</b> 값이 가파르게 오르고 있어, 만드는 회사에는 그대로 좋은 일입니다. 보유 종목의 모양에도 의미가 있습니다. SOXL이 따라가는 반도체 지수에는 회사 서른 곳쯤이 들어 있고, QQQ는 엔비디아와 함께 마이크론도 담고 있습니다. 그래서 엔비디아가 멈춰 서 있어도 메모리의 힘이 둘 다 받쳐 줍니다. 나쁜 소식이 나온 금요일에 QQQ가 0.14%만 내린 데에는 그 이유도 있습니다. 같은 AI 이야기 안에서 자리가 옮겨간 것이지 이야기가 부정된 것은 아닙니다. 다만 이제 이틀째이고, 나쁜 소식의 한 주 동안 반도체 비중이 큰 보유 종목들을 붙들어 준 것이 바로 이것입니다.",
         "touches": [
           "soxl",
           "qqq",
@@ -648,14 +648,35 @@
         ]
       }
     ],
-    "month_en": "August so far, nine sessions in: the S&P 500 is up about <b>4.1%</b> and closed Thursday at a record. QQQ is up about <b>6.4%</b>, NVDA about <b>12.2%</b>, and SOXL about <b>26.7%</b>. COST is up about <b>1.1%</b> — Thursday was the day it caught up, so for the first time this month all five are ahead. Set against July — when the wider market went nowhere and chips collapsed — the month remains a sharp reversal, and this week's two falls have been more than repaid.",
-    "month_ko": "8월은 아홉 거래일이 지났습니다. S&P 500은 약 <b>4.1%</b> 올라 목요일에 사상 최고 종가로 마쳤습니다. QQQ는 약 <b>6.4%</b>, NVDA는 약 <b>12.2%</b>, SOXL은 약 <b>26.7%</b> 상승입니다. COST는 약 <b>1.1%</b> 상승인데, 목요일이 따라잡은 날이었습니다. 이로써 이 달 처음으로 다섯 종목이 모두 상승 상태가 됐습니다. 시장 전체는 제자리인데 반도체만 무너졌던 7월과 견주면 이 달은 여전히 급반전이고, 이번 주에 있었던 두 번의 하락은 이미 다 메워지고도 남았습니다.",
+    "month_en": "August so far, ten sessions in: the S&P 500 is up about <b>3.95%</b> and sits just under the record it set on Thursday. QQQ is up about <b>6.3%</b>, NVDA about <b>12.2%</b>, and SOXL about <b>26.4%</b>. COST is up about <b>1.0%</b>, so all five of your holdings remain ahead for the month. Set against July — when the wider market went nowhere and chips collapsed — the month remains a sharp reversal.",
+    "month_ko": "8월은 열 거래일이 지났습니다. S&P 500은 약 <b>3.95%</b> 올라 목요일에 세운 사상 최고치 바로 아래에 있습니다. QQQ는 약 <b>6.3%</b>, NVDA는 약 <b>12.2%</b>, SOXL은 약 <b>26.4%</b> 상승입니다. COST도 약 <b>1.0%</b> 상승이라 보유 5개 종목 모두 월간 상승 상태를 지키고 있습니다. 시장 전체는 제자리인데 반도체만 무너졌던 7월과 견주면 이 달은 여전히 급반전입니다.",
     "calendar": [
       {
-        "date_en": "Fri Aug 14",
-        "date_ko": "8월 14일 (금)",
-        "what_en": "Today. <b>July retail sales</b> arrive before the open, at 5:30 in the morning Pacific time — how much people actually spent. Forecasters expect a small rise of about <b>0.3%</b>. Then at 7:00 in the morning Pacific time comes the <b>University of Michigan survey of how confident households feel</b>, expected to slip a little from last month. After a jobs report that showed the economy losing jobs, these are the readings that say whether households have stopped spending. Petrol prices sit inside both of them, and this is the week's one dated item that reaches Costco.",
-        "what_ko": "오늘입니다. <b>7월 소매판매</b>가 개장 전, 서부 시각 오전 5시 30분에 나옵니다. 사람들이 실제로 얼마나 썼는지를 보여 주는 수치이고, 전문가들은 약 <b>0.3%</b>의 소폭 증가를 예상합니다. 이어 서부 시각 오전 7시에는 <b>미시간대의 가계 심리 조사</b>가 나오는데, 지난달보다 조금 내려갈 것으로 보고 있습니다. 일자리가 줄었다는 고용 보고서가 나온 뒤라, 가계가 지출을 멈췄는지 아닌지를 알려 주는 지표들입니다. 두 수치 안에는 기름값도 함께 들어 있고, 이번 주에 코스트코에 닿는 유일한 일정이기도 합니다.",
+        "date_en": "Tue Aug 18",
+        "date_ko": "8월 18일 (화)",
+        "what_en": "<b>Home Depot</b> reports before the open — the first of the big store chains to answer Friday's weak shopper readings, and the read on housing-linked spending. The same day, <b>Reddit joins the S&P 500</b>; nothing to do, just a change inside the index you hold.",
+        "what_ko": "<b>홈디포</b>가 개장 전에 실적을 발표합니다. 금요일의 약한 소비 지표에 답하는 첫 대형 유통업체이고, 주택 관련 지출을 보여 주는 수치이기도 합니다. 같은 날 <b>레딧이 S&P 500에 편입</b>됩니다. 하실 일은 없고, 보유하신 지수 안의 구성 변화일 뿐입니다.",
+        "touches": [
+          "cost",
+          "spx"
+        ]
+      },
+      {
+        "date_en": "Wed Aug 19",
+        "date_ko": "8월 19일 (수)",
+        "what_en": "A double day. <b>Target and Lowe's</b> report before the open. Then at <b>11 in the morning Pacific time</b> the Federal Reserve publishes the <b>minutes of its July meeting</b> — the one where three officials voted to raise rates. The minutes show how close that argument really was.",
+        "what_ko": "일정이 겹치는 날입니다. <b>타깃과 로우스</b>가 개장 전에 실적을 발표합니다. 이어 <b>서부 시각 오전 11시</b>에 연방준비제도가 <b>7월 회의 의사록</b>을 공개합니다. 세 명이 금리 인상에 표를 던진 그 회의입니다. 논쟁이 실제로 얼마나 팽팽했는지가 여기서 드러납니다.",
+        "touches": [
+          "spx",
+          "qqq",
+          "cost"
+        ]
+      },
+      {
+        "date_en": "Thu Aug 20",
+        "date_ko": "8월 20일 (목)",
+        "what_en": "<b>Walmart</b> reports before the open — the biggest retailer in the country, and the week's clearest single read on whether the ordinary American shopper is still spending. After Friday's weak retail-sales figure, this is the one the whole market will read.",
+        "what_ko": "<b>월마트</b>가 개장 전에 실적을 발표합니다. 미국에서 가장 큰 유통업체라, 평범한 미국 소비자가 여전히 돈을 쓰고 있는지를 이번 주에 가장 또렷하게 보여 주는 하나의 수치입니다. 금요일에 약한 소매판매 수치가 나온 뒤라 시장 전체가 이것을 읽을 것입니다.",
         "touches": [
           "cost",
           "spx"
@@ -664,13 +685,26 @@
       {
         "date_en": "Wed Aug 26",
         "date_ko": "8월 26일 (수)",
-        "what_en": "The one that matters most, and now the only large dated item for a fortnight: NVDA reports its quarterly results after the close, with the call at 2:00 in the afternoon Pacific time. The reception given to Cisco and to Applied Materials on the two nights just gone — record results, shares down — is the thing to keep in mind about it. The numbers may not be the whole test.",
-        "what_ko": "가장 중요한 일정이고, 이제 2주 동안 유일하게 큰 일정이기도 합니다. 엔비디아가 장 마감 후 분기 실적을 발표하고, 설명회는 서부 시각 오후 2시입니다. 지난 이틀 밤 시스코와 어플라이드 머티어리얼즈가 받은 반응, 즉 사상 최고 실적에 주가는 하락이라는 결과를 함께 기억해 두실 만합니다. 숫자만이 시험의 전부가 아닐 수 있습니다.",
+        "what_en": "The one that matters most: NVDA reports its quarterly results after the close, with the call at 2:00 in the afternoon Pacific time. The reception given to Cisco and Applied Materials last week — record results, shares down the next day — is the thing to keep in mind about it. The numbers may not be the whole test.",
+        "what_ko": "가장 중요한 일정입니다. 엔비디아가 장 마감 후 분기 실적을 발표하고, 설명회는 서부 시각 오후 2시입니다. 지난주 시스코와 어플라이드 머티어리얼즈가 받은 반응, 즉 사상 최고 실적에 다음 날 주가는 하락이라는 결과를 함께 기억해 두실 만합니다. 숫자만이 시험의 전부가 아닐 수 있습니다.",
         "touches": [
           "nvda",
           "soxl",
           "qqq",
           "spx"
+        ]
+      },
+      {
+        "date_en": "Thu–Sat Aug 27–29",
+        "date_ko": "8월 27~29일 (목~토)",
+        "what_en": "The Federal Reserve's yearly gathering at Jackson Hole, and <b>Chair Warsh's first keynote</b> there. What he signals about September's rate decision can move every holding on this page — the July minutes on Wednesday are the warm-up for it.",
+        "what_ko": "연방준비제도의 연례 잭슨홀 회의이고, <b>워시 의장의 첫 기조연설</b>이 있습니다. 9월 금리 결정에 대해 어떤 신호를 주느냐에 따라 이 페이지의 모든 보유 종목이 움직일 수 있습니다. 수요일의 7월 의사록은 그 예고편입니다.",
+        "touches": [
+          "spx",
+          "qqq",
+          "nvda",
+          "soxl",
+          "cost"
         ]
       },
       {
@@ -685,8 +719,8 @@
       {
         "date_en": "Tue–Wed Sep 15–16",
         "date_ko": "9월 15~16일 (화~수)",
-        "what_en": "The next Federal Reserve interest-rate decision, announced on September 16. Nothing from the Fed before then. The rate has sat at 3.5% to 3.75% for five meetings, and after two mild inflation reports in a row traders now put the chance of a rise at about one in three, down from roughly one in two a week ago.",
-        "what_ko": "다음 연방준비제도 금리 결정으로, 발표는 9월 16일입니다. 그전까지 연준 일정은 없습니다. 금리는 다섯 차례 회의 동안 3.5~3.75%에 묶여 있고, 순한 물가 보고서가 이틀 연속 나온 뒤 시장은 인상 가능성을 일주일 전 절반 남짓에서 약 3분의 1로 낮춰 보고 있습니다.",
+        "what_en": "The next Federal Reserve interest-rate decision, announced on September 16. The rate has sat at 3.5% to 3.75% for five meetings, and traders put the chance of a rise at about one in three — Friday's weak data nudged that down rather than up.",
+        "what_ko": "다음 연방준비제도 금리 결정으로, 발표는 9월 16일입니다. 금리는 다섯 차례 회의 동안 3.5~3.75%에 묶여 있고, 시장은 인상 가능성을 약 3분의 1로 봅니다. 금요일의 약한 지표는 그 값을 올리기보다 낮췄습니다.",
         "touches": [
           "spx",
           "qqq",
@@ -710,8 +744,8 @@
         "id": "soxl-decay",
         "title_en": "SOXL loses value just from bouncing around",
         "title_ko": "SOXL은 오르내리기만 해도 가치가 줄어듭니다",
-        "text_en": "SOXL tries to move three times as much as a chip-company index — but only for one day at a time. Every evening it resets. Measured close to close, the promise holds well, and Thursday was the best example yet: the ordinary chip fund holding these same companies rose <b>0.76%</b>, three times that is 2.27%, and SOXL rose <b>2.25%</b> — two hundredths of a point off. But Thursday also showed, inside a single session, exactly what that machinery costs you. This fund was up <b>8.4%</b> at its high and closed up 2.25%, giving back about three-quarters of the gain. That was not a fault: the chip fund did the same, up 2.86% at its high and up 0.76% at the close. The whipsaw belonged to the chip market and SOXL tripled it in both directions. Put days together and whether it leaks depends entirely on how often the price turns around. Over the four sessions since Friday's close the chip fund gained <b>1.38%</b>, three times is <b>4.13%</b>, and SOXL gained <b>3.64%</b> — about 88%, the shortfall coming from Monday's fall and the turn out of it. July is the extreme setting: the chip index fell about 21% and SOXL fell about <b>57%</b>, because six days in late July went −13%, −6%, −15%, −16%, +25%, flat, and every turn took another bite. Even after August's 26.7% rise it is still about 51.9% below its 1-year high of $302.00, and would need to rise about 108% to get back. None of this is a claim about where it goes next. It is how the product is built.",
-        "text_ko": "SOXL은 반도체 지수보다 세 배 크게 움직이도록 만들어진 상품인데, 그 약속은 딱 하루짜리입니다. 매일 저녁 기준이 초기화됩니다. 종가와 종가로만 재면 약속은 잘 지켜지고, 목요일은 지금까지 중 가장 좋은 예였습니다. 같은 회사들을 담은 일반 반도체 펀드가 <b>0.76%</b> 올랐고 세 배면 2.27%인데 SOXL은 <b>2.25%</b> 올랐습니다. 0.02%포인트 차이입니다. 그런데 목요일은 그 장치가 무엇을 대가로 요구하는지도 하루 안에 그대로 보여 줬습니다. 이 펀드는 고점에서 <b>8.4%</b> 올라 있다가 2.25% 상승으로 마쳐, 오른 폭의 약 4분의 3을 돌려줬습니다. 고장이 아니었습니다. 반도체 펀드도 고점에서 2.86%였다가 0.76%로 마쳐 똑같이 했습니다. 출렁임은 반도체 시장의 것이었고 SOXL은 그것을 양방향으로 세 배 옮겼을 뿐입니다. 날짜를 붙여 놓으면, 새는지 아닌지는 가격이 방향을 몇 번 바꿨느냐에 전적으로 달려 있습니다. 금요일 종가 이후 네 거래일 동안 반도체 펀드는 <b>1.38%</b>, 세 배면 <b>4.13%</b>인데 SOXL은 <b>3.64%</b> 올랐습니다. 약 88%이고, 모자란 부분은 월요일의 하락과 거기서 방향이 바뀐 데서 나왔습니다. 7월은 그 눈금의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 SOXL은 약 <b>57%</b> 내렸습니다. 7월 말 6거래일이 −13%, −6%, −15%, −16%, +25%, 보합으로 이어지며 방향이 바뀔 때마다 한 입씩 더 떼였기 때문입니다. 8월에 26.7% 오른 것을 감안해도 1년 최고가 302.00달러보다 여전히 약 51.9% 낮고, 거기로 돌아가려면 약 108% 올라야 합니다. 앞으로 어떻게 될지에 대한 이야기가 아니라, 이 상품이 원래 그렇게 만들어졌다는 이야기입니다.",
+        "text_en": "SOXL tries to move three times as much as a chip-company index — but only for one day at a time. Every evening it resets. Measured close to close, the promise held all week: on Friday the ordinary chip fund holding these same companies fell <b>0.06%</b>, three times that is −0.17%, and SOXL fell <b>0.28%</b> — about a tenth of a point of slippage on a near-flat day, after Thursday's two hundredths. But the week also showed, twice, what the machinery feels like inside a single session. Thursday: up <b>8.4%</b> at its high, up 2.25% at the close. Friday: down about <b>4.4%</b> after the weak retail-sales report, then back to nearly flat by the bell — faithfully tripling the chip fund's own dip and recovery. Put days together and whether it leaks depends entirely on how often the price turns around. Over the completed week the chip fund gained <b>1.32%</b>, three times is <b>3.95%</b>, and SOXL gained <b>3.35%</b> — about 85%, the shortfall coming from Monday's 7.31% fall and the turns that followed. July is the extreme setting: the chip index fell about 21% and SOXL fell about <b>57%</b>, because six days in late July went −13%, −6%, −15%, −16%, +25%, flat, and every turn took another bite. Even after August's 26.4% rise it is still about 52% below its 1-year high of $302.00, and would need to rise about 108% to get back. None of this is a claim about where it goes next. It is how the product is built.",
+        "text_ko": "SOXL은 반도체 지수보다 세 배 크게 움직이도록 만들어진 상품인데, 그 약속은 딱 하루짜리입니다. 매일 저녁 기준이 초기화됩니다. 종가와 종가로만 재면 약속은 이번 주 내내 지켜졌습니다. 금요일에는 같은 회사들을 담은 일반 반도체 펀드가 <b>0.06%</b> 내렸고 세 배면 −0.17%인데 SOXL은 <b>0.28%</b> 내렸습니다. 거의 움직이지 않은 날에 약 0.1%포인트의 오차이고, 목요일에는 0.02%포인트였습니다. 그런데 이번 주는 그 장치가 하루 안에서 어떤 느낌인지도 두 번 보여 줬습니다. 목요일에는 고점에서 <b>8.4%</b> 올라 있다가 2.25% 상승으로 마쳤습니다. 금요일에는 약한 소매판매 보고서 뒤 약 <b>4.4%</b> 내려 있다가 마감에는 거의 제자리로 돌아왔습니다. 반도체 펀드 자신의 하락과 회복을 충실히 세 배로 옮긴 것입니다. 날짜를 붙여 놓으면, 새는지 아닌지는 가격이 방향을 몇 번 바꿨느냐에 전적으로 달려 있습니다. 끝난 한 주 동안 반도체 펀드는 <b>1.32%</b> 올랐고 세 배면 <b>3.95%</b>인데 SOXL은 <b>3.35%</b> 올랐습니다. 약 85%이고, 모자란 부분은 월요일의 7.31% 하락과 그 뒤의 방향 전환들에서 나왔습니다. 7월은 그 눈금의 극단이었습니다. 반도체 지수가 약 21% 내릴 때 SOXL은 약 <b>57%</b> 내렸습니다. 7월 말 6거래일이 −13%, −6%, −15%, −16%, +25%, 보합으로 이어지며 방향이 바뀔 때마다 한 입씩 더 떼였기 때문입니다. 8월에 26.4% 오른 것을 감안해도 1년 최고가 302.00달러보다 여전히 약 52% 낮고, 거기로 돌아가려면 약 108% 올라야 합니다. 앞으로 어떻게 될지에 대한 이야기가 아니라, 이 상품이 원래 그렇게 만들어졌다는 이야기입니다.",
         "touches": [
           "soxl"
         ]
@@ -720,8 +754,8 @@
         "id": "four-of-five",
         "title_en": "Four of your five are the same bet",
         "title_ko": "보유 5개 중 4개가 사실상 같은 베팅입니다",
-        "text_en": "You own NVDA outright. You also own it inside QQQ, where it is the second-largest holding at about 7.9% at its July 24 weighting — and the chip makers together there (NVDA, Micron, AMD, Broadcom) come to about 19% of the fund, roughly one dollar in five. You own it again inside the S&P 500, where it is the largest single company. And SOXL is three times a basket of thirty chip companies. So one piece of news about chips reaches four of your five holdings at once. This week has shown every version of that. Monday was the unpleasant one: chip shares fell about 3% and NVDA fell 2.86%, SOXL 7.31%, QQQ 0.30% and the S&P 500 0.06%, while Costco rose and was your only gainer. Tuesday ran it backwards. Wednesday's news was an inflation report, which reaches everything, so all five rose together. Thursday showed a fourth version worth understanding: the chip news was real but it went to <b>Micron</b> rather than Nvidia, so SOXL rose 2.25% and QQQ 1.16% while Nvidia itself managed 0.54%. The overlap is not only about Nvidia — it is about chips, and chips are thirty companies. When the sector moves it moves four things at once and leaves you one. The worst version was July, when the same four fell together and SOXL lost 57%.",
-        "text_ko": "엔비디아를 직접 보유하고 계십니다. 동시에 QQQ 안에서도 보유하고 계신데, 7월 24일 기준 비중으로 두 번째로 큰 약 7.9%입니다. 그 안의 반도체 기업들을 합치면(엔비디아·마이크론·AMD·브로드컴) 펀드의 약 19%, 대략 5분의 1입니다. S&P 500 안에서도 다시 보유하고 계시고, 거기서는 단일 기업 중 비중이 가장 큽니다. 그리고 SOXL은 반도체 기업 30곳 묶음의 세 배입니다. 그래서 반도체 관련 소식 하나가 보유 5개 중 4개에 한꺼번에 닿습니다. 이번 주에 그 모든 판본이 나왔습니다. 월요일은 기분 나쁜 쪽이었습니다. 반도체 주식이 약 3% 내리면서 NVDA는 2.86%, SOXL은 7.31%, QQQ는 0.30%, S&P 500은 0.06% 내렸고, 코스트코만 올라 유일한 상승 종목이었습니다. 화요일은 거꾸로 돌았습니다. 수요일의 소식은 모든 것에 닿는 물가 보고서였고 그래서 다섯이 함께 올랐습니다. 목요일에는 알아 두실 만한 네 번째 판본이 나왔습니다. 반도체 소식은 진짜였는데 그 몫이 엔비디아가 아니라 <b>마이크론</b>에 갔습니다. 그래서 엔비디아가 0.54% 오르는 데 그친 날 SOXL은 2.25%, QQQ는 1.16% 올랐습니다. 이 중복은 엔비디아만의 이야기가 아니라 반도체 전체의 이야기이고, 반도체는 회사 서른 곳입니다. 업종이 움직이면 네 가지를 한꺼번에 움직이고 하나만 남깁니다. 가장 나빴던 경우는 7월입니다. 같은 넷이 함께 내렸고 SOXL은 57%를 잃었습니다.",
+        "text_en": "You own NVDA outright. You also own it inside QQQ, where it is the second-largest holding at about 7.9% at its July 24 weighting — and the chip makers together there (NVDA, Micron, AMD, Broadcom) come to about 19% of the fund, roughly one dollar in five. You own it again inside the S&P 500, where it is the largest single company. And SOXL is three times a basket of thirty chip companies. So one piece of news about chips reaches four of your five holdings at once. Last week showed every version of that. Monday was the unpleasant one: chip shares fell about 3% and NVDA fell 2.86%, SOXL 7.31%, QQQ 0.30% and the S&P 500 0.06%, while Costco rose and was your only gainer. Wednesday's news was an inflation report, which reaches everything, so all five rose together. Thursday and Friday showed the version to remember now: the chip news was real but it went to <b>Micron</b> and SanDisk rather than Nvidia, so SOXL and QQQ held up while Nvidia itself stood still. The overlap is not only about Nvidia — it is about chips, and chips are thirty companies. When the sector moves it moves four things at once and leaves you one. The worst version was July, when the same four fell together and SOXL lost 57%.",
+        "text_ko": "엔비디아를 직접 보유하고 계십니다. 동시에 QQQ 안에서도 보유하고 계신데, 7월 24일 기준 비중으로 두 번째로 큰 약 7.9%입니다. 그 안의 반도체 기업들을 합치면(엔비디아·마이크론·AMD·브로드컴) 펀드의 약 19%, 대략 5분의 1입니다. S&P 500 안에서도 다시 보유하고 계시고, 거기서는 단일 기업 중 비중이 가장 큽니다. 그리고 SOXL은 반도체 기업 30곳 묶음의 세 배입니다. 그래서 반도체 관련 소식 하나가 보유 5개 중 4개에 한꺼번에 닿습니다. 지난주에 그 모든 판본이 나왔습니다. 월요일은 기분 나쁜 쪽이었습니다. 반도체 주식이 약 3% 내리면서 NVDA는 2.86%, SOXL은 7.31%, QQQ는 0.30%, S&P 500은 0.06% 내렸고, 코스트코만 올라 유일한 상승 종목이었습니다. 수요일의 소식은 모든 것에 닿는 물가 보고서였고 그래서 다섯이 함께 올랐습니다. 목요일과 금요일에는 지금 기억해 두실 판본이 나왔습니다. 반도체 소식은 진짜였는데 그 몫이 엔비디아가 아니라 <b>마이크론</b>과 샌디스크에 갔습니다. 그래서 엔비디아가 멈춰 서 있는 동안 SOXL과 QQQ가 버텼습니다. 이 중복은 엔비디아만의 이야기가 아니라 반도체 전체의 이야기이고, 반도체는 회사 서른 곳입니다. 업종이 움직이면 네 가지를 한꺼번에 움직이고 하나만 남깁니다. 가장 나빴던 경우는 7월입니다. 같은 넷이 함께 내렸고 SOXL은 57%를 잃었습니다.",
         "touches": [
           "nvda",
           "soxl",
@@ -730,44 +764,44 @@
         ]
       }
     ],
-    "sources_en": "<b>Where these numbers came from.</b> This page was written on Friday morning, about two and three-quarter hours <b>before</b> the opening bell, so the Today block above describes a session that has not started. The last completed session is Thursday August 13, so every price on the board is that day's close, and the week figures cover Monday through Thursday. Each of the five closes was read from at least two independent sources and each percentage was recalculated from Wednesday's close rather than copied: SPX 7,798.99 (+0.65%), QQQ 732.07, NVDA 225.30 and COST 961.85 from StockAnalysis against Google Finance and Yahoo Finance. The index table — S&P 500 +50.49, Dow 53,839.99 (+69.72), Nasdaq 26,803.03 (+214.54) and Russell 2000 3,052.85 (+7.36) — is AP's, and it cross-checks exactly against the Wednesday closes this page carried yesterday: 7,748.50 + 50.49, 53,770.27 + 69.72, 26,588.49 + 214.54 and 3,045.48 + 7.36 all land on the published figures, so the two days corroborate each other. <b>One stored constant changed and it had to.</b> The S&P 500's 1-year high moves from 7,757.64 to <b>7,798.99</b>, because Thursday was a genuine record close — the index also traded as high as 7,816.70, the first time it has been above 7,800 at any point. The board therefore still shows \"0% / at its high\", but now because it <i>is</i> the high rather than because it is within a whisker of it. No other high or low was touched. Week figures run from Friday's closes — SPX 7,757.64, QQQ 723.03, NVDA 223.96, SOXL 140.25, COST 947.82 — and month figures from July 31: SPX 7,489.72, QQQ 687.99, NVDA 200.75, SOXL 114.72, COST 951.89. <b>SOXL was given the extra check it always gets and came back clean for a second run.</b> Three sources agree on the $145.36 close and the $142.16 previous close, and the three-times test came in two hundredths of a point short against Wednesday's eight hundredths — the closest reading this page has recorded. One small caution, disclosed rather than smoothed over: StockAnalysis gives Thursday's SOXL opening price as exactly $142.16, identical to the previous close, which may be a placeholder rather than a trade, so the note above describes the day by its range and close and never leans on the open. <b>Four source disagreements were arbitrated this run.</b> One outlet gives Thursday's S&P 500 as 7,781.59 with the Dow <i>down</i> 0.18%, against 7,798.99 and the Dow up 0.13% from Google Finance, Yahoo Finance, Zacks, TheStreet and AP — five against one, and the outlier was discarded. On oil, AP has Brent down 2.1% to $87.07 and another outlet down 1.5% to $87.66; both agree it fell and ended the six-session rally, so the page says \"about $87\". On Micron, StockAnalysis and Google Finance both give +4.23%; two uncorroborated figures of 6.7% and 3.09% were discarded. Rates and the fear gauge needed no arbitration: Investing.com's daily series and Yahoo's 10-year index both put Thursday's 10-year at 4.641% against 4.682% on Wednesday, the 30-year at 5.213% from 5.247%, and the fear gauge closed at 14.63 on both Yahoo and Investing.com. Thursday's wholesale-price figures — unchanged on the month, up 4.7% over the year, wholesale petrol down 5.7% — are the Bureau of Labor Statistics release of August 13. Applied Materials' results and the fall in its shares, the futures readings and the retail-sales forecast in the Today block are from Investing.com, Benzinga and CNBC premarket copy read at about 3:30 in the morning Pacific time. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
-    "sources_ko": "<b>이 숫자들의 출처.</b> 이 페이지는 금요일 아침, 개장 <b>두 시간 45분쯤 전에</b> 작성됐습니다. 그래서 위의 '오늘' 부분은 아직 시작되지 않은 장을 설명합니다. 마지막으로 끝난 거래일은 8월 13일 목요일이므로 표에 있는 모든 가격은 그날 종가이고, 주간 수치는 월요일부터 목요일까지를 담고 있습니다. 다섯 종목의 종가는 각각 서로 다른 두 곳 이상에서 읽었고, 변동률은 옮기지 않고 수요일 종가에서 다시 계산했습니다. SPX 7,798.99(+0.65%), QQQ 732.07, NVDA 225.30, COST 961.85는 StockAnalysis를 구글 파이낸스·야후 파이낸스와 맞춰 보았습니다. 지수 표(S&P 500 +50.49, 다우 53,839.99 +69.72, 나스닥 26,803.03 +214.54, 러셀 2000 3,052.85 +7.36)는 AP 자료이며, 어제 이 페이지에 실렸던 수요일 종가와 정확히 맞아떨어집니다. 7,748.50+50.49, 53,770.27+69.72, 26,588.49+214.54, 3,045.48+7.36이 모두 발표된 수치와 일치하므로 이틀 치가 서로를 확인해 줍니다. <b>저장된 기준값 하나를 바꿨고, 바꾸는 것이 맞았습니다.</b> S&P 500의 1년 최고가를 7,757.64에서 <b>7,798.99</b>로 옮겼습니다. 목요일이 진짜 사상 최고 종가였기 때문입니다. 장중에는 7,816.70까지 올라, 7,800을 넘어선 것도 역사상 처음이었습니다. 그래서 표는 여전히 \"0% / 최고가 수준\"으로 보이지만, 이제는 최고가에 아주 가까워서가 아니라 그 자체가 최고가이기 때문입니다. 다른 최고가·최저가는 건드리지 않았습니다. 주간 수치는 금요일 종가(SPX 7,757.64, QQQ 723.03, NVDA 223.96, SOXL 140.25, COST 947.82) 기준이고, 월간 수치는 7월 31일 종가(SPX 7,489.72, QQQ 687.99, NVDA 200.75, SOXL 114.72, COST 951.89) 기준입니다. <b>SOXL은 늘 하던 추가 확인을 거쳤고 두 번 연속 깨끗하게 나왔습니다.</b> 세 곳이 종가 145.36달러와 직전 종가 142.16달러에 일치하고, 세 배 검증은 수요일의 0.08%포인트에 이어 이번에는 0.02%포인트 차이로 들어왔습니다. 이 페이지가 기록한 것 중 가장 가까운 값입니다. 덮지 않고 밝혀 두는 주의사항이 하나 있습니다. StockAnalysis는 목요일 SOXL 시가를 직전 종가와 똑같은 142.16달러로 적고 있는데, 실제 체결가가 아니라 자리표시일 수 있습니다. 그래서 위 설명은 그날을 등락 범위와 종가로만 서술하고 시가에 기대지 않았습니다. <b>이번에 자료 불일치 네 건을 판정했습니다.</b> 한 매체는 목요일 S&P 500을 7,781.59로, 다우를 0.18% <i>하락</i>으로 전하는 반면 구글 파이낸스·야후 파이낸스·잭스·더스트리트·AP는 7,798.99와 다우 0.13% 상승을 전합니다. 다섯 대 하나이므로 다른 하나는 채택하지 않았습니다. 유가는 AP가 브렌트유 2.1% 하락 87.07달러, 다른 매체가 1.5% 하락 87.66달러인데 두 곳 모두 하락이며 엿새 연속 상승이 끝났다는 데 일치하므로 페이지에는 \"87달러 부근\"으로 적었습니다. 마이크론은 StockAnalysis와 구글 파이낸스가 모두 +4.23%를 주며, 확인되지 않은 6.7%와 3.09%는 채택하지 않았습니다. 금리와 공포 지수는 판정이 필요 없었습니다. Investing.com 일별 자료와 야후의 10년물 지수가 모두 목요일 10년물을 4.641%(수요일 4.682%)로, 30년물을 5.213%(수요일 5.247%)로 전하고, 공포 지수는 야후와 Investing.com 모두 14.63으로 마감했습니다. 목요일 도매물가 수치(한 달 변동 없음, 1년 4.7% 상승, 도매 휘발유 5.7% 하락)는 8월 13일 노동통계국 발표입니다. 어플라이드 머티어리얼즈 실적과 주가 하락, 선물 시세, '오늘' 부분의 소매판매 전망치는 서부 시각 오전 3시 30분경에 읽은 Investing.com, 벤징가, CNBC 개장 전 자료입니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
+    "sources_en": "<b>Where these numbers came from.</b> This page was written on Monday morning, well before the opening bell, so the Today block above describes a morning still taking shape. The last completed session is Friday August 14 — there is no weekend trading — so every price on the board is Friday's close, and the week figures now cover the completed week of August 10–14. Each of the five closes was read from two independent sources this morning — StockAnalysis and Yahoo Finance, agreeing to the cent — and every percentage was recalculated from Thursday's closes rather than copied: SPX 7,785.76 (−0.17%), QQQ 731.07 (−0.14%), NVDA 225.16 (−0.06%), SOXL 144.95 (−0.28%), COST 961.10 (−0.08%). The index table — S&P 500 −13.23 to 7,785.76, Dow −107.58 to 53,732.41, Nasdaq −73.86 to 26,729.16, Russell 2000 +15.57 to 3,068.42 — is AP's, and it chains exactly off the Thursday closes this page carried on Friday, while AP's weekly gain of +28.12 S&P points equals Friday's close minus the prior-Friday close already stored here — three-way corroboration. Week figures run from the August 7 closes (SPX 7,757.64, QQQ 723.03, NVDA 223.96, SOXL 140.25, COST 947.82) and month figures from July 31 (SPX 7,489.72, QQQ 687.99, NVDA 200.75, SOXL 114.72, COST 951.89). <b>No stored constant changed:</b> no new 52-week extreme was set — Friday's trading ranges stayed inside every stored high and low. The S&P traded up to 7,810.01 during Friday's session, but the stored figure is the record <i>close</i>, 7,798.99, which stands. StockAnalysis's rolling 52-week windows now show slightly different extremes for QQQ and COST because old prices are aging out of the trailing year; the constants change only when a new extreme is actually set, so they were left alone. <b>SOXL got the extra check it always gets and is confirmed for a third run.</b> Two sources agree on the $144.95 close and the $145.36 previous close, and the fund's own daily price history was read directly: Friday's range of $138.90–$146.65 means it fell about 4.4% at its worst — right where three times the ordinary chip fund's worst moment (−1.42%) points — and recovered by the close. On the closes, the chip fund fell 0.06%, three times is −0.17%, and SOXL delivered −0.28%: a gap of about a tenth of a percentage point, wider than Thursday's two hundredths but tiny in absolute terms on a near-flat day. <b>Two source disagreements were arbitrated this run.</b> The fear gauge: one Friday live blog quotes 14.98, but the close was 14.25 — the lowest close of 2026 — and the 14.98 print lists 14.25 as its own previous value, so it was treated as an intraday reading and the close used. The 10-year rate: sources gave 4.67%, 4.68% and 4.695%, and Yahoo's own 10-year index closed at 4.696% — the two most precise sources agree, so the page says 4.70%, up from 4.64%. The 30-year at 5.27%, single-sourced when first read, was confirmed against Yahoo's 30-year index (5.27 from 5.21). Friday's economic figures — retail sales down 0.6% ($763.6 billion; down 0.2% leaving out cars and petrol), the Michigan survey at 51.0 with the one-year inflation expectation at 4.3% — are the Census Bureau and University of Michigan August 14 releases as carried in wire reporting. The futures and premarket prices in the Today block were read at about a quarter to four in the morning Pacific time from Yahoo Finance and StockAnalysis, and read again at about a quarter past four from Bloomberg's and Yahoo's Monday live pages — the picture had not changed; premarket quotes are thin and move, and are phrased accordingly. A second check this morning also read all five Friday closes from a third source, Google Finance, and all five matched to the cent. Percentages marked ≈ were calculated from closing prices rather than read from a source.",
+    "sources_ko": "<b>이 숫자들의 출처.</b> 이 페이지는 월요일 아침, 개장보다 한참 전에 작성됐습니다. 그래서 위의 '오늘' 부분은 아직 만들어지고 있는 아침을 설명합니다. 마지막으로 끝난 거래일은 8월 14일 금요일이고(주말에는 거래가 없습니다) 표에 있는 모든 가격은 그날 종가이며, 주간 수치는 이제 8월 10~14일의 완결된 한 주를 담고 있습니다. 다섯 종목의 종가는 오늘 아침 서로 다른 두 곳, StockAnalysis와 야후 파이낸스에서 각각 읽었고 두 곳이 센트 단위까지 일치했습니다. 변동률은 옮기지 않고 목요일 종가에서 다시 계산했습니다. SPX 7,785.76(−0.17%), QQQ 731.07(−0.14%), NVDA 225.16(−0.06%), SOXL 144.95(−0.28%), COST 961.10(−0.08%)입니다. 지수 표(S&P 500 −13.23으로 7,785.76, 다우 −107.58로 53,732.41, 나스닥 −73.86으로 26,729.16, 러셀 2000 +15.57로 3,068.42)는 AP 자료이며, 금요일에 이 페이지에 실렸던 목요일 종가와 정확히 이어집니다. 또 AP의 주간 상승분 +28.12포인트는 금요일 종가에서 여기 저장된 전주 금요일 종가를 뺀 값과 일치합니다. 세 갈래가 서로를 확인해 주는 셈입니다. 주간 수치는 8월 7일 종가(SPX 7,757.64, QQQ 723.03, NVDA 223.96, SOXL 140.25, COST 947.82) 기준이고, 월간 수치는 7월 31일 종가(SPX 7,489.72, QQQ 687.99, NVDA 200.75, SOXL 114.72, COST 951.89) 기준입니다. <b>저장된 기준값은 하나도 바뀌지 않았습니다.</b> 금요일에 새로운 52주 극값이 세워지지 않았고, 다섯 종목의 등락 범위가 모두 저장된 최고가·최저가 안에 머물렀습니다. S&P는 금요일 장중 7,810.01까지 올랐지만 저장된 값은 사상 최고 <i>종가</i>인 7,798.99이고, 그것은 그대로입니다. StockAnalysis의 굴러가는 52주 창에서는 오래된 가격이 1년 범위 밖으로 빠져나가면서 QQQ와 COST의 극값이 조금 다르게 보이는데, 기준값은 새 극값이 실제로 세워질 때만 바꾸므로 그대로 뒀습니다. <b>SOXL은 늘 하던 추가 확인을 거쳤고 세 번 연속 확정입니다.</b> 두 곳이 종가 144.95달러와 직전 종가 145.36달러에 일치하고, 이 펀드 자체의 일별 가격 기록도 직접 읽었습니다. 금요일 등락 범위 138.90~146.65달러는 최악의 순간에 약 4.4% 내렸다는 뜻인데, 일반 반도체 펀드의 최악 순간(−1.42%)의 세 배가 가리키는 바로 그 자리이고, 마감까지 회복했습니다. 종가 기준으로는 반도체 펀드 −0.06%, 세 배면 −0.17%인데 SOXL은 −0.28%였습니다. 약 0.1%포인트 차이로, 목요일의 0.02%포인트보다는 벌어졌지만 거의 움직이지 않은 날치고는 아주 작습니다. <b>이번에 자료 불일치 두 건을 판정했습니다.</b> 공포 지수는 한 금요일 실시간 중계가 14.98을 적고 있지만 종가는 14.25(올해 최저 종가)이고, 14.98 수치 자체가 직전 값을 14.25로 적고 있어 장중 수치로 보고 종가를 썼습니다. 10년물 금리는 자료마다 4.67%, 4.68%, 4.695%로 갈렸는데 야후의 10년물 지수 종가가 4.696%라 가장 정밀한 두 자료가 일치하므로 페이지에는 4.70%(4.64%에서 상승)로 적었습니다. 처음 읽었을 때 출처가 하나뿐이던 30년물 5.27%는 야후 30년물 지수(5.21에서 5.27)로 확인했습니다. 금요일 경제 수치, 곧 소매판매 0.6% 감소(7,636억 달러, 자동차·기름값 제외 0.2% 감소), 미시간대 조사 51.0과 1년 물가 기대 4.3%는 8월 14일 인구조사국과 미시간대 발표를 통신사 보도로 확인한 것입니다. '오늘' 부분의 선물과 개장 전 시세는 서부 시각 오전 3시 45분경 야후 파이낸스와 StockAnalysis에서 읽었고, 오전 4시 15분경 블룸버그와 야후의 월요일 실시간 페이지에서 다시 읽었습니다. 그림은 달라지지 않았습니다. 개장 전 호가는 얇고 계속 움직이므로 그에 맞게 부드럽게 표현했습니다. 오늘 아침의 두 번째 확인에서는 다섯 종목의 금요일 종가를 세 번째 출처인 구글 파이낸스에서도 읽었고, 다섯 모두 센트 단위까지 일치했습니다. ≈ 표시가 붙은 수치는 종가에서 직접 계산한 값이며, 어느 자료에서 그대로 읽어 온 숫자가 아닙니다."
   },
   "lede": [
     {
       "cls": "first",
-      "en": "Yesterday the <b>S&amp;P 500</b> closed at the highest level in its history. It rose <b>0.65%</b> to <b>7,798.99</b>, and during the day it traded above <b>7,800</b> for the first time ever. Everything you own went up with it: <b>SOXL</b> up <b>2.25%</b>, <b>Costco</b> up <b>1.29%</b>, <b>QQQ</b> up <b>1.16%</b>, <b>NVDA</b> up <b>0.54%</b>. Costco's rise matters more than its size — it was the last of your five still behind for August, and it is now ahead, so for the first time this month all five are up.",
-      "ko": "어제 <b>S&amp;P 500</b>이 역대 가장 높은 수준에서 마감했습니다. <b>0.65%</b> 올라 <b>7,798.99</b>가 됐고, 장중에는 사상 처음으로 <b>7,800</b>을 넘었습니다. 보유하신 것도 모두 함께 올랐습니다. <b>SOXL</b> <b>+2.25%</b>, <b>코스트코</b> <b>+1.29%</b>, <b>QQQ</b> <b>+1.16%</b>, <b>NVDA</b> <b>+0.54%</b>입니다. 코스트코의 상승은 폭보다 의미가 큽니다. 8월 출발점보다 아래에 있던 마지막 종목이었는데 이제 위로 올라섰고, 그래서 이 달 처음으로 다섯 종목이 모두 상승 상태가 됐습니다."
+      "en": "The market begins the new week a small step below its record. On Friday the <b>S&amp;P 500</b> slipped <b>0.17%</b> to <b>7,785.76</b> — one day after the highest close in its history — because two readings on the American shopper came in weak: <b>July retail sales fell 0.6%</b>, the biggest monthly drop since May 2025, and the <b>University of Michigan's survey</b> of how households feel fell to <b>51</b> from 55.2. Your five all eased, none by much — <b>SOXL</b> −0.28%, <b>QQQ</b> −0.14%, <b>Costco</b> −0.08%, <b>NVDA</b> −0.06% — and the completed week was green across the board: the index rose for a <b>third week in a row</b>, its longest run since May, and all five of your holdings finished the week higher.",
+      "ko": "시장은 사상 최고치보다 조금 낮은 자리에서 새로운 한 주를 시작합니다. 금요일에 <b>S&amp;P 500</b>은 <b>0.17%</b> 내려 <b>7,785.76</b>이 됐습니다. 역대 최고 종가를 기록한 바로 다음 날이었는데, 미국 소비자에 관한 수치 두 개가 약하게 나왔기 때문입니다. <b>7월 소매판매가 0.6% 줄어</b> 2025년 5월 이후 가장 큰 월간 감소였고, <b>미시간대의 가계 심리 조사</b>는 55.2에서 <b>51</b>로 내렸습니다. 보유 다섯 종목도 모두 내렸지만 폭은 작았습니다. <b>SOXL</b> −0.28%, <b>QQQ</b> −0.14%, <b>코스트코</b> −0.08%, <b>NVDA</b> −0.06%입니다. 그리고 끝난 한 주는 전부 상승이었습니다. 지수는 <b>3주 연속</b> 주간 상승으로 5월 이후 가장 긴 흐름을 이어 갔고, 보유 다섯 종목 모두 주간 상승으로 마쳤습니다."
     },
     {
       "cls": "",
-      "en": "What pushed it there was not technology. It was <b>petrol</b>. The report on <b>wholesale prices</b> — what companies charge each other before anything reaches a shop shelf — showed <b>no rise at all</b> in July, where a small rise had been expected, and the reason was a <b>5.7%</b> fall in the wholesale petrol price. Then oil itself fell for the first time in <b>seven sessions</b>, with Brent back to about <b>$87</b> a barrel after six days of climbing on the closure of the Strait of Hormuz. Borrowing rates eased with it: the 10-year government rate to <b>4.64%</b> and the 30-year to <b>5.21%</b>. Traders cut the odds of the Federal Reserve <b>raising</b> its rate in September to about <b>one in three</b>, from roughly one in two a week ago. That chain — cheaper petrol, calmer inflation, lower borrowing rates — is what a record built on something other than artificial intelligence looks like, and it is why <b>Costco</b>, the one holding you own that has nothing to do with AI, had its best day in three weeks.",
-      "ko": "그 자리로 밀어 올린 것은 기술주가 아니었습니다. <b>기름값</b>이었습니다. <b>도매물가</b> 보고서, 즉 물건이 매장에 놓이기 전에 회사들이 서로 주고받는 가격을 보여 주는 수치가 7월에 <b>전혀 오르지 않았습니다</b>. 소폭 상승이 예상되던 자리였고, 이유는 도매 휘발유값이 <b>5.7%</b> 내렸기 때문입니다. 이어 유가 자체도 <b>이레</b> 만에 처음으로 내렸습니다. 호르무즈 해협 봉쇄로 엿새를 오르던 브렌트유가 배럴당 <b>87달러</b> 부근으로 돌아왔습니다. 금리도 함께 진정돼 10년물 국채 금리는 <b>4.64%</b>, 30년물은 <b>5.21%</b>가 됐습니다. 시장은 연방준비제도가 9월에 금리를 <b>올릴</b> 가능성을 일주일 전 절반 남짓에서 약 <b>3분의 1</b>로 낮춰 잡았습니다. 싸진 기름값, 진정된 물가, 낮아진 금리로 이어지는 이 고리가 바로 인공지능이 아닌 다른 것으로 만들어진 사상 최고치의 모습입니다. 보유 종목 중 AI와 아무 상관이 없는 <b>코스트코</b>가 3주 만에 가장 좋은 하루를 보낸 이유이기도 합니다."
+      "en": "The detail worth sitting with is inside Friday's numbers. Households told the Michigan survey they expect prices to rise <b>4.3%</b> over the next year, up from 4.2% — people spending less while bracing for higher prices — and that mix pushed borrowing rates <b>up</b> on a day of bad news: the 10-year government rate to about <b>4.70%</b>, the 30-year to <b>5.27%</b>, with oil back near <b>$88.50</b> a barrel. Yet the market's fear gauge closed at <b>14.25</b>, its lowest of 2026 — investors read the day as softening, not sinking. The week's other lesson came in two identical chapters: <b>Cisco</b> and <b>Applied Materials</b> each reported the best results in their history, and each fell in the full session that followed — 8.40% and 5.12%. Nothing was wrong with either set of numbers; both shares had already risen a long way on exactly those expectations.",
+      "ko": "곱씹어 볼 대목은 금요일 수치의 안쪽에 있습니다. 가계는 미시간대 조사에서 앞으로 1년 물가가 4.2%가 아니라 <b>4.3%</b> 오를 것으로 본다고 답했습니다. 덜 쓰면서도 물가 상승에 대비하는 이 조합이, 나쁜 소식이 나온 날에 금리를 <b>밀어 올렸습니다</b>. 10년물 국채 금리는 약 <b>4.70%</b>, 30년물은 <b>5.27%</b>가 됐고, 유가는 배럴당 <b>88.50달러</b> 부근으로 되올랐습니다. 그런데도 공포 지수는 <b>14.25</b>로 올해 가장 낮은 종가였습니다. 투자자들은 이날을 가라앉음이 아니라 누그러짐으로 읽은 것입니다. 지난주의 다른 교훈은 똑같은 두 장으로 나왔습니다. <b>시스코</b>와 <b>어플라이드 머티어리얼즈</b>가 각각 회사 역사상 최고 실적을 발표했고, 각각 그다음 완결된 거래일에 내렸습니다. 8.40%와 5.12%입니다. 두 실적 모두 숫자에 잘못된 것이 없었습니다. 바로 그 기대로 주가가 이미 크게 올라 있었을 뿐입니다."
     },
     {
       "cls": "",
-      "en": "The structural thing to take from yesterday happened after the close, and it has now happened twice. <b>Applied Materials</b> — which makes the machines every chip factory in the world is built from, sells to the whole industry, and holds no stake in Nvidia — reported sales of <b>$9.1 billion</b>, up 25% in a year and its largest quarter-on-quarter jump ever, with guidance for the current quarter roughly <b>$700 million</b> above what analysts expected. The shares fell about <b>5%</b> in the hours after, and are down about 6% before this morning's bell. The night before, <b>Cisco</b> reported the best quarter in its history and fell <b>8.40%</b> yesterday. Nothing was wrong with either set of numbers; both shares had already risen a long way on exactly those expectations. Keep it in mind for <b>Nvidia on August 26</b>, which is up about <b>12.2%</b> this month heading into the same test. The question about artificial intelligence has quietly changed. It used to be whether the demand was real. Yesterday's two results say it is. The question now is whether being right is still worth anything when everyone already agrees.",
-      "ko": "어제에서 구조적으로 가져가실 것은 장이 끝난 뒤에 일어났고, 이제 두 번째입니다. 세계의 모든 반도체 공장을 짓는 장비를 만들고 업계 전체에 팔며 엔비디아와 지분 관계가 없는 <b>어플라이드 머티어리얼즈</b>가 매출 <b>91억 달러</b>를 발표했습니다. 1년 사이 25% 증가로 직전 분기 대비 증가폭은 회사 역사상 최대였고, 이번 분기 전망은 분석가 예상보다 약 <b>7억 달러</b> 높았습니다. 그런데 주가는 그 뒤 몇 시간 사이 약 <b>5%</b> 내렸고 오늘 개장 전에는 약 6% 하락한 상태입니다. 그 전날 밤에는 <b>시스코</b>가 회사 역사상 최고 분기를 발표했고 어제 <b>8.40%</b> 내렸습니다. 두 실적 모두 숫자에 잘못된 것이 없었습니다. 바로 그 기대로 주가가 이미 크게 올라 있었을 뿐입니다. <b>8월 26일 엔비디아</b>를 생각하실 때 이 점을 기억해 두십시오. 엔비디아도 이번 달에만 약 <b>12.2%</b> 오른 채 같은 시험을 향해 가고 있습니다. 인공지능에 관한 질문이 조용히 바뀌었습니다. 예전에는 수요가 진짜인가였습니다. 어제의 두 실적은 진짜라고 말합니다. 이제 질문은, 모두가 이미 동의하고 있을 때 맞는 것이 여전히 값어치가 있는가입니다."
+      "en": "What to watch this week is the direct answer to Friday's question. The big store chains report before the open — <b>Home Depot on Tuesday, Target and Lowe's on Wednesday, Walmart on Thursday</b> — and every retailer, Costco included, will be read against them: if their numbers and outlooks hold up, Friday's readings look like a wobble; if they echo them, the one part of this record-high market that was never about AI — the ordinary American customer — starts to look tired. On Wednesday at <b>11 in the morning Pacific time</b> the Federal Reserve publishes the minutes of its July meeting, where three officials voted to raise rates. And behind it all stands <b>Nvidia's report on Wednesday, August 26</b> — the same test Cisco and Applied Materials just walked into, waiting for the largest company on your board.",
+      "ko": "이번 주에 지켜볼 것은 금요일의 질문에 대한 직접적인 답입니다. 대형 유통업체들이 개장 전에 실적을 발표합니다. <b>화요일 홈디포, 수요일 타깃과 로우스, 목요일 월마트</b>입니다. 코스트코를 포함한 모든 유통주가 그 결과에 비추어 평가받습니다. 이들의 숫자와 전망이 괜찮으면 금요일의 지표는 일시적 흔들림으로 남고, 같은 이야기를 반복하면 이 사상 최고치 시장에서 AI와 무관했던 유일한 축, 곧 평범한 미국 소비자가 지쳐 보이기 시작합니다. 수요일 <b>서부 시각 오전 11시</b>에는 연방준비제도가 7월 회의 의사록을 공개합니다. 세 명이 금리 인상에 표를 던진 그 회의입니다. 그리고 그 모든 것 뒤에 <b>8월 26일 수요일 엔비디아의 실적 발표</b>가 서 있습니다. 시스코와 어플라이드 머티어리얼즈가 방금 치른 것과 같은 시험이, 보유 종목 가운데 가장 큰 회사를 기다리고 있습니다."
     }
   ],
   "events": [
     {
       "hot": true,
-      "when_en": "Fri Aug 14",
-      "when_ko": "8월 14일(금)",
-      "what_en": "Retail sales",
-      "what_ko": "소매판매",
-      "note_en": "This morning, 5:30 Pacific — how much people spent",
-      "note_ko": "오늘 아침 서부 시각 5시 30분 — 사람들이 얼마나 썼는지"
+      "when_en": "Tue–Thu Aug 18–20",
+      "when_ko": "8월 18~20일(화~목)",
+      "what_en": "The big store chains report",
+      "what_ko": "대형 유통업체 실적",
+      "note_en": "Home Depot Tue, Target and Lowe's Wed, Walmart Thu — all before the open",
+      "note_ko": "화요일 홈디포, 수요일 타깃·로우스, 목요일 월마트 — 모두 개장 전"
     },
     {
-      "hot": false,
-      "when_en": "Fri Aug 14",
-      "when_ko": "8월 14일(금)",
-      "what_en": "Household confidence survey",
-      "what_ko": "가계 심리 조사",
-      "note_en": "7:00 Pacific — the University of Michigan reading",
-      "note_ko": "서부 시각 7시 — 미시간대 조사"
+      "hot": true,
+      "when_en": "Wed Aug 19",
+      "when_ko": "8월 19일(수)",
+      "what_en": "Fed's July meeting minutes",
+      "what_ko": "연준 7월 회의 의사록",
+      "note_en": "11 in the morning Pacific — three officials voted to raise rates",
+      "note_ko": "서부 시각 오전 11시 — 세 명이 금리 인상에 표를 던진 회의"
     },
     {
       "hot": true,
@@ -780,12 +814,21 @@
     },
     {
       "hot": false,
+      "when_en": "Thu–Sat Aug 27–29",
+      "when_ko": "8월 27~29일(목~토)",
+      "what_en": "Jackson Hole",
+      "what_ko": "잭슨홀 회의",
+      "note_en": "The Fed chair's first Jackson Hole speech — a signal on rates",
+      "note_ko": "연준 의장의 첫 잭슨홀 연설 — 금리에 대한 신호"
+    },
+    {
+      "hot": false,
       "when_en": "Sep 15–16",
       "when_ko": "9월 15~16일",
       "what_en": "Federal Reserve",
       "what_ko": "연준 회의",
-      "note_en": "The next rate decision — nothing before it",
-      "note_ko": "다음 금리 결정 — 그전까지는 일정 없음"
+      "note_en": "The next rate decision",
+      "note_ko": "다음 금리 결정"
     },
     {
       "hot": false,
@@ -797,18 +840,18 @@
       "note_ko": "장 마감 후"
     }
   ],
-  "next_session_en": "Trading restarts this morning at 6:30 Pacific — these are Thursday's closing prices",
-  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 장이 다시 열립니다 — 위 숫자는 목요일 종가입니다",
-  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b> until then",
-  "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>목요일 종가</b>입니다",
-  "today_en": "A step back from yesterday's record, and a small one so far. Two readings on the American shopper arrived this morning and both came in weaker than expected: <b>July retail sales fell 0.6%</b>, the biggest drop in more than a year where a small rise had been forecast, and the <b>University of Michigan survey of household confidence</b> fell to <b>51</b> from 55.2 in July. The <b>S&amp;P 500</b> is down about a quarter of a percent and <b>QQQ</b> about a third, but the weak spot is chips — <b>SOXL</b> is down about <b>3%</b>, with Broadcom off about 6% and <b>Applied Materials</b> about 5% lower after last night's results. <b>Nvidia</b> and <b>Costco</b> are both close to unchanged. Nothing further is scheduled today, and the next dated event that reaches your five is <b>Nvidia's results on Wednesday, August 26</b>.",
-  "today_ko": "어제 사상 최고치에서 한 걸음 물러선 하루이고, 아직까지는 폭이 크지 않습니다. 오늘 아침 미국 소비자에 관한 수치 두 개가 나왔는데 둘 다 예상보다 약했습니다. <b>7월 소매판매가 0.6% 감소</b>해 1년여 만에 가장 큰 낙폭을 보였습니다. 소폭 증가가 예상되던 자리였습니다. <b>미시간대 가계 심리 조사</b>도 7월 55.2에서 <b>51</b>로 내려왔습니다. <b>S&amp;P 500</b>은 0.25%가량, <b>QQQ</b>는 0.3%가량 내려 있고, 가장 약한 곳은 반도체입니다. <b>SOXL</b>이 약 <b>3%</b> 내렸고, 브로드컴은 약 6%, <b>어플라이드 머티어리얼즈</b>는 어젯밤 실적 뒤 약 5% 내려 있습니다. <b>엔비디아</b>와 <b>코스트코</b>는 거의 제자리입니다. 오늘 더 예정된 일정은 없고, 보유 5개 종목에 닿는 다음 일정은 <b>8월 26일 수요일 엔비디아 실적</b>입니다.",
-  "today_date": "2026-08-14",
+  "next_session_en": "Trading restarts this morning at 6:30 Pacific — these are Friday's closing prices",
+  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 장이 다시 열립니다 — 위 숫자는 금요일 종가입니다",
+  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Friday&rsquo;s closing prices</b> until then",
+  "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>금요일 종가</b>입니다",
+  "today_en": "The new week is opening quietly, with one loud corner. Stock index futures are close to flat this morning — the <b>S&amp;P 500</b> barely moving, <b>Nasdaq</b> futures up modestly — but the <b>memory</b> chip makers are running again before the bell: <b>Micron</b> has been quoted above <b>$1,000</b> for the first time, <b>SanDisk</b> is up about 5%, and <b>SOXL</b> is quoted around <b>4%</b> higher. Nothing of note is on today's calendar. The week's tests begin tomorrow, when <b>Home Depot</b> opens the store chains' answer to Friday's weak shopper readings — Target and Lowe's follow Wednesday, <b>Walmart</b> Thursday, and the Federal Reserve's <b>July meeting minutes</b> come Wednesday at 11 in the morning Pacific time. The thing to watch today is whether the memory rally holds into the close, or fades the way several of last week's morning moves did.",
+  "today_ko": "새로운 한 주가 조용히 열리고 있는데, 한 구석만 시끄럽습니다. 오늘 아침 주가지수 선물은 거의 제자리입니다. <b>S&amp;P 500</b> 선물은 거의 움직이지 않고 <b>나스닥</b> 선물만 소폭 올라 있습니다. 그런데 <b>메모리</b> 반도체 회사들이 개장 전부터 다시 달리고 있습니다. <b>마이크론</b>이 처음으로 <b>1,000달러</b> 위의 호가를 받았고, <b>샌디스크</b>는 약 5%, <b>SOXL</b>은 약 <b>4%</b> 오른 호가입니다. 오늘 예정된 큰 일정은 없습니다. 이번 주의 시험은 내일 시작됩니다. <b>홈디포</b>를 시작으로 유통업체들이 금요일의 약한 소비 지표에 답을 내놓습니다. 수요일에는 타깃과 로우스, 목요일에는 <b>월마트</b>가 이어지고, 수요일 서부 시각 오전 11시에는 연방준비제도의 <b>7월 회의 의사록</b>도 나옵니다. 오늘 지켜볼 것은 이 메모리 상승이 마감까지 이어지는지, 아니면 지난주 여러 아침의 상승처럼 사그라드는지입니다.",
+  "today_date": "2026-08-17",
   "pancho_am": {
-    "date": "2026-08-14",
-    "pos": "nvda",
-    "en": "Two nights running, an AI supplier beat its numbers and the shares fell. Nvidia reports on the 26th.",
-    "ko": "이틀 연속 AI 회사가 실적을 잘 내고도 주가가 내렸어요. 엔비디아는 26일입니다."
+    "date": "2026-08-17",
+    "pos": "",
+    "en": "Quiet start to the week, except the chips. The real test comes from the store chains, starting tomorrow.",
+    "ko": "조용한 한 주의 시작인데 반도체만 뜨겁네요. 진짜 시험은 내일부터, 유통업체 실적이에요."
   },
   "pancho_pm": {
     "date": "2026-08-14",
