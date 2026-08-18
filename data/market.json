@@ -844,8 +844,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 장이 다시 열립니다 — 위 숫자는 월요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b> until then",
   "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>월요일 종가</b>입니다",
-  "today_en": "Futures point lower this morning, and the selling is aimed exactly where the last three sessions' gains were. The broad market is set up about <b>half a percent</b> lower and the Nasdaq side about <b>1%</b>, with the <b>memory</b> makers taking the hit: <b>Micron</b> and <b>SanDisk</b> are down around 5% before the bell, <b>Nvidia</b> about 2%, and <b>SOXL</b> is quoted roughly 10% lower — early quotes are thin, but that is the direction. Overnight a ship was reported struck in the <b>Strait of Hormuz</b>, with one crew member hurt, and oil is at its highest in weeks. The friendlier news is from the store aisle: <b>Home Depot beat expectations</b> before the open, its shares are up modestly, and <b>Costco</b> is a little higher alongside. Also today, <b>Reddit joins the S&amp;P 500</b>; tomorrow brings Target, Lowe's and the Fed's July minutes at 11 in the morning Pacific time. Worth watching at the open: whether the memory pullback stays a pause inside the AI story, or spreads.",
-  "today_ko": "오늘 아침 선물 시장은 하락을 가리키고 있고, 팔자 주문은 지난 사흘의 상승이 있던 바로 그 자리를 겨누고 있습니다. 시장 전체는 약 <b>0.5%</b>, 나스닥 쪽은 약 <b>1%</b> 낮게 출발할 채비인데, 매를 맞는 쪽은 <b>메모리</b>입니다. <b>마이크론</b>과 <b>샌디스크</b>가 개장 전 5% 안팎 내려 있고, <b>엔비디아</b>는 2% 정도, <b>SOXL</b>은 대략 10% 낮게 호가되고 있습니다. 이른 호가는 얇지만 방향은 그렇습니다. 밤사이 <b>호르무즈 해협</b>에서 선박이 공격당해 승무원 한 명이 다쳤다는 보도가 나왔고, 유가는 몇 주 만에 가장 높습니다. 더 다정한 소식은 매장 쪽입니다. <b>홈디포가 개장 전에 예상을 넘는 실적</b>을 냈고 주가는 소폭 올라 있으며, <b>코스트코</b>도 살짝 올라 있습니다. 오늘 <b>레딧이 S&amp;P 500에 편입</b>되고, 내일은 타깃과 로우스, 그리고 서부 시각 오전 11시에 연준 7월 의사록이 나옵니다. 개장 후 지켜볼 것은 메모리 되돌림이 AI 이야기 안의 숨 고르기로 머무는지, 아니면 번지는지입니다.",
+  "today_en": "The chip corner is having a rough day, and it is the corner that led: the <b>memory</b> makers that carried the last three sessions — <b>Micron</b> and <b>SanDisk</b> — are down around 5 to 6 percent, in what news reports describe as a re-pricing driven by long-term borrowing rates near 19-year highs, not by any bad chip news. As of late morning Pacific time the whole market is down about <b>half a percent</b>, the Nasdaq-100 fund <b>QQQ</b> about 1.5%, <b>Nvidia</b> about 2%, and the chip fund <b>SOXL</b> about 17% — it follows chip moves three times over, in both directions. <b>Costco</b> is the one riser among your five, up about 1.5%. Oil is holding near its highest in weeks, and the President posted this morning that no talks with Iran are going on or scheduled. Tomorrow brings <b>Target and Lowe's</b> results before the open, then the Federal Reserve's <b>July-meeting minutes</b> at 11 in the morning Pacific time.",
+  "today_ko": "반도체 쪽이 힘든 하루를 보내고 있는데, 바로 그동안 앞장서던 쪽입니다. 지난 사흘을 이끌던 <b>메모리</b> 회사들, 곧 <b>마이크론</b>과 <b>샌디스크</b>가 5~6% 안팎 내려 있습니다. 보도들은 이를 반도체에 나쁜 소식이 있어서가 아니라, 19년 만의 고점 부근에 있는 장기 금리 때문에 값이 다시 매겨지는 것이라고 설명합니다. 서부 시각 오전 늦은 시간 기준으로 시장 전체는 약 <b>0.5%</b>, 나스닥-100 펀드 <b>QQQ</b>는 약 1.5%, <b>엔비디아</b>는 약 2%, 반도체 펀드 <b>SOXL</b>은 약 17% 내려 있습니다. 이 펀드는 반도체 움직임을 오르내림 양쪽으로 세 배씩 따라갑니다. <b>코스트코</b>는 다섯 종목 가운데 유일하게 올라 약 1.5% 상승입니다. 유가는 몇 주 만의 고점 부근을 지키고 있고, 대통령은 오늘 아침 이란과 진행 중이거나 예정된 대화가 없다고 글을 올렸습니다. 내일은 개장 전에 <b>타깃과 로우스</b>의 실적이, 이어서 서부 시각 오전 11시에 연방준비제도의 <b>7월 회의 의사록</b>이 나옵니다.",
   "today_date": "2026-08-18",
   "pancho_am": {
     "date": "2026-08-18",
@@ -854,9 +854,9 @@
     "ko": "한 주를 끌던 메모리주가 오늘 아침엔 팔리고 있어요. SOXL은 그걸 세 배로 느껴요."
   },
   "pancho_pm": {
-    "date": "2026-08-17",
-    "pos": "soxl",
-    "en": "The chip fund's morning jump didn't fade this time. It kept growing while the rest of the market drifted.",
-    "ko": "반도체 펀드의 아침 상승이 이번엔 식지 않고 더 커졌어요. 나머지 시장은 그냥 흘러갔고요."
+    "date": "2026-08-18",
+    "pos": "",
+    "en": "The selling today went after whatever ran hardest lately. Costco, which never ran, is the only one up.",
+    "ko": "오늘 팔린 건 최근 가장 뜨겁게 달리던 것들이에요. 안 달리던 코스트코만 올랐어요."
   }
 }
