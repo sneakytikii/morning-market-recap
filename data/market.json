@@ -835,8 +835,8 @@
   "next_session_ko": "지금 장이 열려 있습니다 — 오늘 아침 서부 시각 6시 30분에 개장했고, 위 숫자는 화요일 종가입니다",
   "next_session_en_html": "The market is <b>open now</b> — it opened at 6:30 this morning Pacific &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "지금 <b>장이 열려 있습니다</b> — 오늘 아침 서부 시각 6시 30분에 개장했고, 표의 숫자는 <b>화요일 종가</b>입니다",
-  "today_en": "The market opened higher this morning, and the help came from the bond market: before the open the Treasury said it will <b>double its buying-back of its own longest-term debt</b>, and the 30-year rate — which touched a fresh 19-year high during yesterday's session — fell back toward <b>5.2%</b>. As of about 8:30 this morning Pacific time the whole market is up about <b>half a percent</b>, and the store chains are leading it: <b>Target</b> beat expectations and raised its outlook for the year, its shares up about 5%, and <b>Costco</b> is up about 1.3% alongside. The sore spot is still chips: <b>SOXL</b> is down again, around 5%, after yesterday's 14.80% fall, while <b>Nvidia</b> and <b>QQQ</b> sit near flat. Still ahead today: the Federal Reserve publishes its <b>July meeting minutes at 11 this morning Pacific time</b> — three officials voted to raise rates at that meeting. <b>Walmart</b> reports tomorrow before the open.",
-  "today_ko": "오늘 아침 시장은 오른 채 출발했고, 도움은 채권 시장에서 왔습니다. 개장 전에 재무부가 <b>가장 만기가 긴 국채를 되사는 규모를 두 배로 늘리겠다</b>고 밝혔고, 어제 장중 19년 만의 최고를 새로 썼던 30년물 금리는 <b>5.2%</b> 쪽으로 내려왔습니다. 서부 시각 오전 8시 30분쯤 기준으로 시장 전체는 약 <b>0.5%</b> 올라 있고, 앞장선 것은 유통업체들입니다. <b>타깃</b>이 예상을 넘는 실적을 내고 연간 전망을 올려 주가가 약 5% 올라 있고, <b>코스트코</b>도 나란히 약 1.3% 올라 있습니다. 아픈 곳은 여전히 반도체입니다. 어제 14.80% 내린 <b>SOXL</b>이 오늘도 5% 안팎 내려 있고, <b>엔비디아</b>와 <b>QQQ</b>는 보합 부근입니다. 오늘 남은 일정으로는 <b>서부 시각 오전 11시</b>에 연방준비제도의 <b>7월 회의 의사록</b>이 나옵니다. 세 명이 금리 인상에 표를 던진 회의입니다. <b>월마트</b>는 내일 개장 전에 발표합니다.",
+  "today_en": "The market is catching its breath after three straight down days, and the help came from the bond market: before the open the Treasury said it will <b>double its buying-back of its own longest-term debt</b>, and the 30-year rate — which touched a 19-year high during Tuesday's session — eased back toward <b>5.2%</b>. As of about 10 in the morning Pacific time the whole market is up about <b>a third of a percent</b>, with <b>Costco</b> up about half a percent and <b>Target</b> up about 6% after beating expectations and raising its outlook for the year. Chips are still the sore spot: the chip fund <b>SOXL</b> is down about 6% on top of yesterday's 14.80% fall, while <b>Nvidia</b> and the Nasdaq-100 fund <b>QQQ</b> sit just under flat. The loudest single stock is <b>Moderna</b>, which roughly doubled on strong late-stage results for its cancer vaccine. Still ahead today: the Federal Reserve publishes its <b>July meeting minutes at 11 this morning Pacific time</b>, and <b>Walmart</b> reports tomorrow before the open.",
+  "today_ko": "시장은 사흘 연속 하락 뒤 숨을 고르고 있고, 도움은 채권 시장에서 왔습니다. 개장 전에 재무부가 <b>가장 만기가 긴 국채를 되사는 규모를 두 배로 늘리겠다</b>고 밝혔고, 화요일 장중 19년 만의 최고에 닿았던 30년물 금리는 <b>5.2%</b> 쪽으로 내려왔습니다. 서부 시각 오전 10시쯤 기준으로 시장 전체는 약 <b>0.3%</b> 올라 있고, <b>코스트코</b>는 약 0.5% 올라 있으며, 예상을 넘는 실적에 연간 전망까지 올린 <b>타깃</b>은 약 6% 올라 있습니다. 아픈 곳은 여전히 반도체입니다. 어제 14.80% 내린 반도체 펀드 <b>SOXL</b>이 오늘도 약 6% 내려 있고, <b>엔비디아</b>와 나스닥 100 펀드 <b>QQQ</b>는 보합을 살짝 밑돌고 있습니다. 오늘 가장 요란한 종목은 <b>모더나</b>로, 암 백신 후기 임상시험의 좋은 결과에 주가가 두 배 가까이 됐습니다. 남은 일정으로는 <b>서부 시각 오전 11시</b>에 연방준비제도의 <b>7월 회의 의사록</b>이 나오고, <b>월마트</b>는 내일 개장 전에 발표합니다.",
   "today_date": "2026-08-19",
   "pancho_am": {
     "date": "2026-08-19",
@@ -845,9 +845,9 @@
     "ko": "SOXL은 고장난 게 아니라 만들어진 대로 움직였어요. 하락도 세 배가 약속이에요."
   },
   "pancho_pm": {
-    "date": "2026-08-18",
+    "date": "2026-08-19",
     "pos": "",
-    "en": "The selling today went after whatever ran hardest lately. Costco, which never ran, is the only one up.",
-    "ko": "오늘 팔린 건 최근 가장 뜨겁게 달리던 것들이에요. 안 달리던 코스트코만 올랐어요."
+    "en": "The bond market calmed down this morning and stocks got their footing back. Chips fell again anyway.",
+    "ko": "오전에 채권 시장이 진정되자 주식도 중심을 잡았어요. 반도체는 그래도 또 빠졌어요."
   }
 }
