@@ -749,8 +749,8 @@
   "next_session_ko": "장은 오늘 아침 <b>서부 시각 6시 30분</b>에 다시 열립니다 — 위 숫자는 금요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Friday&rsquo;s closing prices</b> until then",
   "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>금요일 종가</b>입니다",
-  "today_en": "The new week is opening a touch lower. Stock index futures are modestly down this morning — the <b>S&amp;P 500</b> off about a tenth of a percent, the tech-heavy <b>Nasdaq</b> off about half a percent — after the trade deal with <b>Canada</b> fell through: the 50% tariffs took effect Saturday, and Canada's like-for-like answer comes <b>September 8</b>. The big scheduled event is at <b>11 this morning Pacific time</b>, when the Treasury Secretary details the plan to squeeze Iran's economy — he has called it “an economic D-Day” — yet <b>oil is actually lower</b> this morning, down about 2%, with reports calling it profit-taking ahead of the announcement. <b>Nvidia</b>, which reports Wednesday, is quoted slightly higher before the bell. The thing to watch today: whether the AI shares that fell all last week steady before Wednesday's report — and what oil does at 11.",
-  "today_ko": "새로운 한 주가 조금 낮게 열리고 있습니다. 오늘 아침 주가지수 선물은 소폭 내려 있습니다. <b>S&amp;P 500</b> 선물은 0.1%가량, 기술주 중심의 <b>나스닥</b> 선물은 0.5%가량 낮습니다. <b>캐나다</b>와의 무역 합의가 무산되면서 50% 관세가 토요일에 발효됐고, 캐나다의 같은 규모 보복은 <b>9월 8일</b>에 시작됩니다. 오늘 가장 큰 일정은 <b>서부 시각 오전 11시</b>입니다. 재무장관이 이란 경제를 조이는 계획을 발표하는데, 그는 이를 “경제판 D-데이”라고 불렀습니다. 그런데 정작 <b>유가는 오늘 아침 약 2% 내려</b> 있습니다. 발표를 앞두고 차익을 챙기는 거래 때문이라는 보도가 있습니다. 수요일에 실적을 발표하는 <b>엔비디아</b>는 개장 전 소폭 오른 호가입니다. 오늘 지켜볼 것은 지난주 내내 내린 AI 주식들이 수요일 발표를 앞두고 진정되는지, 그리고 11시에 유가가 어떻게 움직이는지입니다.",
+  "today_en": "The day so far is a split screen: the chip shares are falling again ahead of Wednesday's <b>Nvidia</b> report, while most of the rest of the market holds steady and the Dow is slightly higher. The morning added a new escalation with <b>Canada</b> — President Trump threatened to raise tariffs on all Canadian cars, trucks, parts and steel to <b>50%</b> in January, and the automakers are lower. Of your five, the chip fund <b>SOXL</b> is down nearly 8%, <b>Nvidia</b> about 2%, and the Nasdaq-100 fund <b>QQQ</b> less than 1% — while <b>Costco</b> is up about 2%, touching its highest price in months. Still ahead: at <b>11 this morning Pacific time</b> the Treasury Secretary details the plan to squeeze Iran's economy, with oil down about 2% ahead of it.",
+  "today_ko": "오늘 하루는 지금까지 두 갈래 화면입니다. 수요일 <b>엔비디아</b> 실적 발표를 앞두고 반도체 주식들이 다시 내리는 동안, 나머지 시장 대부분은 버티고 있고 다우존스는 소폭 올라 있습니다. 아침에는 <b>캐나다</b>와의 긴장이 한 단계 더 올라갔습니다. 트럼프 대통령이 캐나다산 자동차·트럭·부품·철강 전부에 대한 관세를 1월부터 <b>50%</b>로 올리겠다고 위협했고, 자동차 회사들 주가는 내려 있습니다. 보유 다섯 종목 가운데 반도체 펀드 <b>SOXL</b>은 8% 가까이, <b>엔비디아</b>는 약 2% 내려 있고, 나스닥-100 펀드 <b>QQQ</b>는 1%가 안 되게 내렸습니다. 반면 <b>코스트코</b>는 약 2% 올라 몇 달 만의 최고가를 찍었습니다. 아직 남은 일정이 있습니다. <b>서부 시각 오전 11시</b>에 재무장관이 이란 경제를 조이는 계획을 발표하며, 유가는 이를 앞두고 약 2% 내려 있습니다.",
   "today_date": "2026-08-24",
   "pancho_am": {
     "date": "2026-08-24",
@@ -759,9 +759,9 @@
     "ko": "큰 한 주예요. 수요일 엔비디아 실적, 오늘 오전 11시엔 이란 발표. 유가는 오히려 내리네요."
   },
   "pancho_pm": {
-    "date": "2026-08-22",
-    "pos": "soxl",
-    "en": "Nvidia reports Wednesday. Whatever chips do on it, SOXL moves three times as much — in either direction.",
-    "ko": "수요일 엔비디아 실적이에요. SOXL은 반도체가 움직이는 폭의 세 배로 움직여요. 양쪽 다요."
+    "date": "2026-08-24",
+    "pos": "cost",
+    "en": "The chip stocks slid again today, but Costco quietly touched its highest price in months.",
+    "ko": "반도체는 오늘도 미끄러졌지만, 코스트코는 조용히 몇 달 만의 최고가를 찍었어요."
   }
 }
