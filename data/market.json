@@ -740,8 +740,8 @@
   "next_session_ko": "장은 오늘 아침 <b>서부 시각 6시 30분</b>에 다시 열립니다 — 위 숫자는 화요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b> until then",
   "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>화요일 종가</b>입니다",
-  "today_en": "Futures are close to flat this morning, with the technology side a touch behind — the market is sitting still ahead of two things it cannot guess. <b>Intuit</b>, the company behind TurboTax, reported after last night's close and is down about <b>11%</b> before the open on a weaker sales forecast, pulling other software shares with it; <b>Nvidia</b> is up slightly. Before the open, at <b>5:30 Pacific time</b>, comes the July inflation gauge the Fed watches most closely, along with the second reading of economic growth. Then <b>Nvidia's own results after the close</b>, about 1:20 in the afternoon Pacific, with the call at 2. Oil is lower again, which is what has been letting the bond market breathe all week — and the thing to watch is whether the chip shares hold Tuesday's bounce into that report.",
-  "today_ko": "오늘 아침 선물은 거의 제자리이고, 기술주 쪽이 조금 뒤처져 있습니다. 시장은 짐작할 수 없는 두 가지를 앞두고 가만히 앉아 있습니다. 터보택스를 만드는 <b>인튜이트</b>는 어젯밤 장 마감 뒤 실적을 냈는데, 매출 전망을 낮춰 잡아 개장 전 약 <b>11%</b> 내려 있고 다른 소프트웨어 주식들도 함께 끌어내리고 있습니다. <b>엔비디아</b>는 조금 올라 있습니다. 장이 열리기 전 <b>서부 시각 오전 5시 30분</b>에 연준이 가장 중시하는 7월 물가 지표가 나오고, 경제 성장률 2차 발표도 함께 나옵니다. 그다음은 <b>엔비디아 자체 실적으로 장 마감 뒤</b>, 서부 시각 오후 1시 20분쯤이며 설명회는 2시입니다. 유가는 오늘도 내렸는데, 이번 주 내내 채권 시장이 숨을 돌린 이유가 그것입니다. 지켜볼 것은 반도체 주식이 화요일의 반등을 그 발표까지 지켜내는지입니다.",
+  "today_en": "It has been a quiet day so far. The July inflation reading the Fed watches most closely came in at <b>3.7%</b> over the past year, a shade hotter than expected, and the market has barely moved since — the <b>S&amp;P 500</b> is about where it started. Your holdings are nearly all sitting still: the chip fund <b>SOXL</b>, the Nasdaq-100 fund <b>QQQ</b> and <b>Costco</b> are each down a fraction of a percent. The one that stands out is <b>Nvidia</b>, off about <b>1.5%</b> — and since the rest of the chip shares have hardly budged, that looks like nerves before its own report rather than any turn against chips. <b>Nvidia's results land after the close today</b>, about 1:20 in the afternoon Pacific time, and on Friday morning the new Fed chairman gives his first Jackson Hole speech.",
+  "today_ko": "오늘은 지금까지 조용한 하루입니다. 연준이 가장 중시하는 7월 물가 지표는 1년 전보다 <b>3.7%</b> 올라 예상보다 아주 조금 높게 나왔고, 그 뒤로도 시장은 거의 움직이지 않았습니다. <b>S&amp;P 500</b>은 출발한 자리 근처에 그대로 있습니다. 보유 종목도 대부분 가만히 있습니다. 반도체 펀드 <b>SOXL</b>과 나스닥100 펀드 <b>QQQ</b>, <b>코스트코</b>는 각각 1%가 안 되게 내려 있습니다. 눈에 띄는 것은 <b>엔비디아</b> 하나로, 약 <b>1.5%</b> 내렸습니다. 다른 반도체 주식들은 거의 그대로여서, 반도체 전반이 돌아섰다기보다 오늘 밤 자기 실적을 앞둔 긴장으로 보입니다. <b>엔비디아 실적은 오늘 장 마감 뒤</b> 서부 시각 오후 1시 20분쯤 나오고, 금요일 아침에는 새 연준 의장이 잭슨홀에서 첫 연설을 합니다.",
   "today_date": "2026-08-26",
   "pancho_am": {
     "date": "2026-08-26",
@@ -750,9 +750,9 @@
     "ko": "오늘은 두 가지예요. 개장 전 물가 지표, 그리고 마감 뒤 엔비디아 실적이요."
   },
   "pancho_pm": {
-    "date": "2026-08-25",
-    "pos": "",
-    "en": "Yesterday's chip selling stopped as fast as it started. The rest of the day has barely moved.",
-    "ko": "어제의 반도체 매도가 시작될 때만큼 빠르게 멎었어요. 나머지는 거의 그대로예요."
+    "date": "2026-08-26",
+    "pos": "nvda",
+    "en": "Everything sat still today. Only Nvidia slipped a little, waiting on its own results tonight.",
+    "ko": "오늘은 다들 제자리였어요. 엔비디아만 오늘 밤 자기 실적을 기다리며 조금 내렸고요."
   }
 }
