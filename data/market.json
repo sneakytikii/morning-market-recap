@@ -741,8 +741,8 @@
   "next_session_ko": "장은 오늘 아침 <b>서부 시각 6시 30분</b>에 다시 열립니다 — 위 숫자는 수요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b> until then",
   "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>수요일 종가</b>입니다",
-  "today_en": "The morning is shaping up around one report. <b>Nvidia</b> beat expectations after last night's close and is indicated <b>about 7% higher</b> before the open, which is pulling the whole technology side up with it — Nasdaq futures point up around <b>1%</b> while Dow futures sit near flat, so this is a technology morning rather than a whole-market one. Two other big software names reported the same evening and are also sharply higher: <b>Salesforce</b> and <b>CrowdStrike</b>. Going the other way, <b>HP</b> is down about 10% on its own results. Today's calendar is light by comparison: <b>jobless claims at 5:30 this morning Pacific time</b>, <b>Best Buy</b> before the open and <b>Marvell</b> — another chip company — after the close. The Jackson Hole conference opens today, but the speech that matters is the new Fed chairman's, and that is tomorrow morning. One thing worth knowing before you look: a jump before the opening bell is not the same as a good day, and Nvidia's shares have fallen after six of their last eight reports.",
-  "today_ko": "오늘 아침은 실적 발표 하나를 중심으로 짜이고 있습니다. <b>엔비디아</b>가 어젯밤 장 마감 뒤 예상을 넘겼고 개장 전에 <b>약 7% 높게</b> 지시되면서 기술주 전체를 끌어올리고 있습니다. 나스닥 선물은 <b>1%</b> 안팎 위를 가리키는 반면 다우 선물은 제자리 근처여서, 시장 전체가 아니라 기술주의 아침입니다. 같은 저녁 실적을 낸 다른 대형 소프트웨어 두 곳도 크게 올라 있습니다. <b>세일즈포스</b>와 <b>크라우드스트라이크</b>입니다. 반대로 <b>HP</b>는 자체 실적에 약 10% 내려 있습니다. 오늘 일정은 그에 비하면 가볍습니다. <b>서부 시각 오늘 아침 5시 30분에 실업수당 청구 건수</b>, 개장 전에 <b>베스트바이</b>, 장 마감 뒤에 또 다른 반도체 회사 <b>마벨</b>이 있습니다. 잭슨홀 회의는 오늘 시작하지만 중요한 연설은 새 연준 의장의 것이고, 그것은 내일 아침입니다. 보시기 전에 알아 두실 것 하나: 개장 전의 급등이 곧 좋은 하루인 것은 아니며, 엔비디아 주가는 최근 여덟 번의 발표 중 여섯 번은 그 뒤 내렸습니다.",
+  "today_en": "Nvidia's results turned out to be the whole story today, and unusually the jump has held instead of fading away: <b>Nvidia is up about 9%</b> this afternoon, more than the <b>7%</b> it was pointing to before the opening bell. That has pulled the technology side up with it — <b>QQQ is up a little over 1%</b> and the chip fund <b>SOXL about 4.5%</b>, which is a good deal less than three times Nvidia because it holds the whole chip industry and the rest of it is only modestly higher. Away from technology it is a much quieter day: the <b>S&amp;P 500</b> is up under <b>1%</b>, and <b>Costco is down about 1.5%</b> on a poorer day for shop shares, with Best Buy falling this morning even though it beat expectations. Jobless claims came in at <b>203,000</b>, a little better than expected. <b>Marvell</b>, another chip company, reports after the close tonight, and the new Fed chairman gives his first Jackson Hole speech at <b>7 tomorrow morning Pacific time</b>.",
+  "today_ko": "오늘은 엔비디아 실적이 전부였고, 드물게도 개장 전의 급등이 흐지부지되지 않고 그대로 유지되고 있습니다. <b>엔비디아는 오후 들어 약 9%</b> 올라 있는데, 개장 전에 가리키던 <b>7%</b>보다 더 높습니다. 그 힘이 기술주 쪽을 함께 끌어올려 <b>QQQ는 1% 남짓</b>, 반도체 펀드 <b>SOXL은 약 4.5%</b> 올라 있습니다. 엔비디아의 세 배에 한참 못 미치는데, 이 펀드는 반도체 산업 전체를 담고 있고 나머지 종목들은 소폭 오르는 데 그쳤기 때문입니다. 기술주에서 벗어나면 훨씬 조용한 하루입니다. <b>S&amp;P 500</b>은 <b>1%</b>에 못 미치게 올랐고, <b>코스트코는 약 1.5%</b> 내려 유통주가 부진한 하루를 보내고 있습니다. 베스트바이는 오늘 아침 예상을 넘긴 실적을 내고도 주가가 내렸습니다. 실업수당 청구 건수는 <b>20만 3,000건</b>으로 예상보다 조금 좋았습니다. 오늘 밤 장 마감 뒤에는 또 다른 반도체 회사 <b>마벨</b>이 실적을 내고, 새 연준 의장은 <b>서부 시각 내일 아침 7시</b>에 잭슨홀에서 첫 연설을 합니다.",
   "today_date": "2026-08-27",
   "pancho_am": {
     "date": "2026-08-27",
@@ -751,9 +751,9 @@
     "ko": "엔비디아 실적이 컸어요. 개장 전 반도체가 오르는데, SOXL은 그걸 세 배로 느껴요."
   },
   "pancho_pm": {
-    "date": "2026-08-26",
+    "date": "2026-08-27",
     "pos": "nvda",
-    "en": "Everything sat still today. Only Nvidia slipped a little, waiting on its own results tonight.",
-    "ko": "오늘은 다들 제자리였어요. 엔비디아만 오늘 밤 자기 실적을 기다리며 조금 내렸고요."
+    "en": "Nvidia usually gives its jump back by the afternoon. Today it kept it, and then some.",
+    "ko": "엔비디아는 보통 오후에 오른 걸 되돌려요. 오늘은 지키고 더 올랐어요."
   }
 }
