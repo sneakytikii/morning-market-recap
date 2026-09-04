@@ -1,53 +1,53 @@
 {
-  "_comment": "NOTE 2026-08-28 FRIDAY PRE-DAWN RUN (~03:10-04:40 Pacific, ~3h before the 6:30 open). NEW SESSION REPORTED: Thursday Aug 27 close. Every price re-researched and cross-checked on two independent sources: SPX 7,730.99 +0.72% (Yahoo ^GSPC history OHLC 7,710.34/7,741.27/7,689.89/7,730.99 + AP wrap '+55.29 to 7,730.99' + Motley Fool '7,731 +0.72%'); QQQ 721.11 +1.37% (StockAnalysis + Yahoo identical OHLC 716.93/721.35/714.53/721.11 - Yahoo's QQQ history page is back up after Wednesday's 503s); NVDA 227.98 +8.74% (StockAnalysis + Yahoo, identical OHLC 222.86/230.47/220.90/227.98); SOXL 123.05 +5.53% (StockAnalysis + Yahoo, identical OHLC 123.40/124.88/117.69/123.05; volume tallies differed ~2%, 54.4m vs 55.4m - prices agree to the cent, which is what matters); COST 934.66 -2.24% (StockAnalysis history + a Zacks/Yahoo piece quoting the same close and -2.24%). SOXL CONFIRMED, twelfth run straight: own OHLC 116.60->123.05 = +5.532%; SOXX 515.40->525.43 = +1.9461%, 3x = +5.8384%, so SOXL ran 0.31pp SHORT of a perfect tripling on a big up day - consistent with the month's pattern (quiet days near-exact: Wednesday +0.02pp over; violent days short: Tuesday -0.61pp). PHLX SOX not checked this run; the note compares only against the fund holding the same companies and says so. STRIP: Dow 53,569.44 +105.56 (AP + Motley Fool), Nasdaq Composite 26,541.35 +1.57% (AP +411.16 + Motley Fool), VIX 14.51 from 15.21 (Yahoo ^VIX history; a CNBC Aug 17 piece said the VIX hit its 2026 low that week but the low's value was not confirmed, so the page claims no record), 10y ~4.672% up <1bp and 30y ~5.19% up <1bp (CNBC bond wrap 'little changed ahead of Jackson Hole'; H.15 only ran through Wednesday at fetch time: 4.66/5.18). THE SESSION: Nvidia's day and almost nobody else's. NVDA +8.74%, reported as adding about $435bn of value (derived-from-cap math gives ~$440bn; the page says 'more than $400 billion', safely under both), closing ~3.6% from its May record - and it KEPT the opening jump against the 6-of-8 post-earnings-fall history this page warned about yesterday; the warning was wrong this time and the prose says so plainly. On the call the company pointed to far stronger next-fiscal-year growth than analysts had pencilled in (Motley Fool put it near 70%; single source, so the prose stays soft). CRM +22.6% to 252.10, best day since 2020, on results plus an Anthropic AI partnership; CRWD +20.2% to 226.74. Meanwhile the AVERAGE stock fell: technology was the only S&P sector to advance (TheStreet + Yahoo wrap) and AP says Nvidia 'more than offset drops for the majority of stocks'. Chips mixed underneath: AMD -0.89%, AVGO +4.49%. Retail graded hard again: BBY -4.4% to 83.56 despite a beat-and-raise; DG closed up ~5% on a raised outlook while DLTR closed down ~3% on a soft profit forecast (24/7 Wall St; premarket prints were +8/-7, closes used per touched-vs-closed); COST -2.24%, third fall in a row, worst of the five, and now NEGATIVE for August (-1.81% vs the Jul 31 base 951.91) - the 'all five ahead for August' line is dead. Jobless claims 203,000 vs 208,000 expected (CNBC). AFTER THE CLOSE: Marvell beat (rev $2.74bn +37%, EPS 0.94 vs 0.93) and guided Q3 above consensus (EPS 1.10 +/-0.05 vs 1.07) yet fell about 8% in evening trading (ts2 -7.6%; a Yahoo premarket piece '~8-9%') with gross margin guided DOWN 90bp to 58.0% - the memory-cost thread now in a SECOND chip company's own guidance, one day after Nvidia's 75->74. One Yahoo premarket table near 1am PT showed MRVL only -1.49%, so the evening fall may not survive to the open; the prose keeps the size soft and dated to evening trading. OVERNIGHT: PYPL down >12% on reports Stripe/Advent withdrew their acquisition proposal (a QQQ holding); AFRM +11% on results (not in the NDX, left out of the page). MORNING SWEEP (~03:15-04:10 PT): S&P futures roughly flat, Dow futures +0.2%, Nasdaq-100 futures -0.3%, all positioning for Fed chair Kevin Warsh's FIRST Jackson Hole keynote TODAY at 7:00 Pacific (10:00 ET, two sources); UMich consumer sentiment final + Chicago PMI also this morning. MONTH BASES (Jul 31 closes) unchanged: SPX 7489.5, QQQ 688.00, NVDA 200.76, SOXL 114.72, COST 951.91. 52w BASES NOT TOUCHED - no new extreme Thursday (SPX high 7,741.27 vs 7,798.99; QQQ 721.35 vs 748.65; NVDA 230.47 vs 236.54; SOXL 124.88 vs 302.00; COST 948.85 vs 1,097.05). eps_at/cap_usd_at untouched per the standing rule - NVDA's derived P/E now reads ~35 (prose updated from ~32) and COST's ~47; NVDA cap derives to ~$5.5tn (prose updated from ~$5.1tn). EVENTS: Marvell and claims/Best Buy rows removed (passed); Jackson Hole reworded to TODAY; ADDED Sep 4 jobs report (hot - July's report showed jobs lost, per CNBC Aug 7) and Sep 7 Labor Day closure; FIXED two wrong weekday labels: Canada counter-tariffs Sep 8 is a TUESDAY (was 'Mon') and Treasury buybacks Sep 9 is a WEDNESDAY (was 'Tue') - checked against the calendar. TRACKER: 1 entry ADDED (Aug 27 Lake America executive order - the follow-through on the Aug 25 renaming threat already on the record), 1 rolled off (Aug 18 strait-open post, oldest), record stays 12; the chips-tariff deliberation (Politico) is STILL rejected - no statement, no document. See data/trump.json _comment. | Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py.",
-  "as_of": "2026-08-27",
-  "generated": "2026-08-28T04:35:00-07:00",
+  "_comment": "NOTE 2026-09-01 TUESDAY LATE RUN (~11:25-12:15 Pacific, session IN PROGRESS since 6:30 - both backup slots missed, so the Today block is written about the live session, not futures). MODE weekday; the reported session is MONDAY AUG 31, the final trading day of August, so month figures are FINAL. Every close cross-checked on two independent sources (stockanalysis + Yahoo history identical rows unless noted): SPX 7,686.14 -0.33% (Yahoo ^GSPC + Google Finance); QQQ 716.76 +0.05% (OHLC 715.17/717.58/713.16/716.76); NVDA 220.78 +1.48% (OHLC 218.87/221.30/216.21/220.78; one Yahoo history print of 217.86/-1.20% identified as a Tuesday-intraday row and discarded); COST 943.89 -0.17% (OHLC 945.19/949.30/940.71/943.89); SOXL 112.79 +1.30% - BOTH usual feeds clean this run, fifteenth consecutive confirmed: stockanalysis OHLC 112.41/115.05/110.33/112.79 vol 33.67M, Yahoo identical OHLC vol 34.03M, own record 111.34->112.79=+1.302%, tripling check SOXX 508.62->511.04 +0.48% x3=1.43% vs +1.30%, 0.13pp inside, ordinary. NO new 52-week extreme anywhere (Mon highs: SPX 7,697.52 vs 7,798.99; QQQ 717.58 vs 748.65; NVDA 221.30 vs 236.54; SOXL 115.05 vs 302.00; COST 949.30 vs 1,097.05) - all base blocks untouched per standing rule. One source notes COST 52w high 1,096.50 vs our 1,097.05 (basis difference, not acted on). AUGUST FINAL (Jul 31 bases unchanged 7489.5/688.00/200.76/114.72/951.91): SPX +2.63%, QQQ +4.18%, NVDA +9.97%, SOXL -1.68%, COST -0.84%. WEEK = one session (Mon Aug 31 vs Fri Aug 28 closes), so week-to-date equals the day move; labeled 'after one session' everywhere. STRIP: Dow 53,185.90 -374.09/-0.70% (Yahoo + Google); Nasdaq Composite 26,370.89 -0.12% (two sources); VIX 14.92 (Yahoo + Google BUT Yahoo shows Friday close 14.43 vs the 14.35 two Friday sources gave the weekend run - Monday's 14.92 is solid, the Friday-delta is ambiguous, so prose says 'up from Friday's mid-14s' and no precise delta; discrepancy recorded here); 10y 4.75% Mon (Treasury.gov official par yield; Yahoo ^TNX 4.758) +2-4bp, reported by Zacks/Investrade as highest since Jan 2025 -> prose 'highest since early last year'; 30y 5.25% (Treasury.gov + ^TYX) +3-5bp. MONDAY DRIVERS (two+ wraps: Investrade review, Zacks-via-Yahoo, Yahoo live blog): US CENTCOM strikes Sun Aug 30 on two Iranian rocket launchers on Larak Island said to be preparing Hormuz mines - first military action in about a month of the conflict; oil settled WTI $85.76 +2.83% / Brent (Nov) $90.49 +2.71% (Investrade + Zacks identical; TradingEconomics closes match), coverage ties the jump to Iran NOT Venezuela; energy rallied (XOM +2.7% CVX +2.1%); Sep 15-16 HIKE odds ~62-66% Mon (Motley Fool 66.1%, Yahoo 62%, from ~57% Fri post-Warsh) -> prose 'about two-in-three'; month-end light volume. Sector attribution CONFLICT (Zacks: IT -1.6%, comm svcs +1.45% vs Yahoo live: NVDA +1.5% cushioned Nasdaq while MSFT/AAPL/AMZN/GOOGL fell) - prose keeps only the two-source facts (energy up, Nvidia up, most megacaps soft). NVDA +1.48% on its $3.5bn MediaTek convertible-bond investment (SiliconANGLE + TechCrunch + Bloomberg; 'largest direct investment outside the US' per reporting; MediaTek +~10% in Taipei overnight into Tuesday). MRVL -3.06% Mon (TradingKey; post-earnings drift). Micron +0.52%. Broadcom held near $369 into Wed Sep 2 results (StockTitan date + Motley Fool preview; options imply ~8% move - NOT used in prose to avoid jargon). VENEZUELA follow-through: deal outline/fact sheet reported published late Monday (Rio Times reading: 100-yr lease 17 fields, NABEP vehicle, conflicting equity readings 35%-of-parent vs 55%-of-venture; Exxon 'going in' per Trump, Exxon declined comment) - kept SOFT in prose ('the outline appeared', no equity numbers) because single-source; oil traders read new supply as years away (OilPrice, beincrypto). TUESDAY IN PROGRESS as of ~11:30 PT (Yahoo live, Motley Fool midday, Reuters bond-rout pieces): stocks lower all morning (SPX roughly -0.5 to -0.8% near 7,630s, lowest since early Aug intraday), two tankers (one Saudi, one South Korean-owned) hit by projectiles near Hormuz Monday evening, GLOBAL BOND SELLOFF (Japan 10y hit 3% first time since 1996, UK gilts +10bp, US 10y ~4.76-4.79 intraday), Brent ~$92-93 intraday, hike odds ~66-68%; ISM mfg 54.6 8th month of expansion but slower; JOLTS 7.27M openings steady; Apple's new CEO John Ternus took over today (Cook to exec chairman); Dell reports tonight after the close. Today block + pancho_am written for the session in progress per the late-run rule; NO live prices quoted in prose. 52W BASES, eps_at, cap_usd_at ALL untouched; derived NVDA P/E now reads ~34 (220.78 x 30.7 / 200.75 = 33.8, prose updated from ~33), cap ~$5.3tn unchanged; COST P/E ~48 (47.5). Events: beef row kept (dated today, still true today), Dell-tonight row added (not hot), all future rows kept; Costco Aug sales Wed 1:15 PT re-confirmed via Costco IR event page. next_session rewritten for a mid-session run (market already open). Tracker: swept separately this run - see data/trump.json _comment for the trail. | Written by scripts/refresh.sh (the Claude research step) and rendered into the page by scripts/build.py.",
+  "as_of": "2026-08-31",
+  "generated": "2026-09-01T12:10:00-07:00",
   "mode": "weekday",
   "strip": {
     "spx": {
-      "value": "7,730.99",
-      "change_en": "▲ +0.72% on Thursday — Nvidia alone did the lifting; most stocks in the index actually fell",
-      "change_ko": "▲ 목요일 +0.72% — 엔비디아 혼자 끌어올렸습니다. 지수 안 대부분의 종목은 오히려 내렸습니다",
-      "dir": "up",
+      "value": "7,686.14",
+      "change_en": "▼ −0.33% on Monday as oil jumped — August ended with the index up about 2.6%",
+      "change_ko": "▼ 월요일 −0.33% — 유가가 뛰었습니다. 8월은 지수가 약 2.6% 오른 채 끝났습니다",
+      "dir": "dn",
       "name_en": "S&amp;P 500",
       "name_ko": "S&amp;P 500"
     },
     "ndx": {
-      "value": "26,541.35",
-      "change_en": "▲ +1.57% on Thursday — the chip and software results carried it",
-      "change_ko": "▲ 목요일 +1.57% — 반도체와 소프트웨어 실적이 끌고 갔습니다",
-      "dir": "up",
+      "value": "26,370.89",
+      "change_en": "▼ −0.12% on Monday — Nvidia’s rise cushioned the fall; up about 4% for August",
+      "change_ko": "▼ 월요일 −0.12% — 엔비디아의 상승이 낙폭을 받쳐 줬습니다. 8월에는 약 4% 올랐습니다",
+      "dir": "dn",
       "name_en": "Nasdaq",
       "name_ko": "나스닥"
     },
     "dow": {
-      "value": "53,569.44",
-      "change_en": "▲ +105.56 points on Thursday — a small rise; the day belonged to technology",
-      "change_ko": "▲ 목요일 +105.56포인트 — 소폭 상승이었고, 이날의 주인공은 기술주였습니다",
-      "dir": "up",
+      "value": "53,185.90",
+      "change_en": "▼ −374.09 points on Monday (−0.70%) — the biggest fall among the big three indexes",
+      "change_ko": "▼ 월요일 −374.09포인트(−0.70%) — 3대 지수 가운데 가장 큰 하락이었습니다",
+      "dir": "dn",
       "name_en": "Dow Jones",
       "name_ko": "다우존스"
     },
     "vix": {
-      "value": "14.51",
-      "change_en": "▼ down from 15.21 — the year's biggest report is past, and the market relaxed a little more",
-      "change_ko": "▼ 15.21에서 내렸습니다 — 올해 가장 큰 실적 발표가 지나가자 시장은 조금 더 차분해졌습니다",
-      "dir": "dn",
+      "value": "14.92",
+      "change_en": "▲ up from Friday’s mid-14s — still calm, a notch less so with oil back in the headlines",
+      "change_ko": "▲ 금요일의 14 중반에서 올랐습니다 — 여전히 차분하지만, 유가가 다시 뉴스에 오르면서 한 눈금 덜 차분해졌습니다",
+      "dir": "up",
       "name_en": "Fear gauge",
       "name_ko": "공포 지수"
     },
     "us10y": {
-      "value": "≈ 4.67%",
-      "change_en": "▲ barely moved — the bond market is waiting for this morning's Fed speech",
-      "change_ko": "▲ 거의 움직이지 않았습니다 — 채권 시장은 오늘 아침 연준 연설을 기다리고 있습니다",
+      "value": "≈ 4.75%",
+      "change_en": "▲ up again on Monday — reported as the highest since early last year, with oil rising and a September rate rise in play",
+      "change_ko": "▲ 월요일에 또 올랐습니다 — 작년 초 이후 최고로 보도됐습니다. 유가가 오르고 9월 금리 인상 가능성이 살아 있습니다",
       "dir": "up",
       "name_en": "10-Year bond",
       "name_ko": "10년물 국채"
     },
     "us30y": {
-      "value": "≈ 5.19%",
-      "change_en": "▲ barely moved, and still paying over 5%",
-      "change_ko": "▲ 거의 움직이지 않았고, 여전히 5%가 넘습니다",
+      "value": "≈ 5.25%",
+      "change_en": "▲ up a touch on Monday — borrowing for 30 years still costs well over 5%",
+      "change_ko": "▲ 월요일 소폭 상승 — 30년 동안 돈을 빌리는 값은 여전히 5%를 훌직 넘습니다",
       "dir": "up",
       "name_en": "30-Year bond",
       "name_ko": "30년물 국채"
@@ -55,38 +55,46 @@
   },
   "positions": {
     "spx": {
-      "price": "7,730.99",
-      "day_arrow": "▲",
-      "day_en": "+0.72% on Thursday",
-      "day_ko": "목요일 +0.72%",
-      "day_dir": "up",
-      "week_arrow": "▲",
-      "week_en": "≈ +0.74% so far this week",
-      "week_ko": "이번 주 ≈ +0.74%",
-      "week_dir": "up",
+      "price": "7,686.14",
+      "day_arrow": "▼",
+      "day_en": "−0.33% on Monday",
+      "day_ko": "월요일 −0.33%",
+      "day_dir": "dn",
+      "week_arrow": "▼",
+      "week_en": "≈ −0.33% so far this week",
+      "week_ko": "이번 주 들어 ≈ −0.33%",
+      "week_dir": "dn",
       "month_arrow": "▲",
-      "month_en": "≈ +3.22% so far in August",
-      "month_ko": "8월 들어 ≈ +3.22%",
+      "month_en": "≈ +2.63% for all of August",
+      "month_ko": "8월 전체 ≈ +2.63%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 0.9%",
+      "drawdown": "≈ 1.4%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 0.9%",
-      "drawdown_fact_ko": "≈ 0.9%",
-      "take_en": "Back within 1% of its record",
-      "take_ko": "사상 최고까지 1% 안쪽",
-      "take_tone": "c-pos",
+      "drawdown_fact_en": "≈ 1.4%",
+      "drawdown_fact_ko": "≈ 1.4%",
+      "take_en": "August closed +2.6% — oil is the new worry",
+      "take_ko": "8월 +2.6% 마감 — 이제 걱정은 유가",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Thursday was the day the waiting paid off — for one company, and therefore for the index that carries it. The S&P 500 rose <b>0.72%</b> to <b>7,730.99</b> and now sits within about <b>0.9%</b> of the record it set on August 13. Read the fine print, though: <b>most stocks in the index fell</b>. Technology was the only one of the eleven industry groups to rise, and Nvidia's <b>8.74%</b> jump — worth more than <b>$400 billion</b> of company value — outweighed everything else on its own. Two software companies that reported the same evening as Nvidia made it three: <b>Salesforce rose 22.6%</b>, its best day since 2020, and <b>CrowdStrike rose about 20%</b>. The rest of the tape leaned the other way, and retail had another unkind day: <b>Best Buy beat expectations, raised its forecast, and still fell 4.4%</b>; Dollar Tree fell about 3% on a soft profit outlook; only Dollar General, up about 5%, was rewarded. The morning's one economic number was friendly — <b>203,000</b> new claims for unemployment benefits, fewer than the 208,000 expected. Bond rates barely moved, the 10-year at about <b>4.67%</b> and the 30-year at about <b>5.19%</b>, because the bond market was saving itself for this morning: the new Fed chairman's first Jackson Hole speech, at 7 Pacific time. The fear gauge slipped to <b>14.51</b>.",
-      "note_ko": "목요일은 기다림이 보상받은 날이었습니다. 회사 하나가 보상을 받았고, 그 회사를 담은 지수도 따라서 받았습니다. S&P 500은 <b>0.72%</b> 올라 <b>7,730.99</b>가 됐고, 이제 8월 13일에 세운 사상 최고치의 약 <b>0.9%</b> 안쪽에 있습니다. 다만 작은 글씨를 읽어야 합니다. <b>지수 안 대부분의 종목은 내렸습니다.</b> 11개 업종 가운데 오른 것은 기술주 하나뿐이었고, 엔비디아의 <b>8.74%</b> 급등 — 회사 가치로 <b>4,000억 달러</b>가 넘습니다 — 이 혼자서 나머지 전부를 눌렀습니다. 엔비디아와 같은 저녁 실적을 낸 소프트웨어 회사 둘이 셋을 채웠습니다. <b>세일즈포스는 22.6%</b> 올라 2020년 이후 최고의 하루를 보냈고, <b>크라우드스트라이크는 약 20%</b> 올랐습니다. 나머지 종목들은 반대쪽으로 기울었고, 유통업은 또 한 번 박한 채점을 받았습니다. <b>베스트바이는 예상을 넘기고 전망까지 올리고도 4.4% 내렸으며</b>, 달러 트리는 무른 이익 전망에 약 3% 내렸고, 연간 전망을 올린 달러 제너럴만 약 5% 올라 보상을 받았습니다. 아침에 나온 경제 지표 하나는 우호적이었습니다. 신규 실업수당 청구가 <b>20만 3,000건</b>으로 예상치 20만 8,000건보다 적었습니다. 채권 금리는 거의 움직이지 않았습니다. 10년물 약 <b>4.67%</b>, 30년물 약 <b>5.19%</b>입니다. 채권 시장이 오늘 아침을 위해 힘을 아꼈기 때문입니다. 새 연준 의장의 첫 잭슨홀 연설이 서부 시각 오전 7시에 있습니다. 공포 지수는 <b>14.51</b>로 내렸습니다.",
+      "note_en": "August ended with a quiet step down and a loud reason. The index fell <b>0.33%</b> on Monday to <b>7,686.14</b> — and the reason was not in the stock market at all. Over the weekend the American military struck Iranian launchers it said were preparing to lay mines in the Strait of Hormuz, the narrow waterway a large share of the world's oil passes through, and oil rose almost <b>3%</b>, with American crude settling near <b>$86</b> a barrel. Dearer oil feeds into inflation, and inflation is the thing the new Fed chairman has said comes first — so the rate pressure tightened another notch. One measure of the odds that the Fed <b>raises</b> rates at its September meeting reached about <b>two-in-three</b>, and the 10-year government rate rose to about <b>4.75%</b>, reported as its highest since early last year. Energy shares rallied while most of the technology giants slipped; Nvidia, up 1.48% on its own news, was the exception. The month's final arithmetic is now in the book: the index gained about <b>2.6%</b> in August and sits about <b>1.4%</b> below its August 13 record. The fear gauge rose to <b>14.92</b> — still calm, a notch less so than Friday.",
+      "note_ko": "8월은 조용한 한 걸음의 하락과 요란한 이유로 끝났습니다. 지수는 월요일에 <b>0.33%</b> 내려 <b>7,686.14</b>가 됐습니다. 그런데 그 이유는 주식 시장 안에 있지 않았습니다. 주말 사이 미군은 호르무즈 해협 — 세계 원유의 상당량이 지나가는 좁은 바닷길 — 에 기뢰를 놓으려 준비하고 있었다고 밝힌 이란의 발사대를 타격했고, 유가는 <b>3%</b> 가까이 올라 미국산 원유가 배럴당 <b>86달러</b> 부근에서 마감했습니다. 비싸진 기름은 물가로 이어지고, 물가는 새 연준 의장이 먼저라고 말한 바로 그것입니다. 그래서 금리 압력이 한 눈금 더 조여졌습니다. 9월 회의에서 연준이 금리를 <b>올릴</b> 확률을 재는 한 지표는 약 <b>3분의 2</b>에 이르렀고, 10년물 국채 금리는 약 <b>4.75%</b>로 올라 작년 초 이후 최고로 보도됐습니다. 에너지 주식은 뛰었고 대형 기술주 대부분은 밀렸습니다. 자기 소식으로 1.48% 오른 엔비디아가 예외였습니다. 이달의 최종 셈은 이제 장부에 적혔습니다. 지수는 8월에 약 <b>2.6%</b> 올랐고, 8월 13일 사상 최고치보다 약 <b>1.4%</b> 낮습니다. 공포 지수는 <b>14.92</b>로 올랐습니다. 여전히 차분하지만, 금요일보다는 한 눈금 덜 차분합니다.",
       "ticker": "SPX",
       "name_en": "The whole US market",
       "name_ko": "미국 시장 전체",
-      "week_fact_en": "up ≈ 0.74%",
-      "week_fact_ko": "≈ 0.74% 상승",
+      "week_fact_en": "down ≈ 0.33% after one session",
+      "week_fact_ko": "1거래일 기준 ≈ 0.33% 하락",
       "news_en": [
+        {
+          "dt": "Aug 31",
+          "tx": "<b>Fell 0.33% to 7,686.14 on the last day of August, as the Middle East returned to the front page.</b> American strikes on Iranian launchers near the Strait of Hormuz sent oil up almost <b>3%</b>; energy shares rose, and one measure of the odds of a September rate <b>rise</b> reached about two-in-three. August closed with the index up about <b>2.6%</b>."
+        },
+        {
+          "dt": "Aug 28",
+          "tx": "<b>Fell 0.25% to 7,711.76 as the new Fed chairman put inflation first.</b> In his first Jackson Hole speech, Kevin Warsh said the Fed's \"predominant focus right now should be on prices\" — one measure of the odds of a September rate <b>rise</b> jumped to about 57%. Chips gave back part of Thursday; <b>Costco was the rare riser</b>. For the week the index added about <b>0.5%</b>."
+        },
         {
           "dt": "Aug 27",
           "tx": "<b>Rose 0.72% to 7,730.99 — Nvidia's day.</b> The index climbed to within about 0.9% of its record while <b>most of its stocks fell</b>; technology was the only industry group to rise. <b>Salesforce jumped 22.6%</b>, its best day since 2020. Jobless claims came in at <b>203,000</b>, a little better than expected."
@@ -94,17 +102,17 @@
         {
           "dt": "Aug 26",
           "tx": "<b>Fell 0.02% to 7,675.70 — a day spent waiting.</b> The <b>Dow slipped 113.52 points</b>, ending a three-day run. The inflation gauge the Fed watches most came in at <b>3.3%</b> over the past year, unchanged and as expected, and long-term rates ticked back up. <b>Nvidia reported after the close.</b>"
-        },
-        {
-          "dt": "Aug 25",
-          "tx": "<b>Rose 0.32% to 7,677.28 as the chip shares came back and rates eased again.</b> The <b>Dow rose 160.24 points</b> for a third straight gain. Two soft readings on the American shopper — <b>consumer confidence at its lowest since January</b> — and <b>Dick's Sporting Goods fell about 30%</b> after cutting its forecast."
-        },
-        {
-          "dt": "Aug 24",
-          "tx": "<b>Fell 0.28% to 7,652.86 as the chip shares outweighed a friendlier bond market.</b> The <b>Dow rose 140.15 points</b> as money moved toward steadier names, but Nvidia, Micron and Broadcom were enough to pull the index down. Long-term rates eased: the 30-year fell to about <b>5.23%</b>."
         }
       ],
       "news_ko": [
+        {
+          "dt": "8월 31일",
+          "tx": "<b>8월의 마지막 거래일에 0.33% 내린 7,686.14 — 중동이 다시 1면으로 돌아왔습니다.</b> 미군이 호르무즈 해협 부근 이란 발사대를 타격하자 유가가 <b>3%</b> 가까이 올랐습니다. 에너지 주식은 올랐고, 9월 금리 <b>인상</b> 확률을 재는 한 지표는 약 3분의 2에 이르렀습니다. 8월은 지수가 약 <b>2.6%</b> 오른 채 마감됐습니다."
+        },
+        {
+          "dt": "8월 28일",
+          "tx": "<b>새 연준 의장이 물가를 앞세우자 0.25% 내린 7,711.76이 됐습니다.</b> 케빈 워시는 첫 잭슨홀 연설에서 연준의 \"지금 최우선 초점은 물가여야 한다\"고 말했고, 9월 금리 <b>인상</b> 확률을 재는 한 지표는 약 57%로 뛰었습니다. 반도체는 목요일 상승분 일부를 되돌렸고, <b>코스트코는 드물게 오른 쪽</b>이었습니다. 한 주로 지수는 약 <b>0.5%</b> 올랐습니다."
+        },
         {
           "dt": "8월 27일",
           "tx": "<b>0.72% 올라 7,730.99 — 엔비디아의 날이었습니다.</b> 지수는 사상 최고치의 약 0.9% 안쪽까지 올라왔지만 <b>안에 든 대부분의 종목은 내렸고</b>, 오른 업종은 기술주 하나뿐이었습니다. <b>세일즈포스는 22.6% 뛰어</b> 2020년 이후 최고의 하루를 보냈습니다. 실업수당 청구는 <b>20만 3,000건</b>으로 예상보다 조금 좋았습니다."
@@ -112,18 +120,10 @@
         {
           "dt": "8월 26일",
           "tx": "<b>0.02% 내린 7,675.70 — 기다리며 보낸 하루였습니다.</b> <b>다우존스는 113.52포인트 내려</b> 사흘 연속 상승을 멈췄습니다. 연준이 가장 중시하는 물가 지표는 1년 전보다 <b>3.3%</b> 올라 변화도 없고 예상대로였으며, 장기 금리는 다시 조금 올랐습니다. <b>엔비디아는 장 마감 뒤 실적을 발표했습니다.</b>"
-        },
-        {
-          "dt": "8월 25일",
-          "tx": "<b>반도체 주식이 돌아오고 금리가 또 내리면서 0.32% 올라 7,677.28이 됐습니다.</b> <b>다우존스는 160.24포인트 올라</b> 사흘 연속 상승했습니다. 미국 소비자에 관한 지표 두 가지는 부진했고(<b>소비자 신뢰지수는 1월 이후 최저</b>), <b>딕스 스포팅 굿즈는 연간 전망을 낮춘 뒤 약 30% 내렸습니다</b>."
-        },
-        {
-          "dt": "8월 24일",
-          "tx": "<b>반도체 주식의 하락이 채권 시장의 호전을 누르며 0.28% 내린 7,652.86이 됐습니다.</b> 돈이 안정적인 종목 쪽으로 옮겨 가며 <b>다우존스는 140.15포인트 올랐지만</b>, 엔비디아·마이크론·브로드컴만으로도 지수를 끌어내리기에 충분했습니다. 장기 금리는 내렸습니다. 30년물은 약 <b>5.23%</b>가 됐습니다."
         }
       ],
-      "verdict_en": "<b>What I'd watch: 7 o'clock this morning, Pacific time.</b> The new Fed chairman, Kevin Warsh, gives his first Jackson Hole speech then, and it is the biggest scheduled event left in August. It matters because of the thing that did the damage all last month: long-term borrowing rates. They have sat almost still for three days — the 30-year at about <b>5.19%</b>, still above 5% — while the bond market waits to hear how he talks about inflation, which has been stuck at <b>3.3%</b> for two months against the Fed's 2% target, and about the three officials who voted in July to raise rates. Nobody can tell you what he will say; this page's job is only to point at the hour. The second thing worth carrying into the day is Thursday's fine print: the index closed within about <b>0.9%</b> of its record, but most of the stocks inside it fell, and the whole rise fit inside one company. A market that narrow is not weaker by definition, but it does mean your index fund is leaning harder than usual on the AI story. The household story underneath has not changed: consumer confidence at its lowest since January, and retailers still marked down even on good reports — Best Buy was the latest. And Canada's counter-tariffs on more than 700 American products begin <b>Tuesday, September 8</b>.",
-      "verdict_ko": "<b>제가 지켜볼 것: 오늘 아침 서부 시각 7시입니다.</b> 새 연준 의장 케빈 워시가 그 시각에 첫 잭슨홀 연설을 합니다. 8월에 남은 일정 가운데 가장 큰 사건입니다. 중요한 이유는 지난달 내내 피해를 만든 그것, 장기 금리 때문입니다. 금리는 사흘째 거의 제자리입니다. 30년물은 약 <b>5.19%</b>로 여전히 5%를 넘습니다. 채권 시장은 그가 물가를 어떻게 말하는지 — 연준의 목표 2%에 대해 두 달째 <b>3.3%</b>에 멈춰 있습니다 — 그리고 7월에 인상에 표를 던진 세 명에 대해 어떻게 말하는지 들으려고 기다리고 있습니다. 그가 무슨 말을 할지는 아무도 알 수 없습니다. 이 페이지의 일은 그 시각을 가리키는 것까지입니다. 오늘 하루에 챙겨 갈 두 번째는 목요일의 작은 글씨입니다. 지수는 사상 최고치의 약 <b>0.9%</b> 안쪽에서 마쳤지만, 안에 든 대부분의 종목은 내렸고, 상승분 전체가 회사 하나 안에 들어갑니다. 이렇게 좁은 시장이 반드시 약한 것은 아니지만, 보유하신 인덱스 펀드가 평소보다 더 무겁게 AI 이야기에 기대고 있다는 뜻이기는 합니다. 그 아래의 가계 이야기는 달라지지 않았습니다. 소비자 신뢰지수는 1월 이후 최저이고, 유통업체는 좋은 실적을 내고도 깎입니다. 베스트바이가 가장 최근 사례입니다. 그리고 <b>9월 8일 화요일</b>부터 캐나다가 미국산 700여 개 품목에 보복 관세를 매기기 시작합니다.",
+      "verdict_en": "<b>What I'd watch: Friday, September 4, at 5:30 in the morning Pacific time — the August jobs report.</b> It is the first big number since the new Fed chairman said prices come first, and the rate debate has only sharpened since: one measure of the odds of a September rate <b>rise</b> now stands at about two-in-three, and long-term rates are rising around the world — Japan's 10-year crossed 3% for the first time since 1996. July's report showed the economy losing jobs; nobody can tell you what August's will show. Second: <b>oil</b>. The strikes near the Strait of Hormuz, and the tankers hit after Monday's close, put the oil price back at the front of the queue — and oil feeds the long-term rates this page watches. The Venezuela announcement got its first reading here too: the White House published the deal's outline on Monday, and reporting tied the week's oil rise to Iran, not Venezuela — any new Venezuelan supply is read as years away. Third, Wednesday brings two tests closer to home: <b>Costco's August sales and Broadcom's results</b>, the biggest chip company to report since Nvidia. The trade calendar is unchanged: Canada's counter-tariffs on more than 700 American products begin <b>Tuesday, September 8</b>.",
+      "verdict_ko": "<b>제가 지켜볼 것: 9월 4일 금요일, 서부 시각 오전 5시 30분의 8월 고용 보고서입니다.</b> 새 연준 의장이 물가가 먼저라고 말한 뒤 나오는 첫 큰 숫자이고, 금리 논쟁은 그 뒤로 날카로워지기만 했습니다. 9월 금리 <b>인상</b> 확률을 재는 한 지표는 이제 약 3분의 2이고, 장기 금리는 세계 곳곳에서 오르고 있습니다. 일본의 10년물은 1996년 이후 처음으로 3%를 넘었습니다. 7월 보고서는 일자리가 줄었다고 나왔습니다. 8월 보고서가 무엇을 보여 줄지는 아무도 말해 줄 수 없습니다. 둘째는 <b>유가</b>입니다. 호르무즈 해협 부근 타격, 그리고 월요일 장 마감 뒤 피격된 유조선들이 유가를 다시 줄 맨 앞에 세웠습니다. 유가는 이 페이지가 지켜보는 장기 금리로 이어집니다. 베네수엘라 발표도 첫 채점을 받았습니다. 백악관이 월요일에 합의의 개요를 내놓았지만, 보도는 이번 주 유가 상승을 베네수엘라가 아니라 이란과 연결지었습니다. 베네수엘라의 새 공급은 여러 해 뒤의 일로 읽힙니다. 셋째, 수요일에는 더 가까운 시험 둘이 있습니다. <b>코스트코의 8월 매출과 브로드컴 실적</b>입니다. 브로드컴은 엔비디아 이후 실적을 내는 가장 큰 반도체 회사입니다. 무역 일정은 그대로입니다. <b>9월 8일 화요일</b>부터 캐나다가 미국산 700여 개 품목에 보복 관세를 매기기 시작합니다.",
       "base": {
         "year_start": 6846.18,
         "high_1y": 7798.99
@@ -148,50 +148,58 @@
         {
           "en": "Fear gauge",
           "ko": "공포 지수",
-          "v_en": "14.51, calmer again after Nvidia's report",
-          "v_ko": "14.51, 엔비디아 발표 뒤 더 차분"
+          "v_en": "14.92 — calm, a notch less complete",
+          "v_ko": "14.92 — 차분함이 한 눈금 줄었습니다"
         }
       ],
-      "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to \"how did the market do?\" On Thursday it rose <b>0.72%</b> to <b>7,730.99</b> — but the rise was really one company's: Nvidia's jump after its results outweighed falls in most of the other 499. The index now sits within about <b>0.9%</b> of the record it set on August 13, and for the year so far it is <b>up about 12.9%</b>.",
-      "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. \"시장이 어땠나?\"에 대한 가장 간단한 답입니다. 목요일에는 <b>0.72%</b> 올라 <b>7,730.99</b>가 됐습니다. 다만 이 상승은 사실상 회사 하나의 것이었습니다. 실적 발표 뒤 엔비디아의 급등이 나머지 499개 대부분의 하락을 눌렀습니다. 지수는 이제 8월 13일에 세운 사상 최고치의 약 <b>0.9%</b> 안쪽에 있고, 올해 들어서는 <b>약 12.9% 올랐습니다</b>.",
-      "bull_en": "The question that hung over the market all month has now been answered in public, three times in one evening: Nvidia sold <b>$96 billion</b> of chips in three months and guided higher, and Salesforce and CrowdStrike beat alongside it — Salesforce had its best day since 2020. The index is back within about <b>0.9%</b> of its record. The pressure that did the damage in mid-August has stayed off its worst: the 30-year rate, near <b>5.19%</b>, remains below the 19-year high it touched two weeks ago, and the Treasury's bigger bond buying begins September 9. Inflation is stubborn but not accelerating — flat at 3.3% for two months. And the business economy keeps testing well: jobless claims fell to <b>203,000</b>, and both big dollar-store chains beat on sales, which says shoppers are still coming through the door.",
-      "bull_ko": "한 달 내내 시장 위에 걸려 있던 질문에 이제 공개적으로, 한 저녁에 세 번 답이 나왔습니다. 엔비디아는 석 달 동안 반도체를 <b>960억 달러</b>어치 팔고 더 높은 전망을 제시했고, 세일즈포스와 크라우드스트라이크도 나란히 예상을 넘었습니다. 세일즈포스는 2020년 이후 최고의 하루를 보냈습니다. 지수는 사상 최고치의 약 <b>0.9%</b> 안쪽으로 돌아왔습니다. 8월 중순에 피해를 만든 압력도 최악에서는 물러나 있습니다. 30년물 금리는 <b>5.19%</b> 부근으로 2주 전에 닿았던 19년 만의 최고보다 낮고, 재무부의 확대된 국채 되사기는 9월 9일에 시작됩니다. 물가는 끈질기지만 더 빨라지지는 않고 있습니다. 두 달째 3.3%로 제자리입니다. 바탕의 기업 경제도 시험을 계속 잘 통과하고 있습니다. 실업수당 청구는 <b>20만 3,000건</b>으로 줄었고, 대형 달러 스토어 두 곳 모두 매출이 예상을 넘었습니다. 손님이 여전히 문으로 들어오고 있다는 뜻입니다.",
-      "bear_en": "Thursday's rise was one company wide. Most stocks in the index fell, technology was the only industry group that rose, and an index within <b>1%</b> of its record while its average member falls is a market leaning very hard on a single story. The rate problem is unresolved, not solved: a 30-year government bond still pays over <b>5%</b>, inflation has sat at <b>3.3%</b> for two months against a 2% target, three Fed officials voted in July to raise rates — and the new chairman speaks this morning. The American household keeps sending the same message: consumer confidence at its lowest since January, and retailers marked down even on good reports — Best Buy beat, raised, and fell 4.4%. And the trade fight is now on the calendar rather than in the air: Canada taxes more than 700 American products from September 8, with a threatened 50% on cars, parts and steel behind it in January.",
-      "bear_ko": "목요일의 상승은 회사 하나의 폭이었습니다. 지수 안 대부분의 종목은 내렸고, 오른 업종은 기술주 하나뿐이었습니다. 평균 종목이 내리는데 지수는 사상 최고치의 <b>1%</b> 안에 있다는 것은, 시장이 이야기 하나에 아주 무겁게 기대고 있다는 뜻입니다. 금리 문제는 해결된 것이 아니라 미뤄져 있습니다. 30년물 국채는 여전히 <b>5%</b> 넘게 주고, 물가는 목표 2%에 대해 두 달째 <b>3.3%</b>에 멈춰 있으며, 7월에 연준 위원 세 명이 인상에 표를 던졌습니다. 그리고 새 의장이 오늘 아침 연설을 합니다. 미국 가계는 같은 신호를 계속 보냅니다. 소비자 신뢰지수는 1월 이후 최저이고, 유통업체는 좋은 실적을 내고도 깎입니다. 베스트바이는 예상을 넘기고 전망을 올리고도 4.4% 내렸습니다. 무역 다툼은 이제 공중에 떠 있는 것이 아니라 달력 위에 있습니다. 9월 8일부터 캐나다가 미국산 700여 개 품목에 관세를 매기고, 그 뒤에는 1월부터 자동차·부품·철강에 50%를 매기겠다는 위협이 있습니다."
+      "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to \"how did the market do?\" On Monday, the last day of August, it slipped <b>0.33%</b> to <b>7,686.14</b> as oil jumped on new trouble near Iran. August as a whole was good: up about <b>2.6%</b>, most of it riding on the AI story. The index sits about <b>1.4%</b> below the record it set on August 13, and for the year so far it is <b>up about 12.3%</b>.",
+      "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. \"시장이 어땠나?\"에 대한 가장 간단한 답입니다. 8월의 마지막 거래일인 월요일, 이란 쪽의 새 긴장에 유가가 뛰면서 <b>0.33%</b> 내린 <b>7,686.14</b>가 됐습니다. 8월 전체는 좋았습니다. 약 <b>2.6%</b> 올랐고, 그 대부분은 AI 이야기에 실려 있었습니다. 지수는 8월 13일에 세운 사상 최고치보다 약 <b>1.4%</b> 낮고, 올해 들어서는 <b>약 12.3% 올랐습니다</b>.",
+      "bull_en": "The AI buildout keeps delivering in public: Nvidia's record report stands, and on Monday the company put another <b>$3.5 billion</b> to work in MediaTek rather than pulling back. The economy keeps testing well — jobless claims near <b>203,000</b>, job openings edged up in Tuesday's report, and American factories have now grown for eight months running. August itself is the argument in miniature: a month full of worries that still ended up about <b>2.6%</b>. The rate pressure, while real, has a counterweight on the calendar — the Treasury's bigger bond buying begins September 9. And inflation, at <b>3.3%</b> for two months, is stubborn but not accelerating.",
+      "bull_ko": "AI 구축은 공개적으로 계속 해내고 있습니다. 엔비디아의 기록적인 실적은 그대로 서 있고, 월요일에 회사는 물러서는 대신 <b>35억 달러</b>를 MediaTek에 더 넣었습니다. 바탕의 경제는 시험을 계속 잘 통과하고 있습니다. 실업수당 청구는 <b>20만 3,000건</b> 부근이고, 화요일 발표에서 구인 건수는 소폭 늘었으며, 미국의 공장은 이제 여덟 달째 성장 중입니다. 8월 자체가 축소판 논거입니다. 걱정으로 가득했던 한 달이 그래도 약 <b>2.6%</b> 상승으로 끝났습니다. 금리 압력은 실재하지만 달력 위에 맞바람이 있습니다. 재무부의 확대된 국채 되사기가 9월 9일 시작됩니다. 그리고 물가는 두 달째 <b>3.3%</b>로, 끈질기지만 더 빨라지지는 않고 있습니다.",
+      "bear_en": "A rate <b>rise</b> on September 16 is now the better-than-even reading on one measure — about two-in-three — and the pressure is global: Japan's long-term rate crossed 3% for the first time since 1996, and America's 10-year is at its highest since early last year. Oil is the new push behind it: strikes and tanker attacks near the Strait of Hormuz have crude rising again, and dearer oil feeds inflation directly. The index is priced within about <b>1.4%</b> of its record while most of what is inside it lags, and the American household keeps sending the same message — consumer confidence near its lowest since January, gasoline above <b>$4</b> a gallon all August for the first time. And the trade fight is on the calendar: Canada taxes more than 700 American products from September 8.",
+      "bear_ko": "9월 16일의 금리 <b>인상</b>은 한 지표로 이제 절반을 넘는 — 약 3분의 2 — 확률로 읽힙니다. 그리고 그 압력은 세계적입니다. 일본의 장기 금리는 1996년 이후 처음으로 3%를 넘었고, 미국의 10년물은 작년 초 이후 최고입니다. 그 뒤를 미는 새 힘이 유가입니다. 호르무즈 해협 부근의 타격과 유조선 피격으로 원유가 다시 오르고 있고, 비싸진 기름은 물가로 곧장 이어집니다. 지수는 안에 든 대부분이 뒤처지는 가운데 사상 최고치의 약 <b>1.4%</b> 안쪽 값에 매겨져 있고, 미국 가계는 같은 신호를 계속 보냅니다. 소비자 신뢰지수는 1월 이후 최저 부근이고, 휘발유는 8월 내내 갤런당 <b>4달러</b>를 넘었습니다. 처음 있는 일입니다. 그리고 무역 다툼은 달력 위에 있습니다. 9월 8일부터 캐나다가 미국산 700여 개 품목에 관세를 매깁니다."
     },
     "qqq": {
-      "price": "$721.11",
+      "price": "$716.76",
       "day_arrow": "▲",
-      "day_en": "+1.37% on Thursday",
-      "day_ko": "목요일 +1.37%",
+      "day_en": "+0.05% on Monday",
+      "day_ko": "월요일 +0.05%",
       "day_dir": "up",
       "week_arrow": "▲",
-      "week_en": "≈ +1.08% so far this week",
-      "week_ko": "이번 주 ≈ +1.08%",
+      "week_en": "≈ +0.05% so far this week",
+      "week_ko": "이번 주 들어 ≈ +0.05%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +4.81% so far in August",
-      "month_ko": "8월 들어 ≈ +4.81%",
+      "month_en": "≈ +4.18% for all of August",
+      "month_ko": "8월 전체 ≈ +4.18%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 3.7%",
+      "drawdown": "≈ 4.3%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 3.7%",
-      "drawdown_fact_ko": "≈ 3.7%",
-      "take_en": "One stock did the lifting",
-      "take_ko": "종목 하나가 끌어올렸습니다",
-      "take_tone": "c-pos",
+      "drawdown_fact_en": "≈ 4.3%",
+      "drawdown_fact_ko": "≈ 4.3%",
+      "take_en": "Flat — Broadcom is Wednesday’s test",
+      "take_ko": "제자리 — 수요일 시험대는 브로드컴",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Up <b>1.37%</b> to <b>$721.11</b> on Thursday — its best day of the month, and almost all of it was three holdings. <b>Nvidia, the fund's largest, rose 8.74%</b> after its results beat, and it kept the opening jump all day instead of giving it back the way these shares usually do after a report. The two software companies that reported the same evening were received just as well: <b>Salesforce rose 22.6%</b>, its best day since 2020, and <b>CrowdStrike rose about 20%</b>. Read the fine print, though, because it is the same fine print as the index's: most stocks — including most of this fund's — fell. AMD slipped 0.89%, and only technology among the market's eleven industry groups rose. Then the evening brought two reminders that good news is being graded hard. <b>Marvell</b>, a chip company inside this fund, beat expectations and raised its outlook for the next two years — and still fell about <b>7%</b> in evening trading, with reports pointing at how high the bar had been set and a slightly softer profit-margin forecast the company put down to its product mix. And <b>PayPal</b>, another holding, fell about <b>12%</b> after the group that had offered to buy it walked away. The fund now sits about <b>3.7%</b> below its 1-year high and is up about <b>4.8%</b> for August.",
-      "note_ko": "목요일에 <b>1.37%</b> 올라 <b>721.11달러</b>가 됐습니다. 이달 들어 가장 좋은 하루였고, 거의 전부가 세 종목의 몫이었습니다. <b>비중 1위인 엔비디아가 실적이 예상을 넘긴 뒤 8.74% 올랐고</b>, 이런 발표 뒤에 흔히 그러듯 개장의 급등을 되돌리는 대신 하루 종일 지켰습니다. 같은 저녁 실적을 낸 소프트웨어 회사 둘도 똑같이 좋은 평가를 받았습니다. <b>세일즈포스는 22.6%</b> 올라 2020년 이후 최고의 하루를 보냈고, <b>크라우드스트라이크는 약 20%</b> 올랐습니다. 다만 작은 글씨를 읽어야 합니다. 지수와 같은 작은 글씨입니다. 이 펀드가 담은 종목을 포함해 대부분의 주식은 내렸습니다. AMD는 0.89% 내렸고, 11개 업종 가운데 오른 것은 기술주 하나뿐이었습니다. 그리고 저녁이 되자, 좋은 소식도 박하게 채점되고 있다는 사실을 두 번 일깨워 줬습니다. 이 펀드에 든 반도체 회사 <b>마벨</b>은 예상을 넘기고 앞으로 2년의 전망까지 올리고도 저녁 거래에서 약 <b>7%</b> 내렸습니다. 보도들은 기대치가 너무 높이 서 있었다는 점과, 회사가 제품 구성 탓으로 설명한 조금 무른 이익률 전망을 이유로 꼽았습니다. 그리고 또 다른 보유 종목인 <b>페이팔</b>은 인수를 제안했던 쪽이 손을 떼자 약 <b>12%</b> 내렸습니다. 펀드는 이제 1년 최고가보다 약 <b>3.7%</b> 낮고, 8월 누적 약 <b>4.8%</b> 상승입니다.",
+      "note_en": "Up <b>0.05%</b> on Monday to <b>$716.76</b> — as close to unchanged as a day gets, with a tug of war underneath. Pulling up: <b>Nvidia, the largest holding, rose 1.48%</b> after announcing a $3.5 billion investment in the Taiwanese chip designer MediaTek. Pulling down: most of the other giants slipped as long-term interest rates rose again, and <b>Marvell fell a further 3.06%</b>, still being marked down after last week's cold reception. That balance — one company's good news against everyone's rate worry — has been this fund's whole story for a month. August's final score: up about <b>4.2%</b>, the best of your three funds, helped most by the chips inside it. The fund sits about <b>4.3%</b> below its 1-year high, and its two dated tests are now close: <b>Broadcom's results Wednesday after the close</b>, and the jobs report Friday morning.",
+      "note_ko": "월요일에 <b>0.05%</b> 올라 <b>716.76달러</b> — 하루가 이보다 더 제자리이기는 어렵습니다. 다만 그 아래에서는 줄다리기가 있었습니다. 위로 끈 쪽은 <b>비중 1위 엔비디아</b>였습니다. 대만의 반도체 설계 회사 MediaTek에 35억 달러를 투자한다고 발표하고 <b>1.48%</b> 올랐습니다. 아래로 끈 쪽은 나머지 대형주 대부분이었습니다. 장기 금리가 다시 오르자 밀렸고, <b>마벨은 3.06% 더 내려</b> 지난주의 차가운 대접을 계속 소화했습니다. 회사 하나의 좋은 소식과 모두의 금리 걱정이 맞서는 이 균형이 한 달째 이 펀드의 이야기 전부입니다. 8월의 최종 성적은 약 <b>4.2%</b> 상승으로, 보유하신 세 펀드 중 가장 좋았고, 안에 든 반도체가 가장 큰 힘이었습니다. 펀드는 1년 최고가보다 약 <b>4.3%</b> 낮고, 날짜 잡힌 두 시험이 이제 코앞입니다. <b>수요일 장 마감 뒤의 브로드컴 실적</b>, 그리고 금요일 아침의 고용 보고서입니다.",
       "ticker": "QQQ",
       "name_en": "The 100 biggest tech companies",
       "name_ko": "가장 큰 기술 기업 100개",
-      "week_fact_en": "up ≈ 1.08%",
-      "week_fact_ko": "≈ 1.08% 상승",
+      "week_fact_en": "up ≈ 0.05% after one session",
+      "week_fact_ko": "1거래일 기준 ≈ +0.05%",
       "news_en": [
+        {
+          "dt": "Aug 31",
+          "tx": "<b>Rose 0.05% to $716.76 — a flat day that hid a tug of war.</b> <b>Nvidia rose 1.48%</b> on its $3.5 billion MediaTek investment while most of the other big holdings slipped as long-term rates rose around the world. <b>Marvell fell a further 3.06%</b>. August ended with the fund up about <b>4.2%</b>."
+        },
+        {
+          "dt": "Aug 28",
+          "tx": "<b>Fell 0.65% to $716.43 — the chip holdings gave back part of Thursday.</b> <b>Nvidia fell 4.57%</b>, <b>Marvell about 7%</b> despite beating expectations, and <b>PayPal fell 12.71%</b> after its would-be buyers walked away. The Fed chairman's speech moved rate bets toward a September rise. For the week the fund added about <b>0.4%</b>."
+        },
         {
           "dt": "Aug 27",
           "tx": "<b>Rose 1.37% to $721.11 — its best day of the month, carried by three holdings.</b> <b>Nvidia rose 8.74%</b> on its results and kept the jump; <b>Salesforce rose 22.6%</b>, its best day since 2020. Most of the rest fell. After the close, <b>Marvell beat and still dropped about 7%</b> in evening trading, and PayPal fell about 12% as its takeover talks ended."
@@ -199,17 +207,17 @@
         {
           "dt": "Aug 26",
           "tx": "<b>Rose 0.09% to $711.37 — a waiting day.</b> <b>Intuit</b> opened down about 9.5% on weak sales guidance and recovered to close down 3.24%. <b>Nvidia, the largest holding, fell 1.59%</b> into its own report — then beat it after the close and rose about 4.7% in after-hours trading."
-        },
-        {
-          "dt": "Aug 25",
-          "tx": "<b>Rose 0.62% to $710.72 — the chip shares that sank it on Monday were bought back.</b> <b>AMD rose 4.91%</b> on an analyst upgrade, <b>Nvidia 2.19%</b>, Micron 2.48%. <b>Moderna</b> added about 12% on cancer-vaccine trial news. The cost question Monday raised is still unanswered."
-        },
-        {
-          "dt": "Aug 24",
-          "tx": "<b>Fell 1.00% to $706.32 — the chip shares inside it were sold for a reason of their own.</b> Reports said <b>Nvidia</b> has told customers AI servers will cost more than 15% more from early next year, as memory prices climb. <b>Micron</b> fell 5.83%, Broadcom 2.63%, AMD about 3%."
         }
       ],
       "news_ko": [
+        {
+          "dt": "8월 31일",
+          "tx": "<b>0.05% 올라 716.76달러 — 제자리처럼 보이는 하루가 줄다리기를 감추고 있었습니다.</b> <b>엔비디아는 35억 달러 MediaTek 투자 소식에 1.48%</b> 올랐고, 다른 큰 종목 대부분은 세계 곳곳에서 장기 금리가 오르자 밀렸습니다. <b>마벨은 3.06% 더 내렸습니다.</b> 8월은 펀드가 약 <b>4.2%</b> 오른 채 끝났습니다."
+        },
+        {
+          "dt": "8월 28일",
+          "tx": "<b>0.65% 내린 716.43달러 — 반도체 종목들이 목요일 상승분 일부를 되돌렸습니다.</b> <b>엔비디아는 4.57%</b>, <b>마벨은 예상을 넘기고도 약 7%</b> 내렸고, <b>페이팔은 인수를 제안했던 쪽이 물러나며 12.71%</b> 내렸습니다. 연준 의장의 연설은 금리 베팅을 9월 인상 쪽으로 움직였습니다. 한 주로 펀드는 약 <b>0.4%</b> 올랐습니다."
+        },
         {
           "dt": "8월 27일",
           "tx": "<b>1.37% 올라 721.11달러 — 이달 최고의 하루였고, 세 종목이 끌었습니다.</b> <b>엔비디아는 실적 발표에 8.74% 올라</b> 급등을 지켰고, <b>세일즈포스는 22.6% 올라</b> 2020년 이후 최고의 하루를 보냈습니다. 나머지 대부분은 내렸습니다. 장 마감 뒤 <b>마벨은 예상을 넘기고도 저녁 거래에서 약 7% 내렸고</b>, 페이팔은 인수 논의가 끝나며 약 12% 내렸습니다."
@@ -217,18 +225,10 @@
         {
           "dt": "8월 26일",
           "tx": "<b>0.09% 올라 711.37달러 — 기다린 하루였습니다.</b> <b>인튜이트</b>는 부진한 매출 전망에 약 9.5% 내린 채 출발했다가 회복해 3.24% 하락으로 마쳤습니다. <b>비중 1위 엔비디아는 자체 실적을 앞두고 1.59% 내렸고</b>, 장 마감 뒤 예상을 넘긴 실적을 내며 시간외 거래에서 약 4.7% 올랐습니다."
-        },
-        {
-          "dt": "8월 25일",
-          "tx": "<b>0.62% 올라 710.72달러 — 월요일에 이 펀드를 끌어내렸던 반도체 주식들이 되사졌습니다.</b> <b>AMD는 투자의견 상향에 4.91%</b>, <b>엔비디아는 2.19%</b>, 마이크론은 2.48% 올랐습니다. <b>모더나</b>는 암 백신 임상 소식에 약 12% 올랐습니다. 월요일이 던진 비용 질문에는 아직 답이 없습니다."
-        },
-        {
-          "dt": "8월 24일",
-          "tx": "<b>1.00% 내린 706.32달러 — 이 펀드에 든 반도체 주식들이 그들만의 이유로 팔렸습니다.</b> 메모리 값이 오르면서 <b>엔비디아</b>가 내년 초부터 AI 서버 가격을 15% 넘게 올린다고 고객사에 알렸다는 보도가 나왔습니다. <b>마이크론</b>은 5.83%, 브로드컴은 2.63%, AMD는 약 3% 내렸습니다."
         }
       ],
-      "verdict_en": "<b>What I'd watch: how the market treats good news it has already paid for.</b> Thursday and its evening told the same story twice. Nvidia beat and was rewarded — but it went into its report about 11% below its record, with room for good news to matter. Marvell beat, raised its outlook for two years running, and was marked down about <b>7%</b> in evening trading anyway, because its shares had already priced something better than very good. This fund now sits only about <b>3.7%</b> below its own 1-year high, which puts it closer to the Marvell end of that comparison than the Nvidia end. The margin thread is worth carrying too: Nvidia expects to keep about <b>74 cents</b> per sales dollar next quarter instead of 75 because memory costs more, and Marvell also guided its margin a shade lower — for its own product-mix reasons, but the direction rhymes. The nearest test is this morning: the new Fed chairman's first Jackson Hole speech at <b>7 Pacific</b>, half an hour after the open. Rates move this fund harder than anything else you hold, and they have spent three days sitting still waiting for him.",
-      "verdict_ko": "<b>제가 지켜볼 것: 이미 값을 치른 좋은 소식을 시장이 어떻게 대하는가입니다.</b> 목요일 낮과 저녁이 같은 이야기를 두 번 들려줬습니다. 엔비디아는 예상을 넘겨 보상을 받았습니다. 다만 발표를 앞둔 시점에 사상 최고가보다 약 11% 낮아, 좋은 소식이 힘을 쓸 자리가 있었습니다. 마벨은 예상을 넘기고 2년 치 전망까지 올리고도 저녁 거래에서 약 <b>7%</b> 깎였습니다. 주가가 이미 '아주 좋음'보다 더 좋은 것을 가격에 담고 있었기 때문입니다. 이 펀드는 이제 1년 최고가보다 약 <b>3.7%</b> 낮을 뿐이니, 그 비교에서 엔비디아 쪽보다 마벨 쪽에 가깝습니다. 이익률 이야기도 챙겨 둘 만합니다. 엔비디아는 메모리 값이 올라 다음 분기에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 보고, 마벨도 이익률을 한 단계 낮춰 잡았습니다. 이유는 제품 구성이라는 회사 자체의 사정이지만, 방향은 비슷하게 울립니다. 가장 가까운 시험은 오늘 아침입니다. 새 연준 의장의 첫 잭슨홀 연설이 개장 30분 뒤인 <b>서부 시각 오전 7시</b>에 있습니다. 금리는 보유 종목 중 이 펀드를 가장 세게 움직이는데, 사흘째 그를 기다리며 제자리에 서 있습니다.",
+      "verdict_en": "<b>What I'd watch: Wednesday after the close — Broadcom, the biggest chip company to report since Nvidia.</b> Last week taught a clear grading rule, and Broadcom is the next student called up: Nvidia went into its report with room below its record and was rewarded; Marvell went in priced for better than very good, beat, raised its outlook — and has now been marked down for three straight sessions. This fund sits about <b>4.3%</b> below its own high. The margin thread is worth carrying in too: Nvidia guided its profit on each sales dollar from 75 cents to about 74 because memory costs more, and Marvell guided a shade lower — Broadcom's version of that line is worth reading closely. Behind all of it, the rate question keeps getting sharper: one measure of the odds of a September rate <b>rise</b> is now about two-in-three, and long-term rates are rising around the world — Japan's crossed 3% for the first time since 1996. Rates move this fund harder than anything else you hold, and the jobs report lands Friday at 5:30 in the morning Pacific time.",
+      "verdict_ko": "<b>제가 지켜볼 것: 수요일 장 마감 뒤의 브로드컴입니다. 엔비디아 이후 실적을 내는 가장 큰 반도체 회사입니다.</b> 지난주는 분명한 채점 규칙을 가르쳐 줬고, 다음 차례로 불려 나가는 학생이 브로드컴입니다. 엔비디아는 사상 최고가 아래 여유를 두고 발표장에 들어가 보상을 받았습니다. 마벨은 '아주 좋음'보다 더 좋은 것이 이미 가격에 담긴 채 들어가, 예상을 넘기고 전망을 올리고도 이제 세 거래일 연속 깎였습니다. 이 펀드는 자기 최고가보다 약 <b>4.3%</b> 낮습니다. 이익률 이야기도 챙겨 둘 만합니다. 엔비디아는 메모리 값 때문에 매출 1달러당 이익을 75센트에서 약 74센트로 낮춰 잡았고, 마벨도 한 단계 낮춰 잡았습니다. 브로드컴의 그 한 줄을 꼼꼼히 읽을 만합니다. 이 모든 것 뒤에서 금리 질문은 계속 날카로워지고 있습니다. 9월 금리 <b>인상</b> 확률을 재는 한 지표는 이제 약 3분의 2이고, 장기 금리는 세계 곳곳에서 오르고 있습니다. 일본은 1996년 이후 처음으로 3%를 넘었습니다. 금리는 보유 종목 중 이 펀드를 가장 세게 움직이고, 고용 보고서는 금요일 서부 시각 오전 5시 30분에 나옵니다.",
       "base": {
         "high_1y": 748.65,
         "low_1y": 551.68
@@ -255,47 +255,55 @@
           "auto": "range"
         }
       ],
-      "plain_en": "A single fund holding the 100 largest non-bank companies on the Nasdaq — mostly technology. Buying one share gives you a slice of all of them. On Thursday it rose <b>1.37%</b> to <b>$721.11</b>, its best day of the month — and nearly all of that was <b>Nvidia</b>, its largest holding, jumping <b>8.74%</b> after results that beat expectations, with Salesforce and CrowdStrike adding to it. Most of the fund's other stocks actually fell. It now sits about <b>3.7%</b> below its best price of the past year and is up about 4.8% for August.",
-      "plain_ko": "나스닥에 상장된 회사 가운데 금융회사를 뺀 가장 큰 100개(대부분 기술 기업)를 한 번에 담은 펀드입니다. 이 펀드 한 주를 사면 그 회사들을 조금씩 나눠 갖는 셈입니다. 목요일에는 <b>1.37%</b> 올라 <b>721.11달러</b>가 됐습니다. 이달 최고의 하루였는데, 거의 전부가 비중 1위 종목인 <b>엔비디아</b>의 몫이었습니다. 실적이 예상을 넘긴 뒤 <b>8.74%</b> 뛰었고, 세일즈포스와 크라우드스트라이크가 힘을 보탰습니다. 펀드의 나머지 종목 대부분은 오히려 내렸습니다. 이제 1년 최고가보다 약 <b>3.7%</b> 낮고, 8월 누적 약 4.8% 상승입니다.",
-      "bull_en": "The month's biggest worry has been answered by the company at the centre of it, and the market believed the answer for a full session. Nvidia sold <b>$96.2 billion</b> of chips in three months, guided to about <b>$108 billion</b> for the next three, and its shares kept the whole jump through Thursday's close — that is not a business running out of customers, and not a market refusing to pay for growth. Two more of this fund's larger holdings, Salesforce and CrowdStrike, reported the same evening and had their best days in years, so the delivering is broader than one name. Even Marvell's evening fall came with its business raised, not cut: a beat, and a higher outlook for the next two years. A price rise was never a demand problem — memory costs more because the AI buildout is buying all of it — and Nvidia is still spending into it, with a reported <b>$12.9 billion</b> agreement to buy Hugging Face.",
-      "bull_ko": "이달 최대의 걱정에 그 걱정의 한가운데 있던 회사가 답했고, 시장은 그 답을 하루 종일 믿었습니다. 엔비디아는 석 달 동안 반도체를 <b>962억 달러</b>어치 팔았고 다음 석 달은 약 <b>1,080억 달러</b>를 제시했으며, 주가는 목요일 종가까지 급등을 고스란히 지켰습니다. 고객이 떨어져 가는 사업의 모습도, 성장에 값을 치르기를 거부하는 시장의 모습도 아닙니다. 이 펀드의 다른 큰 종목 둘, 세일즈포스와 크라우드스트라이크도 같은 저녁 실적을 내고 몇 년 만에 최고의 하루를 보냈으니, 해내고 있는 것이 한 종목만은 아닙니다. 마벨의 저녁 하락조차 사업이 깎여서가 아니라 올라간 채로 왔습니다. 예상을 넘겼고, 앞으로 2년의 전망을 올렸습니다. 값이 오른다는 것은 애초에 수요의 문제가 아니었습니다. 메모리가 비싼 것은 AI 구축이 그것을 다 사 가고 있기 때문이고, 엔비디아는 여전히 그쪽으로 돈을 쓰고 있습니다. 허깅 페이스를 <b>129억 달러</b>에 사기로 했다는 보도도 있습니다.",
-      "bear_en": "Thursday's rise was three stocks wide, and the fund is now only about <b>3.7%</b> below its 1-year high — most of the good news is in the price again, and Marvell's evening showed what that costs: a beat, a raised outlook, and a fall of about <b>7%</b> anyway, plus another <b>12%</b> off PayPal as its takeover hopes ended. The margin thread is now in two chip companies' own forecasts — Nvidia keeping about <b>74 cents</b> per sales dollar instead of 75 because memory costs more, Marvell guiding a shade lower on product mix — small numbers, but both pointing the same way for the first time. And the rate question is untouched by any of it: inflation has sat at <b>3.3%</b> for two months, long-term rates have stopped falling, and the new Fed chairman speaks this morning. This fund feels rates harder than anything else you hold.",
-      "bear_ko": "목요일의 상승은 종목 셋의 폭이었고, 펀드는 이제 1년 최고가보다 약 <b>3.7%</b> 낮을 뿐입니다. 좋은 소식의 대부분이 다시 가격에 들어가 있다는 뜻이고, 그 값이 얼마인지는 마벨의 저녁이 보여 줬습니다. 예상을 넘기고 전망을 올리고도 약 <b>7%</b> 내렸고, 페이팔은 인수 기대가 끝나며 <b>12%</b>를 더 내놓았습니다. 이익률 이야기는 이제 반도체 회사 두 곳의 자체 전망에 들어 있습니다. 엔비디아는 메모리 값 때문에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 보고, 마벨은 제품 구성을 이유로 한 단계 낮춰 잡았습니다. 작은 숫자들이지만, 처음으로 둘이 같은 방향을 가리킵니다. 그리고 금리 질문은 이 모든 것과 무관하게 그대로입니다. 물가는 두 달째 <b>3.3%</b>에 멈춰 있고, 장기 금리는 내림세를 멈췄으며, 새 연준 의장이 오늘 아침 연설합니다. 이 펀드는 보유 종목 중 금리를 가장 세게 느낍니다.",
+      "plain_en": "A single fund holding the 100 largest non-bank companies on the Nasdaq — mostly technology. Buying one share gives you a slice of all of them. Monday, the last day of August, it barely moved: up <b>0.05%</b> to <b>$716.76</b>, with Nvidia's gain offsetting rate pressure on everything else. For August as a whole it rose about <b>4.2%</b>, the best of your three funds. It sits about <b>4.3%</b> below its best price of the past year.",
+      "plain_ko": "나스닥에 상장된 회사 가운데 금융회사를 뺀 가장 큰 100개(대부분 기술 기업)를 한 번에 담은 펀드입니다. 이 펀드 한 주를 사면 그 회사들을 조금씩 나눠 갖는 셈입니다. 8월의 마지막 거래일인 월요일에는 거의 움직이지 않았습니다. <b>0.05%</b> 오른 <b>716.76달러</b>였고, 엔비디아의 상승이 나머지에 실린 금리 압력을 상쇄했습니다. 8월 전체로는 약 <b>4.2%</b> 올라 보유하신 세 펀드 중 가장 좋았습니다. 1년 최고가보다는 약 <b>4.3%</b> 낮습니다.",
+      "bull_en": "The month's biggest worry was answered by the company at the centre of it: Nvidia sold <b>$96.2 billion</b> of chips in three months, guided to about <b>$108 billion</b> for the next three — and is still spending into the buildout, with Monday's <b>$3.5 billion</b> MediaTek investment on top of its reported Hugging Face purchase. Salesforce and CrowdStrike beat alongside it, so the delivering is broader than one name. Even Marvell's cold reception came with its business raised, not cut. August's score — about <b>4.2%</b> — was earned through a hawkish Fed speech, an oil scare and a global bond wobble, which says something about how much money still wants these companies. And if Broadcom's Wednesday report lands well, the chip group inside this fund is the first place it shows.",
+      "bull_ko": "이달 최대의 걱정에 그 한가운데 있는 회사가 답했습니다. 엔비디아는 석 달 동안 반도체를 <b>962억 달러</b>어치 팔았고 다음 석 달로 약 <b>1,080억 달러</b>를 제시했으며, 여전히 구축에 돈을 쓰고 있습니다. 보도된 허깅 페이스 인수 위에 월요일의 <b>35억 달러</b> MediaTek 투자가 얹혔습니다. 세일즈포스와 크라우드스트라이크도 나란히 예상을 넘었으니, 해내고 있는 것이 한 종목만은 아닙니다. 마벨의 차가운 대접조차 사업이 깎여서가 아니라 올라간 채로 왔습니다. 8월의 성적 — 약 <b>4.2%</b> — 은 매파적인 연준 연설과 유가 불안, 세계적 채권 흔들림을 지나며 번 것입니다. 이 회사들을 원하는 돈이 아직 얼마나 많은지를 말해 줍니다. 그리고 수요일 브로드컴의 발표가 잘 나온다면, 그것이 가장 먼저 나타나는 자리가 이 펀드 안의 반도체입니다.",
+      "bear_en": "Rates move this fund harder than anything else you hold, and the rate news keeps getting worse: one measure of September rate-<b>rise</b> odds is now about two-in-three, the American 10-year is at its highest since early last year, and the selling in bonds is global — Japan's long-term rate crossed 3% for the first time since 1996. Oil rising on Middle East attacks feeds the same machine. Meanwhile the grading stays harsh: Marvell beat, raised its outlook, and has fallen three sessions straight; PayPal's takeover hopes ended in a 12.71% one-day fall. The margin thread now runs through two chip companies' own forecasts, with Broadcom's answer due Wednesday. All of that lands on a fund priced about <b>4.3%</b> from its high.",
+      "bear_ko": "금리는 보유 종목 중 이 펀드를 가장 세게 움직이는데, 금리 소식은 계속 나빠지고 있습니다. 9월 금리 <b>인상</b> 확률을 재는 한 지표는 이제 약 3분의 2이고, 미국 10년물은 작년 초 이후 최고이며, 채권 매도는 세계적입니다. 일본의 장기 금리는 1996년 이후 처음으로 3%를 넘었습니다. 중동 공격에 오르는 유가는 같은 기계에 연료를 넣습니다. 그 사이 채점은 박한 그대로입니다. 마벨은 예상을 넘기고 전망을 올리고도 세 거래일 연속 내렸고, 페이팔은 인수 기대가 끝나며 하루에 12.71% 내렸습니다. 이익률 이야기는 이제 반도체 회사 두 곳의 자체 전망에 들어 있고, 브로드컴의 답은 수요일에 나옵니다. 이 모든 것이 최고가에서 약 <b>4.3%</b> 떨어진 값의 펀드 위에 떨어집니다.",
       "bear_note": ""
     },
     "nvda": {
-      "price": "$227.98",
+      "price": "$220.78",
       "day_arrow": "▲",
-      "day_en": "+8.74% on Thursday",
-      "day_ko": "목요일 +8.74%",
+      "day_en": "+1.48% on Monday",
+      "day_ko": "월요일 +1.48%",
       "day_dir": "up",
       "week_arrow": "▲",
-      "week_en": "≈ +6.18% so far this week",
-      "week_ko": "이번 주 ≈ +6.18%",
+      "week_en": "≈ +1.48% so far this week",
+      "week_ko": "이번 주 들어 ≈ +1.48%",
       "week_dir": "up",
       "month_arrow": "▲",
-      "month_en": "≈ +13.56% so far in August",
-      "month_ko": "8월 들어 ≈ +13.56%",
+      "month_en": "≈ +9.97% for all of August",
+      "month_ko": "8월 전체 ≈ +9.97%",
       "month_dir": "up",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 3.6%",
+      "drawdown": "≈ 6.7%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 3.6%",
-      "drawdown_fact_ko": "≈ 3.6%",
-      "take_en": "It beat — and kept the jump",
-      "take_ko": "예상을 넘겼고, 급등을 지켰습니다",
+      "drawdown_fact_en": "≈ 6.7%",
+      "drawdown_fact_ko": "≈ 6.7%",
+      "take_en": "Rose on a red day — best of the five in August",
+      "take_ko": "하락한 날 상승 — 8월 최고 성적",
       "take_tone": "c-pos",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Up <b>8.74%</b> on Thursday to <b>$227.98</b> — and this page owes you a correction on its own caution. Yesterday morning it warned that these shares had fallen after six of their last eight reports, and that an opening jump often does not survive the day. This time it survived, and grew: the shares opened higher, touched <b>$230.47</b>, and closed near the top of the day's range. The rise added more than <b>$400 billion</b> of company value in one session — same-day reporting attributes it squarely to the results — and left the shares about <b>3.6%</b> from the record they set in May. Two things from Wednesday's report kept doing the work. The guide of about <b>$108 billion</b> for the next three months assumes nothing from China, so it is a floor with room above it. And on the conference call the company pointed to far faster growth for its next fiscal year than analysts had pencilled in — reporting put the signal near <b>70%</b>, against roughly 44% expected. The one number pointing the other way is unchanged and worth repeating: profit on each sales dollar is guided from <b>75%</b> down to about <b>74%</b> next quarter, because the memory inside its servers costs more. After the close, chip company <b>Marvell</b> beat and raised its outlook and still fell about <b>7%</b> in evening trading — a reminder that Thursday's reception was earned, not guaranteed.",
-      "note_ko": "목요일에 <b>8.74%</b> 올라 <b>227.98달러</b>가 됐습니다. 그리고 이 페이지는 자신이 했던 주의 한 가지를 바로잡아야 합니다. 어제 아침 이 페이지는 이 주식이 최근 여덟 번의 발표 중 여섯 번은 그 뒤 내렸고, 개장의 급등이 하루를 버티지 못한 적이 많다고 경고했습니다. 이번에는 버텼고, 더 자랐습니다. 주가는 높게 출발해 <b>230.47달러</b>까지 닿았고, 하루 범위의 꼭대기 근처에서 마감했습니다. 이 상승은 한 거래일에 <b>4,000억 달러</b>가 넘는 회사 가치를 보탰고 — 당일 보도는 이를 실적 그 자체로 설명합니다 — 주가는 5월에 세운 사상 최고가에서 약 <b>3.6%</b> 떨어진 자리까지 왔습니다. 수요일 실적에서 두 가지가 계속 힘을 썼습니다. 다음 석 달 약 <b>1,080억 달러</b>라는 제시는 중국에서 아무것도 오지 않는다고 가정한 것이라, 위로 여유가 있는 바닥입니다. 그리고 콘퍼런스 콜에서 회사는 다음 회계연도 성장이 증권가의 짐작보다 훨씬 빠를 것이라는 신호를 줬습니다. 보도는 그 신호를 약 <b>70%</b> 부근으로 읽었고, 기존 예상은 44% 안팎이었습니다. 반대쪽을 가리키는 숫자 하나는 그대로이고, 되풀이할 만합니다. 매출 1달러당 남기는 이익은 다음 분기에 <b>75%</b>에서 약 <b>74%</b>로 낮춰 제시됐습니다. 서버에 들어가는 메모리 값이 올랐기 때문입니다. 장 마감 뒤에는 반도체 회사 <b>마벨</b>이 예상을 넘기고 전망을 올리고도 저녁 거래에서 약 <b>7%</b> 내렸습니다. 목요일의 대접이 보장된 것이 아니라 벌어 낸 것이었음을 일깨워 줍니다.",
+      "note_en": "Monday went against the market's grain: the shares rose <b>1.48%</b> to <b>$220.78</b> on a day the index fell — and this time the company was the reason. It announced it will put <b>$3.5 billion</b> into MediaTek, a Taiwanese company that designs chips for phones and cars, buying bonds that can convert into shares — reported as Nvidia's largest direct investment in a company outside the United States. The plan ties MediaTek's chips into Nvidia's connection technology, one more way of making itself the standard everything else plugs into; MediaTek's own shares jumped about <b>10%</b> in Taipei overnight. That recovered a piece of Friday's 4.57% fall and closed the month at about <b>+10%</b> — the best August of your five. The shares sit about <b>6.7%</b> below their May record, priced at roughly <b>34 times</b> the past year's profits, worth about <b>$5.3 trillion</b>. The open question is unchanged from last week: the margin line — about 74 cents kept per sales dollar instead of 75, because memory costs more — and Broadcom's version of that answer arrives Wednesday evening.",
+      "note_ko": "월요일은 시장의 결을 거슬렀습니다. 지수가 내린 날 주가는 <b>1.48%</b> 올라 <b>220.78달러</b>가 됐고, 이번에는 회사가 그 이유였습니다. 회사는 휴대전화와 자동차용 반도체를 설계하는 대만 회사 MediaTek에 <b>35억 달러</b>를 넣겠다고 발표했습니다. 주식으로 바꿀 수 있는 채권을 사는 방식이고, 미국 밖 회사에 대한 엔비디아의 가장 큰 직접 투자로 보도됐습니다. 이 계획은 MediaTek의 반도체를 엔비디아의 연결 기술에 묶는 것으로, 다른 모든 것이 꽂히는 표준이 되는 또 하나의 방법입니다. MediaTek 주가는 밤사이 타이베이에서 약 <b>10%</b> 뛰었습니다. 이 상승으로 금요일 4.57% 하락의 일부를 되찾았고, 한 달을 약 <b>+10%</b>로 마감했습니다. 보유 다섯 중 최고의 8월입니다. 주가는 5월 사상 최고가보다 약 <b>6.7%</b> 낮고, 지난 1년 이익의 약 <b>34배</b> 값이며, 회사 가치는 약 <b>5조 3천억 달러</b>입니다. 열린 질문은 지난주 그대로입니다. 이익률 줄 — 메모리 값 때문에 매출 1달러당 75센트가 아니라 약 74센트 — 이고, 그 질문에 대한 브로드컴의 답은 수요일 저녁에 나옵니다.",
       "ticker": "NVDA",
       "name_en": "Nvidia — makes AI chips",
       "name_ko": "엔비디아 — AI 반도체 제조",
-      "week_fact_en": "up ≈ 6.18%",
-      "week_fact_ko": "≈ 6.18% 상승",
+      "week_fact_en": "up ≈ 1.48% after one session",
+      "week_fact_ko": "1거래일 기준 ≈ 1.48% 상승",
       "news_en": [
+        {
+          "dt": "Aug 31",
+          "tx": "<b>Rose 1.48% to $220.78 on a day the market fell — its own news was the reason.</b> The company said it will put <b>$3.5 billion</b> into the Taiwanese chip designer MediaTek, reported as its largest direct investment outside the United States. MediaTek's shares jumped about 10% in Taipei overnight. August closed with Nvidia up about <b>10%</b>, the best of your five."
+        },
+        {
+          "dt": "Aug 28",
+          "tx": "<b>Fell 4.57% to $217.55, handing back more than half of Thursday's jump.</b> No news from the company; the whole chip group fell after the Fed chairman's speech, and Marvell's cold reception weighed. For the week the shares still rose about <b>1.3%</b>, and for August about <b>8.4%</b> with one session left."
+        },
         {
           "dt": "Aug 27",
           "tx": "<b>Rose 8.74% to $227.98 — and kept the jump all day, against its own recent habit.</b> The move added more than <b>$400 billion</b> of company value and carried the whole market: the S&P 500 rose 0.72% while most of its stocks fell. The shares closed about <b>3.6%</b> from their May record."
@@ -303,17 +311,17 @@
         {
           "dt": "Aug 26",
           "tx": "<b>Fell 1.59% to $209.66 before its report — then beat it.</b> Revenue <b>$96.2 billion</b>, more than double a year ago; profit <b>$2.22</b> a share; next quarter guided to about <b>$108 billion</b>. Profit margin guided down a point to 74% on higher memory costs. Shares rose about <b>4.7%</b> after hours."
-        },
-        {
-          "dt": "Aug 25",
-          "tx": "<b>Rose 2.19% to $213.05, ending a seven-session losing run the day before its own results.</b> No company news — the whole chip group was bought back, with <b>AMD up 4.91%</b> on an analyst upgrade. The cost question from Monday is unanswered until tonight."
-        },
-        {
-          "dt": "Aug 24",
-          "tx": "<b>Fell 2.91% to $208.48 — a seventh straight down day, its longest losing run in four years.</b> Reports said the company has told customers that servers built around its AI chips will cost <b>more than 15% more</b> from early next year, as memory prices climb. Its own results land Wednesday."
         }
       ],
       "news_ko": [
+        {
+          "dt": "8월 31일",
+          "tx": "<b>시장이 내린 날 1.48% 올라 220.78달러 — 자기 소식이 이유였습니다.</b> 회사는 대만의 반도체 설계 회사 MediaTek에 <b>35억 달러</b>를 넣겠다고 밝혔고, 미국 밖 회사에 대한 가장 큰 직접 투자로 보도됐습니다. MediaTek 주가는 밤사이 타이베이에서 약 10% 뛰었습니다. 8월은 엔비디아가 약 <b>10%</b> 올라 보유 다섯 중 최고로 마감했습니다."
+        },
+        {
+          "dt": "8월 28일",
+          "tx": "<b>4.57% 내린 217.55달러 — 목요일 급등의 절반 이상을 되돌려 줬습니다.</b> 회사 소식은 없었습니다. 연준 의장의 연설 뒤 반도체 종목군 전체가 내렸고, 마벨이 받은 차가운 대접이 무게를 더했습니다. 그래도 한 주로 주가는 약 <b>1.3%</b> 올랐고, 8월 누적은 거래일 하루를 남기고 약 <b>8.4%</b> 상승입니다."
+        },
         {
           "dt": "8월 27일",
           "tx": "<b>8.74% 올라 227.98달러 — 그리고 최근의 버릇과 달리 급등을 하루 종일 지켰습니다.</b> 이 움직임은 <b>4,000억 달러</b>가 넘는 회사 가치를 보태며 시장 전체를 끌고 갔습니다. S&P 500은 대부분의 종목이 내리는 가운데 0.72% 올랐습니다. 주가는 5월 사상 최고가에서 약 <b>3.6%</b> 떨어진 자리에서 마감했습니다."
@@ -321,18 +329,10 @@
         {
           "dt": "8월 26일",
           "tx": "<b>실적 발표 전 1.59% 내린 209.66달러 — 그리고 예상을 넘겼습니다.</b> 매출 <b>962억 달러</b>로 1년 전의 두 배가 넘었고, 이익은 주당 <b>2.22달러</b>, 다음 분기는 약 <b>1,080억 달러</b>를 제시했습니다. 이익률은 메모리 값 상승으로 74%로 1%포인트 낮춰 잡았습니다. 주가는 시간외 거래에서 약 <b>4.7%</b> 올랐습니다."
-        },
-        {
-          "dt": "8월 25일",
-          "tx": "<b>2.19% 올라 213.05달러 — 자체 실적 발표 하루 전에 일곱 거래일 연속 하락을 끊었습니다.</b> 회사 소식은 없었고 반도체 종목군 전체가 되사졌습니다. <b>AMD는 투자의견 상향에 4.91%</b> 올랐습니다. 월요일의 비용 질문은 오늘 밤까지 답이 없습니다."
-        },
-        {
-          "dt": "8월 24일",
-          "tx": "<b>2.91% 내린 208.48달러 — 일곱 거래일 연속 하락으로, 4년 만에 가장 긴 하락 행진입니다.</b> 메모리 값이 오르면서 회사가 자사 AI 반도체를 넣은 서버 가격을 내년 초부터 <b>15% 넘게</b> 올린다고 고객사에 알렸다는 보도가 나왔습니다. 자체 실적 발표는 수요일입니다."
         }
       ],
-      "verdict_en": "<b>What I'd watch: whether the margin line stays at one point.</b> The demand argument is settled for this quarter — the market accepted the answer and paid more than <b>$400 billion</b> for it in a day. What is not settled is the line that went the other way: the company expects to keep about <b>74 cents</b> of profit on each sales dollar next quarter instead of 75, because memory costs more. One point is not a crisis; the watching is about whether it stays at one. It is worth noting that <b>Marvell guided its own margin a shade lower the same evening</b> — for its own product-mix reasons, not memory — and was marked down about 7% despite beating. The market is reading chip margins closely right now. The money questions also carry forward: the <b>$105 billion</b> Nvidia has promised to stand behind for OpenAI, and the reported <b>$12.9 billion</b> Hugging Face purchase on top. Two cautions about today, neither a prediction. After a jump this size, a quiet or even lower day would mean nothing by itself. And the shares now sit about <b>3.6%</b> from their record, priced at roughly <b>35 times</b> the past year's profits — the room for good news that existed on Wednesday has mostly been used. Whatever chips do today, <b>SOXL does three times as much</b>.",
-      "verdict_ko": "<b>제가 지켜볼 것: 이익률의 그 1%포인트가 1%포인트에서 멈추는가입니다.</b> 수요에 관한 논쟁은 이번 분기만큼은 정리됐습니다. 시장은 그 답을 받아들였고 하루에 <b>4,000억 달러</b> 넘는 값을 치렀습니다. 정리되지 않은 것은 반대 방향의 그 한 줄입니다. 회사는 다음 분기에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 봅니다. 메모리 값이 올랐기 때문입니다. 1%포인트는 위기가 아닙니다. 지켜볼 일은 그것이 1%포인트에서 멈추는가입니다. 같은 날 저녁 <b>마벨도 자기 이익률을 한 단계 낮춰 잡았고</b> — 메모리가 아니라 제품 구성이라는 회사 자체의 이유였습니다 — 예상을 넘기고도 약 7% 깎였다는 점은 적어 둘 만합니다. 시장은 지금 반도체 회사들의 이익률을 꼼꼼히 읽고 있습니다. 돈 질문들도 그대로 이어집니다. 엔비디아가 OpenAI를 위해 서겠다고 약속한 <b>1,050억 달러</b>, 그리고 그 위에 보도된 <b>129억 달러</b>짜리 허깅 페이스 인수가 있습니다. 예측이 아닌 오늘에 대한 주의 둘. 이만한 급등 뒤의 조용한 하루나 소폭 하락은 그 자체로는 아무 의미가 없습니다. 그리고 주가는 이제 사상 최고가에서 약 <b>3.6%</b> 떨어진 자리에 있고, 지난 1년 이익의 약 <b>35배</b> 값입니다. 수요일에 있던 좋은 소식의 자리는 대부분 쓰였습니다. 오늘 반도체가 어떻게 움직이든 <b>SOXL은 그 세 배로</b> 움직입니다.",
+      "verdict_en": "<b>What I'd watch: whether the margin line stays at one point — and what Broadcom says about its own on Wednesday.</b> The demand argument is settled for this quarter; the cost line is not. Nvidia expects to keep about <b>74 cents</b> of each sales dollar next quarter instead of 75 because memory costs more, and Marvell guided its own margin a shade lower the same week. <b>Broadcom reports Wednesday after the close</b> — the biggest chip company to speak since Nvidia, and the third reading on whether that thread is a coincidence or a pattern. The money questions grew by one on Monday: the <b>$105 billion</b> promised to stand behind OpenAI, the reported <b>$12.9 billion</b> Hugging Face purchase, and now <b>$3.5 billion</b> into MediaTek. Its own next report is in November — a long stretch for a share priced at about <b>34 times</b> profits to live on one quarter's answer, with the rate debate sharpening underneath. Whatever chips do this week, <b>SOXL does three times as much</b>.",
+      "verdict_ko": "<b>제가 지켜볼 것: 이익률의 그 1%포인트가 1%포인트에서 멈추는가, 그리고 수요일에 브로드컴이 자기 이익률에 대해 무엇을 말하는가입니다.</b> 수요에 관한 논쟁은 이번 분기만큼은 정리됐습니다. 정리되지 않은 것은 비용 줄입니다. 엔비디아는 메모리 값이 올라 다음 분기에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 보고, 마벨도 같은 주에 자기 이익률을 한 단계 낮춰 잡았습니다. <b>브로드컴이 수요일 장 마감 뒤 실적을 냅니다.</b> 엔비디아 이후 말할 차례가 온 가장 큰 반도체 회사이고, 그 실이 우연인지 무늬인지에 대한 세 번째 눈금입니다. 돈 질문은 월요일에 하나 늘었습니다. OpenAI를 위해 서겠다고 약속한 <b>1,050억 달러</b>, 보도된 <b>129억 달러</b>짜리 허깅 페이스 인수, 그리고 이제 MediaTek에 들어가는 <b>35억 달러</b>입니다. 자체 다음 발표는 11월입니다. 이익의 약 <b>34배</b> 값이 매겨진 주식이 한 분기의 답으로 버티기에는 긴 시간이고, 그 아래에서 금리 논쟁은 날카로워지고 있습니다. 이번 주 반도체가 어떻게 움직이든 <b>SOXL은 그 세 배로</b> 움직입니다.",
       "base": {
         "high_1y": 236.54,
         "cap_usd_at": [
@@ -372,50 +372,58 @@
           "v_ko": "8월 26일 — 예상 상회, 다음은 11월"
         }
       ],
-      "plain_en": "Nvidia makes the chips that power artificial intelligence. It is one of the most valuable companies on earth, worth <b>≈ $5.5 trillion</b>. On Thursday its shares rose <b>8.74%</b> to <b>$227.98</b> — the market's verdict on Wednesday evening's results, which beat expectations on every line that matters: <b>$96.2 billion</b> of sales in three months, more than double a year ago, with about <b>$108 billion</b> guided for the next three. The one-day rise added more than <b>$400 billion</b> of company value. The shares are up about 13.6% for August and sit ≈ 3.6% below their May record.",
-      "plain_ko": "엔비디아는 인공지능을 돌리는 데 쓰이는 반도체를 만듭니다. 회사 가치가 <b>약 5조 5천억 달러</b>로 세계에서 가치가 가장 큰 회사 중 하나입니다. 목요일에 주가는 <b>8.74%</b> 올라 <b>227.98달러</b>가 됐습니다. 수요일 저녁 실적에 대한 시장의 평가였습니다. 그 실적은 중요한 항목마다 예상을 넘었습니다. 석 달 매출 <b>962억 달러</b>로 1년 전의 두 배가 넘었고, 다음 석 달은 약 <b>1,080억 달러</b>를 제시했습니다. 하루의 상승이 <b>4,000억 달러</b>가 넘는 회사 가치를 보탰습니다. 주가는 8월 누적 약 13.6% 상승이고, 5월 사상 최고가보다 약 3.6% 낮습니다.",
-      "bull_en": "The demand question is now answered by the company itself rather than by argument, and the market has accepted the answer. It sold <b>$96.2 billion</b> of chips in three months — more than double a year ago — and told investors to expect about <b>$108 billion</b> in the next three, while assuming <b>nothing at all</b> from China. If China ever opens, that is upside nobody has counted. On the call it pointed to far faster growth next fiscal year than analysts had pencilled in — a signal reporting put near <b>70%</b>. The data-centre business grew 117% in a year. It returned about <b>$26 billion</b> to shareholders in the quarter through buybacks and dividends, which is a company with cash to spare, and it is still buying: reports put a <b>$12.9 billion</b> agreement to acquire Hugging Face on the table. And Thursday itself is evidence: after a month of doubt, the market's answer to real numbers was to pay more than <b>$400 billion</b> more for the company in a day.",
-      "bull_ko": "수요에 관한 질문에 이제 논쟁이 아니라 회사 자신이 답했고, 시장은 그 답을 받아들였습니다. 석 달 동안 반도체를 <b>962억 달러</b>어치 팔았고(1년 전의 두 배가 넘습니다), 다음 석 달은 약 <b>1,080억 달러</b>를 예상하라고 말했습니다. 그것도 중국에서는 <b>아무것도 오지 않는다고</b> 가정한 숫자입니다. 중국이 언젠가 열린다면 아무도 세지 않은 몫이 됩니다. 콘퍼런스 콜에서는 다음 회계연도 성장이 증권가의 짐작보다 훨씬 빠를 것이라는 신호를 줬고, 보도는 그것을 약 <b>70%</b> 부근으로 읽었습니다. 데이터센터 사업은 1년 사이 117% 컸습니다. 이번 분기에 자사주 매입과 배당으로 주주에게 약 <b>260억 달러</b>를 돌려줬으니 현금이 넉넉한 회사이고, 여전히 사들이고도 있습니다. 허깅 페이스를 사는 <b>129억 달러</b>짜리 합의가 보도됐습니다. 그리고 목요일 자체가 증거입니다. 한 달의 의심 끝에, 진짜 숫자에 대한 시장의 답은 하루 만에 이 회사에 <b>4,000억 달러</b> 넘게 값을 더 쳐 주는 것이었습니다.",
-      "bear_en": "The cost worry did not go away; it got smaller and more specific — and then a second company echoed it. Nvidia expects to keep about <b>74 cents</b> of profit on each sales dollar next quarter instead of 75, because memory costs more; the same evening as Thursday's close, Marvell guided its own margin a shade lower too, for product-mix reasons of its own, and was marked down about <b>7%</b> despite beating. If memory keeps getting more expensive, Nvidia's number keeps moving, and the same pressure lands on every customer buying its servers. The price has also done a month's work in a day: at about <b>3.6%</b> from its record and roughly <b>35 times</b> the past year's profits, the shares have given back the discount they carried into the report. The financing question still has teeth — <b>$105 billion</b> promised to stand behind its biggest customer, and now a reported <b>$12.9 billion</b> acquisition on top. And the guide excludes China because China is not buying: Beijing has not approved purchases of its chips, which is a market this company used to count on.",
-      "bear_ko": "비용 걱정은 사라진 것이 아니라 작아지고 구체적이 됐으며, 그리고 두 번째 회사가 그것을 되울렸습니다. 엔비디아는 다음 분기에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 봅니다. 메모리 값이 올랐기 때문입니다. 목요일 장이 끝난 그 저녁, 마벨도 제품 구성이라는 자체 사정으로 이익률을 한 단계 낮춰 잡았고, 예상을 넘기고도 약 <b>7%</b> 깎였습니다. 메모리가 계속 비싸지면 엔비디아의 숫자도 계속 움직이고, 같은 압력이 이 회사 서버를 사는 모든 고객에게 떨어집니다. 가격도 하루 만에 한 달 치 일을 해 버렸습니다. 사상 최고가에서 약 <b>3.6%</b>, 지난 1년 이익의 약 <b>35배</b>가 된 주가는 발표장에 들고 갔던 할인폭을 도로 내놓았습니다. 자금 조달 질문에도 여전히 이빨이 있습니다. 가장 큰 고객을 위해 서겠다고 한 <b>1,050억 달러</b>가 있고, 이제 그 위에 보도된 <b>129억 달러</b>짜리 인수가 얹혔습니다. 그리고 이번 전망이 중국을 뺀 이유는 중국이 사지 않고 있기 때문입니다. 중국 당국은 이 회사 반도체 구매를 승인하지 않고 있고, 그곳은 이 회사가 예전에는 기대던 시장입니다."
+      "plain_en": "Nvidia makes the chips that power artificial intelligence. It is one of the most valuable companies on earth, worth <b>≈ $5.3 trillion</b>. On Monday, while the market fell, it rose <b>1.48%</b> to <b>$220.78</b> after announcing a <b>$3.5 billion</b> investment in the Taiwanese chip designer MediaTek. That closed out an August of about <b>+10%</b> — the best of your five — built on the August 26 report that beat on every line that matters. The shares sit ≈ 6.7% below their May record.",
+      "plain_ko": "엔비디아는 인공지능을 돌리는 데 쓰이는 반도체를 만듭니다. 회사 가치가 <b>약 5조 3천억 달러</b>로 세계에서 가치가 가장 큰 회사 중 하나입니다. 월요일에는 시장이 내리는 동안 <b>1.48%</b> 올라 <b>220.78달러</b>가 됐습니다. 대만의 반도체 설계 회사 MediaTek에 <b>35억 달러</b>를 투자한다고 발표한 뒤였습니다. 그렇게 8월을 약 <b>+10%</b>로 마감했습니다. 보유 다섯 중 최고이고, 중요한 항목마다 예상을 넘긴 8월 26일 실적이 그 바탕입니다. 주가는 5월 사상 최고가보다 약 6.7% 낮습니다.",
+      "bull_en": "The demand question is answered by the company itself: <b>$96.2 billion</b> of chips sold in three months, about <b>$108 billion</b> guided for the next three while assuming <b>nothing at all</b> from China, and a signal on the call — reporting put it near <b>70%</b> — of far faster growth next fiscal year than analysts had pencilled in. And it keeps building the moat while others debate it: Monday's <b>$3.5 billion</b> MediaTek investment ties another chip designer into its connection technology, the reported Hugging Face purchase adds the software crowd, and the data-centre business grew 117% in a year. August's scoreboard backs the story: up about <b>10%</b> in a month that threw a hawkish Fed speech and an oil scare at it — and on Monday it rose while the market fell.",
+      "bull_ko": "수요에 관한 질문에는 회사 자신이 답했습니다. 석 달 동안 반도체를 <b>962억 달러</b>어치 팔았고, 중국에서는 <b>아무것도 오지 않는다고</b> 가정하고도 다음 석 달 약 <b>1,080억 달러</b>를 제시했으며, 콘퍼런스 콜에서는 다음 회계연도 성장이 증권가의 짐작보다 훨씬 빠를 것이라는 신호를 줬습니다. 보도는 그것을 약 <b>70%</b> 부근으로 읽었습니다. 그리고 남들이 논쟁하는 동안 해자를 계속 넓히고 있습니다. 월요일의 <b>35억 달러</b> MediaTek 투자는 또 하나의 반도체 설계 회사를 자기 연결 기술에 묶었고, 보도된 허깅 페이스 인수는 소프트웨어 진영을 더하며, 데이터센터 사업은 1년 사이 117% 컸습니다. 8월의 점수판이 이 이야기를 뒷받침합니다. 매파적인 연준 연설과 유가 불안이 덮친 달에 약 <b>10%</b> 올랐고, 월요일에는 시장이 내리는 동안 올랐습니다.",
+      "bear_en": "The cost worry is specific and it is not going away: about <b>74 cents</b> kept per sales dollar next quarter instead of 75, because the memory inside its servers keeps getting dearer — and Marvell echoed the same pressure in its own guidance. At roughly <b>34 times</b> the past year's profits, the price still assumes years of delivery, and the next report is not until November. The financing commitments keep stacking: <b>$105 billion</b> behind OpenAI, a reported <b>$12.9 billion</b> acquisition, now <b>$3.5 billion</b> more into MediaTek — spending into a buildout whose customers borrow at the highest long-term rates in years. The guide excludes China because China is not buying. And the rate debate has turned harsher still: a September rise is the better-than-even reading now, and expensive shares feel that first.",
+      "bear_ko": "비용 걱정은 구체적이고, 사라지지 않고 있습니다. 서버에 들어가는 메모리가 계속 비싸져 다음 분기에는 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남깁니다. 마벨도 자기 전망에서 같은 압력을 되울렸습니다. 지난 1년 이익의 약 <b>34배</b>인 값은 여전히 여러 해의 실행을 전제하는데, 다음 발표는 11월에야 있습니다. 자금 약속은 계속 쌓입니다. OpenAI 뒤에 서겠다는 <b>1,050억 달러</b>, 보도된 <b>129억 달러</b> 인수, 이제 MediaTek에 <b>35억 달러</b> 추가입니다. 고객들이 몇 년 만에 가장 높은 장기 금리로 돈을 빌리는 구축에 돈을 쓰는 셈입니다. 이번 전망이 중국을 뺀 이유는 중국이 사지 않고 있기 때문입니다. 그리고 금리 논쟁은 더 매서워졌습니다. 9월 인상이 이제 절반을 넘는 확률로 읽히고, 비싼 주식이 그것을 가장 먼저 느낍니다."
     },
     "soxl": {
-      "price": "$123.05",
+      "price": "$112.79",
       "day_arrow": "▲",
-      "day_en": "+5.53% on Thursday",
-      "day_ko": "목요일 +5.53%",
+      "day_en": "+1.30% on Monday",
+      "day_ko": "월요일 +1.30%",
       "day_dir": "up",
       "week_arrow": "▲",
-      "week_en": "≈ +2.03% so far this week",
-      "week_ko": "이번 주 ≈ +2.03%",
+      "week_en": "≈ +1.30% so far this week",
+      "week_ko": "이번 주 들어 ≈ +1.30%",
       "week_dir": "up",
-      "month_arrow": "▲",
-      "month_en": "≈ +7.26% so far in August",
-      "month_ko": "8월 들어 ≈ +7.26%",
-      "month_dir": "up",
+      "month_arrow": "▼",
+      "month_en": "≈ −1.68% for all of August",
+      "month_ko": "8월 전체 ≈ −1.68%",
+      "month_dir": "dn",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 59.3%",
+      "drawdown": "≈ 62.7%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 59.3%",
-      "drawdown_fact_ko": "≈ 59.3%",
+      "drawdown_fact_en": "≈ 62.7%",
+      "drawdown_fact_ko": "≈ 62.7%",
       "take_en": "Danger — read this one",
       "take_ko": "위험 — 꼭 읽어보세요",
       "take_tone": "c-risk",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "SOXL rose <b>5.53%</b> on Thursday to <b>$123.05</b> — its best day of the month, and it was not a smooth ride. The fund opened up near 5.8%, sagged mid-session to barely 1% above Wednesday's close, and climbed back by the bell. Both of this page's price feeds agreed on the day's trading record to the cent (their volume tallies differed by about 2%, which does not affect the price), and the fund's own record, $116.60 to $123.05, gives the same +5.53%. The tripling check tells the month's usual story about violent days. The plain chip fund holding the same companies rose <b>1.95%</b> on Nvidia's day. Three times that is <b>5.84%</b>, and SOXL delivered 5.53% — about <b>three-tenths of a point short</b> of a perfect tripling. That fits the pattern this page has now watched all month: on quiet days the fund tracks almost exactly (Wednesday it was two-hundredths over), and on violent days it comes up short (six-tenths short on Tuesday, three-tenths on Thursday). Nothing is broken; that is what the product costs when it is moving fast. The week's arithmetic makes the same point more plainly: the chip fund is up about <b>1.0%</b> over four sessions, three times that would be about 3.1%, and SOXL is up about <b>2.0%</b>. August now stands at about <b>+7.3%</b>, and the climb back to its 1-year high shortened from about 159% to about <b>145%</b> in one good day. After the close, <b>Marvell fell about 7%</b> in evening trading despite beating — if chip shares open lower on that, this fund feels it three times over.",
-      "note_ko": "SOXL은 목요일에 <b>5.53%</b> 올라 <b>123.05달러</b>가 됐습니다. 이달 최고의 하루였지만, 순탄한 길은 아니었습니다. 펀드는 5.8% 가까이 오른 채 출발해 장중에는 수요일 종가보다 겨우 1% 남짓 위까지 처졌다가, 마감까지 다시 기어올랐습니다. 이 페이지가 쓰는 두 가격 자료가 그날의 거래 기록을 센트 단위까지 똑같이 제시했고(거래량 집계는 약 2% 달랐는데, 가격에는 영향이 없습니다), 펀드 자체 기록(116.60달러 → 123.05달러)도 같은 +5.53%를 줍니다. 세 배 확인은 격렬한 날에 관한 이달의 익숙한 이야기를 들려줍니다. 같은 회사들을 담은 일반 반도체 펀드는 엔비디아의 날에 <b>1.95%</b> 올랐습니다. 그 세 배는 <b>5.84%</b>인데 SOXL은 5.53%를 냈습니다. 완전한 세 배에서 약 <b>0.3%포인트 모자랍니다</b>. 이 페이지가 한 달 내내 지켜본 무늬 그대로입니다. 조용한 날은 거의 정확히 따라가고(수요일에는 0.02%포인트 위였습니다), 격렬한 날은 모자랍니다(화요일 0.6%포인트, 목요일 0.3%포인트). 고장난 것은 없습니다. 빠르게 움직일 때 이 상품이 치르는 값이 그것입니다. 한 주의 셈이 같은 이야기를 더 쉽게 해 줍니다. 반도체 펀드는 네 거래일 동안 약 <b>1.0%</b> 올랐고, 세 배면 약 3.1%인데, SOXL은 약 <b>2.0%</b> 올랐습니다. 8월 누적은 약 <b>+7.3%</b>가 됐고, 1년 최고가로 돌아가는 데 필요한 상승은 좋은 하루 덕에 약 159%에서 약 <b>145%</b>로 줄었습니다. 장 마감 뒤 <b>마벨이 예상을 넘기고도 저녁 거래에서 약 7%</b> 내렸습니다. 그 때문에 반도체 주식이 낮게 출발한다면, 이 펀드는 그것을 세 배로 느낍니다.",
+      "note_en": "A quiet day, for once. SOXL rose <b>1.30%</b> on Monday to <b>$112.79</b>. The daily check first: both of this page's usual price feeds served the same clean numbers this time, the fund's own record gives $111.34 to $112.79 — <b>+1.30%</b> to the cent — and the machinery agrees: the plain chip fund holding the same companies rose <b>0.48%</b>, three times that is 1.43%, and SOXL delivered 1.30%, slightly inside a full tripling, which is normal. The bigger number is the month's, because August is now closed: this fund ended it <b>down about 1.7%</b> — in the very month the chip group got its best news since spring, with Nvidia's record report inside it. The plain chip fund rose in August; this one fell. That gap is not a malfunction. It is the daily reset charging its toll at every change of direction, and August changed direction constantly. The fund sits about <b>63%</b> below its 1-year high; getting back would take a rise of about <b>168%</b>. July remains the extreme case: down 57% in a month when the market was flat. Two three-times events are now dated and close: <b>Broadcom's results Wednesday evening, and the jobs report Friday morning</b>.",
+      "note_ko": "모처럼 조용한 하루였습니다. SOXL은 월요일에 <b>1.30%</b> 올라 <b>112.79달러</b>가 됐습니다. 하루 확인부터 하겠습니다. 이번에는 이 페이지가 평소 쓰는 두 가격 자료가 똑같이 깨끗한 숫자를 내놓았고, 펀드 자체 기록은 111.34달러에서 112.79달러 — 센트 단위까지 <b>+1.30%</b> — 를 제시하며, 장치의 셈도 맞습니다. 같은 회사들을 담은 일반 반도체 펀드가 <b>0.48%</b> 올랐으니 세 배면 1.43%인데, SOXL은 1.30%를 냈습니다. 완전한 세 배보다 조금 안쪽이고, 정상입니다. 더 큰 숫자는 이달의 것입니다. 8월이 이제 마감됐기 때문입니다. 이 펀드는 8월을 <b>약 1.7% 하락</b>으로 마쳤습니다. 반도체 종목군에 봄 이후 가장 좋은 소식이 쏟아지고, 엔비디아의 기록적인 실적이 그 안에 있었던 바로 그 달에요. 일반 반도체 펀드는 8월에 올랐는데 이 펀드는 내렸습니다. 그 차이는 고장이 아닙니다. 방향이 바뀔 때마다 매일 초기화가 걷어 가는 요금이고, 8월은 방향이 쉼 없이 바뀌었습니다. 펀드는 1년 최고가보다 약 <b>63%</b> 낮고, 돌아가려면 약 <b>168%</b>의 상승이 필요합니다. 7월은 극단적인 사례로 남아 있습니다. 시장이 제자리인 한 달 동안 57%를 잃었습니다. 세 배로 느낄 두 사건이 이제 날짜까지 잡혀 코앞에 있습니다. <b>수요일 저녁의 브로드컴 실적, 그리고 금요일 아침의 고용 보고서</b>입니다.",
       "ticker": "SOXL",
       "name_en": "Triple-risk chip fund",
       "name_ko": "3배 위험 반도체 펀드",
-      "note_head_en": "Re-checked before the open on Friday and confirmed, a thirteenth run in a row. Both of this page's price feeds gave the same trading record for Thursday — same open, high, low and close to the cent, with volume tallies about 2% apart, which does not affect the price — and the fund's own record ($116.60 to $123.05) gives the same +5.53%. The tripling ran short, as it usually does on violent days: the chip fund it follows rose 1.95%, three times that is 5.84%, and SOXL delivered 5.53% — about three-tenths of a point short",
-      "note_head_ko": "금요일 개장 전에 다시 확인해 확정했습니다. 열세 번째 연속 확인입니다. 이 페이지가 쓰는 두 가격 자료가 목요일의 거래 기록을 똑같이 제시했습니다. 시가·고가·저가·종가가 센트 단위까지 같았고, 거래량 집계만 약 2% 달랐는데 가격에는 영향이 없습니다. 펀드 자체 기록(116.60달러 → 123.05달러)도 같은 +5.53%를 줍니다. 세 배는 격렬한 날에 늘 그렇듯 모자랐습니다. 따라가는 반도체 펀드가 1.95% 올랐으니 세 배면 5.84%인데 SOXL은 5.53%를 냈습니다. 약 0.3%포인트 부족입니다",
-      "day_caveat_en": "Thursday's +5.53% was checked three ways, as this holding always is. First, the fund's own trading record: $116.60 to $123.05 is +5.53%. Second, a second independent price source quoting the same open, high, low and close to the cent — the two feeds' volume tallies differed by about 2%, which does not affect the price, and neither was serving a stale quote. Third, the machinery: the plain chip fund it follows rose <b>1.95%</b>, three times that is 5.84%, and SOXL delivered 5.53% — about three-tenths of a point short of a perfect tripling. That is the month's pattern in one line: near-exact on quiet days (two-hundredths over on Wednesday), short on violent ones (six-tenths short on Tuesday, three-tenths on Thursday). The other chip gauge some reports quote was not checked this run; this page compares against the fund that holds the same companies, and says so.",
-      "day_caveat_ko": "목요일의 +5.53%는 이 항목에 늘 하는 대로 세 가지 방식으로 확인했습니다. 첫째, 펀드 자체의 거래 기록입니다. 116.60달러에서 123.05달러는 +5.53%입니다. 둘째, 시가·고가·저가·종가를 센트 단위까지 똑같이 제시하는 두 번째 독립 자료입니다. 두 자료의 거래량 집계는 약 2% 달랐는데 가격에는 영향이 없고, 오래된 시세를 내보내는 자료도 없었습니다. 셋째, 장치 자체입니다. 따라가는 일반 반도체 펀드가 <b>1.95%</b> 올랐으니 세 배면 5.84%인데, SOXL은 5.53%를 냈습니다. 완전한 세 배에서 약 0.3%포인트 모자랍니다. 이달의 무늬가 한 줄에 담겨 있습니다. 조용한 날은 거의 정확하고(수요일은 0.02%포인트 위), 격렬한 날은 모자랍니다(화요일 0.6%포인트, 목요일 0.3%포인트). 일부 보도가 인용하는 다른 반도체 지표는 이번에는 확인하지 않았습니다. 이 페이지는 같은 회사들을 담은 펀드와 견주고 있으며, 그 사실을 밝혀 둡니다.",
-      "week_fact_en": "up ≈ 2.03%",
-      "week_fact_ko": "≈ 2.03% 상승",
+      "note_head_en": "Checked after Monday's close and confirmed, a fifteenth run in a row — and this time both of the page's usual price feeds were clean. The fund's own trading record gives $111.34 to $112.79, a rise of 1.30%; a second independent source shows the same day to the cent; and the tripling arithmetic fits: the plain chip fund rose 0.48%, three times that is 1.43%, and SOXL delivered 1.30% — slightly inside, which is ordinary for this fund",
+      "note_head_ko": "월요일 장 마감 뒤 다시 확인해 확정했습니다. 열다섯 번째 연속 확인이고, 이번에는 이 페이지가 평소 쓰는 두 가격 자료 모두 깨끗했습니다. 펀드 자체의 거래 기록은 111.34달러에서 112.79달러, 곧 1.30% 상승을 제시하고, 또 하나의 독립 자료가 같은 하루를 센트 단위까지 똑같이 보여 주며, 세 배 셈도 맞습니다. 일반 반도체 펀드가 0.48% 올랐으니 세 배면 1.43%인데, SOXL은 1.30%를 냈습니다. 조금 안쪽이고, 이 펀드로서는 평범한 일입니다",
+      "day_caveat_en": "Monday's +1.30% was checked three ways, as this holding always is. First, the fund's own trading record: $111.34 to $112.79 is +1.30%. Second, a second independent source quoting the same close to the cent — no stale rows on either feed this run. Third, the machinery: the plain chip fund it follows rose <b>0.48%</b>; three times that is 1.43%; SOXL delivered 1.30%, slightly inside a full tripling, the usual small shortfall. The other chip gauge some reports quote was not checked this run; this page compares against the fund that holds the same companies, and says so.",
+      "day_caveat_ko": "월요일의 +1.30%는 이 항목에 늘 하는 대로 세 가지 방식으로 확인했습니다. 첫째, 펀드 자체의 거래 기록입니다. 111.34달러에서 112.79달러는 +1.30%입니다. 둘째, 종가를 센트 단위까지 똑같이 제시하는 또 하나의 독립 자료입니다. 이번에는 어느 자료에도 오래된 행이 없었습니다. 셋째, 장치 자체입니다. 따라가는 일반 반도체 펀드가 <b>0.48%</b> 올랐으니 세 배면 1.43%인데, SOXL은 1.30%를 냈습니다. 완전한 세 배보다 조금 안쪽, 늘 있는 작은 부족분입니다. 일부 보도가 인용하는 다른 반도체 지표는 이번에는 확인하지 않았습니다. 이 페이지는 같은 회사들을 담은 펀드와 견주고 있으며, 그 사실을 밝혀 둡니다.",
+      "week_fact_en": "up ≈ 1.30% after one session",
+      "week_fact_ko": "1거래일 기준 ≈ 1.30% 상승",
       "news_en": [
+        {
+          "dt": "Aug 31",
+          "tx": "<b>Rose 1.30% to $112.79 on a calm day — and still closed August in the red.</b> The plain chip fund rose <b>0.48%</b>; three times that is 1.43%, so this landed slightly inside its tripling, as usual. The month's final score: chips up for August, this fund <b>down about 1.7%</b> — the daily reset's bill for a month that kept changing direction. <b>Broadcom reports Wednesday</b>, which this fund will feel three times."
+        },
+        {
+          "dt": "Aug 28",
+          "tx": "<b>Fell 9.52% to $111.34 — the week's whole gain and more, gone in one day.</b> The plain chip fund fell <b>3.20%</b>; three times that is 9.60%, so this landed slightly inside a full tripling. One of this page's price feeds served a stale Friday number and was discarded; the close was confirmed two other ways. The week: chips about −2.2%, this fund about <b>−7.7%</b>."
+        },
         {
           "dt": "Aug 27",
           "tx": "<b>Rose 5.53% to $123.05 on Nvidia's day — and ran short of its tripling, as violent days do.</b> The plain chip fund it triples rose <b>1.95%</b>; three times that is 5.84%, so this came about three-tenths of a point short. At its worst mid-session it was up barely 1%. <b>Marvell fell about 7% in evening trading</b> despite beating."
@@ -423,17 +431,17 @@
         {
           "dt": "Aug 26",
           "tx": "<b>Rose 0.80% to $116.60 on a quiet day — and tracked almost perfectly.</b> The plain chip fund it triples rose <b>0.26%</b>; three times that is 0.78%, so this landed two hundredths of a point above a full tripling. <b>Nvidia beat after the close</b>, which is what this fund will move three times on."
-        },
-        {
-          "dt": "Aug 25",
-          "tx": "<b>Rose 4.06% to $115.67 as chip shares were bought back.</b> The plain chip fund it triples rose <b>1.56%</b>; three times that is 4.67%, so it collected most of the bounce and came up about six-tenths of a point short — the widest gap of the month."
-        },
-        {
-          "dt": "Aug 24",
-          "tx": "<b>Fell 7.83% to $111.16 — and was down about 12% at its worst during the day.</b> The plain chip fund it triples fell <b>2.67%</b>; three times that is 8.00%, so this landed about a fifth of a point inside the full tripling. One of this page's two price feeds was serving a stale quote that night and was discarded."
         }
       ],
       "news_ko": [
+        {
+          "dt": "8월 31일",
+          "tx": "<b>조용한 하루에 1.30% 올라 112.79달러 — 그래도 8월은 마이너스로 마감했습니다.</b> 일반 반도체 펀드가 <b>0.48%</b> 올랐고 세 배면 1.43%이니, 늘 그렇듯 세 배보다 조금 안쪽이었습니다. 이달의 최종 성적은 이렇습니다. 반도체는 8월에 올랐는데 이 펀드는 <b>약 1.7% 하락</b>입니다. 방향이 계속 바뀐 한 달에 매일 초기화가 보낸 청구서입니다. <b>브로드컴이 수요일에 실적을 내고</b>, 이 펀드는 그것을 세 배로 느낍니다."
+        },
+        {
+          "dt": "8월 28일",
+          "tx": "<b>9.52% 내린 111.34달러 — 한 주의 상승분 전부에 더 얹어 하루에 사라졌습니다.</b> 일반 반도체 펀드가 <b>3.20%</b> 내렸고 세 배면 9.60%이니, 완전한 세 배보다 조금 안쪽에 떨어졌습니다. 이 페이지의 가격 자료 하나가 금요일 값으로 오래된 숫자를 내보내 버렸고, 종가는 두 가지 다른 방법으로 확인했습니다. 한 주로는 반도체가 약 −2.2%, 이 펀드는 약 <b>−7.7%</b>입니다."
+        },
         {
           "dt": "8월 27일",
           "tx": "<b>엔비디아의 날에 5.53% 올라 123.05달러 — 격렬한 날이 늘 그렇듯 세 배에는 못 미쳤습니다.</b> 세 배로 따라가는 일반 반도체 펀드가 <b>1.95%</b> 올랐고 세 배면 5.84%이니, 약 0.3%포인트 모자랐습니다. 장중 가장 나쁠 때는 겨우 1% 남짓 상승이었습니다. <b>마벨은 예상을 넘기고도 저녁 거래에서 약 7%</b> 내렸습니다."
@@ -441,18 +449,10 @@
         {
           "dt": "8월 26일",
           "tx": "<b>조용한 하루에 0.80% 올라 116.60달러 — 그리고 거의 정확하게 따라갔습니다.</b> 세 배로 따라가는 일반 반도체 펀드가 <b>0.26%</b> 올랐고 세 배면 0.78%이니, 완전한 세 배보다 0.02%포인트 위에 떨어졌습니다. <b>엔비디아는 장 마감 뒤 예상을 넘겼고</b>, 이 펀드는 바로 그것에 세 배로 반응하게 됩니다."
-        },
-        {
-          "dt": "8월 25일",
-          "tx": "<b>반도체 주식이 되사지며 4.06% 올라 115.67달러가 됐습니다.</b> 세 배로 따라가는 일반 반도체 펀드가 <b>1.56%</b> 올랐고 세 배면 4.67%이니, 반등의 대부분을 받되 약 0.6%포인트가 모자랐습니다. 이번 달 들어 가장 큰 차이입니다."
-        },
-        {
-          "dt": "8월 24일",
-          "tx": "<b>7.83% 내린 111.16달러 — 장중 가장 나쁠 때는 약 12% 하락이었습니다.</b> 세 배로 따라가는 일반 반도체 펀드가 <b>2.67%</b> 내렸고, 세 배면 8.00%이니 완전한 세 배보다 약 0.17%포인트 안쪽에 떨어졌습니다. 그날 밤 이 페이지의 두 가격 자료 중 하나가 오래된 시세를 내보내고 있어 그 자료는 버렸습니다."
         }
       ],
-      "verdict_en": "<b>What I'd watch — and the one thing I would genuinely flag:</b> this is a tool for short trades, <b>not something to hold onto</b>, and a good week makes the case as clearly as a bad one. Four sessions: down 7.83%, up 4.06%, up 0.80%, up 5.53%. The chip companies it follows are up about <b>1.0%</b> for the week; three times that would be about 3.1%; this fund is up about <b>2.0%</b>. The missing point is the daily reset, charged every time the direction changes — and this week changed direction twice. The recovery arithmetic says the same thing over a longer stretch: even after the month's best day, getting back to its 1-year high still needs a rise of about <b>145%</b>, because what was lost in July was lost at triple speed too. Today has two things this fund will feel three times over, <b>in either direction, with no way to choose which</b>: chip shares digesting <b>Marvell's evening fall</b> — a beat, marked down about 7% anyway — and the new Fed chairman's first Jackson Hole speech at <b>7 this morning Pacific</b>, half an hour after the open. If you want to bet on chips, owning Nvidia itself does it with one-third the whiplash.",
-      "verdict_ko": "<b>제가 지켜볼 것, 그리고 꼭 말씀드리고 싶은 것:</b> 이것은 짧게 사고파는 도구이지 <b>오래 들고 있을 상품이 아닙니다</b>. 좋은 한 주도 나쁜 한 주만큼 분명하게 그 이유를 보여 줍니다. 네 거래일은 이랬습니다. 7.83% 하락, 4.06% 상승, 0.80% 상승, 5.53% 상승. 따라가는 반도체 회사들은 이번 주 약 <b>1.0%</b> 올랐고, 세 배면 약 3.1%인데, 이 펀드는 약 <b>2.0%</b> 올랐습니다. 사라진 1%포인트가 매일 초기화의 값이고, 방향이 바뀔 때마다 치릅니다. 이번 주는 두 번 바뀌었습니다. 회복의 셈은 더 긴 구간에서 같은 이야기를 합니다. 이달 최고의 하루를 보내고도 1년 최고가로 돌아가려면 여전히 약 <b>145%</b>의 상승이 필요합니다. 7월에 잃은 것도 세 배 속도로 잃었기 때문입니다. 오늘은 이 펀드가 세 배로 느낄 일이 두 가지 있습니다. <b>어느 방향으로든이고, 방향을 고를 방법은 없습니다.</b> 하나는 <b>마벨의 저녁 하락</b> — 예상을 넘기고도 약 7% 깎였습니다 — 을 소화하는 반도체 주식들이고, 다른 하나는 개장 30분 뒤인 <b>서부 시각 오전 7시</b> 새 연준 의장의 첫 잭슨홀 연설입니다. 반도체에 걸고 싶으시다면, 엔비디아를 직접 사는 쪽이 출렁임을 3분의 1로 줄여 줍니다.",
+      "verdict_en": "<b>What I'd watch — and the one thing I would genuinely flag:</b> this is a tool for short trades, <b>not something to hold onto</b>, and August's closed book is the cleanest exhibit yet. The chip companies it follows ended August higher — their best news month since spring — and this fund ended it <b>down about 1.7%</b>, because the month kept changing direction and the daily reset charges at every turn. July remains the extreme case: down 57% in a month when the market was flat. This week hands it two three-times events, <b>in either direction, with no way to choose which</b>: Broadcom's results on Wednesday after the close, and the August jobs report on Friday morning — with oil and the Middle East now moving the whole market underneath. If you want to bet on chips, owning Nvidia itself does it with one-third the whiplash — and getting this fund back to its 1-year high would take a rise of about <b>168%</b>.",
+      "verdict_ko": "<b>제가 지켜볼 것, 그리고 꼭 말씀드리고 싶은 것:</b> 이것은 짧게 사고파는 도구이지 <b>오래 들고 있을 상품이 아닙니다</b>. 그리고 이제 장부가 닫힌 8월이 가장 깨끗한 증거물입니다. 이 펀드가 따라가는 반도체 회사들은 8월을 상승으로 마쳤습니다. 봄 이후 가장 좋은 소식의 달이었습니다. 그런데 이 펀드는 <b>약 1.7% 하락</b>으로 마쳤습니다. 한 달 내내 방향이 바뀌었고, 매일 초기화는 방향이 꺾일 때마다 요금을 걷기 때문입니다. 7월은 극단적인 사례로 남아 있습니다. 시장이 제자리인 한 달 동안 57%를 잃었습니다. 이번 주는 세 배로 느낄 일 두 가지를 건넵니다. <b>어느 방향으로든이고, 방향을 고를 방법은 없습니다.</b> 수요일 장 마감 뒤의 브로드컴 실적, 그리고 금요일 아침의 8월 고용 보고서입니다. 게다가 지금은 유가와 중동이 시장 전체를 그 아래에서 움직이고 있습니다. 반도체에 걸고 싶으시다면, 엔비디아를 직접 사는 쪽이 출렁임을 3분의 1로 줄여 줍니다. 이 펀드가 1년 최고가로 돌아가려면 약 <b>168%</b>의 상승이 필요합니다.",
       "base": {
         "year_start": 42.02,
         "high_1y": 302.0
@@ -485,46 +485,54 @@
           "auto": "recover"
         }
       ],
-      "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, every single day. If chip stocks rise 2%, it rises about 6%. If they fall 2%, it falls about 6%. On Thursday chip stocks rose 1.95% on Nvidia's results — and SOXL rose <b>5.53%</b>, to $123.05, a bit less than three times over, which is what fast days usually cost. Nothing malfunctioned; that is the design. In July the same machinery cost it <b>57%</b> of its value while the overall market was flat. Even after Thursday it sits about <b>59%</b> below its best price of the past year, and getting back there would take a rise of about <b>145%</b>.",
-      "plain_ko": "<b>이 항목은 특히 꼼꼼히 읽어보시기 바랍니다. 다섯 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>로 움직이도록 만들어졌고, 그것을 <b>매일</b> 새로 맞춥니다. 반도체가 2% 오르면 약 6% 오르고, 2% 내리면 약 6% 내립니다. 목요일에 반도체 주식은 엔비디아 실적에 1.95% 올랐고 SOXL은 <b>5.53%</b> 올라 123.05달러가 됐습니다. 세 배에 조금 못 미치는데, 빠른 날은 대개 그만큼의 값을 치릅니다. 고장난 것은 없습니다. 이 상품의 설계가 그렇습니다. 7월에는 같은 장치가 시장 전체가 제자리인 동안 가치의 <b>57%</b>를 앗아갔습니다. 목요일을 보내고도 1년 최고가보다 약 <b>59%</b> 낮고, 거기로 돌아가려면 약 <b>145%</b>의 상승이 필요합니다.",
-      "bull_en": "It is up <b>about 193%</b> for the year, and Thursday showed the machinery paying out instead of collecting: chips had their best day of the month on Nvidia's results, and this fund collected <b>5.53%</b> in one session — more than the plain chip fund has managed in a good week. The demand question that hung over the whole chip group has been closed by the company at the centre of it: <b>$96.2 billion</b> of sales in three months, about <b>$108 billion</b> guided for the next three, assuming nothing from China at all. Even Marvell's poorly-received evening came with its business raised, not cut. If chips keep moving upward, a triple-speed fund recovers faster than anything else on this page — the same machinery that took 7.83% in a day pays back at the same speed when the direction is right. That is the honest other side, and it is the only honest version of it.",
-      "bull_ko": "올해 누적으로는 <b>약 193%</b> 상승이고, 목요일은 이 장치가 걷어 가는 대신 지불하는 모습을 보여 줬습니다. 반도체는 엔비디아 실적에 이달 최고의 하루를 보냈고, 이 펀드는 한 거래일에 <b>5.53%</b>를 거뒀습니다. 일반 반도체 펀드가 좋은 한 주에 버는 것보다 많습니다. 반도체 종목군 전체에 걸려 있던 수요 질문은 그 한가운데 있는 회사가 닫았습니다. 석 달 매출 <b>962억 달러</b>, 다음 석 달 약 <b>1,080억 달러</b> 제시, 그것도 중국은 전혀 없다고 가정한 숫자입니다. 저녁에 박한 대접을 받은 마벨조차 사업은 깎인 것이 아니라 올라간 채였습니다. 반도체가 계속 위로 움직인다면, 3배속 펀드는 이 페이지의 어떤 것보다 빨리 회복합니다. 하루에 7.83%를 가져간 그 장치는 방향이 맞을 때 같은 속도로 돌려줍니다. 그것이 정직한 반대편이고, 그 반대편의 정직한 판본은 그것뿐입니다.",
-      "bear_en": "Four sessions, stated plainly: down 7.83%, up 4.06%, up 0.80%, up 5.53% — and for all that motion, up about <b>2.0%</b> for the week against three times the chip fund's roughly 1.0%, which would be about 3.1%. The missing point is what the daily reset charged for a week that changed direction twice. Even Thursday, the month's best day, came up three-tenths short of a full tripling — fast days usually do. July remains the extreme setting of the same machine: chips down about 21%, this down about <b>57%</b>. Getting back to its 1-year high still takes about <b>145%</b>. And today opens with a chip stock already marked down: Marvell beat, raised its outlook, and fell about <b>7%</b> in evening trading anyway. Whichever way chips go on that and on the Fed chairman's morning speech, this fund does three times as much, with no way to choose which.",
-      "bear_ko": "네 거래일을 그대로 적으면 이렇습니다. 7.83% 하락, 4.06% 상승, 0.80% 상승, 5.53% 상승. 그렇게 출렁이고도 이번 주는 약 <b>+2.0%</b>입니다. 반도체 펀드의 약 1.0%를 세 배 하면 약 3.1%인데 말입니다. 사라진 1%포인트는 방향이 두 번 바뀐 한 주에 매일 초기화가 걷어 간 값입니다. 이달 최고의 하루였던 목요일조차 완전한 세 배에서 0.3%포인트 모자랐습니다. 빠른 날은 대개 그렇습니다. 7월은 같은 기계의 극단 설정으로 남아 있습니다. 반도체가 약 21% 내릴 때 이 펀드는 약 <b>57%</b> 내렸습니다. 1년 최고가로 돌아가는 데는 여전히 약 <b>145%</b>가 필요합니다. 그리고 오늘은 이미 깎인 반도체 종목 하나와 함께 열립니다. 마벨은 예상을 넘기고 전망을 올리고도 저녁 거래에서 약 <b>7%</b> 내렸습니다. 반도체가 그것과 연준 의장의 아침 연설에 어느 쪽으로 반응하든, 이 펀드는 그 세 배로 움직입니다. 방향을 고를 방법은 없습니다."
+      "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, every single day. If chip stocks rise 2%, it rises about 6%. If they fall 2%, it falls about 6%. August, now closed, showed what that costs: the chip stocks ended the month higher, and this fund ended it <b>down about 1.7%</b>, because the month kept changing direction and the daily reset charges a toll at every turn. In July the same machinery cost it <b>57%</b> in a month when the overall market was flat. It sits about <b>63%</b> below its best price of the past year, and getting back there would take a rise of about <b>168%</b>.",
+      "plain_ko": "<b>이 항목은 특히 꼼꼼히 읽어보시기 바랍니다. 다섯 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>로 움직이도록 만들어졌고, 그것을 <b>매일</b> 새로 맞춥니다. 반도체가 2% 오르면 약 6% 오르고, 2% 내리면 약 6% 내립니다. 이제 장부가 닫힌 8월이 그 값을 보여 줬습니다. 반도체 주식은 한 달을 상승으로 마쳤는데, 이 펀드는 <b>약 1.7% 하락</b>으로 마쳤습니다. 한 달 내내 방향이 바뀌었고, 매일 초기화는 방향이 꺾일 때마다 통행료를 걷기 때문입니다. 7월에는 같은 장치가 시장 전체가 제자리인 동안 가치의 <b>57%</b>를 앗아갔습니다. 1년 최고가보다 약 <b>63%</b> 낮고, 거기로 돌아가려면 약 <b>168%</b>의 상승이 필요합니다.",
+      "bull_en": "It is still up <b>about 168%</b> for the year, and its good days show the machinery paying out instead of collecting: on Nvidia's results day last week it collected <b>5.53%</b> in one session — more than the plain chip fund often manages in a good week. The demand question that hung over the whole chip group has been closed by the company at the centre of it: <b>$96.2 billion</b> of sales in three months, about <b>$108 billion</b> guided for the next three, nothing counted from China. Nvidia is still spending into the buildout — $3.5 billion more on Monday. If chips move upward in a straight line, a triple-speed fund recovers faster than anything else on this page — the same machinery that bled August pays back at the same speed when the direction is right and keeps not changing. That is the honest other side, and it is the only honest version of it.",
+      "bull_ko": "올해 누적으로는 여전히 <b>약 168%</b> 상승이고, 좋은 날에는 이 장치가 걷어 가는 대신 지불하는 모습을 보여 줍니다. 지난주 엔비디아 실적의 날, 한 거래일에 <b>5.53%</b>를 거뒀습니다. 일반 반도체 펀드가 좋은 한 주에 버는 것보다 많은 경우가 흔합니다. 반도체 종목군 전체에 걸려 있던 수요 질문은 그 한가운데 있는 회사가 닫았습니다. 석 달 매출 <b>962억 달러</b>, 다음 석 달 약 <b>1,080억 달러</b> 제시, 중국은 계산에 넣지도 않았습니다. 엔비디아는 여전히 구축에 돈을 쓰고 있습니다. 월요일에도 35억 달러를 더 넣었습니다. 반도체가 한 방향으로 곧게 오른다면, 3배속 펀드는 이 페이지의 어떤 것보다 빨리 회복합니다. 8월에 피를 흘리게 한 그 장치는 방향이 맞고 또 바뀌지 않을 때 같은 속도로 돌려줍니다. 그것이 정직한 반대편이고, 그 반대편의 정직한 판본은 그것뿐입니다.",
+      "bear_en": "August, stated plainly: the chip group's best news month since spring, the plain chip fund up for the month — and this fund <b>down about 1.7%</b>. Nothing broke; the daily reset simply charged at every change of direction, and it compounds. July remains the extreme setting of the same machine: chips down about 21%, this down about <b>57%</b>. Getting back to its 1-year high still takes about <b>168%</b>. And the road just ahead is exactly the kind this fund handles worst: Broadcom on Wednesday and the jobs report on Friday, each able to swing chips hard in either direction, with oil, the Middle East and a global bond sell-off whipping the tape between them. More swings mean more direction changes, and every one has a price.",
+      "bear_ko": "8월을 그대로 적으면 이렇습니다. 반도체 종목군에 봄 이후 가장 좋은 소식이 나온 달, 일반 반도체 펀드는 월간 상승 — 그런데 이 펀드는 <b>약 1.7% 하락</b>입니다. 고장난 것은 없습니다. 매일 초기화가 방향이 바뀔 때마다 요금을 걷었을 뿐이고, 그것은 쌓입니다. 7월은 같은 기계의 극단 설정으로 남아 있습니다. 반도체가 약 21% 내릴 때 이 펀드는 약 <b>57%</b> 내렸습니다. 1년 최고가로 돌아가는 데는 여전히 약 <b>168%</b>가 필요합니다. 그리고 바로 앞의 길은 이 펀드가 가장 못 다루는 종류입니다. 수요일의 브로드컴과 금요일의 고용 보고서는 각각 반도체를 어느 방향으로든 세게 흔들 수 있고, 그 사이를 유가와 중동, 세계적 채권 매도가 채찍질하고 있습니다. 출렁임이 많다는 것은 방향이 자주 바뀐다는 뜻이고, 그때마다 값을 치릅니다."
     },
     "cost": {
-      "price": "$934.66",
+      "price": "$943.89",
       "day_arrow": "▼",
-      "day_en": "−2.24% on Thursday",
-      "day_ko": "목요일 −2.24%",
+      "day_en": "−0.17% on Monday",
+      "day_ko": "월요일 −0.17%",
       "day_dir": "dn",
       "week_arrow": "▼",
-      "week_en": "≈ −1.38% so far this week",
-      "week_ko": "이번 주 ≈ −1.38%",
+      "week_en": "≈ −0.17% so far this week",
+      "week_ko": "이번 주 들어 ≈ −0.17%",
       "week_dir": "dn",
       "month_arrow": "▼",
-      "month_en": "≈ −1.81% so far in August",
-      "month_ko": "8월 들어 ≈ −1.81%",
+      "month_en": "≈ −0.84% for all of August",
+      "month_ko": "8월 전체 ≈ −0.84%",
       "month_dir": "dn",
       "drawdown_arrow": "▼",
-      "drawdown": "≈ 14.8%",
+      "drawdown": "≈ 14.0%",
       "drawdown_dir": "dn",
-      "drawdown_fact_en": "≈ 14.8%",
-      "drawdown_fact_ko": "≈ 14.8%",
-      "take_en": "Three falls in a row — its test is Sept 2",
-      "take_ko": "사흘 연속 하락 — 시험대는 9월 2일",
-      "take_tone": "c-neg",
+      "drawdown_fact_en": "≈ 14.0%",
+      "drawdown_fact_ko": "≈ 14.0%",
+      "take_en": "Quiet — August sales land Wednesday",
+      "take_ko": "차분 — 수요일에 8월 매출 발표",
+      "take_tone": "c-neu",
       "confirmed": true,
       "derived": true,
       "stale": false,
-      "note_en": "Costco fell <b>2.24%</b> on Thursday to <b>$934.66</b> — a third fall in a row, the worst day of your five, and it came on the market's best day since early August. Nothing came from the company; the fall was the industry's. Retail spent Thursday being graded hard, and the grading did not follow the results: <b>Best Buy beat expectations, raised its full-year forecast, and still fell about 4.4%</b>, with reports pointing at doubts about how durable the raised outlook is. Dollar Tree fell about 3% on a soft profit forecast; only Dollar General, up about 5% on a raised outlook, was rewarded. A market that sells a retailer on good news is telling you what it thinks of the shopper — and the backdrop agrees: consumer confidence sits at its lowest since January. The three-day slide has now done something worth saying plainly: Costco is <b>down about 1.8% for August</b>, the only one of your five in the red for the month, and the week stands at about <b>−1.4%</b>. The shares sit about <b>14.8%</b> below their peak, priced at about <b>47 times</b> profits. Costco's own answer comes with its August sales on <b>September 2</b> — the number that matters is sales growth at year-old stores, which ran at 8.9% in July.",
-      "note_ko": "코스트코는 목요일에 <b>2.24%</b> 내린 <b>934.66달러</b>가 됐습니다. 사흘 연속 하락이고, 보유 다섯 중 가장 나쁜 하루였으며, 그것도 8월 초 이후 시장이 가장 좋았던 날에 나온 하락입니다. 회사에서 나온 소식은 없습니다. 하락은 업계의 것이었습니다. 유통업은 목요일 내내 박하게 채점됐고, 채점은 성적표를 따라가지 않았습니다. <b>베스트바이는 예상을 넘기고 연간 전망을 올리고도 약 4.4% 내렸습니다.</b> 보도들은 올린 전망이 얼마나 오래갈지에 대한 의심을 이유로 꼽았습니다. 달러 트리는 무른 이익 전망에 약 3% 내렸고, 전망을 올린 달러 제너럴만 약 5% 올라 보상을 받았습니다. 좋은 소식을 낸 유통업체를 파는 시장은 소비자를 어떻게 보고 있는지 말해 주는 셈이고, 배경도 같은 방향입니다. 소비자 신뢰지수는 1월 이후 최저입니다. 사흘의 미끄러짐은 이제 분명히 말해 둘 만한 일을 만들었습니다. 코스트코는 <b>8월 들어 약 1.8% 하락</b>으로, 보유 다섯 중 유일하게 이달 마이너스이며, 이번 주는 약 <b>−1.4%</b>입니다. 주가는 최고가보다 약 <b>14.8%</b> 낮고, 이익의 약 <b>47배</b> 값입니다. 코스트코 자신의 답은 <b>9월 2일</b> 8월 매출과 함께 나옵니다. 중요한 숫자는 1년 넘은 매장의 매출 증가율로, 7월에는 8.9%였습니다.",
+      "note_en": "Costco slipped <b>0.17%</b> on Monday to <b>$943.89</b> — a quiet end to a soft month for the shares, which finished August down about <b>0.8%</b> while its business kept growing. No news came from the company; the day's action was elsewhere, in oil and interest rates. The wait ends this week: <b>August sales arrive Wednesday at 1:15 in the afternoon Pacific time</b>, and the number that matters is growth at stores open at least a year, which ran at <b>8.9%</b> in July. The backdrop hardened a little on Monday. The rate on a 30-year government bond rose to about <b>5.25%</b>, and a share priced at about <b>48 times</b> profits with a dividend near 0.6% a year competes directly with that. One thread from the tracker below reaches this shelf: the tariff-free imported beef the White House ordered starts arriving this month — the first of three 100,000-tonne batches is September's — and cheaper meat cuts both ways for a grocer. The shares sit about <b>14%</b> below their peak.",
+      "note_ko": "코스트코는 월요일에 <b>0.17%</b> 내려 <b>943.89달러</b>가 됐습니다. 주가로서는 부진했던 한 달의 조용한 마무리입니다. 8월을 약 <b>0.8%</b> 하락으로 마쳤지만, 사업 자체는 계속 크고 있었습니다. 회사에서는 소식이 없었고, 그날의 사건은 다른 곳 — 유가와 금리 — 에 있었습니다. 기다림은 이번 주에 끝납니다. <b>8월 매출이 수요일 서부 시각 오후 1시 15분에 나옵니다.</b> 중요한 숫자는 문을 연 지 1년이 넘은 매장의 매출 증가율로, 7월에는 <b>8.9%</b>였습니다. 배경은 월요일에 조금 더 단단해졌습니다. 30년물 국채 금리가 약 <b>5.25%</b>로 올랐는데, 연 0.6% 남짓의 배당을 주며 이익의 약 <b>48배</b> 값이 매겨진 주식은 그것과 직접 경쟁합니다. 아래 기록란의 실 한 가닥이 이 진열대에 닿습니다. 백악관이 명령한 무관세 수입 소고기가 이달부터 들어옵니다. 10만 톤씩 세 차례 중 첫 번째가 9월분입니다. 고기가 싸지는 것은 식품 유통업체에 양쪽으로 작용합니다. 주가는 최고가보다 약 <b>14%</b> 낮습니다.",
       "ticker": "COST",
       "name_en": "Costco",
       "name_ko": "코스트코",
-      "week_fact_en": "down ≈ 1.38%",
-      "week_fact_ko": "≈ 1.38% 하락",
+      "week_fact_en": "down ≈ 0.17% after one session",
+      "week_fact_ko": "1거래일 기준 ≈ 0.17% 하락",
       "news_en": [
+        {
+          "dt": "Aug 31",
+          "tx": "<b>Slipped 0.17% to $943.89 — a quiet last day of August, which ended down about 0.8%.</b> No company news; the day belonged to oil and rates. The month's test is now dated: <b>August sales on Wednesday at 1:15 in the afternoon Pacific time</b>, where July's pace at year-old stores was <b>8.9%</b>."
+        },
+        {
+          "dt": "Aug 28",
+          "tx": "<b>Rose 1.16% to $945.47 — the only one of your five to rise, on the day the Fed speech cooled the market.</b> No company news; money moved toward steadier names. The week ended about flat, <b>−0.24%</b>, and its own test comes Wednesday: August sales, where July's pace at year-old stores was <b>8.9%</b>."
+        },
         {
           "dt": "Aug 27",
           "tx": "<b>Fell 2.24% to $934.66 — a third fall in a row, the worst of your five, and now down for August.</b> No company news; retail was graded hard across the board. <b>Best Buy beat, raised its forecast, and still fell about 4.4%</b>; Dollar Tree fell about 3%; only Dollar General, up about 5%, was rewarded."
@@ -532,17 +540,17 @@
         {
           "dt": "Aug 26",
           "tx": "<b>Fell 0.41% to $956.12 — a second small fall, and no news from the company.</b> The White House signed a proclamation letting <b>300,000 tonnes</b> of imported beef in tariff-free from September 1 to bring ground-beef prices down; ranchers objected and <b>Tyson Foods closed down 1.08%</b>."
-        },
-        {
-          "dt": "Aug 25",
-          "tx": "<b>Fell 1.17% to $960.01, giving back about half of Monday's jump — the only one of your five to fall.</b> No news from Costco. Money moved back toward technology, and retail had a bad day of its own: <b>Dick's Sporting Goods fell about 30%</b> after cutting its forecast, and consumer confidence hit its lowest since January."
-        },
-        {
-          "dt": "Aug 24",
-          "tx": "<b>Rose 2.50% to $971.40 — its biggest one-day gain since mid-July, and the only one of your five to rise.</b> No news from Costco itself. Market reports describe money rotating out of the riskier technology shares and into steadier blue-chip names; the Dow rose 140 points on the same movement."
         }
       ],
       "news_ko": [
+        {
+          "dt": "8월 31일",
+          "tx": "<b>0.17% 내린 943.89달러 — 8월의 조용한 마지막 거래일이었고, 한 달은 약 0.8% 하락으로 끝났습니다.</b> 회사 소식은 없었고, 그날의 주인공은 유가와 금리였습니다. 이달의 시험은 이제 날짜가 잡혔습니다. <b>수요일 서부 시각 오후 1시 15분의 8월 매출</b>이고, 7월에 1년 넘은 매장의 증가율은 <b>8.9%</b>였습니다."
+        },
+        {
+          "dt": "8월 28일",
+          "tx": "<b>1.16% 올라 945.47달러 — 연준 연설이 시장을 식힌 날, 보유 다섯 중 유일하게 올랐습니다.</b> 회사 소식은 없었고, 돈은 더 안정적인 종목 쪽으로 움직였습니다. 한 주는 <b>−0.24%</b>로 거의 제자리로 끝났고, 자체 시험은 수요일의 8월 매출입니다. 7월에 1년 넘은 매장의 증가율은 <b>8.9%</b>였습니다."
+        },
         {
           "dt": "8월 27일",
           "tx": "<b>2.24% 내린 934.66달러 — 사흘 연속 하락으로 보유 다섯 중 최악이었고, 이제 8월 누적도 마이너스입니다.</b> 회사 소식은 없었고, 유통업 전체가 박하게 채점됐습니다. <b>베스트바이는 예상을 넘기고 전망을 올리고도 약 4.4% 내렸고</b>, 달러 트리는 약 3% 내렸으며, 약 5% 오른 달러 제너럴만 보상을 받았습니다."
@@ -550,18 +558,10 @@
         {
           "dt": "8월 26일",
           "tx": "<b>0.41% 내린 956.12달러 — 이틀째 소폭 하락이고 회사 소식은 없었습니다.</b> 백악관은 다진 소고기 값을 낮추겠다며 9월 1일부터 수입 소고기 <b>30만 톤</b>을 무관세로 들여오는 포고문에 서명했습니다. 축산 농가는 반대했고 <b>타이슨 푸즈는 1.08% 내린 채</b> 마쳤습니다."
-        },
-        {
-          "dt": "8월 25일",
-          "tx": "<b>1.17% 내린 960.01달러 — 월요일 상승분의 절반쯤을 돌려줬고, 보유 다섯 중 유일하게 내렸습니다.</b> 회사 소식은 없었습니다. 돈은 기술주 쪽으로 되돌아갔고, 유통업은 그 자체로 나쁜 하루였습니다. <b>딕스 스포팅 굿즈가 연간 전망을 낮춘 뒤 약 30% 내렸고</b>, 소비자 신뢰지수는 1월 이후 최저였습니다."
-        },
-        {
-          "dt": "8월 24일",
-          "tx": "<b>2.50% 올라 971.40달러 — 7월 중순 이후 하루 상승폭으로는 가장 컸고, 보유 다섯 중 유일하게 오른 종목이었습니다.</b> 회사 자체 소식은 없었습니다. 시장 보도들은 돈이 위험이 큰 기술주에서 안정적인 대형 우량주로 옮겨 갔다고 설명하며, 다우존스도 같은 움직임에 140포인트 올랐습니다."
         }
       ],
-      "verdict_en": "<b>What I'd watch: Costco's own August sales on Wednesday, September 2, then full results on Thursday, September 24 — with the shopper news as the backdrop.</b> That backdrop got heavier this week. Consumer confidence sits at its lowest since January, and the market's grading of retailers has stopped following their results: Walmart and Dick's were marked down for saying demand slowed, and now <b>Best Buy has been marked down for a quarter it beat</b> — forecast raised, shares down about 4.4% anyway. Three falls in a row have put Costco in the red for August, the only one of your five there. All of it still cuts both ways for this share. Shoppers making trade-offs and hunting value are exactly who Costco serves — its July sales rose 10.7%, and both dollar-store chains beat on sales this week, which says the value shopper is still showing up. But Costco is priced at about <b>47 times</b> profits, and the week has shown what that multiple buys a retailer whose news disappoints even slightly. The number to hold onto is still <b>8.9%</b>, July's sales growth at stores open at least a year. If the September 2 report keeps that pace, the bad retail news stays other people's news; if it slows, you have already seen what the reception looks like. The tariff-free beef arriving from <b>September 1</b> is still worth half an eye — meat is a large part of what a warehouse club sells. And the quiet weight has not changed: about 0.6% a year in dividends against a 30-year government bond near <b>5.19%</b>.",
-      "verdict_ko": "<b>제가 지켜볼 것: 9월 2일 수요일 코스트코 자체의 8월 매출, 그리고 9월 24일 목요일의 분기 전체 실적입니다. 소비자에 관한 소식이 그 배경입니다.</b> 그 배경은 이번 주 더 무거워졌습니다. 소비자 신뢰지수는 1월 이후 최저이고, 유통업체를 향한 시장의 채점은 성적표를 따라가지 않게 됐습니다. 월마트와 딕스는 수요가 느려졌다고 말한 대가로 깎였는데, 이제는 <b>예상을 넘긴 분기를 낸 베스트바이까지 깎였습니다</b>. 전망을 올리고도 주가는 약 4.4% 내렸습니다. 사흘 연속 하락으로 코스트코는 8월 누적 마이너스가 됐고, 보유 다섯 중 유일합니다. 이 모든 것은 여전히 이 주식에 양쪽으로 작용합니다. 소비를 저울질하며 가성비를 찾는 손님이야말로 코스트코의 손님입니다. 7월 매출은 10.7% 늘었고, 이번 주 대형 달러 스토어 두 곳 모두 매출이 예상을 넘었습니다. 가성비 손님이 여전히 오고 있다는 뜻입니다. 하지만 코스트코의 값은 이익의 약 <b>47배</b>이고, 그 배수가 조금이라도 실망스러운 소식을 낸 유통업체에 무엇을 사 주는지는 이번 주가 보여 줬습니다. 기억해 두실 숫자는 여전히 <b>8.9%</b>입니다. 7월에 문을 연 지 1년이 넘은 매장의 매출 증가율입니다. 9월 2일 발표가 그 속도를 지키면 나쁜 유통 소식은 남의 이야기로 남습니다. 느려진다면, 어떤 대접을 받는지는 이미 보셨습니다. <b>9월 1일</b>부터 들어오는 무관세 소고기도 반쯤 눈여겨볼 만합니다. 고기는 창고형 클럽이 파는 것의 큰 몫입니다. 조용한 무게는 그대로입니다. 이 주식의 배당은 연 약 0.6%인데 30년물 국채는 <b>5.19%</b> 부근을 줍니다.",
+      "verdict_en": "<b>What I'd watch: Costco's own August sales on Wednesday, September 2, at 1:15 in the afternoon Pacific time, then full results on Thursday, September 24.</b> The number to hold onto is <b>8.9%</b> — July's sales growth at stores open at least a year. If Wednesday's report keeps that pace, the summer of bad retail news stays other people's news; if it slows, last week showed the reception — the market marked Best Buy down for a quarter it <b>won</b>. The backdrop still cuts both ways. Shoppers hunting value are exactly who Costco serves, and gasoline over $4 a gallon all August makes more of them — but the shares are priced at about <b>48 times</b> profits, and a price like that has no room in it for a slowdown. The quiet weight got heavier this week: about 0.6% a year in dividends against a 30-year government bond near <b>5.25%</b>, with long-term rates rising around the world. The tariff-free beef arriving this month is still worth half an eye — meat is a large part of what a warehouse club sells.",
+      "verdict_ko": "<b>제가 지켜볼 것: 9월 2일 수요일 서부 시각 오후 1시 15분의 코스트코 8월 매출, 그리고 9월 24일 목요일의 분기 전체 실적입니다.</b> 기억해 두실 숫자는 <b>8.9%</b>입니다. 7월에, 문을 연 지 1년이 넘은 매장의 매출 증가율입니다. 수요일 발표가 그 속도를 지키면 유통업의 나쁜 여름은 남의 이야기로 남습니다. 느려진다면 어떤 대접이 기다리는지는 지난주가 보여 줬습니다. 시장은 <b>이긴</b> 분기를 낸 베스트바이마저 깎았습니다. 배경은 여전히 양쪽으로 작용합니다. 가성비를 찾는 손님이야말로 코스트코의 손님이고, 8월 내내 갤런당 4달러를 넘은 휘발유는 그런 손님을 더 만듭니다. 하지만 주가는 이익의 약 <b>48배</b> 값이고, 그런 값에는 둔화를 받아 줄 자리가 없습니다. 조용한 무게는 이번 주 더 무거워졌습니다. 이 주식의 배당은 연 약 0.6%인데 30년물 국채는 <b>5.25%</b> 부근을 주고, 장기 금리는 세계 곳곳에서 오르고 있습니다. 이달부터 들어오는 무관세 소고기도 반쯤 눈여겨볼 만합니다. 고기는 창고형 클럽이 파는 것의 큰 몫입니다.",
       "base": {
         "year_start": 859.11,
         "high_1y": 1097.05,
@@ -598,25 +598,25 @@
           "v_ko": "연 약 0.6%"
         }
       ],
-      "plain_en": "The warehouse retailer. On Thursday it fell <b>2.24%</b> to <b>$934.66</b> — a third fall in a row, on a day the market was celebrating and retail was not invited. Nothing came from the company; the whole industry was marked down, even Best Buy, which beat expectations. Costco's own <b>business is doing well</b> — July sales up 10.7%, sales at year-old stores up 8.9%. The price is about 14.8% below its peak because the shares had become expensive, not because the company is struggling. For the year it is up <b>about 8.8%</b>, now clearly behind the market's 12.9%.",
-      "plain_ko": "창고형 대형 마트입니다. 목요일에는 <b>2.24%</b> 내린 <b>934.66달러</b>가 됐습니다. 사흘 연속 하락인데, 시장은 잔치를 벌이고 유통업만 초대받지 못한 날이었습니다. 회사에서 나온 소식은 없었습니다. 업계 전체가 깎였고, 예상을 넘긴 베스트바이조차 그랬습니다. 코스트코 자체의 <b>사업은 잘되고 있습니다.</b> 7월 매출이 10.7% 늘었고 1년 넘은 매장 매출도 8.9% 늘었습니다. 주가가 최고가보다 약 14.8% 낮은 것은 회사가 어려워서가 아니라 그 전까지 주식이 너무 비싸져 있었기 때문입니다. 올해 누적으로는 <b>약 8.8% 상승</b>으로, 시장의 12.9%에 뚜렷이 뒤집니다.",
-      "bull_en": "Double-digit sales growth that did not slow in July, an online business growing 17.7% a year, and loyal paying members. Every piece of bad retail news this month argues for Costco as much as against it: customers making trade-offs and hunting value are exactly who a warehouse club serves, and this week made the point twice — both big dollar-store chains, the purest value plays in retail, beat on sales. The trouble keeps landing on full-price goods (Dick's trainers, Best Buy's electronics outlook), not on groceries and bulk staples. The White House is now actively trying to push meat prices down, with <b>300,000 tonnes</b> of tariff-free beef arriving from September 1; a club that sells food in bulk is on the right side of cheaper food. And the company keeps widening what it sells — this month it announced its first full Medicare partnership, with the non-profit insurer SCAN, aimed at markets holding around five million Medicare enrollees.",
-      "bull_ko": "7월에도 느려지지 않은 두 자릿수 매출 성장, 연 17.7%로 크는 온라인 사업, 그리고 회비를 내는 충성 고객이 있습니다. 이달의 나쁜 유통 소식은 모두 코스트코에 불리한 만큼 유리하기도 합니다. 소비를 저울질하며 가성비를 찾는 손님이야말로 창고형 클럽의 손님이고, 이번 주는 그 점을 두 번 보여 줬습니다. 유통업에서 가성비에 가장 가까운 대형 달러 스토어 두 곳 모두 매출이 예상을 넘었습니다. 문제는 계속 제값 상품 쪽에서 나고 있습니다(딕스의 운동화, 베스트바이의 전자제품 전망). 식료품과 대용량 생필품이 아닙니다. 백악관은 지금 고기 값을 적극적으로 끌어내리려 하고 있습니다. 9월 1일부터 무관세 소고기 <b>30만 톤</b>이 들어옵니다. 식품을 대용량으로 파는 클럽은 식품이 싸지는 쪽에 서 있습니다. 회사는 파는 것의 범위도 계속 넓히고 있습니다. 이달에는 비영리 보험사 SCAN과 첫 메디케어 제휴를 발표했고, 대상 지역의 메디케어 가입자는 약 500만 명 규모로 알려져 있습니다.",
-      "bear_en": "At about <b>47 times</b> profits it is expensive, and the alternative still pays well: about 0.6% a year in dividends against a 30-year government bond near <b>5.19%</b>. The news about American households keeps getting worse rather than better — consumer confidence at its lowest since January, Walmart and Dick's marked down for slowing demand, and now Best Buy marked down about 4.4% for a quarter it <b>won</b>. That last one is the heaviest for this share, because it says a good report may no longer be enough at a high price, and Costco's own numbers arrive September 2 with no room in the price for a slowdown. Three straight falls have put the shares down about <b>1.8% for August</b> — the only one of your five in the red for the month — and the year's gain of about 8.8% now clearly trails the market's 12.9%. The cheaper-beef story cuts the other way too: prices coming down means less money through the till on the same basket, arriving alongside heavier discounting across the whole industry.",
-      "bear_ko": "이익의 약 <b>47배</b>는 비싼 편이고, 대안의 보수는 여전히 좋습니다. 이 주식의 배당은 연 약 0.6%인데 30년물 국채는 <b>5.19%</b> 부근을 줍니다. 미국 가계에 관한 소식은 나아지기는커녕 계속 나빠지고 있습니다. 소비자 신뢰지수는 1월 이후 최저이고, 월마트와 딕스는 수요 둔화로 깎였으며, 이제는 <b>이긴</b> 분기를 낸 베스트바이까지 약 4.4% 깎였습니다. 이 주식에 가장 무거운 것은 마지막 사례입니다. 비싼 값에는 좋은 성적표조차 충분하지 않을 수 있다는 뜻이고, 코스트코 자신의 숫자는 9월 2일에 나오는데 주가에는 둔화를 받아 줄 여유가 없습니다. 사흘 연속 하락으로 주가는 <b>8월 들어 약 1.8% 하락</b>이 됐습니다. 보유 다섯 중 유일하게 이달 마이너스입니다. 올해 누적 약 8.8% 상승은 시장의 12.9%에 뚜렷이 뒤집니다. 소고기가 싸진다는 이야기는 반대로도 작동합니다. 값이 내려간다는 것은 같은 장바구니로 계산대를 지나는 돈이 줄어든다는 뜻이고, 업계 전체의 할인 경쟁이 심해지는 것과 함께 옵니다."
+      "plain_en": "The warehouse retailer. On Monday it slipped <b>0.17%</b> to <b>$943.89</b>, closing an August in which the shares fell about <b>0.8%</b> — the quietest month of your five, in both directions. Costco's own <b>business is doing well</b> — July sales up 10.7%, sales at year-old stores up 8.9% — and its August numbers arrive Wednesday afternoon. The price is about 14% below its peak because the shares had become expensive, not because the company is struggling. For the year it is up <b>about 9.9%</b>, behind the market's 12.3%.",
+      "plain_ko": "창고형 대형 마트입니다. 월요일에 <b>0.17%</b> 내려 <b>943.89달러</b>가 됐고, 주가가 약 <b>0.8%</b> 내린 8월을 마감했습니다. 어느 방향으로든 보유 다섯 중 가장 조용한 한 달이었습니다. 코스트코 자체의 <b>사업은 잘되고 있습니다.</b> 7월 매출이 10.7% 늘었고 1년 넘은 매장 매출도 8.9% 늘었으며, 8월 숫자는 수요일 오후에 나옵니다. 주가가 최고가보다 약 14% 낮은 것은 회사가 어려워서가 아니라 그 전까지 주식이 너무 비싸져 있었기 때문입니다. 올해 누적으로는 <b>약 9.9% 상승</b>으로, 시장의 12.3%에 뒤집니다.",
+      "bull_en": "Double-digit sales growth that did not slow in July, an online business growing 17.7% a year, and loyal paying members. The squeeze on households keeps arguing for Costco: gasoline averaged over <b>$4</b> a gallon all August, consumer confidence sits near its lowest since January, and customers making trade-offs and hunting value are exactly who a warehouse club serves — both big dollar-store chains beat on sales last week. The trouble in retail keeps landing on full-price goods, not on groceries and bulk staples. When the market worries — Friday's Fed speech, Monday's oil scare — money looks for steady shelves, and this is one of them. The White House is actively pushing meat prices down, with tariff-free beef arriving from this month — a club that sells food in bulk is on the right side of cheaper food. And the company keeps widening what it sells, including its first full Medicare partnership with the non-profit insurer SCAN.",
+      "bull_ko": "7월에도 느려지지 않은 두 자릿수 매출 성장, 연 17.7%로 크는 온라인 사업, 그리고 회비를 내는 충성 고객이 있습니다. 가계가 받는 압박은 계속 코스트코 쪽 논거가 됩니다. 8월 내내 휘발유가 갤런당 평균 <b>4달러</b>를 넘었고, 소비자 신뢰지수는 1월 이후 최저 부근이며, 소비를 저울질하며 가성비를 찾는 손님이야말로 창고형 클럽의 손님입니다. 지난주 대형 달러 스토어 두 곳 모두 매출이 예상을 넘었습니다. 유통업의 문제는 계속 제값 상품 쪽에서 나고 있습니다. 식료품과 대용량 생필품이 아닙니다. 시장이 걱정할 때 — 금요일의 연준 연설, 월요일의 유가 불안 — 돈은 꾸준한 진열대를 찾고, 이 회사가 그중 하나입니다. 백악관은 고기 값을 적극적으로 끌어내리려 하고 있습니다. 이달부터 무관세 소고기가 들어옵니다. 식품을 대용량으로 파는 클럽은 식품이 싸지는 쪽에 서 있습니다. 회사는 파는 것의 범위도 계속 넓히고 있습니다. 비영리 보험사 SCAN과의 첫 메디케어 제휴가 그 예입니다.",
+      "bear_en": "At about <b>48 times</b> profits it is expensive, and the alternative pays better every week this keeps up: about 0.6% a year in dividends against a 30-year government bond near <b>5.25%</b>, with long-term rates now rising around the world. The news about American households keeps getting worse rather than better — and the market marked Best Buy down about 4.4% for a quarter it <b>won</b>, which says a good report may no longer be enough at a high price. Costco's own numbers arrive Wednesday with no room in the price for a slowdown, and August already ended red: down about <b>0.8%</b>, with the year's gain of about 9.9% trailing the market's 12.3%. The cheaper-beef story cuts the other way too: prices coming down means less money through the till on the same basket, arriving alongside heavier discounting across the whole industry.",
+      "bear_ko": "이익의 약 <b>48배</b>는 비싼 편이고, 이런 상황이 이어질수록 대안의 보수가 매주 좋아집니다. 이 주식의 배당은 연 약 0.6%인데 30년물 국채는 <b>5.25%</b> 부근을 주고, 장기 금리는 이제 세계 곳곳에서 오르고 있습니다. 미국 가계에 관한 소식은 나아지기는커녕 계속 나빠지고 있습니다. 그리고 시장은 <b>이긴</b> 분기를 낸 베스트바이를 약 4.4% 깎았습니다. 비싼 값에는 좋은 성적표조차 충분하지 않을 수 있다는 뜻입니다. 코스트코 자신의 숫자는 수요일에 나오는데 주가에는 둔화를 받아 줄 여유가 없고, 8월은 이미 마이너스로 끝났습니다. 약 <b>0.8%</b> 하락이고, 올해 누적 약 9.9% 상승은 시장의 12.3%에 뒤집니다. 소고기가 싸진다는 이야기는 반대로도 작동합니다. 값이 내려간다는 것은 같은 장바구니로 계산대를 지나는 돈이 줄어든다는 뜻이고, 업계 전체의 할인 경쟁이 심해지는 것과 함께 옵니다."
     }
   },
   "week": {
-    "label_en": "Wednesday August 26, 2026 — three sessions into the week",
-    "label_ko": "2026년 8월 26일(수) · 새로운 한 주의 세 번째 거래일",
-    "summary_en": "Three sessions into the week, the market spent Wednesday standing still on purpose. The inflation report arrived before the open and settled nothing: the gauge the Fed watches most closely rose <b>3.3%</b> over the past year excluding food and fuel, the same as June and exactly what was expected, with the broader measure at <b>3.7%</b>. The second reading of economic growth confirmed <b>1.5%</b>. Long-term rates ticked back up after two days of falling — the 10-year to about <b>4.66%</b>, the 30-year to about <b>5.19%</b>. The scoreboard for the day is almost all zeroes: <b>SPX −0.02%</b>, <b>QQQ +0.09%</b>, <b>NVDA −1.59%</b>, <b>SOXL +0.80%</b>, <b>COST −0.41%</b>. The Dow gave up <b>113.52 points</b>, ending a three-day run. The one that moved, Nvidia, fell on nerves before its own report while the rest of the chip group edged higher. Then the report came after the close and beat: <b>$96.2 billion</b> of sales in three months, more than double a year ago, <b>$2.22</b> a share, and about <b>$108 billion</b> guided for the next three — a guide that assumes no revenue at all from China. The shares rose about <b>4.7%</b> in after-hours trading. The one number the other way: Nvidia expects its profit on each sales dollar to slip from 75% to about <b>74%</b> next quarter, because memory costs more. For August all five are ahead, with COST's <b>+0.4%</b> now the narrowest.",
-    "summary_ko": "한 주의 세 번째 거래일까지 오면서, 시장은 수요일을 일부러 가만히 서서 보냈습니다. 물가 보고서는 장이 열리기 전에 나왔지만 아무것도 정리해 주지 못했습니다. 연준이 가장 중시하는 지표는 식품과 연료를 뺀 기준으로 1년 전보다 <b>3.3%</b> 올랐는데, 6월과 같고 예상과도 같았습니다. 더 넓은 기준은 <b>3.7%</b>였습니다. 경제 성장률 2차 발표는 <b>1.5%</b>를 확인했습니다. 장기 금리는 이틀 내리다 다시 올라 10년물이 약 <b>4.66%</b>, 30년물이 약 <b>5.19%</b>가 됐습니다. 이날의 성적표는 거의 전부 0에 가깝습니다. <b>SPX −0.02%</b>, <b>QQQ +0.09%</b>, <b>NVDA −1.59%</b>, <b>SOXL +0.80%</b>, <b>COST −0.41%</b>입니다. 다우존스는 <b>113.52포인트</b>를 내주며 사흘 연속 상승을 멈췄습니다. 유일하게 움직인 엔비디아는 자체 실적을 앞둔 긴장에 내렸고, 나머지 반도체 종목들은 조금씩 올랐습니다. 그리고 장 마감 뒤 그 실적이 나왔고 예상을 넘었습니다. 석 달 매출 <b>962억 달러</b>로 1년 전의 두 배가 넘었고, 주당 이익 <b>2.22달러</b>, 다음 석 달은 약 <b>1,080억 달러</b>를 제시했습니다. 중국 매출은 전혀 없다고 가정한 숫자입니다. 주가는 시간외 거래에서 약 <b>4.7%</b> 올랐습니다. 반대 방향을 가리킨 숫자 하나는 이렇습니다. 엔비디아는 매출 1달러당 남기는 이익이 다음 분기에 75%에서 약 <b>74%</b>로 내려갈 것으로 봅니다. 메모리 값이 올랐기 때문입니다. 8월 누적으로는 다섯이 모두 올라 있고, 이제 COST의 <b>+0.4%</b>가 가장 작습니다.",
+    "label_en": "Monday August 24 to Friday August 28, 2026 — the full week",
+    "label_ko": "2026년 8월 24일(월)~28일(금) · 한 주 전체",
+    "summary_en": "This week contained the year's biggest earnings report, a single-day rise worth more than $400 billion, the first Jackson Hole speech of a new Fed chairman, and a trade fight moving onto the calendar — and after all of it, the scoreboard barely moved. From last Friday's close to this one: <b>SPX ≈ +0.49%</b>, <b>QQQ ≈ +0.42%</b>, <b>NVDA ≈ +1.32%</b>, <b>COST ≈ −0.24%</b> — and <b>SOXL ≈ −7.68%</b>, the one big number, which is the daily-reset machinery at work and is explained below. The shape of the week: Monday fell on a memory-cost scare, Tuesday and Wednesday waited, Thursday exploded upward when Nvidia's results beat everything — <b>$96.2 billion</b> of sales in three months, about <b>$108 billion</b> guided for the next three — and Friday gave much of it back when Kevin Warsh, in his first speech as Fed chairman, said the Fed's \"predominant focus right now should be on prices\". One measure of the odds of a September rate <b>rise</b> ended the week at better than even, from about one-in-three before he spoke. Underneath, the same fine print all five days: the gains were narrow. Small companies fell about <b>1.5%</b> for the week, most stocks fell on the index's best day, and retailers were marked down even for good reports. With one August session left, the month stands at: SPX <b>+3.0%</b>, QQQ <b>+4.1%</b>, NVDA <b>+8.4%</b>, SOXL <b>−2.9%</b>, COST <b>−0.7%</b>.",
+    "summary_ko": "이번 주에는 올해 가장 큰 실적 발표, 하루에 4,000억 달러가 넘는 가치를 보탠 상승, 새 연준 의장의 첫 잭슨홀 연설, 달력 위로 올라온 무역 다툼이 모두 있었습니다. 그리고 그 전부가 지나간 뒤에도 점수판은 거의 움직이지 않았습니다. 지난 금요일 종가에서 이번 금요일 종가까지: <b>SPX ≈ +0.49%</b>, <b>QQQ ≈ +0.42%</b>, <b>NVDA ≈ +1.32%</b>, <b>COST ≈ −0.24%</b>, 그리고 <b>SOXL ≈ −7.68%</b> — 유일하게 큰 이 숫자는 매일 초기화 장치가 만든 것이고, 아래에서 설명합니다. 한 주의 모양은 이랬습니다. 월요일은 메모리 비용 걱정에 내렸고, 화요일과 수요일은 기다렸고, 목요일은 엔비디아 실적 — 석 달 매출 <b>962억 달러</b>, 다음 석 달 약 <b>1,080억 달러</b> 제시 — 이 모든 예상을 넘기며 위로 폭발했고, 금요일은 새 연준 의장 케빈 워시가 첫 연설에서 연준의 \"지금 최우선 초점은 물가여야 한다\"고 말하자 그 상승의 많은 부분을 되돌렸습니다. 9월 금리 <b>인상</b> 확률을 재는 한 지표는 그가 말하기 전의 3분의 1 수준에서 절반을 넘는 수준으로 올라 한 주를 마쳤습니다. 그 아래에는 닷새 내내 같은 작은 글씨가 있었습니다. 상승은 좁았습니다. 소형주는 한 주에 약 <b>1.5%</b> 내렸고, 지수가 가장 좋았던 날에도 대부분의 종목은 내렸으며, 유통업체는 좋은 성적표를 내고도 깎였습니다. 8월 거래일이 하루 남은 시점의 월간 성적은 SPX <b>+3.0%</b>, QQQ <b>+4.1%</b>, NVDA <b>+8.4%</b>, SOXL <b>−2.9%</b>, COST <b>−0.7%</b>입니다.",
     "drivers": [
       {
-        "headline_en": "The one that mattered: Nvidia answered, after the bell",
-        "headline_ko": "가장 중요했던 것 — 엔비디아가 종이 울린 뒤에 답했습니다",
-        "text_en": "The question that has been hanging over this page since Monday of last week was whether the AI buildout is still buying. Nvidia answered it after Wednesday's close, and the answer was yes, by a wider margin than expected. Sales for the three months were <b>$96.2 billion</b> — about <b>$4 billion</b> above what analysts wanted and more than double the same three months a year ago. Profit was <b>$2.22</b> a share against about $2.09 expected. The data-centre business sold <b>$89.0 billion</b>, up 117% in a year. And for the next three months the company guided to about <b>$108 billion</b>, while assuming <b>no revenue at all</b> from selling data-centre chips into China. One line went the other way, and it is the one this page has been watching: Nvidia expects to keep about <b>74 cents</b> of profit on each sales dollar next quarter instead of 75, because the memory inside its servers costs more. That is the cost worry which knocked these shares down seven sessions in a row, showing up for the first time in the company's own arithmetic — small, but real. The shares fell about 1.3% in the first half-hour, turned once the company talked about next year, and ended the after-hours session up about <b>4.7%</b>. Reported the same evening, and not yet a completed deal: an agreement to buy <b>Hugging Face</b> for <b>$12.9 billion</b>.",
-        "text_ko": "지난주 월요일부터 이 페이지 위에 걸려 있던 질문은, AI 구축이 여전히 사고 있느냐였습니다. 엔비디아는 수요일 장 마감 뒤 그 질문에 답했고, 답은 예상보다 넉넉한 차이로 '그렇다'였습니다. 석 달 매출은 <b>962억 달러</b>로, 증권가가 바라던 것보다 약 <b>40억 달러</b> 많고 1년 전 같은 석 달의 두 배가 넘습니다. 이익은 주당 <b>2.22달러</b>로 예상치 약 2.09달러를 넘었습니다. 데이터센터 사업은 <b>890억 달러</b>어치를 팔아 1년 사이 117% 늘었습니다. 다음 석 달로는 약 <b>1,080억 달러</b>를 제시했는데, 중국에 데이터센터용 반도체를 파는 매출은 <b>전혀 없다고</b> 가정한 숫자입니다. 반대 방향으로 간 줄이 하나 있고, 이 페이지가 지켜봐 온 것이 바로 그것입니다. 엔비디아는 다음 분기에 매출 1달러당 남기는 이익이 75센트가 아니라 약 <b>74센트</b>가 될 것으로 봅니다. 서버에 들어가는 메모리 값이 올랐기 때문입니다. 이 주식을 일곱 거래일 연속 끌어내린 그 비용 걱정이, 회사 자신의 셈에 처음으로 나타난 것입니다. 작지만 실제입니다. 주가는 첫 30분 동안 1.3%가량 내렸다가, 회사가 내년 이야기를 꺼내자 방향을 바꿔 시간외 거래를 약 <b>4.7%</b> 상승으로 마쳤습니다. 같은 저녁에 보도됐고 아직 완료된 거래는 아닌 소식도 있습니다. <b>허깅 페이스</b>를 <b>129억 달러</b>에 사기로 했다는 합의입니다.",
+        "headline_en": "The one that mattered most: Nvidia answered — and the market had already paid for most of it",
+        "headline_ko": "가장 중요했던 것 — 엔비디아가 답했고, 시장은 그 답의 값을 대부분 이미 치러 두었습니다",
+        "text_en": "The month's question was whether the AI buildout is still buying. Nvidia answered it on Wednesday evening: <b>$96.2 billion</b> of chips sold in three months, more than double a year ago; about <b>$108 billion</b> guided for the next three, assuming nothing from China; and a signal on the call of far faster growth next fiscal year than analysts had pencilled in. On Thursday the shares jumped <b>8.74%</b> — a rise worth more than <b>$400 billion</b> of company value — and, against their own recent habit, kept it all day. On Friday they gave more than half of it back, on no company news at all. That round trip is the week's honest verdict: the business is delivering, and the price already knew. The same verdict was handed more harshly to <b>Marvell</b>, which beat expectations, raised its outlook two years out, and was marked down about <b>7%</b> anyway. One thread to keep for later: Nvidia expects to keep about <b>74 cents</b> of each sales dollar next quarter instead of 75, because memory costs more — and Marvell guided its own margin a shade lower the same evening. Broadcom, which reports Wednesday, is the next reading on that line.",
+        "text_ko": "이달의 질문은 AI 구축이 여전히 사고 있느냐였습니다. 엔비디아가 수요일 저녁에 답했습니다. 석 달 동안 반도체 <b>962억 달러</b>어치를 팔아 1년 전의 두 배를 넘겼고, 다음 석 달은 중국에서 아무것도 오지 않는다고 가정하고도 약 <b>1,080억 달러</b>를 제시했으며, 콘퍼런스 콜에서는 다음 회계연도 성장이 증권가의 짐작보다 훨씬 빠를 것이라는 신호를 줬습니다. 목요일에 주가는 <b>8.74%</b> 뛰었습니다. 회사 가치로 <b>4,000억 달러</b>가 넘는 상승이었고, 최근의 버릇과 달리 하루 종일 지켰습니다. 금요일에는 회사 소식이 전혀 없는 채로 그 절반 이상을 되돌려 줬습니다. 이 왕복이 이번 주의 정직한 평결입니다. 사업은 해내고 있고, 가격은 그것을 이미 알고 있었습니다. 같은 평결이 <b>마벨</b>에는 더 박하게 내려졌습니다. 예상을 넘기고 2년 치 전망을 올리고도 약 <b>7%</b> 깎였습니다. 나중을 위해 챙겨 둘 실 한 가닥: 엔비디아는 메모리 값이 올라 다음 분기에 매출 1달러당 75센트가 아니라 약 <b>74센트</b>를 남길 것으로 보고, 마벨도 같은 저녁 자기 이익률을 한 단계 낮춰 잡았습니다. 수요일에 실적을 내는 브로드컴이 그 줄의 다음 눈금입니다.",
         "touches": [
           "nvda",
           "soxl",
@@ -625,14 +625,23 @@
         ]
       },
       {
-        "headline_en": "The other half of the screen: inflation stayed exactly where it was, and rates stopped falling",
-        "headline_ko": "화면의 다른 절반 — 물가는 그 자리 그대로였고, 금리는 내림세를 멈췄습니다",
-        "text_en": "Before the open, the inflation gauge the Federal Reserve watches most closely came in at <b>3.3%</b> over the past year excluding food and fuel — the same as June, and exactly what forecasters expected. The broader version of the same measure was <b>3.7%</b>. Neither number is falling, and both sit well above the <b>2%</b> the Fed aims at, which is the plainest reason nobody has a rate cut on their calendar. The second estimate of economic growth confirmed <b>1.5%</b>. The bond market read all that and stopped: after two days of relief, the 10-year rate ticked back up to about <b>4.66%</b> and the 30-year to about <b>5.19%</b>. Long-term rates are still the thing most likely to hurt the expensive shares on this page, and they have not gone away. Two policy signatures moved shares outside your five the same day. An emergency order restricting foreign-made electrical equipment from the American power grid lifted <b>GE Vernova 2.84%</b> and <b>Eaton 2.50%</b>. A proclamation opening the door to <b>300,000 tonnes</b> of tariff-free imported beef from September 1, intended to bring ground-beef prices down, left <b>Tyson Foods down 1.08%</b> and drew objections from cattle ranchers. Both are on the tracker below.",
-        "text_ko": "장이 열리기 전, 연방준비제도가 가장 중시하는 물가 지표가 식품과 연료를 뺀 기준으로 1년 전보다 <b>3.3%</b> 올랐다고 나왔습니다. 6월과 같고, 예측기관들이 본 것과도 정확히 같았습니다. 같은 지표의 더 넓은 판본은 <b>3.7%</b>였습니다. 두 숫자 모두 내려오고 있지 않고, 연준이 목표로 하는 <b>2%</b>보다 한참 높습니다. 금리 인하가 누구의 달력에도 없는 가장 분명한 이유입니다. 경제 성장률 2차 추정치는 <b>1.5%</b>를 확인해 줬습니다. 채권 시장은 그것을 읽고 멈춰 섰습니다. 이틀간의 안도 끝에 10년물 금리가 약 <b>4.66%</b>로, 30년물이 약 <b>5.19%</b>로 다시 조금 올랐습니다. 장기 금리는 여전히 이 페이지의 비싼 주식들을 가장 아프게 할 수 있는 것이고, 사라지지 않았습니다. 같은 날 서명된 두 정책은 보유 다섯 밖의 주식들을 움직였습니다. 외국산 전력 설비를 미국 전력망에서 막는 비상 명령에 <b>GE 버노바가 2.84%</b>, <b>이튼이 2.50%</b> 올랐습니다. 다진 소고기 값을 낮추겠다며 9월 1일부터 무관세 수입 소고기 <b>30만 톤</b>의 길을 여는 포고문에는 <b>타이슨 푸즈가 1.08% 내렸고</b> 축산 농가의 반발이 나왔습니다. 둘 다 아래 기록란에 있습니다.",
+        "headline_en": "Friday's turn: the new Fed chairman said prices come first",
+        "headline_ko": "금요일의 반전 — 새 연준 의장이 물가가 먼저라고 말했습니다",
+        "text_en": "Kevin Warsh gave his first Jackson Hole keynote on Friday at 7 in the morning Pacific time, and the message was plain: inflation is running above the 2% target, and the Fed's \"predominant focus right now should be on prices\". He also said the economy \"appears to have strengthened\" — which cuts the same way, because a strong economy gives the Fed room to be tough. The bond market moved the short end first: the two-year rate rose about 8 hundredths of a point, and one measure of the odds of a rate <b>rise</b> at the September 15–16 meeting jumped to about 57%, from about one-in-three the day before. Long-term rates ticked up on Friday — the 10-year to about <b>4.72%</b>, the 30-year to about <b>5.21%</b> — but neither ended the week higher than it started it, which is part of why the stock market's reaction stayed at a quarter of a percent rather than something worse. The next input the rate debate gets is dated: the <b>August jobs report, Friday at 5:30 in the morning Pacific time</b>. July's showed the economy losing jobs.",
+        "text_ko": "케빈 워시는 금요일 서부 시각 오전 7시에 첫 잭슨홀 기조연설을 했고, 메시지는 분명했습니다. 물가는 목표 2%보다 높게 달리고 있고, 연준의 \"지금 최우선 초점은 물가여야 한다\"는 것입니다. 그는 경제가 \"더 튼튼해진 것으로 보인다\"고도 말했는데, 이것도 같은 방향으로 작용합니다. 경제가 튼튼하면 연준이 단호해질 여유가 생기기 때문입니다. 채권 시장은 짧은 쪽부터 움직였습니다. 2년물 금리가 약 0.08%포인트 올랐고, 9월 15~16일 회의에서 금리가 <b>인상</b>될 확률을 재는 한 지표는 전날의 3분의 1 수준에서 약 57%로 뛰었습니다. 장기 금리는 금요일에 조금 올랐습니다. 10년물이 약 <b>4.72%</b>, 30년물이 약 <b>5.21%</b>입니다. 다만 둘 다 한 주를 시작했을 때보다 높지 않게 마쳤고, 주식 시장의 반응이 더 나쁜 것이 아니라 0.25% 하락에 그친 데는 그 이유도 있습니다. 금리 논쟁이 받아 볼 다음 자료는 날짜가 잡혀 있습니다. <b>8월 고용 보고서, 다음 금요일 서부 시각 오전 5시 30분</b>입니다. 7월 보고서는 일자리가 줄었다고 나왔습니다.",
         "touches": [
           "spx",
-          "cost",
           "qqq"
+        ]
+      },
+      {
+        "headline_en": "The fine print: a rising week for the index was a falling week for the average stock",
+        "headline_ko": "작은 글씨 — 지수가 오른 한 주에 평균적인 종목은 내렸습니다",
+        "text_en": "The index's roughly half-percent week fits inside one company's story, and the rest of the market spent the week telling a different one. The Russell 2000, the index of smaller American companies, fell about <b>1.4%</b> on Friday and about <b>1.5%</b> for the week. On Thursday — the index's best day — most stocks inside it fell, and technology was the only one of the eleven industry groups to rise. Retail was graded hard all week regardless of results: Best Buy beat expectations, raised its forecast, and fell 4.4%; Dick's fell about 30% after cutting its outlook; consumer confidence sits near its lowest since January. Against that backdrop, Costco's Friday rise — the only one of your five to gain that day — is the defensive half of its personality showing up on schedule. And after Friday's close came one more thing for Monday's list: the President announced an oil agreement with Venezuela, calling it the biggest in history. No market has traded on it yet; it is recorded on the tracker below.",
+        "text_ko": "지수의 약 0.5% 상승은 회사 하나의 이야기 안에 들어가고, 나머지 시장은 한 주 내내 다른 이야기를 했습니다. 미국 소형주 지수인 러셀 2000은 금요일에 약 <b>1.4%</b>, 한 주로는 약 <b>1.5%</b> 내렸습니다. 지수가 가장 좋았던 목요일에도 안에 든 대부분의 종목은 내렸고, 11개 업종 가운데 오른 것은 기술주 하나뿐이었습니다. 유통업은 성적표와 무관하게 한 주 내내 박하게 채점됐습니다. 베스트바이는 예상을 넘기고 전망을 올리고도 4.4% 내렸고, 딕스는 전망을 낮춘 뒤 약 30% 내렸으며, 소비자 신뢰지수는 1월 이후 최저 부근입니다. 그 배경 위에서, 보유 다섯 중 금요일에 유일하게 오른 코스트코의 상승은 이 주식의 방어적인 절반이 제때 나타난 것입니다. 그리고 금요일 장 마감 뒤, 월요일의 확인 목록에 오를 일이 하나 더 생겼습니다. 대통령이 베네수엘라와의 석유 합의를 발표했고, 이를 역사상 가장 큰 것이라고 불렀습니다. 아직 어떤 시장도 이것을 값에 반영해 보지 못했습니다. 아래 기록란에 적어 두었습니다.",
+        "touches": [
+          "spx",
+          "cost"
         ]
       }
     ]
@@ -640,48 +649,21 @@
   "lede": [
     {
       "cls": "first",
-      "en": "Yesterday almost nothing happened, and then the biggest thing of the month happened after everyone had gone home. The board barely moved all day — the S&amp;P 500 closed at <b>7,675.70</b>, down <b>0.02%</b>, which is a fall of a point and a half; <b>QQQ +0.09%</b>, <b>SOXL +0.80%</b>, <b>COST −0.41%</b>. The one that moved was <b>Nvidia, down 1.59%</b> to <b>$209.66</b> — nerves in the hours before it had to report, while the rest of the chip shares edged higher. Then, after the close, it reported.",
-      "ko": "어제는 거의 아무 일도 없었고, 그러다 모두가 퇴근한 뒤에 이달 가장 큰 일이 일어났습니다. 표의 숫자는 하루 종일 거의 움직이지 않았습니다. S&amp;P 500은 <b>7,675.70</b>으로 <b>0.02%</b> 내렸는데 1.5포인트가량 떨어진 것이고, <b>QQQ +0.09%</b>, <b>SOXL +0.80%</b>, <b>COST −0.41%</b>였습니다. 움직인 하나는 <b>엔비디아로 1.59% 내려</b> <b>209.66달러</b>가 됐습니다. 실적을 내야 하는 몇 시간 전의 긴장이었고, 나머지 반도체 주식들은 조금씩 올랐습니다. 그리고 장이 닫힌 뒤, 발표가 나왔습니다."
+      "en": "Yesterday was the last trading day of August, and it ended with a small step down for a loud reason: the conflict with Iran came back. Over the weekend the American military struck launchers it said were preparing to lay mines in the Strait of Hormuz — the narrow waterway a large share of the world's oil passes through — and oil jumped almost <b>3%</b>, with American crude settling near <b>$86</b> a barrel. The S&P 500 slipped <b>0.33%</b>, the Dow fell <b>374 points</b>, and energy shares rallied while most of the technology giants softened. The exception was <b>Nvidia, up 1.48%</b> on its $3.5 billion investment in the Taiwanese chip designer MediaTek. August's final ledger is now in the book: <b>SPX +2.6%</b>, <b>QQQ +4.2%</b>, <b>NVDA about +10%</b>, <b>COST −0.8%</b> — and <b>SOXL −1.7%</b>, down in the very month chips rose.",
+      "ko": "어제는 8월의 마지막 거래일이었고, 작은 한 걸음의 하락과 요란한 이유로 끝났습니다. 이란과의 충돌이 돌아온 것입니다. 주말 사이 미군은 호르무즈 해협 — 세계 원유의 상당량이 지나가는 좁은 바닷길 — 에 기뢰를 놓으려 준비하고 있었다고 밝힌 발사대들을 타격했고, 유가는 <b>3%</b> 가까이 뛰어 미국산 원유가 배럴당 <b>86달러</b> 부근에서 마감했습니다. S&P 500은 <b>0.33%</b> 내렸고, 다우존스는 <b>374포인트</b> 내렸으며, 에너지 주식은 뛰고 대형 기술주 대부분은 밀렸습니다. 예외는 대만의 반도체 설계 회사 MediaTek에 35억 달러를 투자한다고 발표하고 <b>1.48% 오른 엔비디아</b>였습니다. 8월의 최종 장부는 이제 닫혔습니다. <b>SPX +2.6%</b>, <b>QQQ +4.2%</b>, <b>NVDA 약 +10%</b>, <b>COST −0.8%</b> — 그리고 반도체가 오른 바로 그 달에 내린 <b>SOXL −1.7%</b>입니다."
     },
     {
       "cls": "",
-      "en": "The numbers beat, and not narrowly. Nvidia sold <b>$96.2 billion</b> of chips in three months — about <b>$4 billion</b> more than expected and <b>more than double</b> a year ago — earned <b>$2.22</b> a share, and told investors to expect about <b>$108 billion</b> in the next three months, a figure that assumes <b>no sales at all</b> into China. Its shares rose about <b>4.7%</b> in after-hours trading. One line went the other way, and it is the one this page has been waiting on since Monday of last week: the company expects to keep about <b>74 cents</b> of profit on each sales dollar next quarter instead of 75, because the memory inside its servers costs more. So the cost worry that started this month's selling is real — it is just small so far. Watching whether it stays small is the useful thing to do from here.",
-      "ko": "숫자는 예상을 넘었고, 아슬아슬하게가 아니었습니다. 엔비디아는 석 달 동안 반도체를 <b>962억 달러</b>어치 팔았습니다. 예상보다 약 <b>40억 달러</b> 많고 1년 전의 <b>두 배가 넘습니다</b>. 주당 <b>2.22달러</b>를 벌었고, 다음 석 달은 약 <b>1,080억 달러</b>를 예상하라고 말했는데, 중국 쪽 매출은 <b>전혀 없다고</b> 가정한 숫자입니다. 주가는 시간외 거래에서 약 <b>4.7%</b> 올랐습니다. 반대 방향으로 간 줄이 하나 있고, 이 페이지가 지난주 월요일부터 기다려 온 것이 바로 그것입니다. 회사는 다음 분기에 매출 1달러당 남기는 이익이 75센트가 아니라 약 <b>74센트</b>가 될 것으로 봅니다. 서버 안의 메모리 값이 올랐기 때문입니다. 그러니 이달의 매도를 시작하게 한 비용 걱정은 실제입니다. 다만 아직은 작습니다. 그것이 계속 작게 머무는지 지켜보는 것이, 여기서부터 할 수 있는 쓸모 있는 일입니다."
+      "en": "The bigger story tightened another notch. Dearer oil feeds inflation, and inflation is the thing the new Fed chairman has said comes first — so one measure of the odds that the Fed <b>raises</b> rates on September 16 reached about <b>two-in-three</b>. The 10-year government rate rose to about <b>4.75%</b>, reported as its highest since early last year, and the pressure is global: Japan's 10-year rate has now crossed <b>3%</b> for the first time since 1996, and long-term rates are rising almost everywhere money is borrowed. Nobody can tell you what the Fed will actually do. What August ended with is a rate rise as a live question — and oil as the newest reason behind it.",
+      "ko": "더 큰 이야기는 한 눈금 더 조여졌습니다. 비싸진 기름은 물가로 이어지고, 물가는 새 연준 의장이 먼저라고 말한 바로 그것입니다. 그래서 9월 16일에 연준이 금리를 <b>올릴</b> 확률을 재는 한 지표는 약 <b>3분의 2</b>에 이르렀습니다. 10년물 국채 금리는 약 <b>4.75%</b>로 올라 작년 초 이후 최고로 보도됐고, 압력은 세계적입니다. 일본의 10년물 금리는 1996년 이후 처음으로 <b>3%</b>를 넘었고, 장기 금리는 돈을 빌리는 거의 모든 곳에서 오르고 있습니다. 연준이 실제로 무엇을 할지는 아무도 말해 줄 수 없습니다. 8월이 남긴 것은 살아 있는 질문이 된 금리 인상 — 그리고 그 뒤에 새로 선 이유인 유가입니다."
     },
     {
       "cls": "",
-      "en": "Two structural things, as always. The <b>four-way overlap</b> is about to run upward again: one company's results are why the chip shares, the Nasdaq fund and the index are all indicated higher this morning, and the one holding with no chips in it is not. And <b>SOXL's daily reset</b> had its cleanest day of the month — the chip fund rose 0.26%, three times that is 0.78%, and SOXL rose <b>0.80%</b>, two hundredths of a point above a perfect tripling, after coming six-tenths short on Tuesday. Do not let the good tracking distract from the arithmetic: across three days this week the chip fund is down about <b>0.9%</b> and SOXL is down about <b>3.3%</b> — nearly four times the fall, not three. Elsewhere, inflation came in exactly as expected and did not fall, and long-term rates ticked back up. The dated tests left: <b>jobless claims this morning</b>, <b>Marvell's results after the close tonight</b>, and the new Fed chair's first Jackson Hole speech <b>tomorrow at 7 in the morning Pacific time</b>.",
-      "ko": "구조적인 사실 둘은 늘 그렇듯 그대로입니다. <b>네 겹의 중복</b>이 다시 위로 작동하려 하고 있습니다. 회사 하나의 실적 때문에 반도체 주식과 나스닥 펀드, 지수가 오늘 아침 모두 높게 지시되고 있고, 반도체가 들어 있지 않은 하나만 그렇지 않습니다. 그리고 <b>SOXL의 매일 초기화</b>는 이번 달 들어 가장 깨끗한 하루를 보냈습니다. 반도체 펀드가 0.26% 올랐으니 세 배면 0.78%인데 SOXL은 <b>0.80%</b> 올랐습니다. 완전한 세 배보다 0.02%포인트 위이고, 0.6%포인트가 모자랐던 화요일 뒤의 일입니다. 추적이 좋았다고 해서 셈을 놓치지는 마십시오. 이번 주 사흘 동안 반도체 펀드는 약 <b>0.9%</b> 내렸고 SOXL은 약 <b>3.3%</b> 내렸습니다. 세 배가 아니라 거의 네 배입니다. 다른 쪽에서는 물가가 예상 그대로 나왔고 내려오지 않았으며, 장기 금리는 다시 조금 올랐습니다. 남은 날짜 있는 시험대는 이렇습니다. <b>오늘 아침 실업수당 청구</b>, <b>오늘 밤 장 마감 뒤 마벨 실적</b>, 그리고 <b>내일 서부 시각 오전 7시</b> 새 연준 의장의 첫 잭슨홀 연설입니다."
+      "en": "The tests ahead are dated and close: <b>Costco's August sales and Broadcom's results tomorrow, Wednesday</b>, then the <b>August jobs report Friday at 5:30 in the morning Pacific time</b> — the first big number since the chairman said prices come first. And the standing warning does not change: Nvidia is held outright, inside SPX, inside QQQ, and levered three times in SOXL, so a chip-moving week moves four of the five positions as one. SOXL just showed what that costs — it lost money in a rising August purely to its daily reset, and it feels every swing this week three times.",
+      "ko": "앞에 놓인 시험은 날짜가 잡혀 있고 가깝습니다. <b>내일 수요일의 코스트코 8월 매출과 브로드컴 실적</b>, 그리고 <b>금요일 서부 시각 오전 5시 30분의 8월 고용 보고서</b> — 의장이 물가가 먼저라고 말한 뒤 나오는 첫 큰 숫자입니다. 그리고 상시 경고는 달라지지 않습니다. 엔비디아는 직접 보유로, SPX 안에, QQQ 안에, 그리고 SOXL 안에 세 배로 들어 있어, 반도체가 움직이는 주에는 다섯 자리 중 넷이 하나처럼 움직입니다. 그 값이 얼마인지는 SOXL이 방금 보여 줬습니다. 반도체가 오른 8월에 오로지 매일 초기화 탓에 돈을 잃었고, 이번 주의 모든 출렁임은 세 배로 느낍니다."
     }
   ],
   "events": [
-    {
-      "hot": true,
-      "when_en": "Thu Aug 27",
-      "when_ko": "8월 27일(목)",
-      "what_en": "Marvell results",
-      "what_ko": "마벨 실적",
-      "note_en": "After the close tonight — the first chip company to report since Nvidia; SOXL and QQQ feel it most",
-      "note_ko": "오늘 밤 장 마감 뒤 — 엔비디아 이후 처음 실적을 내는 반도체 회사입니다. SOXL과 QQQ가 가장 크게 느낍니다"
-    },
-    {
-      "hot": false,
-      "when_en": "Thu Aug 27",
-      "when_ko": "8월 27일(목)",
-      "what_en": "Jobless claims + Best Buy",
-      "what_ko": "실업수당 청구 + 베스트바이",
-      "note_en": "Claims this morning at 5:30 Pacific; Best Buy also before the open, one more read on the shopper",
-      "note_ko": "청구 건수는 오늘 아침 서부 시각 5시 30분, 베스트바이도 개장 전 — 소비자를 읽는 자료가 하나 더 나옵니다"
-    },
-    {
-      "hot": true,
-      "when_en": "Fri Aug 28",
-      "when_ko": "8월 28일(금)",
-      "what_en": "Fed chair at Jackson Hole",
-      "what_ko": "연준 의장 잭슨홀 연설",
-      "note_en": "His first as chair — the keynote is set for 7 in the morning Pacific; the conference runs Thursday to Saturday",
-      "note_ko": "의장으로서 첫 연설 — 기조연설은 서부 시각 오전 7시입니다. 회의는 목~토요일"
-    },
     {
       "hot": false,
       "when_en": "Tue Sep 1",
@@ -693,6 +675,15 @@
     },
     {
       "hot": false,
+      "when_en": "Tue Sep 1",
+      "when_ko": "9월 1일(화)",
+      "what_en": "Dell results",
+      "what_ko": "델 실적",
+      "note_en": "After the close tonight — the computer maker's report is a read on demand for AI servers",
+      "note_ko": "오늘 장 마감 뒤 — 이 컴퓨터 회사의 실적은 AI 서버 수요를 읽는 눈금입니다"
+    },
+    {
+      "hot": true,
       "when_en": "Wed Sep 2",
       "when_ko": "9월 2일(수)",
       "what_en": "Costco August sales",
@@ -701,9 +692,36 @@
       "note_ko": "서부 시각 오후 1시 15분 — 1년 넘은 매장의 매출 증가율(7월 8.9%)을 보세요"
     },
     {
+      "hot": true,
+      "when_en": "Wed Sep 2",
+      "when_ko": "9월 2일(수)",
+      "what_en": "Broadcom results",
+      "what_ko": "브로드컴 실적",
+      "note_en": "After the close — the biggest chip company to report since Nvidia; SOXL, QQQ and NVDA all feel it",
+      "note_ko": "장 마감 뒤 — 엔비디아 이후 실적을 내는 가장 큰 반도체 회사입니다. SOXL과 QQQ, NVDA가 모두 느낍니다"
+    },
+    {
+      "hot": true,
+      "when_en": "Fri Sep 4",
+      "when_ko": "9월 4일(금)",
+      "what_en": "August jobs report",
+      "what_ko": "8월 고용 보고서",
+      "note_en": "5:30 in the morning Pacific — July's report showed the economy losing jobs, and after the Fed chairman's speech this number feeds straight into the September rate decision",
+      "note_ko": "서부 시각 오전 5시 30분 — 7월 보고서는 일자리가 줄었다고 나왔고, 연준 의장의 연설 뒤라 이 숫자는 9월 금리 결정으로 곧장 이어집니다"
+    },
+    {
       "hot": false,
-      "when_en": "Mon Sep 8",
-      "when_ko": "9월 8일(월)",
+      "when_en": "Mon Sep 7",
+      "when_ko": "9월 7일(월)",
+      "what_en": "Labor Day — markets closed",
+      "what_ko": "노동절 — 휴장",
+      "note_en": "No trading that Monday; that week's first session is Tuesday",
+      "note_ko": "그 주 월요일은 거래가 없습니다. 첫 거래일은 화요일입니다"
+    },
+    {
+      "hot": false,
+      "when_en": "Tue Sep 8",
+      "when_ko": "9월 8일(화)",
       "what_en": "Canada's counter-tariffs begin",
       "what_ko": "캐나다 보복 관세 시작",
       "note_en": "The published list: more than 700 American products, about $20 billion a year, taxed at 15% to 50%",
@@ -711,21 +729,21 @@
     },
     {
       "hot": false,
-      "when_en": "Tue Sep 9",
-      "when_ko": "9월 9일(화)",
+      "when_en": "Wed Sep 9",
+      "when_ko": "9월 9일(수)",
       "what_en": "Treasury's bigger buybacks begin",
       "what_ko": "재무부 되사기 확대 시작",
       "note_en": "The doubled buying of long-term debt actually starts — a test of whether it calms rates for more than a day",
       "note_ko": "두 배로 늘린 장기 국채 되사기가 실제로 시작 — 안도가 하루를 넘는지의 시험"
     },
     {
-      "hot": false,
+      "hot": true,
       "when_en": "Sep 15–16",
       "when_ko": "9월 15~16일",
       "what_en": "Federal Reserve",
       "what_ko": "연준 회의",
-      "note_en": "The next rate decision — the July vote was 9 to 3, with three preferring a rise",
-      "note_ko": "다음 금리 결정 — 7월 표결은 9대 3이었고, 세 명은 인상 쪽이었습니다"
+      "note_en": "The next rate decision — after the chairman's speech a rise is openly on the table; July's vote was 9 to 3, with three preferring a rise",
+      "note_ko": "다음 금리 결정 — 의장의 연설 뒤 인상이 공개적으로 테이블 위에 올랐습니다. 7월 표결은 9대 3이었고, 세 명은 인상 쪽이었습니다"
     },
     {
       "hot": false,
@@ -737,23 +755,23 @@
       "note_ko": "장 마감 후"
     }
   ],
-  "next_session_en": "Trading restarts <b>this morning at 6:30 Pacific</b> — these are Wednesday's closing prices",
-  "next_session_ko": "장은 오늘 아침 <b>서부 시각 6시 30분</b>에 다시 열립니다 — 위 숫자는 수요일 종가입니다",
-  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b> until then",
-  "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 다시 열립니다 &mdash; 그때까지 표의 숫자는 <b>수요일 종가</b>입니다",
-  "today_en": "The new Fed chairman, Kevin Warsh, gave his first big speech this morning — at 7 Pacific time — and said getting inflation down is the job that comes first. Stocks wobbled on that, but only a little: the broad market is down about a third of a percent at midday. The bigger move is in chips, which are handing back part of yesterday's jump — <b>Nvidia is down about 4%</b>, and the chip fund <b>SOXL is down about 10%</b>, with Marvell falling about 7% even though its own results beat expectations. <b>QQQ is down a little under 1%</b>, while <b>Costco is up a little over 1%</b>, its first rise after three down days. The next big number on the calendar is the monthly jobs report, a week from today.",
-  "today_ko": "새 연준 의장 케빈 워시가 오늘 아침 서부 시각 7시에 취임 뒤 첫 큰 연설을 했고, 물가를 끌어내리는 일이 가장 먼저라고 말했습니다. 주가는 그 말에 흔들렸지만 폭은 작아서, 한낮 현재 시장 전체는 0.3% 정도 내려 있습니다. 더 큰 움직임은 반도체 쪽입니다. 어제의 급등을 일부 되돌려 주는 중이라 <b>엔비디아는 약 4% 내렸고</b>, 반도체 펀드 <b>SOXL은 약 10% 내렸습니다</b>. 마벨은 예상을 넘긴 실적을 내고도 약 7% 내렸습니다. <b>QQQ는 1%에 조금 못 미치게 내렸고</b>, <b>코스트코는 1% 남짓 올라</b> 사흘 연속 하락 뒤 처음으로 오르고 있습니다. 달력 위의 다음 큰 숫자는 일주일 뒤에 나오는 월간 고용 보고서입니다.",
-  "today_date": "2026-08-28",
+  "next_session_en": "The market is open — today's session runs until 1 in the afternoon Pacific; these are Monday's closing prices",
+  "next_session_ko": "지금은 장이 열려 있습니다 — 오늘 장은 서부 시각 오후 1시까지이고, 위 숫자는 월요일 종가입니다",
+  "next_session_en_html": "The market is <b>open now</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b>, and today&rsquo;s session runs until 1 in the afternoon Pacific",
+  "next_session_ko_html": "지금은 <b>장이 열려 있습니다</b> &mdash; 표의 숫자는 <b>월요일 종가</b>이며, 오늘 장은 서부 시각 오후 1시까지입니다",
+  "today_en": "The August jobs report landed at <b>5:30 in the morning Pacific time</b>, an hour before the opening bell, and it was far stronger than anyone looked for — <b>162,000</b> new jobs, against the 55,000 or so economists had expected. Strong hiring is being read here as a reason for the Fed to keep rates high, and shares slipped: one measure of the odds of a rate <b>rise</b> on September 16 moved up to about <b>60%</b>, from roughly half the day before. The market as a whole is down a fraction of a percent — but chip shares went the other way and ran hard, so <b>SOXL</b> is up about <b>9%</b> and <b>Nvidia</b> about <b>1%</b>, and that has held <b>QQQ</b> at roughly where it started the day. <b>Costco</b> is down about <b>1%</b>, in a week when it reported August sales up nearly <b>10%</b>. Monday is <b>Labor Day</b> and the market is closed, so the next session is Tuesday — and the Fed's rate decision comes on <b>September 16</b>.",
+  "today_ko": "8월 고용 보고서가 <b>서부 시각 오전 5시 30분</b>, 개장 한 시간 전에 나왔고 누가 예상한 것보다도 훨씬 강했습니다. 새 일자리가 <b>16만 2,000</b>개로, 경제학자들이 잡았던 5만 5,000개 안팎을 크게 넘었습니다. 고용이 강하다는 것은 여기서 연준이 금리를 높게 유지할 이유로 읽히고 있고, 주가는 밀렸습니다. 9월 16일 금리 <b>인상</b> 확률을 재는 한 지표는 전날의 절반 남짓에서 약 <b>60%</b>로 올랐습니다. 시장 전체는 1%에 못 미치게 조금 내렸지만, 반도체는 반대로 크게 달렸습니다. <b>SOXL</b>이 약 <b>9%</b>, <b>엔비디아</b>가 약 <b>1%</b> 오른 덕에 <b>QQQ</b>는 하루를 시작한 자리 근처에 머물러 있습니다. <b>코스트코</b>는 약 <b>1%</b> 내렸습니다. 이번 주에 8월 매출이 <b>10%</b> 가까이 늘었다고 발표한 회사입니다. 월요일은 <b>노동절</b>이라 휴장이어서 다음 거래일은 화요일이고, 연준의 금리 결정은 <b>9월 16일</b>에 나옵니다.",
+  "today_date": "2026-09-04",
   "pancho_am": {
-    "date": "2026-08-27",
+    "date": "2026-09-01",
     "pos": "",
-    "en": "Nvidia's numbers were big. Chip shares are up before the open, and SOXL feels that three times over.",
-    "ko": "엔비디아 실적이 컸어요. 개장 전 반도체가 오르는데, SOXL은 그걸 세 배로 느껴요."
+    "en": "Rates and oil are pushing stocks down today. Chips are hurting most — and SOXL feels chips three times over.",
+    "ko": "오늘은 금리와 유가가 주가를 누르고 있어요. 반도체가 제일 아프고, SOXL은 그 세 배로 느낍니다."
   },
   "pancho_pm": {
-    "date": "2026-08-28",
+    "date": "2026-09-04",
     "pos": "soxl",
-    "en": "This fund feels everything three times over. Yesterday that was the jump. Today it's the slide.",
-    "ko": "이 펀드는 뭐든 세 배로 느껴요. 어제는 급등을, 오늘은 미끄럼을요."
+    "en": "Chips ran while almost everything else drifted down. A split like that does not happen often.",
+    "ko": "반도체만 달리고 나머지는 대체로 밀렸어요. 이렇게 갈리는 날은 드뭅니다."
   }
 }
