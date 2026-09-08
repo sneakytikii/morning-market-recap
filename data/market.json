@@ -728,8 +728,8 @@
   "next_session_ko": "시장은 오늘 아침 다시 열립니다. 월요일은 노동절이었습니다. 위 숫자는 금요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; Monday was <b>Labor Day</b>, so until the opening bell the board still shows <b>Friday&rsquo;s closing prices</b>",
   "next_session_ko_html": "거래는 <b>오늘 아침</b> 다시 시작됩니다 &mdash; 월요일이 <b>노동절</b>이었기 때문에, 개장 전까지 표의 숫자는 <b>금요일 종가</b>입니다",
-  "today_en": "The market reopens this morning after the long weekend, and the thing that changed while it was shut is <b>oil</b>. The United States and Iran struck each other's ships over the weekend, and crude has now risen for a third day to a six-week high. Stock index futures point <b>modestly lower</b> before the bell — the Dow's futures down more than the other two — while <b>chip shares are pointing higher again</b>, the same split that ran through last week. <b>Canada's counter-tariffs on American goods took effect at midnight</b>: 874 product lines, about <b>$27.6 billion</b> of goods a year, taxed at 15%, 25% or 50%. Nothing large is on the calendar today; the week's real tests are producer prices on <b>Thursday</b> and the August inflation report on <b>Friday</b>, both at <b>5:30 in the morning Pacific time</b>.",
-  "today_ko": "긴 연휴가 끝나고 오늘 아침 시장이 다시 열립니다. 문을 닫아 둔 사이에 달라진 것은 <b>유가</b>입니다. 주말 동안 미국과 이란이 서로의 선박을 공격했고, 원유 값은 사흘째 올라 6주 만의 최고 수준입니다. 개장 전 주가지수 선물은 <b>소폭 하락</b>을 가리키고 있고, 그중 다우 선물이 나머지 둘보다 더 내려 있습니다. 반면 <b>반도체 주식은 다시 위를 가리키고 있습니다</b>. 지난주 내내 이어진 것과 같은 갈림입니다. <b>캐나다의 미국산 제품 보복 관세가 자정부터 발효됐습니다.</b> 874개 품목, 연간 약 <b>276억 달러</b>어치에 15%, 25%, 50% 관세가 붙습니다. 오늘 일정에 큰 것은 없습니다. 이번 주의 진짜 시험은 <b>목요일</b>의 생산자물가와 <b>금요일</b>의 8월 물가 보고서이고, 둘 다 <b>서부 시각 오전 5시 30분</b>에 나옵니다.",
+  "today_en": "Half a day in, the session is split, and <b>oil</b> is the reason. Crude kept climbing over the long weekend and Brent came close to <b>$100</b> a barrel this morning; the <b>Dow is down about 1%</b>, the <b>S&P 500 about 0.4%</b>, and the Nasdaq is barely lower. Your five have gone separate ways: the chip fund <b>SOXL is up about 6%</b>, because <b>Intel</b> jumped around <b>9%</b> on a report that it will raise chip prices again, while <b>Nvidia is down about 2%</b> and is taking no part in it, <b>QQQ</b> sits close to flat and <b>Costco</b> is a little lower. <b>Canada's counter-tariffs</b> on American goods took effect at midnight. Nothing else large lands today; the week's real tests are producer prices on <b>Thursday</b> and the August inflation report on <b>Friday</b>, both at <b>5:30 in the morning Pacific time</b>.",
+  "today_ko": "반나절이 지난 지금 장은 갈라져 있고, 이유는 <b>유가</b>입니다. 긴 연휴 동안에도 원유 값은 계속 올라 브렌트유는 오늘 아침 배럴당 <b>100달러</b>에 가까워졌습니다. <b>다우지수는 약 1%</b>, <b>S&P 500은 약 0.4%</b> 내려 있고, 나스닥은 거의 제자리입니다. 다섯 종목은 저마다 다른 쪽으로 갔습니다. 반도체 펀드 <b>SOXL은 약 6% 올랐습니다</b>. <b>인텔</b>이 반도체 값을 또 올린다는 보도에 <b>9%</b>가량 뛴 덕입니다. 반면 <b>엔비디아는 약 2% 내려</b> 그 상승에 함께하지 않았고, <b>QQQ</b>는 거의 제자리, <b>코스트코</b>는 조금 내려 있습니다. <b>캐나다의 미국산 제품 보복 관세</b>가 자정부터 발효됐습니다. 오늘 그 밖에 큰 일정은 없습니다. 이번 주의 진짜 시험은 <b>목요일</b> 생산자물가와 <b>금요일</b> 8월 물가 보고서이고, 둘 다 <b>서부 시각 오전 5시 30분</b>에 나옵니다.",
   "today_date": "2026-09-08",
   "pancho_am": {
     "date": "2026-09-08",
@@ -738,9 +738,9 @@
     "ko": "휴장 동안 유가가 뛰었어요. 오늘 아침을 누르는 건 반도체가 아니라 그쪽입니다."
   },
   "pancho_pm": {
-    "date": "2026-09-05",
+    "date": "2026-09-08",
     "pos": "soxl",
-    "en": "Chips rose 2.2% last week. Three times that is 6.6%. SOXL gave 5.3%. The gap is the daily reset.",
-    "ko": "지난주 반도체는 2.2%, 세 배면 6.6%인데 SOXL은 5.3%였어요. 그 차이가 매일 초기화입니다."
+    "en": "The chip fund went up today without Nvidia. Intel and AMD did the pulling.",
+    "ko": "오늘은 엔비디아 없이 반도체 펀드가 올랐어요. 인텔과 AMD가 끌었습니다."
   }
 }
