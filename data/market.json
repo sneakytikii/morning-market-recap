@@ -719,8 +719,8 @@
   "next_session_ko": "거래는 오늘 아침 다시 시작됩니다 — 개장 전까지 표의 숫자는 화요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; until the opening bell the board still shows <b>Tuesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "거래는 <b>오늘 아침</b> 다시 시작됩니다 &mdash; 개장 전까지 표의 숫자는 <b>화요일 종가</b>입니다",
-  "today_en": "Futures point slightly lower this morning, and <b>oil</b> is still the reason. Brent, the world price, is near <b>$99</b> a barrel — the closest it has come to $100 in more than a month — after further fighting between the United States and Iran, and the market's odds of a rate <b>rise</b> next week have edged up to about <b>60%</b>. Before the bell the chip fund <b>SOXL</b> is giving back part of yesterday's jump and <b>Nvidia</b> is a little lower again, while <b>Costco</b> sits about where it closed. Today's calendar is thin — mortgage and hiring figures early, no earnings that touch your five, and the Treasury's doubled buying of long-term government debt finally begins. The week's real tests are <b>producer prices tomorrow</b> and the <b>August inflation report on Friday</b>, both at <b>5:30 in the morning Pacific time</b>.",
-  "today_ko": "오늘 아침 선물은 조금 아래를 가리키고 있고, 이유는 여전히 <b>유가</b>입니다. 미국과 이란의 교전이 이어진 뒤 세계 기준 가격인 브렌트유는 배럴당 <b>99달러</b> 부근으로, 한 달여 만에 100달러에 가장 가까이 왔습니다. 다음 주 금리 <b>인상</b> 확률도 약 <b>60%</b>로 조금 올라섰습니다. 개장 전 반도체 펀드 <b>SOXL</b>은 어제 오른 것의 일부를 되돌리고 있고 <b>엔비디아</b>도 조금 더 내려 있으며, <b>코스트코</b>는 마감가 언저리입니다. 오늘 일정은 한산합니다. 이른 아침에 주택담보대출과 고용 관련 수치가 나오고, 보유 다섯 종목에 닿는 실적 발표는 없으며, 두 배로 늘린 재무부의 장기 국채 되사기가 드디어 시작됩니다. 이번 주의 진짜 시험은 <b>내일 생산자물가</b>와 <b>금요일 8월 물가 보고서</b>이고, 둘 다 <b>서부 시각 오전 5시 30분</b>입니다.",
+  "today_en": "It is a lower day, and <b>oil</b> is the reason again. Brent, the world price, went above <b>$100</b> a barrel this morning for the first time since July after more fighting between the United States and Iran, and the selling picked up from there — the <b>S&P 500</b> is down about <b>half a percent</b>, with energy shares about the only group rising. Your five are split rather than uniformly weak: the chip fund <b>SOXL</b> is up <b>more than 2%</b> while <b>Nvidia</b> is down a little under <b>1%</b>, the same divide as yesterday, when chips rose without it. The Nasdaq-100 fund <b>QQQ</b> is off about <b>a quarter of a percent</b>, and <b>Costco</b> is down about <b>1%</b> after six falling days in a row. The rest of today is quiet — <b>producer prices arrive tomorrow</b> and the <b>August inflation report on Friday</b>, both at <b>5:30 in the morning Pacific time</b>.",
+  "today_ko": "오늘은 내리는 날이고, 이유는 또 <b>유가</b>입니다. 미국과 이란의 교전이 더 이어진 뒤 세계 기준 가격인 브렌트유가 오늘 아침 배럴당 <b>100달러</b> 위로 올라섰습니다. 7월 이후 처음이고, 그 뒤로 하락이 커져 <b>S&P 500</b>은 약 <b>0.5%</b> 내려 있으며 오르는 업종은 사실상 에너지뿐입니다. 보유 다섯 종목은 한 방향이 아니라 갈렸습니다. 반도체 펀드 <b>SOXL</b>은 <b>2% 넘게</b> 올라 있는 반면 <b>엔비디아</b>는 <b>1%</b>가 채 안 되게 내려 있어, 반도체가 엔비디아 없이 올랐던 어제와 같은 구도입니다. 나스닥100 펀드 <b>QQQ</b>는 약 <b>0.25%</b> 내려 있고, <b>코스트코</b>는 엿새 연속 하락에 이어 오늘도 약 <b>1%</b> 내려 있습니다. 오늘 남은 일정은 한산합니다. <b>내일은 생산자물가</b>, <b>금요일에는 8월 물가 보고서</b>가 나오고, 둘 다 <b>서부 시각 오전 5시 30분</b>입니다.",
   "today_date": "2026-09-09",
   "pancho_am": {
     "date": "2026-09-09",
@@ -729,9 +729,9 @@
     "ko": "유가가 배럴당 100달러에 가깝습니다. 금요일 물가 지표가 그걸 떠안습니다."
   },
   "pancho_pm": {
-    "date": "2026-09-08",
-    "pos": "soxl",
-    "en": "The chip fund went up today without Nvidia. Intel and AMD did the pulling.",
-    "ko": "오늘은 엔비디아 없이 반도체 펀드가 올랐어요. 인텔과 AMD가 끌었습니다."
+    "date": "2026-09-09",
+    "pos": "",
+    "en": "This morning oil finally went over a hundred dollars. The market has been drifting down since.",
+    "ko": "오늘 아침 유가가 결국 100달러를 넘었어요. 시장은 그 뒤로 계속 밀렸습니다."
   }
 }
