@@ -719,8 +719,8 @@
   "next_session_ko": "거래는 오늘 아침 다시 시작됩니다 — 개장 전까지 표의 숫자는 수요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; until the opening bell the board still shows <b>Wednesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "거래는 <b>오늘 아침</b> 다시 시작됩니다 &mdash; 개장 전까지 표의 숫자는 <b>수요일 종가</b>입니다",
-  "today_en": "Futures point <b>slightly higher</b> this morning after three falling days, mostly because <b>oil has stopped climbing</b> — Brent is holding a little above <b>$100</b> a barrel rather than pushing on. The calm is not shared underneath: <b>chip shares are soft before the bell</b>, down about <b>1%</b>, which means <b>SOXL</b> is already down about <b>3%</b> and <b>Nvidia</b> a little. Two numbers land before the opening bell at <b>5:30 in the morning Pacific time</b>: <b>producer prices</b>, which measure what companies pay rather than what you pay, and the weekly count of new unemployment claims. Producer prices are the dress rehearsal for tomorrow's big August inflation report, so a surprise this morning will be read as a hint about tomorrow. Then tonight, after the close, <b>Oracle and Adobe</b> report — both software companies inside QQQ, reporting into the question of whether artificial intelligence will compete with what they sell.",
-  "today_ko": "사흘 연속 내린 뒤, 오늘 아침 선물은 <b>조금 위</b>를 가리키고 있습니다. 가장 큰 이유는 <b>유가가 오르기를 멈췄다</b>는 것입니다. 브렌트유는 더 밀어붙이는 대신 배럴당 <b>100달러</b> 조금 위에서 버티고 있습니다. 다만 그 아래는 잠잠하지 않습니다. <b>반도체 주식이 개장 전부터 약해</b> 약 <b>1%</b> 내려 있고, 그래서 <b>SOXL</b>은 이미 약 <b>3%</b>, <b>엔비디아</b>도 조금 내려 있습니다. 개장 전 <b>서부 시각 오전 5시 30분</b>에 숫자 둘이 나옵니다. 우리가 내는 값이 아니라 기업이 치르는 값을 재는 <b>생산자물가</b>, 그리고 주간 신규 실업수당 신청 건수입니다. 생산자물가는 내일 나올 큰 8월 물가 보고서의 예행연습 격이라, 오늘 아침에 놀랄 일이 있으면 내일에 대한 힌트로 읽힐 것입니다. 그리고 오늘 밤 장 마감 뒤에는 <b>오라클과 어도비</b>가 실적을 냅니다. 둘 다 QQQ 안에 있는 소프트웨어 회사이고, 인공지능이 자기들이 파는 것과 경쟁하게 될 것이냐는 질문 속으로 들어갑니다.",
+  "today_en": "Thursday's session is over, and it was the <b>fourth</b> day of falls in a row. Oil is what the day's reporting points to: American crude went above <b>$100</b> a barrel for the first time since May, petrol at the pump is <b>13 cents</b> dearer than a week ago, and the cost of long-term government borrowing rose again to about its highest in three years. Your chip holdings took the worst of it — <b>SOXL</b> finished down about <b>8%</b>, <b>Nvidia</b> down about <b>2%</b> and the Nasdaq-100 fund <b>QQQ</b> down about <b>1%</b> — with reporting putting the fall in memory-chip shares down to a new model from the Chinese firm <b>DeepSeek</b> that is said to need far less memory. <b>Costco</b> was the quiet one and ended roughly where it started, after being up about <b>1%</b> earlier in the day. Tomorrow at <b>5:30 in the morning Pacific time</b> the August cost-of-living figures arrive, the last big number before the Federal Reserve decides on interest rates next Wednesday.",
+  "today_ko": "목요일 장이 끝났고, <b>나흘</b> 연속 하락이었습니다. 그날 보도가 가리키는 것은 유가입니다. 미국산 원유가 5월 이후 처음으로 배럴당 <b>100달러</b>를 넘었고, 주유소 휘발유 값은 한 주 전보다 <b>13센트</b> 비싸졌으며, 정부가 장기로 돈을 빌리는 값도 다시 올라 약 3년 만의 최고 수준이 됐습니다. 보유 종목 가운데 반도체가 가장 크게 맞았습니다. <b>SOXL</b>은 약 <b>8%</b>, <b>엔비디아</b>는 약 <b>2%</b>, 나스닥 100 펀드 <b>QQQ</b>는 약 <b>1%</b> 내려 마쳤습니다. 보도는 메모리 반도체 주식의 하락을 중국 회사 <b>딥시크</b>가 내놓은 새 모델, 곧 메모리를 훨씬 덜 쓴다고 하는 모델 때문으로 설명합니다. <b>코스트코</b>는 조용한 편이었습니다. 장중 <b>1%</b>쯤 올랐다가 시작한 자리 근처에서 마쳤습니다. 내일 <b>서부 시각 오전 5시 30분</b>에 8월 생활물가 수치가 나옵니다. 연방준비제도가 다음 주 수요일 금리를 결정하기 전 마지막 큰 숫자입니다.",
   "today_date": "2026-09-10",
   "pancho_am": {
     "date": "2026-09-10",
@@ -729,9 +729,9 @@
     "ko": "선물은 잠잠한데 반도체가 약합니다. SOXL은 그걸 세 배로 느낍니다."
   },
   "pancho_pm": {
-    "date": "2026-09-09",
-    "pos": "",
-    "en": "This morning oil finally went over a hundred dollars. The market has been drifting down since.",
-    "ko": "오늘 아침 유가가 결국 100달러를 넘었어요. 시장은 그 뒤로 계속 밀렸습니다."
+    "date": "2026-09-10",
+    "pos": "cost",
+    "en": "Costco was up about 1% at one point today, then gave it all back. Still the quietest of your five.",
+    "ko": "코스트코는 오늘 한때 1%쯤 올랐다가 다 내놨어요. 그래도 다섯 중에 가장 조용했어요."
   }
 }
