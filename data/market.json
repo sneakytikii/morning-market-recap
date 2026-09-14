@@ -737,8 +737,8 @@
   "next_session_ko": "오늘 아침에 거래가 다시 열립니다 — 서부 시각 오전 6시 30분 개장 전까지 표의 숫자는 금요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Friday&rsquo;s closing prices</b> until the opening bell at <b>6:30 Pacific</b>",
   "next_session_ko_html": "<b>오늘 아침</b>에 거래가 다시 열립니다 &mdash; <b>서부 시각 오전 6시 30분</b> 개장 전까지 표의 숫자는 <b>금요일 종가</b>입니다",
-  "today_en": "Two things happened over the weekend and both are showing up before the bell. The heads of <b>Anthropic</b> and <b>OpenAI</b> — the two companies behind the best-known artificial-intelligence programs — said publicly that the industry should <b>slow down</b> how fast it makes those programs cleverer, and chip shares fell on it: <b>Nasdaq futures</b> are down close to <b>2%</b> this morning, the wider <b>S&amp;P 500</b> by under <b>1%</b>, and the <b>Dow</b> barely at all. Separately, <b>Saudi Arabia shut its main east-west oil pipeline</b> after it was attacked, and crude is back above <b>$103</b> a barrel with Brent near <b>$108</b>. <b>There is no economic data today</b> — the Federal Reserve starts its two-day meeting tomorrow and decides on <b>Wednesday</b>. Watch the chip names at the open, and remember that prices before the bell often do not survive the day.",
-  "today_ko": "주말 사이에 두 가지 일이 있었고, 둘 다 개장 전부터 나타나고 있습니다. 가장 잘 알려진 인공지능 프로그램을 만드는 두 회사 <b>앤스로픽</b>과 <b>오픈AI</b>의 대표가 업계가 그 프로그램을 똑똑하게 만드는 속도를 <b>늦춰야 한다</b>고 공개적으로 말했고, 반도체 주식이 그 소식에 내렸습니다. 오늘 아침 <b>나스닥 선물</b>은 <b>2%</b> 가까이, 더 넓은 <b>S&amp;P 500</b>은 <b>1%</b>가 안 되게, <b>다우존스</b>는 아주 조금만 내려 있습니다. 따로, <b>사우디아라비아가 공격을 받은 뒤 주요 동서 송유관을 닫았고</b>, 원유는 배럴당 <b>103달러</b> 위로, 브렌트유는 <b>108달러</b> 가까이로 돌아왔습니다. <b>오늘 나오는 경제 지표는 없습니다.</b> 연준은 내일 이틀짜리 회의를 시작해 <b>수요일</b>에 결정합니다. 개장 때 반도체 종목을 보시되, 개장 전 가격은 그날 끝까지 가지 않는 경우가 많다는 점은 기억해 두십시오.",
+  "today_en": "The morning's drop has mostly worn off — the market as a whole is down less than half of one percent — but the day has split in two. <b>Chips</b> took the weekend's slow-down-AI warnings badly and have stayed down: <b>SOXL</b> is off about <b>14%</b> and <b>Nvidia</b> about <b>3%</b>, and both were down noticeably more earlier this morning. The software companies that buy those chips went the other way and rose, which is why <b>QQQ</b> is lower by only about <b>a third of one percent</b>, and <b>Costco</b>, outside all of it, is up about <b>1%</b>. Oil is still climbing, and the government's ten-year borrowing rate went above <b>5%</b> today for the first time since 2023. <b>The Federal Reserve begins its two-day meeting tomorrow and announces its decision on Wednesday at 11 in the morning Pacific time</b>; the futures market expects a rise.",
+  "today_ko": "아침의 하락은 대부분 되돌려져 시장 전체로는 0.5%가 안 되게 내려 있습니다. 다만 하루가 둘로 갈렸습니다. <b>반도체</b>는 주말에 나온 AI 속도를 늦추자는 경고를 나쁘게 받아들여 내린 채 있습니다. <b>SOXL</b>은 약 <b>14%</b>, <b>엔비디아</b>는 약 <b>3%</b> 내려 있고, 둘 다 오늘 아침 한때는 그보다 더 내렸습니다. 그 반도체를 사는 소프트웨어 회사들은 반대로 올랐습니다. 그래서 <b>QQQ</b>는 약 <b>0.3%</b>만 내렸고, 이 이야기와 상관이 없는 <b>코스트코</b>는 약 <b>1%</b> 올랐습니다. 유가는 계속 오르고 있고, 정부의 10년 만기 차입 금리는 오늘 2023년 이후 처음으로 <b>5%</b>를 넘었습니다. <b>연방준비제도는 내일 이틀짜리 회의를 시작해 수요일 서부 시각 오전 11시에 결정을 발표합니다.</b> 선물 시장은 인상을 예상합니다.",
   "today_date": "2026-09-14",
   "pancho_am": {
     "date": "2026-09-14",
@@ -747,9 +747,9 @@
     "ko": "AI를 만드는 사람들이 속도를 늦추자고 했어요. 반도체가 내렸고 SOXL은 세 배로 느낍니다."
   },
   "pancho_pm": {
-    "date": "2026-09-12",
-    "pos": "soxl",
-    "en": "Chips rose 1.4% last week. Three times that is 4.2%. SOXL gave 3.9%. The gap is the daily reset.",
-    "ko": "지난주 반도체는 1.4%, 세 배면 4.2%인데 SOXL은 3.9%였어요. 그 차이가 매일 초기화 비용이에요."
+    "date": "2026-09-14",
+    "pos": "qqq",
+    "en": "Chips fell all day, but the software names rose. That is why QQQ barely moved.",
+    "ko": "반도체는 하루 내내 내렸는데 소프트웨어는 올랐어요. 그래서 QQQ는 거의 안 움직였습니다."
   }
 }
