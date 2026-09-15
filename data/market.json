@@ -737,8 +737,8 @@
   "next_session_ko": "오늘 아침에 거래가 다시 열립니다 — 서부 시각 오전 6시 30분 개장 전까지 표의 숫자는 월요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b> until the opening bell at <b>6:30 Pacific</b>",
   "next_session_ko_html": "<b>오늘 아침</b>에 거래가 다시 열립니다 &mdash; <b>서부 시각 오전 6시 30분</b> 개장 전까지 표의 숫자는 <b>월요일 종가</b>입니다",
-  "today_en": "Futures point <b>modestly lower</b> this morning — a few tenths of a percent across the board — after yesterday's split session. The louder thing is happening in the bond market: the government's ten-year borrowing rate is <b>back above 5%</b> this morning, its highest in nearly two decades, with oil still near <b>$103</b> a barrel and Brent near <b>$107</b>. That rate is what has been pressing on every share you own, Costco included. Today's calendar is thin by design: the <b>Federal Reserve begins its two-day meeting</b>, but <b>nothing is announced until tomorrow</b>, and officials stay silent until then. The only scheduled figure of any size is the <b>Empire State factory survey</b> at <b>5:30 in the morning Pacific time</b>. No company among your five reports, and nothing that reported after yesterday's close touches them. What to watch is whether yesterday's split holds — chips sold, software bought — or whether the two sides move together again.",
-  "today_ko": "오늘 아침 선물은 <b>조금 낮게</b> 가리키고 있습니다. 전반적으로 몇 십분의 1퍼센트 수준입니다. 어제의 갈라진 장 뒤입니다. 더 큰 일은 채권 시장에서 벌어지고 있습니다. 정부의 10년 만기 차입 금리가 오늘 아침 <b>다시 5%를 넘었고</b>, 20년 가까이 만에 가장 높습니다. 유가는 여전히 배럴당 <b>103달러</b> 부근, 브렌트유는 <b>107달러</b> 부근입니다. 그 금리가 코스트코를 포함해 보유하신 모든 주식을 눌러 온 것입니다. 오늘 일정은 원래 한산합니다. <b>연방준비제도가 이틀짜리 회의를 시작하지만</b> <b>발표는 내일에야 나오고</b>, 그때까지 연준 인사들은 말을 하지 않습니다. 규모 있는 자료라고는 <b>서부 시각 오전 5시 30분</b>에 나오는 <b>엠파이어스테이트 제조업 지수</b> 하나뿐입니다. 보유 다섯 중 실적을 내는 회사는 없고, 어제 장 마감 뒤 실적을 낸 곳 가운데 이들에 닿는 회사도 없습니다. 보실 것은 어제의 갈라짐이 이어지는가입니다. 반도체는 팔리고 소프트웨어는 사들여지는 흐름이 계속되는지, 아니면 양쪽이 다시 함께 움직이는지입니다.",
+  "today_en": "<b>A quieter day than yesterday so far, with one turn worth noticing.</b> Chip shares opened higher this morning, bouncing after yesterday's heavy fall, and have since handed almost all of it back: <b>SOXL</b> was up about <b>5%</b> at its best and is now roughly where it finished yesterday, while <b>Nvidia</b> has slipped from about <b>1%</b> up to barely changed. <b>QQQ</b> is down about <b>half a percent</b> and the <b>S&amp;P 500</b> about the same, with <b>Costco</b> the weakest of your five, down about <b>1%</b>. The weight on all of it is the same as yesterday — the government's ten-year borrowing rate is around <b>5%</b>, its highest since 2007, and oil has risen again to near <b>$106</b> a barrel. <b>The Federal Reserve decides tomorrow at 11 in the morning Pacific time</b>, and a rate rise is widely expected.",
+  "today_ko": "<b>어제보다는 조용한 하루이지만, 눈여겨볼 대목이 하나 있습니다.</b> 반도체 주식은 어제의 큰 하락 뒤 반등하며 오늘 아침 높게 출발했다가, 오른 만큼을 거의 다 되돌렸습니다. <b>SOXL</b>은 한때 <b>5%</b>가량 올랐다가 지금은 어제 마친 자리 부근이고, <b>엔비디아</b>도 <b>1%</b>가량 상승에서 거의 제자리로 내려왔습니다. <b>QQQ</b>는 <b>0.5%</b>가량 내렸고 <b>S&amp;P 500</b>도 비슷하며, 보유 다섯 중 가장 약한 <b>코스트코</b>는 <b>1%</b>가량 내렸습니다. 전체를 누르는 것은 어제와 같습니다. 정부의 10년 만기 차입 금리가 <b>5%</b> 부근으로 2007년 이후 가장 높고, 유가는 다시 올라 배럴당 <b>106달러</b> 부근입니다. <b>연방준비제도는 내일 서부 시각 오전 11시에 결정합니다.</b> 금리 인상이 널리 예상됩니다.",
   "today_date": "2026-09-15",
   "pancho_am": {
     "date": "2026-09-15",
@@ -747,9 +747,9 @@
     "ko": "연준은 내일에야 말합니다. 오늘은 채권 시장이 말하고 있고, 목소리가 큽니다."
   },
   "pancho_pm": {
-    "date": "2026-09-14",
-    "pos": "qqq",
-    "en": "Chips fell all day, but the software names rose. That is why QQQ barely moved.",
-    "ko": "반도체는 하루 내내 내렸는데 소프트웨어는 올랐어요. 그래서 QQQ는 거의 안 움직였습니다."
+    "date": "2026-09-15",
+    "pos": "soxl",
+    "en": "Chips jumped at the open, then gave it all back. Same spot as yesterday, just a longer trip.",
+    "ko": "반도체가 개장에 뛰었다가 오른 만큼 도로 내줬어요. 결국 어제 그 자리입니다."
   }
 }
