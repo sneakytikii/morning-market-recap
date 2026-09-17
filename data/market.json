@@ -728,9 +728,9 @@
   "next_session_ko": "지금 시장은 열려 있습니다 — 표의 숫자는 화요일 종가이고, 오늘 장은 서부 시각 오후 1시에 끝납니다",
   "next_session_en_html": "The market is <b>open now</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>, and today&rsquo;s session ends at <b>1 in the afternoon Pacific</b>",
   "next_session_ko_html": "지금 시장은 <b>열려 있습니다</b> &mdash; 표의 숫자는 <b>화요일 종가</b>이고, 오늘 장은 <b>서부 시각 오후 1시</b>에 끝납니다",
-  "today_en": "<b>It has been a quiet, waiting session so far</b> — shares are a little higher, the Dow is a shade lower, and nothing is making a big move before the Federal Reserve speaks. What is moving is the chip companies, a second day of climbing back from Monday's fall: <b>Nvidia</b> is up about <b>1.5%</b>, and <b>SOXL</b>, which magnifies the chip index three times over, is up about <b>5%</b>. <b>QQQ</b> is up about <b>0.7%</b>, and <b>Costco</b> is sitting close to where it finished yesterday. Two of yesterday's pressures have eased: oil is down about <b>3%</b>, and the government's ten-year borrowing rate has slipped back to just under <b>5%</b>. <b>The Federal Reserve announces at 11 this morning Pacific time</b>, and the chairman takes questions half an hour after that.",
-  "today_ko": "<b>지금까지는 조용히 기다리는 장이었습니다.</b> 주가는 조금 올라 있고, 다우존스는 살짝 내려 있으며, 연방준비제도가 입을 열기 전까지 크게 움직이는 쪽이 없습니다. 움직이는 것은 반도체 회사들입니다. 월요일 하락에서 이틀째 되돌리는 중으로, <b>엔비디아</b>가 약 <b>1.5%</b> 올랐고, 반도체 지수를 세 배로 키우는 <b>SOXL</b>은 약 <b>5%</b> 올라 있습니다. <b>QQQ</b>는 약 <b>0.7%</b> 올라 있고, <b>코스트코</b>는 어제 마친 자리 부근에 있습니다. 어제 시장을 누르던 것 두 가지는 누그러졌습니다. 유가가 약 <b>3%</b> 내렸고, 정부의 10년 만기 차입 금리도 <b>5%</b>를 살짝 밑도는 데까지 물러섰습니다. <b>연방준비제도는 오늘 서부 시각 오전 11시에 발표하고</b>, 의장은 그로부터 30분 뒤에 질문을 받습니다.",
-  "today_date": "2026-09-16",
+  "today_en": "<b>Yesterday's fall is being bought straight back today.</b> The Federal Reserve raised its interest rate on Wednesday afternoon, the first rise since 2023, and shares dropped on it; today they have gone the other way, with the <b>S&P 500</b> up about <b>1%</b>. The relief is coming from the two things that had been doing the damage — <b>oil</b> is cheaper again, and the government's ten-year borrowing rate has stepped back from the highest level it had reached since 2007. <b>The chip companies are doing most of the lifting</b>: <b>Nvidia</b> is up nearly <b>3%</b>, <b>SOXL</b>, which magnifies the chip index three times over, is up about <b>11%</b>, and <b>QQQ</b> is up about <b>1.5%</b>. <b>Costco</b> is the one sitting still, a shade below where it finished yesterday — and <b>tomorrow brings the quarterly expiry of options and futures</b>, when trading is much heavier than usual and prices can move without any news behind them.",
+  "today_ko": "<b>어제의 하락을 오늘 곧바로 되사고 있습니다.</b> 연방준비제도가 수요일 오후에 2023년 이후 처음으로 금리를 올렸고 주가는 그에 내렸는데, 오늘은 반대로 가고 있습니다. <b>S&P 500</b>이 약 <b>1%</b> 올라 있습니다. 숨통을 틔운 것은 그동안 시장을 누르던 바로 그 두 가지입니다. <b>유가</b>가 다시 내렸고, 정부의 10년 만기 차입 금리도 2007년 이후 가장 높았던 자리에서 물러섰습니다. <b>끌어올리는 일은 대부분 반도체 회사들이 하고 있습니다.</b> <b>엔비디아</b>가 <b>3%</b> 가까이, 반도체 지수를 세 배로 키우는 <b>SOXL</b>이 약 <b>11%</b>, <b>QQQ</b>가 약 <b>1.5%</b> 올라 있습니다. <b>코스트코</b>만 어제 마친 자리보다 조금 아래에서 가만히 있습니다. 그리고 <b>내일은 분기 옵션·선물 만기일</b>이라, 거래가 평소보다 훨씬 많고 이렇다 할 소식 없이도 가격이 움직일 수 있습니다.",
+  "today_date": "2026-09-17",
   "pancho_am": {
     "date": "2026-09-16",
     "pos": "",
@@ -738,9 +738,9 @@
     "ko": "연준이 오늘 11시에 말합니다. 결정보다 그다음 이야기가 어렵습니다."
   },
   "pancho_pm": {
-    "date": "2026-09-16",
+    "date": "2026-09-17",
     "pos": "",
-    "en": "Nothing much has happened all morning. The market is just waiting for the Fed at eleven our time.",
-    "ko": "아침 내내 별일 없었어요. 다들 우리 시각 11시 연준 발표만 기다립니다."
+    "en": "Most of yesterday's drop came back in a single day. The chip shares did nearly all the lifting.",
+    "ko": "어제 하락분이 하루 만에 대부분 되돌아왔어요. 거의 다 반도체가 끌어올렸습니다."
   }
 }
