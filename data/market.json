@@ -756,8 +756,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 금요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Friday&rsquo;s closing prices</b>",
   "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>금요일 종가</b>입니다",
-  "today_en": "<b>Futures point modestly higher this morning, with the Nasdaq contract ahead of the rest, and chip shares are leading again.</b> The reason is a real number rather than a mood: <b>South Korea</b> reported that its chip exports in the first 20 days of September were <b>more than three times</b> what they were a year earlier, at <b>$34.1 billion</b>, and its total exports hit a record. <b>Intel</b> is indicated up about <b>6%</b> before the bell on reports that <b>SK Hynix</b> may have it make memory chips in the United States; <b>Micron</b> and <b>AMD</b> are up about <b>2%</b>. <b>Oil is falling even though the news is bad</b> — the Houthis struck Riyadh and an oil terminal at Yanbu over the weekend, and American crude still slipped back <b>below $100</b> a barrel, because Saudi exports have recovered to more than <b>4 million barrels a day</b>. Today's calendar is nearly empty: one general activity figure just before the open, no earnings among your five. The week itself is not empty at all — <b>bond sales on Tuesday, Wednesday and Thursday</b>, and on <b>Thursday</b> both <b>Costco's results</b> and the <b>President's meeting with China's leader</b>.",
-  "today_ko": "<b>오늘 아침 선물은 조금 높게 가리키고 있고 나스닥 쪽이 앞서 있으며, 반도체 주식이 다시 앞장서고 있습니다.</b> 이유는 분위기가 아니라 실제 숫자입니다. <b>한국</b>이 9월 1~20일 반도체 수출을 <b>341억 달러</b>로 1년 전의 <b>세 배가 넘는다</b>고 발표했고, 전체 수출도 역대 최대였습니다. <b>인텔</b>은 <b>SK하이닉스</b>가 미국에서 메모리 반도체 생산을 맡길 수 있다는 보도에 개장 전 약 <b>6%</b> 높게 표시되고 있고, <b>마이크론</b>과 <b>AMD</b>는 약 <b>2%</b>입니다. <b>유가는 나쁜 소식에도 내리고 있습니다.</b> 주말에 후티가 리야드와 얀부의 석유 터미널을 쳤는데도 미국산 원유는 배럴당 <b>100달러 아래</b>로 내려왔습니다. 사우디의 수출이 <b>하루 400만 배럴</b> 넘게 회복됐기 때문입니다. 오늘 일정은 거의 비어 있습니다. 장이 열리기 직전의 경기 활동 지표 하나뿐이고, 보유 다섯 중 실적을 내는 곳은 없습니다. 다만 이번 주 자체는 전혀 한가하지 않습니다. <b>화요일·수요일·목요일에 국채 판매</b>가 있고, <b>목요일</b>에는 <b>코스트코 실적</b>과 <b>대통령과 중국 지도자의 회담</b>이 함께 있습니다.",
+  "today_en": "<b>A strong day so far, and the chip shares are doing the work.</b> Reports that <b>Intel</b> may make memory chips in America with <b>SK Hynix</b>, and a record high in <b>AMD</b>, have lifted the whole sector, while oil fell again and the government's ten-year borrowing rate slipped back below <b>5%</b>. Of your five, <b>SOXL</b> is up about <b>13%</b> — it moves three times whatever the chip shares do, in both directions — with <b>QQQ</b> up about <b>2.5%</b>, <b>Nvidia</b> about <b>2%</b> and the <b>S&amp;P 500</b> about <b>1.4%</b>. <b>Costco</b> has sat the day out, barely changed. <b>Thursday brings both</b> <b>Costco's own results</b> and the <b>President's meeting with China's leader</b>.",
+  "today_ko": "<b>지금까지는 좋은 하루이고, 끌고 가는 것은 반도체 주식입니다.</b> <b>인텔</b>이 <b>SK하이닉스</b>와 함께 미국에서 메모리 반도체를 만들 수 있다는 보도, 그리고 <b>AMD</b>의 사상 최고가가 업종 전체를 들어 올렸고, 유가는 또 내렸으며 10년 만기 국채 금리는 <b>5%</b> 아래로 다시 내려왔습니다. 보유 다섯 가운데 <b>SOXL</b>이 약 <b>13%</b> 올랐고 — 반도체 주식이 움직이는 폭의 세 배로, 오를 때도 내릴 때도 그렇습니다 — <b>QQQ</b>는 약 <b>2.5%</b>, <b>엔비디아</b>는 약 <b>2%</b>, <b>S&amp;P 500</b>은 약 <b>1.4%</b>입니다. <b>코스트코</b>는 이 흐름에서 비켜서 거의 그대로입니다. <b>목요일에는</b> <b>코스트코 실적</b>과 <b>대통령과 중국 지도자의 회담</b>이 함께 있습니다.",
   "today_date": "2026-09-21",
   "pancho_am": {
     "date": "2026-09-21",
@@ -766,9 +766,9 @@
     "ko": "한국 반도체 수출이 이번 달에 세 배 넘게 늘었대요. 그래서 오늘 반도체가 앞섭니다."
   },
   "pancho_pm": {
-    "date": "2026-09-18",
-    "pos": "nvda",
-    "en": "Nvidia has barely moved today, but the other chip shares climbed without it.",
-    "ko": "엔비디아는 오늘 거의 안 움직였는데, 다른 반도체 주식들은 올랐어요."
+    "date": "2026-09-21",
+    "pos": "soxl",
+    "en": "The big chip day is not really Nvidia's. Intel and AMD are the ones pulling it along.",
+    "ko": "오늘 반도체가 많이 올랐는데, 끌고 간 건 엔비디아가 아니라 인텔과 AMD예요."
   }
 }
