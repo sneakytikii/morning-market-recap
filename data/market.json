@@ -756,8 +756,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 월요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b>",
   "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>월요일 종가</b>입니다",
-  "today_en": "<b>A quiet morning after a very loud day.</b> Stock futures are close to flat after yesterday's jump, and there is no big news overnight among your five. <b>Oil has kept falling</b> — American crude is around <b>$90</b> a barrel this morning — and the <b>President addresses the United Nations</b> right around the time the market opens; his Sunday remark about meeting <b>Iran's</b> president is what knocked oil down, so his words today can move it again. On the calendar: the first of this week's three government bond sales, <b>$78 billion of two-year notes at 10 in the morning Pacific time</b>, and three Federal Reserve officials speak during the day. No earnings from your five — <b>Thursday</b> is the day that matters, with <b>Costco's results</b> and the <b>meeting with China's leader</b> both on it.",
-  "today_ko": "<b>아주 시끄러운 하루 뒤의 조용한 아침입니다.</b> 어제의 급등 뒤 주가지수 선물은 거의 제자리이고, 밤사이 보유 다섯 종목에 큰 소식은 없습니다. <b>유가는 계속 내려</b> 오늘 아침 미국산 원유는 배럴당 약 <b>90달러</b> 부근입니다. 그리고 장이 열릴 무렵 <b>대통령이 유엔에서 연설합니다.</b> 유가를 끌어내린 것이 일요일의 <b>이란</b> 대통령 관련 발언이었으니, 오늘 그의 말이 유가를 다시 움직일 수 있습니다. 일정으로는 이번 주 세 번의 국채 판매 중 첫 번째인 <b>2년물 780억 달러가 서부 시각 오전 10시</b>에 나오고, 낮 동안 연준 인사 세 명이 연설합니다. 보유 다섯의 실적 발표는 없습니다. 중요한 날은 <b>목요일</b>입니다. <b>코스트코 실적</b>과 <b>중국 지도자와의 회담</b>이 함께 있습니다.",
+  "today_en": "<b>A pause, not a pullback.</b> After Monday's big jump the market is catching its breath — the Dow is a touch lower, the <b>S&amp;P 500</b> is about flat, and the Nasdaq is drifting a little higher. Chip shares are still climbing, on track for a sixth straight rising day: <b>SOXL</b> is up about <b>5%</b>, <b>Nvidia</b> up about <b>1%</b>, <b>QQQ</b> up about half a percent, and <b>Costco</b> has barely moved. The <b>President's United Nations speech</b> this morning changed little — he repeated that he expects an <b>Iran</b> deal only after the November election, and oil, down hard in recent days, barely moved. <b>Thursday</b> is still the day that matters: <b>Costco's results</b> and the <b>meeting with China's leader</b> both land that day.",
+  "today_ko": "<b>하락이 아니라 숨 고르기입니다.</b> 월요일의 급등 뒤 시장은 숨을 고르고 있습니다. 다우는 소폭 내리고, <b>S&amp;P 500</b>은 거의 제자리이며, 나스닥은 조금씩 오르고 있습니다. 반도체는 여전히 오르는 중이어서 업종 전체로는 엿새 연속 상승을 향해 가고 있습니다. <b>SOXL</b>은 약 <b>5%</b>, <b>엔비디아</b>는 약 <b>1%</b> 올랐고, <b>QQQ</b>는 0.5% 남짓 오르고 <b>코스트코</b>는 거의 움직이지 않았습니다. 오늘 아침 <b>대통령의 유엔 연설</b>은 시장을 거의 움직이지 않았습니다. <b>이란</b>과의 합의는 11월 선거 뒤에나 기대한다는 말을 되풀이했고, 며칠 내리 떨어졌던 유가도 거의 움직이지 않았습니다. 중요한 날은 여전히 <b>목요일</b>입니다. <b>코스트코 실적</b>과 <b>중국 지도자와의 회담</b>이 그날 함께 있습니다.",
   "today_date": "2026-09-22",
   "pancho_am": {
     "date": "2026-09-22",
@@ -766,9 +766,9 @@
     "ko": "큰 하루 뒤의 조용한 아침이에요. 진짜 시험은 목요일, 코스트코 실적과 중국 회담이에요."
   },
   "pancho_pm": {
-    "date": "2026-09-21",
-    "pos": "soxl",
-    "en": "The big chip day is not really Nvidia's. Intel and AMD are the ones pulling it along.",
-    "ko": "오늘 반도체가 많이 올랐는데, 끌고 간 건 엔비디아가 아니라 인텔과 AMD예요."
+    "date": "2026-09-22",
+    "pos": "",
+    "en": "The President gave a big speech and the market mostly shrugged. Chips just kept climbing.",
+    "ko": "대통령이 큰 연설을 했는데 시장은 덤덤했어요. 반도체만 계속 오르네요."
   }
 }
