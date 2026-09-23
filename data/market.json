@@ -747,8 +747,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 화요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
-  "today_en": "<b>A softer start is indicated.</b> Stock index futures point a touch lower this morning, and chip shares — up six days in a row — are easing in early trading, with the big names off around 1%. <b>SOXL</b> would feel any chip pullback about three times over. <b>Oil</b> keeps falling: American crude is near <b>$90</b>, and refinery shares fell yesterday after the President floated <b>stopping diesel exports</b>, with diesel at a record price and a decision promised soon. Today's own calendar is light — a survey of business activity just after the open, and the <b>$70 billion five-year bond sale at 10 in the morning Pacific time</b> — because tomorrow is the heavy day: <b>Costco's results</b> after the close and the <b>meeting with China's leader</b>, with <b>Xi Jinping arriving in Washington today</b>, his first state visit in 11 years. No earnings among your five today.",
-  "today_ko": "<b>조금 무른 출발이 예고돼 있습니다.</b> 주가지수 선물은 오늘 아침 소폭 낮은 쪽을 가리키고, 엿새 연속 오른 반도체 주식은 이른 거래에서 큰 종목들이 1% 안팎 내리며 쉬어 가고 있습니다. 반도체가 물러서면 <b>SOXL</b>은 그 폭의 약 세 배로 느낍니다. <b>유가</b>는 계속 내려 미국산 원유가 <b>90달러</b> 부근입니다. 어제 대통령이 <b>디젤 수출 중단</b>을 검토하고 있다고 말한 뒤 정유회사 주가가 내렸습니다. 디젤 값은 사상 최고이고, 결정은 곧 내리겠다고 합니다. 오늘 일정 자체는 가볍습니다. 개장 직후의 기업 활동 조사, 그리고 <b>서부 시각 오전 10시의 5년물 국채 700억 달러 판매</b>가 있습니다. 무거운 날은 내일입니다. 장 마감 뒤 <b>코스트코 실적</b>과 <b>중국 지도자와의 회담</b>이 있고, <b>시진핑은 오늘 워싱턴에 도착합니다.</b> 11년 만의 국빈 방문입니다. 오늘 보유 다섯 중 실적 발표는 없습니다.",
+  "today_en": "<b>The quiet start turned into a pullback.</b> A survey of business activity came in much stronger than expected this morning, pushing the government's <b>10-year borrowing rate</b> to its <b>highest level since 2007</b>, and the higher rate is weighing on stocks. The six-day chip run has stalled: the chip fund <b>SOXL</b> is down about <b>7%</b>, <b>Nvidia</b> about <b>2%</b> and the Nasdaq-100 fund <b>QQQ</b> about <b>1%</b>, while <b>Costco</b> is up slightly ahead of tomorrow's results. Oil is back up a touch after five days of falling. Still ahead: <b>Xi Jinping lands in Washington early this afternoon Pacific time</b>, and tomorrow brings <b>Costco's results</b> after the close and the <b>meeting with China's leader</b>.",
+  "today_ko": "<b>조용하던 출발이 되밀림으로 바뀌었습니다.</b> 오늘 아침 기업 활동 조사가 예상보다 훨씬 강하게 나오면서 정부의 <b>10년 만기 금리</b>가 <b>2007년 이후 최고</b>로 뛰었고, 높아진 금리가 주가를 누르고 있습니다. 엿새 이어지던 반도체 상승 행진은 주춤합니다. 반도체 펀드 <b>SOXL</b>은 약 <b>7%</b>, <b>엔비디아</b>는 약 <b>2%</b>, 나스닥-100 펀드 <b>QQQ</b>는 약 <b>1%</b> 내렸고, <b>코스트코</b>는 내일 실적 발표를 앞두고 소폭 올라 있습니다. 유가는 닷새 내리 내린 뒤 오늘은 살짝 반등했습니다. 남은 일정입니다. <b>시진핑이 서부 시각 오늘 이른 오후 워싱턴에 도착하고</b>, 내일은 장 마감 뒤 <b>코스트코 실적</b>과 <b>중국 지도자와의 회담</b>이 있습니다.",
   "today_date": "2026-09-23",
   "pancho_am": {
     "date": "2026-09-23",
@@ -757,9 +757,9 @@
     "ko": "반도체가 오늘 아침엔 지쳐 보여요. 진짜 시험은 내일, 코스트코 실적과 중국 회담이에요."
   },
   "pancho_pm": {
-    "date": "2026-09-22",
+    "date": "2026-09-23",
     "pos": "",
-    "en": "The President gave a big speech and the market mostly shrugged. Chips just kept climbing.",
-    "ko": "대통령이 큰 연설을 했는데 시장은 덤덤했어요. 반도체만 계속 오르네요."
+    "en": "The six-day chip climb is taking a rest today. Costco is the only one of your five that's up.",
+    "ko": "엿새 오르던 반도체가 오늘은 쉬어 가요. 다섯 중엔 코스트코만 올라 있어요."
   }
 }
