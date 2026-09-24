@@ -747,8 +747,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 수요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>수요일 종가</b>입니다",
-  "today_en": "<b>The selling has followed into this morning.</b> Stock index futures point lower — the S&amp;P contract down about half a percent, the Nasdaq contract about 1% — as yesterday’s bond trouble carries on, and chip shares are weaker still before the open, the leveraged chip fund <b>SOXL</b> down around 6% in early trading. The overnight news was actually good: the <b>tariff truce with China has been extended to January 10</b>, announced ahead of today’s summit. The calendar is the heaviest of the month. A weekly unemployment count lands just before the open, <b>the President meets Xi Jinping</b> at the White House during the trading day, the government sells <b>$44 billion of seven-year bonds</b> at 10 in the morning Pacific time — yesterday’s five-year sale went badly and helped set off the fall — and <b>Costco reports after the close</b>, with its call at 2 in the afternoon Pacific time. Watch the bond sale first: if buyers stay away again, rates set the tone no matter what the summit says.",
-  "today_ko": "<b>어제의 매도세가 오늘 아침까지 이어지고 있습니다.</b> 주가지수 선물은 낮은 쪽을 가리킵니다. S&amp;P 선물이 0.5%쯤, 나스닥 선물이 1%쯤 내려 있습니다. 어제의 채권 문제가 계속되고 있고, 반도체는 개장 전부터 더 약해서 3배 반도체 펀드 <b>SOXL</b>은 이른 거래에서 6% 안팎 내려 있습니다. 밤사이 소식 자체는 좋았습니다. <b>중국과의 관세 휴전이 1월 10일까지 연장</b>됐다고 오늘 정상회담을 앞두고 발표됐습니다. 일정은 이번 달 가장 무겁습니다. 개장 직전에 주간 실업 통계가 나오고, 장중에는 <b>대통령이 백악관에서 시진핑을 만나며</b>, 서부 시각 오전 10시에는 정부가 <b>7년물 국채 440억 달러</b>를 팝니다. 어제 5년물 판매가 나빴고 그것이 하락의 방아쇠 하나였습니다. 그리고 <b>장 마감 뒤 코스트코가 실적</b>을 내고, 설명회는 서부 시각 오후 2시입니다. 국채 판매를 먼저 보십시오. 매수자가 또 물러서 있으면, 정상회담이 무슨 말을 하든 하루의 분위기는 금리가 정합니다.",
+  "today_en": "<b>A rough morning has mostly righted itself.</b> Stocks opened lower as yesterday's interest-rate worries carried over, then came back toward flat after a report that the United States and Iran are exploring a step-by-step plan to reopen the Strait of Hormuz — and today's <b>$44 billion seven-year bond sale</b> passed without a repeat of yesterday's trouble. The White House summit with President Xi has produced friendly words so far and no policy news; the two Presidents speak again at tonight's state dinner. Of your five, the chip fund <b>SOXL</b> was down about 6% early and has climbed most of the way back, <b>Nvidia</b> is off less than 1%, the Nasdaq-100 fund <b>QQQ</b> is about flat, and <b>Costco</b> is down about half a percent. The day's main event is still ahead: <b>Costco reports after the close</b>, with its call at 2 in the afternoon Pacific time.",
+  "today_ko": "<b>거칠었던 아침 장이 오후 들어 대체로 제자리를 찾았습니다.</b> 어제의 금리 걱정이 이어지며 낮게 출발했던 주가는, 미국과 이란이 호르무즈 해협을 단계적으로 다시 여는 방안을 논의 중이라는 보도가 나온 뒤 보합권까지 되돌아왔고, 오늘의 <b>7년물 국채 440억 달러 판매</b>도 어제 같은 문제 없이 지나갔습니다. 시진핑 주석과의 백악관 정상회담은 지금까지 우호적인 말만 있었고 정책 소식은 없었으며, 두 정상은 오늘 밤 국빈 만찬에서 다시 발언합니다. 보유 종목 가운데 3배 반도체 펀드 <b>SOXL</b>은 아침에 6%쯤 내렸다가 대부분 회복했고, <b>엔비디아</b>는 1% 미만 내림세, 나스닥100 펀드 <b>QQQ</b>는 보합권이며, <b>코스트코</b>는 0.5%쯤 내려 있습니다. 오늘의 큰일은 아직 남아 있습니다. <b>장 마감 뒤 코스트코가 실적</b>을 내며, 설명회는 서부 시각 오후 2시입니다.",
   "today_date": "2026-09-24",
   "pancho_am": {
     "date": "2026-09-24",
@@ -757,9 +757,9 @@
     "ko": "드디어 그날이에요. 낮엔 중국 회담, 밤엔 코스트코. 지금은 채권시장 목소리가 제일 커요."
   },
   "pancho_pm": {
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "pos": "",
-    "en": "The six-day chip climb is taking a rest today. Costco is the only one of your five that's up.",
-    "ko": "엿새 오르던 반도체가 오늘은 쉬어 가요. 다섯 중엔 코스트코만 올라 있어요."
+    "en": "The morning scare mostly faded by midday. Tonight it's Costco's turn to talk.",
+    "ko": "아침의 놀람은 한낮에 거의 가셨어요. 오늘 밤엔 코스트코 차례예요."
   }
 }
