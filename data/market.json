@@ -720,8 +720,8 @@
   "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 화요일 종가입니다",
   "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
   "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
-  "today_en": "<b>Futures are close to flat this morning</b>, holding still ahead of the biggest day of the week — it starts before the open. At <b>5:30 this morning Pacific time</b> comes the <b>August inflation figure</b> the Fed watches most; forecasters expect the yearly pace near <b>3.3%</b>, and this year’s revisions to past figures land with it. After the close tonight come <b>Micron’s results</b>, the first hard numbers behind the memory story that has led the chip rise — options traders have braced for a move of roughly <b>10%</b> either way, and chip funds would feel it, SOXL three times over. Oil sits near <b>$90</b> after yesterday’s 4% fall, the ten-year rate near <b>5.26%</b>, and chip shares are giving a little back before the open after yesterday’s bounce, with <b>Nvidia about flat</b>. Today is also the last trading day of the quarter.",
-  "today_ko": "<b>오늘 아침 선물은 거의 제자리입니다.</b> 이번 주 가장 큰 날을 앞두고 숨을 고르는 모양새인데, 그날은 개장 전에 시작됩니다. <b>서부 시각 오전 5시 30분</b>에 연준이 가장 눈여겨보는 <b>8월 물가 수치</b>가 나옵니다. 예상되는 연간 상승률은 <b>3.3%</b> 부근이고, 과거 수치에 대한 올해의 수정치도 함께 나옵니다. 오늘 밤 장 마감 뒤에는 <b>마이크론 실적</b>이 나옵니다. 반도체 상승을 이끈 메모리 이야기 뒤의 첫 확실한 숫자이고, 옵션 시장은 어느 쪽으로든 약 <b>10%</b>의 움직임에 대비하고 있습니다 — 반도체 펀드들이 그것을 느낄 것이고, SOXL은 세 배로 느낍니다. 유가는 어제 4% 하락 뒤 <b>90달러</b> 부근, 10년물 금리는 <b>5.26%</b> 부근이며, 반도체는 어제 반등 뒤 개장 전에 조금 되돌리고 있고 <b>엔비디아는 거의 제자리</b>입니다. 오늘은 분기의 마지막 거래일이기도 합니다.",
+  "today_en": "<b>The morning brought good news on prices, and the market is up.</b> The <b>August inflation figure</b> came in cooler than expected before the open — the core yearly pace eased to <b>3.0%</b> — and talk of a Fed rate rise in October has faded. The broad market is up about <b>half a percent</b>, the Nasdaq-100 fund <b>QQQ</b> is up close to <b>1%</b>, and <b>Nvidia</b> is up about <b>1.5%</b>, while the chip fund <b>SOXL</b> sits about flat and <b>Costco</b> is down about half a percent. Still ahead: <b>Micron's results</b> land after the market closes at <b>1 this afternoon Pacific time</b> — the first hard numbers behind the memory story that has led the chip rise — and the jobs report follows Friday morning. Today is also the last trading day of the quarter.",
+  "today_ko": "<b>오늘 아침에는 물가 쪽에서 좋은 소식이 나왔고, 시장은 오르고 있습니다.</b> 개장 전에 나온 <b>8월 물가 수치</b>가 예상보다 낮았습니다 — 핵심 연간 상승률이 <b>3.0%</b>로 내려왔습니다 — 그리고 연준이 10월에 금리를 올릴 것이라는 이야기는 잦아들었습니다. 시장 전체는 약 <b>0.5%</b> 올랐고, 나스닥100 펀드 <b>QQQ</b>는 <b>1%</b> 가까이, <b>엔비디아</b>는 약 <b>1.5%</b> 올랐습니다. 반면 반도체 펀드 <b>SOXL</b>은 거의 제자리이고, <b>코스트코</b>는 약 0.5% 내렸습니다. 아직 남은 일정으로는, <b>마이크론 실적</b>이 <b>서부 시각 오후 1시</b> 장 마감 뒤에 나옵니다 — 반도체 상승을 이끌어 온 메모리 이야기의 첫 확실한 숫자입니다 — 그리고 금요일 아침에는 고용 보고서가 나옵니다. 오늘은 분기의 마지막 거래일이기도 합니다.",
   "today_date": "2026-09-30",
   "pancho_am": {
     "date": "2026-09-30",
@@ -730,9 +730,9 @@
     "ko": "오늘은 시험이 둘! 개장 전엔 물가 숫자, 밤엔 마이크론 실적. 반도체가 다 느껴요."
   },
   "pancho_pm": {
-    "date": "2026-09-28",
-    "pos": "soxl",
-    "en": "Nvidia is up today, but this fund follows the whole chip group, and the group is down.",
-    "ko": "엔비디아는 올랐는데, 이 펀드는 반도체 전체를 따라가요. 오늘은 전체가 내렸어요."
+    "date": "2026-09-30",
+    "pos": "",
+    "en": "The first of today's two tests went well: inflation came in gentler than expected. Micron's turn tonight.",
+    "ko": "오늘 시험 둘 중 첫째는 잘 넘겼어요. 물가가 생각보다 순했어요. 밤엔 마이크론 차례예요."
   }
 }
