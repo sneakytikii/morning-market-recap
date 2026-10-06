@@ -720,8 +720,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 월요일 종가입니다",
  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b>",
  "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>월요일 종가</b>입니다",
- "today_en": "<b>The record run looks ready to continue — stock futures point modestly higher this morning.</b> <b>Nvidia</b> is trading a touch above yesterday's record close in early dealing, and the chip funds are slightly higher with it. <b>Oil</b> has kept sliding, to around <b>$87</b> this morning after its first close below $90 in weeks, while the ten-year borrowing rate holds near its new record, about <b>5.31%</b>. Today's calendar is light: a trade report before the open, a Fed official speaking mid-morning, and at ten Pacific time a government bond auction that will show how eager buyers are at these record rates. The real tests come <b>tomorrow</b> — the Fed's September meeting notes at 11 in the morning Pacific time, then <b>Costco's September sales</b> after the close.",
- "today_ko": "<b>기록 행진은 이어질 기세입니다 — 오늘 아침 주가지수 선물은 완만하게 올라 있습니다.</b> <b>엔비디아</b>는 개장 전 거래에서 어제의 기록 종가보다 조금 위에 있고, 반도체 펀드들도 함께 소폭 올라 있습니다. <b>유가</b>는 계속 미끄러져, 몇 주 만에 처음으로 90달러 아래로 마감한 뒤 오늘 아침 약 <b>87달러</b>이고, 10년물 차입 금리는 새 기록인 약 <b>5.31%</b> 부근을 지키고 있습니다. 오늘 달력은 한산합니다. 개장 전 무역 통계, 오전 중반에 연준 인사 연설 하나, 그리고 서부 시각 오전 10시에는 이 기록적인 금리에 사겠다는 사람이 얼마나 되는지 보여 줄 국채 입찰이 있습니다. 진짜 시험은 <b>내일</b>입니다 — 서부 시각 오전 11시 연준 9월 회의 기록, 그리고 장 마감 뒤 <b>코스트코 9월 매출</b>.",
+ "today_en": "<b>The record run has carried into today.</b> The <b>S&P 500</b>, the <b>Nasdaq</b> and <b>Nvidia</b> all touched fresh highs this morning, helped along as borrowing rates eased back from yesterday's record and the ten-o'clock Pacific auction of government notes went off without trouble. <b>Nvidia</b> jumped early and has given most of it back — now up about half a percent — while the chip fund <b>SOXL</b> is up about 1%, the Nasdaq-100 fund <b>QQQ</b> up about half a percent in record territory, and <b>Costco</b> up about 1%. Oil slid toward <b>$87</b> this morning, then climbed back near <b>$89</b>. The real tests come <b>tomorrow</b>: the Fed's September meeting notes at 11 in the morning Pacific time, then <b>Costco's September sales</b> after the close.",
+ "today_ko": "<b>기록 행진은 오늘도 이어지고 있습니다.</b> 오전에 <b>S&P 500</b>, <b>나스닥</b>, <b>엔비디아</b>가 모두 사상 최고치를 새로 찍었습니다. 차입 금리가 어제의 기록에서 한발 물러섰고, 서부 시각 오전 10시의 국채 입찰도 무리 없이 끝나 힘을 보탰습니다. <b>엔비디아</b>는 초반에 크게 뛰었다가 대부분 되돌려 지금은 약 0.5% 오른 수준이고, 반도체 펀드 <b>SOXL</b>은 약 1%, 나스닥100 펀드 <b>QQQ</b>는 기록권에서 약 0.5%, <b>코스트코</b>는 약 1% 올라 있습니다. 유가는 오전에 <b>87달러</b> 쪽으로 미끄러졌다가 <b>89달러</b> 부근으로 되올라왔습니다. 진짜 시험은 <b>내일</b>입니다 — 서부 시각 오전 11시 연준의 9월 회의 기록, 그리고 장 마감 뒤 <b>코스트코 9월 매출</b>입니다.",
  "today_date": "2026-10-06",
  "pancho_am": {
   "date": "2026-10-06",
@@ -730,9 +730,9 @@
   "ko": "주가도 금리도 기록을 썼어요. 오늘은 조용하고, 진짜 시험은 내일이에요."
  },
  "pancho_pm": {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "pos": "",
-  "en": "Rates crept up again and stocks climbed anyway. Nvidia did the pulling — the other chips are still resting.",
-  "ko": "금리가 또 올랐는데 주가는 그래도 올랐어요. 엔비디아가 끌었고, 다른 반도체는 아직 쉬는 중이에요."
+  "en": "Not so quiet after all — new highs again, and this time rates eased instead of fighting the climb.",
+  "ko": "조용하긴요 — 또 신고가예요. 이번엔 금리도 맞서지 않고 살짝 내려왔어요."
  }
 }
