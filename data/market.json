@@ -720,8 +720,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 화요일 종가입니다",
  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
  "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
- "today_en": "<b>The morning is leaning against yesterday's records.</b> Share futures point modestly lower — the Nasdaq side most — as the <b>ten-year borrowing rate climbs back near 5.33%</b>, above Monday's record close, and oil sits just under <b>$90</b>. Chip shares are the soft spot: memory maker <b>Micron</b> is down about 3% before the open and the chip index nearly 2% — three times that for <b>SOXL</b>, indicated down about 5% — after a well-known bearish investor was reported extending bets against Nvidia and Micron into next year. <b>Costco</b> is slightly higher ahead of its big evening. The crowded day stands: a large auction of ten-year bonds at ten in the morning Pacific time, the notes from the Fed's September meeting at 11, and <b>Costco's September sales after the close tonight</b>. The question underneath is unchanged — whether record-priced shares keep shrugging at a record-priced bond.",
- "today_ko": "<b>오늘 아침은 어제의 기록들과 반대로 기울어 있습니다.</b> 주가지수 선물은 소폭 낮게 — 나스닥 쪽이 가장 — 가리키고 있습니다. <b>10년물 차입 금리가 월요일 기록 종가보다 높은 약 5.33%</b>로 되올라왔고, 유가는 <b>90달러</b> 바로 아래에 있습니다. 약한 곳은 반도체입니다. 하락에 거는 것으로 유명한 투자자가 엔비디아와 마이크론에 대한 베팅을 내년까지 연장했다는 보도 뒤, 메모리 회사 <b>마이크론</b>이 개장 전 약 3%, 반도체 지수가 2% 가까이 내려 있습니다 — <b>SOXL</b>에는 그 세 배가 적용돼 약 5% 하락을 가리킵니다. <b>코스트코</b>는 자신의 큰 저녁을 앞두고 소폭 올라 있습니다. 붐비는 하루는 그대로입니다. 서부 시각 오전 10시 대규모 10년물 국채 입찰, 11시 연준 9월 회의 기록, 그리고 <b>장 마감 뒤 코스트코 9월 매출</b>. 밑에 깔린 질문은 그대로입니다 — 기록적인 값의 주식이 기록적인 이자를 주는 국채 앞에서 계속 어깨를 으쓱할 수 있는가.",
+ "today_en": "<b>The record run is catching its breath.</b> The <b>ten-year borrowing rate touched about 5.36%</b> this morning — its highest since 2002 — and share prices have backed away a little from yesterday's records, the Dow most. Among your five, the chip fund <b>SOXL</b> is down about 4% and <b>Nvidia</b> about 1%, the Nasdaq-100 fund <b>QQQ</b> is slightly lower, and <b>Costco</b> is up about 1% ahead of its September sales report tonight. The morning's scare around memory-maker <b>Micron</b> passed — it swung from down about 3% before the open to up about 4% by midday. Still ahead: results from the big ten-year bond auction land about now, the Fed's September meeting notes come at <b>11 this morning Pacific time</b>, and <b>Costco's numbers arrive after the close</b>.",
+ "today_ko": "<b>기록 행진이 숨을 고르고 있습니다.</b> <b>10년물 차입 금리가 오늘 아침 약 5.36%</b> — 2002년 이후 최고 — 까지 오르자 주가는 어제의 기록에서 조금 물러나 있고, 다우가 가장 많이 내렸습니다. 보유 종목 중에는 반도체 펀드 <b>SOXL</b>이 약 4%, <b>엔비디아</b>가 약 1% 내렸고, 나스닥100 펀드 <b>QQQ</b>는 소폭 낮으며, <b>코스트코</b>는 오늘 밤 9월 매출 발표를 앞두고 약 1% 올라 있습니다. 아침의 걱정거리였던 메모리 회사 <b>마이크론</b>은 개장 전 약 3% 하락에서 한낮 약 4% 상승으로 돌아섰습니다. 남은 일정은 이렇습니다. 대규모 10년물 국채 입찰 결과가 지금쯤 나오고, <b>서부 시각 오전 11시</b>에 연준 9월 회의 기록이, <b>장 마감 뒤에는 코스트코 숫자</b>가 나옵니다.",
  "today_date": "2026-10-07",
  "pancho_am": {
   "date": "2026-10-07",
@@ -730,9 +730,9 @@
   "ko": "오늘은 바쁜 날이에요. 국채 입찰, 연준 회의록, 밤엔 코스트코 매출까지. 반도체는 아침부터 약해요."
  },
  "pancho_pm": {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "pos": "",
-  "en": "Not so quiet after all — new highs again, and this time rates eased instead of fighting the climb.",
-  "ko": "조용하긴요 — 또 신고가예요. 이번엔 금리도 맞서지 않고 살짝 내려왔어요."
+  "en": "Bond rates rose again, so stocks are taking a rest. Costco is the one perking up before its big night.",
+  "ko": "금리가 다시 올라 주식은 쉬어가요. 코스트코만 오늘 밤 발표 앞두고 기운이 나요."
  }
 }
