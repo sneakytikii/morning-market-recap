@@ -729,8 +729,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 월요일 종가입니다",
  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b>",
  "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>월요일 종가</b>입니다",
- "today_en": "<b>The morning after the bounce looks hesitant.</b> Stock futures are mixed before the open — the technology side pointing a little lower, the Dow side a little higher — and chip shares are weaker again in early trading, with the triple-speed fund <b>SOXL</b> indicated down about 4%. The AI-money question is back in the headlines, with <b>OpenAI</b> reported to be raising another <b>$30 billion</b>, and oil is edging higher after settling back above <b>$100</b> a barrel. <b>General Motors</b> and a parade of industrial companies report before the open; the bigger tests come after the close tonight, when <b>Netflix</b> and <b>SpaceX</b> open a week of about 70 big-company earnings reports, with Tesla and Meta tomorrow. <b>Costco</b> was changing hands just above <b>$1,000</b> before the open.",
- "today_ko": "<b>반등 다음 날 아침은 머뭇거리는 모습입니다.</b> 개장 전 주가지수 선물은 엇갈려 있습니다 — 기술주 쪽은 소폭 낮게, 다우 쪽은 소폭 높게 — 그리고 반도체 주식은 이른 거래에서 다시 약합니다. 3배속 펀드 <b>SOXL</b>은 약 4% 하락을 가리키고 있습니다. AI 자금 질문도 다시 머리기사에 올랐습니다. <b>OpenAI</b>가 <b>300억 달러</b>를 더 모은다는 보도가 나왔고, 유가는 배럴당 <b>100달러</b> 위로 되올라선 뒤 더 오르고 있습니다. 개장 전에는 <b>제너럴 모터스</b>를 비롯한 산업 기업들이 줄줄이 실적을 내고, 더 큰 시험은 오늘 밤 장 마감 뒤입니다 — <b>Netflix</b>와 <b>SpaceX</b>가 약 70개 대기업 실적 주간을 열고, 내일은 테슬라와 메타입니다. <b>코스트코</b>는 개장 전 <b>1,000달러</b> 바로 위에서 거래되고 있었습니다.",
+ "today_en": "<b>The morning scare faded into a steadier day.</b> Chip shares opened sharply lower — the triple-speed fund <b>SOXL</b> pointed down about 4% before the bell, and <b>Nvidia</b> was down about 2% early on — but buyers stepped in, and by midday both were back to roughly flat, with the Nasdaq-100 fund <b>QQQ</b> flat as well. The rest of the market is doing better than that: the Dow is up about 1%, led by the older industrial and healthcare names, and oil eased back after touching its highest level in nearly five months overnight. <b>Costco</b> is off less than half a percent, holding just under <b>$1,000</b>. The bigger test comes after today's close, when <b>Netflix</b> and <b>SpaceX</b> report earnings, with Tesla and Meta tomorrow.",
+ "today_ko": "<b>아침의 급락 공포는 한결 차분한 하루로 가라앉았습니다.</b> 반도체 주식은 크게 낮게 출발했지만 — 3배속 펀드 <b>SOXL</b>은 개장 전 약 4% 하락을 가리켰고, <b>엔비디아</b>도 장 초반 약 2% 내렸습니다 — 사려는 쪽이 들어오면서 한낮에는 둘 다 보합 수준으로 돌아왔고, 나스닥 100 펀드 <b>QQQ</b>도 보합입니다. 시장의 나머지는 그보다 낫습니다. 다우는 전통 산업주와 헬스케어 종목들이 이끌며 약 1% 올랐고, 유가는 밤사이 거의 다섯 달 만의 최고치를 찍은 뒤 되밀렸습니다. <b>코스트코</b>는 0.5%가 안 되게 내려 <b>1,000달러</b> 바로 아래를 지키고 있습니다. 더 큰 시험은 오늘 장 마감 뒤입니다 — <b>Netflix</b>와 <b>SpaceX</b>가 실적을 발표하고, 내일은 테슬라와 메타 차례입니다.",
  "today_date": "2026-10-20",
  "pancho_am": {
   "date": "2026-10-20",
@@ -739,9 +739,9 @@
   "ko": "8일 내리 밀리던 반도체가 한숨 돌렸어요. 이번 주 실적 발표가 고비예요."
  },
  "pancho_pm": {
-  "date": "2026-10-07",
+  "date": "2026-10-20",
   "pos": "",
-  "en": "Bond rates rose again, so stocks are taking a rest. Costco is the one perking up before its big night.",
-  "ko": "금리가 다시 올라 주식은 쉬어가요. 코스트코만 오늘 밤 발표 앞두고 기운이 나요."
+  "en": "The scary start for chips didn't last. By lunch it was mostly back, and the big earnings reports start tonight.",
+  "ko": "반도체는 무섭게 출발했다가 점심쯤 거의 돌아왔어요. 오늘 밤부터 큰 실적 발표가 시작돼요."
  }
 }
