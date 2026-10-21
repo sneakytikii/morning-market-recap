@@ -729,8 +729,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 화요일 종가입니다",
  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
  "next_session_ko_html": "<b>오늘 아침 서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
- "today_en": "<b>The morning points higher, led by the chip shares.</b> Stock index futures are modestly higher — Nasdaq futures firmest — after a night of mostly good earnings news: <b>SpaceX</b> beat handily and said it is switching on roughly <b>200,000</b> of Nvidia's newest chips every month, and <b>Nvidia</b> and the chip funds point higher before the open, with <b>SOXL</b> indicated up about 3%. The sour note was <b>Netflix</b> — it beat too, and still fell about <b>5%</b> in late trading because its forecast disappointed. The big test comes after the close tonight: <b>Tesla and Meta</b> report, along with the chipmakers Texas Instruments and Lam Research; there is no economic data today and the Fed is quiet before next week's meeting. One caution from yesterday — the early chip bounce faded by the close, so watch whether this morning's strength survives the open.",
- "today_ko": "<b>아침은 반도체 주식이 이끌며 높게 가리키고 있습니다.</b> 주가지수 선물은 완만하게 올라 있고 — 나스닥 선물이 가장 단단합니다 — 밤사이 실적 소식이 대체로 좋았기 때문입니다. <b>SpaceX</b>는 크게 웃돌며 엔비디아 최신 반도체를 매달 약 <b>20만 개</b>씩 가동하고 있다고 밝혔고, <b>엔비디아</b>와 반도체 펀드들은 개장 전 높게 가리키며 <b>SOXL</b>은 약 3% 상승을 가리킵니다. 쓴맛은 <b>Netflix</b>였습니다 — 역시 예상을 웃돌고도, 전망이 실망스러워 시간외에서 약 <b>5%</b> 내렸습니다. 큰 시험은 오늘 밤 장 마감 뒤입니다. <b>테슬라와 메타</b>가 발표하고, 반도체 회사 텍사스 인스트루먼츠와 램리서치도 함께입니다. 오늘 경제 지표 발표는 없고, 연준은 다음 주 회의를 앞두고 침묵 기간입니다. 어제가 남긴 주의 하나 — 아침의 반도체 반등이 장 마감까지 옅어졌으니, 오늘 아침의 강세가 개장을 넘겨 살아남는지 지켜보세요.",
+ "today_en": "<b>A good day, led by the chip shares — and this time the morning's strength lasted to the close.</b> <b>SpaceX</b>'s report card did it: its AI business is growing so fast that it is switching on huge numbers of <b>Nvidia</b>'s chips, and the whole chip group ran all day. <b>Nvidia</b> closed up about 2.5%, the chip fund <b>SOXL</b> up about 6%, the Nasdaq-100 fund <b>QQQ</b> up about 1%, and <b>Costco</b> edged up. The sour note was <b>Netflix</b>, down about 5% after a disappointing forecast. The big test lands this evening: <b>Tesla and Meta</b> report their earnings after the close.",
+ "today_ko": "<b>반도체 주식이 이끈 좋은 하루였고 — 이번에는 아침의 강세가 마감까지 갔습니다.</b> <b>SpaceX</b>의 성적표가 해냈습니다. AI 사업이 워낙 빠르게 크면서 <b>엔비디아</b>의 반도체를 대량으로 가동하고 있고, 반도체 종목 전체가 하루 종일 달렸습니다. <b>엔비디아</b>는 약 2.5% 올라 마감했고, 반도체 펀드 <b>SOXL</b>은 약 6%, 나스닥100 펀드 <b>QQQ</b>는 약 1% 올랐으며, <b>코스트코</b>도 소폭 올랐습니다. 쓴맛은 <b>Netflix</b>였습니다 — 실망스러운 전망에 약 5% 내렸습니다. 큰 시험은 오늘 저녁입니다. <b>테슬라와 메타</b>가 장 마감 뒤 실적을 발표합니다.",
  "today_date": "2026-10-21",
  "pancho_am": {
   "date": "2026-10-21",
@@ -739,9 +739,9 @@
   "ko": "반도체가 좋은 소식과 함께 깼어요. 오늘 밤엔 대형주 성적표가 나와요."
  },
  "pancho_pm": {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "pos": "",
-  "en": "The scary start for chips didn't last. By lunch it was mostly back, and the big earnings reports start tonight.",
-  "ko": "반도체는 무섭게 출발했다가 점심쯤 거의 돌아왔어요. 오늘 밤부터 큰 실적 발표가 시작돼요."
+  "en": "The morning pop stuck this time. Chips led from the opening bell right to the close.",
+  "ko": "이번엔 아침 상승이 끝까지 갔어요. 반도체가 종일 이끌었어요."
  }
 }
