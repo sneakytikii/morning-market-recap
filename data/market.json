@@ -738,8 +738,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 장이 열립니다 — 표의 숫자는 목요일 종가입니다",
  "next_session_en_html": "The market opens <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b>",
  "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 장이 열립니다 &mdash; 표의 숫자는 <b>목요일 종가</b>입니다",
- "today_en": "<b>Stock futures are close to flat this morning after Thursday's rout — the S&amp;P 500's a touch lower, the Nasdaq's steadying — while the selling travelled on without us overnight: chip shares fell hard across Asia, with Korea's markets hit worst.</b> Oil is up again, American crude back above <b>$100</b>. Before the open, <b>American Express</b> and the oil-services company <b>SLB</b> report earnings — a read on the consumer and the oil patch — and a survey of business activity arrives mid-morning. Nothing on today's calendar is as big as the question Thursday left: whether the chip shares can find a floor after their worst day of this fall. The real tests come next week — the biggest AI spenders report, and the Fed decides on Wednesday.",
- "today_ko": "<b>목요일의 급락 뒤, 오늘 아침 주가지수 선물은 보합에 가깝습니다 — S&amp;P 500은 살짝 낮고, 나스닥은 진정되는 모습입니다 — 그 사이 매도는 밤사이 바다를 건넜습니다. 아시아 전역에서 반도체 주식이 크게 내렸고, 한국 시장이 가장 세게 맞았습니다.</b> 유가는 다시 올라 미국산 원유가 <b>100달러</b> 위로 돌아왔습니다. 개장 전에는 <b>아메리칸 익스프레스</b>와 유전 서비스 회사 <b>SLB</b>가 실적을 내놓습니다 — 소비자와 석유 업계를 읽는 자료입니다 — 그리고 오전 중에 기업 활동 조사가 나옵니다. 오늘 일정 중 목요일이 남긴 질문만큼 큰 것은 없습니다. 이번 하락장 최악의 하루를 보낸 반도체 주식이 바닥을 찾는가입니다. 진짜 시험은 다음 주입니다 — 가장 큰 AI 지출 기업들이 발표하고, 수요일에는 연준이 결정합니다.",
+ "today_en": "<b>The day after the rout is calmer, but split: the technology shares that fell hardest on Thursday have steadied, while the rest of the market slips.</b> Oil jumped again on Middle East worry — American crude is above <b>$103</b> a barrel. The chip fund <b>SOXL</b>, which lost a fifth of its value yesterday, is up a couple of percent so far; <b>Nvidia</b> and the Nasdaq-100 fund <b>QQQ</b> are little changed; <b>Costco</b> is giving back about <b>1%</b> of yesterday's rise. Of the morning's earnings reports, <b>American Express</b> fell about <b>4%</b> after saying it will cut about 5% of its jobs, while the oil-services company <b>SLB</b> rose about <b>7%</b>. The bigger tests come next week, when the biggest AI spenders report their earnings and the Fed announces its decision.",
+ "today_ko": "<b>급락 다음 날은 한결 차분하지만, 둘로 갈렸습니다. 목요일에 가장 심하게 떨어졌던 기술주는 진정됐고, 시장의 나머지는 밀리고 있습니다.</b> 유가는 중동 불안으로 다시 뛰어, 미국산 원유가 배럴당 <b>103달러</b>를 넘었습니다. 어제 가치의 5분의 1을 잃은 반도체 펀드 <b>SOXL</b>은 지금까지 2% 안팎 올랐고, <b>엔비디아</b>와 나스닥100 펀드 <b>QQQ</b>는 거의 제자리이며, <b>코스트코</b>는 어제 오른 것에서 약 <b>1%</b>를 되돌리고 있습니다. 오전에 나온 실적 중에서는, 일자리의 약 5%를 줄이겠다고 밝힌 <b>아메리칸 익스프레스</b>가 약 <b>4%</b> 내렸고, 유전 서비스 회사 <b>SLB</b>는 약 <b>7%</b> 올랐습니다. 더 큰 시험은 다음 주입니다. 가장 큰 AI 지출 기업들이 실적을 내놓고, 연준이 결정을 발표합니다.",
  "today_date": "2026-10-23",
  "pancho_am": {
   "date": "2026-10-23",
@@ -748,9 +748,9 @@
   "ko": "어제 하루에 이 펀드의 5분의 1이 사라졌어요. 세 배는 양쪽으로 베는 칼이에요."
  },
  "pancho_pm": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "pos": "",
-  "en": "The morning drop didn't come back this time. It kept getting deeper as the day went on.",
-  "ko": "오늘은 아침 하락이 되돌아오지 않았어요. 갈수록 더 깊어졌어요."
+  "en": "The chips finally caught their breath today. The worry moved over to oil instead.",
+  "ko": "오늘은 반도체가 한숨 돌렸어요. 걱정은 대신 기름값으로 옮겨 갔어요."
  }
 }
