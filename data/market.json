@@ -756,8 +756,8 @@
  "next_session_ko": "시장은 열려 있습니다 — 오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됐습니다. 표의 숫자는 월요일 종가입니다",
  "next_session_en_html": "The market is <b>open</b> &mdash; trading restarted this morning at 6:30 Pacific; the board shows <b>Monday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>열려 있습니다</b> &mdash; 오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됐습니다. 표의 숫자는 <b>월요일 종가</b>입니다",
- "today_en": "<b>The market opened modestly higher this morning, with the chip shares rising for a second day.</b> Monday's rebound is carrying: <b>Broadcom</b> leads the chips after banks announced a $63 billion financing arrangement to build AI computing for <b>Anthropic</b> using its chips, and oil keeps easing. Before the open, <b>UPS</b> raised its forecast for the year and rose about 2%, and a reading of consumer confidence came in much stronger than expected. The Fed's two-day meeting started today — the decision comes tomorrow at 11 in the morning Pacific time, with <b>Microsoft</b> and <b>Alphabet</b> reporting tomorrow evening. Tonight after the close: <b>Visa</b>, and the chip maker <b>NXP</b> — whose report reaches SOXL at three times its size.",
- "today_ko": "<b>오늘 아침 시장은 소폭 상승으로 열렸고, 반도체 주식이 이틀째 오르고 있습니다.</b> 월요일의 반등이 이어지고 있습니다. 은행들이 <b>Broadcom</b>의 반도체로 <b>Anthropic</b>의 AI 컴퓨팅을 짓는 630억 달러 금융 계약을 발표하자 Broadcom이 반도체의 선두에 섰고, 유가는 계속 누그러지고 있습니다. 개장 전에는 <b>UPS</b>가 연간 전망을 올려 약 2% 올랐고, 소비자 신뢰 지표는 예상을 크게 웃돌았습니다. 연준의 이틀짜리 회의가 오늘 시작됐습니다 — 결정은 내일 서부 시각 오전 11시에 나오고, 내일 저녁에는 <b>Microsoft</b>와 <b>Alphabet</b>이 발표합니다. 오늘 밤 장 마감 뒤에는 <b>Visa</b>, 그리고 반도체 회사 <b>NXP</b>입니다 — NXP의 발표는 SOXL에 세 배 크기로 닿습니다.",
+ "today_en": "<b>The rebound carried through a second full day, and again the chip shares did the pulling.</b> Banks announced <b>$63 billion</b> of financing to build AI computing for <b>Anthropic</b> on <b>Broadcom</b>'s chips, and the whole chip group rose almost 4% — the chip fund <b>SOXL</b>, which runs that trade at three times speed, finished up about <b>12%</b>. <b>Nvidia</b> added about 1%, the Nasdaq-100 fund <b>QQQ</b> rose about 1.3%, and <b>Costco</b> slipped a little over 1%, back under the $1,000 mark. The rest of the market was quieter — the Dow barely moved — and oil eased for a second day. Still ahead: the Fed's rate decision tomorrow at <b>11 in the morning Pacific time</b>, with <b>Microsoft</b> and <b>Alphabet</b> reporting tomorrow evening.",
+ "today_ko": "<b>반등은 이틀째 온전히 이어졌고, 이번에도 반도체 주식이 끌었습니다.</b> 은행들이 <b>Broadcom</b>의 반도체로 <b>Anthropic</b>의 AI 컴퓨팅을 짓는 데 <b>630억 달러</b>의 금융을 대겠다고 발표하자 반도체 주식 전체가 4% 가까이 올랐고 — 그 흐름을 세 배 속도로 달리는 반도체 펀드 <b>SOXL</b>은 약 <b>12%</b> 오른 채 마쳤습니다. <b>Nvidia</b>는 약 1% 올랐고, 나스닥-100 펀드 <b>QQQ</b>는 약 1.3% 올랐으며, <b>Costco</b>는 1% 남짓 내려 1,000달러 선 아래로 되밀렸습니다. 시장의 나머지는 더 조용했습니다 — 다우는 거의 움직이지 않았고, 유가는 이틀째 누그러졌습니다. 남은 일정은 이렇습니다. 내일 <b>서부 시각 오전 11시</b>에 연준의 금리 결정이 나오고, 내일 저녁에는 <b>Microsoft</b>와 <b>Alphabet</b>이 발표합니다.",
  "today_date": "2026-10-27",
  "pancho_am": {
   "date": "2026-10-27",
@@ -766,9 +766,9 @@
   "ko": "오늘은 조용한 편이에요. 큰 날은 내일 — 아침엔 연준, 장 마감 뒤엔 큰 기술 기업 둘이요."
  },
  "pancho_pm": {
-  "date": "2026-10-23",
-  "pos": "",
-  "en": "The chips finally caught their breath today. The worry moved over to oil instead.",
-  "ko": "오늘은 반도체가 한숨 돌렸어요. 걱정은 대신 기름값으로 옮겨 갔어요."
+  "date": "2026-10-27",
+  "pos": "soxl",
+  "en": "No late fade this time — the chip fund held its big jump right into the close.",
+  "ko": "이번엔 막판에 식지 않고, 반도체 펀드가 큰 상승을 마감까지 지켰어요."
  }
 }
