@@ -756,8 +756,8 @@
  "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 화요일 종가입니다",
  "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
  "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
- "today_en": "<b>Futures are mixed this morning ahead of the heaviest day of the season.</b> Nasdaq futures point modestly higher, pulled up by memory-chip shares after the Korean chip maker <b>SK Hynix</b> reported a seven-fold jump in quarterly profit; Dow futures point slightly lower. Overnight the season's pattern held: <b>Visa</b> and the chip maker <b>NXP</b> both beat expectations and both fell in late trading on their outlooks — NXP by about 9%. The two big events: the <b>Fed</b>'s rate decision at <b>11 in the morning Pacific time</b> — betting markets put the chance of no change near 92% — and <b>Microsoft</b> and <b>Alphabet</b> reporting after the close tonight. The thing to watch is whether good numbers finally get paid.",
- "today_ko": "<b>이번 시즌 가장 묵직한 날을 앞두고, 오늘 아침 선물은 엇갈립니다.</b> 한국 반도체 회사 <b>SK Hynix</b>의 분기 이익이 일곱 배로 뛰었다는 소식에 메모리 반도체 주식이 끌어올리며 나스닥 선물은 소폭 위를 가리키고, 다우 선물은 살짝 아래입니다. 밤사이에도 시즌의 패턴은 그대로였습니다. <b>Visa</b>와 반도체 회사 <b>NXP</b>가 둘 다 예상을 웃돌고도 전망 때문에 시간외에서 내렸습니다 — NXP는 약 9%입니다. 오늘의 두 큰 일정은 <b>서부 시각 오전 11시</b> <b>연준</b>의 금리 결정 — 베팅 시장은 동결 가능성을 92% 부근으로 봅니다 — 과 오늘 밤 장 마감 뒤 <b>Microsoft</b>와 <b>Alphabet</b>의 발표입니다. 지켜볼 것은 좋은 숫자가 마침내 값을 받는가입니다.",
+ "today_en": "<b>A quiet session so far — the market is marking time until the Fed speaks.</b> The S&P 500 is up about 0.2%, the Dow a touch more, and the Nasdaq is flat, with chip shares the one group really moving: they are climbing a fourth straight day after Korea's <b>SK Hynix</b> reported a record quarter. Among yours, the chip fund <b>SOXL</b> is up about 3%, <b>Nvidia</b> is slightly lower, the Nasdaq-100 fund <b>QQQ</b> is near flat, and <b>Costco</b> is down about 1%. Still ahead: the <b>Fed</b>'s rate decision at <b>11 this morning Pacific time</b> — a hold is widely expected — then <b>Microsoft</b> and <b>Alphabet</b> report after the close.",
+ "today_ko": "<b>지금까지는 조용한 장입니다 — 시장이 연준의 발표를 기다리며 제자리걸음을 하고 있습니다.</b> S&P 500은 약 0.2% 오르고 다우는 그보다 조금 더 오르고 나스닥은 보합인데, 제대로 움직이는 것은 반도체주뿐입니다. 한국 <b>SK Hynix</b>의 기록적인 분기 실적 뒤에 나흘째 오르는 중입니다. 보유 종목 중에서는 반도체 펀드 <b>SOXL</b>이 약 3% 오르고, <b>Nvidia</b>는 살짝 내리고, 나스닥-100 펀드 <b>QQQ</b>는 보합 부근이고, <b>Costco</b>는 약 1% 내려 있습니다. 아직 남은 일정은 <b>서부 시각 오전 11시</b> <b>연준</b>의 금리 결정 — 동결이 널리 예상됩니다 — 그리고 장 마감 뒤 <b>Microsoft</b>와 <b>Alphabet</b>의 실적 발표입니다.",
  "today_date": "2026-10-28",
  "pancho_am": {
   "date": "2026-10-28",
@@ -766,9 +766,9 @@
   "ko": "오전 11시엔 연준, 밤엔 큰 기술 기업 둘이요. 오늘 답이 많이 나와요."
  },
  "pancho_pm": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "pos": "soxl",
-  "en": "No late fade this time — the chip fund held its big jump right into the close.",
-  "ko": "이번엔 막판에 식지 않고, 반도체 펀드가 큰 상승을 마감까지 지켰어요."
+  "en": "The chip fund's jump today is Korea's doing — a memory maker's huge profit — not Nvidia's.",
+  "ko": "오늘 반도체 펀드 상승은 엔비디아가 아니라 한국 메모리 회사 호실적 덕이에요."
  }
 }
