@@ -1,53 +1,53 @@
 {
- "_comment": "RUN 2026-10-30 FRIDAY PRE-OPEN (weekday refresh, started ~06:12 ET / 03:12 PT). No inherited attempt: tree clean, mtimes match last commit. BOARD REPORTS THURSDAY OCT 29 CLOSES, all verified to the cent on two independent feeds (Yahoo chart API + StockAnalysis pages; AP wrap via KRMG/myMotherLode for the indexes; treasury.gov CSV for yields; investing.com second-sourced VIX): SPX 7,720.39 -0.30% (3-day streak snapped; GOOGL did nearly all the damage while MOST stocks rose - equal-weight +1.20%, health/property/staples led, per Investopedia/TheStreet coverage); Nasdaq 26,184.72 -1.38%; Dow 52,342.56 -132.54 (strip says 133 points); VIX 17.20 (up from 16.91; premkt Friday ~18.5); 10Y 4.98 30Y 5.32 per treasury CSV (20Y=5.35 between them, trap avoided; yields FELL despite hot data - no cause asserted in prose beyond 'even though'); QQQ 715.34 -1.42%; NVDA 213.66 -0.80% (held up better than group); SOXL 102.39 -4.62% CONFIRMED 49th consecutive (Yahoo OHLC O101.36 H105.44 L97.95 C102.39 vs Wed 107.35; StockAnalysis identical to cent; SOXX -1.55% x3=4.65 vs 4.62 delivered, touch shallower, usual noise; dipped under $100 intraday, closed above; now BACK BELOW pre-plunge Oct 21 close 103.24 - Wednesday's 'repair complete' lasted one session, note_head says so); COST 996.08 +1.36% best of five, third close under $1,000 but within $4 (shelter rotation + 30Y easing). THURSDAY DRIVERS multi-source: GOOGL -12.64% worst day in ITS history, $482B lost (Yahoo Finance '$482 billion... biggest drop in its history'; NOT the biggest any company ever had - prose says 'biggest in its history' only); MSFT faded early +3% to -0.16%; Q3 GDP +3.4% ann. vs 2.2% Q2; Sept PCE +3.6% y/y headline, core 3.1% +0.3% m/m (babypips/fxstreet/schwab); December-hike odds SWUNG 84.5% post-data to 77.3% late (RateWatch via fattail) - ALL prose moved 'near 85%' -> 'near 80%'; oil settled 102.00 -0.76%. AFTER THE CLOSE (CNBC+Bloomberg+Reuters+stocktitan): AMZN slight miss both lines (EPS 1.89 vs 1.96, rev 201.94B vs 202.31B), AWS +39% to ~$46B, AWS growth projected >40% in 2027 AND 2028, quarter capex ~$20B above forecasts (Bloomberg 77.3B vs others' cash capex 75.9B - prose avoids the precise quarterly number), 2026 capex HELD at $220B, FCF NEGATIVE $42.4B trailing-twelve-months, AH -7.3% / premkt -7.2% ($226); INTC Q3 BEAT (EPS 52c vs 40c, rev +21% to 16.5B, data-centre +78% best in 15 yrs) but Q4 guide 15-16B vs ~17B and EPS 25c vs 43c, CFO Zinsner verbatim 'We see the PC slowdown continuing at least through the first half of next year', AH -23% / premkt -25%. FRIDAY MORNING (Yahoo live blog ~6am ET + Reuters): NQ futures -2.2/-2.3%, ES -1.0/-1.1%, YM flat (-0.01/-0.05%); NVDA premkt -2.82% ($207.64, StockAnalysis 6:13 ET); AMZN+INTC premkt above; oil ~$103.9 +1.9% on REPORTS US may resume strikes on Iran (hedged as reports in prose; Trump retruthed an Iran-nukes poll Thu 4:43 PM, logged nowhere - no company); today's calendar: ECI Q3 8:30 ET/5:30 PT ('reading on wage costs'), Chicago PMI omitted as too wonky, XOM/CVX/ABBV before open omitted (none of the five). WEEK now THURSDAY-TO-THURSDAY (Oct 22->29): SPX +0.7, QQQ +1.5, NVDA +0.7, SOXL +24.7 (!! measured FROM THE PLUNGE-DAY CLOSE 82.11 - week_fact and prose both carry the caveat explicitly), COST -2.2. MONTH vs Sep 30 exact closes (fetched: SPX 7651.54, QQQ 739.77, NVDA 228.38, SOXL 147.86, COST 910.34): SPX +0.9, QQQ -3.3, NVDA -6.4, SOXL -30.8, COST +9.4. NO new 52wk extremes (all checked vs base) - base{} untouched. Drawdowns derived: SPX 1.3, QQQ 6.2, NVDA 12.2, SOXL 66.1 (recover +195, repair undone), COST 9.2. P/E: NVDA ~27, COST ~48 (back from 47). NVDA earnings date NOW SET: Tue Nov 17 (company release via 247wallst/wallstreethorizon) - events + facts updated. EVENTS: AMZN/INTC/GDP-PCE entries REMOVED (passed); Apple Mon Nov 2 flipped hot:true (next big one, first under new CEO); jobs Nov 6 note REWRITTEN (old note falsely said 'markets expect the Fed to hold this month' - meeting already passed); NVDA entry dated Tue Nov 17 hot:true; ADDED Fed December decision Wed Dec 9 11am PT (FOMC calendar confirmed Dec 8-9, matches this timeline's Oct 27-28 meeting); Jan 10 truce kept. next_session = 'this morning... Thursday's closing prices'. today block = morning setup written ~03:40 PT, PRE-open (6:57/7:42 PT backups should rewrite session-in-progress if they fire). pancho_am Oct 30 = Amazon/Intel rough night + SOXL triple line; pancho_pm left as Oct 29 relic (expires by date). week{} STILL the Sep 11-18 relic, left AGAIN per precedent. day_caveat_* dead fields left. TAKES all five revisited (soxl c-risk -> c-neg: instructions allow only c-neg/c-neu/c-pos). SOFT SPOTS: futures/premkt reads are ~06:00-06:15 ET and will drift by the open; 'near 80%' December odds is the late-Thursday 77.3% rounded against the intraday mid-70s-to-mid-80s swing; AMZN FCF -42.4B is trailing-twelve-months per stocktitan ('fell below zero over TTM') - prose says 'cash flow for the past year'; Alphabet $482B loss is its own record only; COST October sales date assumed 'early November' from the company's usual rhythm, no date announced in anything read. trump.json same run: ONE addition (Oct 29 Rock Hill SC rally - Octapharma/Re:Build/Century Aluminum praise, Herald-printed verbatim 'You build here, you don't pay tariffs'), Oct 20 NC entry rolled off, latest_touching stays 2026-10-21. SECOND ATTEMPT 03:43-04:00 PT: watchdog killed attempt one (~03:12 start) during its final checks, files already fully written. Inherited per memory, no research redone. Verified: both parse; EN/KO twins complete (positions, lede, events, today, tracker); all 12 tracker source URLs present; month %s, drawdowns, SOXL week +24.7 and YTD ~+144 all recompute from recorded closes/bases; SOXL board/note agree (confirmed). Premkt RE-CHECKED ~06:55 ET (Yahoo live blog + Reuters): NQ -2, ES -1, YM flatline, AMZN -7, INTC -25 premkt, oil WTI ~103 - matches the today block, no drift, zero prose edits. Only changes this attempt: this note + generated restamped 03:55->04:00.",
- "as_of": "2026-10-29",
- "generated": "2026-10-30T04:00:00-07:00",
- "mode": "weekday",
+ "_comment": "RUN 2026-10-31 SATURDAY WEEKEND RECAP (second attempt ~09:25-10:15 ET / 06:25-07:15 PT). INHERITED ATTEMPT per memory note: mtime 09:22, generated 09:18:59, mode already 'weekend' — a prior weekend attempt (watchdog-killed mid-run) had rewritten strip + ALL FIVE position panels to FRIDAY OCT 30 CLOSES and weekend framing, but left lede/events/today/next_session/pancho_am/_comment as Friday-pre-open relics and never touched trump.json. This attempt RE-VERIFIED the inherited board independently (its research log was never written) instead of trusting it: SPX 7,580.07 -1.82% worst day since June (Yahoo chart + AP wrap via WTOP + fool/stocktitan), Nasdaq 25,437.00 -2.86%, Dow 51,770.31 -1.09%/-572.25, VIX close 19.42 with Fri HIGH 23.93 per Yahoo OHLC ('nearly 24' stands; a tokenpost piece saying 22.31 contradicts the feed and lost) and PRIOR-Fri close 19.45 ('almost exactly where it finished the week before' stands); QQQ 690.49 -3.47%; NVDA 204.64 -4.22% (SA: cap $4.94T, PE 25.88 = file's 'roughly 26'); SOXL 77.05 -24.75% CONFIRMED 50th consecutive — Yahoo OHLC O81.79 H84.19 L70.23 C77.05 vs Thu 102.39, StockAnalysis identical to the cent (H84.16; note_head's 'about $84.2' covers both); COST 1,012.28. WEEK anchors from Yahoo chart previousClose (= Oct 23 closes): SPX 7,623.68 -> -0.57 OK≈0.6; QQQ 704.40 -> -1.97 OK; NVDA 210.96 -> -3.00 OK; SOXL 83.56 -> -7.79 OK; COST 1,003.32 -> +0.89 OK; Dow 52,215.16 -> -0.85 OK≈0.9; Nasdaq 25,955.34 -> -2.00 OK. COST DISCREPANCY RESOLVED: StockAnalysis shows Fri +1.78% because OCT 30 WAS COST'S EX-DIVIDEND DATE ($1.47 quarterly, payable Nov 13, marketbeat/dividendhistory) and SA measures vs div-adjusted prev close (996.08-1.47=994.61); the raw price move 1012.28/996.08=+1.627% -> board's +1.63% is correct under the page's convention. DECEMBER ODDS: RateWatch via fattail — 69.4% at Fri 5pm ET after soft Q3 ECI (wages +3.1% y/y), 85% post-Fed Wednesday; 'near 70%, down from about 85% midweek' is the house number everywhere; events jobs-Nov-6 and Fed-Dec-9 notes were still saying 'near 80%' (Friday-morning relics arguing with the panels) — both moved to 70. OIL: WTI settled 104.12 +2.08% Fri, highest since late April, Oct +15.2% (newsquawk/CNBC) — '$104, up about 2%' in verdicts stands; Friday also carried counter-reports of a US-Iran deal via Qatari mediation (CBS 'indications of progress'), so the 'reports — only reports' hedge stays load-bearing. EARNINGS DATES: AMD Tue Nov 3 after close CONFIRMED (marketbeat Q3 page + therighttrader, call 5pm ET); QCOM Wed Nov 4 asserted by tipranks but 'estimated from past schedules' per marketbeat — kept in prose and in the AMD event note, flagged here as the run's softest date. SECTIONS REWRITTEN THIS ATTEMPT: lede (3 weekend paragraphs — the week's one question and four report cards; the five sorted by chip content + October finals; next week dated + 70% + oil + the two standing risks), events (ADDED AMD Nov 3 hot:true with Qualcomm-Wednesday in its note; two notes 80->70), next_session_* (closed for weekend, resumes Monday 6:30 PT, board = Friday closes), today block (closed until Monday; first test Apple Mon evening, then AMD Tue; today_date 2026-10-31), pancho_am 10-31 weekend line (pancho_pm left as Oct 29 relic, expires by date), generated restamped 09:42. LEFT PER PRECEDENT: week{} Sep 11-18 relic again; day_caveat_* dead fields; base{} untouched — NO new 52wk extremes (Fri highs all under base high_1y: SPX 7818.93, QQQ 762.86, NVDA 243.37, SOXL 302, COST 1097.05; SOXL Fri low 70.23 — no low_1y in its base, nothing to move). SOFT SPOTS: QCOM date above; COST October-sales 'early November' still assumed from the company's rhythm, no announced date; 10Y ≈4.94/30Y ≈5.31 inherited from the first attempt's treasury pull, marked ≈ and directionally confirmed by ECI coverage but not re-pulled to the bp here; 'worst month in over a year' for Nasdaq strip inherited from Friday wrap coverage. trump.json swept same run — see its _comment. No inherited attempt: tree clean, mtimes match last commit. BOARD REPORTS THURSDAY OCT 29 CLOSES, all verified to the cent on two independent feeds (Yahoo chart API + StockAnalysis pages; AP wrap via KRMG/myMotherLode for the indexes; treasury.gov CSV for yields; investing.com second-sourced VIX): SPX 7,720.39 -0.30% (3-day streak snapped; GOOGL did nearly all the damage while MOST stocks rose - equal-weight +1.20%, health/property/staples led, per Investopedia/TheStreet coverage); Nasdaq 26,184.72 -1.38%; Dow 52,342.56 -132.54 (strip says 133 points); VIX 17.20 (up from 16.91; premkt Friday ~18.5); 10Y 4.98 30Y 5.32 per treasury CSV (20Y=5.35 between them, trap avoided; yields FELL despite hot data - no cause asserted in prose beyond 'even though'); QQQ 715.34 -1.42%; NVDA 213.66 -0.80% (held up better than group); SOXL 102.39 -4.62% CONFIRMED 49th consecutive (Yahoo OHLC O101.36 H105.44 L97.95 C102.39 vs Wed 107.35; StockAnalysis identical to cent; SOXX -1.55% x3=4.65 vs 4.62 delivered, touch shallower, usual noise; dipped under $100 intraday, closed above; now BACK BELOW pre-plunge Oct 21 close 103.24 - Wednesday's 'repair complete' lasted one session, note_head says so); COST 996.08 +1.36% best of five, third close under $1,000 but within $4 (shelter rotation + 30Y easing). THURSDAY DRIVERS multi-source: GOOGL -12.64% worst day in ITS history, $482B lost (Yahoo Finance '$482 billion... biggest drop in its history'; NOT the biggest any company ever had - prose says 'biggest in its history' only); MSFT faded early +3% to -0.16%; Q3 GDP +3.4% ann. vs 2.2% Q2; Sept PCE +3.6% y/y headline, core 3.1% +0.3% m/m (babypips/fxstreet/schwab); December-hike odds SWUNG 84.5% post-data to 77.3% late (RateWatch via fattail) - ALL prose moved 'near 85%' -> 'near 80%'; oil settled 102.00 -0.76%. AFTER THE CLOSE (CNBC+Bloomberg+Reuters+stocktitan): AMZN slight miss both lines (EPS 1.89 vs 1.96, rev 201.94B vs 202.31B), AWS +39% to ~$46B, AWS growth projected >40% in 2027 AND 2028, quarter capex ~$20B above forecasts (Bloomberg 77.3B vs others' cash capex 75.9B - prose avoids the precise quarterly number), 2026 capex HELD at $220B, FCF NEGATIVE $42.4B trailing-twelve-months, AH -7.3% / premkt -7.2% ($226); INTC Q3 BEAT (EPS 52c vs 40c, rev +21% to 16.5B, data-centre +78% best in 15 yrs) but Q4 guide 15-16B vs ~17B and EPS 25c vs 43c, CFO Zinsner verbatim 'We see the PC slowdown continuing at least through the first half of next year', AH -23% / premkt -25%. FRIDAY MORNING (Yahoo live blog ~6am ET + Reuters): NQ futures -2.2/-2.3%, ES -1.0/-1.1%, YM flat (-0.01/-0.05%); NVDA premkt -2.82% ($207.64, StockAnalysis 6:13 ET); AMZN+INTC premkt above; oil ~$103.9 +1.9% on REPORTS US may resume strikes on Iran (hedged as reports in prose; Trump retruthed an Iran-nukes poll Thu 4:43 PM, logged nowhere - no company); today's calendar: ECI Q3 8:30 ET/5:30 PT ('reading on wage costs'), Chicago PMI omitted as too wonky, XOM/CVX/ABBV before open omitted (none of the five). WEEK now THURSDAY-TO-THURSDAY (Oct 22->29): SPX +0.7, QQQ +1.5, NVDA +0.7, SOXL +24.7 (!! measured FROM THE PLUNGE-DAY CLOSE 82.11 - week_fact and prose both carry the caveat explicitly), COST -2.2. MONTH vs Sep 30 exact closes (fetched: SPX 7651.54, QQQ 739.77, NVDA 228.38, SOXL 147.86, COST 910.34): SPX +0.9, QQQ -3.3, NVDA -6.4, SOXL -30.8, COST +9.4. NO new 52wk extremes (all checked vs base) - base{} untouched. Drawdowns derived: SPX 1.3, QQQ 6.2, NVDA 12.2, SOXL 66.1 (recover +195, repair undone), COST 9.2. P/E: NVDA ~27, COST ~48 (back from 47). NVDA earnings date NOW SET: Tue Nov 17 (company release via 247wallst/wallstreethorizon) - events + facts updated. EVENTS: AMZN/INTC/GDP-PCE entries REMOVED (passed); Apple Mon Nov 2 flipped hot:true (next big one, first under new CEO); jobs Nov 6 note REWRITTEN (old note falsely said 'markets expect the Fed to hold this month' - meeting already passed); NVDA entry dated Tue Nov 17 hot:true; ADDED Fed December decision Wed Dec 9 11am PT (FOMC calendar confirmed Dec 8-9, matches this timeline's Oct 27-28 meeting); Jan 10 truce kept. next_session = 'this morning... Thursday's closing prices'. today block = morning setup written ~03:40 PT, PRE-open (6:57/7:42 PT backups should rewrite session-in-progress if they fire). pancho_am Oct 30 = Amazon/Intel rough night + SOXL triple line; pancho_pm left as Oct 29 relic (expires by date). week{} STILL the Sep 11-18 relic, left AGAIN per precedent. day_caveat_* dead fields left. TAKES all five revisited (soxl c-risk -> c-neg: instructions allow only c-neg/c-neu/c-pos). SOFT SPOTS: futures/premkt reads are ~06:00-06:15 ET and will drift by the open; 'near 80%' December odds is the late-Thursday 77.3% rounded against the intraday mid-70s-to-mid-80s swing; AMZN FCF -42.4B is trailing-twelve-months per stocktitan ('fell below zero over TTM') - prose says 'cash flow for the past year'; Alphabet $482B loss is its own record only; COST October sales date assumed 'early November' from the company's usual rhythm, no date announced in anything read. trump.json same run: ONE addition (Oct 29 Rock Hill SC rally - Octapharma/Re:Build/Century Aluminum praise, Herald-printed verbatim 'You build here, you don't pay tariffs'), Oct 20 NC entry rolled off, latest_touching stays 2026-10-21. SECOND ATTEMPT 03:43-04:00 PT: watchdog killed attempt one (~03:12 start) during its final checks, files already fully written. Inherited per memory, no research redone. Verified: both parse; EN/KO twins complete (positions, lede, events, today, tracker); all 12 tracker source URLs present; month %s, drawdowns, SOXL week +24.7 and YTD ~+144 all recompute from recorded closes/bases; SOXL board/note agree (confirmed). Premkt RE-CHECKED ~06:55 ET (Yahoo live blog + Reuters): NQ -2, ES -1, YM flatline, AMZN -7, INTC -25 premkt, oil WTI ~103 - matches the today block, no drift, zero prose edits. Only changes this attempt: this note + generated restamped 03:55->04:00.",
+ "as_of": "2026-10-30",
+ "generated": "2026-10-31T09:42:21-04:00",
+ "mode": "weekend",
  "strip": {
   "spx": {
-   "value": "7,720.39",
-   "change_en": "▼ down 0.30% on Thursday — the three-day run ended, but gently: Alphabet's record fall did nearly all the damage, and most of the 500 stocks rose",
-   "change_ko": "▼ 목요일 0.30% 하락 — 사흘 연속 상승이 끝났지만 완만했습니다. Alphabet의 기록적인 급락이 피해의 거의 전부였고, 500개 종목 대부분은 올랐습니다",
+   "value": "7,580.07",
+   "change_en": "▼ down 1.82% on Friday — the worst day since June — and about 0.6% for the week: three quiet days of gains, then the AI bills took them all back",
+   "change_ko": "▼ 금요일 1.82% 하락 — 6월 이후 최악의 하루 — 한 주로는 약 0.6% 하락입니다. 조용한 상승 사흘을 AI 청구서들이 전부 되가져갔습니다",
    "dir": "dn",
    "name_en": "S&amp;P 500",
    "name_ko": "S&amp;P 500"
   },
   "ndx": {
-   "value": "26,184.72",
-   "change_en": "▼ down 1.38% on Thursday — Alphabet, having the worst day in its history, dragged the technology side down while the rest of the market rose",
-   "change_ko": "▼ 목요일 1.38% 하락 — 역사상 최악의 하루를 보낸 Alphabet이 기술주를 끌어내렸고, 시장의 나머지는 올랐습니다",
+   "value": "25,437.00",
+   "change_en": "▼ down 2.86% on Friday and about 2% for the week — October was its worst month in over a year",
+   "change_ko": "▼ 금요일 2.86%, 한 주로는 약 2% 하락 — 10월은 1년여 만에 가장 나쁜 한 달이었습니다",
    "dir": "dn",
    "name_en": "Nasdaq",
    "name_ko": "나스닥"
   },
   "dow": {
-   "value": "52,342.56",
-   "change_en": "▼ lost 133 points on Thursday — the mildest fall of the big averages: the money leaving technology moved into its steadier corners",
-   "change_ko": "▼ 목요일 133포인트 하락 — 3대 지수 중 가장 작은 하락입니다. 기술주를 떠난 돈이 다우의 안정적인 구석들로 옮겨 갔습니다",
+   "value": "51,770.31",
+   "change_en": "▼ lost 572 points on Friday — the mildest of the three big averages, with the selling concentrated in technology — and about 0.9% for the week",
+   "change_ko": "▼ 금요일 572포인트 하락 — 매도가 기술주에 집중되며 3대 지수 중 가장 완만했습니다 — 한 주로는 약 0.9% 하락입니다",
    "dir": "dn",
    "name_en": "Dow Jones",
    "name_ko": "다우존스"
   },
   "vix": {
-   "value": "17.20",
-   "change_en": "▲ edged up to 17.20 from Wednesday's 16.91 — a small rise for a day when one giant company lost an eighth of its value",
-   "change_ko": "▲ 수요일 16.91에서 17.20으로 소폭 상승 — 거인 기업 하나가 가치의 8분의 1을 잃은 날치고는 작은 오름입니다",
+   "value": "19.42",
+   "change_en": "▲ spiked to nearly 24 during Friday's fall and settled at 19.42 by the close — alarmed during the day, calmer by the end, and almost exactly where it finished the week before",
+   "change_ko": "▲ 금요일 장중 24 가까이 치솟았다가 19.42로 마감 — 낮에는 놀랐고, 마감에는 가라앉았으며, 지난주 마감과 거의 같은 자리입니다",
    "dir": "up",
    "name_en": "Fear gauge",
    "name_ko": "공포 지수"
   },
   "us10y": {
-   "value": "≈ 4.98%",
-   "change_en": "▼ eased back under 5%, to about 4.98% — even though the morning's numbers showed faster growth and inflation still too high",
-   "change_ko": "▼ 다시 5% 아래, 약 4.98%로 내려왔습니다 — 아침 지표가 더 빠른 성장과 여전히 너무 높은 물가를 보여줬는데도요",
+   "value": "≈ 4.94%",
+   "change_en": "▼ eased to about 4.94% over the week — Friday’s report showed wage costs growing more slowly, which softens the argument for a December rate rise",
+   "change_ko": "▼ 한 주 동안 약 4.94%로 내려왔습니다 — 금요일 지표에서 임금 비용이 더 느리게 오르는 것으로 나와, 12월 금리 인상론의 기세를 누그러뜨렸습니다",
    "dir": "dn",
    "name_en": "10-Year bond",
    "name_ko": "10년물 국채"
   },
   "us30y": {
-   "value": "≈ 5.32%",
-   "change_en": "▼ eased to about 5.32% from Wednesday's 5.37% — a touch of relief for the steady dividend shares that compete with it; Costco rose on the day",
-   "change_ko": "▼ 수요일 5.37%에서 약 5.32%로 내려왔습니다 — 이 금리와 경쟁하는 안정 배당주들에게는 작은 숨통입니다. Costco가 이날 올랐습니다",
+   "value": "≈ 5.31%",
+   "change_en": "▼ eased to about 5.31% — a small relief for the steady dividend shares that compete with it; Costco rose on Friday while almost everything else fell",
+   "change_ko": "▼ 약 5.31%로 내려왔습니다 — 이 금리와 경쟁하는 안정 배당주들에겐 작은 숨통입니다. 금요일에 거의 모든 것이 내리는 동안 Costco는 올랐습니다",
    "dir": "dn",
    "name_en": "30-Year bond",
    "name_ko": "30년물 국채"
@@ -55,38 +55,42 @@
  },
  "positions": {
   "spx": {
-   "price": "7,720.39",
+   "price": "7,580.07",
    "day_arrow": "▼",
-   "day_en": "−0.30% on Thursday",
-   "day_ko": "목요일 −0.30%",
+   "day_en": "−1.82% on Friday",
+   "day_ko": "금요일 −1.82%",
    "day_dir": "dn",
-   "week_arrow": "▲",
-   "week_en": "≈ +0.7% Thursday to Thursday",
-   "week_ko": "목요일부터 목요일까지 ≈ +0.7%",
-   "week_dir": "up",
-   "month_arrow": "▲",
-   "month_en": "≈ +0.9% so far in October",
-   "month_ko": "10월 들어 ≈ +0.9%",
-   "month_dir": "up",
+   "week_arrow": "▼",
+   "week_en": "≈ −0.6% over the week",
+   "week_ko": "한 주 동안 ≈ −0.6%",
+   "week_dir": "dn",
+   "month_arrow": "▼",
+   "month_en": "≈ −0.9% for all of October",
+   "month_ko": "10월 한 달 ≈ −0.9%",
+   "month_dir": "dn",
    "drawdown_arrow": "▼",
-   "drawdown": "≈ 1.3%",
+   "drawdown": "≈ 3.1%",
    "drawdown_dir": "dn",
-   "drawdown_fact_en": "≈ 1.3%",
-   "drawdown_fact_ko": "≈ 1.3%",
-   "take_en": "One giant fell — most stocks rose",
-   "take_ko": "거인 하나는 추락 — 대부분은 상승",
+   "drawdown_fact_en": "≈ 3.1%",
+   "drawdown_fact_ko": "≈ 3.1%",
+   "take_en": "A hard Friday, a mild week",
+   "take_ko": "거친 금요일, 완만한 한 주",
    "take_tone": "c-neu",
    "confirmed": true,
    "derived": true,
    "stale": false,
-   "note_en": "<b>One company had the worst day in its history — and the other 499 mostly shrugged.</b> On Thursday the index slipped <b>0.30%</b> to <b>7,720.39</b>, ending a three-day run, and nearly all of the damage came from one place: <b>Alphabet</b>, punished for Wednesday evening's report, fell <b>12.6%</b> — about <b>$482 billion</b> of value, the biggest one-day loss it has ever taken. Underneath, most stocks actually rose: the steadier corners — health care, property, household staples — led, and a version of this index that weighs all 500 companies equally gained about <b>1.2%</b>. The morning's economic numbers cut both ways: the economy grew at a <b>3.4%</b> pace over the summer, faster than the spring, while the Fed's preferred inflation gauge showed prices up <b>3.6%</b> over the year, with the monthly pace quickening — and betting markets ended the day pricing a <b>December rate rise near 80%</b>. Bond rates eased anyway, the ten-year back under 5% at about <b>4.98%</b>. Then, after the close, the last two big AI bills were graded: <b>Amazon</b> fell about 7% in late trading for holding its record budget while its cash ran negative, and <b>Intel</b> fell about 23% on a weak outlook. Those drops land at this morning's open — technology futures point about 2% lower.",
-   "note_ko": "<b>한 회사가 역사상 최악의 하루를 보냈는데 — 나머지 499개는 대체로 어깨를 으쓱했습니다.</b> 목요일에 지수는 <b>0.30%</b> 밀린 <b>7,720.39</b>로 사흘 연속 상승을 끝냈는데, 피해의 거의 전부가 한 곳에서 왔습니다. 수요일 저녁 실적으로 벌을 받은 <b>알파벳</b>이 <b>12.6%</b> 내렸습니다 — 약 <b>4,820억 달러</b>, 이 회사가 하루에 잃은 가장 큰 가치입니다. 그 밑에서는 대부분의 종목이 올랐습니다. 안정적인 구석들 — 건강, 부동산, 생활필수품 — 이 앞장섰고, 500개 회사를 똑같은 무게로 재는 버전의 지수는 약 <b>1.2%</b> 올랐습니다. 아침의 경제 지표는 양날이었습니다. 여름 분기에 경제는 봄보다 빠른 <b>3.4%</b>의 속도로 성장했지만, 연준이 선호하는 물가 지표는 1년에 <b>3.6%</b> 오르고 월간 속도는 빨라지는 것으로 나왔습니다 — 베팅 시장은 <b>12월 인상 가능성을 80%</b> 부근에 두고 하루를 마쳤습니다. 그런데도 채권 금리는 내려와, 10년물이 다시 5% 아래 약 <b>4.98%</b>가 됐습니다. 그리고 장 마감 뒤, 마지막 남은 큰 AI 청구서 두 장이 채점됐습니다. <b>아마존</b>은 현금이 마이너스인 채 기록적인 예산을 유지했다고 시간외에서 약 7% 내렸고, <b>인텔</b>은 약한 전망에 약 23% 내렸습니다. 그 하락들이 오늘 아침 개장과 함께 내려앉습니다 — 기술주 선물은 약 2% 아래를 가리키고 있습니다.",
+   "note_en": "<b>The week ended with the market’s worst day since June — and still cost this index less than 1%.</b> On Friday the index fell <b>1.82%</b> to <b>7,580.07</b> as Intel’s collapse closed out October, and the week finished about <b>0.6%</b> lower: three quiet days of gains, then Thursday and Friday took them back. The week’s real business was the grading of the AI report cards. Four giants reported; only <b>Microsoft</b> — the one that spent less than forecast — was rewarded. <b>Alphabet</b> lost about <b>$482 billion</b> on Thursday, the biggest one-day fall in its history; <b>Intel</b> fell <b>28.6%</b> on Friday, its worst day since 1974, after warning that PC weakness will last into next year. Underneath, the market kept its balance: for most of the week the money leaving technology moved into the steadier corners rather than out of the market — <b>Costco</b> rose on both fearful days — and October closed with this index down only about <b>0.9%</b>, roughly <b>3.1%</b> below its record. Friday’s economic news even helped: wage costs grew more slowly in the autumn quarter, bond rates eased — the ten-year to about <b>4.94%</b> — and betting markets ended the week pricing a <b>December rate rise near 70%</b>, down from about 85% at midweek.",
+   "note_ko": "<b>한 주는 6월 이후 시장 최악의 하루로 끝났지만 — 이 지수가 치른 값은 1%가 안 됩니다.</b> 금요일에 지수는 인텔의 붕괴가 10월을 닫는 가운데 <b>1.82%</b> 내린 <b>7,580.07</b>이 됐고, 한 주로는 약 <b>0.6%</b> 하락으로 마쳤습니다. 조용한 상승 사흘을 목요일과 금요일이 되가져간 모양입니다. 이 주의 진짜 일은 AI 성적표 채점이었습니다. 거인 넷이 발표했고, 상을 받은 것은 예상보다 적게 쓴 <b>마이크로소프트</b> 하나뿐입니다. <b>알파벳</b>은 목요일에 약 <b>4,820억 달러</b>를 잃어 역사상 가장 큰 하루 하락을 적었고, <b>인텔</b>은 PC 약세가 내년까지 간다고 경고한 뒤 금요일에 <b>28.6%</b> 내려 1974년 이후 최악의 하루를 보냈습니다. 그 밑에서 시장은 균형을 지켰습니다. 한 주의 대부분 동안 기술주를 떠난 돈은 시장 밖이 아니라 안정적인 구석들로 옮겨 갔고 — 두려웠던 두 날 모두 <b>코스트코</b>가 올랐습니다 — 10월은 이 지수가 약 <b>0.9%</b>만 내린 채, 기록보다 약 <b>3.1%</b> 아래에서 닫혔습니다. 금요일의 경제 소식은 오히려 도왔습니다. 가을 분기 임금 비용이 더 느리게 올랐고, 채권 금리는 내려와 10년물이 약 <b>4.94%</b>가 됐으며, 베팅 시장은 <b>12월 금리 인상 가능성을 70%</b> 부근 — 주중의 약 85%에서 내려온 — 에 두고 한 주를 마쳤습니다.",
    "ticker": "SPX",
    "name_en": "The whole US market",
    "name_ko": "미국 시장 전체",
-   "week_fact_en": "up ≈ 0.7%",
-   "week_fact_ko": "≈ 0.7% 상승",
+   "week_fact_en": "down ≈ 0.6%",
+   "week_fact_ko": "≈ 0.6% 하락",
    "news_en": [
+    {
+     "dt": "Oct 30",
+     "tx": "<b>Fell 1.82% to 7,580.07 — the worst day since June, closing a week in which the market punished three of its four giant AI reports.</b> Intel fell 28.6%, its worst day since 1974, after a weak outlook; Nvidia lost 4.22%; Amazon, down about 5% early, recovered to a 1.4% fall by the close. The fear gauge spiked to nearly 24 during the day and settled at 19.42. The one piece of good news: wage costs grew more slowly in the autumn quarter, and the chance of a December rate rise ended the week priced near <b>70%</b>, down from about 85% midweek. October closed with the index down about <b>0.9%</b>."
+    },
     {
      "dt": "Oct 29",
      "tx": "<b>Slipped 0.30% to 7,720.39 — the three-day run ended, but nearly all the damage was one stock: Alphabet fell 12.6%, about $482 billion, the biggest one-day loss in its history.</b> Most stocks rose — health care, property and household staples led, and the equal-weighted version of the index gained about 1.2%. The morning's data showed the economy growing at a <b>3.4%</b> pace with inflation at <b>3.6%</b>, keeping a December rate rise priced near <b>80%</b>; bond rates eased anyway. After the close, Amazon fell about 7% for holding its record AI budget with its cash flow negative, and Intel fell about 23% on a weak outlook."
@@ -98,13 +102,13 @@
     {
      "dt": "Oct 27",
      "tx": "<b>Rose 0.60% to 7,722.60 — the rebound's second day, with chip shares up 3.91% after banks announced $63 billion of financing to build AI computing for Anthropic on Broadcom's chips.</b> This time the buying held into the close, and a strong consumer-confidence report helped. The Dow added just 16 points — the steadier corners sat out again — and the fear gauge eased to <b>17.52</b>, the calmest close in a week. After the close, Visa and NXP both beat expectations and both fell in late trading on their outlooks. The ten-year rate slipped to about <b>4.99%</b> on the eve of the Fed's decision."
-    },
-    {
-     "dt": "Oct 26",
-     "tx": "<b>Rose 0.70% to 7,676.77 — the new week opened with a rebound led by the technology shares that took last week's beating, after Anthropic, one of the big AI companies, filed to sell its shares to the public.</b> Chip shares rose 2.85%, though the buying faded a little into the close, and the Dow's 146 points was the smallest gain of the big averages. The fear gauge eased to <b>18.39</b>, the calmest close in over a week; oil eased about 1% from its six-month high on reports of Saudi-Iranian talks; the ten-year rate held at about <b>5.00%</b>, waiting on Wednesday's Fed decision."
     }
    ],
    "news_ko": [
+    {
+     "dt": "10월 30일",
+     "tx": "<b>1.82% 내린 7,580.07 — 6월 이후 최악의 하루로, 거대 AI 실적 넷 중 셋에 벌을 준 한 주를 닫았습니다.</b> 인텔은 약한 전망 뒤 28.6% 내려 1974년 이후 최악의 하루를 보냈고, 엔비디아는 4.22% 내렸으며, 아침에 약 5% 내려 있던 아마존은 마감까지 1.4% 하락으로 회복했습니다. 공포 지수는 장중 24 가까이 치솟았다가 19.42로 가라앉았습니다. 좋은 소식 하나: 가을 분기 임금 비용이 더 느리게 올랐고, 12월 금리 인상 가능성은 주중의 약 85%에서 내려온 <b>70%</b> 부근에서 한 주를 마쳤습니다. 10월은 지수가 약 <b>0.9%</b> 내린 채 닫혔습니다."
+    },
     {
      "dt": "10월 29일",
      "tx": "<b>0.30% 밀린 7,720.39 — 사흘 연속 상승이 끝났지만, 피해의 거의 전부는 한 종목이었습니다. 알파벳이 12.6%, 약 4,820억 달러 내려 역사상 가장 큰 하루 손실을 적었습니다.</b> 대부분의 종목은 올랐습니다 — 건강, 부동산, 생활필수품이 앞장섰고, 동일 가중 버전의 지수는 약 1.2% 올랐습니다. 아침 지표는 경제가 <b>3.4%</b> 속도로 성장하고 물가는 <b>3.6%</b> 오르는 것으로 나와, 12월 인상 가능성을 <b>80%</b> 부근에 묶어 뒀습니다. 그런데도 채권 금리는 내려왔습니다. 장 마감 뒤에는 아마존이 현금 흐름이 마이너스인 채 기록적인 AI 예산을 유지했다고 약 7%, 인텔이 약한 전망에 약 23% 내렸습니다."
@@ -116,14 +120,10 @@
     {
      "dt": "10월 27일",
      "tx": "<b>0.60% 올라 7,722.60 — 반등의 이틀째였고, 은행들이 Broadcom의 반도체로 Anthropic의 AI 컴퓨팅을 짓는 데 630억 달러의 금융을 대겠다고 발표하자 반도체 주식이 3.91% 올랐습니다.</b> 이번에는 매수세가 마감까지 버텨줬고, 강한 소비자 신뢰 지표도 도왔습니다. 다우는 겨우 16포인트 상승 — 안정적인 구석은 또 구경만 했습니다 — 공포 지수는 일주일 만에 가장 차분한 <b>17.52</b>로 내려왔습니다. 장 마감 뒤에는 Visa와 NXP가 둘 다 예상을 웃돌고도 전망 때문에 시간외에서 내렸습니다. 10년물 금리는 연준 결정 전야에 약 <b>4.99%</b>로 살짝 내려왔습니다."
-    },
-    {
-     "dt": "10월 26일",
-     "tx": "<b>0.70% 올라 7,676.77 — 큰 AI 회사 중 하나인 Anthropic이 주식을 일반에 공개해 팔겠다고 신청하자, 지난주 매를 맞았던 기술주들이 앞장서며 새 주가 반등으로 열렸습니다.</b> 반도체 주식은 2.85% 올랐지만 매수세는 장 막판에 조금 옅어졌고, 다우의 146포인트는 3대 지수 중 가장 작은 상승이었습니다. 공포 지수는 일주일여 만에 가장 차분한 <b>18.39</b>로 내려왔고, 유가는 사우디·이란 회담 보도에 6개월 최고에서 약 1% 물러났으며, 10년물 금리는 수요일 연준 결정을 기다리며 약 <b>5.00%</b>에 그대로 섰습니다."
     }
    ],
-   "verdict_en": "<b>What I'd watch first: whether Thursday's split holds — technology punished, the rest of the market fine. Amazon's and Intel's overnight drops land at the open this morning, and the question is whether the money leaving the AI trade keeps moving into the steadier corners or starts leaving the market altogether.</b> The week's scoreboard is complete: four giant AI reports, one reward — Microsoft, the one that spent less than forecast. The second thing is December: after Thursday's strong growth and still-hot inflation numbers, betting markets put the chance of a December rate rise near <b>80%</b>, and the next big input is next Friday's jobs report. And oil: it is back above <b>$100</b> and rose about 2% this morning on reports — only reports — that the US may resume strikes on Iran. Dearer fuel feeds the inflation the Fed says it is still fighting. Nobody can tell you which way any of it resolves.",
-   "verdict_ko": "<b>제가 먼저 볼 것: 목요일의 갈림 — 기술주는 벌을 받고, 시장의 나머지는 멀쩡한 — 이 유지되는가입니다. 아마존과 인텔의 밤사이 하락이 오늘 아침 개장과 함께 내려앉고, 질문은 AI 베팅을 떠나는 돈이 계속 안정적인 구석들로 옮겨 가는가, 아니면 시장을 아예 떠나기 시작하는가입니다.</b> 한 주의 점수판은 완성됐습니다. 거대 AI 실적 넷에 상은 하나 — 예상보다 적게 쓴 마이크로소프트뿐입니다. 둘째는 12월입니다. 목요일의 강한 성장과 여전히 뜨거운 물가 지표 뒤에, 베팅 시장은 12월 인상 가능성을 <b>80%</b> 부근에 둡니다. 다음 큰 재료는 다음 주 금요일의 고용 보고서입니다. 그리고 유가입니다. 다시 <b>100달러</b> 위로 올라섰고, 미국이 이란 공격을 재개할 수 있다는 보도 — 어디까지나 보도 — 에 오늘 아침 약 2% 더 올랐습니다. 비싸진 연료는 연준이 여전히 싸우고 있다는 물가로 흘러듭니다. 이 중 무엇이 어느 쪽으로 풀릴지는 아무도 말해 줄 수 없습니다.",
+   "verdict_en": "<b>What I’d watch first: Monday evening, when Apple — one of the heaviest stocks in this index — reports into a market that punished three of this week’s four giant AI reports.</b> Then the chipmaker AMD on Tuesday evening, and Friday morning’s jobs report, the next big input into the December rate question — betting markets ended the week pricing a rise near <b>70%</b>, down from about 85%, after wage costs came in cooler. The deeper question is unchanged: whether the money leaving the AI trade keeps moving into the steadier corners — it did for most of this week — or starts leaving the market altogether. And oil: above <b>$104</b>, up about 2% on Friday on reports — only reports — that the US may resume strikes on Iran. Dearer fuel feeds the inflation the Fed says it is still fighting. Nobody can tell you which way any of it resolves.",
+   "verdict_ko": "<b>제가 먼저 볼 것: 월요일 저녁입니다. 이 지수에서 가장 무거운 종목 중 하나인 애플이, 이번 주 거대 AI 실적 넷 중 셋에 벌을 준 시장을 향해 발표합니다.</b> 그다음은 화요일 저녁 반도체 회사 AMD, 그리고 12월 금리 질문의 다음 큰 재료인 금요일 아침의 고용 보고서입니다 — 임금 비용이 식은 것으로 나온 뒤, 베팅 시장은 12월 인상 가능성을 약 85%에서 내려온 <b>70%</b> 부근에 두고 한 주를 마쳤습니다. 더 깊은 질문은 그대로입니다. AI 베팅을 떠나는 돈이 계속 안정적인 구석들로 옮겨 가는가 — 이번 주 대부분은 그랬습니다 — 아니면 시장을 아예 떠나기 시작하는가. 그리고 유가입니다. 미국이 이란 공격을 재개할 수 있다는 보도 — 어디까지나 보도 — 에 금요일 약 2% 올라 <b>104달러</b> 위입니다. 비싸진 연료는 연준이 여전히 싸우고 있다는 물가로 흘러듭니다. 이 중 무엇이 어느 쪽으로 풀릴지는 아무도 말해 줄 수 없습니다.",
    "base": {
     "year_start": 6846.18,
     "high_1y": 7818.93
@@ -148,50 +148,54 @@
     {
      "en": "Fear gauge",
      "ko": "공포 지수",
-     "v_en": "edged up to 17.20 on Thursday — a small rise for a day when one giant company lost an eighth of its value",
-     "v_ko": "목요일 17.20으로 소폭 상승 — 거인 기업 하나가 가치의 8분의 1을 잃은 날치고는 작은 오름입니다"
+     "v_en": "spiked to nearly 24 during Friday’s fall, then settled at 19.42 — almost exactly where it ended the week before",
+     "v_ko": "금요일 장중 24 가까이 치솟았다가 19.42로 마감 — 지난주 마감과 거의 같은 자리입니다"
     }
    ],
-   "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to \"how did the market do?\" <b>Yesterday it slipped 0.30% to 7,720.39 — ending a three-day run — but the fall was narrower than it looks: Alphabet's worst day on record did nearly all the damage, and most of the 500 stocks rose.</b> The economy's own report card was strong — growing at a 3.4% pace — but inflation is still running at 3.6%, and a December rate rise is now priced near <b>80%</b>. After the close, Amazon and Intel both disappointed, and their drops arrive at this morning's open. The index sits about <b>1.3%</b> below its record, up about <b>13%</b> this year.",
-   "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. \"시장이 어땠나?\"에 대한 가장 간단한 답입니다. <b>어제는 0.30% 밀린 7,720.39로 사흘 연속 상승이 끝났지만, 하락은 보기보다 좁았습니다. 알파벳의 역사상 최악의 하루가 피해의 거의 전부였고, 500개 종목 대부분은 올랐습니다.</b> 경제 자신의 성적표는 강했습니다 — 3.4%의 속도로 성장 — 하지만 물가는 여전히 3.6%로 오르고 있고, 12월 금리 인상은 이제 <b>80%</b> 부근에 값이 매겨져 있습니다. 장 마감 뒤에는 아마존과 인텔이 모두 실망을 줬고, 그 하락이 오늘 아침 개장에 도착합니다. 지수는 기록보다 약 <b>1.3%</b> 아래, 올해 약 <b>13%</b> 위입니다.",
-   "bull_en": "<b>The market just took one giant's worst-ever day almost in stride: Alphabet lost $482 billion and the average stock still rose.</b> That breadth is new — for most of this year a few big names carried the index while the average share sat out; on Thursday the roles reversed, and the money leaving the AI trade moved into health care, property and household staples rather than leaving the market. The economy grew at a <b>3.4%</b> pace over the summer, business investment is rising fast, and the season's earnings keep beating expectations overall. The index sits about <b>1.3%</b> from its record, October still reads roughly <b>+0.9%</b> through the roughest AI week of the season — and the bond market, for once, behaved, with rates easing even on a hot-data morning.",
-   "bull_ko": "<b>시장은 방금 거인 하나의 역사상 최악의 하루를 거의 아무렇지 않게 받아넘겼습니다. 알파벳이 4,820억 달러를 잃었는데 평균적인 주식은 올랐습니다.</b> 그 폭은 새로운 것입니다 — 올해 대부분은 몇몇 큰 이름이 지수를 들고 평균적인 주식은 구경했는데, 목요일에는 역할이 뒤집혔고, AI 베팅을 떠난 돈은 시장을 떠나는 대신 건강, 부동산, 생활필수품으로 옮겨 갔습니다. 여름 분기에 경제는 <b>3.4%</b>의 속도로 성장했고, 기업 투자는 빠르게 늘고 있으며, 시즌의 실적은 전체적으로 계속 예상을 웃돕니다. 지수는 기록에서 약 <b>1.3%</b> 떨어져 있고, 시즌 가장 거친 AI 한 주를 지나고도 10월은 약 <b>+0.9%</b>를 지키고 있습니다 — 그리고 채권 시장은 모처럼 얌전해서, 뜨거운 지표가 나온 아침에도 금리가 내려왔습니다.",
-   "bear_en": "<b>The index's heaviest companies are exactly the ones being repriced — breadth cannot carry it far if its biggest names keep falling.</b> In three evenings the market graded four giant AI reports and paid only one: Alphabet lost about 12.6%, Amazon about 7% overnight, Intel about 23% — and those last two land at this morning's open, with technology futures down about 2%. The macro screw is still turning: growth at 3.4% with inflation at 3.6% is precisely the mix that argues for a December rate rise, now priced near <b>80%</b>, and oil rose back toward <b>$104</b> this morning on reports the US may resume strikes on Iran. A market about 1.3% from its record, with its leadership under punishment and a possible rate rise five weeks away, has little room for bad news.",
-   "bear_ko": "<b>이 지수의 가장 무거운 회사들이 바로 지금 값이 다시 매겨지는 회사들입니다 — 가장 큰 이름들이 계속 내리면, 폭이 넓어도 지수를 멀리 데려가지 못합니다.</b> 사흘 저녁 동안 시장은 거대 AI 실적 넷을 채점했고 하나에만 값을 치렀습니다. 알파벳은 약 12.6%, 아마존은 밤사이 약 7%, 인텔은 약 23%를 잃었습니다 — 그리고 뒤의 둘은 기술주 선물이 약 2% 내린 오늘 아침 개장에 도착합니다. 거시의 나사도 계속 돌고 있습니다. 3.4%의 성장에 3.6%의 물가는 정확히 12월 인상을 주장하는 조합이고, 그 가능성은 이제 <b>80%</b> 부근에 값이 매겨져 있으며, 유가는 미국이 이란 공격을 재개할 수 있다는 보도에 오늘 아침 약 <b>104달러</b>를 향해 되올랐습니다. 기록에서 약 1.3% 떨어진 시장이, 주도주들이 벌을 받고 금리 인상 가능성이 다섯 주 앞인 채라면, 나쁜 소식이 설 자리가 좁습니다."
+   "plain_en": "This one number tracks the 500 largest American companies. It is the simplest answer to “how did the market do?” <b>This week it did better than its worst day made it feel: Friday fell 1.82% — the hardest day since June — but the week as a whole cost about 0.6%.</b> One by one the giant AI spenders reported, and the market punished all but one of them; for most of the week the other stocks held their ground, and the steadier corners caught the money. October ended about <b>0.9%</b> down — mild against the Nasdaq’s 5.3% — with the index about <b>3.1%</b> below its record, up about <b>11%</b> this year. Markets are closed until Monday, when Apple reports after the close.",
+   "plain_ko": "이 숫자 하나가 미국에서 가장 큰 회사 500개를 대표합니다. “시장이 어땠나?”에 대한 가장 간단한 답입니다. <b>이번 주는 최악의 하루가 느끼게 한 것보다는 나았습니다. 금요일은 1.82% 하락 — 6월 이후 가장 험한 하루 — 이었지만, 한 주 전체로는 약 0.6%를 치렀습니다.</b> 거대 AI 지출 기업들이 하나씩 발표했고, 시장은 하나만 빼고 모두에 벌을 줬습니다. 한 주의 대부분 동안 나머지 종목들은 자리를 지켰고, 안정적인 구석들이 그 돈을 받았습니다. 10월은 약 <b>0.9%</b> 하락으로 끝나 — 나스닥의 5.3%에 비하면 완만합니다 — 지수는 기록보다 약 <b>3.1%</b> 아래, 올해 약 <b>11%</b> 위입니다. 시장은 월요일까지 휴장이고, 월요일 장 마감 뒤 애플이 발표합니다.",
+   "bull_en": "<b>A week that contained the two worst single-stock crashes of the season cost this index just 0.6% — the rest of the market kept absorbing the blows.</b> All month the money leaving the AI trade has moved into health care, property and household staples rather than leaving the market, and October closed at only about −0.9% with the index roughly 3.1% from its record. The economy grew at a 3.4% pace over the summer, and Friday brought the first genuinely helpful inflation news in weeks: wage costs — a number the Fed watches closely — grew more slowly, and bond rates eased, the ten-year to about 4.94%. If support for a December rate rise keeps fading — the market ended the week pricing it near 70%, down from about 85% — the heaviest weight on the steadier half of this index lifts.",
+   "bull_ko": "<b>시즌 최악의 단일 종목 급락 두 건을 담은 한 주가 이 지수에서 가져간 것은 0.6%뿐입니다 — 시장의 나머지가 계속 충격을 흡수해 줬습니다.</b> 한 달 내내 AI 베팅을 떠난 돈은 시장을 떠나는 대신 건강, 부동산, 생활필수품으로 옮겨 갔고, 10월은 지수가 약 −0.9%만 내린 채, 기록에서 약 3.1% 떨어진 자리에서 닫혔습니다. 여름 분기에 경제는 3.4%의 속도로 성장했고, 금요일에는 몇 주 만에 처음으로 진짜 도움이 되는 물가 소식이 왔습니다. 연준이 가까이 지켜보는 숫자인 임금 비용이 더 느리게 올랐고, 채권 금리는 내려와 10년물이 약 4.94%가 됐습니다. 12월 인상론의 지지가 계속 바래면 — 시장은 주중의 약 85%에서 내려온 70% 부근에 값을 매기고 한 주를 마쳤습니다 — 이 지수의 안정적인 절반을 누르던 가장 무거운 추가 들립니다.",
+   "bear_en": "<b>The index’s heaviest companies are exactly the ones being repriced, and the week settled the rule: spending on AI is charged, not thanked.</b> Alphabet, Amazon and Intel surrendered hundreds of billions of dollars of value between them; only Microsoft was paid. The AI build-out is what carried this index’s earnings growth all year — if the giants keep spending, the market keeps fining them, and if they relent and cut, the cuts land on the chip and data-centre suppliers inside this same index. Monday sends Apple into that mood, and November 17 sends Nvidia. Meanwhile oil is above $104 on reports the US may resume strikes on Iran, a December rate rise is still priced near 70%, and a market about 3% from its record has little room for bad news.",
+   "bear_ko": "<b>이 지수의 가장 무거운 회사들이 바로 지금 값이 다시 매겨지는 회사들이고, 이번 주는 규칙을 확정했습니다. AI에 쓰는 돈은 고맙다는 말 대신 청구서를 받습니다.</b> 알파벳, 아마존, 인텔이 셋이 합쳐 수천억 달러의 가치를 내놓았고, 값을 받은 것은 마이크로소프트뿐입니다. 올해 내내 이 지수의 이익 성장을 떠받친 것이 AI 건설입니다 — 거인들이 계속 쓰면 시장이 계속 벌금을 물리고, 굽혀서 줄이면 그 삭감은 같은 지수 안의 반도체·데이터센터 공급사들에 내려앉습니다. 월요일에는 애플이, 11월 17일에는 엔비디아가 그 분위기 속으로 들어갑니다. 그사이 유가는 미국이 이란 공격을 재개할 수 있다는 보도에 104달러 위이고, 12월 금리 인상은 여전히 70% 부근에 값이 매겨져 있으며, 기록에서 약 3% 떨어진 시장에는 나쁜 소식이 설 자리가 좁습니다."
   },
   "qqq": {
-   "price": "$715.34",
+   "price": "$690.49",
    "day_arrow": "▼",
-   "day_en": "−1.42% on Thursday",
-   "day_ko": "목요일 −1.42%",
+   "day_en": "−3.47% on Friday",
+   "day_ko": "금요일 −3.47%",
    "day_dir": "dn",
-   "week_arrow": "▲",
-   "week_en": "≈ +1.5% Thursday to Thursday",
-   "week_ko": "목요일부터 목요일까지 ≈ +1.5%",
-   "week_dir": "up",
+   "week_arrow": "▼",
+   "week_en": "≈ −2.0% over the week",
+   "week_ko": "한 주 동안 ≈ −2.0%",
+   "week_dir": "dn",
    "month_arrow": "▼",
-   "month_en": "≈ −3.3% so far in October",
-   "month_ko": "10월 들어 ≈ −3.3%",
+   "month_en": "≈ −6.7% for all of October",
+   "month_ko": "10월 한 달 ≈ −6.7%",
    "month_dir": "dn",
    "drawdown_arrow": "▼",
-   "drawdown": "≈ 6.2%",
+   "drawdown": "≈ 9.5%",
    "drawdown_dir": "dn",
-   "drawdown_fact_en": "≈ 6.2%",
-   "drawdown_fact_ko": "≈ 6.2%",
-   "take_en": "Amazon and Intel land this morning",
-   "take_ko": "오늘 아침 아마존·인텔 하락 도착",
+   "drawdown_fact_en": "≈ 9.5%",
+   "drawdown_fact_ko": "≈ 9.5%",
+   "take_en": "Four reports, one reward",
+   "take_ko": "실적 넷에 상은 하나",
    "take_tone": "c-neg",
    "confirmed": true,
    "derived": true,
    "stale": false,
-   "note_en": "<b>The two heaviest report cards still outstanding came back marked down — and they land on this fund at the open.</b> On Thursday the fund fell <b>1.42%</b> to <b>$715.34</b>, dragged by one holding: <b>Alphabet</b>, one of its biggest pieces, fell <b>12.6%</b> — about <b>$482 billion</b>, the worst day in its history — while <b>Microsoft</b>, Wednesday night's winner, faded to flat. Then, after the close, the rest arrived. <b>Amazon</b> grew its cloud business <b>39%</b> and still fell about <b>7%</b> in late trading, because it held its record spending plan — about <b>$220 billion</b> this year — while its cash flow for the past year ran roughly <b>$42 billion</b> negative. <b>Intel</b> beat its quarter and fell about <b>23%</b> on a weak outlook. The season's scoreboard is complete: of the week's four giant AI reports, only Microsoft — the one that spent less than forecast — was paid. This morning the fund's futures point about <b>2%</b> lower. October now reads about <b>−3.3%</b>, with the fund about <b>6.2%</b> below its record. Next: <b>Apple</b> reports Monday evening, and <b>Nvidia</b>, the largest holding, on <b>November 17</b>.",
-   "note_ko": "<b>아직 남아 있던 가장 무거운 성적표 두 장이 감점된 채 돌아왔고 — 오늘 개장과 함께 이 펀드에 내려앉습니다.</b> 목요일에 펀드는 <b>1.42%</b> 내린 <b>$715.34</b>가 됐는데, 한 보유 종목이 끌어내렸습니다. 가장 큰 조각 중 하나인 <b>알파벳</b>이 <b>12.6%</b> — 약 <b>4,820억 달러</b>, 역사상 최악의 하루 — 내렸고, 수요일 밤의 승자였던 <b>마이크로소프트</b>는 보합으로 바랬습니다. 그리고 장 마감 뒤, 나머지가 도착했습니다. <b>아마존</b>은 클라우드 사업을 <b>39%</b> 키우고도 시간외에서 약 <b>7%</b> 내렸습니다. 올해 약 <b>2,200억 달러</b>라는 기록적인 지출 계획을 유지하면서, 지난 1년의 현금 흐름이 약 <b>420억 달러</b> 마이너스였기 때문입니다. <b>인텔</b>은 분기는 예상을 웃돌고도 약한 전망에 약 <b>23%</b> 내렸습니다. 시즌의 점수판은 완성됐습니다. 이번 주 거대 AI 실적 넷 중 값을 받은 것은 예상보다 적게 쓴 마이크로소프트 하나뿐입니다. 오늘 아침 이 펀드의 선물은 약 <b>2%</b> 아래를 가리키고 있습니다. 10월은 이제 약 <b>−3.3%</b>이고, 펀드는 기록보다 약 <b>6.2%</b> 아래입니다. 다음은 월요일 저녁의 <b>애플</b>, 그리고 <b>11월 17일</b>, 가장 큰 보유 종목인 <b>엔비디아</b>입니다.",
+   "note_en": "<b>The week graded all four of the giant AI report cards this fund was waiting on — and paid only one.</b> <b>Microsoft</b>, which spent less than forecast, was rewarded; <b>Alphabet</b> lost about <b>$482 billion</b> in a day; <b>Amazon</b> was marked down overnight and then largely forgiven — down about 5% early Friday, it closed just 1.4% lower; and <b>Intel</b> fell <b>28.6%</b> on Friday, its worst day since 1974, after warning about PC demand. The fund fell <b>3.47%</b> on Friday to <b>$690.49</b>, about <b>2%</b> for the week, and October closed at about <b>−6.7%</b> — its worst month since March 2025 — leaving it about <b>9.5%</b> below the record. Nobody questioned the demand: Amazon’s cloud grew <b>39%</b> and is projected to accelerate, Microsoft’s grew 48% with demand exceeding supply. What the market is charging for is the bills. The next tests come quickly: <b>Apple</b>, one of its biggest pieces, reports Monday evening — the first under new chief executive John Ternus — then <b>AMD</b> Tuesday and <b>Qualcomm</b> Wednesday, with <b>Nvidia</b>, the largest holding, on <b>November 17</b>.",
+   "note_ko": "<b>이 펀드가 기다리던 거대 AI 성적표 넷이 이번 주에 모두 채점됐고 — 값을 받은 것은 하나뿐입니다.</b> 예상보다 적게 쓴 <b>마이크로소프트</b>는 상을 받았고, <b>알파벳</b>은 하루에 약 <b>4,820억 달러</b>를 잃었으며, 밤사이 감점됐던 <b>아마존</b>은 금요일 아침 약 5% 내렸다가 마감에는 1.4% 하락까지 회복해 대체로 용서받았습니다. 그리고 <b>인텔</b>은 PC 수요를 경고한 뒤 금요일에 <b>28.6%</b> 내려 1974년 이후 최악의 하루를 보냈습니다. 펀드는 금요일 <b>3.47%</b> 내린 <b>$690.49</b>, 한 주로는 약 <b>2%</b> 하락이었고, 10월은 약 <b>−6.7%</b>로 닫혀 — 2025년 3월 이후 최악의 한 달 — 기록보다 약 <b>9.5%</b> 아래에 섰습니다. 수요를 의심한 사람은 없습니다. 아마존의 클라우드는 <b>39%</b> 컸고 더 빨라질 전망이며, 마이크로소프트는 수요가 공급을 앞서는 채 48% 컸습니다. 시장이 값을 물리는 것은 청구서입니다. 다음 시험은 빠르게 옵니다. 가장 큰 조각 중 하나인 <b>애플</b>이 월요일 저녁 — 새 최고경영자 존 터너스 체제의 첫 발표 — 에, <b>AMD</b>가 화요일, <b>퀄컴</b>이 수요일에, 그리고 가장 큰 보유 종목 <b>엔비디아</b>가 <b>11월 17일</b>에 발표합니다.",
    "ticker": "QQQ",
    "name_en": "The 100 biggest tech companies",
    "name_ko": "가장 큰 기술 기업 100개",
-   "week_fact_en": "up ≈ 1.5%",
-   "week_fact_ko": "≈ 1.5% 상승",
+   "week_fact_en": "down ≈ 2.0%",
+   "week_fact_ko": "≈ 2.0% 하락",
    "news_en": [
+    {
+     "dt": "Oct 30",
+     "tx": "<b>Fell 3.47% to $690.49 — the worst day of a week that graded four giant AI reports and paid only Microsoft’s.</b> Intel, warning of PC weakness into next year, fell 28.6% — its worst day since 1974; Nvidia lost 4.22%; Amazon, down about 5% early after holding its record budget with cash flow negative, recovered to a 1.4% fall by the close as its 39% cloud growth sank in. October closed at about <b>−6.7%</b>, the fund’s worst month since March 2025. Apple reports Monday evening, AMD Tuesday, Qualcomm Wednesday — then Nvidia, the largest holding, on November 17."
+    },
     {
      "dt": "Oct 29",
      "tx": "<b>Fell 1.42% to $715.34, dragged by Alphabet's worst day in its history — down 12.6%, about $482 billion — while Microsoft faded to flat.</b> After the close, the last two big reports were both punished: Amazon fell about <b>7%</b> in late trading for holding its record AI budget — about $220 billion this year — with its cash flow for the past year negative, even though its cloud business grew 39%; Intel beat its quarter and fell about <b>23%</b> after warning the PC slowdown will last into next year. Of the week's four giant AI reports, only Microsoft was rewarded. Apple reports Monday evening; Nvidia on November 17."
@@ -203,13 +207,13 @@
     {
      "dt": "Oct 27",
      "tx": "<b>Rose 1.27% to $721.25 — led the market for a second day, after banks announced $63 billion of financing to build AI computing for Anthropic on Broadcom's chips.</b> Chip shares rose 3.91%, and this time the buying held into the close. Two days have trimmed October's damage to about <b>2.5%</b>, about <b>5.5%</b> below the record. After the close the season's pattern reappeared: Visa and NXP both beat expectations and both fell in late trading on their outlooks. Microsoft and Alphabet reported the next evening, and Amazon follows tonight."
-    },
-    {
-     "dt": "Oct 26",
-     "tx": "<b>Rose 1.11% to $712.20 — led the market's rebound after Anthropic, one of the big AI companies, filed to sell its shares to the public.</b> Chip shares rose 2.85%, the fund's best corner of the day, though the buying faded a little into the close. One day against a hard month: still down about <b>3.7%</b> in October, about <b>6.6%</b> below the record. The three heaviest holdings after Nvidia report this week — Microsoft and Alphabet on Wednesday evening, Amazon on Thursday."
     }
    ],
    "news_ko": [
+    {
+     "dt": "10월 30일",
+     "tx": "<b>3.47% 내린 $690.49 — 거대 AI 실적 넷을 채점해 마이크로소프트에만 값을 치른 한 주의 가장 나쁜 하루였습니다.</b> 내년까지의 PC 약세를 경고한 인텔은 28.6% 내려 1974년 이후 최악의 하루를 보냈고, 엔비디아는 4.22% 내렸으며, 현금 흐름이 마이너스인 채 기록 예산을 유지했다고 아침에 약 5% 내려 있던 아마존은 39%의 클라우드 성장이 받아들여지며 마감까지 1.4% 하락으로 회복했습니다. 10월은 약 <b>−6.7%</b>로 닫혀 2025년 3월 이후 이 펀드의 최악의 한 달이었습니다. 애플은 월요일 저녁, AMD는 화요일, 퀄컴은 수요일 — 그리고 가장 큰 보유 종목 엔비디아는 11월 17일에 발표합니다."
+    },
     {
      "dt": "10월 29일",
      "tx": "<b>1.42% 내린 $715.34 — 역사상 최악의 하루를 보낸 알파벳(12.6% 하락, 약 4,820억 달러)이 끌어내렸고, 마이크로소프트는 보합으로 바랬습니다.</b> 장 마감 뒤, 남은 큰 실적 두 개가 모두 벌을 받았습니다. 아마존은 클라우드 사업이 39% 컸는데도, 올해 약 2,200억 달러라는 기록적인 AI 예산을 유지하고 지난 1년 현금 흐름이 마이너스였다는 이유로 시간외에서 약 <b>7%</b> 내렸고, 인텔은 분기는 예상을 웃돌고도 PC 둔화가 내년까지 간다고 경고한 뒤 약 <b>23%</b> 내렸습니다. 이번 주 거대 AI 실적 넷 중 상을 받은 것은 마이크로소프트뿐입니다. 애플은 월요일 저녁, 엔비디아는 11월 17일에 발표합니다."
@@ -221,14 +225,10 @@
     {
      "dt": "10월 27일",
      "tx": "<b>1.27% 올라 $721.25 — 은행들이 Broadcom의 반도체로 Anthropic의 AI 컴퓨팅을 짓는 데 630억 달러의 금융을 대겠다고 발표하자, 이틀째 시장을 이끌었습니다.</b> 반도체 주식은 3.91% 올랐고, 이번에는 매수세가 마감까지 버텨줬습니다. 이틀이 10월의 상처를 약 <b>2.5%</b>로 줄였고, 기록보다는 약 <b>5.5%</b> 아래입니다. 장 마감 뒤에는 시즌의 패턴이 다시 나타났습니다. Visa와 NXP가 둘 다 예상을 웃돌고도 전망 때문에 시간외에서 내렸습니다. 마이크로소프트와 알파벳은 다음 날 저녁에 발표했고, 아마존은 오늘 밤입니다."
-    },
-    {
-     "dt": "10월 26일",
-     "tx": "<b>1.11% 올라 $712.20 — 큰 AI 회사 중 하나인 Anthropic이 주식을 일반에 공개해 팔겠다고 신청하자 시장의 반등을 이끌었습니다.</b> 반도체 주식이 이날 펀드에서 가장 좋은 구석인 2.85% 상승을 적었지만, 매수세는 장 막판에 조금 옅어졌습니다. 험한 한 달에 맞선 하루입니다. 10월 들어 여전히 약 <b>3.7%</b> 아래, 기록보다 약 <b>6.6%</b> 아래입니다. 엔비디아 다음으로 무거운 세 보유 종목이 이번 주에 발표합니다 — 수요일 저녁 마이크로소프트와 알파벳, 목요일 아마존입니다."
     }
    ],
-   "verdict_en": "<b>What I'd watch: this morning's open, when Amazon's roughly 7% overnight drop lands on the fund — and then Monday evening, when Apple, one of its biggest pieces, reports into the same unforgiving market.</b> The rule the week wrote is now complete: four giant AI reports, one reward. The demand behind the spending looks real — Amazon says its cloud growth should stay above 40% for the next two years, Microsoft says demand exceeds supply — so the argument is no longer about whether AI is selling; it is about whether the bills are worth paying, and the market is voting no on most of them. The standing note: whatever the chip argument decides, this fund hears it first — and Nvidia, its largest holding, now has a date: <b>Tuesday, November 17</b>, after the close.",
-   "verdict_ko": "<b>지켜볼 것: 오늘 아침의 개장 — 아마존의 밤사이 약 7% 하락이 펀드에 내려앉는 순간 — 그리고 월요일 저녁, 이 펀드의 가장 큰 조각 중 하나인 애플이 똑같이 가차 없는 시장을 향해 발표하는 순간입니다.</b> 한 주가 쓴 규칙은 이제 완성됐습니다. 거대 AI 실적 넷에 상은 하나입니다. 지출 뒤의 수요는 진짜로 보입니다 — 아마존은 클라우드 성장이 앞으로 2년간 40%를 웃돌 것이라고 하고, 마이크로소프트는 수요가 공급을 앞선다고 합니다 — 그러니 논쟁은 더 이상 AI가 팔리느냐가 아닙니다. 그 청구서가 치를 만한 값이냐이고, 시장은 대부분에 아니라고 투표하고 있습니다. 늘 붙는 한 줄: 반도체 논쟁이 어떻게 결론 나든 이 펀드가 가장 먼저 듣습니다 — 그리고 가장 큰 보유 종목인 엔비디아에게 이제 날짜가 생겼습니다. <b>11월 17일 화요일</b>, 장 마감 뒤입니다.",
+   "verdict_en": "<b>What I’d watch: Monday evening — Apple, one of this fund’s biggest pieces, reports into a market that punished three of the week’s four giant AI reports, with new chief executive John Ternus presenting his first results.</b> Then two of the fund’s chip holdings in two nights: AMD Tuesday, Qualcomm Wednesday — Friday showed what one chip report can do in this mood. The rule the week wrote is worth carrying into all of them: the demand is not in question; the bills are. Amazon says cloud growth stays above 40% for two more years, Microsoft says demand exceeds supply — so the argument is whether the spending is worth it, and the market is voting no on most of it. The standing note: whatever the chip argument decides, this fund hears it first — and Nvidia, its largest holding, reports <b>Tuesday, November 17</b>.",
+   "verdict_ko": "<b>지켜볼 것: 월요일 저녁입니다 — 이 펀드의 가장 큰 조각 중 하나인 애플이, 이번 주 거대 AI 실적 넷 중 셋에 벌을 준 시장을 향해, 새 최고경영자 존 터너스의 첫 실적을 내놓습니다.</b> 그다음은 이틀 밤 연속의 반도체 보유 종목입니다. 화요일 AMD, 수요일 퀄컴 — 이런 분위기에서 반도체 실적 하나가 무엇을 할 수 있는지는 금요일이 보여 줬습니다. 이번 주가 쓴 규칙은 그 모두에 들고 갈 만합니다. 수요는 의심받지 않습니다. 문제는 청구서입니다. 아마존은 클라우드 성장이 앞으로 2년간 40%를 웃돈다 하고, 마이크로소프트는 수요가 공급을 앞선다고 합니다 — 그러니 논쟁은 그 지출이 값어치를 하느냐이고, 시장은 대부분에 아니라고 투표하고 있습니다. 늘 붙는 한 줄: 반도체 논쟁이 어떻게 결론 나든 이 펀드가 가장 먼저 듣습니다 — 그리고 가장 큰 보유 종목인 엔비디아가 <b>11월 17일 화요일</b>에 발표합니다.",
    "base": {
     "high_1y": 762.86,
     "low_1y": 551.68
@@ -255,47 +255,51 @@
      "auto": "range"
     }
    ],
-   "plain_en": "This fund holds the 100 biggest technology companies — Apple, Microsoft, Nvidia and their neighbours — so it is the purest bet among your five on technology keeping its promises. <b>Yesterday it fell 1.42% to $715.34, dragged by Alphabet's worst day on record — and then the last two big reports landed after the close, and both were punished.</b> Amazon fell about <b>7%</b> in late trading for holding its record AI budget while its cash ran negative; Intel fell about <b>23%</b> on a weak outlook. Of the week's four giant AI reports, only Microsoft was rewarded. The fund sits about <b>6.2%</b> below its record, down about <b>3.3%</b> in October, and its futures point about 2% lower this morning. Apple reports Monday; Nvidia, its largest holding, on November 17.",
-   "plain_ko": "이 펀드는 애플, 마이크로소프트, 엔비디아와 그 이웃들 — 가장 큰 기술 기업 100개 — 을 담고 있어, 보유 다섯 중 기술이 약속을 지킨다는 데 거는 가장 순수한 베팅입니다. <b>어제는 역사상 최악의 하루를 보낸 알파벳에 끌려 1.42% 내린 $715.34가 됐습니다 — 그리고 장 마감 뒤 남은 큰 실적 둘이 도착했는데, 둘 다 벌을 받았습니다.</b> 아마존은 현금이 마이너스인 채 기록적인 AI 예산을 유지했다고 시간외에서 약 <b>7%</b>, 인텔은 약한 전망에 약 <b>23%</b> 내렸습니다. 이번 주 거대 AI 실적 넷 중 상을 받은 것은 마이크로소프트뿐입니다. 펀드는 기록보다 약 <b>6.2%</b> 아래, 10월 들어 약 <b>3.3%</b> 하락이고, 오늘 아침 선물은 약 2% 아래를 가리킵니다. 애플은 월요일, 가장 큰 보유 종목인 엔비디아는 11월 17일에 발표합니다.",
-   "bull_en": "<b>Strip out the punishment and read the businesses: the demand is not in question anywhere in this week's reports.</b> Amazon's cloud grew 39% and the company expects that to stay above 40% for the next two years; Microsoft's grew 48% with demand still exceeding supply; even Alphabet's cloud doubled. Intel's own AI data-centre business grew 78%, its strongest in fifteen years — the weakness was in PCs, not in the build-out. The market is punishing the bills, not the businesses, and bills are the kind of problem a company can fix: Microsoft showed the playbook and was paid about 4% for it. The fund has absorbed a brutal week — the worst single-stock day in its top holdings' history — and still sits only about <b>6.2%</b> below its record, up roughly <b>1.5%</b> over five days.",
-   "bull_ko": "<b>벌점을 걷어 내고 사업을 읽어 보세요. 이번 주 어느 실적에서도 수요 자체는 의심받지 않았습니다.</b> 아마존의 클라우드는 39% 컸고 회사는 그 성장이 앞으로 2년간 40%를 웃돌 것으로 봅니다. 마이크로소프트는 48% 크면서도 수요가 여전히 공급을 앞선다고 하고, 알파벳의 클라우드조차 두 배가 됐습니다. 인텔 자신의 AI 데이터센터 사업은 15년 만에 가장 강한 78% 성장이었습니다 — 약한 쪽은 PC였지, AI 건설이 아니었습니다. 시장이 벌주는 것은 사업이 아니라 청구서이고, 청구서는 회사가 고칠 수 있는 종류의 문제입니다. 마이크로소프트가 그 교본을 보여 주고 약 4%를 받았습니다. 펀드는 혹독한 한 주 — 상위 보유 종목 역사상 최악의 단일 종목 하루 — 를 흡수하고도 기록보다 약 <b>6.2%</b> 아래에 그치고, 닷새로는 약 <b>1.5%</b> 위입니다.",
-   "bear_en": "<b>In three evenings, three of this fund's heaviest holdings were repriced downward — and two of those drops have not reached the price on your screen yet.</b> Amazon's roughly 7% fall lands at this morning's open with the fund's futures down about 2%. The market's demand is for spending discipline, and the giants are promising the opposite: Alphabet says next year's budget rises significantly, and Amazon held its $220 billion plan with its cash flow negative. If the market keeps charging for that, the fund's biggest pieces keep falling; if the giants relent and trim, the cuts land on their chip suppliers — which are also in this fund. A December rate rise, priced near 80%, presses on exactly these long-promise shares. And the tripled version of this bet showed its teeth again: SOXL lost 4.62% on Thursday and faces Intel's roughly 25% premarket plunge at triple size this morning.",
-   "bear_ko": "<b>사흘 저녁 동안 이 펀드의 가장 무거운 보유 종목 셋의 값이 아래로 다시 매겨졌고 — 그중 둘의 하락은 아직 화면의 가격에 닿지도 않았습니다.</b> 아마존의 약 7% 하락이 펀드 선물이 약 2% 내린 오늘 아침 개장에 도착합니다. 시장이 요구하는 것은 지출 절제인데, 거인들은 반대를 약속하고 있습니다. 알파벳은 내년 예산이 크게 는다고 하고, 아마존은 현금 흐름이 마이너스인 채 2,200억 달러 계획을 유지했습니다. 시장이 계속 그 값을 물리면 펀드의 가장 큰 조각들이 계속 내리고, 거인들이 굽혀서 줄이면 그 삭감은 반도체 공급사들 — 역시 이 펀드 안에 있는 — 에 내려앉습니다. 80% 부근에 값이 매겨진 12월 금리 인상은 바로 이런 먼 약속의 주식들을 누릅니다. 그리고 이 베팅의 3배 버전이 다시 이빨을 보였습니다. SOXL은 목요일에 4.62%를 잃었고, 오늘 아침 인텔의 개장 전 약 25% 급락을 세 배 크기로 마주합니다.",
+   "plain_en": "This fund holds the 100 biggest technology companies — Apple, Microsoft, Nvidia and their neighbours — so it is the purest bet among your five on technology keeping its promises. <b>This week the market graded the four giant AI report cards inside it and rewarded only Microsoft; the fund lost about 2%, and October closed at about −6.7%, its worst month since March 2025.</b> Friday was the hardest day: Intel’s worst session since 1974 helped drag the fund down 3.47% to $690.49, about <b>9.5%</b> below its record. The businesses themselves kept reporting strong demand — the punishment is for the spending. Next: Apple reports Monday evening, AMD Tuesday, and Nvidia, the largest holding, on November 17.",
+   "plain_ko": "이 펀드는 애플, 마이크로소프트, 엔비디아와 그 이웃들 — 가장 큰 기술 기업 100개 — 을 담고 있어, 보유 다섯 중 기술이 약속을 지킨다는 데 거는 가장 순수한 베팅입니다. <b>이번 주 시장은 그 안의 거대 AI 성적표 넷을 채점해 마이크로소프트에만 상을 줬고, 펀드는 약 2%를 잃었으며, 10월은 2025년 3월 이후 최악의 한 달인 약 −6.7%로 닫혔습니다.</b> 가장 험한 날은 금요일이었습니다. 1974년 이후 인텔 최악의 하루가 펀드를 3.47% 끌어내려 $690.49, 기록보다 약 <b>9.5%</b> 아래가 됐습니다. 사업 자체는 계속 강한 수요를 보고했습니다 — 벌은 지출에 대한 것입니다. 다음은 월요일 저녁의 애플, 화요일의 AMD, 그리고 11월 17일, 가장 큰 보유 종목인 엔비디아입니다.",
+   "bull_en": "<b>Strip out the punishment and read the businesses: nowhere in this week’s reports was the demand in question.</b> Amazon’s cloud grew 39% and the company expects that to stay above 40% for the next two years; Microsoft’s grew 48% with demand still exceeding supply; even Alphabet’s cloud doubled. Intel’s own AI data-centre business grew 78%, its strongest in fifteen years — the weakness was PCs, not the build-out. The market is punishing the bills, not the businesses, and bills are the kind of problem a company can fix: Microsoft showed the playbook and was paid for it. After the roughest AI month of the year the fund sits about <b>9.5%</b> below its record — still up about 25% from its 1-year low — and its heaviest holding reports with the bar now set low, on November 17.",
+   "bull_ko": "<b>벌점을 걷어 내고 사업을 읽어 보세요. 이번 주 어느 실적에서도 수요 자체는 의심받지 않았습니다.</b> 아마존의 클라우드는 39% 컸고 회사는 그 성장이 앞으로 2년간 40%를 웃돌 것으로 봅니다. 마이크로소프트는 수요가 여전히 공급을 앞서는 채 48% 컸고, 알파벳의 클라우드조차 두 배가 됐습니다. 인텔 자신의 AI 데이터센터 사업은 15년 만에 가장 강한 78% 성장이었습니다 — 약한 쪽은 PC였지, AI 건설이 아니었습니다. 시장이 벌주는 것은 사업이 아니라 청구서이고, 청구서는 회사가 고칠 수 있는 종류의 문제입니다. 마이크로소프트가 그 교본을 보여 주고 값을 받았습니다. 올해 가장 거친 AI 한 달을 지나고도 펀드는 기록보다 약 <b>9.5%</b> 아래 — 1년 최저가보다는 여전히 약 25% 위 — 이고, 가장 무거운 보유 종목이 낮아진 기대치 위에서 11월 17일에 발표합니다.",
+   "bear_en": "<b>In one week, three of this fund’s heaviest holdings were repriced downward, and its worst month since March 2025 went into the books — with the market’s demand unchanged: spend less.</b> The giants are promising the opposite — Alphabet says next year’s budget rises significantly, Amazon held its $220 billion plan with its cash flow negative. If the market keeps charging for that, the fund’s biggest pieces keep falling; if the giants relent and trim, the cuts land on their chip suppliers — also in this fund. A December rate rise, still priced near 70%, presses on exactly these long-promise shares. And next week offers three fresh chances for bad news in a market that is punishing it severely: Apple Monday, AMD Tuesday, Qualcomm Wednesday. The tripled version of this bet showed what that can cost — SOXL lost a quarter of its value on Friday alone.",
+   "bear_ko": "<b>한 주 동안 이 펀드의 가장 무거운 보유 종목 셋의 값이 아래로 다시 매겨졌고, 2025년 3월 이후 최악의 한 달이 장부에 적혔습니다 — 시장의 요구는 그대로입니다. 덜 쓰라는 것입니다.</b> 거인들은 반대를 약속하고 있습니다. 알파벳은 내년 예산이 크게 는다고 하고, 아마존은 현금 흐름이 마이너스인 채 2,200억 달러 계획을 유지했습니다. 시장이 계속 그 값을 물리면 펀드의 가장 큰 조각들이 계속 내리고, 거인들이 굽혀서 줄이면 그 삭감은 반도체 공급사들 — 역시 이 펀드 안의 — 에 내려앉습니다. 여전히 70% 부근에 값이 매겨진 12월 금리 인상은 바로 이런 먼 약속의 주식들을 누릅니다. 그리고 다음 주는 나쁜 소식을 혹독하게 벌주는 시장에 새 기회를 세 번 줍니다. 월요일 애플, 화요일 AMD, 수요일 퀄컴입니다. 이 베팅의 3배 버전이 그 값을 보여 줬습니다 — SOXL은 금요일 하루에만 제 몸의 4분의 1을 잃었습니다.",
    "bear_note": ""
   },
   "nvda": {
-   "price": "$213.66",
+   "price": "$204.64",
    "day_arrow": "▼",
-   "day_en": "−0.80% on Thursday",
-   "day_ko": "목요일 −0.80%",
+   "day_en": "−4.22% on Friday",
+   "day_ko": "금요일 −4.22%",
    "day_dir": "dn",
-   "week_arrow": "▲",
-   "week_en": "≈ +0.7% Thursday to Thursday",
-   "week_ko": "목요일부터 목요일까지 ≈ +0.7%",
-   "week_dir": "up",
+   "week_arrow": "▼",
+   "week_en": "≈ −3.0% over the week",
+   "week_ko": "한 주 동안 ≈ −3.0%",
+   "week_dir": "dn",
    "month_arrow": "▼",
-   "month_en": "≈ −6.4% so far in October",
-   "month_ko": "10월 들어 ≈ −6.4%",
+   "month_en": "≈ −10.4% for all of October",
+   "month_ko": "10월 한 달 ≈ −10.4%",
    "month_dir": "dn",
    "drawdown_arrow": "▼",
-   "drawdown": "≈ 12.2%",
+   "drawdown": "≈ 15.9%",
    "drawdown_dir": "dn",
-   "drawdown_fact_en": "≈ 12.2%",
-   "drawdown_fact_ko": "≈ 12.2%",
-   "take_en": "Demand confirmed — spenders punished",
-   "take_ko": "수요는 확인 — 지출은 벌받는 중",
+   "drawdown_fact_en": "≈ 15.9%",
+   "drawdown_fact_ko": "≈ 15.9%",
+   "take_en": "Punished with its customers",
+   "take_ko": "고객들과 함께 벌받는 중",
    "take_tone": "c-neg",
    "confirmed": true,
    "derived": true,
    "stale": false,
-   "note_en": "<b>Its customers keep confirming the demand — and keep getting punished for paying for it.</b> On Thursday the shares held up better than their group, down <b>0.80%</b> to <b>$213.66</b> while the chip index fell 1.55% on Alphabet's record drop. Then the last two customer reports landed after the close. <b>Amazon</b> — the third of the three biggest buyers of AI computing — grew its cloud business <b>39%</b>, said that growth should stay above 40% for the next two years, and held its record spending plan of about <b>$220 billion</b>: for Nvidia, demand confirmed in the plainest terms. The market still marked Amazon down about 7%. <b>Intel</b> told the same split story from the supply side: its AI data-centre business grew <b>78%</b>, its best in fifteen years, while its PC side weakened enough to sink the shares about 23%. So the week ends with every big customer saying the build-out continues — and the market charging them for it. The shares were down about <b>3%</b> before the open this morning. They sit about <b>12.2%</b> below their record, at roughly <b>27 times</b> the past year's profits, and the company's own report now has a date: <b>Tuesday, November 17</b>, after the close.",
-   "note_ko": "<b>고객들은 수요를 계속 확인해 주고 — 그 값을 치렀다고 계속 벌을 받고 있습니다.</b> 목요일에 주가는 제 무리보다 잘 버텼습니다. 알파벳의 기록적인 급락에 반도체 지수가 1.55% 내리는 동안 <b>0.80%</b> 내린 <b>$213.66</b>이었습니다. 그리고 장 마감 뒤, 마지막 남은 고객 실적 둘이 도착했습니다. AI 컴퓨팅의 3대 구매자 중 셋째인 <b>아마존</b>은 클라우드 사업을 <b>39%</b> 키웠고, 그 성장이 앞으로 2년간 40%를 웃돌 것이라고 했으며, 약 <b>2,200억 달러</b>라는 기록적인 지출 계획을 유지했습니다. 엔비디아에게는 가장 분명한 말로 확인된 수요입니다. 그래도 시장은 아마존을 약 7% 깎았습니다. <b>인텔</b>은 공급 쪽에서 같은 갈림을 보여 줬습니다. AI 데이터센터 사업은 15년 만에 최고인 <b>78%</b> 성장이었는데, PC 쪽이 약해져 주가를 약 23% 가라앉혔습니다. 그래서 한 주는 이렇게 끝납니다. 모든 큰 고객이 건설은 계속된다고 말하는데 — 시장은 그들에게 그 값을 물리고 있습니다. 주가는 오늘 아침 개장 전 약 <b>3%</b> 아래였습니다. 기록보다 약 <b>12.2%</b> 아래, 지난 1년 이익의 약 <b>27배</b>이고, 회사 자신의 발표에 이제 날짜가 생겼습니다. <b>11월 17일 화요일</b>, 장 마감 뒤입니다.",
+   "note_en": "<b>A week in which every big customer confirmed the demand — and the market charged the whole neighbourhood anyway.</b> The shares fell <b>4.22%</b> on Friday to <b>$204.64</b>, their lowest close since early August, finishing the week about <b>3%</b> lower and October about <b>10.4%</b> lower. Nothing in the week’s reports questioned Nvidia’s order book — the opposite: <b>Amazon</b> held its record <b>$220 billion</b> budget with cloud growth projected above 40% into 2028, <b>Alphabet</b> said next year’s spending rises significantly, <b>Microsoft</b> grew 48% with demand exceeding supply. What the week settled is the mood: Alphabet, Amazon and Intel were all marked down for their bills; only Microsoft, which trimmed, was paid — and coverage of Friday’s fall named the fear plainly, that the big spenders will be forced to pull back in 2027. The shares now trade at roughly <b>26 times</b> the past year’s profits, the cheapest of the year by that measure, with the company’s value at about <b>$4.9 trillion</b>. Next: <b>AMD</b>, its closest AI-chip rival, reports Tuesday evening — a dress rehearsal for Nvidia’s own report on <b>Tuesday, November 17</b>.",
+   "note_ko": "<b>모든 큰 고객이 수요를 확인해 준 한 주였는데 — 시장은 어쨌든 동네 전체에 값을 물렸습니다.</b> 주가는 금요일 <b>4.22%</b> 내린 <b>$204.64</b>로 8월 초 이후 가장 낮게 마감했고, 한 주로는 약 <b>3%</b>, 10월로는 약 <b>10.4%</b> 하락했습니다. 이번 주 어느 실적도 엔비디아의 주문장을 의심하지 않았습니다 — 오히려 반대입니다. <b>아마존</b>은 2028년까지 40% 이상의 클라우드 성장 전망과 함께 기록적인 <b>2,200억 달러</b> 예산을 유지했고, <b>알파벳</b>은 내년 지출이 크게 는다고 했으며, <b>마이크로소프트</b>는 수요가 공급을 앞서는 채 48% 컸습니다. 이번 주가 확정한 것은 분위기입니다. 알파벳, 아마존, 인텔은 모두 청구서 때문에 감점됐고, 줄인 마이크로소프트만 값을 받았습니다 — 그리고 금요일 하락을 다룬 보도는 그 두려움을 그대로 적었습니다. 큰 지출 기업들이 2027년에는 어쩔 수 없이 물러날 것이라는 두려움입니다. 주가는 이제 지난 1년 이익의 약 <b>26배</b> — 그 잣대로는 올해 가장 싼 값 — 이고 회사 가치는 약 <b>4조 9천억 달러</b>입니다. 다음은 가장 가까운 AI 반도체 경쟁사 <b>AMD</b>의 화요일 저녁 발표 — <b>11월 17일 화요일</b> 엔비디아 자신의 발표를 위한 예행연습입니다.",
    "ticker": "NVDA",
    "name_en": "Nvidia — makes AI chips",
    "name_ko": "엔비디아 — AI 반도체 제조",
-   "week_fact_en": "up ≈ 0.7%",
-   "week_fact_ko": "≈ 0.7% 상승",
+   "week_fact_en": "down ≈ 3.0%",
+   "week_fact_ko": "≈ 3.0% 하락",
    "news_en": [
+    {
+     "dt": "Oct 30",
+     "tx": "<b>Fell 4.22% to $204.64 — the lowest close since early August — as Intel’s worst day since 1974 dragged the whole chip group, with coverage naming the fear that the big AI spenders will pull back in 2027.</b> Nothing in the week cut Nvidia’s order book: Amazon, Alphabet and Microsoft all held or raised the budgets that buy its chips. The toll was mood, not orders — about 3% for the week, about 10.4% for October. At roughly <b>26 times</b> the past year’s profits, the price asks less of the future than at any point this year. AMD, the closest rival, reports Tuesday; Nvidia’s own date is November 17."
+    },
     {
      "dt": "Oct 29",
      "tx": "<b>Dipped 0.80% to $213.66 — milder than its group, with the chip index down 1.55% on Alphabet's record fall.</b> After the close, the last two customer reports split the same way the week has: Amazon confirmed the demand — cloud up 39%, growth projected above 40% for two more years, record $220 billion budget held — and was punished about 7% for the bill; Intel's AI data-centre business grew 78%, its best in fifteen years, but a weak PC outlook sank the shares about 23%. Every big customer has now raised or held the budgets that buy these chips. Nvidia's own report is set for November 17."
@@ -307,13 +311,13 @@
     {
      "dt": "Oct 27",
      "tx": "<b>Rose 0.90% to $217.94 — a second day of repair, though for once it trailed its own group: the chip index rose 3.91%, led by Broadcom, after banks announced $63 billion of financing to build AI computing for Anthropic on Broadcom's chips.</b> The money went first to the company named in the deal. After the close, NXP beat expectations and fell about 9% in late trading on its outlook — the season's pattern, still standing. Nvidia's own results come in mid-November; Microsoft and Alphabet reported their spending plans the next evening, and Amazon follows tonight."
-    },
-    {
-     "dt": "Oct 26",
-     "tx": "<b>Rose 2.39% to $216.00 as the chip group jumped 2.85% — its best day since Thursday's rout — after Anthropic, one of the big AI companies, filed to sell its shares to the public.</b> Nothing came from Nvidia itself: the filing, showing revenue up about fourteen-fold in a year, was read as a vote of confidence in the AI build-out, and the money came back to the shares it left last week. Still down about <b>5.4%</b> in October. This week the biggest buyers of its chips — Microsoft, Alphabet, Amazon — report their own spending plans."
     }
    ],
    "news_ko": [
+    {
+     "dt": "10월 30일",
+     "tx": "<b>4.22% 내린 $204.64 — 8월 초 이후 가장 낮은 마감입니다. 1974년 이후 인텔 최악의 하루가 반도체 무리 전체를 끌어내렸고, 보도는 큰 AI 지출 기업들이 2027년에 물러날 것이라는 두려움을 그대로 적었습니다.</b> 이번 주에 엔비디아의 주문장을 깎은 것은 없습니다. 아마존, 알파벳, 마이크로소프트 모두 이 회사 반도체를 사는 예산을 유지하거나 올렸습니다. 값을 치른 것은 주문이 아니라 분위기입니다 — 한 주 약 3%, 10월 약 10.4% 하락. 지난 1년 이익의 약 <b>26배</b>로, 가격이 미래에 기대는 정도는 올해 어느 때보다 작습니다. 가장 가까운 경쟁사 AMD는 화요일, 엔비디아 자신의 날짜는 11월 17일입니다."
+    },
     {
      "dt": "10월 29일",
      "tx": "<b>0.80% 내린 $213.66 — 제 무리보다 완만했습니다. 반도체 지수는 알파벳의 기록적인 급락에 1.55% 내렸습니다.</b> 장 마감 뒤, 마지막 고객 실적 둘이 이번 주와 같은 모양으로 갈렸습니다. 아마존은 수요를 확인해 줬고 — 클라우드 39% 성장, 앞으로 2년도 40% 이상 전망, 2,200억 달러 기록 예산 유지 — 그 청구서 때문에 약 7%의 벌을 받았습니다. 인텔의 AI 데이터센터 사업은 15년 만에 최고인 78% 성장이었지만, 약한 PC 전망이 주가를 약 23% 가라앉혔습니다. 이제 모든 큰 고객이 이 반도체를 사는 예산을 올리거나 유지했습니다. 엔비디아 자신의 발표는 11월 17일로 정해졌습니다."
@@ -325,14 +329,10 @@
     {
      "dt": "10월 27일",
      "tx": "<b>0.90% 올라 $217.94 — 이틀째의 수리였지만, 모처럼 제 무리보다 뒤처졌습니다. 은행들이 Broadcom의 반도체로 Anthropic의 AI 컴퓨팅을 짓는 데 630억 달러의 금융을 대겠다고 발표하자, 반도체 지수는 Broadcom이 앞장서며 3.91% 올랐습니다.</b> 돈은 그 거래에 이름이 적힌 회사로 먼저 갔습니다. 장 마감 뒤에는 NXP가 예상을 웃돌고도 전망 때문에 시간외에서 약 9% 내렸습니다 — 시즌의 패턴은 그대로입니다. 엔비디아 자신의 실적은 11월 중순입니다. 마이크로소프트와 알파벳은 다음 날 저녁 지출 계획을 발표했고, 아마존은 오늘 밤입니다."
-    },
-    {
-     "dt": "10월 26일",
-     "tx": "<b>큰 AI 회사 중 하나인 Anthropic이 주식을 일반에 공개해 팔겠다고 신청하자, 반도체 무리가 2.85% 뛰는 — 목요일 급락 이후 가장 좋은 하루 — 가운데 2.39% 올라 $216.00.</b> 엔비디아 자신에게서 나온 것은 없습니다. 1년 사이 매출이 약 14배로 늘었다는 그 신청서가 AI 건설에 대한 신임 투표로 읽혔고, 지난주에 떠났던 돈이 돌아왔습니다. 10월 들어서는 여전히 약 <b>5.4%</b> 하락입니다. 이번 주에는 이 회사 반도체의 가장 큰 구매자들 — 마이크로소프트, 알파벳, 아마존 — 이 자기 지출 계획을 발표합니다."
     }
    ],
-   "verdict_en": "<b>What I'd watch: November 17 — Nvidia's own report finally has a date, a Tuesday after the close — and until then, whether the market's punishment of the spenders turns into actual budget cuts.</b> That is the translation that matters here: this week every big customer raised or held its spending — Alphabet significantly higher next year, Amazon at a record $220 billion, Microsoft growing while trimming — so Nvidia's order book, told by other people, got bigger, not smaller. The risk is the next step: boards watching Alphabet lose $482 billion and Amazon fall 7% overnight may decide discipline is cheaper, and discipline means fewer chips. The Justice Department's questions about the $12.9 billion Hugging Face purchase still stand. The note that never changes: whatever chips do, <b>SOXL does about three times as much</b> — in October that has meant about −6.4% here against about −30.8% there.",
-   "verdict_ko": "<b>지켜볼 것: 11월 17일입니다 — 엔비디아 자신의 발표에 마침내 날짜가 생겼습니다. 화요일 장 마감 뒤입니다 — 그리고 그때까지는, 지출한 쪽을 벌주는 시장의 매질이 실제 예산 삭감으로 바뀌는가입니다.</b> 여기서 중요한 번역은 그것입니다. 이번 주에 모든 큰 고객이 지출을 올리거나 유지했습니다 — 알파벳은 내년에 크게 더, 아마존은 기록적인 2,200억 달러, 마이크로소프트는 줄이면서도 성장 — 그러니 남이 대신 말해 주는 엔비디아의 주문장은 작아진 것이 아니라 커졌습니다. 위험은 그다음 걸음입니다. 알파벳이 4,820억 달러를 잃고 아마존이 밤사이 7% 내리는 것을 지켜본 이사회들은 절제가 더 싸다고 판단할 수 있고, 절제는 반도체를 덜 산다는 뜻입니다. 129억 달러 Hugging Face 인수에 대한 법무부의 질문도 그대로 서 있습니다. 변하지 않는 한 줄: 반도체가 무엇을 하든 <b>SOXL은 그 세 배쯤을 합니다</b> — 10월 들어 그것은 여기의 약 −6.4%에 대해 저쪽의 약 −30.8%를 뜻했습니다.",
+   "verdict_en": "<b>What I’d watch: Tuesday evening — AMD, the nearest thing to a dress rehearsal for Nvidia’s own November 17 report, shows whether the market will pay for good AI-chip numbers at all in this mood.</b> The deeper watch is unchanged: whether a week of punishing the spenders turns into actual budget cuts. Boards that watched Alphabet lose $482 billion and Intel lose 29% in a day may decide discipline is cheaper, and discipline means fewer chips — but every budget actually on record this week went up or held. The Justice Department’s questions about the $12.9 billion Hugging Face purchase still stand. The note that never changes: whatever chips do, <b>SOXL does about three times as much</b> — in October that meant about −10.4% here against −47.9% there.",
+   "verdict_ko": "<b>지켜볼 것: 화요일 저녁입니다 — 11월 17일 엔비디아 자신의 발표에 가장 가까운 예행연습인 AMD가, 이런 분위기의 시장이 좋은 AI 반도체 숫자에 과연 값을 치르는지 보여 줍니다.</b> 더 깊은 관찰 대상은 그대로입니다. 지출한 쪽을 벌주는 한 주가 실제 예산 삭감으로 바뀌는가입니다. 알파벳이 4,820억 달러를, 인텔이 하루에 29%를 잃는 것을 지켜본 이사회들은 절제가 더 싸다고 판단할 수 있고, 절제는 반도체를 덜 산다는 뜻입니다 — 다만 이번 주에 실제로 기록에 오른 예산은 모두 올랐거나 유지됐습니다. 129억 달러 Hugging Face 인수에 대한 법무부의 질문도 그대로 서 있습니다. 변하지 않는 한 줄: 반도체가 무엇을 하든 <b>SOXL은 그 세 배쯤을 합니다</b> — 10월에 그것은 여기의 약 −10.4%에 대해 저쪽의 −47.9%를 뜻했습니다.",
    "base": {
     "high_1y": 243.37,
     "cap_usd_at": [
@@ -372,50 +372,54 @@
      "v_ko": "8월 26일 — 예상 상회, 다음은 11월 17일(화)"
     }
    ],
-   "plain_en": "Nvidia makes the chips that power artificial intelligence, and it is one of the most valuable companies on earth — worth more than <b>$5 trillion</b>. <b>Yesterday the shares dipped 0.80% to $213.66 — milder than their group — and then the last two of its big customers reported after the close.</b> The message was double-edged: Amazon confirmed the demand in the plainest terms — cloud up 39%, record budget held — but the market punished it anyway, because the week's rule is that spending on AI gets charged, not thanked. The shares sit about <b>12.2%</b> below their record, priced at roughly <b>27 times</b> the past year's profits, and were about 3% lower before the open this morning. The company's own results now have a date: Tuesday, November 17.",
-   "plain_ko": "엔비디아는 인공지능을 움직이는 반도체를 만들고, 기업 가치 <b>5조 달러</b>가 넘는, 세계에서 가장 비싼 회사 중 하나입니다. <b>어제 주가는 제 무리보다 완만한 0.80% 하락의 $213.66이었고 — 장 마감 뒤 큰 고객들 중 마지막 둘이 발표했습니다.</b> 메시지는 양날이었습니다. 아마존은 가장 분명한 말로 수요를 확인해 줬지만 — 클라우드 39% 성장, 기록 예산 유지 — 시장은 어쨌든 벌을 줬습니다. 이번 주의 규칙이 AI에 쓰는 돈은 고맙다는 말 대신 청구서를 받는다는 것이기 때문입니다. 주가는 기록보다 약 <b>12.2%</b> 아래, 지난 1년 이익의 약 <b>27배</b>이고, 오늘 아침 개장 전에는 약 3% 더 낮았습니다. 회사 자신의 실적에 이제 날짜가 생겼습니다. 11월 17일 화요일입니다.",
-   "bull_en": "<b>Every one of its three biggest customers has now reported, and all three raised or held the budgets that buy its chips — Alphabet significantly higher next year, Amazon at a record $220 billion with cloud growth projected above 40% into 2028, Microsoft growing 48% with demand exceeding supply.</b> Intel's AI data-centre business grew 78%, the memory makers see shortage for years, and banks financed $63 billion of new AI computing last week. The order book, told entirely by other people, keeps getting bigger. At roughly <b>27 times</b> the past year's profits the price asks less of the future than it did a month ago, the record $150 billion buyback stands behind it, and China sales still sit near zero in the company's own forecasts — anything Washington concedes on exports remains nearly pure upside. Its own report lands November 17.",
-   "bull_ko": "<b>3대 고객이 이제 모두 발표했고, 셋 모두 이 회사의 반도체를 사는 예산을 올리거나 유지했습니다 — 알파벳은 내년에 크게 더, 아마존은 2028년까지 40% 이상의 클라우드 성장 전망과 함께 기록적인 2,200억 달러, 마이크로소프트는 수요가 공급을 앞서는 채 48% 성장입니다.</b> 인텔의 AI 데이터센터 사업은 78% 컸고, 메모리 회사들은 몇 년의 부족을 내다보며, 지난주 은행들은 새 AI 컴퓨팅에 630억 달러의 금융을 댔습니다. 온전히 남들이 말해 주는 주문장이 계속 커지고 있습니다. 지난 1년 이익의 약 <b>27배</b>인 지금 가격은 한 달 전보다 미래에 덜 기대고, 사상 최대 1,500억 달러 자사주 매입이 뒤를 받치며, 중국 매출은 회사 자신의 전망에 거의 0으로 잡혀 있어 워싱턴이 수출에서 양보하는 것은 무엇이든 거의 순수한 상승 여력입니다. 회사 자신의 발표는 11월 17일입니다.",
-   "bear_en": "<b>The market has now spent a full week teaching Nvidia's customers that buying fewer of its chips is rewarded and buying more is punished — and customers eventually learn.</b> Microsoft was paid about 4% for trimming; Alphabet and Amazon surrendered hundreds of billions between them for spending more. If even one of the three giants shifts to Microsoft's playbook, that is Nvidia's revenue being cut in public. The shares were down about 3% before the open this morning, the Justice Department is asking about the Hugging Face purchase on top of what reporting describes as a longer-running examination, a December rate rise is priced near 80% — and the company has nothing of its own to say until November 17. The standing reminder about the tripled fund: one bad chip day this month cost Nvidia 4.4% — and SOXL 20.47%.",
-   "bear_ko": "<b>시장은 꼬박 한 주 동안 엔비디아의 고객들에게 이 회사 반도체를 덜 사면 상을 받고 더 사면 벌을 받는다고 가르쳤습니다 — 그리고 고객은 결국 배웁니다.</b> 마이크로소프트는 줄였다고 약 4%를 받았고, 알파벳과 아마존은 더 썼다고 둘이 합쳐 수천억 달러를 내놓았습니다. 세 거인 중 하나라도 마이크로소프트의 교본으로 갈아타면, 그것은 엔비디아의 매출이 공개적으로 깎이는 일입니다. 주가는 오늘 아침 개장 전 약 3% 아래였고, 법무부는 보도가 전하는 더 오래된 조사 위에 Hugging Face 인수까지 묻고 있으며, 12월 금리 인상은 80% 부근에 값이 매겨져 있습니다 — 그리고 이 회사는 11월 17일까지 자기 발표가 없습니다. 3배 펀드에 대한 상시 경고: 이번 달 반도체의 나쁜 하루가 엔비디아에서 4.4%를, SOXL에서 20.47%를 가져갔습니다."
+   "plain_en": "Nvidia makes the chips that power artificial intelligence, and it is one of the most valuable companies on earth — worth about <b>$4.9 trillion</b>. <b>This week every one of its biggest customers reported, and all of them kept or raised the budgets that buy its chips — yet the shares fell about 3%, because the market spent the week punishing AI spending itself.</b> Friday was the hardest day: down 4.22% to $204.64, the lowest close since early August, as Intel’s collapse dragged the whole chip group. The shares sit about <b>15.9%</b> below their record, priced at roughly <b>26 times</b> the past year’s profits — the cheapest of the year. The company’s own report is dated: Tuesday, November 17, after the close.",
+   "plain_ko": "엔비디아는 인공지능을 움직이는 반도체를 만들고, 기업 가치 약 <b>4조 9천억 달러</b>의, 세계에서 가장 비싼 회사 중 하나입니다. <b>이번 주 가장 큰 고객들이 모두 발표했고, 모두가 이 회사 반도체를 사는 예산을 유지하거나 올렸습니다 — 그런데도 주가는 약 3% 내렸습니다. 시장이 한 주 내내 AI 지출 자체를 벌줬기 때문입니다.</b> 가장 험한 날은 금요일이었습니다. 인텔의 붕괴가 반도체 무리 전체를 끌어내리며 4.22% 내린 $204.64, 8월 초 이후 가장 낮은 마감이었습니다. 주가는 기록보다 약 <b>15.9%</b> 아래, 지난 1년 이익의 약 <b>26배</b> — 올해 가장 싼 값 — 입니다. 회사 자신의 발표 날짜는 정해져 있습니다. 11월 17일 화요일, 장 마감 뒤입니다.",
+   "bull_en": "<b>Every one of its three biggest customers has now reported, and all three raised or held the budgets that buy its chips — Alphabet significantly higher next year, Amazon at a record $220 billion with cloud growth projected above 40% into 2028, Microsoft growing 48% with demand exceeding supply.</b> Intel’s AI data-centre business grew 78% even as its PC side collapsed, the memory makers see shortage for years, and banks financed $63 billion of new AI computing this month. The order book, told entirely by other people, keeps getting bigger. At roughly <b>26 times</b> the past year’s profits — the cheapest of the year — the price asks less of the future than it has since the spring, the record $150 billion buyback stands behind it, and China sales still sit near zero in the company’s own forecasts: anything Washington concedes on exports remains nearly pure upside. Its own report lands November 17, with expectations now lowered for it.",
+   "bull_ko": "<b>3대 고객이 이제 모두 발표했고, 셋 모두 이 회사의 반도체를 사는 예산을 올리거나 유지했습니다 — 알파벳은 내년에 크게 더, 아마존은 2028년까지 40% 이상의 클라우드 성장 전망과 함께 기록적인 2,200억 달러, 마이크로소프트는 수요가 공급을 앞서는 채 48% 성장입니다.</b> 인텔의 AI 데이터센터 사업은 PC 쪽이 무너지는 와중에도 78% 컸고, 메모리 회사들은 몇 년의 부족을 내다보며, 이번 달 은행들은 새 AI 컴퓨팅에 630억 달러의 금융을 댔습니다. 온전히 남들이 말해 주는 주문장이 계속 커지고 있습니다. 지난 1년 이익의 약 <b>26배</b> — 올해 가장 싼 값 — 인 지금 가격은 봄 이후 어느 때보다 미래에 덜 기대고, 사상 최대 1,500억 달러 자사주 매입이 뒤를 받치며, 중국 매출은 회사 자신의 전망에 거의 0으로 잡혀 있어 워싱턴이 수출에서 양보하는 것은 무엇이든 거의 순수한 상승 여력입니다. 회사 자신의 발표는, 낮아진 기대치 위에서, 11월 17일입니다.",
+   "bear_en": "<b>The market has now spent two full weeks teaching Nvidia’s customers that buying fewer of its chips is rewarded and buying more is punished — and customers eventually learn.</b> Microsoft was paid for trimming; Alphabet, Amazon and Intel surrendered hundreds of billions between them. Friday’s coverage named the next step out loud: investors fear the big spenders will be forced to pull back in 2027, and if even one of the three giants shifts to Microsoft’s playbook, that is Nvidia’s revenue being cut in public. The shares closed at their lowest since early August, the Justice Department is asking about the Hugging Face purchase, a December rate rise is still priced near 70% — and the company has nothing of its own to say until November 17, with AMD’s Tuesday report able to swing the whole group either way first. The standing reminder about the tripled fund: Friday cost Nvidia 4.22% — and SOXL 24.75%.",
+   "bear_ko": "<b>시장은 이제 꼬박 두 주 동안 엔비디아의 고객들에게 이 회사 반도체를 덜 사면 상을 받고 더 사면 벌을 받는다고 가르쳤습니다 — 그리고 고객은 결국 배웁니다.</b> 마이크로소프트는 줄였다고 값을 받았고, 알파벳, 아마존, 인텔은 셋이 합쳐 수천억 달러를 내놓았습니다. 금요일의 보도는 다음 걸음을 소리 내어 적었습니다. 큰 지출 기업들이 2027년에는 어쩔 수 없이 물러날 것이라는 투자자들의 두려움입니다. 세 거인 중 하나라도 마이크로소프트의 교본으로 갈아타면, 그것은 엔비디아의 매출이 공개적으로 깎이는 일입니다. 주가는 8월 초 이후 최저로 마감했고, 법무부는 Hugging Face 인수를 묻고 있으며, 12월 금리 인상은 여전히 70% 부근에 값이 매겨져 있습니다 — 그리고 이 회사는 11월 17일까지 자기 발표가 없는데, 화요일 AMD의 발표가 그 전에 무리 전체를 어느 쪽으로든 흔들 수 있습니다. 3배 펀드에 대한 상시 경고: 금요일 하루가 엔비디아에서 4.22%를, SOXL에서 24.75%를 가져갔습니다."
   },
   "soxl": {
-   "price": "$102.39",
+   "price": "$77.05",
    "day_arrow": "▼",
-   "day_en": "−4.62% on Thursday",
-   "day_ko": "목요일 −4.62%",
+   "day_en": "−24.75% on Friday",
+   "day_ko": "금요일 −24.75%",
    "day_dir": "dn",
-   "week_arrow": "▲",
-   "week_en": "≈ +24.7% Thursday to Thursday",
-   "week_ko": "목요일부터 목요일까지 ≈ +24.7%",
-   "week_dir": "up",
+   "week_arrow": "▼",
+   "week_en": "≈ −7.8% over the week",
+   "week_ko": "한 주 동안 ≈ −7.8%",
+   "week_dir": "dn",
    "month_arrow": "▼",
-   "month_en": "≈ −30.8% so far in October",
-   "month_ko": "10월 들어 ≈ −30.8%",
+   "month_en": "≈ −47.9% for all of October",
+   "month_ko": "10월 한 달 ≈ −47.9%",
    "month_dir": "dn",
    "drawdown_arrow": "▼",
-   "drawdown": "≈ 66.1%",
+   "drawdown": "≈ 74.5%",
    "drawdown_dir": "dn",
-   "drawdown_fact_en": "≈ 66.1%",
-   "drawdown_fact_ko": "≈ 66.1%",
-   "take_en": "Danger — Intel lands at triple size",
-   "take_ko": "위험 — 인텔 급락이 세 배로 도착",
+   "drawdown_fact_en": "≈ 74.5%",
+   "drawdown_fact_ko": "≈ 74.5%",
+   "take_en": "Danger — a quarter gone in a day",
+   "take_ko": "위험 — 하루에 4분의 1 상실",
    "take_tone": "c-neg",
    "confirmed": true,
    "derived": true,
    "stale": false,
-   "note_en": "<b>The repair lasted one day — and the next test is already here, at triple size.</b> On Thursday the fund fell <b>4.62%</b> to <b>$102.39</b> — the chip index's first fall in five sessions, tripled as designed, as Alphabet's record drop knocked the whole technology trade. That alone would make a normal morning. But after the close, <b>Intel</b> — one of the thirty stocks inside this fund's index — beat its quarter and then warned that the PC slowdown will last at least into the middle of next year, and its shares were down about <b>25%</b> before the open this morning. <b>Amazon</b>, one of the chip industry's biggest customers, fell about 7% overnight for holding its record spending plan. The chip index will feel Intel's plunge today, and whatever it does, this fund does about three times as much — Thursday ran the machine downward, 1.55% becoming 4.62%; Wednesday ran it upward, 2.13% becoming 6.20%. The deeper holes are unchanged: October reads about <b>−30.8%</b>, the fund sits about <b>66.1%</b> below its 1-year high, and getting back there needs about <b>+195%</b>. One honest caveat on the week's figure: up about 24.7% Thursday to Thursday is true and misleading at once — it is measured from the crash day's close, the arithmetic of a bounce out of a hole.",
-   "note_ko": "<b>수리는 하루를 갔습니다 — 그리고 다음 시험이 벌써, 세 배 크기로 와 있습니다.</b> 목요일에 펀드는 <b>4.62%</b> 내린 <b>$102.39</b>가 됐습니다 — 알파벳의 기록적인 급락이 기술주 전체를 흔들면서, 반도체 지수의 닷새 만의 첫 하락이, 설계대로, 세 배가 되어 도착한 것입니다. 그것만으로도 평범하지 않은 아침인데, 장 마감 뒤 <b>인텔</b> — 이 펀드 지수에 든 30개 종목 중 하나 — 이 분기는 예상을 웃돌고도 PC 둔화가 적어도 내년 중반까지 간다고 경고했고, 주가는 오늘 아침 개장 전 약 <b>25%</b> 아래였습니다. 반도체 업계의 가장 큰 고객 중 하나인 <b>아마존</b>은 기록적인 지출 계획을 유지했다고 밤사이 약 7% 내렸습니다. 반도체 지수는 오늘 인텔의 급락을 느낄 것이고, 지수가 무엇을 하든 이 펀드는 그 세 배쯤을 합니다 — 목요일은 기계가 아래로 돌았고(1.55%가 4.62%로), 수요일은 위로 돌았습니다(2.13%가 6.20%로). 더 깊은 구멍들은 그대로입니다. 10월은 약 <b>−30.8%</b>, 펀드는 1년 최고가보다 약 <b>66.1%</b> 아래이고, 돌아가는 데는 약 <b>+195%</b>가 필요합니다. 한 주 수치에 정직한 단서 하나를 답니다. 목요일부터 목요일까지 약 +24.7% 상승은 참이면서 동시에 오해를 부릅니다 — 급락일 종가부터 잰 수치, 구멍에서 튀어 오른 반등의 산수이기 때문입니다.",
+   "note_en": "<b>A quarter of the fund, gone in one session — the second crash in nine days, and this time the trigger was one stock’s report.</b> On Friday the chip index fell <b>8.24%</b> — <b>Intel</b>, one of the thirty stocks inside it, had its worst day since 1974, down <b>28.6%</b> after warning about PC demand — and this fund, built to triple the index’s daily move, fell <b>24.75%</b> to <b>$77.05</b>, its lowest close since mid-April. At the worst of the day it was down about 31%. The week’s full arithmetic is the standing warning written out: the index lost about <b>1.4%</b> over the five days — three up days, then two down — and a simple triple of that is about 4.2%, but the daily reset grinds on a violent path, and the fund actually lost about <b>7.8%</b>. October closed at about <b>−47.9%</b> — nearly half — in a month the S&P 500 slipped about 0.9%. The fund now sits about <b>74.5%</b> below its 1-year high; getting back needs about <b>+292%</b>. Next week puts two more of the thirty on the stand: <b>AMD</b> on Tuesday evening and <b>Qualcomm</b> on Wednesday — and whatever the chip index does with them, this fund does about three times as much, starting fresh every morning.",
+   "note_ko": "<b>펀드의 4분의 1이 한 거래일에 사라졌습니다 — 9일 만의 두 번째 급락이고, 이번 방아쇠는 한 종목의 실적이었습니다.</b> 금요일에 반도체 지수는 <b>8.24%</b> 내렸습니다 — 지수에 든 30개 종목 중 하나인 <b>인텔</b>이 PC 수요를 경고한 뒤 <b>28.6%</b> 내려 1974년 이후 최악의 하루를 보냈습니다 — 그리고 지수의 하루 움직임을 세 배로 내도록 만들어진 이 펀드는 <b>24.75%</b> 내린 <b>$77.05</b>, 4월 중순 이후 가장 낮은 종가가 됐습니다. 하루의 최악 시점에는 약 31% 아래였습니다. 한 주의 산수는 상시 경고를 그대로 풀어 쓴 것입니다. 지수는 닷새 동안 약 <b>1.4%</b> 내렸고 — 상승 사흘 뒤 하락 이틀 — 그 단순한 세 배는 약 4.2%인데, 매일의 초기화는 험한 길 위에서 갈리고, 펀드는 실제로 약 <b>7.8%</b>를 잃었습니다. 10월은 S&P 500이 약 0.9% 밀린 달에 약 <b>−47.9%</b> — 거의 절반 — 로 닫혔습니다. 펀드는 이제 1년 최고가보다 약 <b>74.5%</b> 아래이고, 돌아가는 데는 약 <b>+292%</b>가 필요합니다. 다음 주에는 30개 중 둘이 더 증언대에 섭니다. 화요일 저녁 <b>AMD</b>, 수요일 <b>퀄컴</b> — 그리고 반도체 지수가 그것으로 무엇을 하든, 이 펀드는 아침마다 새로 시작하며 그 세 배쯤을 합니다.",
    "ticker": "SOXL",
    "name_en": "Triple-risk chip fund",
    "name_ko": "3배 위험 반도체 펀드",
-   "note_head_en": "Checked Friday morning, before the open, and Thursday's close stands confirmed — the forty-ninth session in a row. The close is $102.39, down 4.62% — Thursday's 1.55% chip-index fall arriving at roughly triple size, as designed. Two independent feeds agree on the close to the cent, and the daily record reads: open $101.36, low $97.95, high $105.44, close $102.39, against Wednesday's $107.35. The triple check: the plain fund tracking the same thirty chip stocks fell 1.55%, and three times that is 4.65 against the 4.62 this fund delivered — a touch shallower than the promise, within the usual noise. No dividend was involved; the last one was paid in September. The shape of the day is worth a line: the fund spent part of the session back under $100 — the low was $97.95 — and climbed above the line by the close. Keep the frame: Wednesday's repair lasted exactly one session. The fund is back below its pre-plunge October 21 close of $103.24, October reads about −30.8%, and the rise needed to see the 1-year high is back up to about +195%.",
-   "note_head_ko": "금요일 아침, 개장 전에 점검했고, 목요일 종가는 그대로 확인됐습니다 — 마흔아홉 번째 연속 확인입니다. 종가는 $102.39, 4.62% 하락 — 목요일 1.55%의 반도체 지수 하락이, 설계대로, 대략 세 배 크기로 도착한 것입니다. 독립된 두 시세 피드가 종가를 센트까지 동일하게 보여주고, 하루 기록은 이렇습니다. 시가 $101.36, 저가 $97.95, 고가 $105.44, 종가 $102.39 — 수요일 $107.35 대비입니다. 세 배 확인: 같은 반도체 30개 종목 바스켓을 따르는 일반 펀드가 1.55% 내렸고, 그 세 배는 4.65인데 이 펀드는 4.62를 냈습니다 — 약속보다 조금 얕지만, 통상적인 오차 안입니다. 배당은 없었습니다. 마지막 배당은 9월이었습니다. 하루의 모양도 한 줄 적어 둘 만합니다. 펀드는 장중 한때 100달러 아래로 — 저가는 $97.95 — 내려갔다가 마감까지 그 선 위로 올라왔습니다. 틀 안에 두고 보세요. 수요일의 수리는 정확히 한 거래일을 갔습니다. 펀드는 급락 직전인 10월 21일 종가 $103.24 아래로 되돌아왔고, 10월은 약 −30.8%이며, 1년 최고가를 다시 보는 데 필요한 상승은 약 +195%로 되올라갔습니다.",
+   "note_head_en": "Checked Saturday morning, with the market closed, and Friday’s fall stands confirmed — the fiftieth session in a row, and the grimmest of the fifty. The close is $77.05, down 24.75% — the chip index’s 8.24% fall arriving at roughly triple size, as designed. Two independent feeds agree on the close to the cent, and the daily record reads: open $81.79, low $70.23, high about $84.2, close $77.05, against Thursday’s $102.39. The triple check: the plain fund tracking the same thirty chip stocks fell 8.24%, and three times that is 24.72 against the 24.75 this fund delivered — a touch deeper than the promise, within the usual noise. The shape of the day triples too: at the worst, the index was down about 10.5% and this fund about 31%. No dividend was involved; the last one was paid in September. The frame: this is the fund’s worst day since June 5, its second fall of more than 20% in nine days, and the close is its lowest since April 10. October ends at about −47.9%, and the rise needed to see the 1-year high again is now about +292%.",
+   "note_head_ko": "토요일 아침, 휴장 중에 점검했고, 금요일의 하락은 그대로 확인됐습니다 — 쉰 번째 연속 확인이고, 쉰 번 가운데 가장 험한 기록입니다. 종가는 $77.05, 24.75% 하락 — 반도체 지수의 8.24% 하락이, 설계대로, 대략 세 배 크기로 도착한 것입니다. 독립된 두 시세 피드가 종가를 센트까지 동일하게 보여주고, 하루 기록은 이렇습니다. 시가 $81.79, 저가 $70.23, 고가 약 $84.2, 종가 $77.05 — 목요일 $102.39 대비입니다. 세 배 확인: 같은 반도체 30개 종목 바스켓을 따르는 일반 펀드가 8.24% 내렸고, 그 세 배는 24.72인데 이 펀드는 24.75를 냈습니다 — 약속보다 조금 깊지만, 통상적인 오차 안입니다. 하루의 모양도 세 배였습니다. 최악의 시점에 지수는 약 10.5%, 이 펀드는 약 31% 아래였습니다. 배당은 없었습니다. 마지막 배당은 9월이었습니다. 틀은 이렇습니다. 이것은 6월 5일 이후 이 펀드 최악의 하루이자 9일 만의 두 번째 20% 이상 하락이고, 종가는 4월 10일 이후 가장 낮습니다. 10월은 약 −47.9%로 끝났고, 1년 최고가를 다시 보는 데 필요한 상승은 이제 약 +292%입니다.",
    "day_caveat_en": "Monday's <b>+0.34%</b> was checked four ways, as this holding always is. First, the fund's own daily record: open <b>$161.66</b>, high <b>$164.38</b>, low <b>$158.08</b>, close <b>$164.27</b> against Friday's <b>$163.71</b>. Two independent feeds give that whole row to the cent. Second, the tripling: the plain chip fund rose <b>0.10%</b>, three times that is <b>0.31%</b>, and this fund delivered <b>0.34%</b> — a tight fit; no dividend was involved. Third, the shape of the day: down about <b>1.3%</b> at the open against the chip fund's <b>0.4%</b>, down about <b>3.4%</b> at the morning low against its <b>1.2%</b> — three to one at the extremes, the morning's slide and recovery both tripled. Fourth, the week: about <b>+15.4%</b> across five days against the index's <b>+5.1%</b> — essentially a full triple, because the direction held all five days; chaining each day's tripled move predicts about <b>+15.9%</b>, and every week figure is approximate.",
    "day_caveat_ko": "월요일의 <b>+0.34%</b>는 늘 그렇듯 네 가지로 확인했습니다. 첫째, 펀드 자신의 하루 기록. 시가 <b>161.66달러</b>, 고가 <b>164.38달러</b>, 저가 <b>158.08달러</b>, 종가 <b>164.27달러</b> — 금요일 <b>163.71달러</b> 대비. 독립된 두 출처가 이 행 전체를 센트까지 똑같이 줍니다. 둘째, 세 배 확인. 일반 반도체 펀드가 <b>0.10%</b> 올랐고, 세 배는 <b>0.31%</b>인데, 이 펀드는 <b>0.34%</b>를 냈습니다 — 팽팽한 맞춤입니다. 배당은 없었습니다. 셋째, 하루의 모양. 시가에서 반도체 펀드 <b>0.4%</b> 하락에 대해 약 <b>1.3%</b> 하락, 오전 저점에서 <b>1.2%</b>에 대해 약 <b>3.4%</b> 하락 — 극단에서 3 대 1이고, 오전의 미끄러짐과 회복이 모두 세 배로 일어났습니다. 넷째, 한 주. 지수 자신의 <b>+5.1%</b>에 대해 닷새에 약 <b>+15.4%</b> — 닷새 내리 방향이 유지된 덕에 거의 온전한 세 배입니다. 매일의 세 배 움직임을 이어 붙이면 약 <b>+15.9%</b>가 나오고, 모든 주간 수치는 근사치입니다.",
-   "week_fact_en": "up ≈ 24.7% — measured from the crash day's close",
-   "week_fact_ko": "≈ 24.7% 상승 — 급락일 종가부터 잰 수치",
+   "week_fact_en": "down ≈ 7.8% — the index it triples fell about 1.4%",
+   "week_fact_ko": "≈ 7.8% 하락 — 세 배로 따르는 지수는 약 1.4% 하락",
    "news_en": [
+    {
+     "dt": "Oct 30",
+     "tx": "<b>Fell 24.75% to $77.05 — a quarter of the fund gone in a day, its worst session since June 5 and its lowest close since mid-April, after Intel, one of the thirty stocks in its index, fell 28.6% on a weak outlook.</b> The checks hold: the plain fund on the same thirty stocks fell 8.24%, and three times that is 24.72 against the 24.75 delivered — a touch deeper, within the usual noise; at the day’s worst the index was down about 10.5% and this fund about 31%. The week’s arithmetic is the standing warning written out: the index lost about 1.4% over five days — this fund lost about 7.8%. October closed at about <b>−47.9%</b>. Two more of the thirty report next week: AMD Tuesday, Qualcomm Wednesday."
+    },
     {
      "dt": "Oct 29",
      "tx": "<b>Fell 4.62% to $102.39 — the chip index's first fall in five sessions arriving tripled, as designed, and Wednesday's finished repair came undone in one day: the fund is back below its pre-plunge October 21 close.</b> The checks hold: the plain fund on the same thirty stocks fell 1.55%, and three times that is 4.65 against the 4.62 delivered — a touch shallower, within the usual noise. The fund dipped under $100 during the day and closed above it. Then the real blow landed after the close: Intel, one of the thirty, warned the PC slowdown will last into next year and was down about 25% before the open — a drop this fund will feel at triple size today."
@@ -427,13 +431,13 @@
     {
      "dt": "Oct 27",
      "tx": "<b>Rose 11.69% to $101.08 — Tuesday's 3.91% chip rally arriving tripled, as designed, and this time it held to the close: the fund finished within about a dollar of its high for the day.</b> The checks hold: the plain fund on the same thirty stocks rose 3.91%, and three times that is 11.73 against the 11.69 delivered — a touch under, within the usual noise. Two up days together put back most of what last Thursday took, and the rise needed to see the 1-year high is back under <b>+200%</b> for the first time in a week. After the close, NXP — one of the thirty — beat expectations and fell about 9% in late trading on its outlook."
-    },
-    {
-     "dt": "Oct 26",
-     "tx": "<b>Rose 8.31% to $90.50 — Monday's 2.85% chip rally arriving tripled, as designed, after Anthropic's share-sale filing brought money back to the chip trade.</b> The checks hold: the plain fund on the same thirty stocks rose 2.85%, and three times that is 8.55 against the 8.31 delivered — a touch under, within the usual noise. The frame: Monday put back about $7 of the $21 last Thursday took. October's running total is still about <b>−38.8%</b>, and the fund still needs about <b>+234%</b> to see its 1-year high."
     }
    ],
    "news_ko": [
+    {
+     "dt": "10월 30일",
+     "tx": "<b>24.75% 내린 $77.05 — 펀드의 4분의 1이 하루에 사라졌습니다. 지수의 30개 종목 중 하나인 인텔이 약한 전망에 28.6% 내린 뒤, 6월 5일 이후 최악의 하루이자 4월 중순 이후 가장 낮은 종가입니다.</b> 확인은 들어맞습니다. 같은 30종목을 따르는 일반 펀드가 8.24% 내렸고, 그 세 배는 24.72, 이 펀드는 24.75를 냈습니다 — 조금 깊지만 통상적인 오차 안입니다. 하루의 최악 시점에 지수는 약 10.5%, 이 펀드는 약 31% 아래였습니다. 한 주의 산수는 상시 경고 그대로입니다. 지수는 닷새에 약 1.4% 내렸는데 — 이 펀드는 약 7.8%를 잃었습니다. 10월은 약 <b>−47.9%</b>로 닫혔습니다. 다음 주에는 30개 중 둘이 더 발표합니다. 화요일 AMD, 수요일 퀄컴입니다."
+    },
     {
      "dt": "10월 29일",
      "tx": "<b>4.62% 내린 $102.39 — 반도체 지수의 닷새 만의 첫 하락이, 설계대로, 세 배가 되어 도착했고, 수요일에 끝났던 수리는 하루 만에 풀렸습니다. 펀드는 급락 직전인 10월 21일 종가 아래로 되돌아왔습니다.</b> 확인은 들어맞습니다. 같은 30종목을 따르는 일반 펀드가 1.55% 내렸고, 그 세 배는 4.65, 이 펀드는 4.62를 냈습니다 — 조금 얕지만 통상적인 오차 안입니다. 펀드는 장중 100달러 아래로 내려갔다가 그 위에서 마감했습니다. 그리고 진짜 타격은 장 마감 뒤에 왔습니다. 30개 중 하나인 인텔이 PC 둔화가 내년까지 간다고 경고한 뒤 개장 전 약 25% 아래였습니다 — 이 펀드가 오늘 세 배 크기로 느낄 하락입니다."
@@ -445,14 +449,10 @@
     {
      "dt": "10월 27일",
      "tx": "<b>11.69% 올라 $101.08 — 화요일 3.91%의 반도체 랠리가, 설계대로, 세 배가 되어 도착했고, 이번에는 마감까지 지켰습니다. 펀드는 이날 고가에서 1달러쯤 안쪽에서 마쳤습니다.</b> 확인은 들어맞습니다. 같은 30종목을 따르는 일반 펀드가 3.91% 올랐고, 그 세 배는 11.73, 이 펀드는 11.69를 냈습니다 — 조금 못 미치지만 통상적인 오차 안입니다. 이틀의 상승을 합쳐 지난 목요일이 가져간 것의 대부분을 되돌렸고, 1년 최고가까지 필요한 상승은 일주일 만에 처음으로 <b>+200%</b> 아래입니다. 장 마감 뒤에는 30개 중 하나인 NXP가 예상을 웃돌고도 전망 때문에 시간외에서 약 9% 내렸습니다."
-    },
-    {
-     "dt": "10월 26일",
-     "tx": "<b>8.31% 올라 $90.50 — Anthropic의 주식 공개 신청이 돈을 반도체 베팅으로 되돌리자, 월요일 2.85%의 반도체 랠리가, 설계대로, 세 배가 되어 도착했습니다.</b> 확인은 들어맞습니다. 같은 30종목을 따르는 일반 펀드가 2.85% 올랐고, 그 세 배는 8.55, 이 펀드는 8.31을 냈습니다 — 조금 못 미치지만 통상적인 오차 안입니다. 틀은 이렇습니다. 지난 목요일이 가져간 $21 중 월요일이 되돌린 것은 약 $7입니다. 10월 누적은 여전히 약 <b>−38.8%</b>이고, 1년 최고가를 다시 보려면 여전히 약 <b>+234%</b>가 필요합니다."
     }
    ],
-   "verdict_en": "<b>What I'd watch — but first the number to hold onto: this fund needs about +195% — nearly a triple — to see its 1-year high again, and Wednesday's finished repair lasted exactly one session.</b> Today is the test in its purest form: Intel, one of the thirty stocks inside this fund's index, was down about 25% before the open after warning the PC slowdown will run into next year, and whatever the chip index does with that, this fund does roughly three times as much, starting fresh every morning. The machine has run both ways this week — 2.13% up became 6.20%, then 1.55% down became 4.62%. The next scheduled verdict is Nvidia's own report on November 17, which reaches this fund at triple size too. October is the whole product in one month: the S&P 500 is up about 0.9% — this fund is down about 30.8%. A holding that can lose a fifth of itself in a day is a bet with a meter running, not a place to store money.",
-   "verdict_ko": "<b>지켜볼 것 — 그 전에 붙들어야 할 숫자부터: 이 펀드가 1년 최고가를 다시 보려면 약 +195% — 세 배 가까이 — 가 필요하고, 수요일에 끝났던 수리는 정확히 한 거래일을 갔습니다.</b> 오늘은 가장 순수한 형태의 시험입니다. 이 펀드 지수에 든 30개 종목 중 하나인 인텔이 PC 둔화가 내년까지 간다고 경고한 뒤 개장 전 약 25% 아래였고, 반도체 지수가 그것으로 무엇을 하든 이 펀드는 아침마다 새로 시작하며 그 세 배쯤을 합니다. 기계는 이번 주에 양쪽으로 다 돌았습니다 — 2.13% 상승이 6.20%가 됐고, 1.55% 하락이 4.62%가 됐습니다. 다음으로 날짜가 잡힌 판결은 11월 17일 엔비디아 자신의 발표이고, 그것도 세 배 크기로 이 펀드에 닿습니다. 10월이 이 상품 전체를 한 달에 담았습니다. S&P 500은 약 0.9% 올랐는데 — 이 펀드는 약 30.8% 내렸습니다. 하루에 제 몸의 5분의 1을 잃을 수 있는 보유물은 돈을 두는 곳이 아니라, 요금이 올라가는 내기입니다.",
+   "verdict_en": "<b>What I’d watch — but first the number to hold onto: after losing about 47.9% in October, this fund needs about +292% — nearly a quadruple — to see its 1-year high again.</b> The next test is already dated: AMD, one of the thirty stocks in the index this fund triples, reports Tuesday evening, with Qualcomm on Wednesday — and Friday showed exactly what one member’s bad report can do, when Intel’s worst day since 1974 became a 24.75% fall here. Nvidia’s report on November 17 reaches this fund at triple size too. The week also wrote the quieter warning in plain numbers: the chip index lost about 1.4% over five days; a simple triple of that is about 4.2%; this fund lost about 7.8% — the cost of a violent path on a fund that resets every morning. October is the whole product in one month: the S&P 500 slipped about 0.9% — this fund lost nearly half its value. A holding that can lose a quarter of itself in a day is a bet with a meter running, not a place to store money.",
+   "verdict_ko": "<b>지켜볼 것 — 그 전에 붙들어야 할 숫자부터: 10월에 약 47.9%를 잃은 뒤, 이 펀드가 1년 최고가를 다시 보려면 약 +292% — 네 배 가까이 — 가 필요합니다.</b> 다음 시험은 이미 날짜가 잡혀 있습니다. 이 펀드가 세 배로 따르는 지수의 30개 종목 중 하나인 AMD가 화요일 저녁, 퀄컴이 수요일에 발표합니다 — 구성원 하나의 나쁜 실적이 무엇을 할 수 있는지는 금요일이 정확히 보여 줬습니다. 1974년 이후 인텔 최악의 하루가 여기서는 24.75% 하락이 됐습니다. 11월 17일 엔비디아의 발표도 세 배 크기로 이 펀드에 닿습니다. 이번 주는 더 조용한 경고도 숫자로 적었습니다. 반도체 지수는 닷새에 약 1.4% 내렸고, 그 단순한 세 배는 약 4.2%인데, 이 펀드는 약 7.8%를 잃었습니다 — 아침마다 초기화되는 펀드가 험한 길에서 무는 요금입니다. 10월이 이 상품 전체를 한 달에 담았습니다. S&P 500은 약 0.9% 밀렸는데 — 이 펀드는 가치의 거의 절반을 잃었습니다. 하루에 제 몸의 4분의 1을 잃을 수 있는 보유물은 돈을 두는 곳이 아니라, 요금이 올라가는 내기입니다.",
    "base": {
     "year_start": 42.02,
     "high_1y": 302.0
@@ -485,46 +485,50 @@
      "auto": "recover"
     }
    ],
-   "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, <b>every single day</b>, starting fresh each morning. <b>Yesterday the machine ran downward again: chip shares fell 1.55% on Alphabet's record drop, and this fund fell 4.62%, to $102.39.</b> That undid Wednesday's finished repair in one session. This morning brings a harder test: Intel, one of the thirty stocks in its index, was down about <b>25%</b> before the open after a weak forecast, and this fund will feel whatever the chip index does today at triple size. October so far: down about <b>30.8%</b>. It sits about <b>66.1%</b> below its best price of the past year and needs about <b>+195%</b> to get back. In a flat July it lost 57%. Nothing about the design has changed, and nothing about it will.",
-   "plain_ko": "<b>이 항목은 꼭 찬찬히 읽어 주세요 — 다섯 종목 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>를, <b>매일</b>, 아침마다 새로 시작하며 움직이도록 설계된 펀드입니다. <b>어제는 기계가 다시 아래로 돌았습니다. 알파벳의 기록적인 급락에 반도체 주식이 1.55% 내리자, 이 펀드는 4.62% 내린 $102.39가 됐습니다.</b> 수요일에 끝났던 수리가 한 거래일 만에 풀린 것입니다. 오늘 아침에는 더 험한 시험이 옵니다. 이 펀드 지수의 30개 종목 중 하나인 인텔이 약한 전망 뒤 개장 전 약 <b>25%</b> 아래였고, 오늘 반도체 지수가 무엇을 하든 이 펀드는 그것을 세 배 크기로 느낍니다. 10월 누적: 약 <b>30.8%</b> 하락. 지난 1년 최고가보다 약 <b>66.1%</b> 아래이고, 돌아가려면 약 <b>+195%</b>가 필요합니다. 횡보한 7월에는 57%를 잃었습니다. 설계는 하나도 바뀌지 않았고, 앞으로도 바뀌지 않습니다.",
-   "bull_en": "After Thursday's pullback the year's figure still reads about <b>+144%</b> — this fund pays violently when the direction holds, and it has already done so twice this year; September paid about +31% that way. The honest version of the case is unchanged: every big customer confirmed this week that the AI build-out continues — Amazon's cloud growing 39% and projected to accelerate, record budgets held — and if that demand wins the argument, the recovery arrives here at three times its size, from a price about 66% below the old high. Even Intel's bad night had the split inside it: its AI data-centre business grew 78%, its best in fifteen years; the weakness was PCs. But the case rests, as always, on the road staying straight — and this morning the road bends the wrong way first.",
-   "bull_ko": "목요일의 되밀림 뒤에도 올해 수치는 여전히 약 <b>+144%</b>입니다 — 방향이 유지될 때 이 펀드는 격렬하게 지불하고, 올해 이미 두 번 그렇게 했습니다. 9월은 그 방식으로 약 +31%를 지불했습니다. 이 펀드를 사는 정직한 논리는 변하지 않았습니다. 이번 주에 모든 큰 고객이 AI 건설은 계속된다고 확인해 줬습니다 — 아마존의 클라우드는 39% 크고 더 빨라질 전망이며, 기록적인 예산들이 유지됐습니다 — 그 수요가 논쟁에서 이긴다면, 회복은 옛 고점보다 약 66% 낮은 가격에서, 세 배 크기로 여기에 도착합니다. 인텔의 나쁜 밤 안에도 갈림은 있었습니다. AI 데이터센터 사업은 15년 만에 최고인 78% 성장이었고, 약한 쪽은 PC였습니다. 다만 이 논리는 언제나처럼 길이 곧게 뻗어 있다는 가정 위에 서 있고 — 오늘 아침 길은 먼저 반대쪽으로 꺾여 있습니다.",
-   "bear_en": "<b>This morning, one of the thirty stocks in the index this fund triples was down about 25% before the open — and the fund will deliver three times whatever the index does with that.</b> The past two weeks are the whole warning told twice: one bad chip day took a fifth of the fund; three big up days put it back; one ordinary down day took 4.62% of it again, and the finished repair was gone. October's running total is about −30.8% in a month the S&P 500 is up about 0.9% — the decay of a tripled, daily-reset fund doing its quiet work. The +195% needed to recover is not a number a calm market returns. And the argument driving the chips — AI budgets charged, not rewarded — is being settled one evening at a time by companies this fund does not control. A holding that can lose a fifth of itself between breakfast and dinner is not a place to store money.",
-   "bear_ko": "<b>오늘 아침, 이 펀드가 세 배로 따르는 지수의 30개 종목 중 하나가 개장 전 약 25% 아래였습니다 — 그리고 지수가 그것으로 무엇을 하든 펀드는 그 세 배를 냅니다.</b> 지난 2주는 같은 경고를 두 번 들려줬습니다. 반도체의 나쁜 하루가 펀드의 5분의 1을 가져갔고, 큰 상승 사흘이 되돌렸고, 평범한 하락 하루가 다시 4.62%를 가져가며 끝났던 수리를 지웠습니다. S&P 500이 약 0.9% 오른 달에 10월 누적은 약 −30.8%입니다 — 매일 초기화되는 3배 펀드의 닳음이 조용히 제 일을 하는 모습입니다. 회복에 필요한 +195%는 차분한 시장이 돌려주는 숫자가 아닙니다. 그리고 반도체를 움직이는 논쟁 — 상이 아니라 청구서를 받는 AI 예산 — 은 이 펀드가 어쩌지 못하는 회사들이 하룻저녁에 하나씩 결론 내고 있습니다. 아침과 저녁 사이에 제 몸의 5분의 1을 잃을 수 있는 보유물은 돈을 두는 곳이 아닙니다."
+   "plain_en": "<b>Read this one carefully — it is by far the riskiest of the five.</b> SOXL is built to move <b>three times</b> as much as chip stocks do, <b>every single day</b>, starting fresh each morning. <b>On Friday that design did what it always threatened: Intel’s worst day since 1974 helped knock the chip index down 8.24%, and this fund fell 24.75% — a quarter of its value — to $77.05, its lowest close since mid-April.</b> For the week it lost about <b>7.8%</b> while the index it triples lost about 1.4%; for October it lost about <b>47.9%</b> — nearly half — in a month the S&P 500 slipped about 0.9%. It sits about <b>74.5%</b> below its best price of the past year and needs about <b>+292%</b> to get back. It is still up about <b>83%</b> for the year — a reminder of how violently it pays in both directions. Nothing about the design has changed, and nothing about it will.",
+   "plain_ko": "<b>이 항목은 꼭 찬찬히 읽어 주세요 — 다섯 종목 중 단연 가장 위험합니다.</b> SOXL은 반도체 주식이 움직이는 폭의 <b>세 배</b>를, <b>매일</b>, 아침마다 새로 시작하며 움직이도록 설계된 펀드입니다. <b>금요일에 그 설계가 늘 위협하던 일을 했습니다. 1974년 이후 인텔 최악의 하루가 반도체 지수를 8.24% 끌어내리자, 이 펀드는 24.75% — 제 가치의 4분의 1 — 내린 $77.05, 4월 중순 이후 가장 낮은 종가가 됐습니다.</b> 한 주로는 세 배로 따르는 지수가 약 1.4% 내리는 동안 약 <b>7.8%</b>를 잃었고, 10월로는 S&P 500이 약 0.9% 밀린 달에 약 <b>47.9%</b> — 거의 절반 — 를 잃었습니다. 지난 1년 최고가보다 약 <b>74.5%</b> 아래이고, 돌아가려면 약 <b>+292%</b>가 필요합니다. 올해로는 여전히 약 <b>83%</b> 위입니다 — 이 펀드가 양쪽 방향 모두로 얼마나 격렬하게 지불하는지 일깨우는 숫자입니다. 설계는 하나도 바뀌지 않았고, 앞으로도 바뀌지 않습니다.",
+   "bull_en": "Even after October halved it, the year’s figure still reads about <b>+83%</b> — this fund pays violently when the direction holds, and it has done so twice this year. The honest version of the case survived the week: every giant customer confirmed the AI build-out continues — record budgets held, cloud growth of 39% and 48%, demand exceeding supply — and even Intel’s disaster was a PC story, not an AI one: its data-centre business grew 78%, its best in fifteen years. If the chip trade turns and holds, the recovery arrives here at roughly three times its size, from a price about 74.5% below the old high — and Tuesday’s AMD report, which analysts expect to be strong, is the first scheduled chance. But the case rests, as always, on the road staying straight — and this October the road bent twice, at a cost of nearly half the fund.",
+   "bull_ko": "10월이 반 토막을 낸 뒤에도 올해 수치는 여전히 약 <b>+83%</b>입니다 — 방향이 유지될 때 이 펀드는 격렬하게 지불하고, 올해 이미 두 번 그렇게 했습니다. 이 펀드를 사는 정직한 논리는 이번 주를 살아남았습니다. 모든 거대 고객이 AI 건설은 계속된다고 확인해 줬고 — 기록적인 예산 유지, 39%와 48%의 클라우드 성장, 공급을 앞서는 수요 — 인텔의 참사조차 AI가 아니라 PC 이야기였습니다. 데이터센터 사업은 15년 만에 최고인 78% 성장이었습니다. 반도체 베팅이 돌아서서 유지되면, 회복은 옛 고점보다 약 74.5% 낮은 가격에서 세 배 크기로 여기에 도착합니다 — 애널리스트들이 강할 것으로 보는 화요일 AMD의 발표가 날짜 잡힌 첫 기회입니다. 다만 이 논리는 언제나처럼 길이 곧게 뻗어 있다는 가정 위에 서 있고 — 이번 10월에 길은 두 번 꺾였고, 그 값은 펀드의 거의 절반이었습니다.",
+   "bear_en": "<b>Friday was the product demonstration no brochure prints: one of the thirty stocks in its index had a bad report, and this fund lost a quarter of its value between breakfast and dinner.</b> October’s full bill: the chip index fell about 17% — this fund fell about 47.9%, its second-worst month of the year after July’s 57%. Twice in nine days it crashed more than 20% in a single day. The week added the quieter lesson: the index slipped just 1.4%, a simple triple says lose about 4.2%, and the daily reset on a violent path delivered a 7.8% loss. The argument driving the chips — AI budgets charged, not rewarded — is being settled one evening at a time by companies this fund does not control, and two of its thirty report next week: AMD Tuesday, Qualcomm Wednesday. The +292% needed to recover is not a number a calm market returns. A holding that can do what Friday did is not a place to store money.",
+   "bear_ko": "<b>금요일은 어떤 안내서에도 실리지 않는 상품 시연이었습니다. 지수의 30개 종목 중 하나가 나쁜 실적을 냈고, 이 펀드는 아침과 저녁 사이에 제 가치의 4분의 1을 잃었습니다.</b> 10월의 청구서 전체: 반도체 지수는 약 17% 내렸고 — 이 펀드는 약 47.9% 내려, 7월의 57%에 이어 올해 두 번째로 나쁜 한 달이었습니다. 9일 사이 두 번, 하루 20%가 넘게 무너졌습니다. 이번 주는 더 조용한 교훈도 보탰습니다. 지수는 겨우 1.4% 밀렸고, 단순한 세 배라면 약 4.2%를 잃어야 하는데, 험한 길 위의 매일 초기화는 7.8%의 손실을 냈습니다. 반도체를 움직이는 논쟁 — 상이 아니라 청구서를 받는 AI 예산 — 은 이 펀드가 어쩌지 못하는 회사들이 하룻저녁에 하나씩 결론 내고 있고, 다음 주에는 30개 중 둘이 발표합니다. 화요일 AMD, 수요일 퀄컴입니다. 회복에 필요한 +292%는 차분한 시장이 돌려주는 숫자가 아닙니다. 금요일 같은 일을 할 수 있는 보유물은 돈을 두는 곳이 아닙니다."
   },
   "cost": {
-   "price": "$996.08",
+   "price": "$1,012.28",
    "day_arrow": "▲",
-   "day_en": "+1.36% on Thursday",
-   "day_ko": "목요일 +1.36%",
+   "day_en": "+1.63% on Friday",
+   "day_ko": "금요일 +1.63%",
    "day_dir": "up",
-   "week_arrow": "▼",
-   "week_en": "≈ −2.2% Thursday to Thursday",
-   "week_ko": "목요일부터 목요일까지 ≈ −2.2%",
-   "week_dir": "dn",
+   "week_arrow": "▲",
+   "week_en": "≈ +0.9% over the week",
+   "week_ko": "한 주 동안 ≈ +0.9%",
+   "week_dir": "up",
    "month_arrow": "▲",
-   "month_en": "≈ +9.4% so far in October",
-   "month_ko": "10월 들어 ≈ +9.4%",
+   "month_en": "≈ +11.2% for all of October",
+   "month_ko": "10월 한 달 ≈ +11.2%",
    "month_dir": "up",
    "drawdown_arrow": "▼",
-   "drawdown": "≈ 9.2%",
+   "drawdown": "≈ 7.7%",
    "drawdown_dir": "dn",
-   "drawdown_fact_en": "≈ 9.2%",
-   "drawdown_fact_ko": "≈ 9.2%",
-   "take_en": "The shelter went back to work",
-   "take_ko": "피난처가 다시 일했습니다",
+   "drawdown_fact_en": "≈ 7.7%",
+   "drawdown_fact_ko": "≈ 7.7%",
+   "take_en": "The week’s only riser",
+   "take_ko": "이번 주 유일한 상승",
    "take_tone": "c-pos",
    "confirmed": true,
    "derived": true,
    "stale": false,
-   "note_en": "<b>On the day fear came back, the money came back — the shelter did its job.</b> On Thursday the shares rose <b>1.36%</b> to <b>$996.08</b>, the best day of your five by a wide margin, on exactly the pattern this page keeps describing: Alphabet's record fall scared the technology trade, and the money leaving it moved to the steadier corners — health care, property and household staples led the market, and most stocks rose even as the index fell. Both of this holding's pressures reversed at once: the rotation ran toward it, and long-term rates eased, the thirty-year down to about <b>5.32%</b> from 5.37%. The shares closed within four dollars of the <b>$1,000</b> line they lost on Monday. The frame stays the same: up about <b>9.4%</b> in October, by far the best of your five, about <b>9.2%</b> below the spring peak, at roughly <b>48 times</b> the past year's profits — still the most expensively priced of the steady shares. This morning the same setup is back, stronger: technology futures point about 2% lower after Amazon's and Intel's reports. The next scorecard of its own — October sales — lands early in November.",
-   "note_ko": "<b>두려움이 돌아온 날, 돈도 돌아왔습니다 — 피난처가 제 일을 했습니다.</b> 목요일에 주가는 <b>1.36%</b> 올라 <b>$996.08</b>, 보유 다섯 중 단연 가장 좋은 하루였습니다. 이 페이지가 계속 설명해 온 바로 그 패턴입니다. 알파벳의 기록적인 급락이 기술주 베팅을 겁주자, 거기서 나온 돈이 안정적인 구석들로 옮겨 갔습니다 — 건강, 부동산, 생활필수품이 시장을 이끌었고, 지수가 내리는데도 대부분의 종목은 올랐습니다. 이 종목을 누르던 두 압력이 동시에 뒤집혔습니다. 회전은 이쪽으로 돌았고, 장기 금리는 내려와 30년물이 5.37%에서 약 <b>5.32%</b>가 됐습니다. 주가는 월요일에 잃었던 <b>1,000달러</b> 선에서 4달러 안쪽까지 와서 마감했습니다. 틀은 그대로입니다. 10월 들어 약 <b>9.4%</b> 상승으로 다섯 중 단연 최고, 봄의 최고가보다는 약 <b>9.2%</b> 아래, 지난 1년 이익의 약 <b>48배</b> — 여전히 안정적인 주식들 가운데 가장 비싸게 매겨진 쪽입니다. 오늘 아침에는 같은 판이 더 세게 돌아와 있습니다. 아마존과 인텔의 실적 뒤 기술주 선물이 약 2% 아래를 가리킵니다. 이 회사만의 다음 성적표 — 10월 매출 — 는 11월 초에 나옵니다.",
+   "note_en": "<b>The only one of your five to rise this week — and it finished October back above the $1,000 line.</b> On Friday the shares rose <b>1.63%</b> to <b>$1,012.28</b>, the best of the five on the market’s worst day since June, reclaiming the <b>$1,000</b> line they had traded under since Tuesday. The week told the month’s story in miniature: about <b>+0.9%</b> while everything AI-linked fell, because on both of the week’s fearful days — Alphabet’s record drop, then Intel’s — the money leaving the technology trade came here. October’s final score: up about <b>11.2%</b>, by far the best of the five, against the Nasdaq-100 fund’s 6.7% fall. The second pressure eased too: long-term rates fell after Friday’s soft wage-cost report, the thirty-year to about <b>5.31%</b>. The frame stays the same: at roughly <b>49 times</b> the past year’s profits it is still the most expensively priced of the steady shares, about <b>7.7%</b> below the spring peak, up about <b>18%</b> this year. The next scorecard of its own — October sales — lands early in November.",
+   "note_ko": "<b>이번 주 보유 다섯 중 유일하게 올랐고 — 10월을 1,000달러 선 위에서 마쳤습니다.</b> 금요일에 주가는 <b>1.63%</b> 올라 <b>$1,012.28</b>, 6월 이후 시장 최악의 날에 다섯 중 가장 좋았고, 화요일부터 그 아래서 거래되던 <b>1,000달러</b> 선을 되찾았습니다. 한 주가 이 달의 이야기를 축소판으로 들려줬습니다. AI에 묶인 모든 것이 내리는 동안 약 <b>+0.9%</b> — 이번 주의 두려웠던 두 날, 알파벳의 기록적인 급락과 인텔의 급락에 기술주 베팅을 떠난 돈이 이리로 왔기 때문입니다. 10월의 최종 점수: 나스닥100 펀드가 6.7% 내리는 동안 약 <b>11.2%</b> 상승, 다섯 중 단연 최고입니다. 두 번째 압력도 누그러졌습니다. 금요일의 약한 임금 비용 지표 뒤 장기 금리가 내려, 30년물이 약 <b>5.31%</b>가 됐습니다. 틀은 그대로입니다. 지난 1년 이익의 약 <b>49배</b>로 여전히 안정적인 주식들 가운데 가장 비싸게 매겨졌고, 봄의 최고가보다 약 <b>7.7%</b> 아래, 올해 약 <b>18%</b> 상승입니다. 이 회사만의 다음 성적표 — 10월 매출 — 는 11월 초에 나옵니다.",
    "ticker": "COST",
    "name_en": "Costco",
    "name_ko": "코스트코",
-   "week_fact_en": "down ≈ 2.2%",
-   "week_fact_ko": "≈ 2.2% 하락",
+   "week_fact_en": "up ≈ 0.9%",
+   "week_fact_ko": "≈ 0.9% 상승",
    "news_en": [
+    {
+     "dt": "Oct 30",
+     "tx": "<b>Rose 1.63% to $1,012.28 — the best of the five on the market’s worst day since June, and back above the $1,000 line it had traded under since Tuesday.</b> The pattern held to the week’s end: Intel’s collapse and the AI sell-off scared the technology trade, and the money moved to the steadier corners again. Rates helped too, the thirty-year easing to about <b>5.31%</b> after the soft wage-cost report. The finish: the only one of the five to rise this week, up about 0.9%, and October closed at about <b>+11.2%</b> — by far the best of the five. October sales land early in November."
+    },
     {
      "dt": "Oct 29",
      "tx": "<b>Rose 1.36% to $996.08 — the best of the five by a wide margin, on the day Alphabet's record fall scared the technology trade and the money moved to the steadier corners.</b> Health care, property and household staples led the market; most stocks rose even as the index fell. The second pressure eased too: the thirty-year rate slipped to about <b>5.32%</b>. The shares closed within four dollars of the $1,000 line lost on Monday. Still up about <b>9.4%</b> in October, by far the best of the five — and this morning the same setup is back, with technology futures down about 2% after Amazon's and Intel's reports."
@@ -536,13 +540,13 @@
     {
      "dt": "Oct 27",
      "tx": "<b>Fell 1.30% to $992.13 — back under the $1,000 line, its first close below since taking that level two Thursdays ago.</b> No company news drove it: on the second day of the technology rebound, the pattern of its October ran in reverse — when fear leaves the chip shares, the money that hid here leaves too. Friday's fall and Monday's stall were the previews. Still up about <b>9.0%</b> in October, by far the best of the five."
-    },
-    {
-     "dt": "Oct 26",
-     "tx": "<b>Rose 0.18% to $1,005.16 while the technology shares bounced — the shelter trade resting, not leaving.</b> The shares dipped under $1,000 during the day, to $999.08, and closed back above the line. No company news drove it: Monday's story — Anthropic's share-sale filing lifting the AI trade — simply happened elsewhere. Still up about <b>10.4%</b> in October, by far the best of the five."
     }
    ],
    "news_ko": [
+    {
+     "dt": "10월 30일",
+     "tx": "<b>1.63% 올라 $1,012.28 — 6월 이후 시장 최악의 날에 다섯 중 가장 좋았고, 화요일부터 그 아래서 거래되던 1,000달러 선 위로 돌아왔습니다.</b> 패턴은 한 주의 끝까지 유지됐습니다. 인텔의 붕괴와 AI 매도가 기술주 베팅을 겁주자, 돈은 다시 안정적인 구석들로 옮겨 갔습니다. 금리도 도왔습니다. 약한 임금 비용 지표 뒤 30년물이 약 <b>5.31%</b>로 내려왔습니다. 마무리는 이렇습니다. 이번 주 다섯 중 유일한 상승인 약 0.9%, 그리고 10월은 약 <b>+11.2%</b> — 다섯 중 단연 최고 — 로 닫혔습니다. 10월 매출은 11월 초에 나옵니다."
+    },
     {
      "dt": "10월 29일",
      "tx": "<b>1.36% 올라 $996.08 — 알파벳의 기록적인 급락이 기술주 베팅을 겁주고 돈이 안정적인 구석들로 옮겨 간 날, 다섯 중 단연 가장 좋은 하루였습니다.</b> 건강, 부동산, 생활필수품이 시장을 이끌었고, 지수가 내리는데도 대부분의 종목은 올랐습니다. 두 번째 압력도 누그러졌습니다. 30년물 금리가 약 <b>5.32%</b>로 내려왔습니다. 주가는 월요일에 잃었던 1,000달러 선에서 4달러 안쪽에서 마감했습니다. 10월 들어 여전히 약 <b>9.4%</b> 상승으로 다섯 중 단연 최고 — 그리고 오늘 아침, 아마존과 인텔의 실적 뒤 기술주 선물이 약 2% 내린 채 같은 판이 돌아와 있습니다."
@@ -554,14 +558,10 @@
     {
      "dt": "10월 27일",
      "tx": "<b>1.30% 내린 $992.13 — 1,000달러 선 아래로 되밀렸고, 2주 전 목요일에 그 선을 차지한 뒤 처음으로 그 아래에서 마감했습니다.</b> 회사 소식은 없었습니다. 기술주 반등의 이틀째에, 이 종목의 10월을 만든 패턴이 거꾸로 돌았습니다 — 두려움이 반도체 주식을 떠나면, 여기 숨어 있던 돈도 떠납니다. 금요일의 하락과 월요일의 제자리걸음이 예고편이었습니다. 10월 들어서는 여전히 약 <b>9.0%</b> 상승, 다섯 중 단연 최고입니다."
-    },
-    {
-     "dt": "10월 26일",
-     "tx": "<b>기술주가 되오르는 동안 0.18% 오른 $1,005.16 — 피난처 베팅이 떠난 것이 아니라 쉬어 간 하루입니다.</b> 장중에는 1,000달러 아래($999.08)까지 내려갔다가 다시 그 선 위에서 마감했습니다. 회사 소식은 없었습니다. 월요일의 이야기 — AI 베팅을 끌어올린 Anthropic의 주식 공개 신청 — 는 그저 다른 곳에서 일어났습니다. 10월 들어 여전히 약 <b>10.4%</b> 상승, 다섯 중 단연 최고입니다."
     }
    ],
-   "verdict_en": "<b>What I'd watch: this morning. Technology futures point about 2% lower after Amazon's and Intel's reports, and Thursday showed what this share does on such days — it rose 1.36% while the index fell.</b> Whether it holds those gains when the chips eventually bounce is the other half of the pattern: money that arrives on fear leaves on calm, and the shares have crossed the $1,000 line in both directions three times this month on exactly that tide. The slower force is rates: a December rise is priced near <b>80%</b>, and the thirty-year rate at about <b>5.32%</b> is the direct competition for a steady share paying about 0.6%. The next dated item of its own is <b>October sales, early November</b> — it shows whether September's strong report, US sales up 8% once gas is set aside, was the turn it looked like.",
-   "verdict_ko": "<b>지켜볼 것: 오늘 아침입니다. 아마존과 인텔의 실적 뒤 기술주 선물이 약 2% 아래를 가리키고 있고, 목요일은 이런 날 이 주식이 무엇을 하는지 보여 줬습니다 — 지수가 내리는 동안 1.36% 올랐습니다.</b> 반도체가 결국 되오를 때 그 상승분을 지키는가가 패턴의 나머지 반쪽입니다. 두려움에 온 돈은 평온에 떠나고, 이 주식은 이번 달에만 바로 그 조수를 타고 1,000달러 선을 세 번 오르내렸습니다. 더 느린 힘은 금리입니다. 12월 인상은 <b>80%</b> 부근에 값이 매겨져 있고, 약 <b>5.32%</b>의 30년물 금리는 연 0.6%쯤을 주는 안정적인 주식의 직접 경쟁자입니다. 이 회사만의 다음 일정은 <b>11월 초의 10월 매출</b>입니다. 휘발유를 빼면 미국 매출 8% 증가였던 9월의 강한 보고서가 보기만큼의 전환이었는지 보여줍니다.",
+   "verdict_en": "<b>What I’d watch: early November — the October sales report, its first scorecard of its own since September’s strong one — and Monday evening, when Apple’s report sets the tone for the technology trade these shares have been sheltering against.</b> The pattern cuts both ways: money that arrives on fear leaves on calm, and the shares have crossed the $1,000 line in both directions repeatedly this month on exactly that tide — if the chips bounce next week, expect some of October’s gain to leak. The slower force is rates: a December rise ended the week priced near <b>70%</b> after the soft wage report, and the thirty-year at about <b>5.31%</b> is still the direct competition for a steady share paying about 0.6%. September’s US sales rose 8% once gas and currency swings are set aside; early November shows whether that recovery held.",
+   "verdict_ko": "<b>지켜볼 것: 11월 초입니다 — 9월의 강한 보고서 이후 이 회사만의 첫 성적표인 10월 매출 — 그리고 월요일 저녁, 이 주식이 피해 온 기술주 베팅의 분위기를 애플의 발표가 정하는 순간입니다.</b> 패턴은 양날입니다. 두려움에 온 돈은 평온에 떠나고, 이 주식은 이번 달에 바로 그 조수를 타고 1,000달러 선을 거듭 오르내렸습니다 — 다음 주에 반도체가 되오르면, 10월 상승분의 일부가 새어 나갈 수 있습니다. 더 느린 힘은 금리입니다. 약한 임금 지표 뒤 12월 인상은 <b>70%</b> 부근에서 한 주를 마쳤고, 약 <b>5.31%</b>의 30년물 금리는 여전히 연 0.6%쯤을 주는 안정적인 주식의 직접 경쟁자입니다. 9월 미국 매출은 휘발유와 환율을 빼면 8% 늘었습니다. 그 회복이 유지됐는지를 11월 초가 보여줍니다.",
    "base": {
     "year_start": 859.11,
     "high_1y": 1097.05,
@@ -598,12 +598,12 @@
      "v_ko": "9월 24일 — 이익·매출 모두 예상 상회, 다음 발표는 12월"
     }
    ],
-   "plain_en": "The warehouse retailer — and in a rough October, the steadiest of your five by a wide margin. <b>Yesterday it rose 1.36% to $996.08, the best of your five, on exactly the day the pattern predicts: fear returned to the technology shares, and the money leaving them came here.</b> That has been the pattern all month: when doubts about AI knock the technology shares down, this one rises — and when the chips rally, some of that money leaves again. Thursday also brought relief from the second pressure, as long-term rates eased. Up about <b>9.4%</b> this month while the Nasdaq-100 fund fell about 3.3%. The business keeps earning the role — September's US sales rose <b>8.0%</b> once gasoline and currency swings are set aside. The shares sit about <b>9.2%</b> below their peak, priced at roughly <b>48 times</b> profits, up about <b>16%</b> this year. The next dated test of its own: October sales, early November.",
-   "plain_ko": "창고형 할인점 — 그리고 거친 10월에, 보유 다섯 중 단연 가장 차분한 종목입니다. <b>어제는 패턴이 예고하는 바로 그런 날에 1.36% 올라 $996.08, 다섯 중 가장 좋았습니다. 두려움이 기술주로 돌아오자, 거기서 나온 돈이 이리로 왔습니다.</b> 한 달 내내의 패턴이 그것입니다. AI에 대한 의심이 기술주를 끌어내리면 이 종목이 오르고 — 반도체가 되오르면 그 돈의 일부가 다시 떠납니다. 목요일에는 두 번째 압력에서도 숨통이 트였습니다. 장기 금리가 내려왔습니다. 나스닥100 펀드가 약 3.3% 내린 이번 달 약 <b>9.4%</b> 상승입니다. 사업은 그 역할값을 계속 하고 있습니다 — 9월 미국 매출이 휘발유와 환율을 빼면 <b>8.0%</b> 늘었습니다. 주가는 최고가보다 약 <b>9.2%</b> 아래, 이익의 약 <b>48배</b>, 올해 약 <b>16%</b> 상승입니다. 다음에 날짜가 박힌 이 회사만의 시험: 11월 초의 10월 매출입니다.",
-   "bull_en": "<b>Twice in two days the role was tested, and twice it answered — these shares ticked higher in late trading when Alphabet scared the market on Wednesday night, then rose 1.36% through Thursday's fall.</b> September sales of $30.0 billion ended three months of slowing growth — US sales up 8.0% once gasoline and currency swings are set aside, online up 19% — and a renewal rate near <b>90%</b> on more than 150 million cards is the steadiest earnings machine in American retail. In the month the AI argument knocked the tripled chip fund down about 31%, this holding rose about <b>9.4%</b> — the one of your five that does not depend on the AI build-out being financed. A weaker shopper historically helps a discounter: the membership stays, and the hunt for value sharpens. And on Thursday the force pressing on it eased a notch — long rates fell even on a hot-inflation morning; on the day rates genuinely fall, this is the first kind of share it helps.",
-   "bull_ko": "<b>이틀 사이 두 번 역할이 시험대에 올랐고, 두 번 다 답했습니다 — 수요일 밤 알파벳이 시장을 겁주자 이 주식은 시간외에서 살짝 올랐고, 목요일의 하락장을 뚫고 1.36% 올랐습니다.</b> 300억 달러의 9월 매출이 석 달 연속 둔화를 끝냈습니다 — 휘발유와 환율을 빼면 미국 매출 8.0% 증가, 온라인 19% 증가 — 그리고 1억 5천만 장이 넘는 카드의 <b>90%</b> 가까운 갱신율은 미국 유통업에서 가장 안정적인 이익 기계입니다. AI 논쟁이 3배 반도체 펀드를 약 31% 끌어내린 달에 이 종목은 약 <b>9.4%</b> 올랐습니다 — 보유 다섯 중 AI 건설 자금에 기대지 않는 하나가 이것입니다. 주머니가 가벼워진 손님은 역사적으로 할인점을 돕습니다. 멤버십은 남고, 더 싼 것을 찾는 눈은 날카로워집니다. 그리고 목요일에는 이 주식을 누르는 힘이 한 눈금 풀렸습니다 — 뜨거운 물가 지표가 나온 아침인데도 장기 금리가 내렸습니다. 금리가 정말로 내려오는 날, 가장 먼저 돕는 것이 이런 종류의 주식입니다.",
-   "bear_en": "<b>Everything that made it the shelter is already in the price — at roughly 48 times the past year's profits, it is among the most expensively priced big retailers in America.</b> The month's gains arrived on other people's fear, and money that arrives because chips are falling leaves when chips rally: the shares have crossed the $1,000 line in both directions three times this month on exactly that tide. The rate pressure has eased, not lifted: a December rise is still priced near 80%, and if Thursday's bond relief reverses, a thirty-year rate above 5.3% competes directly with a dividend near 0.6%. The shopper behind the sales is objectively weaker — 29,000 new jobs in September, pay growth the slowest since 2021 — the grocer Kroger has a $5 billion price-cutting plan aimed at Walmart and Costco, and the Canadian food ban still sits on the shelves with no public number for its cost. If the AI argument calms, October's gain can leave the way it came.",
-   "bear_ko": "<b>이 종목을 피난처로 만든 모든 것이 이미 가격 안에 들어 있습니다 — 지난 1년 이익의 약 48배로, 미국에서 가장 비싸게 매겨진 대형 유통주 축에 듭니다.</b> 이번 달의 상승은 남들의 두려움에서 왔고, 반도체가 내려서 들어온 돈은 반도체가 되오르면 떠납니다. 이 주식은 이번 달에만 바로 그 조수를 타고 1,000달러 선을 세 번 오르내렸습니다. 금리 압력은 풀린 것이 아니라 느슨해졌을 뿐입니다. 12월 인상은 여전히 80% 부근에 값이 매겨져 있고, 목요일의 채권 숨통이 되돌아가면 5.3%가 넘는 30년물 금리가 연 0.6%쯤의 배당과 정면으로 경쟁합니다. 매출 뒤의 소비자는 객관적으로 약해지고 있습니다 — 9월 신규 고용 2만 9천 명, 임금 상승률은 2021년 이후 최저 — 식료품 체인 Kroger는 월마트·코스트코를 겨냥한 50억 달러 가격 인하 계획을 갖고 있고, 캐나다산 식품 금지는 비용에 대한 공개된 숫자 없이 선반 위에 그대로 있습니다. AI 논쟁이 가라앉으면, 10월 상승분은 왔던 길로 떠날 수 있습니다."
+   "plain_en": "The warehouse retailer — and in a rough October, the steadiest of your five by a wide margin. <b>This week it was the only one of the five to rise, up about 0.9%, and it closed the month back above $1,000 — up about 11.2% in an October when the Nasdaq-100 fund fell 6.7%.</b> The pattern has run all month: when doubts about AI knock the technology shares down, this one rises — it rose through both Alphabet’s record fall and Intel’s crash — and when the chips rally, some of that money leaves again. The business keeps earning the role: September’s US sales rose <b>8.0%</b> once gasoline and currency swings are set aside. The shares sit about <b>7.7%</b> below their peak, priced at roughly <b>49 times</b> profits, up about <b>18%</b> this year. The next dated test of its own: October sales, early November.",
+   "plain_ko": "창고형 할인점 — 그리고 거친 10월에, 보유 다섯 중 단연 가장 차분한 종목입니다. <b>이번 주 다섯 중 유일하게 오른 약 0.9% 상승이었고, 나스닥100 펀드가 6.7% 내린 10월을 약 11.2% 상승으로, 1,000달러 선 위에서 닫았습니다.</b> 패턴은 한 달 내내 돌았습니다. AI에 대한 의심이 기술주를 끌어내리면 이 종목이 오르고 — 알파벳의 기록적인 급락과 인텔의 급락을 모두 뚫고 올랐습니다 — 반도체가 되오르면 그 돈의 일부가 다시 떠납니다. 사업은 그 역할값을 계속 하고 있습니다. 9월 미국 매출이 휘발유와 환율을 빼면 <b>8.0%</b> 늘었습니다. 주가는 최고가보다 약 <b>7.7%</b> 아래, 이익의 약 <b>49배</b>, 올해 약 <b>18%</b> 상승입니다. 다음에 날짜가 박힌 이 회사만의 시험: 11월 초의 10월 매출입니다.",
+   "bull_en": "<b>Twice this week the role was tested by a crash in someone else’s shares, and twice it answered — up 1.36% through Alphabet’s record fall, up 1.63% through Intel’s.</b> September sales of $30.0 billion ended three months of slowing growth — US sales up 8.0% once gasoline and currency swings are set aside, online up 19% — and a renewal rate near <b>90%</b> on more than 150 million cards is the steadiest earnings machine in American retail. In the month the AI argument cut the tripled chip fund nearly in half, this holding rose about <b>11.2%</b> — the one of your five that does not depend on the AI build-out being financed. A weaker shopper historically helps a discounter: the membership stays, and the hunt for value sharpens. And the force pressing on it eased a notch on Friday: wage costs grew more slowly, long rates fell, and support for a December rate rise faded to about 70% — on the day rates genuinely fall, this is the first kind of share it helps.",
+   "bull_ko": "<b>이번 주 두 번, 남의 주식 급락이 이 종목의 역할을 시험했고, 두 번 다 답했습니다 — 알파벳의 기록적인 급락을 뚫고 1.36%, 인텔의 급락을 뚫고 1.63% 올랐습니다.</b> 300억 달러의 9월 매출이 석 달 연속 둔화를 끝냈습니다 — 휘발유와 환율을 빼면 미국 매출 8.0% 증가, 온라인 19% 증가 — 그리고 1억 5천만 장이 넘는 카드의 <b>90%</b> 가까운 갱신율은 미국 유통업에서 가장 안정적인 이익 기계입니다. AI 논쟁이 3배 반도체 펀드를 거의 반 토막 낸 달에 이 종목은 약 <b>11.2%</b> 올랐습니다 — 보유 다섯 중 AI 건설 자금에 기대지 않는 하나가 이것입니다. 주머니가 가벼워진 손님은 역사적으로 할인점을 돕습니다. 멤버십은 남고, 더 싼 것을 찾는 눈은 날카로워집니다. 그리고 이 주식을 누르던 힘이 금요일에 한 눈금 풀렸습니다. 임금 비용이 더 느리게 올랐고, 장기 금리가 내렸으며, 12월 인상론의 지지는 약 70%로 바랬습니다 — 금리가 정말로 내려오는 날, 가장 먼저 돕는 것이 이런 종류의 주식입니다.",
+   "bear_en": "<b>Everything that made it the shelter is already in the price — at roughly 49 times the past year’s profits, it is among the most expensively priced big retailers in America.</b> October’s 11.2% arrived on other people’s fear, and money that arrives because chips are falling leaves when chips rally: the shares have crossed the $1,000 line in both directions repeatedly this month on exactly that tide, and a calm week for the AI trade would pull at it again. The rate pressure has eased, not lifted: a December rise is still priced near 70%, and a thirty-year rate above 5.3% competes directly with a dividend near 0.6%. The shopper behind the sales is objectively weaker — 29,000 new jobs in September, pay growth the slowest since 2021 — the grocer Kroger has a $5 billion price-cutting plan aimed at Walmart and Costco, and the Canadian food ban still sits on the shelves with no public number for its cost. If the AI argument calms, October’s gain can leave the way it came.",
+   "bear_ko": "<b>이 종목을 피난처로 만든 모든 것이 이미 가격 안에 들어 있습니다 — 지난 1년 이익의 약 49배로, 미국에서 가장 비싸게 매겨진 대형 유통주 축에 듭니다.</b> 10월의 11.2%는 남들의 두려움에서 왔고, 반도체가 내려서 들어온 돈은 반도체가 되오르면 떠납니다. 이 주식은 이번 달에 바로 그 조수를 타고 1,000달러 선을 거듭 오르내렸고, AI 베팅이 평온한 한 주를 보내면 다시 당겨질 것입니다. 금리 압력은 풀린 것이 아니라 느슨해졌을 뿐입니다. 12월 인상은 여전히 70% 부근에 값이 매겨져 있고, 5.3%가 넘는 30년물 금리가 연 0.6%쯤의 배당과 정면으로 경쟁합니다. 매출 뒤의 소비자는 객관적으로 약해지고 있습니다 — 9월 신규 고용 2만 9천 명, 임금 상승률은 2021년 이후 최저 — 식료품 체인 Kroger는 월마트·코스트코를 겨냥한 50억 달러 가격 인하 계획을 갖고 있고, 캐나다산 식품 금지는 비용에 대한 공개된 숫자 없이 선반 위에 그대로 있습니다. AI 논쟁이 가라앉으면, 10월 상승분은 왔던 길로 떠날 수 있습니다."
   }
  },
  "week": {
@@ -655,18 +655,18 @@
  "lede": [
   {
    "cls": "first",
-   "en": "<b>Yesterday one of the market's biggest companies had the worst day in its history — and the market mostly shrugged.</b> <b>Alphabet</b>, punished for a quarter in which its spending outran its cash, fell <b>12.6%</b> — about <b>$482 billion</b>, the biggest one-day loss of value it has ever taken — and pulled the S&amp;P 500 down <b>0.30%</b> to <b>7,720.39</b>, ending a three-day run. But most of the 500 stocks rose: the money leaving technology moved to health care, property and household staples rather than leaving the market. The morning's numbers said the economy grew at a <b>3.4%</b> pace over the summer while inflation ran at <b>3.6%</b> — a mix that keeps a <b>December rate rise priced near 80%</b> — and bond rates eased anyway, the ten-year back under 5%.",
-   "ko": "<b>어제 시장에서 가장 큰 회사 중 하나가 역사상 최악의 하루를 보냈는데 — 시장은 대체로 어깨를 으쓱했습니다.</b> 지출이 현금을 앞지른 분기 때문에 벌을 받은 <b>Alphabet</b>이 <b>12.6%</b> — 약 <b>4,820억 달러</b>, 이 회사가 하루에 잃은 가장 큰 가치 — 내리며 S&amp;P 500을 <b>0.30%</b> 끌어내려 <b>7,720.39</b>, 사흘 연속 상승을 끝냈습니다. 하지만 500개 종목 대부분은 올랐습니다. 기술주를 떠난 돈은 시장을 떠나는 대신 건강, 부동산, 생활필수품으로 옮겨 갔습니다. 아침 지표는 여름 분기에 경제가 <b>3.4%</b> 속도로 성장하고 물가는 <b>3.6%</b> 올랐다고 말했습니다 — <b>12월 금리 인상을 80%</b> 부근에 묶어 두는 조합입니다 — 그런데도 채권 금리는 내려와, 10년물이 다시 5% 아래가 됐습니다."
+   "en": "<b>The week asked one question — is the giant spending on AI worth it? — and the market's answer was to punish nearly everyone who reported.</b> Four of the biggest AI spenders turned in their quarterly report cards. Only <b>Microsoft</b>, the one that spent less than forecast, was rewarded. <b>Alphabet</b> lost about <b>$482 billion</b> on Thursday — the biggest one-day fall in its history. <b>Amazon</b> was marked down overnight and largely forgiven by Friday's close. And <b>Intel</b>, after warning that the PC slowdown will last into next year, fell <b>28.6%</b> on Friday — its worst day since 1974 — handing the whole market its worst day since June on October's final session.",
+   "ko": "<b>이번 주는 질문 하나를 물었습니다 — AI에 쓰는 그 막대한 돈이 값어치를 하는가? — 그리고 시장의 답은 발표한 거의 모두를 벌주는 것이었습니다.</b> 가장 큰 AI 지출 기업 넷이 분기 성적표를 냈습니다. 상을 받은 것은 예상보다 적게 쓴 <b>Microsoft</b> 하나뿐입니다. <b>Alphabet</b>은 목요일에 약 <b>4,820억 달러</b>를 잃었습니다 — 역사상 가장 큰 하루 하락입니다. <b>Amazon</b>은 밤사이 감점됐다가 금요일 마감까지 대체로 용서받았습니다. 그리고 PC 둔화가 내년까지 간다고 경고한 <b>Intel</b>은 금요일에 <b>28.6%</b> 내려 — 1974년 이후 최악의 하루 — 10월의 마지막 거래일에 시장 전체에 6월 이후 최악의 하루를 안겼습니다."
   },
   {
    "cls": "",
-   "en": "<b>Then, after the close, the last two big AI report cards came back — both marked down.</b> <b>Amazon</b> grew its cloud business 39% and still fell about <b>7%</b> in late trading, because it held its record spending plan — about $220 billion this year — while its cash flow for the past year ran negative. <b>Intel</b> beat its quarter, warned that the PC slowdown will last into next year, and fell about <b>23%</b>. The week's scoreboard is complete: four giant AI reports, one reward — Microsoft, the one that spent less than forecast. On the board, <b>SOXL</b> gave back <b>4.62%</b> — Thursday's chip fall arriving tripled, as designed, undoing Wednesday's finished repair in one session — and <b>Costco</b> rose <b>1.36%</b>, the shelter doing its job on a fearful day.",
-   "ko": "<b>그리고 장 마감 뒤, 마지막 남은 큰 AI 성적표 두 장이 돌아왔습니다 — 둘 다 감점이었습니다.</b> <b>Amazon</b>은 클라우드 사업을 39% 키우고도 시간외에서 약 <b>7%</b> 내렸습니다. 올해 약 2,200억 달러라는 기록적인 지출 계획을 유지하면서, 지난 1년의 현금 흐름이 마이너스였기 때문입니다. <b>Intel</b>은 분기는 예상을 웃돌고도 PC 둔화가 내년까지 간다고 경고한 뒤 약 <b>23%</b> 내렸습니다. 한 주의 점수판은 완성됐습니다. 거대 AI 실적 넷에 상은 하나 — 예상보다 적게 쓴 Microsoft뿐입니다. 보드 위에서는 <b>SOXL</b>이 <b>4.62%</b>를 돌려줬습니다 — 목요일의 반도체 하락이, 설계대로, 세 배가 되어 도착해 수요일에 끝났던 수리를 한 거래일 만에 풀었습니다 — 그리고 <b>Costco</b>는 <b>1.36%</b> 올라, 두려운 날 피난처의 일을 했습니다."
+   "en": "<b>What the week cost each of your five depended on how much chip was inside it.</b> <b>Costco</b>, the only one with none, was the only riser: up about <b>0.9%</b>, back above the $1,000 line. The broad <b>S&amp;P 500</b> lost only about <b>0.6%</b>, because for most of the week the money leaving technology moved into steadier corners — health care, property, household staples — rather than out of the market. The technology fund <b>QQQ</b> lost about <b>2%</b>; <b>Nvidia</b> lost about <b>3%</b>, even though every big customer confirmed the demand for its chips; and <b>SOXL</b>, which triples the chip index daily, lost a quarter of its value on Friday alone and finished the week down about <b>7.8%</b> — the early-week rally had been that large. October's final scores tell the same story: Costco up about <b>11.2%</b>, the S&amp;P 500 down about 0.9%, QQQ down 6.7% — its worst month since March 2025 — and SOXL down about <b>47.9%</b>, nearly half.",
+   "ko": "<b>이번 주가 보유 다섯에 물린 값은 그 안에 반도체가 얼마나 들었는지로 정해졌습니다.</b> 반도체가 전혀 없는 유일한 종목인 <b>Costco</b>만 올랐습니다. 약 <b>0.9%</b> 상승으로 1,000달러 선 위로 돌아왔습니다. 넓은 <b>S&amp;P 500</b>은 약 <b>0.6%</b>만 잃었습니다. 한 주의 대부분 동안 기술주를 떠난 돈이 시장 밖이 아니라 더 안정적인 구석들 — 건강, 부동산, 생활필수품 — 로 옮겨 갔기 때문입니다. 기술주 펀드 <b>QQQ</b>는 약 <b>2%</b>를 잃었고, <b>Nvidia</b>는 모든 큰 고객이 반도체 수요를 확인해 줬는데도 약 <b>3%</b>를 잃었으며, 반도체 지수를 매일 세 배로 돌리는 <b>SOXL</b>은 금요일 하루에만 제 가치의 4분의 1을 잃고 한 주를 약 <b>7.8%</b> 하락으로 마쳤습니다 — 주 초반의 반등이 그만큼 컸다는 뜻입니다. 10월의 최종 점수도 같은 이야기를 합니다. Costco 약 <b>11.2%</b> 상승, S&amp;P 500 약 0.9% 하락, QQQ 6.7% 하락 — 2025년 3월 이후 최악의 한 달 — 그리고 SOXL은 약 <b>47.9%</b>, 거의 절반의 하락입니다."
   },
   {
    "cls": "",
-   "en": "<b>This morning those overnight drops land on the open: technology futures point about 2% lower, and Intel was down about 25% before the open — SOXL will feel whatever the chips do at triple size.</b> The standing warnings hold: four of your five are the same chip bet, SOXL triples it daily and needs about <b>+195%</b> to see its old high, and a possible December rate rise sits under everything else, with the next clue in next Friday's jobs report. Oil is back above $100 and rose this morning on reports — only reports — that the US may resume strikes on Iran. Nobody can tell you which way any of it resolves.",
-   "ko": "<b>오늘 아침 그 밤사이 하락들이 개장에 내려앉습니다. 기술주 선물은 약 2% 아래를 가리키고, Intel은 개장 전 약 25% 아래였습니다 — SOXL은 반도체가 무엇을 하든 세 배 크기로 느낍니다.</b> 늘 붙는 경고는 그대로입니다. 보유 다섯 중 넷은 같은 반도체 베팅이고, SOXL은 그것을 매일 세 배로 돌리며 옛 고점을 다시 보려면 약 <b>+195%</b>가 필요하며, 다른 모든 것 아래에 12월 금리 인상 가능성이 깔려 있습니다. 다음 단서는 다음 주 금요일의 고용 보고서입니다. 유가는 다시 100달러 위로 올라섰고, 미국이 이란 공격을 재개할 수 있다는 보도 — 어디까지나 보도 — 에 오늘 아침 더 올랐습니다. 이 중 무엇이 어느 쪽으로 풀릴지는 아무도 말해 줄 수 없습니다."
+   "en": "<b>Markets are closed until Monday, and next week answers quickly: Apple reports Monday evening, the chipmaker AMD on Tuesday, Qualcomm on Wednesday, and the October jobs report arrives Friday morning.</b> The week's one genuinely helpful number came on Friday: wage costs grew more slowly in the autumn quarter, and betting markets ended the week pricing a <b>December rate rise near 70%</b>, down from about 85% at midweek. The new worry is oil — above <b>$104</b>, its highest since April, on reports — only reports — that the US may resume strikes on Iran after next week's elections. The standing warnings do not move: four of your five are the same AI-chip bet, and SOXL, the tripled version, now needs about <b>+292%</b> to see its old high. Nobody can tell you which way any of it resolves.",
+   "ko": "<b>시장은 월요일까지 휴장이고, 다음 주는 빠르게 답을 내놓습니다. 월요일 저녁 Apple, 화요일 반도체 회사 AMD, 수요일 Qualcomm이 발표하고, 금요일 아침에는 10월 고용 보고서가 나옵니다.</b> 이번 주의 진짜 도움이 된 숫자 하나는 금요일에 왔습니다. 가을 분기 임금 비용이 더 느리게 올랐고, 베팅 시장은 <b>12월 금리 인상 가능성을 70%</b> 부근 — 주중의 약 85%에서 내려온 — 에 두고 한 주를 마쳤습니다. 새 걱정거리는 유가입니다 — 다음 주 선거 뒤 미국이 이란 공격을 재개할 수 있다는 보도 — 어디까지나 보도 — 에 4월 이후 가장 높은 <b>104달러</b> 위입니다. 상시 경고는 움직이지 않습니다. 보유 다섯 중 넷은 같은 AI 반도체 베팅이고, 그 세 배 버전인 SOXL이 옛 고점을 다시 보려면 이제 약 <b>+292%</b>가 필요합니다. 이 중 무엇이 어느 쪽으로 풀릴지는 아무도 말해 줄 수 없습니다."
   }
  ],
  "events": [
@@ -678,6 +678,15 @@
    "what_ko": "애플 실적",
    "note_en": "After the close on Monday — not one of your five, but one of the biggest pieces of both SPX and QQQ, so its report moves two of them. The first report under the company's new chief executive, and it arrives in a market that punished three of this week's four giant reports",
    "note_ko": "월요일 장 마감 뒤입니다 — 보유 다섯은 아니지만 SPX와 QQQ 양쪽에서 가장 큰 조각 중 하나라, 이 발표는 그 둘을 움직입니다. 새 최고경영자 체제의 첫 실적이고, 이번 주 거대 실적 넷 중 셋에 벌을 준 시장을 향해 나옵니다"
+  },
+  {
+   "hot": true,
+   "when_en": "Tue Nov 3",
+   "when_ko": "11월 3일(화)",
+   "what_en": "AMD results",
+   "what_ko": "AMD 실적",
+   "note_en": "After the close on Tuesday — Nvidia's closest AI-chip rival, and one of the thirty stocks in the index SOXL triples. Friday showed what one member's bad report can do to that fund. This is the nearest thing to a dress rehearsal for Nvidia's own report on November 17; Qualcomm, another of the thirty, follows Wednesday",
+   "note_ko": "화요일 장 마감 뒤입니다 — 엔비디아의 가장 가까운 AI 반도체 경쟁사이자, SOXL이 세 배로 따르는 지수의 30개 종목 중 하나입니다. 구성원 하나의 나쁜 실적이 그 펀드에 무엇을 하는지는 금요일이 보여 줬습니다. 11월 17일 엔비디아 발표의 예행연습에 가장 가깝고, 역시 30개 중 하나인 퀄컴이 수요일에 뒤따릅니다"
   },
   {
    "hot": false,
@@ -694,8 +703,8 @@
    "when_ko": "11월 6일(금)",
    "what_en": "October jobs report",
    "what_ko": "10월 고용 보고서",
-   "note_en": "At 5:30 in the morning Pacific time, before the market opens. September's report was weak — 29,000 new jobs — and this one feeds straight into the December argument: betting markets price a rate rise near 80%. A strong number would harden that case; a weak one would reopen the case for holding",
-   "note_ko": "서부 시각 아침 5시 30분, 개장 전에 나옵니다. 9월 보고서는 약했고 — 새 일자리 2만 9천 개 — 이번 보고서는 12월 논쟁으로 곧장 흘러듭니다. 베팅 시장은 인상 가능성을 80% 부근으로 봅니다. 강한 숫자는 그 주장을 굳히고, 약한 숫자는 동결론을 다시 엽니다"
+   "note_en": "At 5:30 in the morning Pacific time, before the market opens. September's report was weak — 29,000 new jobs — and this one feeds straight into the December argument: after Friday's cooler wage-cost report, betting markets ended the week pricing a rate rise near 70%, down from about 85%. A strong number would harden the case for a rise; a weak one would soften it further",
+   "note_ko": "서부 시각 아침 5시 30분, 개장 전에 나옵니다. 9월 보고서는 약했고 — 새 일자리 2만 9천 개 — 이번 보고서는 12월 논쟁으로 곧장 흘러듭니다. 금요일의 식은 임금 비용 지표 뒤, 베팅 시장은 인상 가능성을 약 85%에서 내려온 70% 부근에 두고 한 주를 마쳤습니다. 강한 숫자는 인상론을 굳히고, 약한 숫자는 그 기세를 더 누그러뜨립니다"
   },
   {
    "hot": true,
@@ -712,8 +721,8 @@
    "when_ko": "12월 9일(수)",
    "what_en": "The Fed's December decision",
    "what_ko": "연준의 12월 결정",
-   "note_en": "At 11 in the morning Pacific time. The Fed held in October with two officials voting to raise rates, and betting markets price a December rise near 80%. A rate rise into a market near its record is the standing risk under everything on this page",
-   "note_ko": "서부 시각 오전 11시입니다. 연준은 10월에 위원 둘의 인상 표와 함께 동결했고, 베팅 시장은 12월 인상 가능성을 80% 부근으로 봅니다. 기록 부근의 시장에 금리 인상이 오는 것 — 이 페이지의 모든 것 아래에 깔린 상시 위험입니다"
+   "note_en": "At 11 in the morning Pacific time. The Fed held in October with two officials voting to raise rates, and betting markets ended this week pricing a December rise near 70%, down from about 85% after wage costs came in cooler. A rate rise into a market a few percent from its record is the standing risk under everything on this page",
+   "note_ko": "서부 시각 오전 11시입니다. 연준은 10월에 위원 둘의 인상 표와 함께 동결했고, 임금 비용이 식은 것으로 나온 뒤 베팅 시장은 12월 인상 가능성을 약 85%에서 내려온 70% 부근에 두고 이번 주를 마쳤습니다. 기록에서 몇 퍼센트 떨어진 시장에 금리 인상이 오는 것 — 이 페이지의 모든 것 아래에 깔린 상시 위험입니다"
   },
   {
    "hot": false,
@@ -725,18 +734,18 @@
    "note_ko": "9월 말 정상회담 전야에 발표된 두 달 연장은 1월 10일까지입니다. 정상회담 자체는 반도체와 수출 규정에 대한 합의 없이 끝났으니, 보유 다섯 중 넷에 닿는 그 질문들은 새 시한으로 넘어갑니다. 대통령은 두 정상이 11월에 중국에서, 12월에는 마이애미 G20에서 다시 만난다고 말합니다."
   }
  ],
- "next_session_en": "Trading restarts this morning at 6:30 Pacific — the board shows Thursday's closing prices",
- "next_session_ko": "오늘 아침 서부 시각 6시 30분에 거래가 다시 시작됩니다 — 표의 숫자는 목요일 종가입니다",
- "next_session_en_html": "Trading restarts <b>this morning at 6:30 Pacific</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b>",
- "next_session_ko_html": "오늘 아침 <b>서부 시각 6시 30분</b>에 거래가 다시 시작됩니다 &mdash; 표의 숫자는 <b>목요일 종가</b>입니다",
- "today_en": "<b>Amazon and Intel had a rough night, and the market is set to open lower this morning.</b> <b>Amazon</b> is down about <b>7%</b> in early trading after holding its record AI budget while its cash flow ran negative, and <b>Intel</b> is down about <b>25%</b> after warning that the PC slowdown will last into next year. Nasdaq futures point about <b>2%</b> lower and S&amp;P futures about 1% — but Dow futures are flat, a hint the rest of the market may hold up the way it did through Alphabet's record fall yesterday. <b>Nvidia</b> is down about 3% before the open, and <b>SOXL</b> will feel whatever the chips do at triple size. A reading on wage costs lands at 5:30 this morning Pacific time, oil is up about 2% on reports the US may resume strikes on Iran — and the next big report is <b>Apple</b>, Monday evening.",
- "today_ko": "<b>Amazon과 Intel이 힘든 밤을 보냈고, 시장은 오늘 아침 낮게 열릴 참입니다.</b> <b>Amazon</b>은 현금 흐름이 마이너스인 채 기록적인 AI 예산을 유지했다는 이유로 이른 거래에서 약 <b>7%</b> 내려 있고, <b>Intel</b>은 PC 둔화가 내년까지 간다고 경고한 뒤 약 <b>25%</b> 내려 있습니다. 나스닥 선물은 약 <b>2%</b>, S&amp;P 선물은 약 1% 아래를 가리키지만 — 다우 선물은 보합이라, 어제 Alphabet의 기록적인 급락을 버텨 냈듯 시장의 나머지가 또 버틸 수 있다는 암시입니다. <b>Nvidia</b>는 개장 전 약 3% 아래이고, <b>SOXL</b>은 반도체가 무엇을 하든 세 배 크기로 느낍니다. 서부 시각 오늘 아침 5시 30분에 임금 비용 지표가 나오고, 미국이 이란 공격을 재개할 수 있다는 보도에 유가는 약 2% 올라 있습니다 — 다음 큰 발표는 월요일 저녁의 <b>Apple</b>입니다.",
- "today_date": "2026-10-30",
+ "next_session_en": "Markets are closed for the weekend — trading resumes Monday at 6:30 in the morning Pacific time, and the board shows Friday's closing prices",
+ "next_session_ko": "주말 휴장입니다 — 거래는 월요일 서부 시각 오전 6시 30분에 다시 시작되고, 표의 숫자는 금요일 종가입니다",
+ "next_session_en_html": "Markets are closed for the weekend &mdash; trading resumes <b>Monday at 6:30 in the morning Pacific time</b>, and the board shows <b>Friday&rsquo;s closing prices</b>",
+ "next_session_ko_html": "주말 휴장입니다 &mdash; 거래는 <b>월요일 서부 시각 오전 6시 30분</b>에 다시 시작되고, 표의 숫자는 <b>금요일 종가</b>입니다",
+ "today_en": "Markets are closed until Monday. The first big test of next week is <b>Apple's report on Monday evening</b>, followed on Tuesday by the chipmaker <b>AMD</b> — a report the chip half of this page will feel.",
+ "today_ko": "시장은 월요일까지 휴장입니다. 다음 주의 첫 큰 시험은 <b>월요일 저녁 Apple의 실적 발표</b>이고, 화요일에는 이 페이지의 반도체 쪽이 느낄 <b>AMD</b>의 발표가 이어집니다.",
+ "today_date": "2026-10-31",
  "pancho_am": {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "pos": "",
-  "en": "Amazon and Intel had a rough night. Chip stocks open lower, and SOXL feels all of it three times over.",
-  "ko": "Amazon과 Intel이 힘든 밤을 보냈어요. 반도체가 낮게 열리고, SOXL은 그걸 세 배로 느껴요."
+  "en": "Markets rest until Monday. A rough week for the chip bets — Costco was the only one of your five to rise.",
+  "ko": "시장은 월요일까지 쉬어요. 반도체 베팅엔 험한 한 주였고 — 다섯 중 오른 건 Costco뿐이에요."
  },
  "pancho_pm": {
   "date": "2026-10-29",
