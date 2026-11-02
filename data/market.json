@@ -747,8 +747,8 @@
  "next_session_ko": "시장은 오늘 아침 서부 시각 6시 30분에 열립니다 — 표의 숫자는 금요일 종가입니다",
  "next_session_en_html": "The market opens <b>this morning at 6:30 Pacific time</b> &mdash; the board shows <b>Friday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>오늘 아침 서부 시각 6시 30분</b>에 열립니다 &mdash; 표의 숫자는 <b>금요일 종가</b>입니다",
- "today_en": "The week opens with a small bounce. Stock index futures point modestly higher this morning — Nasdaq futures up a little under 1% — and the chip shares that fell hardest on Friday are higher before the open: <b>Nvidia</b> up about 1%, the tripled fund <b>SOXL</b> up 4 to 5%. Oil fell about 4% overnight, back under <b>$100</b>, on reports — only reports — of US-Iran talks to end the war. The day's big event comes after the close tonight: <b>Apple</b> reports, the first results under new chief executive John Ternus. Tomorrow brings the midterm elections and <b>AMD</b>'s report; the October jobs report lands Friday morning.",
- "today_ko": "한 주가 작은 반등으로 시작합니다. 오늘 아침 주가지수 선물은 완만한 상승을 가리키고 — 나스닥 선물이 1%에 조금 못 미치게 올라 있습니다 — 금요일에 가장 많이 내렸던 반도체 주식들이 개장 전에 오르고 있습니다. <b>Nvidia</b>는 약 1%, 3배 펀드 <b>SOXL</b>은 4~5% 위입니다. 유가는 전쟁을 끝내려는 미국-이란 협상 보도 — 어디까지나 보도 — 에 밤사이 약 4% 내려 <b>100달러</b> 아래로 돌아왔습니다. 오늘의 가장 큰 일은 장 마감 뒤에 옵니다. <b>Apple</b>이 새 최고경영자 존 터너스 체제의 첫 실적을 내놓습니다. 내일은 중간선거와 <b>AMD</b>의 발표가 있고, 금요일 아침에는 10월 고용 보고서가 나옵니다.",
+ "today_en": "The small bounce the morning promised didn't last. Stocks opened higher on reports of US-Iran peace talks, then gave it all back as the worry over AI spending returned — the broad market closed down about half a percent, and oil fell about 7% to around <b>$96</b> a barrel. <b>Nvidia</b> was up more than 2% early and closed down about 1%; the chip fund <b>SOXL</b> fell almost 12% as chip shares sold off again; the Nasdaq-100 fund <b>QQQ</b> lost about 1.4%. <b>Costco</b> rose almost 3% — the money leaving technology kept moving to the steadier corners, and the Dow rose. After the close, <b>Apple</b> beat forecasts in its first report under new chief executive John Ternus, with sales up <b>12%</b>; tomorrow brings the midterm elections and <b>AMD</b>'s report.",
+ "today_ko": "아침이 약속했던 작은 반등은 오래가지 못했습니다. 주식은 미국-이란 평화 협상 보도에 올라 시작했다가 AI 지출 걱정이 되돌아오며 오른 것을 전부 내놓았습니다 — 시장 전체는 약 0.5% 내려 마감했고, 유가는 약 7% 내려 배럴당 <b>96달러</b> 부근이 됐습니다. <b>Nvidia</b>는 장 초반 2% 넘게 올랐다가 약 1% 하락으로 마쳤고, 반도체 펀드 <b>SOXL</b>은 반도체 주식이 다시 팔리며 12% 가까이 내렸으며, 나스닥 100 펀드 <b>QQQ</b>는 약 1.4% 내렸습니다. <b>Costco</b>는 3% 가까이 올랐습니다 — 기술주를 떠난 돈이 계속 안정적인 구석으로 옮겨 갔고, 다우는 올랐습니다. 장 마감 뒤 <b>Apple</b>은 새 최고경영자 존 터너스 체제의 첫 실적에서 매출이 <b>12%</b> 늘며 예상을 웃돌았고, 내일은 중간선거와 <b>AMD</b>의 발표가 있습니다.",
  "today_date": "2026-11-02",
  "pancho_am": {
   "date": "2026-11-02",
@@ -757,9 +757,9 @@
   "ko": "조금 진정된 아침이에요. 반도체가 살짝 반등 중이고, 오늘 밤엔 Apple 실적이 나와요."
  },
  "pancho_pm": {
-  "date": "2026-10-29",
+  "date": "2026-11-02",
   "pos": "",
-  "en": "Most of today's drop is one company, Google's parent. Your Nvidia barely moved.",
-  "ko": "오늘 하락은 대부분 구글 모회사 몫이에요. 엔비디아는 거의 그대로예요."
+  "en": "The morning's gain didn't make it to the close. Tech handed it back, and the quiet names kept climbing.",
+  "ko": "오전에 올랐던 건 마감까지 못 갔어요. 기술주가 내놓고, 조용한 종목들만 올랐어요."
  }
 }
