@@ -738,8 +738,8 @@
  "next_session_ko": "시장은 오늘 아침 서부 시각 6시 30분에 열립니다 — 표의 숫자는 월요일 종가입니다",
  "next_session_en_html": "The market opens <b>this morning at 6:30 Pacific time</b> &mdash; the board shows <b>Monday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>오늘 아침 서부 시각 6시 30분</b>에 열립니다 &mdash; 표의 숫자는 <b>월요일 종가</b>입니다",
- "today_en": "It is election day — the market trades normally, and results arrive overnight. Stock index futures are close to flat this morning: the technology side a touch higher, the Dow side lower. The chip shares that have fallen hardest are bouncing before the open — <b>Nvidia</b> is up about 2% and the tripled chip fund <b>SOXL</b> far more — ahead of tonight's report from the chipmaker <b>AMD</b>, whose shares fell 7.5% on nerves yesterday. <b>Apple</b> is about 4% lower before the open after last night's warning that memory-chip costs are rising, and oil has crawled back toward <b>$97</b> after Monday's plunge. What to watch: whether the chip bounce survives the day, and AMD's numbers after the close tonight.",
- "today_ko": "오늘은 선거일입니다 — 시장은 평소대로 열리고, 결과는 밤사이에 나옵니다. 주가지수 선물은 오늘 아침 보합권입니다. 기술주 쪽은 살짝 위, 다우 쪽은 아래입니다. 가장 많이 내렸던 반도체 주식들은 개장 전에 되오르고 있습니다 — <b>Nvidia</b>가 약 2%, 3배 반도체 펀드 <b>SOXL</b>은 그보다 훨씬 더 — 어제 불안감만으로 7.5% 내린 반도체 회사 <b>AMD</b>의 오늘 밤 발표를 앞두고요. <b>Apple</b>은 메모리 반도체 비용이 오르고 있다는 어젯밤 경고 뒤 개장 전 약 4% 아래이고, 유가는 월요일의 급락 뒤 <b>97달러</b> 부근까지 되올라 있습니다. 지켜볼 것: 반도체 반등이 하루를 버티는지, 그리고 오늘 밤 장 마감 뒤 AMD의 숫자입니다.",
+ "today_en": "Election day itself was a calm one for the market, and the technology shares that had fallen three days running finally bounced. <b>Nvidia</b> closed up about 2%, the tripled chip fund <b>SOXL</b> up about 7%, and the Nasdaq-100 fund <b>QQQ</b> up about half a percent. <b>Costco</b> gave back about 2% after Monday's jump, as money moved out of the steady names and back into the fallen ones. <b>Apple</b> ended about 2% lower — it had been down almost 4% early — after warning that memory chips are getting more expensive. After the close, the chipmaker <b>AMD</b> reported a record quarter, better than expected, and its shares rose in late trading; the election results themselves arrive overnight.",
+ "today_ko": "선거일 당일의 시장은 차분했고, 사흘 내리 밀렸던 기술주들이 마침내 되올랐습니다. <b>Nvidia</b>는 약 2%, 3배 반도체 펀드 <b>SOXL</b>은 약 7%, 나스닥100 펀드 <b>QQQ</b>는 0.5%가량 오른 채 마감했습니다. <b>Costco</b>는 월요일의 급등 뒤 약 2%를 되돌렸습니다 — 돈이 든든한 종목들에서 많이 빠졌던 종목들로 되돌아간 날이었습니다. <b>Apple</b>은 메모리 반도체 값이 더 비싸지고 있다는 경고 뒤 약 2% 내려 마감했는데, 장 초반에는 4% 가까이 내렸다가 상당 부분 만회한 것입니다. 장 마감 뒤 반도체 회사 <b>AMD</b>는 예상보다 좋은 기록적인 분기 실적을 내놓아 시간외 거래에서 주가가 올랐고, 선거 결과 자체는 밤사이에 나옵니다.",
  "today_date": "2026-11-03",
  "pancho_am": {
   "date": "2026-11-03",
@@ -748,9 +748,9 @@
   "ko": "오늘은 선거일이에요. 시장은 평소대로고, 진짜 시험은 오늘 밤 AMD 실적이에요."
  },
  "pancho_pm": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "pos": "",
-  "en": "The morning's gain didn't make it to the close. Tech handed it back, and the quiet names kept climbing.",
-  "ko": "오전에 올랐던 건 마감까지 못 갔어요. 기술주가 내놓고, 조용한 종목들만 올랐어요."
+  "en": "The beaten-up chip names did today's climbing. And AMD's numbers after the close came in better than expected.",
+  "ko": "오늘은 많이 빠졌던 반도체가 올랐어요. 장 마감 뒤 AMD 숫자도 기대보다 잘 나왔어요."
  }
 }
