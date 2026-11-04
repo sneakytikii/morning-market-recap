@@ -738,8 +738,8 @@
  "next_session_ko": "시장은 오늘 아침 서부 시각 6시 30분에 열립니다 — 표의 숫자는 월요일 종가입니다",
  "next_session_en_html": "The market opens <b>this morning at 6:30 Pacific time</b> &mdash; the board shows <b>Tuesday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>오늘 아침 서부 시각 6시 30분</b>에 열립니다 &mdash; 표의 숫자는 <b>화요일 종가</b>입니다",
- "today_en": "The votes were counted overnight: <b>the Democrats won control of both houses of Congress</b>. Stock futures fell while the counting ran, then swung higher by morning — the <b>Dow</b> side up more than 1%, the technology side barely above flat — and the fear gauge eased toward <b>18</b>. The soft spot is chips: <b>AMD</b>'s late-trading jump drained away overnight, and <b>Nvidia</b> and the chip funds point lower before the open. Tonight, after the close, come <b>Qualcomm</b>'s results and <b>Costco</b>'s October sales; Friday morning brings the jobs report.",
- "today_ko": "밤사이 개표가 끝났습니다. <b>민주당이 상·하원 모두를 차지했습니다</b>. 주가지수 선물은 개표 중에는 내렸다가 아침까지 상승으로 돌아섰고 — <b>다우</b> 쪽은 1% 넘게, 기술주 쪽은 간신히 보합 위 — 공포 지수는 <b>18</b> 부근으로 내려왔습니다. 약한 곳은 반도체입니다. <b>AMD</b>의 시간외 급등은 밤사이 사라졌고, <b>Nvidia</b>와 반도체 펀드들은 개장 전 약세입니다. 오늘 밤 장 마감 뒤에는 <b>Qualcomm</b> 실적과 <b>Costco</b>의 10월 매출이 나오고, 금요일 아침에는 고용 보고서가 나옵니다.",
+ "today_en": "The day after the election, the market is having its strongest day in many months: the <b>Dow</b> is up almost 3% this afternoon, and the fear gauge has sunk under <b>17</b>. The day's reporting ties the rally to the election being settled, and oil is down about <b>8%</b> on hopes the result pushes the Iran war toward an end. Chips are sitting the party out — <b>Nvidia</b> is down about 1%, the chip fund <b>SOXL</b> is down about 8%, and even <b>AMD</b> has given back most of its morning jump after strong results. The Nasdaq-100 fund <b>QQQ</b> is up about 1.5%, and <b>Costco</b> is up almost 3%. After today's close come <b>Qualcomm</b>'s results and <b>Costco</b>'s October sales, and Friday morning brings the jobs report.",
+ "today_ko": "선거 다음 날, 시장은 여러 달 만에 가장 힘찬 하루를 보내고 있습니다. 오늘 오후 <b>다우</b> 지수는 3% 가까이 올랐고, 공포 지수는 <b>17</b> 아래로 내려왔습니다. 오늘 보도들은 이 랠리를 선거가 끝났다는 사실과 연결하고, 유가는 선거 결과가 이란 전쟁을 끝내는 쪽으로 민다는 기대에 약 <b>8%</b> 내렸습니다. 반도체는 이 잔치에서 빠져 있습니다 — <b>Nvidia</b>는 약 1%, 반도체 펀드 <b>SOXL</b>은 약 8% 내렸고, 좋은 실적을 낸 <b>AMD</b>조차 아침의 급등을 대부분 반납했습니다. 나스닥 100 펀드 <b>QQQ</b>는 약 1.5% 올랐고, <b>Costco</b>는 3% 가까이 올랐습니다. 오늘 장 마감 뒤에는 <b>Qualcomm</b> 실적과 <b>Costco</b>의 10월 매출이 나오고, 금요일 아침에는 고용 보고서가 나옵니다.",
  "today_date": "2026-11-04",
  "pancho_am": {
   "date": "2026-11-04",
@@ -748,9 +748,9 @@
   "ko": "선거 결과가 나오자 시장이 한숨 돌렸어요. AMD의 급등은 벌써 사라졌어요."
  },
  "pancho_pm": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "pos": "",
-  "en": "The beaten-up chip names did today's climbing. And AMD's numbers after the close came in better than expected.",
-  "ko": "오늘은 많이 빠졌던 반도체가 올랐어요. 장 마감 뒤 AMD 숫자도 기대보다 잘 나왔어요."
+  "en": "Once the election was out of the way, the market climbed all morning. Only the chips stayed behind.",
+  "ko": "선거가 끝나자 시장이 오전 내내 올랐어요. 반도체만 뒤에 남았어요."
  }
 }
