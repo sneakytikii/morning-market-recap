@@ -720,8 +720,8 @@
  "next_session_ko": "시장은 오늘 아침 서부 시각 6시 30분에 열렸습니다 — 표의 숫자는 수요일 종가입니다",
  "next_session_en_html": "The market opened <b>this morning at 6:30 Pacific time</b> &mdash; the board shows <b>Wednesday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>오늘 아침 서부 시각 6시 30분</b>에 열렸습니다 &mdash; 표의 숫자는 <b>수요일 종가</b>입니다",
- "today_en": "The market opened lower this morning and the chip shares are in a rout. After <b>Qualcomm</b>'s disappointing forecast and a worldwide chip slide overnight, <b>Nvidia</b> is down about 7%, the tripled chip fund <b>SOXL</b> has lost about a quarter, and the <b>S&amp;P 500</b> is down about 2% — the fear gauge has jumped from under 17 back above 22. <b>Costco</b> is the refuge again: up about 3% on its strong October sales, climbing toward its May record. The morning's one economic number was firm — new unemployment claims fell to a fifteen-week low. The bigger number comes tomorrow at 5:30 in the morning Pacific time: the October jobs report, which feeds straight into the December rate question.",
- "today_ko": "오늘 아침 시장은 하락 출발했고, 반도체 주식들은 급락 중입니다. <b>Qualcomm</b>의 실망스러운 전망과 밤사이 전 세계 반도체 하락 뒤, <b>Nvidia</b>는 약 7%, 3배 반도체 펀드 <b>SOXL</b>은 약 4분의 1을 잃었고, <b>S&amp;P 500</b>은 약 2% 내렸습니다 — 공포 지수는 17 아래에서 22 위로 뛰었습니다. <b>Costco</b>는 다시 피난처입니다. 강한 10월 매출에 약 3% 올라 5월의 기록을 향해 오르고 있습니다. 아침의 경제 지표 하나는 단단했습니다 — 신규 실업수당 청구가 15주 만에 최저로 내렸습니다. 더 큰 숫자는 내일 서부 시각 아침 5시 30분에 나옵니다. 12월 금리 질문으로 곧장 흘러드는 10월 고용 보고서입니다.",
+ "today_en": "What began as a chip selloff this morning has deepened all day: yesterday's post-election rally is gone, and the day's coverage calls this the market's sharpest fall since April 2025. The reporting ties it to <b>Qualcomm</b>'s weak forecast and to worry that the new Democratic Congress will slow the build-out of AI data centers — the fear gauge has had its biggest one-day jump in over two years. Midway through the trading day, <b>Nvidia</b> is down about 9%, the tripled chip fund <b>SOXL</b> has lost about a third, the Nasdaq-100 fund <b>QQQ</b> is down about 6%, and the <b>S&amp;P 500</b> about 4%. <b>Costco</b> is the one still standing — up about 2% on its strong October sales, though less than this morning. Tomorrow at 5:30 in the morning Pacific time comes the October jobs report, which feeds straight into the December rate question.",
+ "today_ko": "오늘 아침 반도체에서 시작된 매도세가 하루 종일 깊어졌습니다. 어제 선거 뒤의 랠리는 사라졌고, 오늘 보도들은 이를 2025년 4월 이후 시장의 가장 가파른 하락이라고 부릅니다. 보도들은 이 하락을 <b>Qualcomm</b>의 실망스러운 전망과, 새 민주당 의회가 AI 데이터센터 건설을 늦출 것이라는 걱정과 연결합니다 — 공포 지수는 2년여 만에 가장 크게 뛰었습니다. 장중 현재 <b>Nvidia</b>는 약 9% 내렸고, 3배 반도체 펀드 <b>SOXL</b>은 약 3분의 1을 잃었으며, 나스닥 100 펀드 <b>QQQ</b>는 약 6%, <b>S&amp;P 500</b>은 약 4% 내렸습니다. <b>Costco</b>만 버티고 있습니다 — 강한 10월 매출에 여전히 약 2% 올라 있지만, 아침보다는 줄었습니다. 내일 서부 시각 아침 5시 30분에는 10월 고용 보고서가 나옵니다 — 12월 금리 질문으로 곧장 흘러드는 숫자입니다.",
  "today_date": "2026-11-05",
  "pancho_am": {
   "date": "2026-11-05",
@@ -730,9 +730,9 @@
   "ko": "반도체에 거친 아침이에요. SOXL은 세 배로 느껴요. 오늘은 Costco가 차분한 구석이에요."
  },
  "pancho_pm": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "pos": "",
-  "en": "Once the election was out of the way, the market climbed all morning. Only the chips stayed behind.",
-  "ko": "선거가 끝나자 시장이 오전 내내 올랐어요. 반도체만 뒤에 남았어요."
+  "en": "Yesterday's big jump is already gone. The selling just kept getting heavier all day.",
+  "ko": "어제 올랐던 게 하루 만에 다 사라졌어요. 파는 쪽이 점점 거세졌어요."
  }
 }
