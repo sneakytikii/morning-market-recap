@@ -720,8 +720,8 @@
  "next_session_ko": "시장은 오늘 아침 서부 시각 6시 30분에 열립니다 — 표의 숫자는 목요일 종가입니다",
  "next_session_en_html": "The market opens <b>this morning at 6:30 Pacific time</b> &mdash; the board shows <b>Thursday&rsquo;s closing prices</b>",
  "next_session_ko_html": "시장은 <b>오늘 아침 서부 시각 6시 30분</b>에 열립니다 &mdash; 표의 숫자는 <b>목요일 종가</b>입니다",
- "today_en": "<b>The morning after is pointing two ways at once.</b> Before the bell the chip shares are bouncing hard — <b>Nvidia</b> about <b>4%</b> higher, <b>AMD</b> and <b>Micron</b> about <b>7%</b>, and Nasdaq futures up more than <b>1%</b> — while Dow futures are down about <b>1%</b> and the steady names that sheltered money yesterday, <b>Costco</b> among them, are giving a little back. The day's main event lands at <b>5:30 in the morning Pacific time</b>, before the open: the October jobs report, with forecasters looking for somewhere near <b>55,000 to 65,000</b> new jobs and unemployment near <b>4.2%</b>. A Fed official speaks a few hours after it, and a first reading on how consumers feel follows at 7 Pacific. What to watch is whether that chip bounce is still there an hour into trading — yesterday <b>Costco</b> was up more than 3% in the morning and finished up 1.83%, which is how quickly these moves turn.",
- "today_ko": "<b>하루 뒤의 아침이 두 방향을 한꺼번에 가리키고 있습니다.</b> 개장 전 반도체 주식은 세게 되오르고 있습니다 — <b>Nvidia</b>가 약 <b>4%</b>, <b>AMD</b>와 <b>Micron</b>이 약 <b>7%</b> 위이고, 나스닥 선물은 <b>1%</b> 넘게 올라 있습니다 — 반면 다우 선물은 약 <b>1%</b> 내려 있고, 어제 돈을 숨겨 줬던 차분한 종목들, 그중 <b>Costco</b>도 조금 되내주고 있습니다. 오늘의 주된 일정은 개장 전 <b>서부 시각 아침 5시 30분</b>에 도착합니다. 10월 고용 보고서이고, 예상은 새 일자리 <b>5만 5천에서 6만 5천 개</b> 부근, 실업률 <b>4.2%</b> 부근입니다. 연준 위원 한 명이 그 몇 시간 뒤에 연설하고, 소비자 심리의 첫 집계는 서부 시각 7시에 나옵니다. 지켜볼 것은 그 반도체 반등이 거래 시작 한 시간 뒤에도 남아 있는가입니다 — 어제 <b>Costco</b>는 오전에 3% 넘게 올랐다가 1.83% 상승으로 마쳤는데, 이런 움직임이 얼마나 빨리 돌아서는지를 보여 줍니다.",
+ "today_en": "<b>Yesterday's heavy fall is being bought back, though far less eagerly than at the open.</b> Chip shares jumped first thing — the tripled chip fund <b>SOXL</b> opened about <b>19%</b> higher and <b>Nvidia</b> more than <b>5%</b> — and both have since given back well over half of that, leaving SOXL up about <b>8%</b> and Nvidia about <b>3%</b> by late morning Pacific time. <b>QQQ</b> is up about <b>1%</b> and the <b>S&amp;P 500</b> about half a per cent, while the Dow has slipped back below where it closed yesterday and <b>Costco</b> — the only one of your five that rose yesterday — is a shade lower. The October jobs report, out before the open at <b>5:30 in the morning Pacific time</b>, came in far stronger than expected, with <b>165,000</b> new jobs against a forecast near <b>65,000</b> and unemployment down to <b>4.1%</b>; interest rates in the bond market rose on the news. Even after today's bounce <b>QQQ</b> is down about <b>5%</b> since last Friday, having fallen in each of the last three weeks, and the next inflation report lands Tuesday morning.",
+ "today_ko": "<b>어제의 큰 하락을 되사들이고 있지만, 개장 때만큼 열심이지는 않습니다.</b> 반도체 주식이 장 시작과 함께 뛰었습니다 — 3배 반도체 펀드 <b>SOXL</b>이 약 <b>19%</b> 높게, <b>Nvidia</b>가 <b>5%</b> 넘게 높게 출발했습니다 — 그러나 둘 다 그 상승분의 절반을 훌쩍 넘게 되내줘, 서부 시각 늦은 오전에는 SOXL이 약 <b>8%</b>, Nvidia가 약 <b>3%</b> 상승에 머물고 있습니다. <b>QQQ</b>는 약 <b>1%</b>, <b>S&amp;P 500</b>은 0.5%쯤 올라 있고, 다우는 어제 종가 아래로 되밀렸으며, 어제 보유 다섯 중 유일하게 올랐던 <b>Costco</b>는 조금 내려 있습니다. 개장 전 <b>서부 시각 아침 5시 30분</b>에 나온 10월 고용 보고서는 예상보다 훨씬 강했습니다. 새 일자리가 <b>16만 5천 개</b>로 예상치 약 <b>6만 5천 개</b>를 크게 넘었고 실업률은 <b>4.1%</b>로 내렸으며, 채권 시장 금리는 이 소식에 올랐습니다. 오늘의 반등을 더해도 <b>QQQ</b>는 지난 금요일보다 약 <b>5%</b> 낮고, 최근 3주 내내 내렸습니다. 다음 물가 보고서는 화요일 아침에 나옵니다.",
  "today_date": "2026-11-06",
  "pancho_am": {
   "date": "2026-11-06",
@@ -730,9 +730,9 @@
   "ko": "개장 전엔 반도체가 되오르고 있어요. 그래도 고용 지표가 먼저예요. 아직 정해진 건 없어요."
  },
  "pancho_pm": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "pos": "",
-  "en": "Yesterday's big jump is already gone. The selling just kept getting heavier all day.",
-  "ko": "어제 올랐던 게 하루 만에 다 사라졌어요. 파는 쪽이 점점 거세졌어요."
+  "en": "The chips shot up at the open, then cooled off all morning. The rush to buy did not last.",
+  "ko": "반도체가 개장에 솟았다가 오전 내내 식었어요. 사려는 열기가 오래가지 않았네요."
  }
 }
