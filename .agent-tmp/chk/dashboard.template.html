@@ -1,0 +1,1562 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Market Recap · 아침 시장 브리핑 — <!--F:market.as_of--><!--/F--></title>
+<script>
+  // Runs before the body parses, so the wrong language never flashes on screen.
+  (function () {
+    var l = null;
+    try { l = localStorage.getItem("mmr-lang"); } catch (e) {}
+    if (l !== "en" && l !== "ko") {
+      l = (navigator.language || "en").toLowerCase().indexOf("ko") === 0 ? "ko" : "en";
+    }
+    document.documentElement.setAttribute("data-lang", l);
+    document.documentElement.setAttribute("lang", l);
+  })();
+</script>
+<style>
+  :root {
+    --bg:#F7F8F9; --surface:#FFFFFF; --sunken:#EDEFF2;
+    --ink:#10151B; --ink-2:#3C4653; --ink-3:#56616F;
+    --rule:#D5D9DE; --rule-2:#AEB6C0; --rule-heavy:#10151B;
+    --accent:#1F4E79; --accent-soft:#E3EBF3;
+    --brass:#75530F; --brass-soft:#F6EEDA;
+    --up:#06603E; --up-soft:#DCEDE5;
+    --down:#A32A20; --down-soft:#F9E1DE;
+    --sh:0 1px 2px rgba(16,21,27,.05);
+    --float-sh:0 8px 26px rgba(16,21,27,.20);
+    --sprite-sh:0 4px 8px rgba(16,21,27,.24);
+    --f-mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+    --z-cue:80;
+  }
+  @media (prefers-color-scheme:dark) {
+    :root {
+      --bg:#0C1116; --surface:#141A21; --sunken:#10161C;
+      --ink:#F1F4F7; --ink-2:#BAC3CD; --ink-3:#8D98A5;
+      --rule:#262E37; --rule-2:#3D4854; --rule-heavy:#8D98A5;
+      --accent:#8FB8E8; --accent-soft:#17222E;
+      --brass:#D9AF61; --brass-soft:#241E12;
+      --up:#4ECB99; --up-soft:#0E241C;
+      --down:#F0897C; --down-soft:#2A1714;
+      --sh:0 1px 2px rgba(0,0,0,.3);
+      --float-sh:0 8px 26px rgba(0,0,0,.6);
+      --sprite-sh:0 4px 8px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#0C1116; --surface:#141A21; --sunken:#10161C;
+    --ink:#F1F4F7; --ink-2:#BAC3CD; --ink-3:#8D98A5;
+    --rule:#262E37; --rule-2:#3D4854; --rule-heavy:#8D98A5;
+    --accent:#8FB8E8; --accent-soft:#17222E;
+    --brass:#D9AF61; --brass-soft:#241E12;
+    --up:#4ECB99; --up-soft:#0E241C;
+    --down:#F0897C; --down-soft:#2A1714;
+    --sh:0 1px 2px rgba(0,0,0,.3);
+    --float-sh:0 8px 26px rgba(0,0,0,.6);
+    --sprite-sh:0 4px 8px rgba(0,0,0,.55);
+  }
+  :root[data-theme="light"] {
+    --bg:#F7F8F9; --surface:#FFFFFF; --sunken:#EDEFF2;
+    --ink:#10151B; --ink-2:#3C4653; --ink-3:#56616F;
+    --rule:#D5D9DE; --rule-2:#AEB6C0; --rule-heavy:#10151B;
+    --accent:#1F4E79; --accent-soft:#E3EBF3;
+    --brass:#75530F; --brass-soft:#F6EEDA;
+    --up:#06603E; --up-soft:#DCEDE5;
+    --down:#A32A20; --down-soft:#F9E1DE;
+    --sh:0 1px 2px rgba(16,21,27,.05);
+    --float-sh:0 8px 26px rgba(16,21,27,.20);
+    --sprite-sh:0 4px 8px rgba(16,21,27,.24);
+  }
+
+  /* ---------- per-language typography ---------- */
+  :root[data-lang="en"] {
+    --f-serif:"Iowan Old Style","Source Serif 4",Charter,Georgia,"Times New Roman",serif;
+    --f-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --lh:1.6; --brk:normal; --h-track:-.015em; --h-lh:1.05;
+  }
+  :root[data-lang="ko"] {
+    --f-serif:"Iowan Old Style","Source Serif 4",Charter,Georgia,AppleMyungjo,"Nanum Myeongjo","Apple SD Gothic Neo",serif;
+    --f-sans:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+    --lh:1.75; --brk:keep-all; --h-track:-.005em; --h-lh:1.2;
+  }
+
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--f-sans); font-size:18px; line-height:var(--lh);
+    word-break:var(--brk); overflow-wrap:break-word;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:1220px; margin:0 auto; padding:0 26px; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  :focus-visible { outline:3px solid var(--accent); outline-offset:2px; border-radius:3px; }
+  .up { color:var(--up); } .dn { color:var(--down); } .fl { color:var(--ink-2); }
+  h1,h2,h3 { word-break:var(--brk); }
+
+  /* ---------- masthead ---------- */
+  .masthead { border-bottom:4px solid var(--rule-heavy); }
+  .masthead .inner { max-width:1220px; margin:0 auto; padding:30px 26px 14px; }
+  .mast-row { display:flex; align-items:flex-start; justify-content:space-between; gap:26px; margin-bottom:12px; }
+  .masthead h1 {
+    font-family:var(--f-serif); font-size:44px; font-weight:600;
+    letter-spacing:var(--h-track); margin:0; line-height:var(--h-lh);
+  }
+  /* A cold reader — the person this gets sent to — is told what the page is before
+     anything else. Without it the first thing they meet is a summary of a thing that
+     has never been named. */
+  .mast-t { flex:1 1 auto; min-width:0; }
+  .dek { margin:9px 0 0; font-size:18px; color:var(--ink-2); max-width:44em; }
+  .dog-mast {
+    width:80px; height:80px; flex:0 0 auto; display:block; margin-bottom:-4px;
+    image-rendering:crisp-edges; image-rendering:pixelated;
+    filter:drop-shadow(var(--sprite-sh));
+    animation:bob 3.6s ease-in-out infinite; transform-origin:50% 100%;
+  }
+  .dateline {
+    display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px;
+    padding-top:12px; border-top:1px solid var(--rule);
+    font-size:15px; font-weight:700; color:var(--ink-3);
+  }
+  :root[data-lang="en"] .dateline { letter-spacing:.08em; text-transform:uppercase; font-size:13.5px; }
+  .dateline .status { display:inline-flex; align-items:center; gap:8px; color:var(--ink-2); }
+  .dateline .status::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--ink-3); }
+  .dateline .norm { text-transform:none; letter-spacing:0; font-weight:500; font-size:15px; color:var(--ink-2); }
+  .dateline .norm b { color:var(--ink); font-weight:700; }
+
+  /* ---------- language switch ---------- */
+  .langsw { margin-left:auto; display:inline-flex; border:1px solid var(--rule-2); border-radius:100px; overflow:hidden; background:var(--surface); }
+  .langsw button {
+    appearance:none; background:none; border:0; cursor:pointer; padding:9px 18px; min-height:44px;
+    font-family:var(--f-sans); font-size:15px; font-weight:700; color:var(--ink-2);
+    letter-spacing:0; text-transform:none; transition:background .15s ease, color .15s ease;
+  }
+  .langsw button + button { border-left:1px solid var(--rule-2); }
+  .langsw button:hover { color:var(--ink); background:var(--sunken); }
+  .langsw button[aria-pressed="true"] { background:var(--accent); color:var(--bg); }
+  .langsw button:focus-visible { outline-offset:-3px; }
+  /* On the pressed button the ring would otherwise be accent-on-accent — invisible. */
+  .langsw button[aria-pressed="true"]:focus-visible { outline-color:var(--bg); }
+
+  /* The page states its own age. A stale page that says so is honest; one that looks
+     current while showing week-old numbers is the failure this guards against. */
+  .fresh { font-weight:700; color:var(--ink-3); }
+  .fresh.stale { color:var(--down); }
+
+  /* Shown only when the reader's own clock says this page is older than the brief that
+     should exist by now. A failed morning run cannot rebuild the page to announce
+     itself, so the reader's device is the only witness left. Deliberately plain and
+     calm: it tells him what he is looking at, it does not alarm him about his money. */
+  .stalebar {
+    margin:0 0 14px; padding:12px 14px; border:2px solid var(--down); border-radius:4px;
+    font-family:var(--f-sans); font-size:17px; line-height:1.5; color:var(--ink);
+    background:var(--surface);
+  }
+  .stalebar b { color:var(--down); }
+
+  /* ---------- lede ---------- */
+  .lede { padding:30px 0 26px; border-bottom:1px solid var(--rule); }
+  .lede h2 { font-family:var(--f-serif); font-size:31px; font-weight:600; margin:0 0 16px; letter-spacing:var(--h-track); }
+  .lede-body { columns:2; column-gap:44px; column-rule:1px solid var(--rule); }
+  .lede p { margin:0 0 16px; font-size:18.5px; color:var(--ink-2); break-inside:avoid; }
+  .lede b { color:var(--ink); font-weight:700; }
+  .lede p.first::first-letter {
+    font-family:var(--f-serif); float:left; font-size:58px; line-height:.9;
+    padding:8px 12px 0 0; font-weight:600; color:var(--ink);
+  }
+
+  /* The Today block — the day the reader is IN, leading the section. Prose is written
+     by the morning run and rewritten by the early-afternoon run; the live line inside
+     it fills from the quote feed and hides when there is no fresh data, so the page
+     never pretends. Yesterday's story follows below under its own context label. */
+  .today {
+    margin:0 0 24px; padding:14px 0 12px;
+    border-top:2px solid var(--rule-heavy); border-bottom:1px solid var(--rule);
+  }
+  .today-label {
+    font-family:var(--f-sans); font-weight:800; font-size:15px; color:var(--ink);
+    margin:0 0 8px;
+  }
+  .today-text { margin:0; font-size:19px; color:var(--ink-2); }
+  .today-text b { color:var(--ink); font-weight:700; }
+  .todaybar { margin:10px 0 0; font-size:16.5px; color:var(--ink-2); }
+  .todaybar .tlab {
+    font-family:var(--f-sans); font-weight:800; color:var(--ink); margin-right:10px;
+  }
+  .todaybar .tq { white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .todaybar .tq.up { color:var(--up); } .todaybar .tq.dn { color:var(--down); }
+  .todaybar .tmeta { color:var(--ink-3); font-size:15px; }
+  .ctx-label {
+    font-family:var(--f-sans); font-weight:700; font-size:15px; color:var(--ink-3);
+    margin:0 0 12px;
+  }
+
+  /* ---------- index strip ---------- */
+  .strip { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule); }
+  .strip > div { padding:16px 18px; border-left:1px solid var(--rule); }
+  .strip > div:first-child { border-left:0; padding-left:0; }
+  .strip .k { font-size:14px; color:var(--ink-3); font-weight:700; }
+  :root[data-lang="en"] .strip .k { font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
+  .strip .v { font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:23px; font-weight:600; margin-top:4px; letter-spacing:-.03em; }
+  .strip .c { font-size:15px; font-weight:700; }
+  /* Bond rates rose. Showing them in the page's own "went down" red taught the exact
+     opposite of what happened, so they get the caution colour and words that say it. */
+  .strip .c.cau { color:var(--brass); }
+
+  /* ---------- sections ---------- */
+  .sec { margin:38px 0 0; }
+  .sec h2 { font-family:var(--f-serif); font-size:30px; font-weight:600; margin:0 0 4px; letter-spacing:var(--h-track); }
+  .sec .hint { font-size:18px; color:var(--ink-2); margin:0 0 18px; }
+
+  /* Today's live move, shown under the price while quotes stream. */
+  .lchg { display:block; font-family:var(--f-sans); font-size:13.5px; font-weight:700; margin-top:2px; }
+  .lchg.up { color:var(--up); } .lchg.dn { color:var(--down); }
+
+  /* ---------- board ---------- */
+  table.board { width:100%; border-collapse:collapse; }
+  .board thead th {
+    text-align:right; font-size:14px; color:var(--ink-3); font-weight:700;
+    padding:0 16px 10px; border-bottom:2px solid var(--rule-heavy); vertical-align:bottom;
+    white-space:nowrap;
+  }
+  /* Column plan: name breathes, figures sit tight and right, the take gets real room.
+     Numeric cells never wrap — the figure IS the cell. */
+  .board td:not(.l) { white-space:nowrap; }
+  /* The take column is centered — header and chips together. */
+  .board thead th:last-child, .board td:last-child { text-align:center; }
+  .board col.c-name { width:24%; }
+  .board col.c-price { width:13%; }
+  .board col.c-day { width:12%; }
+  .board col.c-week { width:13%; }
+  .board col.c-dd { width:13%; }
+  .board col.c-take { width:25%; }
+  :root[data-lang="en"] .board thead th { font-size:13px; letter-spacing:.1em; text-transform:uppercase; }
+  .board thead th.l { text-align:left; padding-left:0; }
+  /* The take header carries class="l" (left) — this out-specifics it so the header
+     centers WITH its chips. This was the rule that kept beating the centering. */
+  .board thead th.l:last-child { text-align:center; padding-left:16px; }
+  .board thead th:last-child { padding-right:16px; }
+  .board tbody tr { border-bottom:1px solid var(--rule); cursor:pointer; transition:background .15s ease; }
+  .board tbody tr:hover { background:var(--sunken); }
+  .board tbody tr[aria-current="true"] { background:var(--accent-soft); }
+  .board td {
+    padding:17px 16px; text-align:right; font-family:var(--f-mono);
+    font-variant-numeric:tabular-nums; font-size:19px; font-weight:600;
+  }
+  .board td.l { text-align:left; padding-left:0; }
+  .board td.l:last-child { text-align:center; }
+  .board td:last-child { padding-right:16px; }
+  .board .tkr { font-family:var(--f-serif); font-size:25px; font-weight:600; }
+  .board .co { font-family:var(--f-sans); font-size:15px; font-weight:500; color:var(--ink-2); font-variant-numeric:normal; margin-top:2px; line-height:1.4; }
+  .arw { font-family:var(--f-sans); }
+
+  .chip { display:inline-block; padding:5px 13px; border-radius:3px; font-family:var(--f-sans); font-size:14.5px; font-weight:700; }
+  .c-neu { background:var(--accent-soft); color:var(--accent); }
+  .c-cau { background:var(--brass-soft); color:var(--brass); }
+  .c-risk { background:var(--down-soft); color:var(--down); }
+  /* On the highlighted row the row colour IS accent-soft, so a c-neu chip dissolves
+     into it and its text looks indented and ragged against the other rows' chips. */
+  tr[aria-current="true"] .chip.c-neu { background:var(--surface); }
+
+  .key { display:flex; flex-wrap:wrap; gap:8px 26px; padding:14px 0 0; font-size:16px; color:var(--ink-2); }
+  .key b { color:var(--ink); }
+
+  /* ---------- layout ---------- */
+  .cols { display:grid; grid-template-columns:1fr 336px; gap:34px; margin:34px 0 0; align-items:start; }
+  .detail { border:1px solid var(--rule); border-radius:4px; background:var(--surface); overflow:hidden; box-shadow:var(--sh); }
+  .tabs { display:flex; background:var(--sunken); border-bottom:1px solid var(--rule); }
+  .tabs button {
+    flex:1 1 0; appearance:none; background:none; border:0; cursor:pointer;
+    padding:16px 8px; min-height:58px; font-family:var(--f-mono); font-size:18px;
+    font-weight:700; color:var(--ink-2); border-bottom:4px solid transparent;
+    transition:color .15s ease, background .15s ease;
+  }
+  .tabs button:hover { color:var(--ink); background:var(--surface); }
+  .tabs button[aria-selected="true"] { color:var(--accent); border-bottom-color:var(--accent); background:var(--surface); }
+  .tabs button:focus-visible { outline-offset:-4px; }
+  /* .detail has overflow:hidden, which would clip an outward focus ring. */
+  .panel:focus-visible { outline-offset:-4px; }
+
+  .panel { padding:26px 28px 28px; }
+  .panel[hidden] { display:none; }
+  .p-head { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; padding-bottom:14px; border-bottom:2px solid var(--rule-heavy); }
+  .p-head h2 { font-family:var(--f-serif); font-size:28px; font-weight:600; margin:0; letter-spacing:var(--h-track); }
+  .p-head .px { font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:25px; font-weight:600; margin-left:auto; letter-spacing:-.02em; }
+
+  .plain { font-size:19px; color:var(--ink-2); margin:18px 0 20px; max-width:38em; }
+  .plain b { color:var(--ink); font-weight:700; }
+
+  .facts { display:flex; flex-wrap:wrap; gap:0; margin-bottom:24px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .fact { font-size:16.5px; padding:11px 20px 11px 0; margin-right:20px; border-right:1px solid var(--rule); font-weight:600; line-height:1.5; }
+  .fact:last-child { border-right:0; margin-right:0; }
+  .fact span { display:block; color:var(--ink-3); font-weight:600; font-size:13.5px; }
+
+  .lab { font-family:var(--f-serif); font-size:21px; font-weight:600; color:var(--ink); margin:0 0 10px; }
+  ul.nw { list-style:none; margin:0 0 26px; padding:0; }
+  ul.nw li { display:flex; gap:18px; padding:12px 0; border-bottom:1px solid var(--rule); font-size:17.5px; }
+  ul.nw li:last-child { border-bottom:0; }
+  ul.nw .dt { flex:0 0 82px; font-family:var(--f-mono); font-size:14px; font-weight:700; color:var(--ink-3); padding-top:5px; }
+  ul.nw .tx { color:var(--ink-2); }
+  ul.nw .tx b { color:var(--ink); font-weight:700; }
+
+  .bb { display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:22px; border-top:1px solid var(--rule); }
+  .bx { padding:16px 22px 16px 0; }
+  .bx + .bx { padding-left:26px; border-left:1px solid var(--rule); padding-right:0; }
+  .bx h3 { font-family:var(--f-serif); margin:0 0 6px; font-size:19px; font-weight:600; }
+  .bull h3 { color:var(--up); } .bear h3 { color:var(--down); }
+  .bx p { margin:0; color:var(--ink-2); font-size:17px; }
+
+  .verdict { font-size:18px; color:var(--ink-2); border-top:2px solid var(--rule-heavy); padding-top:16px; }
+  .verdict b { color:var(--ink); font-weight:700; }
+
+  /* ---------- Pancho ---------- */
+  .dog-strip { display:flex; align-items:flex-end; gap:16px; padding:18px 28px; background:var(--sunken); border-top:1px solid var(--rule); }
+  .dog-btn { appearance:none; background:none; border:0; padding:0; cursor:pointer; line-height:0; border-radius:8px; flex:0 0 auto; }
+  .dog-cv { width:64px; height:64px; display:block; image-rendering:crisp-edges; image-rendering:pixelated;
+            filter:drop-shadow(var(--sprite-sh)); animation:bob 3.6s ease-in-out infinite; transform-origin:50% 100%; }
+  .dog-btn:hover .dog-cv { animation:hop .5s ease-in-out; }
+  .bub {
+    position:relative; flex:0 1 auto; max-width:44em; background:var(--surface);
+    border:1px solid var(--rule-2); border-radius:10px; padding:13px 17px;
+    font-size:17px; color:var(--ink); box-shadow:var(--sh);
+    transition:opacity .18s ease, transform .18s ease;
+  }
+  .bub.hide { opacity:0; transform:translateY(5px); pointer-events:none; }
+  .bub .who { display:block; font-size:13px; font-weight:700; color:var(--accent); margin-bottom:3px; }
+  :root[data-lang="en"] .bub .who { font-size:13px; letter-spacing:.12em; text-transform:uppercase; }
+  .bub .tl { position:absolute; left:-7px; bottom:20px; width:12px; height:12px; background:var(--surface);
+             border-left:1px solid var(--rule-2); border-bottom:1px solid var(--rule-2); transform:rotate(45deg); }
+  @keyframes bob { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-3px);} }
+  @keyframes hop { 0%{transform:translateY(0);} 30%{transform:translateY(-9px) rotate(-4deg);} 100%{transform:translateY(0);} }
+
+  .dog-cue {
+    position:fixed; right:24px; bottom:24px; z-index:var(--z-cue);
+    display:flex; align-items:center; gap:10px;
+    background:var(--surface); border:1px solid var(--rule-2); border-radius:100px;
+    padding:8px 20px 8px 10px; min-height:56px; font-family:var(--f-sans);
+    font-size:16.5px; font-weight:700; color:var(--ink-2); cursor:pointer;
+    box-shadow:var(--float-sh); animation:cue-in .2s ease-out;
+  }
+  .dog-cue[hidden] { display:none; }
+  .dog-cue:hover { color:var(--ink); border-color:var(--ink-3); }
+  .cue-cv { width:38px; height:38px; display:block; image-rendering:crisp-edges; image-rendering:pixelated; }
+  @keyframes cue-in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+
+  /* ---------- rail ---------- */
+  .rail { display:flex; flex-direction:column; gap:30px; position:sticky; top:22px; }
+  .block h3 { font-family:var(--f-serif); font-size:22px; font-weight:600; margin:0 0 12px; padding-bottom:9px; border-bottom:2px solid var(--rule-heavy); }
+  .block p { margin:0 0 13px; font-size:16.5px; color:var(--ink-2); }
+  .block b { color:var(--ink); font-weight:700; }
+  .notice { border:1px solid var(--brass); border-radius:4px; background:var(--brass-soft); padding:20px 22px; }
+  .notice h3 { color:var(--brass); border-bottom-color:var(--brass); }
+  .ladder { margin:14px 0; border-top:1px solid var(--rule); }
+  .ladder div { display:flex; justify-content:space-between; gap:12px; align-items:baseline; padding:8px 0; border-bottom:1px solid var(--rule);
+                font-family:var(--f-mono); font-size:16px; font-weight:700; }
+  .ladder span { font-family:var(--f-sans); font-size:15px; font-weight:500; color:var(--ink-2); }
+  .ev { display:grid; grid-template-columns:112px 1fr; gap:14px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:16.5px; align-items:baseline; }
+  .ev:last-child { border-bottom:0; }
+  .ev .w { font-family:var(--f-mono); font-size:14.5px; font-weight:700; color:var(--ink-2); }
+  .ev .e b { font-weight:700; display:block; }
+  .ev .e span { color:var(--ink-2); font-size:15.5px; }
+  .ev.hot .w { color:var(--down); }
+
+  /* ---------- the record: what the President said about companies ---------- */
+  .lg-head { display:flex; align-items:flex-start; gap:18px; }
+  .lg-head > div { flex:1 1 auto; min-width:0; }
+  .potus {
+    width:64px; height:64px; flex:0 0 auto; display:block; margin-top:2px;
+    image-rendering:crisp-edges; image-rendering:pixelated;
+    filter:drop-shadow(var(--sprite-sh));
+  }
+
+  /* The reading line answers the only question most days: is there anything here for me. */
+  .lg-read {
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 22px;
+    padding:16px 0; margin:4px 0 0; border-top:2px solid var(--rule-heavy); border-bottom:1px solid var(--rule);
+  }
+  .lg-read p { margin:0; font-size:18px; font-weight:700; color:var(--ink); flex:1 1 22em; min-width:0; }
+  .lg-fp { display:flex; flex-wrap:wrap; gap:7px; list-style:none; margin:0; padding:0; }
+  .lg-fp li {
+    font-family:var(--f-mono); font-size:14px; font-weight:700; letter-spacing:.02em;
+    padding:5px 10px; border:1px solid var(--ink-3); border-radius:3px; color:var(--ink-3);
+  }
+  .lg-fp li.on { color:var(--brass); border-color:var(--brass); background:var(--brass-soft);
+                 font-weight:800; border-width:2px; padding:4px 9px; }
+  /* Lit vs unlit is a colour difference, so the state is spelled out for screen readers. */
+  .vh { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+  .lg { list-style:none; margin:0; padding:0; }
+  .lg-e { display:grid; grid-template-columns:96px 1fr; gap:0 18px; padding:20px 0; border-bottom:1px solid var(--rule); }
+  .lg-e:last-child { border-bottom:0; }
+  .lg-d { font-family:var(--f-mono); font-size:14.5px; font-weight:700; color:var(--ink-3); padding-top:4px; }
+  .lg-b { min-width:0; }
+  .lg-c { font-family:var(--f-serif); font-size:21px; font-weight:600; margin:0 0 9px; letter-spacing:var(--h-track); }
+  .lg-v {
+    font-family:var(--f-sans); font-size:13px; font-weight:700; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--ink-3); margin-left:10px; white-space:nowrap;
+  }
+  :root[data-lang="ko"] .lg-v { font-size:14px; letter-spacing:0; text-transform:none; }
+
+  /* The verbatim/reported split is enforced by the stylesheet, not by copy discipline:
+     a real quote is serif and carries quote marks; a reported summary never can. */
+  .lg-q {
+    font-family:var(--f-serif); font-size:20.5px; font-weight:600; color:var(--ink);
+    margin:0 0 8px; line-height:1.45; text-indent:-.42em;
+  }
+  .lg-t { font-size:16.5px; color:var(--ink-3); margin:0 0 10px; }
+  .lg-t b { font-weight:700; color:var(--ink-2); }
+  .lg-x { font-size:18px; color:var(--ink-2); margin:0 0 10px; max-width:40em; }
+  .lg-r { font-size:18px; font-weight:700; margin:0 0 10px; color:var(--ink-2); }
+  .lg-r .arw { font-size:15px; }
+  .lg-r.up .arw { color:var(--up); } .lg-r.dn .arw { color:var(--down); }
+  .lg-m { display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; font-size:15.5px; }
+  .lg-touch { font-weight:700; color:var(--brass); }
+  .lg-s { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+  .lg-s:hover { color:var(--ink); }
+  .lg-foot { font-size:16.5px; color:var(--ink-3); margin:16px 0 0; max-width:44em; }
+
+  /* ---------- notes ---------- */
+  /* Deep bottom margin so the floating cue pill can never cover the source links. */
+  details.notes { border-top:2px solid var(--rule-heavy); margin:44px 0 112px; }
+  details.notes > summary {
+    cursor:pointer; padding:18px 0; font-size:17.5px; font-weight:700; color:var(--ink-2);
+    list-style:none; display:flex; align-items:center; gap:11px; min-height:56px;
+  }
+  details.notes > summary::-webkit-details-marker { display:none; }
+  details.notes > summary::before { content:"▸"; color:var(--ink-3); }
+  details.notes[open] > summary::before { content:"▾"; }
+  details.notes > summary:hover { color:var(--ink); }
+  .notes-in { padding-bottom:26px; font-size:16.5px; color:var(--ink-2); }
+  .notes-in h4 { font-family:var(--f-serif); font-size:19px; color:var(--ink); margin:0 0 7px; font-weight:600; }
+  .notes-in p { margin:0 0 18px; max-width:40em; }
+  .notes-in ul { margin:0; padding-left:20px; columns:2; column-gap:36px; }
+  .notes-in li { margin-bottom:6px; break-inside:avoid; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1120px) {
+    .cols { grid-template-columns:1fr; gap:34px; }
+    /* Stacked, the rail would push the overlap warning below the whole detail card —
+       burying the single most important thing on the page. display:contents lets the
+       notice reorder above it; position:static stays as the older-Safari fallback. */
+    .rail { position:static; display:contents; }
+    .rail .notice { order:-1; }
+    .lede-body { columns:1; }
+  }
+  @media (max-width:1020px) {
+    .masthead h1 { font-size:32px; }
+    .dog-mast { width:62px; height:62px; }
+    .strip { grid-template-columns:repeat(3,1fr); }
+    .strip > div { border-left:1px solid var(--rule); padding-left:18px; }
+    .strip > div:nth-child(3n+1) { border-left:0; padding-left:0; }
+    /* The mono index values are unbreakable; at 23px their min-content width blows out
+       the 1fr tracks at 320px. 19px fits and stays above the 18px floor. */
+    .strip .v { font-size:19px; }
+    .bb { grid-template-columns:1fr; }
+    .bx + .bx { padding-left:0; border-left:0; border-top:1px solid var(--rule); }
+    .notes-in ul { columns:1; }
+    .tabs button { font-size:16px; }
+    .board thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    .board, .board tbody, .board tr, .board td { display:block; width:100%; }
+    .board tbody tr { padding:8px 0 12px; }
+    /* flex-start, not space-between: the ▲/▼ span and its number are separate flex
+       items, and space-between stranded the arrow alone in the middle of the row. */
+    .board td { display:flex; justify-content:flex-start; align-items:baseline; gap:6px; padding:8px 0; font-size:18px; }
+    .board td.l:first-child { display:block; padding-top:12px; }
+    :root[data-lang="en"] .board td[data-en]::before { content:attr(data-en); }
+    :root[data-lang="ko"] .board td[data-ko]::before { content:attr(data-ko); }
+    .board td[data-en]::before, .board td[data-ko]::before {
+      font-family:var(--f-sans); font-size:15.5px; font-weight:600; color:var(--ink-2); font-variant-numeric:normal;
+      margin-right:auto;  /* label left, arrow and value stay together on the right */
+    }
+    .facts { display:block; }
+    .fact { display:inline-block; border-right:0; padding:8px 22px 8px 0; }
+    /* Date moves above the entry, mirroring how the board restacks. */
+    /* The restacked board is the heaviest single block on the phone. The exact price
+       is repeated in the panel head two taps away, so drop that line here and save
+       five rows of scroll without losing anything. */
+    .board td[data-en="Price"] { display:none; }
+    /* ...except when live quotes are streaming — then the price row IS the news. */
+    .live-on .board td[data-en="Price"] { display:flex; }
+    .live-on .board td[data-en="Price"]::before { content:"Price · live"; }
+    :root[data-lang="ko"] .live-on .board td[data-en="Price"]::before { content:"시세 · 실시간"; }
+    .lg-e { grid-template-columns:1fr; gap:6px; }
+    .lg-d { padding-top:0; }
+    .potus { width:52px; height:52px; }
+    .lg-c { font-size:20px; }
+    .lg-q { font-size:19px; }
+  }
+  @media (max-width:460px) {
+    .mast-row { gap:14px; }
+    .masthead h1 { font-size:27px; }
+    .dog-mast { width:52px; height:52px; }
+    .langsw button { padding:9px 14px; font-size:14.5px; }
+    .strip { grid-template-columns:repeat(2,1fr); }
+    .strip > div:nth-child(3n+1) { border-left:1px solid var(--rule); padding-left:18px; }
+    .strip > div:nth-child(odd) { border-left:0; padding-left:0; }
+    .panel { padding:20px 18px 22px; }
+    .dog-strip { padding:14px 18px; gap:12px; }
+    .dog-cv { width:56px; height:56px; }
+    .bub { font-size:16px; }
+    .dog-cue { right:12px; bottom:18px; font-size:16px; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    *, .dog-cv, .dog-cue, .dog-mast { transition:none !important; animation:none !important; }
+  }
+
+  /* ---------- language visibility (must win over component display rules) ---------- */
+  :root[data-lang="en"] [data-l="ko"] { display:none !important; }
+  :root[data-lang="ko"] [data-l="en"] { display:none !important; }
+</style>
+
+<header class="masthead">
+  <div class="inner">
+    <div class="mast-row">
+      <div class="mast-t">
+        <h1><span data-l="en">Morning Market Recap</span><span data-l="ko">아침 시장 브리핑</span></h1>
+        <p class="dek">
+          <span data-l="en">A plain-English report on five investments — the US market (SPX), big tech (QQQ), Nvidia, the chip fund SOXL, and Costco. What moved, what it means, and the next dates that matter.</span>
+          <span data-l="ko">다섯 가지 투자 대상을 쉬운 말로 정리한 보고서입니다 — 미국 시장 전체(SPX), 대형 기술주(QQQ), 엔비디아, 반도체 펀드 SOXL, 코스트코. 무엇이 움직였고, 그게 무슨 뜻이며, 다음에 중요한 날짜는 언제인지 알려드립니다.</span>
+        </p>
+      </div>
+      <img class="dog-mast" id="dogMast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByElEQVR42u3cvU3DQBgGYE9AQ4/YINTMkAnSUbIAJRJtqqxBmU1oQRSIHhagCC05KbHs83Hnz88rva3/niKf47O7TkRERJrM1/7h8Lcv23XRpvsjABAgQIAAowABBggQIECAwIACBAgQIEBgQAECBAgQYIlEB+srQIAAAQKMC/h8tzqca+4Q0FqHnk/f9QEIECBAgMsFbB0sFxQgQIAAAQIcC3h9eXHUNLkAadL9AQQIECBAgGNBpwYceoFLb38o4Oz+3AYIECBAgMUe6Ea/kQ//RB4gQIAAARYD/Pl+q1qAAAECBAiwVcDN7U1WAQIECBAgwChDzOfT9mwNMQABAgQIsBXA1ePuqLVv3PuaHi9AgAABAgQ4FjQaYBc9AAECBAjwZIYu7E0vyNy6+JXZAAECBLhgwNpgrx/vWV08KECAAAECNLQABAgQIECAhQGvNvehCxAgQIAAASpAgAABAgQ4bUsvWgIIECBAgABbAay9kLc0YHVwgAABAgTYDGjrL7fkgvV9JKH6kAMQIECAAP8NsHWwXNDwbycBBAgQIMCTSU84N+n2oh8fQIAAAQKcb9If8dyhYeqhoPXjAwgQIECAIiIiMnF+ASC3nZN91mQpAAAAAElFTkSuQmCC" alt="Pancho" width="28" height="28">
+    </div>
+    <p class="stalebar" id="staleLine" hidden></p>
+    <div class="dateline">
+      <span data-l="en"><!--F:market.brief_date_en|raw--><!--/F--></span>
+      <span data-l="ko"><!--F:market.brief_date_ko|raw--><!--/F--></span>
+      <span class="status" id="mktStatus"><span data-l="en">Markets closed</span><span data-l="ko">장 마감</span></span>
+      <span class="fresh"><span data-l="en"><!--F:market.fresh_en--><!--/F--></span><span data-l="ko"><!--F:market.fresh_ko--><!--/F--></span></span>
+      <span class="norm" data-l="en"><!--F:market.next_session_en_html|raw--><!--/F--></span>
+      <span class="norm" data-l="ko"><!--F:market.next_session_ko_html|raw--><!--/F--></span>
+      <span class="norm" data-l="en"><!--F:market.next_date_en|raw--><!--/F--></span>
+      <span class="norm" data-l="ko"><!--F:market.next_date_ko|raw--><!--/F--></span>
+      <span class="langsw" role="group" aria-label="Language / 언어">
+        <button type="button" id="langEn" aria-pressed="false">English</button>
+        <button type="button" id="langKo" aria-pressed="false">한국어</button>
+      </span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="lede">
+    <h2><span data-l="en">In plain English</span><span data-l="ko">쉽게 말하면</span></h2>
+    <div class="today">
+      <p class="today-label"><span data-l="en"><!--F:market.today_label_en--><!--/F--></span><span data-l="ko"><!--F:market.today_label_ko--><!--/F--></span></p>
+      <p class="today-text" data-l="en"><!--F:market.today_en|raw--><!--/F--></p>
+      <p class="today-text" data-l="ko"><!--F:market.today_ko|raw--><!--/F--></p>
+      <p class="todaybar" id="todayNow" hidden></p>
+    </div>
+    <p class="ctx-label"><span data-l="en"><!--F:market.ctx_label_en--><!--/F--></span><span data-l="ko"><!--F:market.ctx_label_ko--><!--/F--></span></p>
+    <div class="lede-body">
+      <!--R:market.lede--><p class="{{cls}}" data-l="en">{{en|raw}}</p><p class="{{cls}}" data-l="ko">{{ko|raw}}</p><!--/R-->
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Market overview">
+    <!--R:market.strip_cells--><div>
+      <div class="k"><span data-l="en">{{name_en|raw}}</span><span data-l="ko">{{name_ko|raw}}</span></div>
+      <div class="v">{{value}}</div>
+      <div class="c {{dir}}"><span data-l="en">{{change_en}}</span><span data-l="ko">{{change_ko}}</span></div>
+    </div><!--/R-->
+  </section>
+
+  <section class="sec">
+    <h2><span data-l="en">The five, side by side</span><span data-l="ko">다섯 종목 한눈에 보기</span></h2>
+    <p class="hint"><span data-l="en">Tap any row to read the full story for that one.</span><span data-l="ko">각 줄을 누르면 그 종목의 자세한 설명을 볼 수 있습니다.</span></p>
+
+    <table class="board" aria-label="The five positions, side by side">
+      <colgroup><col class="c-name"><col class="c-price"><col class="c-day"><col class="c-week"><col class="c-dd"><col class="c-take"></colgroup>
+      <thead>
+        <tr>
+          <th scope="col" class="l"><span data-l="en">Name</span><span data-l="ko">종목</span></th>
+          <th scope="col"><span data-l="en">Price</span><span data-l="ko">종가</span></th>
+          <th scope="col"><span data-l="en"><!--F:market.day_label_en--><!--/F--></span><span data-l="ko"><!--F:market.day_label_ko--><!--/F--></span></th>
+          <th scope="col"><span data-l="en">This week</span><span data-l="ko">이번 주</span></th>
+          <th scope="col"><span data-l="en">Below 1-yr high</span><span data-l="ko">고점 대비</span></th>
+          <th scope="col" class="l"><span data-l="en">Our take</span><span data-l="ko">총평</span></th>
+        </tr>
+      </thead>
+      <tbody id="boardBody">
+        <!--R:market.board--><tr data-t="{{key}}"{{#if current}} aria-current="true"{{/if}}>
+          <td class="l"><div class="tkr">{{ticker}}</div><div class="co" data-l="en">{{name_en}}</div><div class="co" data-l="ko">{{name_ko}}</div></td>
+          <td data-en="Price" data-ko="종가">{{price}}</td>
+          <td data-en="{{day_label_en}}" data-ko="{{day_label_ko}}" class="{{day_dir}}">{{#if day_arrow}}<span class="arw">{{day_arrow}}</span> {{/if}}{{day_cell}}</td>
+          <td data-en="This week" data-ko="이번 주" class="{{week_dir}}">{{#if week_arrow}}<span class="arw">{{week_arrow}}</span> {{/if}}{{week_cell}}</td>
+          <td data-en="Below 1-year high" data-ko="1년 최고가 대비" class="{{drawdown_dir}}">{{#if drawdown_arrow}}<span class="arw">{{drawdown_arrow}}</span> {{/if}}{{drawdown}}</td>
+          <td data-en="Our take" data-ko="총평" class="l"><span class="chip {{take_tone}}" data-l="en">{{take_en}}</span><span class="chip {{take_tone}}" data-l="ko">{{take_ko}}</span></td>
+        </tr><!--/R-->
+      </tbody>
+    </table>
+
+    <p class="key" data-l="en">
+      <span><b>▲ green</b> = went up</span>
+      <span><b>▼ red</b> = went down</span>
+      <span><b>Below 1-yr high</b> = how far under its best price of the past year</span>
+      <span><b>Bond rates</b> in gold — when safe returns rise, share prices get pulled down</span>
+    </p>
+    <p class="key" data-l="ko">
+      <span><b>▲ 초록</b> = 올랐음</span>
+      <span><b>▼ 빨강</b> = 내렸음</span>
+      <span><b>고점 대비</b> = 지난 1년 중 가장 비쌌을 때보다 얼마나 아래인지</span>
+      <span><b>국채 금리</b>는 금색입니다 — 안전한 금리가 오르면 주가는 눌리기 때문입니다</span>
+    </p>
+  </section>
+
+  <div class="cols">
+    <section class="detail">
+      <div class="tabs" role="tablist" aria-label="Positions">
+        <button role="tab" id="tab-spx"  aria-controls="p-spx"  aria-selected="true">SPX</button>
+        <button role="tab" id="tab-qqq"  aria-controls="p-qqq"  aria-selected="false" tabindex="-1">QQQ</button>
+        <button role="tab" id="tab-nvda" aria-controls="p-nvda" aria-selected="false" tabindex="-1">NVDA</button>
+        <button role="tab" id="tab-soxl" aria-controls="p-soxl" aria-selected="false" tabindex="-1">SOXL</button>
+        <button role="tab" id="tab-cost" aria-controls="p-cost" aria-selected="false" tabindex="-1">COST</button>
+      </div>
+
+      <!-- SPX -->
+      <div class="panel" id="p-spx" role="tabpanel" aria-labelledby="tab-spx" tabindex="0">
+        <div class="p-head">
+          <h2><span data-l="en">S&amp;P 500 — the whole US market</span><span data-l="ko">S&amp;P 500 — 미국 시장 전체</span></h2>
+          <span class="px"><!--F:market.positions.spx.price--><!--/F--> <span class="fl"><!--F:market.positions.spx.day_arrow--><!--/F--> <span data-l="en"><!--F:market.positions.spx.day_en--><!--/F--></span><span data-l="ko"><!--F:market.positions.spx.day_ko--><!--/F--></span></span></span>
+        </div>
+        <p class="plain" data-l="en"><!--F:market.positions.spx.plain_en|raw--><!--/F--></p>
+        <p class="plain" data-l="ko"><!--F:market.positions.spx.plain_ko|raw--><!--/F--></p>
+        <div class="facts">
+          <!--R:market.positions.spx.facts_rows--><span class="fact"><span><span data-l="en">{{en}}</span><span data-l="ko">{{ko}}</span></span> <span data-l="en">{{v_en}}</span><span data-l="ko">{{v_ko}}</span></span><!--/R-->
+        </div>
+        
+        <h3 class="lab"><span data-l="en">What happened</span><span data-l="ko">무슨 일이 있었나</span></h3>
+        <ul class="nw" data-l="en">
+          <!--R:market.positions.spx.news_en--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <ul class="nw" data-l="ko">
+          <!--R:market.positions.spx.news_ko--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <div class="bb" data-l="en">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p><!--F:market.positions.spx.bull_en|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p><!--F:market.positions.spx.bear_en|raw--><!--/F--></p></div>
+        </div>
+        <div class="bb" data-l="ko">
+          <div class="bx bull"><h3>오를 수 있는 이유</h3><p><!--F:market.positions.spx.bull_ko|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>내릴 수 있는 이유</h3><p><!--F:market.positions.spx.bear_ko|raw--><!--/F--></p></div>
+        </div>
+        <p class="verdict" data-l="en"><!--F:market.positions.spx.verdict_en|raw--><!--/F--></p>
+        <p class="verdict" data-l="ko"><!--F:market.positions.spx.verdict_ko|raw--><!--/F--></p>
+      </div>
+
+      <!-- QQQ -->
+      <div class="panel" id="p-qqq" role="tabpanel" aria-labelledby="tab-qqq" tabindex="0" hidden>
+        <div class="p-head">
+          <h2><span data-l="en">QQQ — the 100 biggest tech companies</span><span data-l="ko">QQQ — 미국 대형 기술주 100개</span></h2>
+          <span class="px"><!--F:market.positions.qqq.price--><!--/F--> <span class="fl"><!--F:market.positions.qqq.day_arrow--><!--/F--> <span data-l="en"><!--F:market.positions.qqq.day_en--><!--/F--></span><span data-l="ko"><!--F:market.positions.qqq.day_ko--><!--/F--></span></span></span>
+        </div>
+        <p class="plain" data-l="en"><!--F:market.positions.qqq.plain_en|raw--><!--/F--></p>
+        <p class="plain" data-l="ko"><!--F:market.positions.qqq.plain_ko|raw--><!--/F--></p>
+        <div class="facts">
+          <!--R:market.positions.qqq.facts_rows--><span class="fact"><span><span data-l="en">{{en}}</span><span data-l="ko">{{ko}}</span></span> <span data-l="en">{{v_en}}</span><span data-l="ko">{{v_ko}}</span></span><!--/R-->
+        </div>
+        
+        <h3 class="lab"><span data-l="en">What happened</span><span data-l="ko">무슨 일이 있었나</span></h3>
+        <ul class="nw" data-l="en">
+          <!--R:market.positions.qqq.news_en--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <ul class="nw" data-l="ko">
+          <!--R:market.positions.qqq.news_ko--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <div class="bb" data-l="en">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p><!--F:market.positions.qqq.bull_en|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p><!--F:market.positions.qqq.bear_en|raw--><!--/F--></p></div>
+        </div>
+        <div class="bb" data-l="ko">
+          <div class="bx bull"><h3>오를 수 있는 이유</h3><p><!--F:market.positions.qqq.bull_ko|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>내릴 수 있는 이유</h3><p><!--F:market.positions.qqq.bear_ko|raw--><!--/F--></p></div>
+        </div>
+        <p class="verdict" data-l="en"><!--F:market.positions.qqq.verdict_en|raw--><!--/F--></p>
+        <p class="verdict" data-l="ko"><!--F:market.positions.qqq.verdict_ko|raw--><!--/F--></p>
+      </div>
+
+      <!-- NVDA -->
+      <div class="panel" id="p-nvda" role="tabpanel" aria-labelledby="tab-nvda" tabindex="0" hidden>
+        <div class="p-head">
+          <h2><span data-l="en">Nvidia — the AI chip maker</span><span data-l="ko">엔비디아 — AI 반도체 회사</span></h2>
+          <span class="px"><!--F:market.positions.nvda.price--><!--/F--> <span class="fl"><!--F:market.positions.nvda.day_arrow--><!--/F--> <span data-l="en"><!--F:market.positions.nvda.day_en--><!--/F--></span><span data-l="ko"><!--F:market.positions.nvda.day_ko--><!--/F--></span></span></span>
+        </div>
+        <p class="plain" data-l="en"><!--F:market.positions.nvda.plain_en|raw--><!--/F--></p>
+        <p class="plain" data-l="ko"><!--F:market.positions.nvda.plain_ko|raw--><!--/F--></p>
+        <div class="facts">
+          <!--R:market.positions.nvda.facts_rows--><span class="fact"><span><span data-l="en">{{en}}</span><span data-l="ko">{{ko}}</span></span> <span data-l="en">{{v_en}}</span><span data-l="ko">{{v_ko}}</span></span><!--/R-->
+        </div>
+        
+        <h3 class="lab"><span data-l="en">What happened</span><span data-l="ko">무슨 일이 있었나</span></h3>
+        <ul class="nw" data-l="en">
+          <!--R:market.positions.nvda.news_en--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <ul class="nw" data-l="ko">
+          <!--R:market.positions.nvda.news_ko--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <div class="bb" data-l="en">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p><!--F:market.positions.nvda.bull_en|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p><!--F:market.positions.nvda.bear_en|raw--><!--/F--></p></div>
+        </div>
+        <div class="bb" data-l="ko">
+          <div class="bx bull"><h3>오를 수 있는 이유</h3><p><!--F:market.positions.nvda.bull_ko|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>내릴 수 있는 이유</h3><p><!--F:market.positions.nvda.bear_ko|raw--><!--/F--></p></div>
+        </div>
+        <p class="verdict" data-l="en"><!--F:market.positions.nvda.verdict_en|raw--><!--/F--></p>
+        <p class="verdict" data-l="ko"><!--F:market.positions.nvda.verdict_ko|raw--><!--/F--></p>
+      </div>
+
+      <!-- SOXL -->
+      <div class="panel" id="p-soxl" role="tabpanel" aria-labelledby="tab-soxl" tabindex="0" hidden>
+        <div class="p-head">
+          <h2><span data-l="en">SOXL — the triple-risk chip fund</span><span data-l="ko">SOXL — 반도체 3배 펀드</span></h2>
+          <span class="px"><!--F:market.positions.soxl.price--><!--/F--> <span class="fl"><!--F:market.positions.soxl.day_arrow--><!--/F--> <span data-l="en"><!--F:market.positions.soxl.day_en--><!--/F--></span><span data-l="ko"><!--F:market.positions.soxl.day_ko--><!--/F--></span></span></span>
+        </div>
+        <p class="plain" data-l="en"><!--F:market.positions.soxl.plain_en|raw--><!--/F--></p>
+        <p class="plain" data-l="ko"><!--F:market.positions.soxl.plain_ko|raw--><!--/F--></p>
+        <div class="facts">
+          <!--R:market.positions.soxl.facts_rows--><span class="fact"><span><span data-l="en">{{en}}</span><span data-l="ko">{{ko}}</span></span> <span data-l="en">{{v_en}}</span><span data-l="ko">{{v_ko}}</span></span><!--/R-->
+        </div>
+        
+        <h3 class="lab"><span data-l="en">What happened</span><span data-l="ko">무슨 일이 있었나</span></h3>
+        <ul class="nw" data-l="en">
+          <!--R:market.positions.soxl.news_en--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <ul class="nw" data-l="ko">
+          <!--R:market.positions.soxl.news_ko--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <div class="bb" data-l="en">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p><!--F:market.positions.soxl.bull_en|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p><!--F:market.positions.soxl.bear_en|raw--><!--/F--></p></div>
+        </div>
+        <div class="bb" data-l="ko">
+          <div class="bx bull"><h3>오를 수 있는 이유</h3><p><!--F:market.positions.soxl.bull_ko|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>내릴 수 있는 이유</h3><p><!--F:market.positions.soxl.bear_ko|raw--><!--/F--></p></div>
+        </div>
+        <p class="verdict" data-l="en"><!--F:market.positions.soxl.verdict_en|raw--><!--/F--></p>
+        <p class="verdict" data-l="ko"><!--F:market.positions.soxl.verdict_ko|raw--><!--/F--></p>
+      </div>
+
+      <!-- COST -->
+      <div class="panel" id="p-cost" role="tabpanel" aria-labelledby="tab-cost" tabindex="0" hidden>
+        <div class="p-head">
+          <h2><span data-l="en">Costco</span><span data-l="ko">코스트코</span></h2>
+          <span class="px"><!--F:market.positions.cost.price--><!--/F--> <span class="fl"><!--F:market.positions.cost.day_arrow--><!--/F--> <span data-l="en"><!--F:market.positions.cost.day_en--><!--/F--></span><span data-l="ko"><!--F:market.positions.cost.day_ko--><!--/F--></span></span></span>
+        </div>
+        <p class="plain" data-l="en"><!--F:market.positions.cost.plain_en|raw--><!--/F--></p>
+        <p class="plain" data-l="ko"><!--F:market.positions.cost.plain_ko|raw--><!--/F--></p>
+        <div class="facts">
+          <!--R:market.positions.cost.facts_rows--><span class="fact"><span><span data-l="en">{{en}}</span><span data-l="ko">{{ko}}</span></span> <span data-l="en">{{v_en}}</span><span data-l="ko">{{v_ko}}</span></span><!--/R-->
+        </div>
+        
+        <h3 class="lab"><span data-l="en">What happened</span><span data-l="ko">무슨 일이 있었나</span></h3>
+        <ul class="nw" data-l="en">
+          <!--R:market.positions.cost.news_en--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <ul class="nw" data-l="ko">
+          <!--R:market.positions.cost.news_ko--><li><span class="dt">{{dt}}</span><span class="tx">{{tx|raw}}</span></li><!--/R-->
+        </ul>
+        <div class="bb" data-l="en">
+          <div class="bx bull"><h3>Reasons it could go up</h3><p><!--F:market.positions.cost.bull_en|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>Reasons it could go down</h3><p><!--F:market.positions.cost.bear_en|raw--><!--/F--></p></div>
+        </div>
+        <div class="bb" data-l="ko">
+          <div class="bx bull"><h3>오를 수 있는 이유</h3><p><!--F:market.positions.cost.bull_ko|raw--><!--/F--></p></div>
+          <div class="bx bear"><h3>내릴 수 있는 이유</h3><p><!--F:market.positions.cost.bear_ko|raw--><!--/F--></p></div>
+        </div>
+        <p class="verdict" data-l="en"><!--F:market.positions.cost.verdict_en|raw--><!--/F--></p>
+        <p class="verdict" data-l="ko"><!--F:market.positions.cost.verdict_ko|raw--><!--/F--></p>
+      </div>
+
+      <div class="dog-strip" id="dogStrip">
+        <button class="dog-btn" id="dogBtn" aria-label="Pancho">
+          <img class="dog-cv" id="dogCv" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByElEQVR42u3cvU3DQBgGYE9AQ4/YINTMkAnSUbIAJRJtqqxBmU1oQRSIHhagCC05KbHs83Hnz88rva3/niKf47O7TkRERJrM1/7h8Lcv23XRpvsjABAgQIAAowABBggQIECAwIACBAgQIEBgQAECBAgQYIlEB+srQIAAAQKMC/h8tzqca+4Q0FqHnk/f9QEIECBAgMsFbB0sFxQgQIAAAQIcC3h9eXHUNLkAadL9AQQIECBAgGNBpwYceoFLb38o4Oz+3AYIECBAgMUe6Ea/kQ//RB4gQIAAARYD/Pl+q1qAAAECBAiwVcDN7U1WAQIECBAgwChDzOfT9mwNMQABAgQIsBXA1ePuqLVv3PuaHi9AgAABAgQ4FjQaYBc9AAECBAjwZIYu7E0vyNy6+JXZAAECBLhgwNpgrx/vWV08KECAAAECNLQABAgQIECAhQGvNvehCxAgQIAAASpAgAABAgQ4bUsvWgIIECBAgABbAay9kLc0YHVwgAABAgTYDGjrL7fkgvV9JKH6kAMQIECAAP8NsHWwXNDwbycBBAgQIMCTSU84N+n2oh8fQIAAAQKcb9If8dyhYeqhoPXjAwgQIECAIiIiMnF+ASC3nZN91mQpAAAAAElFTkSuQmCC" width="28" height="28">
+        </button>
+        <div class="bub" id="bub" role="status" aria-live="polite">
+          <span class="who"><span data-l="en">Pancho Bot</span><span data-l="ko">판초 봇</span></span>
+          <span id="dogSays">Pancho reporting. Tap a name above and I'll explain it.</span>
+          <span class="tl" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="rail">
+      <div class="block notice">
+        <h3><span data-l="en">The same bet, four times over</span><span data-l="ko">같은 곳에 네 번 건 셈입니다</span></h3>
+        <p data-l="en"><b>Four of the five rise and fall together.</b> Nvidia sits inside SPX, inside QQQ, and is held directly — then SOXL multiplies its whole industry by three.</p>
+        <p data-l="ko"><b>다섯 중 넷이 함께 오르고 함께 내립니다.</b> 엔비디아는 SPX 안에도, QQQ 안에도 들어 있고, 직접 가지고도 있습니다. 여기에 SOXL이 그 산업 전체를 세 배로 키웁니다.</p>
+        <div class="ladder" data-l="en">
+          <div>COST <span>genuinely different</span></div>
+          <div>SPX <span>the whole market</span></div>
+          <div>QQQ <span>more tech-heavy</span></div>
+          <div>NVDA <span>one company</span></div>
+          <div>SOXL <span>triple the chip sector</span></div>
+        </div>
+        <div class="ladder" data-l="ko">
+          <div>COST <span>성격이 다름</span></div>
+          <div>SPX <span>시장 전체</span></div>
+          <div>QQQ <span>기술주 비중 높음</span></div>
+          <div>NVDA <span>개별 회사</span></div>
+          <div>SOXL <span>반도체의 세 배</span></div>
+        </div>
+        <p data-l="en">July showed what that means: the overall market ended flat while SOXL fell 57%. One question — will companies keep spending on AI? — moved all of them.</p>
+        <p data-l="ko">7월이 그것을 보여주었습니다. 시장 전체는 제자리였는데 SOXL은 57% 떨어졌습니다. "기업들이 AI에 계속 돈을 쓸 것인가"라는 질문 하나가 넷을 모두 움직였습니다.</p>
+        <p data-l="en"><b>If Nvidia disappoints on August 26, four of the five fall at once.</b> Costco is the only real counterweight among them.</p>
+        <p data-l="ko"><b>8월 26일 엔비디아 실적이 실망스러우면 다섯 중 넷이 한꺼번에 떨어집니다.</b> 코스트코가 유일한 균형추입니다.</p>
+      </div>
+
+      <div class="block">
+        <h3><span data-l="en">What's coming up</span><span data-l="ko">앞으로의 일정</span></h3>
+        <!--R:market.events--><div class="ev{{#if hot}} hot{{/if}}"><span class="w"><span data-l="en">{{when_en}}</span><span data-l="ko">{{when_ko}}</span></span><span class="e"><b><span data-l="en">{{what_en}}</span><span data-l="ko">{{what_ko}}</span></b><span data-l="en">{{note_en}}</span><span data-l="ko">{{note_ko}}</span></span></div><!--/R-->
+      </aside>
+  </div>
+
+  <section class="sec" id="record" aria-labelledby="record-h">
+    <div class="lg-head">
+      <div>
+        <h2 id="record-h"><span data-l="en">What the President said about companies</span><span data-l="ko">대통령의 기업 관련 발언 기록</span></h2>
+        <p class="hint" data-l="en">A running record of what the President says about companies and investments — any company, not just the five above. Magnets, computers, chipmakers, his own media firm. From today trading firms can buy a faster feed of these posts for up to $100,000 a month, which is the plainest evidence that these remarks move prices. What was said, when, and what the share price did — nothing more.</p>
+        <p class="hint" data-l="ko">대통령이 기업과 투자에 대해 한 말을 계속 기록합니다. 위의 다섯 종목뿐 아니라 어떤 회사든 담습니다 — 자석, 컴퓨터, 반도체, 본인 소유 미디어 회사까지. 오늘부터 트레이딩 회사들은 월 최대 10만 달러를 내고 이 글들을 더 빨리 받아볼 수 있는데, 이런 발언이 주가를 움직인다는 가장 분명한 증거입니다. 여기에는 누가 언제 무슨 말을 했고 주가가 어떻게 움직였는지만 그대로 적습니다.</p>
+      </div>
+      <img class="potus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABhUlEQVR42u3XMWoCQRiGYc8gCKmChVWwSukJcgEba2+QI+QiIqSyywm0zgXsvYGI2K1VIARUhs3uzuz/fPD2M/M0u4OBmZmZdbLD7r0qOYAAAQIECLCvQOGBAQIECBAgsCigkAACBAgQWBRQCAABAgTYGuB2Ne91AAECBAgQ4E/H703oAAIECBBgHMDoYKmgAAECBAiwXEAo9QIIECBAxQGcPA3v1vWDtn0+gAABAgQIECBAgAABAvQj70ceIECAAAUQIECAAAEK4O32nx9JAQQIECBAgAABAgQIECBAP/IABRAgQIA5gq6Xi0YLDwYQIECAAH3URAUDCBAgQIBAgQEECBAgwIZ3Ol+qPgcQIECAAOMCPk/fqpRKB0u9L0CAAAEC7A9g6gWaBv56eb1b00DFgQIECBAgwGwBU0HrArZ9H4AAAQIECPC/QFMBuz4/QIAAAQIECBAgQIAAAQKs1yPA3M4LECBAgADLBRyNZ9Xvcnug3Pr7XgABAgQIsFxAMzOzQncFnvqsSQg5J7oAAAAASUVORK5CYII=" alt="" width="28" height="28">
+    </div>
+
+    <div class="lg-read">
+      <p><span data-l="en"><!--F:trump.reading_en--><!--/F--></span><span data-l="ko"><!--F:trump.reading_ko--><!--/F--></span></p>
+      <ul class="lg-fp" aria-label="Which of the five positions these entries affect">
+        <!--R:trump.footprint--><li class="{{cls}}"><span aria-hidden="true">{{mark}}</span> {{label}} <span class="vh"><span data-l="en">{{state_en}}</span><span data-l="ko">{{state_ko}}</span></span></li><!--/R-->
+      </ul>
+    </div>
+
+    <ol class="lg">
+      <!--R:trump.entries--><li class="lg-e">
+        <div class="lg-d"><span data-l="en">{{date_en}}</span><span data-l="ko">{{date_ko}}</span></div>
+        <div class="lg-b">
+          <h3 class="lg-c"><span data-l="en">{{company_en}}</span><span data-l="ko">{{company_ko}}</span> <span class="lg-v"><span data-l="en">{{verb_en}}</span><span data-l="ko">{{verb_ko}}</span></span></h3>
+          {{#if quote}}<p class="lg-q">&ldquo;{{quote}}&rdquo;</p>
+          <p class="lg-t" data-l="ko"><b>번역:</b> {{quote_ko}}</p>
+          <p class="lg-t" data-l="en">Quoted exactly.</p>{{/if}}
+          <p class="lg-x"><span data-l="en">{{text_en}}</span><span data-l="ko">{{text_ko}}</span></p>
+          {{#if reaction_en}}<p class="lg-r {{reaction_dir}}"><span class="arw">{{reaction_arrow}}</span> <span data-l="en">{{reaction_en}}</span><span data-l="ko">{{reaction_ko}}</span></p>{{/if}}
+          <p class="lg-m">
+            {{#if touches_en}}<span class="lg-touch"><span data-l="en">{{touches_en}}</span><span data-l="ko">{{touches_ko}}</span></span>{{/if}}
+            <a class="lg-s" href="{{source_url}}" rel="noopener noreferrer" target="_blank"><span data-l="en">{{source_en}} &#8599;</span><span data-l="ko">{{source_ko}} &#8599;</span></a>
+          </p>
+        </div>
+      </li><!--/R-->
+    </ol>
+
+    <p class="lg-foot">
+      <span data-l="en">Price moves are what the shares actually did that day — not proof the remark caused them. Where a share spiked and gave it back, both numbers are shown. Quotes in quote marks are exact; everything else is reported summary. <b><!--F:trump.checked_en-->Checked August 1<!--/F--></b>.</span>
+      <span data-l="ko">주가 변동은 그날 주가가 실제로 움직인 결과이며, 그 발언이 원인이라는 증거는 아닙니다. 장중에 올랐다가 되돌린 경우에는 두 숫자를 모두 적었습니다. 따옴표 안은 그대로 옮긴 말이고, 나머지는 보도 내용을 요약한 것입니다. <b><!--F:trump.checked_ko-->8월 1일 확인<!--/F--></b>.</span>
+    </p>
+  </section>
+
+  <details class="notes">
+    <summary><span data-l="en">Where these numbers come from, and what to be careful about</span><span data-l="ko">이 숫자들의 출처와 주의할 점</span></summary>
+    <div class="notes-in">
+      <div data-l="en">
+        <h4>The prices</h4>
+        <p>All prices are the official closing prices from <!--F:market.asof_phrase_en--><!--/F-->, checked against three separate sources: StockAnalysis, Yahoo Finance and Google Finance. Where a figure says "about" or "roughly", it was calculated from those closing prices rather than taken from a source directly.</p>
+        <h4><!--F:market.positions.soxl.note_head_en--><!--/F--></h4>
+        <p><!--F:market.positions.soxl.note_en--><!--/F--></p>
+        <h4>These are not predictions</h4>
+        <p>Nothing here tells you what will happen next. Nobody can do that, and you should be suspicious of anyone who claims otherwise. What each section gives you instead is the case for going up, the case for going down, and the specific dated event that will settle the argument. This is information only, not financial advice, and it takes no account of how much you own, what you paid, when you need the money, or your tax position.</p>
+      </div>
+      <div data-l="ko">
+        <h4>가격에 대하여</h4>
+        <p>모든 가격은 <!--F:market.asof_phrase_ko--><!--/F--> 공식 종가이며, StockAnalysis · Yahoo Finance · Google Finance 세 곳에서 서로 대조해 확인했습니다. "약" 또는 "거의"라고 적힌 수치는 출처에서 그대로 가져온 것이 아니라 그 종가들로부터 직접 계산한 값입니다.</p>
+        <h4><!--F:market.positions.soxl.note_head_ko--><!--/F--></h4>
+        <p><!--F:market.positions.soxl.note_ko--><!--/F--></p>
+        <h4>이것은 예측이 아닙니다</h4>
+        <p>이 페이지는 앞으로 무슨 일이 일어날지 알려주지 않습니다. 그것은 누구도 할 수 없는 일이고, 할 수 있다고 말하는 사람은 의심하셔야 합니다. 대신 각 항목은 오를 수 있는 근거, 내릴 수 있는 근거, 그리고 그 논쟁을 매듭지을 구체적인 날짜를 보여드립니다. 이 자료는 정보 제공용이며 투자 권유가 아닙니다. 보유 수량, 매입 단가, 자금이 필요한 시점, 세금 문제는 전혀 반영되어 있지 않습니다.</p>
+      </div>
+      <h4><span data-l="en">Sources</span><span data-l="ko">출처</span></h4>
+      <ul>
+        <li><a href="https://stockanalysis.com/stocks/nvda/history/">StockAnalysis<span data-l="en"> — daily price history</span><span data-l="ko"> — 일별 시세</span></a></li>
+        <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html">Yahoo Finance<span data-l="en"> — the July 31 session</span><span data-l="ko"> — 7월 31일 장 상황</span></a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/article/amazon-stock-soars-15-as-e-commerce-giants-aws-cloud-business-booms-in-home-run-quarter-122456315.html">Yahoo Finance<span data-l="en"> — Amazon up 15%</span><span data-l="ko"> — 아마존 15% 상승</span></a></li>
+        <li><a href="https://www.cnn.com/2026/07/29/business/live-news/federal-reserve-interest-rate-07-29-26">CNN<span data-l="en"> — the Fed holds rates, three dissent</span><span data-l="ko"> — 연준 금리 동결, 위원 3인 반대</span></a></li>
+        <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"><span data-l="en">Federal Reserve — June 17 rate projections</span><span data-l="ko">연방준비제도 — 6월 17일 금리 전망</span></a></li>
+        <li><a href="https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-June-Sales-Results-and-Announces-Quarterly-Cash-Dividend/default.aspx"><span data-l="en">Costco — June sales results</span><span data-l="ko">코스트코 — 6월 매출 실적</span></a></li>
+        <li><a href="https://investor.costco.com/events-and-presentations/events/event-details/2026/July-Sales-Results-2026-XADtqZn33k/default.aspx"><span data-l="en">Costco — July sales, due August 5</span><span data-l="ko">코스트코 — 7월 매출, 8월 5일 발표</span></a></li>
+        <li><a href="https://www.quiverquant.com/news/NVIDIA+to+Hold+Second+Quarter+Fiscal+2027+Financial+Results+Conference+Call+on+August+26"><span data-l="en">Nvidia — results due August 26</span><span data-l="ko">엔비디아 — 8월 26일 실적 발표</span></a></li>
+        <li><a href="https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/">Forbes<span data-l="en"> — inside the July chip sell-off</span><span data-l="ko"> — 7월 반도체 급락 분석</span></a></li>
+        <li><a href="https://www.fool.com/investing/2026/07/09/costcos-june-sales-rose-106-but-the-stock-fell-4-h/">Motley Fool<span data-l="en"> — why Costco fell on good sales</span><span data-l="ko"> — 실적이 좋았는데 코스트코가 떨어진 이유</span></a></li>
+      </ul>
+    </div>
+  </details>
+</main>
+
+<button class="dog-cue" id="dogCue" hidden>
+  <img class="cue-cv" id="cueCv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByElEQVR42u3cvU3DQBgGYE9AQ4/YINTMkAnSUbIAJRJtqqxBmU1oQRSIHhagCC05KbHs83Hnz88rva3/niKf47O7TkRERJrM1/7h8Lcv23XRpvsjABAgQIAAowABBggQIECAwIACBAgQIEBgQAECBAgQYIlEB+srQIAAAQKMC/h8tzqca+4Q0FqHnk/f9QEIECBAgMsFbB0sFxQgQIAAAQIcC3h9eXHUNLkAadL9AQQIECBAgGNBpwYceoFLb38o4Oz+3AYIECBAgMUe6Ea/kQ//RB4gQIAAARYD/Pl+q1qAAAECBAiwVcDN7U1WAQIECBAgwChDzOfT9mwNMQABAgQIsBXA1ePuqLVv3PuaHi9AgAABAgQ4FjQaYBc9AAECBAjwZIYu7E0vyNy6+JXZAAECBLhgwNpgrx/vWV08KECAAAECNLQABAgQIECAhQGvNvehCxAgQIAAASpAgAABAgQ4bUsvWgIIECBAgABbAay9kLc0YHVwgAABAgTYDGjrL7fkgvV9JKH6kAMQIECAAP8NsHWwXNDwbycBBAgQIMCTSU84N+n2oh8fQIAAAQKcb9If8dyhYeqhoPXjAwgQIECAIiIiMnF+ASC3nZN91mQpAAAAAElFTkSuQmCC" alt="" width="28" height="28">
+  <span id="cueText">Pancho has a note ↓</span>
+</button>
+
+<script>
+(function () {
+  "use strict";
+
+  // Pancho's three frames, baked to PNG data URIs at build time by scripts/sprite.py.
+  //
+  // These used to be drawn pixel-by-pixel to <canvas> at load. That failed on iPad: iOS
+  // Safari purges canvas backing stores under memory pressure, the page drew each canvas
+  // exactly once, and the only repaint path — the blink timer — begins with a
+  // reduced-motion early return. So with Reduce Motion on, Pancho disappeared for good.
+  // An <img> is never purged, needs no timer, and renders even if this script never runs.
+  var FRAMES = {
+    idle: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByElEQVR42u3cvU3DQBgGYE9AQ4/YINTMkAnSUbIAJRJtqqxBmU1oQRSIHhagCC05KbHs83Hnz88rva3/niKf47O7TkRERJrM1/7h8Lcv23XRpvsjABAgQIAAowABBggQIECAwIACBAgQIEBgQAECBAgQYIlEB+srQIAAAQKMC/h8tzqca+4Q0FqHnk/f9QEIECBAgMsFbB0sFxQgQIAAAQIcC3h9eXHUNLkAadL9AQQIECBAgGNBpwYceoFLb38o4Oz+3AYIECBAgMUe6Ea/kQ//RB4gQIAAARYD/Pl+q1qAAAECBAiwVcDN7U1WAQIECBAgwChDzOfT9mwNMQABAgQIsBXA1ePuqLVv3PuaHi9AgAABAgQ4FjQaYBc9AAECBAjwZIYu7E0vyNy6+JXZAAECBLhgwNpgrx/vWV08KECAAAECNLQABAgQIECAhQGvNvehCxAgQIAAASpAgAABAgQ4bUsvWgIIECBAgABbAay9kLc0YHVwgAABAgTYDGjrL7fkgvV9JKH6kAMQIECAAP8NsHWwXNDwbycBBAgQIMCTSU84N+n2oh8fQIAAAQKcb9If8dyhYeqhoPXjAwgQIECAIiIiMnF+ASC3nZN91mQpAAAAAElFTkSuQmCC",
+    blink: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABv0lEQVR42u3csU3DQBQGYE9AQ4/YINTMwATpKFmAEok2FWtQsgktiALRwwIUoSUnxSdzPu78/P3S3zpnf0Ve4rOHQURERLrM59Pt/nefd1dVm34eAYAAAQIEGAUIMECAAAECBAYUIECAAAECAwoQIECAAGskOliuAAECBAgwLuDj9WY/1tIhoLdOPZ/c9QEIECBAgOsF7B2sFBQgQIAAAQIECBAgQIAAowHmQEsBz09PRlsKUHr8qYCL+3MbIECAAAFWu6EbfYgJf0ceIECAAAFWA/z+em1agAABAgQIsFfA7eVFUQECBAgQIMAoQ8zH/W60hhiAAAECBNgL4Obu4aCtf7jnmq4XIECAAAEC/CtoNMAhegACBAgQ4NFM3dibXpCldfU7swECBAhwxYCtwV7e34q6elCAAAECBGhoAQgQIECAACsDnm1vQhcgQIAAAQJUgAABAgQIcN7W3rQEECBAgAAB9gLYeiNvbcDm4AABAgQIsBvQ3h9uKQXLvSSh+ZADECBAgAD/DbB3sFLQ8E8nAQQIECDAo0lPuDTp8aKvDyBAgAABLjfpl3jp0DD3UND7+gACBAgQoIiIiMycH77VutM0WECTAAAAAElFTkSuQmCC",
+    wag: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAByUlEQVR42u3bMU7DMBgG0J6AhR1xgzJzBk7QjZELMCKxduIajNyEFcSA2OECDGWlltqQOMbO7/dJ35o4fkPtxlmtREREpMl8Pt3ufvd5e1W06f0IAAQIECDAKECAAQIECBAgMKAAAQIECBAYUIAAAQIEWCLRwYYKECBAgADjAj5er3fHmrsIaK1jn2dofgACBAgQYL+ArYPlggIECBAgQIBTAc9PT/aaJhcgTXo/gAABAgQIcCro3IBjJ7j09ccCLu7PbYAAAQIEWOyFbvSNfPg38gABAgQIsBjg99dr1QIECBAgQICtAm4uL7IKECBAgAABRlnEfNxvj9YiBiBAgAABtgK4vnvYa+2N+1DT8QIECBAgQIBTQaMBrqIHIECAAAEezNiDvemELK3dn8wGCBAgwI4Ba4O9vL9ltXtQgAABAgRo0QIQIECAAAEWBjzb3IQuQIAAAQIEqH8DrA4OECBAgAAXA1j60NJ/Aw59LAMQIECAAPsFrH2QtzRg+I08QIAAAQYGnBu09Y9bwoEBBAgQIMBqgK2D5YICBAgQIMB+ANOkD5yb9HrRxwcQIECAAJeb9Ec8d9Ew96Kg9fEBBAgQIEARERGZOT90c52TcLQnOAAAAABJRU5ErkJggg=="
+  };
+  var faces = [document.getElementById("dogCv"), document.getElementById("dogMast")];
+  function draw(frame) {
+    var uri = FRAMES[frame];
+    for (var i = 0; i < faces.length; i++) { if (faces[i]) faces[i].src = uri; }
+  }
+
+  // Live prices. A GitHub Action refreshes one small JSON on the `live` branch every
+  // ~10 minutes during market hours; this swaps PRICE TEXT only. The day/week columns
+  // stay close-based — they are labeled with the session they describe. If the fetch
+  // fails or the data is stale, nothing changes: the built page is the fallback.
+  (function () {
+    var URL = "https://raw.githubusercontent.com/sneakytikii/morning-market-recap/live/live.json";
+    var BOARD = ["spx", "qqq", "nvda", "soxl", "cost"];
+    var STRIPK = ["spx", "ndx", "dow", "vix", "us10y", "us30y"];
+    var fresh = document.querySelector(".fresh");
+    var builtFresh = fresh ? fresh.innerHTML : "";
+
+    function stamp() {
+      // Pacific on every device — the page's home timezone is the reader's (PST),
+      // not whatever clock the viewing machine happens to carry.
+      try {
+        return new Intl.DateTimeFormat("en-US", {
+          timeZone: "America/Los_Angeles", hour: "numeric", minute: "2-digit", hour12: false
+        }).format(new Date());
+      } catch (e) {
+        var d = new Date(), m = d.getMinutes();
+        return d.getHours() + ":" + (m < 10 ? "0" : "") + m;
+      }
+    }
+
+    function apply(data) {
+      if (!data || !data.quotes) return;
+      // Older than 25 minutes counts as stale — leave the built page alone.
+      if (!data.t || (Date.now() / 1000 - data.t) > 1500) return;
+      var q = data.quotes;
+
+      var strips = document.querySelectorAll(".strip > div .v");
+      for (var i = 0; i < STRIPK.length && i < strips.length; i++) {
+        if (q[STRIPK[i]] && q[STRIPK[i]].v) strips[i].textContent = q[STRIPK[i]].v;
+      }
+      document.body.classList.add("live-on");
+      // Hand the fresh quotes to Pancho so he can say what kind of day it is. Guarded:
+      // the dog block is defined later in this file and may not exist on a partial load.
+      if (typeof window.panchoLive === "function") { try { window.panchoLive(q); } catch (e) {} }
+      // The Today prose is rewritten twice a day; this line inside the block is its
+      // live pulse between rewrites: what the five are doing right now.
+      var tb = document.getElementById("todayNow");
+      if (tb) {
+        var NAMES = {
+          spx:  { en: "S&P 500", ko: "S&P 500" },
+          qqq:  { en: "QQQ", ko: "QQQ" },
+          nvda: { en: "Nvidia", ko: "엔비디아" },
+          soxl: { en: "SOXL", ko: "SOXL" },
+          cost: { en: "Costco", ko: "코스트코" }
+        };
+        function bits(lang) {
+          var out = [];
+          BOARD.forEach(function (k) {
+            if (!q[k] || typeof q[k].d !== "number" || !q[k].s) return;
+            var dir = q[k].d > 0 ? "up" : (q[k].d < 0 ? "dn" : "");
+            var arw = q[k].d > 0 ? "▲" : (q[k].d < 0 ? "▼" : "");
+            out.push('<span class="tq ' + dir + '">' + NAMES[k][lang] + " " + arw + " " + q[k].s + "</span>");
+          });
+          return out.join(" &nbsp;·&nbsp; ");
+        }
+        var enB = bits("en"), koB = bits("ko");
+        if (enB) {
+          tb.innerHTML =
+            '<span data-l="en"><span class="tlab">Right now:</span>' + enB +
+            ' <span class="tmeta">— as of ' + stamp() + ", delayed up to 15 min</span></span>" +
+            '<span data-l="ko"><span class="tlab">지금 시장:</span>' + koB +
+            ' <span class="tmeta">— ' + stamp() + " 기준, 최대 15분 지연</span></span>";
+          tb.hidden = false;
+        }
+      }
+      var priceTh = document.querySelector(".board thead th:nth-child(2)");
+      if (priceTh) {
+        var the = priceTh.querySelector('[data-l="en"]'), thk = priceTh.querySelector('[data-l="ko"]');
+        if (the) the.textContent = "Price · live";
+        if (thk) thk.textContent = "시세 · 실시간";
+      }
+      BOARD.forEach(function (k) {
+        if (!q[k] || !q[k].v) return;
+        var row = document.querySelector('tr[data-t="' + k + '"]');
+        if (row) {
+          var cell = row.querySelector('td[data-en="Price"]');
+          if (cell) {
+            cell.textContent = q[k].v;
+            // Today's move, so "live" is visible rather than implied. The Tuesday
+            // column stays what it says it is.
+            if (typeof q[k].d === "number" && q[k].s) {
+              var chg = document.createElement("span");
+              var dir = q[k].d > 0 ? "up" : (q[k].d < 0 ? "dn" : "fl");
+              var arw = q[k].d > 0 ? "▲ " : (q[k].d < 0 ? "▼ " : "");
+              chg.className = "lchg " + dir;
+              chg.innerHTML = '<span data-l="en">' + arw + q[k].s + " today</span>"
+                            + '<span data-l="ko">' + arw + "오늘 " + q[k].s + "</span>";
+              cell.appendChild(chg);
+            }
+          }
+        }
+        var panel = document.getElementById("p-" + k);
+        if (panel) {
+          var px = panel.querySelector(".px");
+          if (px) {
+            // The first child is the F-marker comment, not text — find the first
+            // non-empty text node and swap only that.
+            for (var c = px.firstChild; c; c = c.nextSibling) {
+              if (c.nodeType === 3 && c.textContent.trim()) {
+                c.textContent = q[k].v + " ";
+                break;
+              }
+            }
+          }
+        }
+      });
+      if (fresh) {
+        var en = fresh.querySelector('[data-l="en"]');
+        var ko = fresh.querySelector('[data-l="ko"]');
+        if (en) en.textContent = "Live prices · updated " + stamp() + " · delayed up to 15 min";
+        if (ko) ko.textContent = "실시간 시세 · " + stamp() + " 업데이트 · 최대 15분 지연";
+      }
+    }
+
+    function pull() {
+      // Only bother while the market is open-ish; after the close the last fetch of the
+      // day already holds the closing numbers.
+      fetch(URL + "?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(apply)
+        .catch(function () { /* offline or branch absent: built page stands */ });
+    }
+
+    if (window.fetch) {
+      pull();
+      setInterval(function () {
+        if (!document.hidden) pull();
+      }, 120000);
+    }
+  })();
+
+  // One clock for the whole page. The status chip and Pancho both read this, so they
+  // can never contradict each other, and the calendar comes from the build (see
+  // MARKET_CAL) rather than a list frozen in the JS. Computed at read time: a
+  // build-time value goes wrong within hours, and the reader's moment is what matters.
+  var MKTCAL = <!--F:market.market_cal_json|js--><!--/F-->;
+
+  function marketPhase() {
+    var p = {};
+    try {
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short",
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hour12: false
+      }).formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    } catch (e) { return { name: "unknown", open: false }; }
+    var mins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
+    var iso = p.year + "-" + p.month + "-" + p.day;
+    var cal = MKTCAL[p.year];
+    // A year we have no calendar for: say nothing rather than assume a normal session.
+    if (!cal) return { name: "unknown", open: false };
+    if (["Sat", "Sun"].indexOf(p.weekday) !== -1) return { name: "weekend", open: false };
+    if (cal.holidays.indexOf(iso) !== -1) return { name: "holiday", open: false };
+    // Early closes are 1pm Eastern, not 4pm — treating them as full days had the chip
+    // announcing an open market for three hours after the bell on those afternoons.
+    var close = cal.half_days.indexOf(iso) !== -1 ? 780 : 960;
+    if (mins < 570) return { name: "premarket", open: false };
+    if (mins >= close) return { name: "closed", open: false };
+    if (mins < 600) return { name: "open30", open: true };
+    if (mins >= close - 60) return { name: "lasthour", open: true };
+    return { name: "midday", open: true };
+  }
+
+  // 9:30 Eastern, written in whatever zone the reader's device is in. Hardcoding a
+  // local time here would be wrong for anyone who is not where the author was.
+  function openLocalTime() {
+    try {
+      var now = new Date();
+      // Compare in MINUTES, not whole hours. India, Newfoundland and parts of Australia
+      // sit on half-hour offsets, and rounding to the hour told those readers the market
+      // opens thirty minutes before it does.
+      var p = {};
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York",
+        hour: "2-digit", minute: "2-digit", hour12: false })
+        .formatToParts(now).forEach(function (x) { p[x.type] = x.value; });
+      var etMins = parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10);
+      var localMins = now.getHours() * 60 + now.getMinutes();
+      var shift = localMins - etMins;
+      if (shift > 720) shift -= 1440;
+      if (shift < -720) shift += 1440;
+      var mins = 9 * 60 + 30 + shift;
+      mins = ((mins % 1440) + 1440) % 1440;
+      var h = Math.floor(mins / 60), m = mins % 60;
+      var ampm = h >= 12 ? "PM" : "AM";
+      var h12 = h % 12 === 0 ? 12 : h % 12;
+      return h12 + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
+    } catch (e) { return ""; }
+  }
+
+  /* ---------- "did this page update?" ----------
+     The one failure the page could never report is its own: when a morning run dies,
+     nothing rebuilds the page, so it keeps serving yesterday looking perfectly healthy.
+     The reader's device can see what the page cannot — that the brief in front of it is
+     older than the one that should exist by now.
+
+     The bar must never cry wolf. On a Sunday, Saturday's recap IS the current brief; at
+     7am on a weekday the morning run may still be working; on a market holiday no brief
+     is written at all. So instead of "is the build date today?", work out the most
+     recent date on which a brief SHOULD exist, and complain only if the page predates
+     that. Any uncertainty — an unparseable date, a year we have no calendar for —
+     stays silent, because a false alarm about his money costs more than a missed one. */
+  (function () {
+    var bar = document.getElementById("staleLine");
+    var built = "<!--F:market.build_date_iso--><!--/F-->";
+    if (!bar || !/^\d{4}-\d{2}-\d{2}$/.test(built)) return;
+
+    function ymd(d) {
+      return d.getFullYear() + "-" +
+        ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+    }
+    // The reader's "today" in the page's home timezone, as a date we can step back from.
+    var pac;
+    try {
+      var p = {};
+      new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles",
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hour12: false })
+        .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+      pac = { d: new Date(+p.year, +p.month - 1, +p.day),
+              mins: parseInt(p.hour, 10) * 60 + parseInt(p.minute, 10) };
+    } catch (e) { return; }
+
+    function isHoliday(d) {
+      var cal = MKTCAL[String(d.getFullYear())];
+      if (!cal) return null;                       // unknown year: refuse to guess
+      return cal.holidays.indexOf(ymd(d)) !== -1;
+    }
+
+    // Only WEEKDAY briefs create an expectation. The scheduled wake is weekdays only,
+    // so the Saturday recap runs whenever the Mac next comes up — genuinely best-effort,
+    // and demanding it would put a red bar in front of him most weekends for something
+    // that is working as designed. Weekday mornings are the ones he relies on.
+    //
+    // Slots run at 5:12, 5:57 and 6:42 Pacific, so a brief exists well before this
+    // cutoff; 8:30 leaves room for a slow run rather than calling it a failure.
+    var WEEKDAY_BY = 8 * 60 + 30;
+    var cur = new Date(pac.d.getTime()), expected = null;
+    for (var back = 0; back < 10 && expected === null; back++) {
+      var dow = cur.getDay(), hol = isHoliday(cur);
+      if (hol === null) return;                    // no calendar: say nothing
+      var isBriefDay = dow >= 1 && dow <= 5 && !hol;
+      if (isBriefDay && (back > 0 || pac.mins >= WEEKDAY_BY)) expected = ymd(cur);
+      else cur.setDate(cur.getDate() - 1);
+    }
+    if (expected === null || built >= expected) return;   // healthy: stay hidden
+
+    var en = "<!--F:market.build_date_en--><!--/F-->";
+    var ko = "<!--F:market.build_date_ko--><!--/F-->";
+    bar.innerHTML =
+      '<span data-l="en"><b>This page did not update this morning.</b> ' +
+      'What you are reading is the brief from ' + en + ', and the prices below are from ' +
+      'that day. It should catch up on its own.</span>' +
+      '<span data-l="ko"><b>오늘 아침 이 페이지가 갱신되지 않았습니다.</b> ' +
+      '지금 보시는 것은 ' + ko + ' 브리핑이고, 아래 가격도 그날 기준입니다. ' +
+      '곧 자동으로 다시 맞춰집니다.</span>';
+    bar.hidden = false;
+  })();
+
+  (function () {
+    var el = document.getElementById("mktStatus");
+    if (!el) return;
+    function update() {
+      var ph = marketPhase();
+      if (ph.name === "unknown") return;   // leave the built text alone
+      var en = el.querySelector('[data-l="en"]');
+      var ko = el.querySelector('[data-l="ko"]');
+      if (en) en.textContent = ph.open ? "Market open now" : "Markets closed";
+      if (ko) ko.textContent = ph.open ? "현재 장 열림" : "장 마감";
+      if (typeof window.panchoPhaseChanged === "function") window.panchoPhaseChanged(ph);
+    }
+    update();
+    setInterval(update, 60000);
+  })();
+
+  var mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var wagging = false, wagTimer = null, blinkTimer = null, speakTimer = null;
+
+  setInterval(function () {
+    if (mq.matches || wagging) return;
+    draw("blink");
+    clearTimeout(blinkTimer);
+    blinkTimer = setTimeout(function () { if (!wagging) draw("idle"); }, 150);
+  }, 4600);
+
+  function wag(times) {
+    if (mq.matches) return;
+    clearTimeout(wagTimer);
+    wagging = true;
+    var n = 0;
+    (function step() {
+      if (n >= times * 2) { wagging = false; draw("idle"); return; }
+      draw(n % 2 === 0 ? "wag" : "idle");
+      n++;
+      wagTimer = setTimeout(step, 130);
+    })();
+  }
+
+  setInterval(function () { if (!mq.matches && !wagging) wag(2); }, 6500);
+
+  /* ---------- bilingual strings ---------- */
+  var STR = {
+    en: {
+      greet: "Pancho reporting. Tap a name above and I'll explain it.",
+      cue: "Pancho has a note ↓",
+      stripLabel: "Market overview",
+      tabsLabel: "Positions",
+      boardLabel: "The five positions, side by side",
+      dogLabel: "Pancho — hear another note about this position",
+      fpLabel: "Which of the five this affects",
+    },
+    ko: {
+      greet: "판초입니다. 위에서 종목을 하나 눌러주시면 설명해 드릴게요.",
+      cue: "판초가 할 말이 있어요 ↓",
+      stripLabel: "시장 개요",
+      tabsLabel: "보유 종목",
+      boardLabel: "다섯 종목 한눈에 보기",
+      dogLabel: "판초 — 이 종목에 대한 다른 설명 듣기",
+      fpLabel: "다섯 종목 중 어디에 영향이 있는지"
+    }
+  };
+
+  /* ---------- Pancho's line ledger ----------
+     Every line he can say, generated at build time with an owner, a tier and an expiry.
+     This replaced a hardcoded table that lived inside the page script, invisible to
+     every guard the page has, which named dates long after they had passed. Tier order
+     below IS the priority order when more than one line is true at once. */
+  var PLINES = <!--F:market.pancho_json|js--><!--/F-->;
+  var TIER_RANK = { notable: 0, live: 1, clock: 2, today: 3, figure: 4, evergreen: 5 };
+
+  var VALID = { spx:1, qqq:1, nvda:1, soxl:1, cost:1 };
+  var bub = document.getElementById("bub");
+  var says = document.getElementById("dogSays");
+  var cueText = document.getElementById("cueText");
+  var strip = document.getElementById("dogStrip");
+  var cue = document.getElementById("dogCue");
+  var current = "spx", idx = 0, stripVisible = true, spoken = false;
+  var lang = document.documentElement.getAttribute("data-lang") === "ko" ? "ko" : "en";
+
+  function maybeCue() {
+    if (stripVisible) { cue.hidden = true; return; }
+    cue.hidden = true;
+    void cue.offsetWidth;
+    cue.hidden = false;
+  }
+
+  /* ---------- what Pancho can say right now ----------
+     He speaks on load, on tap, when the market crosses into a new part of the day, and
+     on the session's first notable event — never on a timer. A dog who interrupts every
+     thirty seconds gets ignored, and being ignored is the only way this fails. */
+  var todayISO = "";
+  try {
+    todayISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles" })
+      .format(new Date());
+  } catch (e) {}
+
+  var liveId = null;     // set by the quote feed when it has something to say
+  var phaseId = null;    // set by the clock
+  var spokenLine = null; // the line currently in the bubble, so language swaps track it
+
+  function sayable(pos) {
+    var out = [];
+    for (var i = 0; i < PLINES.length; i++) {
+      var l = PLINES[i];
+      // A line whose fact has expired is simply not sayable. This is the whole point of
+      // the ledger: the dog cannot outlive his own information.
+      if (l.expires && todayISO && l.expires < todayISO) continue;
+      if (l.tier === "clock" && l.id !== phaseId) continue;
+      if (l.tier === "live" && l.id !== liveId) continue;
+      if (l.pos && l.pos !== pos) continue;
+      out.push(l);
+    }
+    // The clock leads when the market is shut — "it opens at 6:30, nothing will move
+    // until then" is the whole answer at 6am. Once trading is under way, "trading is
+    // open" is the least interesting true thing he knows, so it drops below the written
+    // remark and the figures.
+    var quiet = phaseId === "clock-premarket" || phaseId === "clock-weekend"
+             || phaseId === "clock-holiday" || phaseId === "clock-closed";
+    function rank(l) {
+      if (l.tier === "clock" && !quiet) return 4.5;
+      return TIER_RANK[l.tier] === undefined ? 9 : TIER_RANK[l.tier];
+    }
+    out.sort(function (a, b) { return rank(a) - rank(b); });
+    return out;
+  }
+
+  function fill(text) {
+    return String(text).replace("{t}", openLocalTime() || "9:30 AM Eastern");
+  }
+
+  function speak(line, announce) {
+    if (!line) return;
+    spokenLine = line;
+    spoken = true;
+    clearTimeout(speakTimer);
+    bub.classList.add("hide");
+    // Auto-driven swaps must not be read aloud — VoiceOver announcing the dog every
+    // time the clock ticks over is an interruption, not information. Taps stay polite.
+    bub.setAttribute("aria-live", announce ? "polite" : "off");
+    speakTimer = setTimeout(function () {
+      says.textContent = fill(line[lang] || line.en);
+      bub.classList.remove("hide");
+    }, mq.matches ? 0 : 180);
+    maybeCue();
+  }
+
+  function speakBest(pos, announce) {
+    var pool = sayable(pos);
+    if (pool.length) speak(pool[0], announce);
+  }
+
+  // Called by the shared clock whenever the market moves into a new part of the day.
+  // Exposed on window because that clock runs in its own scope, defined above this one.
+  window.panchoPhaseChanged = function (ph) {
+    var next = (!ph || ph.name === "unknown") ? null : "clock-" + ph.name;
+    if (next === phaseId) return;
+    var first = phaseId === null;
+    phaseId = next;
+    if (!first) speakBest(current, false);   // the load path speaks separately
+  };
+
+  /* ---------- language ---------- */
+  var btnEn = document.getElementById("langEn");
+  var btnKo = document.getElementById("langKo");
+
+  function setName(sel, label) {
+    var el = document.querySelector(sel);
+    if (el && label) el.setAttribute("aria-label", label);
+  }
+
+  function applyLang(next, announce) {
+    lang = next;
+    document.documentElement.setAttribute("data-lang", next);
+    document.documentElement.setAttribute("lang", next);
+    try { localStorage.setItem("mmr-lang", next); } catch (e) {}
+    // Title follows the data-driven dateline, so it can never name the wrong day.
+    var dl = document.querySelector('.dateline > span[data-l="' + next + '"]');
+    document.title = (next === "ko" ? "아침 시장 브리핑 — " : "Morning Market Recap — ")
+      + (dl ? dl.textContent.trim() : "");
+    btnEn.setAttribute("aria-pressed", next === "en" ? "true" : "false");
+    btnKo.setAttribute("aria-pressed", next === "ko" ? "true" : "false");
+    cueText.textContent = STR[next].cue;
+    // Accessible names are not visible text, so the duplicate-DOM trick cannot reach
+    // them — a screen reader would keep announcing English in Korean mode. Set them here.
+    setName(".strip", STR[next].stripLabel);
+    setName(".tabs", STR[next].tabsLabel);
+    setName("table.board", STR[next].boardLabel);
+    setName("#dogBtn", STR[next].dogLabel);
+    setName(".lg-fp", STR[next].fpLabel);
+    clearTimeout(speakTimer);   // a pending bubble write would land in the old language
+    // keep Pancho speaking the same thought, in the new language
+    says.textContent = (spoken && spokenLine)
+      ? fill(spokenLine[next] || spokenLine.en)
+      : STR[next].greet;
+    bub.classList.remove("hide");   // speak() may have just hidden it mid-fade
+    if (announce) wag(2);
+  }
+
+  btnEn.addEventListener("click", function () { applyLang("en", true); });
+  btnKo.addEventListener("click", function () { applyLang("ko", true); });
+
+  /* ---------- tabs ---------- */
+  var order = ["spx", "qqq", "nvda", "soxl", "cost"];
+  var tabs = order.map(function (t) { return document.getElementById("tab-" + t); });
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#boardBody tr"));
+
+  function select(key, focusTab) {
+    if (!VALID[key]) return;
+    current = key; idx = 0;
+    order.forEach(function (t, i) {
+      var on = t === key;
+      tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+      tabs[i].tabIndex = on ? 0 : -1;
+      document.getElementById("p-" + t).hidden = !on;
+    });
+    rows.forEach(function (r) {
+      if (r.getAttribute("data-t") === key) r.setAttribute("aria-current", "true");
+      else r.removeAttribute("aria-current");
+    });
+    if (focusTab) tabs[order.indexOf(key)].focus();
+    speakBest(key, true);
+    wag(2);
+  }
+
+  tabs.forEach(function (btn, i) {
+    btn.addEventListener("click", function () { select(order[i]); });
+    btn.addEventListener("keydown", function (e) {
+      var n = null;
+      if (e.key === "ArrowRight") n = (i + 1) % order.length;
+      else if (e.key === "ArrowLeft") n = (i - 1 + order.length) % order.length;
+      else if (e.key === "Home") n = 0;
+      else if (e.key === "End") n = order.length - 1;
+      if (n === null) return;
+      e.preventDefault();
+      select(order[n], true);
+    });
+  });
+
+  rows.forEach(function (r) {
+    r.addEventListener("click", function () {
+      select(r.getAttribute("data-t"));
+      // On a phone the board restacks and the detail panel sits below the whole table,
+      // off-screen — so tapping a row appeared to do nothing at all. Bring it into view
+      // whenever it isn't already there, and let the tap be a single gesture.
+      var d = document.querySelector(".detail");
+      if (!d) return;
+      var box = d.getBoundingClientRect();
+      var offscreen = box.top > window.innerHeight * 0.75 || box.bottom < 0;
+      if (offscreen) {
+        d.scrollIntoView({
+          block: "start",
+          behavior: mq.matches ? "auto" : "smooth"
+        });
+      }
+    });
+  });
+
+  document.getElementById("dogBtn").addEventListener("click", function () {
+    var pool = sayable(current);
+    if (!pool.length) return;
+    // Tapping walks down the priority order, so the most urgent thing he has is what he
+    // leads with and the rest are there for anyone who wants them.
+    if (spoken) idx = (idx + 1) % pool.length;
+    if (idx >= pool.length) idx = 0;
+    speak(pool[idx], true);
+    wag(3);
+  });
+
+  if ("IntersectionObserver" in window) {
+    // Deliberately no cue on first load: arriving mid-page and being immediately
+    // offered a floating prompt reads as an interruption. The cue now only appears
+    // after Pancho actually has something new to say (see speak()).
+    var firstCheck = false;
+    new IntersectionObserver(function (entries) {
+      stripVisible = entries[entries.length - 1].isIntersecting;
+      if (stripVisible) cue.hidden = true;
+      else if (firstCheck) maybeCue();
+      firstCheck = false;
+    }, { threshold: 0.5 }).observe(strip);
+  }
+
+  cue.addEventListener("click", function () {
+    cue.hidden = true;
+    strip.scrollIntoView({ behavior: mq.matches ? "auto" : "smooth", block: "center" });
+    document.getElementById("dogBtn").focus({ preventScroll: true });
+    wag(2);
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !cue.hidden) {
+      if (document.activeElement === cue) document.getElementById("dogBtn").focus({ preventScroll: true });
+      cue.hidden = true;
+    }
+  });
+
+  applyLang(lang, false);
+
+  // On arrival he leads with the most useful thing he has — which, before the market
+  // opens, is what time it opens. The clock has already run by now (it is set up above
+  // this block), so phaseId is populated; if anything went wrong, the greeting stands.
+  try { phaseId = "clock-" + marketPhase().name; } catch (e) { phaseId = null; }
+  if (phaseId === "clock-unknown") phaseId = null;
+  window.setTimeout(function () {
+    if (!spoken) speakBest(current, false);
+  }, 0);
+
+  // The quote feed decides which "live" line is true, once per pull. Everything here
+  // sits behind the same staleness guard as the prices: if the feed is quiet, Pancho
+  // has no live line and falls back to the tiers that cannot go stale.
+  window.panchoLive = function (q) {
+    var up = 0, down = 0, moved = 0;
+    ["spx", "qqq", "nvda", "soxl", "cost"].forEach(function (k) {
+      if (!q[k] || typeof q[k].d !== "number") return;
+      if (q[k].d > 0) up++; else if (q[k].d < 0) down++;
+      if (Math.abs(q[k].d) >= 0.5) moved++;
+    });
+    var next = null;
+    if (up + down >= 4) {
+      if (!moved) next = "live-quiet";
+      else if (!down) next = "live-allup";
+      else if (!up) next = "live-alldown";
+      else next = "live-split";
+    }
+    var changed = next !== liveId;
+    liveId = next;
+
+    // A genuinely new notable event is the one thing allowed to interrupt him. Without
+    // this it never spoke at all: by the time the first quotes land he has already said
+    // his greeting or clock line, `spoken` is true, and the guard below swallows
+    // everything — the announcements were dead code from the day they shipped.
+    // notable() latches once per day in localStorage, so this fires once, not every pull.
+    if (notable(q)) {
+      speakBest(current, false);
+      return;
+    }
+    // Everything else waits its turn: "some up, some down" is not worth taking the
+    // bubble away from whatever he is already showing.
+    if (changed && !spoken) speakBest(current, false);
+  };
+
+  /* ---------- the notable tier ----------
+     One line a day, maximum. Something genuinely worth interrupting for — a new
+     one-year high, or a move big enough to be unusual FOR THAT POSITION. It is latched
+     against the Pacific date in localStorage, so it announces itself once and then
+     takes its place in the tap order instead of shouting every two minutes. */
+  var PTRIG = <!--F:market.pancho_trig_json|js--><!--/F-->;
+
+  function notableKey(id) { return "mmr-notable-" + todayISO + "-" + id; }
+
+  function notable(q) {
+    if (!todayISO) return false;                 // no reliable date: never latch
+    // Drop any notable line from a previous pull before recomputing. Keeping it would
+    // freeze a figure from the moment it fired ("Nvidia is up 4.1% today") and, because
+    // notable outranks every other tier, leave that stale number as the first thing he
+    // says for the rest of the session while the real move kept moving.
+    PLINES = PLINES.filter(function (l) { return l.tier !== "notable"; });
+    var order = ["nvda", "soxl", "qqq", "cost", "spx"], made = null;
+    for (var i = 0; i < order.length && !made; i++) {
+      var k = order[i], t = PTRIG[k], quote = q[k];
+      if (!t || !quote || typeof quote.d !== "number") continue;
+      var px = parseFloat(String(quote.v).replace(/[$,]/g, ""));
+      if (t.hi && px && px >= t.hi && quote.d > 0) {
+        made = { id: "notable-" + k + "-hi", tier: "notable", pos: "", expires: todayISO,
+          en: t.en + " is the highest it has been in a year, as of right now.",
+          ko: t.ko + " 지금 1년 중 가장 높은 가격입니다." };
+      } else if (Math.abs(quote.d) >= t.big) {
+        var dir = quote.d > 0 ? "up" : "down";
+        made = { id: "notable-" + k + "-big", tier: "notable", pos: "", expires: todayISO,
+          en: t.en + " is " + dir + " " + Math.abs(quote.d).toFixed(1)
+              + "% today. That is a big day for it.",
+          ko: t.ko + " 오늘 " + Math.abs(quote.d).toFixed(1) + "% "
+              + (quote.d > 0 ? "올랐습니다" : "내렸습니다") + ". 큰 폭입니다." };
+      }
+    }
+    if (!made) return false;
+    var seen = false;
+    try { seen = localStorage.getItem(notableKey(made.id)) === "1"; } catch (e) {}
+    PLINES.push(made);
+    if (seen) return false;   // already announced today: sayable, but do not interrupt
+    try { localStorage.setItem(notableKey(made.id), "1"); } catch (e) {}
+    return true;
+  }
+})();
+</script>
